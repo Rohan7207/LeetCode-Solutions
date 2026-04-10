@@ -1,3 +1,19 @@
+// Problem: Add Two Numbers
+// Link: https://leetcode.com/problems/add-two-numbers/
+// Difficulty: Medium
+
+// Approach:
+// 1. Use two pointers to traverse both linked lists.
+// 2. Add corresponding digits along with carry.
+// 3. Create a new linked list to store the result.
+// 4. Continue until both lists and carry are processed.
+
+// Time Complexity:
+// O(max(n, m)) — where n and m are lengths of the lists
+
+// Space Complexity:
+// O(max(n, m)) — for storing the result list
+
 /**
  * Definition for singly-linked list.
  * public class ListNode {
