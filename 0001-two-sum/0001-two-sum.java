@@ -1,3 +1,7 @@
+// Problem: Add Two Numbers
+// Link: https://leetcode.com/problems/two-sum/
+// Difficulty: Easy
+
 // Approach: Use HashMap to store visited elements.
 // For each element, check if (target - current) exists.
 
