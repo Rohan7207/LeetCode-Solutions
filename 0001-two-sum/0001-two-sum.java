@@ -1,10 +1,9 @@
-Approach: Use HashMap to store visited elements.
-For each element, check if (target - current) exists.
+// Approach: Use HashMap to store visited elements.
+// For each element, check if (target - current) exists.
 
-Time Complexity: O(n)
+// Time Complexity: O(n)
 
-Space Complexity: O(n)
-
+// Space Complexity: O(n)
 
 class Solution {
     public int[] twoSum(int[] nums, int target) {
