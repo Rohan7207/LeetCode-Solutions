@@ -1,3 +1,18 @@
+// Problem: Median of Two Sorted Arrays
+// Link: https://leetcode.com/problems/median-of-two-sorted-arrays/
+// Difficulty: Hard
+
+// Approach:
+// 1. Store the sorted elements of two arrays in new array
+// 2. Find length of new array
+// 3. Calculate the median differently when length is even and odd
+
+// Time Complexity:
+// O(n)
+
+// Space Complexity:
+// O(m + n) — m and n are size of two arrays
+
 class Solution {
     public double findMedianSortedArrays(int[] nums1, int[] nums2) {
     //    int n = nums1.length;
