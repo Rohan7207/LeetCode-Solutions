@@ -1,3 +1,21 @@
+// Problem: Median of Two Sorted Arrays
+// Link: https://leetcode.com/problems/median-of-two-sorted-arrays/
+// Difficulty: Hard
+
+// Approach:
+// 1. Use binary search on the smaller array.
+// 2. Partition both arrays such that left half contains smaller elements.
+// 3. Ensure:
+//    maxLeft1 <= minRight2 AND maxLeft2 <= minRight1
+// 4. If condition fails, adjust partition using binary search.
+// 5. Once correct partition is found:
+//    - If total length is even → return average of max(left) and min(right)
+//    - If odd → return max(left)
+
+// Time Complexity: O(log(min(m, n)))
+
+// Space Complexity: O(1)
+
 class Solution {
     public double findMedianSortedArrays(int[] nums1, int[] nums2) {
         // Time = O(m + n) and space = O(m + n)
@@ -88,17 +106,3 @@ class Solution {
     }
 }
 
-// Problem: Median of Two Sorted Arrays
-// Link: https://leetcode.com/problems/median-of-two-sorted-arrays/
-// Difficulty: Hard
-
-// Approach:
-// 1. Store the sorted elements of two arrays in new array
-// 2. Find length of new array
-// 3. Calculate the median differently when length is even and odd
-
-// Time Complexity:
-// O(m + n)
-
-// Space Complexity:
-// O(m + n) — m and n are size of two arrays
