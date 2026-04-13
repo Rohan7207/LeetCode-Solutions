@@ -18,11 +18,13 @@ class Solution {
         int n = nums.length;
         int d = 1;  //It is no.of steps of start moving outward or inward
 
-        while(true) {
+        while(start - d >= 0 || start + d < n) {
             if(start - d >= 0 && nums[start - d] == target) return d;
             if(start + d < n && nums[start + d] == target) return d;
 
             d++; 
         }
+
+        return -1;
     }
 }
