@@ -8,6 +8,7 @@
 | ------- |
 | [0001-two-sum](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0001-two-sum) |
 | [0004-median-of-two-sorted-arrays](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0004-median-of-two-sorted-arrays) |
+| [1848-minimum-distance-to-the-target-element](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1848-minimum-distance-to-the-target-element) |
 ## Hash Table
 |  |
 | ------- |
