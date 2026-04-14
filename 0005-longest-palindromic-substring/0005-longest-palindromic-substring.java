@@ -1,6 +1,23 @@
+// Problem: Longest Palindromic Substring
+// Link: https://leetcode.com/problems/longest-palindromic-substring/
+// Difficulty: Medium
+
+// Approach:
+// 1. Iterate through the each index and treat it as a possible center.
+// 2. For each index, check two cases:
+//        - Odd length palindrome (center at i)
+//        - Even length palindrome (center at i and i+1)
+// 3. Expand around center while the characters match.
+// 4. Track the longest found palindrome using start and end.
+// 5. Return the substring from start to end
+
+
+// Time Complexity: O(n ^ 2)
+
+// Space Complexity: O(1)
+
 class Solution {
     public String longestPalindrome(String s) {
-        //Mancher's algorithm solves in O(n) but we come with O(n^2) and O(1)
 
         if(s == null || s.length() == 0){
             return "";
@@ -32,11 +49,3 @@ class Solution {
         return right - left - 1;
     }
 }
-
-  /*When i = 2 left = 0 and right = 4, we found 5 as a max length, but we don't know 5 is the max length in the current iteration, so we try to move to the next place to find longer palindrome, even if we don't find it in the end.
-
-That's why, left and right pointer always overrun and stop at max length in current iteration + 1, so we need to subtract -1 from right - left. 
-
-
-We check both odd and even centers because palindromes can have either a single center or two-character center.
-*/
