@@ -1,3 +1,20 @@
+// Problem : String to Integer (atoi)
+// Link : https://leetcode.com/problems/string-to-integer-atoi/
+// Difficulty : Medium
+
+// Approach
+// 1. Skip leading whitespaces.
+// 2. Check for the optional sign (+ or -) and store it.
+// 3. Traverse the digits and convert them to integers.
+// 4. Before adding each digit, check for overflow/underflow.
+// 5. Update the result as res = res * 10 + digit. 
+// 6. Stop when the first non-digit is encountered.
+// 7. Return the result with correct sign.
+
+// Time Complexity : O(n)
+
+// Space Complexity : O(1)
+
 class Solution {
     public int myAtoi(String s) {
         if (s == null || s.length() == 0)
