@@ -1,6 +1,7 @@
 class Solution {
     public int myAtoi(String s) {
-        if(s == null || s.length() == 0) return 0; 
+        if (s == null || s.length() == 0)
+            return 0;
 
         //Constants for 32-bit signed integer range, used to handle overflow and underflow
         final int INT_MIN = Integer.MIN_VALUE;
@@ -10,41 +11,40 @@ class Solution {
         int n = s.length();
 
         //Skip leading whitespace
-        while(i < n && s.charAt(i) == ' ') {
+        while (i < n && s.charAt(i) == ' ') {
             i++;
         }
 
         //Check if we have reached end
-        if(i == n) return 0;
-        
+        if (i == n)
+            return 0;
 
         //Check for sign
         int sign = 1;
-        if(s.charAt(i) == '+'){
+        if (s.charAt(i) == '+') {
             i++;
-        }else if(s.charAt(i) == '-'){
+        } else if (s.charAt(i) == '-') {
             sign = -1;
             i++;
         }
 
         //Read digits and convert
         long res = 0;
-        while(i < n && Character.isDigit(s.charAt(i))){
+        while (i < n && Character.isDigit(s.charAt(i))) {
             int digit = s.charAt(i) - '0';
-            res = res * 10 + digit;  //here there is chance of no. going overflow or underflow
 
             //overflow handling
-            if(sign * res <= INT_MIN){
-                return INT_MIN;
+            if (res > Integer.MAX_VALUE / 10 ||
+                    (res == Integer.MAX_VALUE / 10 && digit > 7)) {
+                return sign == 1 ? Integer.MAX_VALUE : Integer.MIN_VALUE;
             }
-            if(sign * res >= INT_MAX){
-                return INT_MAX;
-            }
+
+            res = res * 10 + digit; //here there is chance of no. going overflow or underflow
 
             i++;
         }
 
         //Apply sign and return 
-        return (int)(res * sign);
+        return (int) (res * sign);
     }
 }
