@@ -6,7 +6,7 @@
 // Extract digits one by one and build the reversed number.
 // Before updating, check for overflow to stay within integer range.
 
-// Time Complexity: O(logn)
+// Time Complexity: O(log₁₀(n))
 
 // Space Complexity: O(1)
 
