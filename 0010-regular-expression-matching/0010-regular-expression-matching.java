@@ -1,3 +1,36 @@
+// Problem: Regular Expression Matching
+// Link: https://leetcode.com/problems/regular-expression-matching/
+// Difficulty: Hard
+
+// Approach:
+// Use Dynamic Programming where dp[i][j] represents whether
+// s[0..i-1] matches p[0..j-1].
+
+// 1. Initialize dp[0][0] = true (empty string matches empty pattern).
+
+// 2. Handle patterns like a*, a*b*, etc., which can match empty string
+//    by skipping the character and '*' (dp[0][j] = dp[0][j-2]).
+
+// 3. Traverse the string and pattern:
+//    - If characters match or pattern has '.', then:
+//      dp[i][j] = dp[i-1][j-1]
+
+//    - If pattern has '*', consider two cases:
+//      a) Zero occurrence → dp[i][j] = dp[i][j-2]
+//      b) One or more occurrence →
+//         if previous pattern char matches current string char:
+//         dp[i][j] |= dp[i-1][j]
+
+// 4. Final answer will be dp[m][n].
+
+// Key Concept:
+// '*' allows skipping or repeating the previous character,
+// making it necessary to consider multiple transitions.
+
+// Time Complexity: O(m * n)
+
+// Space Complexity: O(m * n)
+
 class Solution {
     public boolean isMatch(String s, String p) {
         if(s == null || p == null) return false;
@@ -45,47 +78,3 @@ class Solution {
     }
 }
 
-/*When there is . it matches with every character
-        and for * there are 3 cases consider s=faa and p=fa*
-        1. for checking only f patent becomes f(a* = 0) check then value before
-          preceeding it if true return true like for (1,3) check (1,1)
-        2.for checking fa patent becomes fa(a*= a)  then if value preceeding is
-          true return true like for (2,3) check (2,2)
-        3.for checking faa(or faaaaaaaaa) patent becomes faa(a*= aa) then if
-          value above it is true return true like for (3,3) check (2,3) */
-
-        //O(m*n) and O(m*n) where m and n are length of each strings
-
-
-/*
-   s = aab p = c*a*b
-
-   dp is 
-        0     1    2     3    4    5
-pattern idx=  0    1     2    3    4   (while accesiing char use j-1)
-        -     c    *     a    *    b
-    -   T     F    T     F    T    F     
-
-    a   F     F
-
-    a   F
-
-    b   F
-
-
-    - The blank patten always matches eith blank string and does match with any other character so it is false
-    - The first row, the in case of charcter it is false and if character is * then check the rowth previous 2 value bcz c* is trying to become '' nothing so check dp[0][0]
-        - for pattern 1 c* becomes ''
-        - for pattern 3 c*a* is trying to become c* so check 1 which is true
-
-    - For middle block for aa if we try to match c*a and also same for
-        aa to match with c*. . matches with a so check value of c*
-        - In this if last a matches with a then we should check diagonal upward i.e. for (2, 3) check (1, 2) 
-    
-    - When we try to match a with c*, here if c* becomes ' ' then it is blank so check value of its previous 2 row i.e. dp[i][j - 2]
-        and if c* try to become cc*, if c 2nd c whould matches with a then we would check the above value i.e. dp[i - 1][j]
-        - Consider s=xz p xyz*
-            if z* = '' then try to match xz with xy
-            if z* = zz* then try to match xz with xyzz* where 4th z matches and cancels with z of s then we get 
-            s = x and p = xyz*, we can see that pattern is same but one character will be cancelled so check for above value
- */
