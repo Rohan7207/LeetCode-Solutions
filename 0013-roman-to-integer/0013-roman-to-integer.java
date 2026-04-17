@@ -1,3 +1,15 @@
+// Problem: Roman to Integer
+// Link: https://leetcode.com/problems/roman-to-integer/
+// Difficulty: Easy
+
+// Approach:
+// Traverse the string and compare each character with the next.
+// If current value is less than next, subtract it,
+// otherwise add it to the result.
+
+// Time Complexity: O(1)
+// Space Complexity: O(1)
+
 class Solution {
     int getValue(char ch) {
         if(ch == 'I') return 1;
