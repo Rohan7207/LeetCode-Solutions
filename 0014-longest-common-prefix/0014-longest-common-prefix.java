@@ -1,3 +1,18 @@
+// Problem: Longest Common Prefix
+// Link: https://leetcode.com/problems/longest-common-prefix/
+// Difficulty: Easy
+
+// Approach:
+// Take the first string as the initial prefix.
+// Compare it with each string in the array.
+// While the current string does not start with the prefix,
+// Keep reducing the prefix by removing the last character.
+// Repeat until all strings are processed.
+// Return the final prefix.
+
+// Time Complexity: O(n * m)
+// Space Complexity: O(1)
+
 class Solution {
     public String longestCommonPrefix(String[] strs) {
         if(strs == null || strs.length == 0) return "";
@@ -15,16 +30,3 @@ class Solution {
         return prefix;
     }
 }
-
-/* 
-    str.indexOf(prefix)
-    Returns:
-        0 → if prefix is at the start of the string ✅
-        > 0 → if prefix is somewhere later ❌
-        -1 → if not present ❌
-
-    Keep reducing prefix until it becomes a valid prefix of the current string.
-
-    It checks whether the current prefix exists at the beginning of the string; if not, we shrink the prefix.
-
-*/
