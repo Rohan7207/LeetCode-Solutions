@@ -1,18 +1,30 @@
 class Solution {
     public String longestCommonPrefix(String[] strs) {
-        Arrays.sort(strs);
-        String s1 = strs[0];
-        String s2 = strs[strs.length - 1];
-        int idx = 0;
+        if(strs == null || strs.length == 0) return "";
 
-        while(idx < s1.length() && idx < s2.length()) {
-            if(s1.charAt(idx) == s2.charAt(idx)) {
-                idx++;
-            } else {
-                break;
+        String prefix = strs[0];
+
+        for(int i = 1; i < strs.length; i++) {
+            while(strs[i].indexOf(prefix) != 0) {
+                prefix = prefix.substring(0, prefix.length() - 1);
+
+                if(prefix.isEmpty()) return "";
             }
         }
 
-        return s1.substring(0, idx);
+        return prefix;
     }
 }
+
+/* 
+    str.indexOf(prefix)
+    Returns:
+        0 → if prefix is at the start of the string ✅
+        > 0 → if prefix is somewhere later ❌
+        -1 → if not present ❌
+
+    Keep reducing prefix until it becomes a valid prefix of the current string.
+
+    It checks whether the current prefix exists at the beginning of the string; if not, we shrink the prefix.
+
+*/
