@@ -31,6 +31,7 @@
 | [0009-palindrome-number](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0009-palindrome-number) |
 | [0012-integer-to-roman](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0012-integer-to-roman) |
 | [0013-roman-to-integer](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0013-roman-to-integer) |
+| [3783-mirror-distance-of-an-integer](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3783-mirror-distance-of-an-integer) |
 ## Recursion
 |  |
 | ------- |
