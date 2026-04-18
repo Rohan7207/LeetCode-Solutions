@@ -1,3 +1,24 @@
+// Problem: Letter Combination of a Phone Number
+// Link: https://leetcode.com/problems/letter-combinations-of-a-phone-number/
+// Difficulty: Medium
+
+// Approach:
+// Use backtracking to generate all possible letter combinations.
+// Map each digit to its corresponding characters.
+// Start from index 0 and build combinations recursively.
+// For each digit:
+//   - Loop through its mapped characters.
+//   - Add the character to current string.
+//   - Recurse for next digit.
+//   - Backtrack by removing last character.
+// When the current string length equals digits length,
+// add it to the result list.
+
+
+// Time Complexity: O(4^n * n)
+
+// Space Complexity: O(n) (recursion stack, excluding output)
+
 class Solution {
     public List<String> letterCombinations(String digits) {
         List<String> combinations = new ArrayList<>();
@@ -38,9 +59,3 @@ class Solution {
         }
     }
 }
-
-//Use backtracking  with O(3*3) 3 or 4 and O(2-9) or O(1)
-        /* Store the keys as integers and store their values in Hashmap
-         we can also use array
-         Consider digits [2,3] break values of 2 as a b c and for each value append
-         it with d e f as a with d e f,b with d e f and c d e f */
