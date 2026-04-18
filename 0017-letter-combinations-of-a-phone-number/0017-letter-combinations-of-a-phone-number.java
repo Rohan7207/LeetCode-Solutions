@@ -5,31 +5,35 @@ class Solution {
             return combinations;
         }
 
-        //Mapping of digits with letters
-        Map<Character, String> map = new HashMap<>();
-        map.put('2', "abc");
-        map.put('3', "def");
-        map.put('4', "ghi");
-        map.put('5', "jkl");
-        map.put('6', "mno");
-        map.put('7', "pqrs");
-        map.put('8', "tuv");
-        map.put('9', "wxyz");
+        // Store the values in array
+        String[] mapping = {
+            "",  //0
+            "",  //1
+            "abc",  //2
+            "def",  //3
+            "ghi",  //4
+            "jkl",  //5
+            "mno",  //6
+            "pqrs", //7
+            "tuv",  //8
+            "wxyz"  //9
+        };
 
-        backtrack(combinations, map, new StringBuilder(), digits, 0);
+        
+        backtrack(combinations, mapping, new StringBuilder(), digits, 0);
         return combinations;
     }
 
-    private void backtrack(List<String> combinations, Map<Character, String> map, StringBuilder sb, String digits, int idx){
+    private void backtrack(List<String> combinations, String[] mapping, StringBuilder sb, String digits, int idx){
         if(idx == digits.length()){
             combinations.add(sb.toString());
             return;
         }
 
-        String curr = map.get(digits.charAt(idx));  //gets letters stored at the index
-        for(int i = 0; i < curr.length(); i++){
-            sb.append(curr.charAt(i));
-            backtrack(combinations, map, sb, digits, idx + 1);
+        String curr = mapping[digits.charAt(idx) - '0'];  //gets letters stored at the index
+        for(char c : curr.toCharArray()){
+            sb.append(c);
+            backtrack(combinations, mapping, sb, digits, idx + 1);
             sb.deleteCharAt(sb.length() - 1);
         }
     }
