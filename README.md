@@ -12,6 +12,7 @@
 | [0015-3sum](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0015-3sum) |
 | [0018-4sum](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0018-4sum) |
 | [1848-minimum-distance-to-the-target-element](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1848-minimum-distance-to-the-target-element) |
+| [1995-count-special-quadruplets](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1995-count-special-quadruplets) |
 ## Hash Table
 |  |
 | ------- |
@@ -20,6 +21,7 @@
 | [0012-integer-to-roman](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0012-integer-to-roman) |
 | [0013-roman-to-integer](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0013-roman-to-integer) |
 | [0017-letter-combinations-of-a-phone-number](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0017-letter-combinations-of-a-phone-number) |
+| [1995-count-special-quadruplets](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1995-count-special-quadruplets) |
 ## Linked List
 |  |
 | ------- |
@@ -85,4 +87,8 @@
 |  |
 | ------- |
 | [0017-letter-combinations-of-a-phone-number](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0017-letter-combinations-of-a-phone-number) |
+## Enumeration
+|  |
+| ------- |
+| [1995-count-special-quadruplets](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1995-count-special-quadruplets) |
 <!---LeetCode Topics End-->
