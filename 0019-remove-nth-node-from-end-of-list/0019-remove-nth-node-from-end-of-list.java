@@ -1,3 +1,20 @@
+// Problem: Remove Nth Node From End of List
+// Link: https://leetcode.com/problems/remove-nth-node-from-end-of-list/
+// Difficulty: Medium
+
+// Approach:
+// Use two pointers (fast and slow).
+// Move the fast pointer n steps ahead to maintain a gap of n nodes.
+// Then move both fast and slow together until fast reaches the end.
+// At this point, slow will be just before the node to be deleted.
+// Adjust the next pointer of slow to remove the target node.
+// Use a dummy node to handle edge cases like removing the head.
+
+// Time Complexity: O(n)
+// Space Complexity: O(1)
+
+
+
 /**
  * Definition for singly-linked list.
  * public class ListNode {
@@ -34,36 +51,3 @@ class Solution {
         return head;
     }
 }
-
-/*
- // intuition, it's hard to go in backwards in a list. So we need 2 pointers when traversing the list, one fast one slow so the slow one can do the removal when the fast one reaches the end of the list.
-// actually we need another prev before the slow pointer to do the removal.
-
-
-     if(head.next == null){
-            return null;
-        }
-
-        int size = 0;
-        ListNode current = head;
-        while(current != null){
-            current = current.next;
-            size++;
-        }
-
-        //If given node is 1st or head
-        if(n == size){
-            return head.next;
-        }
-
-        int indextosearch = size-n; //returns the search index -1
-        ListNode prev = head;
-        int i = 1;
-        while(i < indextosearch){
-            prev = prev.next;
-            i++;
-        }
-        prev.next = prev.next.next;
-        return head;
-
-*/
