@@ -1,3 +1,19 @@
+// Problem: Two Furthest Houses With Different Colors
+// Link: https://leetcode.com/problems/two-furthest-houses-with-different-colors/?envType=daily-question&envId=2026-04-20
+// Difficulty: Easy
+
+// Approach:
+// 1. Compare the first element with all elements from right side
+//    and find the farthest index where values are different.
+// 2. Compare the last element with all elements from left side
+//    and find the farthest index where values are different.
+// 3. Take the maximum of both distances.
+// 4. Return the maximum distance.
+
+// Time Complexity: O(n)
+
+// Space Complexity: O(1)
+
 class Solution {
     public int maxDistance(int[] colors) {
         int maxDist = 0;
@@ -21,12 +37,3 @@ class Solution {
         return maxDist;
     }
 }
-
-/*
-    To maximize distance:
-
-        Compare first element with last different
-        Compare last element with first different
-
-    Time = O(n) and Space = O(1)
-*/
