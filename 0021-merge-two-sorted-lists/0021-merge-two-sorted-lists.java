@@ -1,3 +1,18 @@
+// Problem: Merge Two Sorted Lists
+// Link: https://leetcode.com/problems/merge-two-sorted-lists/
+// Difficulty: Easy
+
+// Approach:
+// Create a dummy node and use a current pointer to build the merged list.
+// Compare nodes from both lists and attach the smaller one to current.
+// Move the corresponding pointer forward.
+// Continue until one list is exhausted.
+// Attach the remaining nodes of the non-empty list.
+// Return dummy.next as the head of merged list.
+
+// Time Complexity: O(n + m)
+// Space Complexity: O(1)
+
 /**
  * Definition for singly-linked list.
  * public class ListNode {
