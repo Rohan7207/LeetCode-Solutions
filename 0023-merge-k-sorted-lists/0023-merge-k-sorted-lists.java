@@ -1,3 +1,20 @@
+// Problem: Merge k Sorted Lists
+// Link: https://leetcode.com/problems/merge-k-sorted-lists/
+// Difficulty: Hard
+
+// Approach:
+// Use a min-heap (priority queue) to efficiently merge k sorted lists.
+// Add the head of each list to the heap.
+// While the heap is not empty:
+//   - Extract the smallest node from the heap.
+//   - Add it to the result list.
+//   - If the extracted node has a next node, add it to the heap.
+// Continue until all nodes are processed.
+// Return dummy.next as the head of the merged list.
+
+// Time Complexity: O(N log k)
+// Space Complexity: O(k)
+
 /**
  * Definition for singly-linked list.
  * public class ListNode {
@@ -39,6 +56,3 @@ class Solution {
         return dummy.next;
     }
 }
-
-
-//Used to store value and adjusts itself when smaller value enter the queue
