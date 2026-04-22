@@ -11,6 +11,7 @@
 | [0014-longest-common-prefix](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0014-longest-common-prefix) |
 | [0015-3sum](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0015-3sum) |
 | [0018-4sum](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0018-4sum) |
+| [0026-remove-duplicates-from-sorted-array](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0026-remove-duplicates-from-sorted-array) |
 | [1848-minimum-distance-to-the-target-element](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1848-minimum-distance-to-the-target-element) |
 | [1995-count-special-quadruplets](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1995-count-special-quadruplets) |
 | [2078-two-furthest-houses-with-different-colors](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2078-two-furthest-houses-with-different-colors) |
@@ -80,6 +81,7 @@
 | [0015-3sum](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0015-3sum) |
 | [0018-4sum](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0018-4sum) |
 | [0019-remove-nth-node-from-end-of-list](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0019-remove-nth-node-from-end-of-list) |
+| [0026-remove-duplicates-from-sorted-array](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0026-remove-duplicates-from-sorted-array) |
 ## Dynamic Programming
 |  |
 | ------- |
