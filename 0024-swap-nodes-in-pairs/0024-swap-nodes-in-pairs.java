@@ -1,3 +1,20 @@
+// Problem: Swap Nodes in Pairs
+// Link: https://leetcode.com/problems/swap-nodes-in-pairs/
+// Difficulty: Medium
+
+// Approach:
+// Use pointers to swap nodes in pairs.
+// Store the second node as the new head after the first swap.
+// For each pair:
+//   - Store the next pair starting node.
+//   - Reverse the links between the two nodes.
+//   - Connect the previous swapped pair to the current swapped pair.
+// Move pointers forward and continue until fewer than two nodes remain.
+// Return the updated head.
+
+// Time Complexity: O(n)
+// Space Complexity: O(1)
+
 /**
  * Definition for singly-linked list.
  * public class ListNode {
