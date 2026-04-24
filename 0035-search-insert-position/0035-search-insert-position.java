@@ -1,3 +1,14 @@
+// Problem: Search Insert Position
+// Link: https://leetcode.com/problems/search-insert-position/
+// Difficulty: Easy
+
+// Approach:
+// Use binary search to find the target;
+// if not found, return the position where it should be inserted.
+
+// Time Complexity: O(log n)
+// Space Complexity: O(1)
+
 class Solution {
     public int searchInsert(int[] nums, int target) {
         int high = nums.length - 1;
