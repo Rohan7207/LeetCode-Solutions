@@ -1,3 +1,21 @@
+// Problem: Find First and Last Position of Element in Sorted Array
+// Link: https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/
+// Difficulty: Medium
+
+// Approach:
+// Use binary search to find the first and last occurrence of the target.
+// Create a helper function findIndex() to search for either the first
+// or last occurrence based on a flag.
+// During binary search:
+//     - If target is found:
+//         - For first occurrence, continue searching on the left side.
+//         - For last occurrence, continue searching on the right side.
+//     - Otherwise, move left or right pointers based on comparison with target.
+// Return [-1, -1] if the target is not found.
+
+// Time Complexity: O(log n)
+// Space Complexity: O(1)
+
 class Solution {
     public int[] searchRange(int[] nums, int target) {
         int firstOccurance = findIndex(nums, target, true);
