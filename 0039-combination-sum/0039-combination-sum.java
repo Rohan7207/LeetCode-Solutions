@@ -1,11 +1,24 @@
+// Problem: Combination Sum
+// Link: https://leetcode.com/problems/combination-sum/
+// Diffoculty: Medium
+
+// Approach:
+// Use backtracking to generate all possible combinations.
+// Start from a given index to avoid duplicate combinations.
+// For each candidate:
+//     - Add the candidate to the current combination.
+//     - Recursively call the function with
+//       target - candidate value.
+//     - Reuse the same index since elements can be chosen multiple times.
+//     - Backtrack by removing the last added element.
+// If target becomes 0, add the current combination to the result.
+// If target becomes negative, stop exploring that path.
+
+// Time Complexity: Exponential (depends on number of combinations)
+// Space Complexity: O(target)   // recursion stack
+
 class Solution {
     public List<List<Integer>> combinationSum(int[] candidates, int target) {
-        /*At any point if sum is < target then we can go ahead,if sum=target
-        then return that combination into list and if sum > target then return
-        there is no point to go ahead
-        time = O(n^t) n= no.of candidates t=total amount like if there is 2
-        we can use 2 until target is achieved*/
-
         List<List<Integer>> res = new ArrayList<>();
         backtrack(res, candidates, target, new ArrayList<>(), 0);
         return res;
