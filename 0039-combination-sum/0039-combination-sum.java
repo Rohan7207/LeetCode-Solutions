@@ -1,6 +1,6 @@
 // Problem: Combination Sum
 // Link: https://leetcode.com/problems/combination-sum/
-// Diffoculty: Medium
+// Difficulty: Medium
 
 // Approach:
 // Use backtracking to generate all possible combinations.
