@@ -1,3 +1,23 @@
+// Problem: Combination Sum II
+// Link: https://leetcode.com/problems/combination-sum-ii/
+// Difficulty: Medium
+
+// Approach:
+// Sort the array to handle duplicates efficiently.
+// Use backtracking to generate unique combinations.
+// Iterate through the candidates starting from the current index:
+//     - Skip duplicate elements to avoid repeated combinations.
+//     - Add the current element to the combination.
+//     - Recursively call the function for the remaining target
+//       using the next index since each element can be used only once.
+//     - Backtrack by removing the last added element.
+// If the target becomes 0, add the current combination to the result.
+// If the target becomes negative, stop exploring that path.
+
+// Time Complexity: Exponential
+// Space Complexity: O(n)
+
+
 class Solution {
     public List<List<Integer>> combinationSum2(int[] candidates, int target) {
         List<List<Integer>> res = new ArrayList<>();
