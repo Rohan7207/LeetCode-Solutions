@@ -7,11 +7,9 @@
 // 2. Expand the window and remove duplicates by shifting left pointer
 // 3. Track the maximum length without repeating the characters
 
-// Time Complexity:
-// O(n)
+// Time Complexity: O(n)
 
-// Space Complexity:
-// O(1) — assuming ASCII character set
+// Space Complexity: O(1) — assuming ASCII character set
 
 
 class Solution {
