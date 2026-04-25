@@ -1,3 +1,24 @@
+// Problem: Sudoku Solver
+// Link: https://leetcode.com/problems/sudoku-solver/
+// Diffoculty: Hard
+
+// Approach:
+// Use backtracking to solve the Sudoku board.
+// Traverse the board cell by cell.
+//     - If the current cell is already filled, move to the next cell.
+//     - Otherwise, try placing digits from 1 to 9.
+// For each digit:
+//     - Check whether placing the digit is valid by verifying:
+//         - the current row
+//         - the current column
+//         - the corresponding 3x3 subgrid
+//     - If valid, place the digit and recursively solve the next cell.
+//     - If the solution path fails, backtrack by resetting the cell to '.'.
+// Continue until all cells are filled successfully.
+
+// Time Complexity: O(9^(empty cells))
+// Space Complexity: O(empty cells)   // recursion stack
+
 class Solution {
     public void solveSudoku(char[][] board) {
         helper(board, 0, 0);
