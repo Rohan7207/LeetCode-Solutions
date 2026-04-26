@@ -1,3 +1,23 @@
+// Problem: Permutations II
+// Link: https://leetcode.com/problems/permutations-ii/
+// Difficulty: Medium
+
+// Approach:
+// Use backtracking with swapping to generate permutations.
+// At each recursion level, use a HashSet to track
+// elements already used for the current position.
+// Iterate from current index to end:
+//     - Skip the element if it already exists in the HashSet
+//       to avoid duplicate permutations.
+//     - Add the element to the HashSet.
+//     - Swap the current element with the current index.
+//     - Recursively generate permutations for the next index.
+//     - Backtrack by swapping again to restore the array.
+// When all positions are fixed, add the permutation to result.
+
+// Time Complexity: O(n * n!)
+// Space Complexity: O(n)
+
 class Solution {
     public List<List<Integer>> permuteUnique(int[] nums) {
         List<List<Integer>> res = new ArrayList<>();
@@ -35,32 +55,3 @@ class Solution {
         nums[j] = temp;
     }
 }
-
-/*
-    Another approach:
-        List<List<Integer>> res  = new ArrayList<>();
-        Arrays.sort(nums);
-        boolean[] used = new boolean[nums.length];
-        backtrack(res, new ArrayList<>(), used, nums);
-        return res;
-    
-
-    private void backtrack(List<List<Integer>> res, List<Integer> curr, boolean[] used, int[] nums){
-        if(curr.size() == nums.length){
-            res.add(new ArrayList<>(curr));
-            return;
-        }
-
-        for(int i = 0; i < nums.length; i++){
-            //!used[i - 1]=the previous element was not included while built of combination
-            //and used[i]=if we've already used this specific element in our current path 
-            if((i > 0 && nums[i] == nums[i - 1]) && !used[i - 1] || used[i]) continue;  
-            curr.add(nums[i]);
-            used[i] = true;
-            backtrack(res, curr, used, nums);
-            used[i] = false;
-            curr.remove(curr.size() - 1);
-        }
-    }
-
-*/
