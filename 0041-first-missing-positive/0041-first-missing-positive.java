@@ -1,3 +1,22 @@
+// Problem: First Missing Positive
+// Link: https://leetcode.com/problems/first-missing-positive/
+// Difficulty: Hard
+
+// Approach:
+// Place each positive number at its correct index.
+// For a number x, its correct position is index x - 1.
+// Traverse the array:
+//     - If the current number is in the range [1, n]
+//       and is not already placed correctly,
+//       swap it with the element at its correct index.
+// After rearranging the array, traverse it again:
+//     - The first index where nums[i] != i + 1
+//       gives the first missing positive number.
+// If all positions are correct, return n + 1.
+
+// Time Complexity: O(n)
+// Space Complexity: O(1)
+
 class Solution {
     public int firstMissingPositive(int[] nums) {
         // O(n) and O(1) = index placement / cyclic sort idea
@@ -25,46 +44,3 @@ class Solution {
         return nums.length + 1;
     }
 }
-
-/*
-
-        Why return n + 1?
-
-        Example: [1,2,3]
-        All numbers: 1 to n exist.
-        So missing number becomes: n + 1 = 4
-
-        Time: O(n) and O(n)
-
-        int n = nums.length;
-        boolean[] found = new boolean[n + 1];
-
-        for (int i = 0; i < n; i++) {
-            if (nums[i] > 0 && nums[i] <= n) {
-                found[nums[i]] = true; //it makes found[that num is found  and marks true]
-            }
-        }
-
-        for (int i = 1; i <= n; i++) {
-            if (!found[i]) {
-                return i; //if in found array any positive num is false return that num
-            }
-        }
-
-        return n + 1; //returns last num
-
-        Another approach:
-
-        Set<Integer> set = new HashSet<>();
-        
-        for (int i : nums) {
-            set.add(i);
-        }
-
-        int i = 1;
-        while (set.contains(i)) {
-            i++;
-        }
-
-        return i;
-*/
