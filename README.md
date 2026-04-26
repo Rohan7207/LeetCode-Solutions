@@ -23,6 +23,7 @@
 | [0040-combination-sum-ii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0040-combination-sum-ii) |
 | [0041-first-missing-positive](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0041-first-missing-positive) |
 | [0042-trapping-rain-water](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0042-trapping-rain-water) |
+| [0045-jump-game-ii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0045-jump-game-ii) |
 | [1848-minimum-distance-to-the-target-element](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1848-minimum-distance-to-the-target-element) |
 | [1995-count-special-quadruplets](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1995-count-special-quadruplets) |
 | [2078-two-furthest-houses-with-different-colors](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2078-two-furthest-houses-with-different-colors) |
@@ -118,6 +119,7 @@
 | [0022-generate-parentheses](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0022-generate-parentheses) |
 | [0032-longest-valid-parentheses](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0032-longest-valid-parentheses) |
 | [0042-trapping-rain-water](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0042-trapping-rain-water) |
+| [0045-jump-game-ii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0045-jump-game-ii) |
 ## Trie
 |  |
 | ------- |
@@ -143,6 +145,7 @@
 |  |
 | ------- |
 | [0011-container-with-most-water](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0011-container-with-most-water) |
+| [0045-jump-game-ii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0045-jump-game-ii) |
 | [2078-two-furthest-houses-with-different-colors](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2078-two-furthest-houses-with-different-colors) |
 ## Stack
 |  |
