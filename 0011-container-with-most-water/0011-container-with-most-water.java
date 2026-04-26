@@ -8,14 +8,13 @@ class Solution {
         while(left < right) {
             int width = right - left;
             int heightofLine = Math.min(height[left], height[right]);
-            int area = width * heightofLine;
+            maxArea = Math.max(maxArea, (heightofLine * width));
 
-            maxArea = Math.max(maxArea, area);
-
-            if(height[left] <= height[right]) left++;
-            else right--;
+            while(left < right && height[left] <= heightofLine) left++;
+            while(left < right && height[right] <= heightofLine) right--;
         }
 
         return maxArea;
     }
 }
+
