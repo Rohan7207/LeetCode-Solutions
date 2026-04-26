@@ -1,11 +1,29 @@
+// Problem: Multiply Strings
+// Link: https://leetcode.com/problems/multiply-strings/
+// Difficulty: Medium
+
+// Approach:
+// Simulate manual multiplication used in mathematics.
+// Create a result array of size num1.length + num2.length
+// to store multiplication results and carries.
+// Traverse both strings from right to left:
+//     - Convert characters into digits.
+//     - Multiply the digits.
+//     - Add the multiplication result to the appropriate
+//       positions in the result array.
+//     - Store remainder at current position
+//       and carry at previous position.
+// After processing all digits, build the final string
+// by skipping leading zeros.
+// Return the resulting string.
+
+// Time Complexity: O(n * m)
+// Space Complexity: O(n + m)
+
+
 class Solution {
     public String multiply(String num1, String num2) {
-        //product is stored in i+j+1 and carry is stored in i+j and results
-        // are stored in array and get sum of it since we multiply one value
-        //of num2 with all no.s in num1
-        //Time = O(n1*n2) and space = O(n1 + n2)
-
-        //It any one of no. is 0 return 0
+        //If any one of no. is "0" return 0
         if (num1.equals("0") || num2.equals("0")) return "0";
 
         //Array to hold result of multiplication
