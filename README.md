@@ -25,6 +25,7 @@
 | [0042-trapping-rain-water](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0042-trapping-rain-water) |
 | [0045-jump-game-ii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0045-jump-game-ii) |
 | [0046-permutations](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0046-permutations) |
+| [0047-permutations-ii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0047-permutations-ii) |
 | [1848-minimum-distance-to-the-target-element](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1848-minimum-distance-to-the-target-element) |
 | [1995-count-special-quadruplets](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1995-count-special-quadruplets) |
 | [2078-two-furthest-houses-with-different-colors](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2078-two-furthest-houses-with-different-colors) |
@@ -130,6 +131,7 @@
 | ------- |
 | [0015-3sum](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0015-3sum) |
 | [0018-4sum](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0018-4sum) |
+| [0047-permutations-ii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0047-permutations-ii) |
 ## Backtracking
 |  |
 | ------- |
@@ -139,6 +141,7 @@
 | [0039-combination-sum](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0039-combination-sum) |
 | [0040-combination-sum-ii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0040-combination-sum-ii) |
 | [0046-permutations](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0046-permutations) |
+| [0047-permutations-ii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0047-permutations-ii) |
 ## Enumeration
 |  |
 | ------- |
