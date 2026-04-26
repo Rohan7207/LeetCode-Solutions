@@ -1,3 +1,25 @@
+// Problem: Trapping Rain Water
+// Link: https://leetcode.com/problems/trapping-rain-water/
+// Difficulty: Hard
+
+// Approach:
+// Use two pointers to calculate trapped rain water efficiently.
+// Maintain two pointers at the leftmost and rightmost positions,
+// along with leftMax and rightMax heights.
+// Traverse while left pointer is less than right pointer:
+//     - If left height is smaller than right height:
+//         - Update leftMax if current height is greater.
+//         - Otherwise, trapped water is leftMax - current height.
+//         - Move left pointer forward.
+//     - Otherwise:
+//         - Update rightMax if current height is greater.
+//         - Otherwise, trapped water is rightMax - current height.
+//         - Move right pointer backward.
+// Return the total trapped water.
+
+// Time Complexity: O(n)
+// Space Complexity: O(1)
+
 class Solution {
     public int trap(int[] height) {
         int left = 0, right = height.length - 1;
@@ -27,26 +49,3 @@ class Solution {
         return water;
     }
 }
-
-/*
-     //min(leftmax, rightmax) - height[i]
-
-        int left = 0, right = height.length - 1;
-        int lmax = 0, rmax = 0;
-        int ans = 0;
-
-        while (left < right) {
-            lmax = Math.max(lmax, height[left]);
-            rmax = Math.max(rmax, height[right]);
-
-            if (lmax < rmax) {
-                ans += lmax - height[left];
-                left++;
-            } else {
-                ans += rmax - height[right];
-                right--;
-            }
-        }
-
-        return ans;
-*/
