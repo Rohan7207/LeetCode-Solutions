@@ -27,6 +27,7 @@
 | [0046-permutations](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0046-permutations) |
 | [0047-permutations-ii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0047-permutations-ii) |
 | [0048-rotate-image](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0048-rotate-image) |
+| [0051-n-queens](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0051-n-queens) |
 | [1848-minimum-distance-to-the-target-element](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1848-minimum-distance-to-the-target-element) |
 | [1995-count-special-quadruplets](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1995-count-special-quadruplets) |
 | [2078-two-furthest-houses-with-different-colors](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2078-two-furthest-houses-with-different-colors) |
@@ -146,6 +147,7 @@
 | [0040-combination-sum-ii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0040-combination-sum-ii) |
 | [0046-permutations](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0046-permutations) |
 | [0047-permutations-ii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0047-permutations-ii) |
+| [0051-n-queens](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0051-n-queens) |
 ## Enumeration
 |  |
 | ------- |
