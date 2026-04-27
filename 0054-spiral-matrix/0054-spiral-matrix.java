@@ -2,7 +2,6 @@
 // Link: https://leetcode.com/problems/spiral-matrix/
 // Difficulty: Medium
 
-
 // Approach:
 // Use four boundaries to traverse the matrix in spiral order.
 // Maintain:
