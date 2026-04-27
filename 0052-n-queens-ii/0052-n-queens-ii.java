@@ -1,3 +1,23 @@
+// Problem: N-Queens II
+// Link: https://leetcode.com/problems/n-queens-ii/
+// Difficulty: Hard
+
+// Approach:
+// Use backtracking to place one queen in each row.
+// Track occupied columns and diagonals using boolean arrays:
+//     - cols[col] → checks whether a column already has a queen.
+//     - d1[row + col] → checks anti-diagonals (/).
+//     - d2[row - col + n] → checks main diagonals (\).
+// For each row, try placing a queen in every column:
+//     - Skip positions where column or diagonals are occupied.
+//     - Mark the column and diagonals as occupied.
+//     - Recursively move to the next row.
+//     - Backtrack by unmarking the column and diagonals.
+// When all rows are filled, increment the solution count.
+
+// Time Complexity: O(N!)
+// Space Complexity: O(N)
+
 class Solution {
     private int count = 0;
 
@@ -36,28 +56,3 @@ class Solution {
         }
     }
 }
-
-/*
-    int count=0;
-    int[] arr;
-    public boolean issafe(int row,int col){
-        for(int i=0;i<row;i++){
-            if(arr[i]==col || Math.abs(row-i)==Math.abs(col-arr[i]))
-                return false;
-        }
-        return true;
-    }
-
-    public void helper(int row,int n){
-        if(row==n){
-            count++;
-            return;
-        }
-        for(int col=0;col<n;col++){
-            if(issafe(row,col)){
-                arr[row]=col;
-                helper(row+1,n);
-            }
-        }
-    }
-*/
