@@ -1,3 +1,27 @@
+// Problem: Spiral Matrix
+// Link: https://leetcode.com/problems/spiral-matrix/
+// Difficulty: Medium
+
+
+// Approach:
+// Use four boundaries to traverse the matrix in spiral order.
+// Maintain:
+//     - top row boundary (k)
+//     - bottom row boundary (r)
+//     - left column boundary (l)
+//     - right column boundary (c)
+// Traverse the matrix in four directions repeatedly:
+//     - Left to Right
+//     - Top to Bottom
+//     - Right to Left
+//     - Bottom to Top
+// After each traversal, update the corresponding boundary.
+// Continue until all rows and columns are traversed.
+
+// Time Complexity: O(m * n)
+// Space Complexity: O(1) (excluding output list)
+
+
 class Solution {
     public List<Integer> spiralmatrix(int[][] matrix, List<Integer> res, int r, int c) {
         int i;
