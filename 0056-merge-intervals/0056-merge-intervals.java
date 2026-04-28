@@ -1,17 +1,19 @@
 class Solution {
     public int[][] merge(int[][] intervals) {
-        Arrays.sort(intervals, (a, b) -> Integer.compare(a[0], b[0]));
-        LinkedList<int[]> res = new LinkedList<>();
+        Arrays.sort(intervals, (a, b) -> a[0] == b[0] ? Integer.compare(a[1], b[1]) : Integer.compare(a[0], b[0]));
 
-        for (int[] interval : intervals) {
-            if (res.isEmpty() || res.getLast()[1] < interval[0]) {
-                res.add(interval);
+        int l = 0;
+
+        for (int i = 1; i < intervals.length; i++) {
+            if (intervals[l][1] < intervals[i][0]) {
+                intervals[++l][0] = intervals[i][0];
+                intervals[l][1] = intervals[i][1];
             } else {
-                res.getLast()[1] = Math.max(res.getLast()[1], interval[1]);
+                intervals[l][1] = Math.max(intervals[l][1], intervals[i][1]);
             }
         }
 
-        return res.toArray(new int[res.size()][]);
+        return Arrays.copyOfRange(intervals, 0, l + 1);
     }
 }
 
@@ -25,4 +27,17 @@ Consider [[2,5],[4,6],[7,9],[11,15],[13,16]] that is after sorting
 4. 13<15, there is overlap gives 11 16 added to res
 
 Time = O(nlogn) and Space =  O(n) 
+
+    Arrays.sort(intervals, (a, b) -> Integer.compare(a[0], b[0]));
+        LinkedList<int[]> res = new LinkedList<>();
+
+        for (int[] interval : intervals) {
+            if (res.isEmpty() || res.getLast()[1] < interval[0]) {
+                res.add(interval);
+            } else {
+                res.getLast()[1] = Math.max(res.getLast()[1], interval[1]);
+            }
+        }
+
+        return res.toArray(new int[res.size()][]);
 */
