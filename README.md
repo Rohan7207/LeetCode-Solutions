@@ -30,6 +30,7 @@
 | [0051-n-queens](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0051-n-queens) |
 | [0053-maximum-subarray](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0053-maximum-subarray) |
 | [0054-spiral-matrix](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0054-spiral-matrix) |
+| [0055-jump-game](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0055-jump-game) |
 | [1848-minimum-distance-to-the-target-element](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1848-minimum-distance-to-the-target-element) |
 | [1995-count-special-quadruplets](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1995-count-special-quadruplets) |
 | [2078-two-furthest-houses-with-different-colors](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2078-two-furthest-houses-with-different-colors) |
@@ -131,6 +132,7 @@
 | [0042-trapping-rain-water](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0042-trapping-rain-water) |
 | [0045-jump-game-ii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0045-jump-game-ii) |
 | [0053-maximum-subarray](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0053-maximum-subarray) |
+| [0055-jump-game](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0055-jump-game) |
 ## Trie
 |  |
 | ------- |
@@ -162,6 +164,7 @@
 | ------- |
 | [0011-container-with-most-water](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0011-container-with-most-water) |
 | [0045-jump-game-ii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0045-jump-game-ii) |
+| [0055-jump-game](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0055-jump-game) |
 | [2078-two-furthest-houses-with-different-colors](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2078-two-furthest-houses-with-different-colors) |
 ## Stack
 |  |
