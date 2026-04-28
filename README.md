@@ -32,6 +32,7 @@
 | [0054-spiral-matrix](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0054-spiral-matrix) |
 | [0055-jump-game](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0055-jump-game) |
 | [0056-merge-intervals](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0056-merge-intervals) |
+| [0057-insert-interval](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0057-insert-interval) |
 | [1848-minimum-distance-to-the-target-element](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1848-minimum-distance-to-the-target-element) |
 | [1995-count-special-quadruplets](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1995-count-special-quadruplets) |
 | [2078-two-furthest-houses-with-different-colors](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2078-two-furthest-houses-with-different-colors) |
