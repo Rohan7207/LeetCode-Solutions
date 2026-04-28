@@ -94,6 +94,7 @@
 | [0028-find-the-index-of-the-first-occurrence-in-a-string](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0028-find-the-index-of-the-first-occurrence-in-a-string) |
 | [0032-longest-valid-parentheses](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0032-longest-valid-parentheses) |
 | [0043-multiply-strings](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0043-multiply-strings) |
+| [0058-length-of-last-word](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0058-length-of-last-word) |
 | [2833-furthest-point-from-origin](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2833-furthest-point-from-origin) |
 ## Sliding Window
 |  |
