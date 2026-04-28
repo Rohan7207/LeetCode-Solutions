@@ -1,3 +1,21 @@
+// Problem: Insert Interval
+// Link: https://leetcode.com/problems/insert-interval/
+// Difficulty: Medium
+
+// Approach:
+// Traverse the intervals and insert the new interval
+// in the correct position.
+// First, add all intervals that end before the new interval starts.
+// Then merge all overlapping intervals by updating
+// the start and end of the new interval.
+// Add the merged interval to the result.
+// Finally, add all remaining intervals.
+// Convert the result list into a 2D array and return it.
+
+// Time Complexity: O(n)
+// Space Complexity: O(n)
+
+
 class Solution {
     public int[][] insert(int[][] intervals, int[] newInterval) {
         //Solution 2 with O(n)
@@ -21,7 +39,7 @@ class Solution {
 
         res.add(newInterval); //Add new interval at current position
 
-        //Add all intervals after new interval
+        //Add all intervals after merged interval
         while (i < n) {
             res.add(intervals[i]);
             i++;
@@ -30,31 +48,3 @@ class Solution {
         return res.toArray(new int[res.size()][]);
     }
 }
-
-/*
-solution 1
-    //O(nlogn) and O(n)
-    This line appends newInterval to the list intervals. By doing this, we add the new interval into the list to handle it like the other intervals.
-    This line sorts the intervals list in ascending order based on the starting times of each interval. Sorting allows us to process overlapping intervals in order, making it easier to merge them. 
-
-    List<int[]> intervalList = new ArrayList<>(Arrays.asList(intervals));
-    intervalList.add(newInterval);
-    Collections.sort(intervalList, (a, b) -> Integer.compare(a[0], b[0]));
-
-    List<int[]> res = new ArrayList<>();
-    int[] current = intervalList.get(0);
-
-    for(int i = 1; i < intervalList.size(); i++){
-        int[] interval = intervalList.get(i);
-
-        if(current[1] >= interval[0]){
-            current[1] = Math.max(current[1], interval[1]);
-        }else{
-            res.add(current);
-            current = interval;
-        }
-    }
-
-    res.add(current);
-    return res.toArray(new int[res.size()][]);
-*/
