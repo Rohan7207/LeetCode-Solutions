@@ -1,5 +1,5 @@
 // Problem: Rotate List
-// Link:https://leetcode.com/problems/rotate-list/
+// Link: https://leetcode.com/problems/rotate-list/
 // Difficulty: Medium
 
 // Approach:
