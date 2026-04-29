@@ -69,6 +69,7 @@
 | [0043-multiply-strings](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0043-multiply-strings) |
 | [0048-rotate-image](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0048-rotate-image) |
 | [0050-powx-n](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0050-powx-n) |
+| [0062-unique-paths](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0062-unique-paths) |
 | [3783-mirror-distance-of-an-integer](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3783-mirror-distance-of-an-integer) |
 ## Recursion
 |  |
@@ -138,6 +139,7 @@
 | [0045-jump-game-ii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0045-jump-game-ii) |
 | [0053-maximum-subarray](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0053-maximum-subarray) |
 | [0055-jump-game](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0055-jump-game) |
+| [0062-unique-paths](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0062-unique-paths) |
 ## Trie
 |  |
 | ------- |
@@ -210,4 +212,8 @@
 | ------- |
 | [0043-multiply-strings](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0043-multiply-strings) |
 | [0054-spiral-matrix](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0054-spiral-matrix) |
+## Combinatorics
+|  |
+| ------- |
+| [0062-unique-paths](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0062-unique-paths) |
 <!---LeetCode Topics End-->
