@@ -1,5 +1,6 @@
 class Solution {
     public int uniquePaths(int m, int n) {
+        // O(n^2) and O(n^2)
         int[][] grid = new int[m][n];
 
         for (int[] row : grid) {
