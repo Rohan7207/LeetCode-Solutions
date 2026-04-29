@@ -1,20 +1,17 @@
 class Solution {
     public int uniquePaths(int m, int n) {
-        // O(n^2) and O(n^2)
-        int[][] grid = new int[m][n];
+        int[] dp = new int[n];
 
-        for (int[] row : grid) {
-            Arrays.fill(row, 1);
-        }
+        Arrays.fill(dp, 1);
 
         for (int i = 1; i < m; i++) {
             for (int j = 1; j < n; j++) {
-                grid[i][j] = grid[i - 1][j] + grid[i][j - 1]; 
-            } 
-        } 
+                dp[j] += dp[j - 1];
+            }
+        }
 
-        return grid[m - 1][n - 1];
+        return dp[n - 1];
     }
 }
 
-// In line no. 11 Checks the previous left and above since we have to  travel right and down to reach that position
+// “I optimize the DP solution by using a single array where each element stores paths from the top and left for the current row.”
