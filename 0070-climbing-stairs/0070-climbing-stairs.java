@@ -1,3 +1,19 @@
+// Problem: Climbing Stairs
+// Link: https://leetcode.com/problems/climbing-stairs/
+// Difficulty: Easy
+
+// Approach:
+// Use dynamic programming with two variables
+// to store the previous two staircase counts.
+// For each step, calculate the current number
+// of ways as the sum of the previous two values.
+// Update the variables and continue until n.
+// Return the final number of ways.
+
+// Time Complexity: O(n)
+// Space Complexity: O(1)
+
+
 class Solution {
     public int climbStairs(int n) {
         if (n == 0 || n == 1) return 1;
@@ -14,13 +30,3 @@ class Solution {
         return prev1;
     }
 }
-
-/*
-    Initialize two variables to represent no.of  ways to reach step 0 and step 1
-    //Iterate from step 2 to n
-    //no.of ways to reach current step
-    //update prev2 to previous step
-    //Update prev1 to current step
-
-    // answer is no.of ways to reach nth step
-*/
