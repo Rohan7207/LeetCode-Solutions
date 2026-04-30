@@ -1,3 +1,24 @@
+// Problem: Add Binary
+// Link: https://leetcode.com/problems/add-binary/
+// Difficulty: Easy
+
+// Approach:
+// Use two pointers starting from the end of both strings
+// to simulate binary addition from right to left.
+// Maintain a carry value during addition.
+// Repeat while either string still has digits
+// or carry exists:
+//     - Add carry to current sum.
+//     - Add current digit from string a if available.
+//     - Add current digit from string b if available.
+//     - Append sum % 2 to the result
+//       because binary digits can only be 0 or 1.
+//     - Update carry using sum / 2.
+// Reverse the result string and return it.
+
+// Time Complexity: O(max(n, m))
+// Space Complexity: O(max(n, m))
+
 class Solution {
     public String addBinary(String a, String b) {
         StringBuilder res = new StringBuilder();
