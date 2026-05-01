@@ -1,3 +1,20 @@
+// Problem: Remove Duplicates From Sorted List 
+// Link: https://leetcode.com/problems/remove-duplicates-from-sorted-list/
+// Difficulty: Easy
+
+// Approach:
+// Use a pointer curr starting from head.
+// Traverse the linked list while curr
+// and curr.next are not null:
+//     - If curr and curr.next have the same value,
+//       remove the duplicate node by linking
+//       curr.next to curr.next.next.
+//     - Otherwise move curr to the next node.
+// Return the head of the modified list.
+
+// Time Complexity: O(n)
+// Space Complexity: O(1)
+
 /**
  * Definition for singly-linked list.
  * public class ListNode {
