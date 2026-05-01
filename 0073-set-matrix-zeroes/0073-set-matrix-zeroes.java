@@ -6,10 +6,10 @@ class Solution {
 
         //Mark the position of 0 in first row and col 
         for (int i = 0; i < r; i++) {
+            //First col is checked above
             if (matrix[i][0] == 0) {
                 firstCol = true;
             }
-            //First col is checked above
             for (int j = 1; j < c; j++) {
                 if (matrix[i][j] == 0) {
                     matrix[i][0] = 0;
