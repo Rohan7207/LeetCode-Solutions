@@ -37,6 +37,7 @@
 | [0066-plus-one](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0066-plus-one) |
 | [0073-set-matrix-zeroes](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0073-set-matrix-zeroes) |
 | [0074-search-a-2d-matrix](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0074-search-a-2d-matrix) |
+| [0075-sort-colors](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0075-sort-colors) |
 | [1848-minimum-distance-to-the-target-element](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1848-minimum-distance-to-the-target-element) |
 | [1995-count-special-quadruplets](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1995-count-special-quadruplets) |
 | [2078-two-furthest-houses-with-different-colors](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2078-two-furthest-houses-with-different-colors) |
@@ -140,6 +141,7 @@
 | [0028-find-the-index-of-the-first-occurrence-in-a-string](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0028-find-the-index-of-the-first-occurrence-in-a-string) |
 | [0042-trapping-rain-water](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0042-trapping-rain-water) |
 | [0061-rotate-list](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0061-rotate-list) |
+| [0075-sort-colors](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0075-sort-colors) |
 ## Dynamic Programming
 |  |
 | ------- |
@@ -165,6 +167,7 @@
 | [0018-4sum](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0018-4sum) |
 | [0047-permutations-ii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0047-permutations-ii) |
 | [0056-merge-intervals](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0056-merge-intervals) |
+| [0075-sort-colors](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0075-sort-colors) |
 ## Backtracking
 |  |
 | ------- |
