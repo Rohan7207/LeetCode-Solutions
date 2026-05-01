@@ -1,3 +1,30 @@
+// Problem: Sort Colors
+// Link: https://leetcode.com/problems/sort-colors/
+// Difficulty: Medium
+
+// Approach:
+// Use the Dutch National Flag Algorithm
+// to sort the array in one pass.
+// Maintain three pointers:
+//     - low  -> position for 0
+//     - mid  -> current element
+//     - high -> position for 2
+// Traverse the array while mid <= high:
+//     - If nums[mid] == 0:
+//           swap nums[low] and nums[mid]
+//           increment low and mid
+//     - If nums[mid] == 1:
+//           increment mid
+//     - If nums[mid] == 2:
+//           swap nums[mid] and nums[high]
+//           decrement high
+//           do not increment mid because
+//           swapped value needs checking
+
+// Time Complexity: O(n)
+// Space Complexity: O(1)
+
+
 class Solution {
     public void sortColors(int[] nums) {
         int n = nums.length;
@@ -18,11 +45,3 @@ class Solution {
         }
     }
 }
-
-/*
-    Dutch National Flag Algorithm 
-    0's = 0 to low - 1
-    1's = low to mid - 1
-    2's = high + 1 to n - 1
-    unsorted ele = mid to high 
-*/
