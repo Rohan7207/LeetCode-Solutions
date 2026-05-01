@@ -41,6 +41,7 @@
 | [0078-subsets](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0078-subsets) |
 | [0079-word-search](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0079-word-search) |
 | [0081-search-in-rotated-sorted-array-ii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0081-search-in-rotated-sorted-array-ii) |
+| [0088-merge-sorted-array](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0088-merge-sorted-array) |
 | [1848-minimum-distance-to-the-target-element](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1848-minimum-distance-to-the-target-element) |
 | [1995-count-special-quadruplets](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1995-count-special-quadruplets) |
 | [2078-two-furthest-houses-with-different-colors](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2078-two-furthest-houses-with-different-colors) |
@@ -150,6 +151,7 @@
 | [0061-rotate-list](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0061-rotate-list) |
 | [0075-sort-colors](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0075-sort-colors) |
 | [0082-remove-duplicates-from-sorted-list-ii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0082-remove-duplicates-from-sorted-list-ii) |
+| [0088-merge-sorted-array](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0088-merge-sorted-array) |
 ## Dynamic Programming
 |  |
 | ------- |
@@ -176,6 +178,7 @@
 | [0047-permutations-ii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0047-permutations-ii) |
 | [0056-merge-intervals](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0056-merge-intervals) |
 | [0075-sort-colors](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0075-sort-colors) |
+| [0088-merge-sorted-array](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0088-merge-sorted-array) |
 ## Backtracking
 |  |
 | ------- |
