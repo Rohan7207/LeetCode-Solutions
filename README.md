@@ -38,6 +38,7 @@
 | [0073-set-matrix-zeroes](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0073-set-matrix-zeroes) |
 | [0074-search-a-2d-matrix](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0074-search-a-2d-matrix) |
 | [0075-sort-colors](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0075-sort-colors) |
+| [0078-subsets](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0078-subsets) |
 | [1848-minimum-distance-to-the-target-element](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1848-minimum-distance-to-the-target-element) |
 | [1995-count-special-quadruplets](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1995-count-special-quadruplets) |
 | [2078-two-furthest-houses-with-different-colors](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2078-two-furthest-houses-with-different-colors) |
@@ -180,6 +181,7 @@
 | [0047-permutations-ii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0047-permutations-ii) |
 | [0051-n-queens](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0051-n-queens) |
 | [0052-n-queens-ii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0052-n-queens-ii) |
+| [0078-subsets](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0078-subsets) |
 ## Enumeration
 |  |
 | ------- |
@@ -241,6 +243,7 @@
 |  |
 | ------- |
 | [0067-add-binary](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0067-add-binary) |
+| [0078-subsets](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0078-subsets) |
 ## Memoization
 |  |
 | ------- |
