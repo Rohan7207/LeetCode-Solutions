@@ -67,6 +67,7 @@
 | [0024-swap-nodes-in-pairs](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0024-swap-nodes-in-pairs) |
 | [0025-reverse-nodes-in-k-group](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0025-reverse-nodes-in-k-group) |
 | [0061-rotate-list](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0061-rotate-list) |
+| [0082-remove-duplicates-from-sorted-list-ii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0082-remove-duplicates-from-sorted-list-ii) |
 ## Math
 |  |
 | ------- |
@@ -147,6 +148,7 @@
 | [0042-trapping-rain-water](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0042-trapping-rain-water) |
 | [0061-rotate-list](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0061-rotate-list) |
 | [0075-sort-colors](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0075-sort-colors) |
+| [0082-remove-duplicates-from-sorted-list-ii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0082-remove-duplicates-from-sorted-list-ii) |
 ## Dynamic Programming
 |  |
 | ------- |
