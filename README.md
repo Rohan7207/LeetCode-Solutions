@@ -36,6 +36,7 @@
 | [0063-unique-paths-ii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0063-unique-paths-ii) |
 | [0066-plus-one](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0066-plus-one) |
 | [0073-set-matrix-zeroes](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0073-set-matrix-zeroes) |
+| [0074-search-a-2d-matrix](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0074-search-a-2d-matrix) |
 | [1848-minimum-distance-to-the-target-element](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1848-minimum-distance-to-the-target-element) |
 | [1995-count-special-quadruplets](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1995-count-special-quadruplets) |
 | [2078-two-furthest-houses-with-different-colors](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2078-two-furthest-houses-with-different-colors) |
@@ -119,6 +120,7 @@
 | [0034-find-first-and-last-position-of-element-in-sorted-array](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0034-find-first-and-last-position-of-element-in-sorted-array) |
 | [0035-search-insert-position](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0035-search-insert-position) |
 | [0069-sqrtx](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0069-sqrtx) |
+| [0074-search-a-2d-matrix](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0074-search-a-2d-matrix) |
 ## Divide and Conquer
 |  |
 | ------- |
@@ -217,6 +219,7 @@
 | [0054-spiral-matrix](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0054-spiral-matrix) |
 | [0063-unique-paths-ii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0063-unique-paths-ii) |
 | [0073-set-matrix-zeroes](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0073-set-matrix-zeroes) |
+| [0074-search-a-2d-matrix](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0074-search-a-2d-matrix) |
 ## Monotonic Stack
 |  |
 | ------- |
