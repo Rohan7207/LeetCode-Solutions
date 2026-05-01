@@ -1,3 +1,24 @@
+// Problem: Search a 2D Matrix
+// Link: https://leetcode.com/problems/search-a-2d-matrix/
+// Difficulty: Medium
+
+// Approach:
+// Use binary search on rows to find the row
+// that may contain the target.
+// Check whether the target lies between
+// the first and last element of the middle row.
+//     - If yes, apply binary search on that row.
+//     - If target is greater than the last element,
+//       search in lower rows.
+//     - Otherwise search in upper rows.
+// In the selected row, use binary search
+// to find the target element.
+// Return true if found, otherwise false.
+
+// Time Complexity: O(log m + log n)
+// Space Complexity: O(1)
+
+
 class Solution {
     public boolean searchMatrix(int[][] matrix, int target) {
         int m = matrix.length;
