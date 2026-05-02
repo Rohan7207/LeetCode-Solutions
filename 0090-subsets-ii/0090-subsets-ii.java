@@ -1,7 +1,8 @@
 class Solution {
     public List<List<Integer>> subsetsWithDup(int[] nums) {
+        // Sort array to handle duplicates
         List<List<Integer>> res = new ArrayList<>();
-        Arrays.sort(nums); // Sort array to handle duplicates
+        Arrays.sort(nums); 
         helper(0, nums, new ArrayList<>(), res);
         return res;
     }
