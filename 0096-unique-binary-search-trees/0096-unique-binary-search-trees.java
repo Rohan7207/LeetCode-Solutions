@@ -6,8 +6,8 @@ class Solution {
         // dp[2] = 2
         // dp[3] = 5 = 2 + 2 + 1
         for (int i = 2; i <= n; i++) {
-            for (int j = 1; j <= i; j++) {
-                dp[i] += dp[j - 1] * dp[i - j];
+            for (int j = 0; j < i; j++) {
+                dp[i] += dp[j] * dp[i - j - 1];
             }
         }
         return dp[n];
