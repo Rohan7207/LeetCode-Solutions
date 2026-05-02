@@ -117,6 +117,7 @@
 | [0058-length-of-last-word](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0058-length-of-last-word) |
 | [0067-add-binary](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0067-add-binary) |
 | [0079-word-search](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0079-word-search) |
+| [0091-decode-ways](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0091-decode-ways) |
 | [2833-furthest-point-from-origin](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2833-furthest-point-from-origin) |
 ## Sliding Window
 |  |
@@ -168,6 +169,7 @@
 | [0062-unique-paths](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0062-unique-paths) |
 | [0063-unique-paths-ii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0063-unique-paths-ii) |
 | [0070-climbing-stairs](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0070-climbing-stairs) |
+| [0091-decode-ways](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0091-decode-ways) |
 ## Trie
 |  |
 | ------- |
