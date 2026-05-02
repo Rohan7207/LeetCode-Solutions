@@ -88,6 +88,7 @@
 | [0067-add-binary](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0067-add-binary) |
 | [0069-sqrtx](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0069-sqrtx) |
 | [0070-climbing-stairs](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0070-climbing-stairs) |
+| [0096-unique-binary-search-trees](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0096-unique-binary-search-trees) |
 | [3783-mirror-distance-of-an-integer](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3783-mirror-distance-of-an-integer) |
 ## Recursion
 |  |
@@ -170,6 +171,7 @@
 | [0063-unique-paths-ii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0063-unique-paths-ii) |
 | [0070-climbing-stairs](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0070-climbing-stairs) |
 | [0091-decode-ways](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0091-decode-ways) |
+| [0096-unique-binary-search-trees](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0096-unique-binary-search-trees) |
 ## Trie
 |  |
 | ------- |
@@ -278,8 +280,14 @@
 |  |
 | ------- |
 | [0094-binary-tree-inorder-traversal](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0094-binary-tree-inorder-traversal) |
+| [0096-unique-binary-search-trees](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0096-unique-binary-search-trees) |
 ## Binary Tree
 |  |
 | ------- |
 | [0094-binary-tree-inorder-traversal](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0094-binary-tree-inorder-traversal) |
+| [0096-unique-binary-search-trees](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0096-unique-binary-search-trees) |
+## Binary Search Tree
+|  |
+| ------- |
+| [0096-unique-binary-search-trees](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0096-unique-binary-search-trees) |
 <!---LeetCode Topics End-->
