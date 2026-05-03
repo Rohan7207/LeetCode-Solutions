@@ -1,3 +1,25 @@
+// Problem: Binary Tree Level Order Traversal
+// Link: https://leetcode.com/problems/binary-tree-level-order-traversal/
+// Difficulty: Medium
+
+// Approach:
+// Use Breadth First Search (BFS)
+// with a queue to traverse the tree level by level.
+// Add the root node into the queue.
+// While the queue is not empty:
+//     - Get the number of nodes in the current level.
+//     - Traverse all nodes of that level.
+//     - Remove node from queue and add its value
+//       to the current level list.
+//     - Add left and right child nodes to queue
+//       if they exist.
+// Add each level list to the final result.
+// Return the level order traversal list.
+
+// Time Complexity: O(n)
+// Space Complexity: O(n)
+
+
 /**
  * Definition for a binary tree node.
  * public class TreeNode {
