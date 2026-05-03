@@ -171,6 +171,7 @@
 | [0063-unique-paths-ii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0063-unique-paths-ii) |
 | [0070-climbing-stairs](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0070-climbing-stairs) |
 | [0091-decode-ways](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0091-decode-ways) |
+| [0095-unique-binary-search-trees-ii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0095-unique-binary-search-trees-ii) |
 | [0096-unique-binary-search-trees](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0096-unique-binary-search-trees) |
 ## Trie
 |  |
@@ -200,6 +201,7 @@
 | [0078-subsets](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0078-subsets) |
 | [0079-word-search](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0079-word-search) |
 | [0090-subsets-ii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0090-subsets-ii) |
+| [0095-unique-binary-search-trees-ii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0095-unique-binary-search-trees-ii) |
 ## Enumeration
 |  |
 | ------- |
@@ -280,14 +282,17 @@
 |  |
 | ------- |
 | [0094-binary-tree-inorder-traversal](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0094-binary-tree-inorder-traversal) |
+| [0095-unique-binary-search-trees-ii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0095-unique-binary-search-trees-ii) |
 | [0096-unique-binary-search-trees](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0096-unique-binary-search-trees) |
 ## Binary Tree
 |  |
 | ------- |
 | [0094-binary-tree-inorder-traversal](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0094-binary-tree-inorder-traversal) |
+| [0095-unique-binary-search-trees-ii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0095-unique-binary-search-trees-ii) |
 | [0096-unique-binary-search-trees](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0096-unique-binary-search-trees) |
 ## Binary Search Tree
 |  |
 | ------- |
+| [0095-unique-binary-search-trees-ii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0095-unique-binary-search-trees-ii) |
 | [0096-unique-binary-search-trees](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0096-unique-binary-search-trees) |
 <!---LeetCode Topics End-->
