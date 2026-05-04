@@ -1,3 +1,31 @@
+// Problem: Construct Binary Tree from Inorder and Postorder Traversal
+// Link: https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/
+// Difficulty: Medium
+
+// Approach:
+// Use recursion to build the tree using
+// inorder and postorder traversals.
+// Postorder gives the root node (last element).
+// Maintain an index (postIdx) starting from
+// postorder.length - 1.
+// Use a hashmap to store index of each value
+// in inorder for O(1) lookup.
+// For each recursive call:
+//     - Pick root from postorder using postIdx.
+//     - Decrement postIdx.
+//     - Find root index in inorder.
+//     - Elements to the right form right subtree.
+//     - Elements to the left form left subtree.
+// IMPORTANT:
+//     - Build right subtree first,
+//       then left subtree (reverse of preorder case).
+// If start > end, return null.
+// Return the constructed tree.
+
+// Time Complexity: O(n)
+// Space Complexity: O(n)
+
+
 /**
  * Definition for a binary tree node.
  * public class TreeNode {
