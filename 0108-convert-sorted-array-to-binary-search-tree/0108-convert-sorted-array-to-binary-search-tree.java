@@ -1,3 +1,25 @@
+// Problem: Convert Sorted Array to Binary Search Tree
+// Link: https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/
+// Difficulty: Easy
+
+// Approach:
+// Use recursion to build a height-balanced BST
+// from a sorted array.
+// For each subarray:
+//     - Pick the middle element as the root
+//       to maintain balance.
+//     - Recursively build the left subtree
+//       from the left half of the array.
+//     - Recursively build the right subtree
+//       from the right half of the array.
+// Base case:
+//     - If left > right, return null.
+// Return the constructed root node.
+
+// Time Complexity: O(n)
+// Space Complexity: O(n) // recursion stack
+
+
 /**
  * Definition for a binary tree node.
  * public class TreeNode {
@@ -32,11 +54,5 @@ class Solution {
         return root;
     }
 }
-
-
-// Base case: if the range is invalid, we've reached a "null" child
-// 1. Find the middle element to ensure the tree is balanced
-// 2. Create the root node for this subtree
-// 3. Recursively build the left subtree using the left half
 // 4. Recursively build the right subtree using the right half
 
