@@ -1,3 +1,27 @@
+// Problem: Construct Binary Tree from Preorder and Inorder Traversal
+// Link: https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/
+// Difficulty: Medium
+
+// Approach:
+// Use recursion to build the tree using preorder
+// and inorder traversals.
+// Preorder gives the root node (first element).
+// Use a hashmap to store index of each value
+// in inorder for O(1) lookup.
+// For each recursive call:
+//     - Pick current root from preorder using preidx.
+//     - Find its index in inorder.
+//     - Elements to the left of index form left subtree.
+//     - Elements to the right form right subtree.
+// Recursively build:
+//     - Left subtree first
+//     - Then right subtree
+// Return the constructed tree.
+
+// Time Complexity: O(n)
+// Space Complexity: O(n)
+
+
 /**
  * Definition for a binary tree node.
  * public class TreeNode {
@@ -42,6 +66,3 @@ class Solution {
         return root;
     }
 }
-
-//inorder is used to get left and right subtree
-//preorder is used to get root
