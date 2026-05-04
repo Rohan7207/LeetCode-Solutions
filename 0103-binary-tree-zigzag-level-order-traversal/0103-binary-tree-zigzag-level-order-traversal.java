@@ -1,3 +1,30 @@
+// Problem: Binary Tree Zigzag Level Order Traversal
+// Link: https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/
+// Difficulty: Medium
+
+// Approach:
+// Use BFS (level order traversal) with a queue.
+// Add root to queue and a null marker to indicate
+// end of the current level.
+// Maintain a flag is_order_left to control direction.
+// For each node:
+//     - If not null:
+//         - Add value to level list:
+//             left → addLast
+//             right → addFirst
+//         - Add left and right children to queue.
+//     - If null:
+//         - One level is completed.
+//         - Add current level list to result.
+//         - Reset level list.
+//         - Add another null marker if queue not empty.
+//         - Toggle direction (left ↔ right).
+// Return the zigzag level order traversal.
+
+// Time Complexity: O(n)
+// Space Complexity: O(n)
+
+
 /**
  * Definition for a binary tree node.
  * public class TreeNode {
