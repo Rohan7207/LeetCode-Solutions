@@ -1,3 +1,24 @@
+// Problem: Path Sum
+// Link: https://leetcode.com/problems/path-sum/
+// Difficulty: Easy
+
+// Approach:
+// Use recursion (DFS) to check all root-to-leaf paths.
+// For each node:
+//     - Subtract the node's value from targetSum.
+//     - If it's a leaf node:
+//         - Check if remaining sum equals node value.
+//         - If yes → return true.
+//     - Otherwise recursively check:
+//         - left subtree
+//         - right subtree
+// If any path returns true, return true.
+// Else return false.
+
+// Time Complexity: O(n)
+// Space Complexity: O(n)
+
+
 /**
  * Definition for a binary tree node.
  * public class TreeNode {
