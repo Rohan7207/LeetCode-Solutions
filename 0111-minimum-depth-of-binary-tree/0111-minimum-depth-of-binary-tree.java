@@ -1,3 +1,25 @@
+// Problem: Minimum Depth of Binary Tree
+// Link: https://leetcode.com/problems/minimum-depth-of-binary-tree/
+// Difficulty: Easy
+
+// Approach:
+// Use Breadth First Search (BFS)
+// to find the minimum depth.
+// Start from root and traverse level by level
+// using a queue.
+// For each level:
+//     - Traverse all nodes at that level.
+//     - If a node is a leaf (no left and right child),
+//       return current depth immediately.
+//     - Otherwise add its children to the queue.
+// Increment depth after finishing each level.
+// BFS guarantees the first leaf encountered
+// is at minimum depth.
+
+// Time Complexity: O(n)
+// Space Complexity: O(n)
+
+
 /**
  * Definition for a binary tree node.
  * public class TreeNode {
@@ -27,7 +49,6 @@ class Solution {
             for (int i = 0; i < levelSize; i++) {
                 TreeNode current = q.poll();
 
-                // First leaf node encountered is the minimum depth
                 if (current.left == null && current.right == null) {
                     return depth;
                 }
@@ -42,19 +63,3 @@ class Solution {
         return depth;
     }
 }
-
-//BFS approach time = O(N) in worst case scenario space = O(queue size), it terminates when first leaf node is found
-
-/* 
-    DFS approach time = O(N) space = O(H), it terminates when it visits
-        both subtress runtime = 6ms 7.60%
-        if(root == null) return 0;
-
-        // If only one child exists, we must go down that path to find a leaf
-        if(root.left == null) return minDepth(root.right) + 1;
-        if(root.right == null) return minDepth(root.left) + 1;
-
-        // If both children exist, take the minimum of both subtrees
-        return Math.min(minDepth(root.left), minDepth(root.right)) + 1;
-
-*/
