@@ -1,3 +1,26 @@
+// Problem: Path Sum II
+// Link: https://leetcode.com/problems/path-sum-ii/
+// Difficulty: Medium
+
+// Approach:
+// Use backtracking (DFS) to find all root-to-leaf paths
+// whose sum equals targetSum.
+// Maintain a current path list.
+// For each node:
+//     - Add node value to current path.
+//     - If it's a leaf and sum matches,
+//       add a copy of current path to result.
+//     - Otherwise recursively explore:
+//         left subtree
+//         right subtree
+//     - Backtrack by removing the last element
+//       before returning to parent.
+// Return all valid paths.
+
+// Time Complexity: O(n)
+// Space Complexity: O(n)
+
+
 /**
  * Definition for a binary tree node.
  * public class TreeNode {
