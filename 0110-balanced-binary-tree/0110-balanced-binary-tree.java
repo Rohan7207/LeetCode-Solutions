@@ -1,3 +1,24 @@
+// Problem: Balanced Binary Tree
+// Link: https://leetcode.com/problems/balanced-binary-tree/
+// Difficulty: Easy
+
+// Approach:
+// Use DFS (postorder traversal) to compute height
+// while checking balance at the same time.
+// For each node:
+//     - Recursively get height of left subtree.
+//     - If left is unbalanced (-1), return -1.
+//     - Recursively get height of right subtree.
+//     - If right is unbalanced (-1), return -1.
+//     - If difference > 1 → return -1.
+//     - Else return height = max(left, right) + 1.
+// In main function:
+//     - If result != -1 → tree is balanced.
+
+// Time Complexity: O(n)
+// Space Complexity: O(n)
+
+
 /**
  * Definition for a binary tree node.
  * public class TreeNode {
@@ -32,28 +53,3 @@ class Solution {
         return Math.max(left, right) + 1;
     }
 }
-
-//For balanced tree the diff of height of left and right subtree must be 1 or 0
-
-// O(n^2 solution)
-/* 
-    public boolean isBalanced(TreeNode root) {
-        if (root == null) return true;
-
-        int leftheight = getheight(root.left);
-        int rightheight = getheight(root.right);
-
-        if (Math.abs(leftheight - rightheight) > 1) return false;
-
-        return isBalanced(root.left) && isBalanced(root.right);
-    }
-
-    private int getheight(TreeNode node) {
-        if (node == null) return 0;
-
-        int left = getheight(node.left);
-        int right = getheight(node.right);
-
-        return Math.max(left, right) + 1;
-    }
-*/
