@@ -19,9 +19,11 @@ class Solution {
     }
 
     private TreeNode flattenTree(TreeNode root) {
-        if (root == null) return null;
+        if (root == null) 
+            return null;
 
-        if (root.left == null && root.right == null) return root;
+        if (root.left == null && root.right == null) 
+            return root;
 
         TreeNode left = flattenTree(root.left);
         TreeNode right = flattenTree(root.right);
