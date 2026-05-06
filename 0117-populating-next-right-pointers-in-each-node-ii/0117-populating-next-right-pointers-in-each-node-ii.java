@@ -23,7 +23,8 @@ class Node {
 
 class Solution {
     public Node connect(Node root) {
-        if(root == null) return null;
+        if(root == null) 
+            return null;
 
         Node level = root;
 
@@ -45,7 +46,6 @@ class Solution {
 
                 curr = curr.next;
             }
-
             level = dummy.next;
         }
 
