@@ -1,3 +1,26 @@
+// Problem: Populating Next Right Pointers in Each Node II
+// Link: https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii/
+// Difficulty: Medium
+
+// Approach:
+// Traverse the tree level by level without using extra space.
+// Use the already established "next" pointers to move across
+// the current level.
+// For each level:
+//     - Create a dummy node to act as the head of the next level.
+//     - Use a pointer (chain) to build the next level connections.
+//     - Traverse current level using curr = curr.next:
+//         - If curr.left exists → connect it using chain.next
+//         - If curr.right exists → connect it using chain.next
+//         - Move chain forward each time we add a node
+//     - After finishing the level:
+//         - Move to next level using level = dummy.next
+// Repeat until all levels are processed.
+
+// Time Complexity: O(n)
+// Space Complexity: O(1)
+
+
 /*
 // Definition for a Node.
 class Node {
@@ -52,39 +75,3 @@ class Solution {
         return root;
     }
 }
-
-/*
-    Key Components Explained
-Node dummy = new Node(0): This is a placeholder. It ensures we don't have to write "if-else" logic to find the very first child of the next level. The first child found will always be dummy.next.
-Node chain = dummy: This is our "writing" pointer. It stays at the end of the new linked list we are building for the level below.
-level = dummy.next: This effectively "drops" us down to the start of the level we just finished connecting.
-
-*/
-
-/*
-The Strategy: The "Tail" Method
-    Think of the dummy node as a "starting peg" and chain as your "tail" pointer. As you walk across the level above, you use chain to stitch together whatever children you find (left or right) into a new linked list.X 
-    //O(N) and O(N) with 41.97%
-        if(root == null) return null;
-
-        Queue<Node> q = new LinkedList<>();
-        q.offer(root);
-
-        while(!q.isEmpty()) {
-            int size = q.size();
-
-            for(int i = 0; i < size; i++) {
-                Node currNode = q.poll();
-                if(i < size - 1) {
-                    currNode.next = q.peek();
-                } else {
-                    currNode.next = null;
-                }
-
-                if(currNode.left != null) q.offer(currNode.left);
-                if(currNode.right != null) q.offer(currNode.right);
-            }
-        }
-
-        return root;
-*/
