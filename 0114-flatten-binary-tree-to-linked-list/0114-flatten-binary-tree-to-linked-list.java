@@ -1,3 +1,23 @@
+// Problem: Flatten Binary Search Tree to Linked List
+// Link: https://leetcode.com/problems/flatten-binary-tree-to-linked-list/
+// Difficulty: Medium
+
+// Approach:
+// Use recursion (postorder style) to flatten the tree.
+// For each node:
+//     - Recursively flatten left subtree.
+//     - Recursively flatten right subtree.
+//     - If left subtree exists:
+//         - Attach the original right subtree
+//           to the rightmost node of left subtree.
+//         - Move left subtree to right side.
+//         - Set left pointer to null.
+// Return the rightmost node of the flattened subtree.
+
+// Time Complexity: O(n)
+// Space Complexity: O(n)
+
+
 /**
  * Definition for a binary tree node.
  * public class TreeNode {
@@ -19,11 +39,9 @@ class Solution {
     }
 
     private TreeNode flattenTree(TreeNode root) {
-        if (root == null) 
-            return null;
+        if (root == null) return null;
 
-        if (root.left == null && root.right == null) 
-            return root;
+        if (root.left == null && root.right == null) return root;
 
         TreeNode left = flattenTree(root.left);
         TreeNode right = flattenTree(root.right);
