@@ -1,3 +1,22 @@
+// Problem: Pascals Triangle II
+// Link: https://leetcode.com/problems/pascals-triangle-ii/
+// Difficulty: Easy
+
+// Approach:
+// Use the mathematical relation of Pascal's Triangle
+// to directly compute elements of a row.
+// Start with first element as 1.
+// For each next element:
+//     - Use previous element to calculate current element
+//       using combination formula.
+//     - Store current value in result list.
+// Continue until all elements of the row are generated.
+// Return the result list.
+
+// Time Complexity: O(n)
+// Space Complexity: O(n)
+
+
 class Solution {
     public List<Integer> getRow(int rowIndex) {
         List<Integer> res = new ArrayList<>();
@@ -13,23 +32,3 @@ class Solution {
         return res;
     }
 }
-
-/*
-    //O(k^2) and O(k) k = rowIndex
-    List<Integer> res = new ArrayList<>();
-    // Initialize the list with the first as '1'
-    res.add(1);
-
-    for(int i = 1; i <= rowIndex; i++) {
-        // Step 1: Add a 1 at the end to expand the row size
-        res.add(1);
-
-        // Step 2: Update internal elements from right to left
-        // We start at j = i - 1 (the element before the last 1)
-        for(int j = i - 1; j > 0; j--) {
-            res.set(j, res.get(j) + res.get(j - 1));
-        }
-    }
-
-    return res;
-*/
