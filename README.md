@@ -49,6 +49,7 @@
 | [0108-convert-sorted-array-to-binary-search-tree](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0108-convert-sorted-array-to-binary-search-tree) |
 | [0118-pascals-triangle](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0118-pascals-triangle) |
 | [0119-pascals-triangle-ii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0119-pascals-triangle-ii) |
+| [0121-best-time-to-buy-and-sell-stock](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [1848-minimum-distance-to-the-target-element](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1848-minimum-distance-to-the-target-element) |
 | [1995-count-special-quadruplets](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1995-count-special-quadruplets) |
 | [2078-two-furthest-houses-with-different-colors](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2078-two-furthest-houses-with-different-colors) |
@@ -188,6 +189,7 @@
 | [0096-unique-binary-search-trees](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0096-unique-binary-search-trees) |
 | [0118-pascals-triangle](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0118-pascals-triangle) |
 | [0119-pascals-triangle-ii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0119-pascals-triangle-ii) |
+| [0121-best-time-to-buy-and-sell-stock](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0121-best-time-to-buy-and-sell-stock) |
 ## Trie
 |  |
 | ------- |
