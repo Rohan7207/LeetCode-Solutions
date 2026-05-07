@@ -1,3 +1,22 @@
+// Problem: Populating Next Right Pointers in Each Node
+// Link: https://leetcode.com/problems/populating-next-right-pointers-in-each-node/
+// Difficulty: Medium
+
+// Approach:
+// Use level-by-level traversal in a perfect binary tree.
+// Since every node has both left and right child,
+// connect nodes using already established next pointers.
+// For each node at current level:
+//     - Connect left child to right child.
+//     - Connect right child to next node's left child
+//       if next node exists.
+// Traverse current level using curr = curr.next.
+// Move down level-by-level using level = level.left.
+
+// Time Complexity: O(n)
+// Space Complexity: O(1)
+
+
 /*
 // Definition for a Node.
 class Node {
@@ -45,41 +64,3 @@ class Solution {
         return root;
     }
 }
-
-/*
-    // Optimal approach where time is O(n) and O(1)
-    // Start with the root. The level below root will be connected first.
-    // Outer loop: Move vertically down the left side of the tree
-        // Start horizontal traversal for current level
-        // Inner loop: Move horizontally across the current level
-            // 1. Connect children of the same parent (Direct connection)
-            // 2. Connect the right child to the neighbor's left child (Bridge)
-            // Move to the next node in the same level
-        // Move to the next level down
-*/
-
-/*
-    O(n) and O(n)
-        if(root == null) return null;
-
-        Queue<Node> q = new LinkedList<>();
-        q.offer(root);
-
-        while(!q.isEmpty()) {
-            int size = q.size();
-            
-            for(int i = 0; i < size; i++) {
-                Node currNode = q.poll();
-                if(i < size - 1) {
-                    currNode.next = q.peek();
-                } else{ 
-                    currNode.next = null;
-                }
-            
-                if(currNode.left != null) q.offer(currNode.left);
-                if(currNode.right != null) q.offer(currNode.right);
-            }
-        }
-
-        return root;
-*/
