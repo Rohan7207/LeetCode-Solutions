@@ -1,3 +1,27 @@
+// Problem: Binary Tree Maximum Path Sum
+// Link: https://leetcode.com/problems/binary-tree-maximum-path-sum/
+// Difficulty: Hard
+
+// Approach:
+// Use postorder DFS traversal to calculate
+// the maximum path sum.
+// For each node:
+//     - Recursively calculate maximum contribution
+//       from left and right subtrees.
+//     - Ignore negative paths using max(sum, 0).
+//     - Update global maximum answer considering:
+//           root + left contribution + right contribution
+//       since path can pass through current node.
+//     - Return:
+//           root + max(left, right)
+//       because parent can continue only one path.
+// Continue recursively for all nodes.
+// Return the global maximum answer.
+
+// Time Complexity: O(n)
+// Space Complexity: O(n)
+
+
 /**
  * Definition for a binary tree node.
  * public class TreeNode {
