@@ -130,6 +130,7 @@
 | [0067-add-binary](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0067-add-binary) |
 | [0079-word-search](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0079-word-search) |
 | [0091-decode-ways](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0091-decode-ways) |
+| [0125-valid-palindrome](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0125-valid-palindrome) |
 | [2833-furthest-point-from-origin](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2833-furthest-point-from-origin) |
 ## Sliding Window
 |  |
@@ -170,6 +171,7 @@
 | [0075-sort-colors](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0075-sort-colors) |
 | [0082-remove-duplicates-from-sorted-list-ii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0082-remove-duplicates-from-sorted-list-ii) |
 | [0088-merge-sorted-array](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0088-merge-sorted-array) |
+| [0125-valid-palindrome](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0125-valid-palindrome) |
 ## Dynamic Programming
 |  |
 | ------- |
