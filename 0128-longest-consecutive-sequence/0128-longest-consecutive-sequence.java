@@ -1,8 +1,6 @@
 class Solution {
     public int longestConsecutive(int[] nums) {
-        // Base case: handle empty input
-        if (nums == null || nums.length == 0)
-            return 0;
+        if (nums == null || nums.length == 0) return 0;
 
         // Step 1: Add all numbers to a HashSet for O(1) lookups
         Set<Integer> numSet = new HashSet<>();
