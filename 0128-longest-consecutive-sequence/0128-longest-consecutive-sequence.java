@@ -1,3 +1,24 @@
+// Problem: Longest Consecutive Sequence
+// Link: https://leetcode.com/problems/longest-consecutive-sequence/
+// Difficulty: Medium
+
+// Approach:
+// Store all elements in a HashSet for O(1) lookup.
+// Traverse through the set:
+//     - Check whether current number is the start
+//       of a sequence by verifying that num - 1
+//       does not exist in the set.
+//     - If it is a sequence start:
+//         - Continuously check for next consecutive
+//           numbers using currNum + 1.
+//         - Count the sequence length.
+//     - Update the maximum sequence length found.
+// Return the longest consecutive sequence length.
+
+// Time Complexity: O(n)
+// Space Complexity: O(n)
+
+
 class Solution {
     public int longestConsecutive(int[] nums) {
         if (nums == null || nums.length == 0) return 0;
@@ -32,31 +53,3 @@ class Solution {
         return longestSequence;
     }
 }
-
-
-/*
-// Time Complexity: O(n log n)
-// Space Complexity: O(1) or O(log n) depending on sorting
-
-// “I sort the array and count consecutive increasing sequences while handling duplicates separately.”
-
-        if (nums.length == 0) return 0;
-
-        Arrays.sort(nums);
-        int curr = 1;
-        int max = 1;
-
-        for (int i = 1; i < nums.length; i++) {
-            if (nums[i] == nums[i - 1] + 1) {
-                curr++;
-            } else if (nums[i] != nums[i - 1]) {
-                curr = 1;
-            }
-
-            max = Math.max(max, curr);
-        }
-
-        return max;
-    
-    }
-*/
