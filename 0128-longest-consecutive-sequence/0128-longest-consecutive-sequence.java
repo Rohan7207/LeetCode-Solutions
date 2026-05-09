@@ -1,6 +1,27 @@
 class Solution {
     public int longestConsecutive(int[] nums) {
-        // Base case: handle empty input
+        if (nums.length == 0)
+            return 0;
+
+        Arrays.sort(nums);
+        int curr = 1;
+        int max = 1;
+
+        for (int i = 1; i < nums.length; i++) {
+            if (nums[i] == nums[i - 1] + 1)
+                curr++;
+            else if (nums[i] != nums[i - 1])
+                curr = 1;
+
+            max = Math.max(max, curr);
+        }
+
+        return max;
+    }
+}
+
+/*
+    // Base case: handle empty input
         if (nums == null || nums.length == 0) return 0;
 
         // Step 1: Add all numbers to a HashSet for O(1) lookups
@@ -32,4 +53,4 @@ class Solution {
 
         return longestSequence;
     }
-}
+*/
