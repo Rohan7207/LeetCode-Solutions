@@ -1,25 +1,47 @@
-// Problem: Longest Consecutive Sequence
-// Link: https://leetcode.com/problems/longest-consecutive-sequence/
-// Difficulty: Medium
+class Solution {
+    public int longestConsecutive(int[] nums) {
+        // Base case: handle empty input
+        if (nums == null || nums.length == 0)
+            return 0;
 
-// Approach:
-// Sort the array first so consecutive numbers
-// appear next to each other.
-// Traverse the sorted array:
-//     - If current element is previous + 1,
-//       increment current streak length.
-//     - If current element is duplicate,
-//       ignore it.
-//     - Otherwise start a new streak.
-// Track the maximum streak length during traversal.
-// Return the maximum consecutive sequence length.
+        // Step 1: Add all numbers to a HashSet for O(1) lookups
+        Set<Integer> numSet = new HashSet<>();
+        for (int num : nums) {
+            numSet.add(num);
+        }
 
+        int longestSequence = 0;
+
+        // Step 2: Iterate through the set to find sequence starts
+        for (int num : numSet) {
+            // Check if 'num' is the start of a sequence
+            // (i.e., num - 1 is NOT in the set)
+            if (!numSet.contains(num - 1)) {
+                int currNum = num;
+                int currSequence = 1;
+
+                // Step 3: Expand the sequence as far as possible
+                while (numSet.contains(currNum + 1)) {
+                    currNum++;
+                    currSequence++;
+                }
+
+                // Step 4: Keep track of the maximum length found
+                longestSequence = Math.max(longestSequence, currSequence);
+            }
+        }
+
+        return longestSequence;
+    }
+}
+
+
+/*
 // Time Complexity: O(n log n)
 // Space Complexity: O(1) or O(log n) depending on sorting
 
+// “I sort the array and count consecutive increasing sequences while handling duplicates separately.”
 
-class Solution {
-    public int longestConsecutive(int[] nums) {
         if (nums.length == 0) return 0;
 
         Arrays.sort(nums);
@@ -37,5 +59,6 @@ class Solution {
         }
 
         return max;
+    
     }
-}
+*/
