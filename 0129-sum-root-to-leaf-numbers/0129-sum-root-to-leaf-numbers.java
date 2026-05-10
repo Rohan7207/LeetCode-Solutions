@@ -1,3 +1,25 @@
+// Problem: Sum Root to Leaf Numbers
+// Link: https://leetcode.com/problems/sum-root-to-leaf-numbers/
+// Difficulty: Medium
+
+// Approach:
+// Use DFS traversal to build the number
+// formed from root to current node.
+// At each node:
+//     - Update current number by:
+//           currSum = currSum * 10 + root.val
+//     - If current node is a leaf:
+//           return the formed number.
+//     - Recursively calculate left and right subtree sums.
+// Return the sum of all root-to-leaf numbers.
+
+// Time Complexity: O(n)
+// Space Complexity: O(h)
+//
+// n = number of nodes
+// h = height of tree
+
+
 /**
  * Definition for a binary tree node.
  * public class TreeNode {
@@ -15,27 +37,21 @@
  */
 class Solution {
     public int sumNumbers(TreeNode root) {
-        // Start the DFS with an initial sum of 0
         return dfs(root, 0);
     }
 
     private int dfs(TreeNode root, int currSum) {
-        // Base case: if we hit a null child, it contributes nothing to the sum
-        if(root == null) return 0;
+        if (root == null) return 0;
 
-        // 1. Update the current number (shift left by 10 and add current digit)
         currSum = (currSum * 10) + root.val;
 
-        // 2. Check if we are at a leaf node
-        if(root.left == null && root.right == null) {
+        if (root.left == null && root.right == null) {
             return currSum;
         }
 
-        // 3. Recursively find sums from left and right subtrees
         int leftSum = dfs(root.left, currSum);
         int rightSum = dfs(root.right, currSum);
 
-        // 4. Return the total sum found in both branches
         return leftSum + rightSum;
     }
 }
