@@ -1,3 +1,25 @@
+// Problem: Palindrome Partitioning
+// Link: https://leetcode.com/problems/palindrome-partitioning/
+// Diificulty: Medium
+
+// Approach:
+// Use backtracking to generate all possible
+// palindrome partitions of the string.
+// Start partitioning from index 0.
+// For every possible substring from start to end:
+//     - Check whether substring is palindrome.
+//     - If palindrome:
+//         - Add substring to current partition.
+//         - Recursively partition remaining string.
+//         - Backtrack by removing last substring.
+// When start reaches end of string:
+//     - Add current partition to result.
+// Return all valid palindrome partitions.
+
+// Time Complexity: O(N * 2^N)
+// Space Complexity: O(N)
+
+
 class Solution {
     public List<List<String>> partition(String s) {
         List<List<String>> res = new ArrayList<>();
@@ -11,7 +33,6 @@ class Solution {
             return;
         }
 
-        //end is used to point end of string 
         for(int end = start; end < s.length(); end++){
             if(isPalindrome(s, start, end)){
                 current.add(s.substring(start, end + 1));
@@ -31,16 +52,3 @@ class Solution {
         return true;
     }
 }
-
-/*We should partion string such that every element must be palindrome 
-    Consider [aab]
-            /     \
-            a(vp)   aa(vp)
-            /  \         \ 
-            a(vp) ab(nvp)   b(vp)
-        /
-        b(vp)       
-        
-    res=[a,a,b],[aa,b]
-    time= O(n*2^n) n=s.length
-*/
