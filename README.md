@@ -137,6 +137,7 @@
 | [0091-decode-ways](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0091-decode-ways) |
 | [0125-valid-palindrome](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0125-valid-palindrome) |
 | [0127-word-ladder](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0127-word-ladder) |
+| [0131-palindrome-partitioning](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0131-palindrome-partitioning) |
 | [2833-furthest-point-from-origin](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2833-furthest-point-from-origin) |
 ## Sliding Window
 |  |
@@ -200,6 +201,7 @@
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [0122-best-time-to-buy-and-sell-stock-ii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0122-best-time-to-buy-and-sell-stock-ii) |
 | [0124-binary-tree-maximum-path-sum](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0124-binary-tree-maximum-path-sum) |
+| [0131-palindrome-partitioning](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0131-palindrome-partitioning) |
 ## Trie
 |  |
 | ------- |
@@ -230,6 +232,7 @@
 | [0090-subsets-ii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0090-subsets-ii) |
 | [0095-unique-binary-search-trees-ii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0095-unique-binary-search-trees-ii) |
 | [0113-path-sum-ii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0113-path-sum-ii) |
+| [0131-palindrome-partitioning](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0131-palindrome-partitioning) |
 ## Enumeration
 |  |
 | ------- |
