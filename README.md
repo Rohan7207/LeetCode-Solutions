@@ -53,6 +53,7 @@
 | [0122-best-time-to-buy-and-sell-stock-ii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0122-best-time-to-buy-and-sell-stock-ii) |
 | [0128-longest-consecutive-sequence](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0128-longest-consecutive-sequence) |
 | [0130-surrounded-regions](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0130-surrounded-regions) |
+| [0136-single-number](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0136-single-number) |
 | [1848-minimum-distance-to-the-target-element](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1848-minimum-distance-to-the-target-element) |
 | [1995-count-special-quadruplets](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1995-count-special-quadruplets) |
 | [2078-two-furthest-houses-with-different-colors](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2078-two-furthest-houses-with-different-colors) |
@@ -306,6 +307,7 @@
 | [0067-add-binary](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0067-add-binary) |
 | [0078-subsets](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0078-subsets) |
 | [0090-subsets-ii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0090-subsets-ii) |
+| [0136-single-number](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0136-single-number) |
 ## Memoization
 |  |
 | ------- |
