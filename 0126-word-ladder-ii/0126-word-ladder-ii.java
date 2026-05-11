@@ -36,7 +36,6 @@ class Solution {
         Set<String> wordSet = new HashSet<>(wordList);
         if(!wordSet.contains(endWord)) return res;
 
-        // BFS: Fill the distance map
         Queue<String> q = new LinkedList<>();
         q.offer(beginWord);
         dist.put(beginWord, 0);
@@ -61,7 +60,6 @@ class Solution {
             }
         }
 
-        // DFS: Backtrack from end to beginning
         if(dist.containsKey(endWord)) {
             List<String> path = new ArrayList<>();
             path.add(endWord);
