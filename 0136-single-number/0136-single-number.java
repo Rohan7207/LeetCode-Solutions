@@ -1,3 +1,21 @@
+// Problem: Single Number
+// Link: https://leetcode.com/problems/single-number/
+// Difficulty: Easy
+
+// Approach:
+// Use XOR operation to find the unique element.
+// Traverse the array and XOR every number with result.
+// Properties of XOR:
+//     - a ^ a = 0
+//     - a ^ 0 = a
+// Since duplicate numbers cancel each other out,
+// only the single occurring element remains.
+// Return the final result.
+
+// Time Complexity: O(n)
+// Space Complexity: O(1)
+
+
 class Solution {
     public int singleNumber(int[] nums) {
         int res = 0;
@@ -8,17 +26,3 @@ class Solution {
         return res;
     }
 }
-
-//We use XOR gate
-//In XOR the X XOR X cancels out for ex 1 XOR 2 XOR 3 XOR 3 XOR 2 
-// both 2 and 3 cancels leads to 1 which leads O(n) and O(1)
-
-/*
-    Arrays.sort(nums);
-    for(int i = 1; i < nums.length; i += 2){
-        if(nums[i] != nums[i - 1]){
-            return nums[i - 1];
-        }
-    }
-    return nums[nums.length - 1];
-*/
