@@ -23,8 +23,7 @@ class Solution {
     HashMap<Node, Node> vis = new HashMap<>();
 
     public Node cloneGraph(Node node) {
-        if (node == null)
-            return node;
+        if (node == null) return node;
 
         if (vis.containsKey(node)) {
             return vis.get(node);
