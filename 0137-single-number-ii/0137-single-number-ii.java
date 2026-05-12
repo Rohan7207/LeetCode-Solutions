@@ -1,6 +1,30 @@
+// Problem: Single Number II
+// Link: https://leetcode.com/problems/single-number-ii/
+// Difficulty: Medium
+
+// Approach:
+// Use bit manipulation to track bits appearing
+// once and twice.
+// Maintain two variables:
+//     - ones -> stores bits appearing once
+//     - twos -> stores bits appearing twice
+//
+// For every number:
+//     - Update ones using XOR and remove bits
+//       already present in twos.
+//     - Update twos using XOR and remove bits
+//       already present in ones.
+//
+// Bits appearing three times are removed
+// from both ones and twos automatically.
+// At the end, ones contains the unique element.
+
+// Time Complexity: O(n)
+// Space Complexity: O(1)
+
+
 class Solution {
     public int singleNumber(int[] nums) {
-        //Optimal appraoch with O(n) and O(1)
         int ones = 0, twos = 0;
 
         for(int i = 0; i < nums.length; i++) {
@@ -11,42 +35,3 @@ class Solution {
         return ones;
     }
 }
-
-/*
-    //This is brute force approach with O(n) and O(n)
-    Map<Integer, Integer> map = new HashMap<>();
-    int res = 0;
-
-    for(int num : nums) {
-        map.put(num, map.getOrDefault(num, 0) + 1);
-    }
-
-    for(Map.Entry<Integer, Integer> entry : map.entrySet()) {
-        if(entry.getValue() == 1) {
-            res = entry.getKey();
-            break;
-        }
-    }
-
-    return res;
-
-
-
-    //Bit Manipulation with O(n) or O(32*n) and O(1)
-    int res = 0;
-
-    for(int i = 0; i < 32; i++) {
-        int count = 0;
-        for(int num : nums) {
-            if(((num >> i) & 1) == 1) {
-                count++;
-            }
-        }
-
-        if(count % 3 == 1) {
-            res = res | (1 << i);
-        }            
-    }
-
-    return res;
-*/
