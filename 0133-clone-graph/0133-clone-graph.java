@@ -19,7 +19,6 @@ class Node {
 */
 
 class Solution {
-    //We use hashmap where key is input node and value is cloned node
     HashMap<Node, Node> vis = new HashMap<>();
 
     public Node cloneGraph(Node node) {
@@ -39,3 +38,15 @@ class Solution {
         return cloneNode;
     }
 }
+
+//We use hashmap where key is input node and value is cloned node
+
+
+/*
+Why HashMap Needed?
+Graphs can contain:
+cycles
+repeated neighbors
+
+Without hashmap: infinite recursion happens
+*/
