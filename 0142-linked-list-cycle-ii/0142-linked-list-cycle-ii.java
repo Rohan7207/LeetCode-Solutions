@@ -1,3 +1,29 @@
+// Problem: Linked List Cycle II
+// Link: https://leetcode.com/problems/linked-list-cycle-ii/
+// Difficulty: Medium
+
+// Approach:
+// Use Floyd’s Cycle Detection Algorithm
+// to detect the cycle first.
+// Step 1: Detect cycle
+//     - Maintain slow and fast pointers.
+//     - Move slow by one step.
+//     - Move fast by two steps.
+//     - If they meet, cycle exists.
+//
+// Step 2: Find cycle starting node
+//     - Move one pointer back to head.
+//     - Keep the other pointer at meeting point.
+//     - Move both one step at a time.
+//     - The node where they meet again
+//       is the starting node of cycle.
+//
+// If no cycle exists return null.
+
+// Time Complexity: O(n)
+// Space Complexity: O(1)
+
+
 /**
  * Definition for singly-linked list.
  * class ListNode {
