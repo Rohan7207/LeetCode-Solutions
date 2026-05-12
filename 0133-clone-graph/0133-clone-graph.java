@@ -1,3 +1,30 @@
+// Problem: Clone Graph
+// Link: https://leetcode.com/problems/clone-graph/
+// Difficulty: Medium
+
+// Approach:
+// Use DFS traversal with a HashMap to create
+// a deep copy of the graph.
+// Maintain a map:
+//     original node -> cloned node
+// For every node:
+//     - If node is null return null.
+//     - If node is already cloned,
+//       return its cloned copy from map.
+//     - Create a clone node.
+//     - Store it in map before recursion
+//       to avoid infinite cycles.
+//     - Recursively clone all neighbors
+//       and attach them to cloned node.
+// Return the cloned graph node.
+
+// Time Complexity: O(V + E)
+// Space Complexity: O(V)
+//
+// V = number of vertices
+// E = number of edges
+
+
 /*
 // Definition for a Node.
 class Node {
@@ -38,15 +65,3 @@ class Solution {
         return cloneNode;
     }
 }
-
-//We use hashmap where key is input node and value is cloned node
-
-
-/*
-Why HashMap Needed?
-Graphs can contain:
-cycles
-repeated neighbors
-
-Without hashmap: infinite recursion happens
-*/
