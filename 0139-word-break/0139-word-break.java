@@ -1,3 +1,22 @@
+// Problem: Word Break
+// Link: https://leetcode.com/problems/word-break/
+// Difficulty: Medium
+
+// Approach:
+// Use Dynamic Programming to determine whether the string
+// can be segmented into dictionary words.
+// Maintain a dp array where dp[i] represents whether
+// substring s[0...i-1] can be formed.
+// Convert word dictionary into HashSet for fast lookup.
+// For every index i, check all previous partitions j.
+// If dp[j] is true and substring s[j...i-1] exists
+// in dictionary, mark dp[i] as true.
+// Return dp[s.length()].
+
+// Time Complexity: O(n^2)
+// Space Complexity: O(n)
+
+
 class Solution {
     public boolean wordBreak(String s, List<String> wordDict) {
         boolean[] dp = new boolean[s.length() + 1];
@@ -17,11 +36,3 @@ class Solution {
         return dp[s.length()];
     }
 }
-
-/*
-    Consider s = espn and w = {e, sp ,n}
-        now dp[0] = true and check for dp[1] = e which can be found like
-        dp[0] && w.contains(e) and for dp[2] = es i.e dp[0] && w.con(es) which
-        is false and another dp[1] && w.con(s) which is false so fill with false
-        so on we find that dp[4] = espn is to be true so return dp[s.length()]
-*/
