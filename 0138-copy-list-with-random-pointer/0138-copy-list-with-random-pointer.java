@@ -1,3 +1,25 @@
+// Problem: Copy List with Random Pointer
+// Link: https://leetcode.com/problems/copy-list-with-random-pointer/
+// Difficulty: Medium
+
+// Approach:
+// Use a HashMap to store mapping between
+// original nodes and copied nodes.
+// Step 1:
+//     - Create copy nodes for every original node.
+//     - Store mapping:
+//           original node -> copied node
+//     - Connect copied nodes using next pointers.
+// Step 2:
+//     - Traverse both lists again.
+//     - Assign random pointers for copied nodes
+//       using hashmap mapping.
+// Return the head of copied linked list.
+
+// Time Complexity: O(n)
+// Space Complexity: O(n)
+
+
 /*
 // Definition for a Node.
 class Node {
@@ -44,34 +66,3 @@ class Solution {
         return newhead;
     }
 }
-
-/*
-    public Node copyRandomList(Node head) {
-        if (head == null) return null;
-
-        Map<Node, Node> map = new HashMap<>();
-
-        Node newHead = new ListNode(head.val);
-        Node oldTemp = head.next;
-        Node newTemp = newHead;
-        map.put(head, newHead);
-
-        while(oldTemp != null) {
-            Node copyNode = new Node(oldTemp.val);
-            map.put(oldTemp, copyNode);
-            newTemp.next = copyNode;
-            oldTemp = oldTemp.next;
-            newTemp = newTemp.next;
-        }
-
-        oldTemp = head, newTemp = newHead;
-
-        while(oldTemp != null) {
-            newTemp.random = (oldTemp.random == null) ? null : map.get(oldTemp.random);
-            oldTemp = oldTemp.next;
-            newTemp = newTemp.next;
-        }
-
-        return newHead;
-    }
-*/
