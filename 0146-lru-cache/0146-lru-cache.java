@@ -1,3 +1,40 @@
+// Problem: LRU Cache
+// Link: https://leetcode.com/problems/lru-cache/
+// Difficulty: Medium
+
+// Approach:
+// Use a combination of:
+//     - HashMap for O(1) access to nodes
+//     - Doubly Linked List to maintain usage order
+// The doubly linked list stores:
+//     - Most Recently Used (MRU) node near head
+//     - Least Recently Used (LRU) node near tail
+// HashMap stores:
+//     key -> corresponding node
+// get(key):
+//     - If key does not exist return -1.
+//     - Otherwise move the node to front
+//       because it becomes recently used.
+//     - Return the node value.
+// put(key, value):
+//     - If key already exists:
+//           - Update its value.
+//           - Move node to front.
+//     - Otherwise:
+//           - If cache is full,
+//             remove least recently used node
+//             from both linked list and hashmap.
+//           - Create new node.
+//           - Insert it at front.
+//           - Store it in hashmap.
+// Dummy head and tail nodes are used
+// to simplify insertion and deletion operations.
+
+// Time Complexity:
+//     get()  -> O(1)
+//     put()  -> O(1)
+// Space Complexity: O(capacity)
+
 class LRUCache {
 
     class Node {
