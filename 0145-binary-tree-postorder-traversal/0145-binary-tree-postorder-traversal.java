@@ -1,3 +1,22 @@
+// Problem: Binary Tree Postorder Traversal
+// Link: https://leetcode.com/problems/binary-tree-postorder-traversal/
+// Difficulty: Easy
+
+// Approach:
+// Use recursion to perform postorder traversal
+// of the binary tree.
+// Create a helper function:
+//     - Recursively traverse the left subtree.
+//     - Recursively traverse the right subtree.
+//     - Add the current root value to result.
+// If the current node is null,
+// return from the recursive call.
+// Return the postorder traversal list.
+
+// Time Complexity: O(n)
+// Space Complexity: O(n) // recursion stack + result
+
+
 /**
  * Definition for a binary tree node.
  * public class TreeNode {
