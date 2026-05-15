@@ -1,3 +1,21 @@
+// Problem: Sort List
+// Link:https://leetcode.com/problems/sort-list/
+// Difficulty: Medium
+
+// Approach:
+// Use Merge Sort on the linked list.
+// Find the middle of the list using slow
+// and fast pointers and split the list
+// into two halves.
+// Recursively sort both halves.
+// Merge the two sorted linked lists
+// using the merge procedure.
+// Return the merged sorted list.
+
+// Time Complexity: O(n log n)
+// Space Complexity: O(log n) // recursion stack
+
+
 /**
  * Definition for singly-linked list.
  * public class ListNode {
@@ -12,7 +30,6 @@ class Solution {
     public ListNode sortList(ListNode head) {
         if(head == null || head.next == null) return head;
 
-        // Find middle
         ListNode slow = head;
         ListNode fast = head.next;
 
@@ -24,7 +41,6 @@ class Solution {
         ListNode mid = slow.next;
         slow.next = null;
 
-        // Divide into two halves
         ListNode l1 = sortList(head);
         ListNode l2 = sortList(mid);
 
