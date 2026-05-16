@@ -1,3 +1,23 @@
+// Problem: Evaluate Reverse Polish Notation
+// Link: https://leetcode.com/problems/evaluate-reverse-polish-notation/
+// Difficulty: Medium
+
+// Approach:
+// Use a stack to evaluate the postfix expression.
+// Traverse each token in the array:
+//     - If token is a number,
+//       push it into stack.
+//     - If token is an operator,
+//       pop top two elements from stack,
+//       perform the operation,
+//       and push the result back.
+// Continue until all tokens are processed.
+// The final element in stack is the answer.
+
+// Time Complexity: O(n)
+// Space Complexity: O(n)
+
+
 class Solution {
     public int evalRPN(String[] tokens) {
         Stack<Integer> s = new Stack<>();
