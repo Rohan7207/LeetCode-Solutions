@@ -57,6 +57,7 @@
 | [0136-single-number](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0136-single-number) |
 | [0137-single-number-ii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0137-single-number-ii) |
 | [0139-word-break](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0139-word-break) |
+| [0150-evaluate-reverse-polish-notation](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0150-evaluate-reverse-polish-notation) |
 | [0153-find-minimum-in-rotated-sorted-array](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0153-find-minimum-in-rotated-sorted-array) |
 | [0154-find-minimum-in-rotated-sorted-array-ii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0154-find-minimum-in-rotated-sorted-array-ii) |
 | [1848-minimum-distance-to-the-target-element](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1848-minimum-distance-to-the-target-element) |
@@ -126,6 +127,7 @@
 | [0069-sqrtx](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0069-sqrtx) |
 | [0070-climbing-stairs](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0070-climbing-stairs) |
 | [0096-unique-binary-search-trees](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0096-unique-binary-search-trees) |
+| [0150-evaluate-reverse-polish-notation](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0150-evaluate-reverse-polish-notation) |
 | [3783-mirror-distance-of-an-integer](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3783-mirror-distance-of-an-integer) |
 ## Recursion
 |  |
@@ -294,6 +296,7 @@
 | [0143-reorder-list](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0143-reorder-list) |
 | [0144-binary-tree-preorder-traversal](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0144-binary-tree-preorder-traversal) |
 | [0145-binary-tree-postorder-traversal](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0145-binary-tree-postorder-traversal) |
+| [0150-evaluate-reverse-polish-notation](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0150-evaluate-reverse-polish-notation) |
 ## Heap (Priority Queue)
 |  |
 | ------- |
