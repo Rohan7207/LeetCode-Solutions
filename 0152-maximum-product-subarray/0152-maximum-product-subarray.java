@@ -1,3 +1,28 @@
+// Problem: Maximum Product Subarray
+// Link: https://leetcode.com/problems/maximum-product-subarray/
+// Difficulty: Medium
+
+// Approach:
+// Traverse the array while maintaining:
+//     - maximum product ending at current index
+//     - minimum product ending at current index
+//
+// Minimum product is also tracked because
+// multiplying two negative numbers can produce
+// a large positive product.
+//
+// For every element:
+//     - Compute current maximum product using:
+//           current number,
+//           previous max * current,
+//           previous min * current
+//     - Similarly compute current minimum product.
+//     - Update answer with maximum product found.
+
+// Time Complexity: O(n)
+// Space Complexity: O(1)
+
+
 class Solution {
     public int maxProduct(int[] nums) {
         int n = nums.length;
