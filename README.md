@@ -88,6 +88,7 @@
 | [0141-linked-list-cycle](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0141-linked-list-cycle) |
 | [0142-linked-list-cycle-ii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0142-linked-list-cycle-ii) |
 | [0146-lru-cache](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0146-lru-cache) |
+| [0160-intersection-of-two-linked-lists](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0160-intersection-of-two-linked-lists) |
 | [1995-count-special-quadruplets](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1995-count-special-quadruplets) |
 | [2784-check-if-array-is-good](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2784-check-if-array-is-good) |
 ## Linked List
@@ -111,6 +112,7 @@
 | [0143-reorder-list](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0143-reorder-list) |
 | [0146-lru-cache](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0146-lru-cache) |
 | [0148-sort-list](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0148-sort-list) |
+| [0160-intersection-of-two-linked-lists](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0160-intersection-of-two-linked-lists) |
 ## Math
 |  |
 | ------- |
@@ -213,6 +215,7 @@
 | [0142-linked-list-cycle-ii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0142-linked-list-cycle-ii) |
 | [0143-reorder-list](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0143-reorder-list) |
 | [0148-sort-list](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0148-sort-list) |
+| [0160-intersection-of-two-linked-lists](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0160-intersection-of-two-linked-lists) |
 ## Dynamic Programming
 |  |
 | ------- |
