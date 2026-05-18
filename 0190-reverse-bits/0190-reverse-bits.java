@@ -1,3 +1,24 @@
+// Problem: Reverse Bits
+// Link: https://leetcode.com/problems/reverse-bits/
+// Difficulty: Easy
+
+// Approach:
+// Reverse the bits of a 32-bit integer.
+// Traverse all 32 bits of the number one by one.
+// For every iteration:
+//     - Left shift rev by 1
+//           -> creates space for next bit
+//     - Extract the last bit of n using:
+//           (n & 1)
+//     - Add extracted bit to rev using OR operation
+//     - Right shift n by 1
+//           -> move next bit to the last position
+// Repeat this process 32 times to reverse all bits.
+
+// Time Complexity: O(32) ≈ O(1)
+// Space Complexity: O(1)
+
+
 class Solution {
     public int reverseBits(int n) {
         int rev = 0;
@@ -11,8 +32,3 @@ class Solution {
         return rev;   
     }
 }
-
-/*
-    //We bit manipulation operator with O(1) and O(1)
-    //we do & with n and do or with rev ans of & oper with 0 {initially is set}
-*/
