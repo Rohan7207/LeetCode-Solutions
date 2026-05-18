@@ -1,3 +1,21 @@
+// Problem: Number of 1 Bits
+// Link: https://leetcode.com/problems/number-of-1-bits/
+// Difficulty: Easy
+
+// Approach:
+// Count the number of set bits using Brian Kernighan’s Algorithm.
+// The expression: n = n & (n - 1)
+//     - removes the rightmost set bit from the number.
+// Repeat this process until n becomes 0.
+// For every iteration:
+//     - Remove one set bit
+//     - Increment count
+// Number of iterations equals the number of set bits.
+
+// Time Complexity: O(number of set bits)
+// Space Complexity: O(1)
+
+
 class Solution {
     public int hammingWeight(int n) {
         int count = 0;
@@ -10,10 +28,3 @@ class Solution {
         return count;
     }
 }
-
-/*
-    We use AND operator with O(1) and O(1) and Brian Kernighan’s algorithm loops based on the number of 1s.
-    In loop we & with number n and n-1, in this process we eliminate one 1
-    from the no. and increment count and we do till binary is all 0's 
-    1ms with 32.89%
-*/
