@@ -1,3 +1,30 @@
+// Problem: House Robber II
+// Link: https://leetcode.com/problems/house-robber-ii/
+// Difficulty: Medium
+
+// Approach:
+// Since houses are arranged in circular manner,
+// first and last houses cannot be robbed together.
+// Convert the circular problem into two linear
+// House Robber problems:
+//     1. Rob houses from index 0 to n-2
+//        (exclude last house)
+//     2. Rob houses from index 1 to n-1
+//        (exclude first house)
+// For each case:
+//     - Maintain two variables:
+//           rob1 -> maximum till previous previous house
+//           rob2 -> maximum till previous house
+//     - At every house decide:
+//           rob current house
+//           OR
+//           skip current house
+// Return maximum of both cases.
+
+// Time Complexity: O(n)
+// Space Complexity: O(1)
+
+
 class Solution {
     public int rob(int[] nums) {
         int rob1 = 0, rob2 = 0;
