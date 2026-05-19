@@ -1,6 +1,6 @@
 class Solution {
     public boolean isHappy(int n) {
-      int slow = n;
+        int slow = n;
         int fast = n;
         //while loop is not used here because initially slow and 
         //fast pointer will be equal only, so the loop won't run.
