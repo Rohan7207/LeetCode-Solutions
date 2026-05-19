@@ -1,3 +1,24 @@
+// Problem: Binary Tree Right Side View
+// Link: https://leetcode.com/problems/binary-tree-right-side-view/
+// Difficulty: Medium
+
+// Approach:
+// Use Level Order Traversal (BFS)
+// to traverse the tree level by level.
+// Store nodes of each level in queue.
+// For every level:
+//     - Traverse all nodes in that level.
+//     - The last node processed in the level
+//       represents the rightmost node.
+//     - Add that node value to result.
+// Push left and right children into queue
+// for next level traversal.
+// Return the final right side view list.
+
+// Time Complexity: O(n)
+// Space Complexity: O(n)
+
+
 /**
  * Definition for a binary tree node.
  * public class TreeNode {
@@ -39,5 +60,3 @@ class Solution {
         return res;
     }
 }
-
-//Add the last node to each level to result list for right side view
