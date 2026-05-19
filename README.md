@@ -63,6 +63,7 @@
 | [0154-find-minimum-in-rotated-sorted-array-ii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0154-find-minimum-in-rotated-sorted-array-ii) |
 | [0169-majority-element](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0169-majority-element) |
 | [0198-house-robber](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0198-house-robber) |
+| [0200-number-of-islands](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0200-number-of-islands) |
 | [0213-house-robber-ii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0213-house-robber-ii) |
 | [1306-jump-game-iii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1306-jump-game-iii) |
 | [1848-minimum-distance-to-the-target-element](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1848-minimum-distance-to-the-target-element) |
@@ -344,6 +345,7 @@
 | [0074-search-a-2d-matrix](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0074-search-a-2d-matrix) |
 | [0079-word-search](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0079-word-search) |
 | [0130-surrounded-regions](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0130-surrounded-regions) |
+| [0200-number-of-islands](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0200-number-of-islands) |
 ## Monotonic Stack
 |  |
 | ------- |
@@ -397,6 +399,7 @@
 | [0144-binary-tree-preorder-traversal](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0144-binary-tree-preorder-traversal) |
 | [0145-binary-tree-postorder-traversal](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0145-binary-tree-postorder-traversal) |
 | [0199-binary-tree-right-side-view](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0199-binary-tree-right-side-view) |
+| [0200-number-of-islands](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0200-number-of-islands) |
 | [1306-jump-game-iii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1306-jump-game-iii) |
 ## Tree
 |  |
@@ -476,12 +479,14 @@
 | [0130-surrounded-regions](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0130-surrounded-regions) |
 | [0133-clone-graph](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0133-clone-graph) |
 | [0199-binary-tree-right-side-view](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0199-binary-tree-right-side-view) |
+| [0200-number-of-islands](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0200-number-of-islands) |
 | [1306-jump-game-iii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1306-jump-game-iii) |
 ## Union-Find
 |  |
 | ------- |
 | [0128-longest-consecutive-sequence](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0128-longest-consecutive-sequence) |
 | [0130-surrounded-regions](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0130-surrounded-regions) |
+| [0200-number-of-islands](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0200-number-of-islands) |
 ## Graph Theory
 |  |
 | ------- |
