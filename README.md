@@ -69,6 +69,7 @@
 | [1848-minimum-distance-to-the-target-element](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1848-minimum-distance-to-the-target-element) |
 | [1995-count-special-quadruplets](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1995-count-special-quadruplets) |
 | [2078-two-furthest-houses-with-different-colors](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2078-two-furthest-houses-with-different-colors) |
+| [2540-minimum-common-value](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2540-minimum-common-value) |
 | [2784-check-if-array-is-good](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2784-check-if-array-is-good) |
 ## Hash Table
 |  |
@@ -97,6 +98,7 @@
 | [0169-majority-element](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0169-majority-element) |
 | [0202-happy-number](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0202-happy-number) |
 | [1995-count-special-quadruplets](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1995-count-special-quadruplets) |
+| [2540-minimum-common-value](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2540-minimum-common-value) |
 | [2784-check-if-array-is-good](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2784-check-if-array-is-good) |
 ## Linked List
 |  |
@@ -192,6 +194,7 @@
 | [0081-search-in-rotated-sorted-array-ii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0081-search-in-rotated-sorted-array-ii) |
 | [0153-find-minimum-in-rotated-sorted-array](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0153-find-minimum-in-rotated-sorted-array) |
 | [0154-find-minimum-in-rotated-sorted-array-ii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0154-find-minimum-in-rotated-sorted-array-ii) |
+| [2540-minimum-common-value](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2540-minimum-common-value) |
 ## Divide and Conquer
 |  |
 | ------- |
@@ -228,6 +231,7 @@
 | [0148-sort-list](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0148-sort-list) |
 | [0160-intersection-of-two-linked-lists](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0160-intersection-of-two-linked-lists) |
 | [0202-happy-number](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0202-happy-number) |
+| [2540-minimum-common-value](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2540-minimum-common-value) |
 ## Dynamic Programming
 |  |
 | ------- |
