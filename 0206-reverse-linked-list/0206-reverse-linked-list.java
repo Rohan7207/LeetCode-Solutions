@@ -1,3 +1,24 @@
+// Problem: Reverse Linked List 
+// Link: https://leetcode.com/problems/reverse-linked-list/
+// Difficulty: Easy
+
+// Approach:
+// Traverse the linked list using a current pointer.
+// For every node:
+//     - Store the next node temporarily.
+//     - Reverse the current node's next pointer
+//       to point to the previous node.
+//     - Move previous pointer to current node.
+//     - Move current pointer to next node.
+// Continue until all nodes are processed.
+// The previous pointer will point to the
+// new head of the reversed list.
+// Return previous pointer.
+
+// Time Complexity: O(n)
+// Space Complexity: O(1)
+
+
 /**
  * Definition for singly-linked list.
  * public class ListNode {
