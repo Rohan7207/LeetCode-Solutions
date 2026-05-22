@@ -1,4 +1,39 @@
-//Trie Node Structure
+// Problem : Design Add and Search Words Data Structure
+// Link : https://leetcode.com/problems/design-add-and-search-words-data-structure/
+// Difficulty : Medium
+
+// Approach:
+// Use a Trie data structure to store words efficiently.
+// Each Trie node contains:
+//     - children array of size 26
+//     - eow flag to mark end of word
+//
+// addWord():
+//     - Start from root.
+//     - For each character, create a child node
+//       if it does not already exist.
+//     - Move to the child node.
+//     - After inserting all characters,
+//       mark eow as true.
+//
+// search():
+//     - Use DFS to search the word in Trie.
+//     - If current character is normal letter,
+//       move to its matching child.
+//     - If current character is '.',
+//       try all possible non-null children.
+//     - If any path returns true,
+//       word exists.
+//     - After processing all characters,
+//       return whether current node is end of word.
+
+// Time Complexity:
+//     addWord: O(L)
+//     search: O(26^D * L) in worst case
+//
+// Space Complexity: O(N * L)
+
+
 class Node{
     Node[] children = new Node[26];
     boolean eow = false;
@@ -18,97 +53,42 @@ class WordDictionary {
         for(int i = 0; i < word.length(); i++) {
             char ch = word.charAt(i);
 
-            //if the node is null only, then we will add our character and create it's reference node
             if(node.children[ch - 'a'] == null) {
                 node.children[ch - 'a'] = new Node();
             }
 
-            //Now we will go to the reference of the node
             node = node.children[ch - 'a'];
         }
 
-        //Atlast, we have completely inserted our word in the trie, so mark the flag as true
         node.eow = true;
     } 
 
     public boolean search(String word) {
-        //Here we have created our dfs method which will search our word in the trie and 
-        // it will handle the situation, if '.' comes in the word, it means we can have any words 
-        // between a to z
         return dfs(word, root, 0);
     }
 
     public boolean dfs(String word, Node curr, int idx) {
         Node node = curr;
 
-        //we will start traversing the entire word
         for(int i = idx; i < word.length(); i++) {
             char ch = word.charAt(i);
 
-            //if the word contains '.', then we will traverse all the characters from a to z
             if(ch == '.') {
-                //Traverse all the child of node
                 for(Node child : node.children) {
-                    //if the child is not null, then we will traverse the next characters of words
-                    //if both are true then return true
                     if(child != null && dfs(word, child, i + 1)) return true;
                 }
 
-                //Atlast, if we traverse all the childs of node, and we did not get anything we will return false
                 return false;
             } else {
                 if(node.children[ch - 'a'] == null) return false;
 
-                //else go to the refrence of that node
                 node = node.children[ch - 'a'];
             }
         }
 
-        //If we traverse the entire word, then return the eow
         return node.eow;
     }
 }
-
-
-/*
-// 188ms beats 60.45%
-   private Node root;
-
-    public WordDictionary() {
-        root=new Node();
-    }
-    
-    public void addWord(String word) {
-        Node cur=root;
-        for(char c:word.toCharArray()){
-            int idx=c-'a';
-            if(cur.children[idx]==null)
-               cur.children[idx]=new Node();
-            cur=cur.children[idx];
-        }
-        cur.eow=true;
-    }
-    
-    public boolean search(String word) {
-        return search(word,0,root);
-    }
-
-    private boolean search(String word,int idx,Node root){
-        if(root==null) return false;
-        if(idx==word.length()) return root.eow;
-
-        char c=word.charAt(idx);
-        if(c!='.'){
-            return search(word,idx+1,root.children[c-'a']);
-        }
-
-        for(int i=0;i<26;i++){
-            if(search(word,idx+1,root.children[i]))
-                return true;
-        }
-        return false;
-    }
-*/
 
 /**
  * Your WordDictionary object will be instantiated and called as such:
