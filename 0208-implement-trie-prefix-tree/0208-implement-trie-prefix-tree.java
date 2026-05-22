@@ -21,7 +21,6 @@ class Trie {
 
             node = node.children[idx];
         }
-
         node.isEnd = true;
     }
 
@@ -34,7 +33,6 @@ class Trie {
             if (node.children[idx] == null) {
                 return false;
             }
-
             node = node.children[idx];
         }
 
