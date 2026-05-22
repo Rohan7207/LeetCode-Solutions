@@ -1,3 +1,29 @@
+// Problem: Search in Rotated Sorted Array
+// Link: https://leetcode.com/problems/search-in-rotated-sorted-array/description/?envType=daily-question&envId=2026-05-22
+// Difficulty: Medium
+
+// Approach:
+// Use Binary Search on the rotated sorted array.
+// For every mid element:
+//     - If target is found, return its index.
+//     - Check which half is sorted.
+//     - If left half is sorted:
+//           - Check whether target lies within
+//             the left sorted range.
+//           - If yes, search left half.
+//           - Otherwise search right half.
+//     - If right half is sorted:
+//           - Check whether target lies within
+//             the right sorted range.
+//           - If yes, search right half.
+//           - Otherwise search left half.
+// Continue until search space becomes empty.
+// Return -1 if target is not found.
+
+// Time Complexity: O(log n)
+// Space Complexity: O(1)
+
+
 class Solution {
     public int search(int[] nums, int target) {
         int low = 0;
@@ -26,10 +52,3 @@ class Solution {
         return -1;
     }
 }
-
-/*
-    "I use modified binary search by identifying the sorted half in each iteration and narrowing the search range accordingly"
-
-    Time Complexity: O(log n)
-    Space Complexity: O(1)
-*/
