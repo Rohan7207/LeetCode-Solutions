@@ -1,3 +1,34 @@
+// Problem : Course Schedule II
+// Link : https://leetcode.com/problems/course-schedule-ii/
+// Difficulty : Medium
+
+// Approach:
+// Use Kahn's Algorithm (BFS Topological Sort)
+// to find a valid order of completing courses.
+// Build a directed graph where:
+//     prerequisite -> dependent course
+// Calculate indegree of every course.
+// Indegree represents the number of
+// prerequisites required for that course.
+// Add all courses having indegree 0
+// into a queue since they can be taken first.
+// Perform BFS:
+//     - Remove a course from queue.
+//     - Add it to the answer array.
+//     - Visit all dependent courses.
+//     - Reduce their indegree.
+//     - If indegree becomes 0,
+//       add that course to queue.
+// After processing:
+//     - If all courses are included in answer,
+//       return the topological ordering.
+//     - Otherwise a cycle exists,
+//       so return an empty array.
+
+// Time Complexity: O(V + E)
+// Space Complexity: O(V + E)
+
+
 class Solution {
     public int[] findOrder(int numCourses, int[][] prerequisites) {
         List<List<Integer>> graph = new ArrayList<>();
@@ -38,10 +69,3 @@ class Solution {
         return index == numCourses ? order : new int[0];
     }
 }
-
-/*
-Build a graph and an array to store the in-degree (number of prerequisites) of each course.
-Start with all courses having in-degree = 0, i.e., no prerequisites.
-Process each course, reduce the in-degree of its neighbors, and if any neighbor’s in-degree becomes zero, add it to the processing queue.
-If we can process all nodes, return the order; otherwise, return an empty array.
-*/
