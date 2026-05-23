@@ -1,3 +1,22 @@
+// Problem: Count Complete Tree Nodes
+// Link: https://leetcode.com/problems/count-complete-tree-nodes/
+// Difficulty: Easy
+
+// Approach:
+// Use recursion to count nodes in the binary tree.
+// For each node:
+//     - Recursively count nodes in left subtree.
+//     - Recursively count nodes in right subtree.
+//     - Add 1 for the current node.
+// If the current node is null,
+// return 0.
+// Return total nodes as:
+//     left count + right count + 1.
+
+// Time Complexity: O(n)
+// Space Complexity: O(h) // recursion stack
+
+
 /**
  * Definition for a binary tree node.
  * public class TreeNode {
