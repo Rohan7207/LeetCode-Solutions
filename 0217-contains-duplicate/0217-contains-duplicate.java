@@ -1,3 +1,25 @@
+// Problem: Contains Duplicate
+// Link: https://leetcode.com/problems/contains-duplicate/
+// Difficulty: Easy
+
+// Approach:
+// Use a HashSet to keep track of
+// elements seen so far.
+// Traverse the array:
+//     - Try to insert the current element
+//       into the HashSet.
+//     - If insertion fails,
+//       the element already exists,
+//       so a duplicate is found.
+//       Return true immediately.
+//
+// If all elements are processed without
+// finding duplicates, return false.
+
+// Time Complexity: O(n)
+// Space Complexity: O(n)
+
+
 class Solution {
     public boolean containsDuplicate(int[] nums) {
         Set<Integer> seen = new HashSet<>();
@@ -7,9 +29,7 @@ class Solution {
                 return true;
             }
         }
+        
         return false;
     }
 }
-
-//The set.add(i) method doesn't just add an element—it also returns a boolean telling you if the addition was successful.
-//If add(i) returns false (meaning a duplicate was found), !false becomes true.
