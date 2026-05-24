@@ -349,6 +349,7 @@
 | [0150-evaluate-reverse-polish-notation](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0150-evaluate-reverse-polish-notation) |
 | [0155-min-stack](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0155-min-stack) |
 | [0224-basic-calculator](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0224-basic-calculator) |
+| [0225-implement-stack-using-queues](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0225-implement-stack-using-queues) |
 ## Heap (Priority Queue)
 |  |
 | ------- |
@@ -544,6 +545,7 @@
 | [0155-min-stack](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0155-min-stack) |
 | [0208-implement-trie-prefix-tree](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0208-implement-trie-prefix-tree) |
 | [0211-design-add-and-search-words-data-structure](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0211-design-add-and-search-words-data-structure) |
+| [0225-implement-stack-using-queues](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0225-implement-stack-using-queues) |
 ## Doubly-Linked List
 |  |
 | ------- |
@@ -565,4 +567,8 @@
 |  |
 | ------- |
 | [0223-rectangle-area](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0223-rectangle-area) |
+## Queue
+|  |
+| ------- |
+| [0225-implement-stack-using-queues](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0225-implement-stack-using-queues) |
 <!---LeetCode Topics End-->
