@@ -153,6 +153,7 @@
 | [0202-happy-number](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0202-happy-number) |
 | [0204-count-primes](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0204-count-primes) |
 | [0223-rectangle-area](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0223-rectangle-area) |
+| [0224-basic-calculator](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0224-basic-calculator) |
 | [3783-mirror-distance-of-an-integer](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3783-mirror-distance-of-an-integer) |
 ## Recursion
 |  |
@@ -166,6 +167,7 @@
 | [0143-reorder-list](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0143-reorder-list) |
 | [0203-remove-linked-list-elements](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0203-remove-linked-list-elements) |
 | [0206-reverse-linked-list](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0206-reverse-linked-list) |
+| [0224-basic-calculator](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0224-basic-calculator) |
 ## String
 |  |
 | ------- |
@@ -193,6 +195,7 @@
 | [0139-word-break](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0139-word-break) |
 | [0208-implement-trie-prefix-tree](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0208-implement-trie-prefix-tree) |
 | [0211-design-add-and-search-words-data-structure](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0211-design-add-and-search-words-data-structure) |
+| [0224-basic-calculator](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0224-basic-calculator) |
 | [2833-furthest-point-from-origin](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2833-furthest-point-from-origin) |
 ## Sliding Window
 |  |
@@ -345,6 +348,7 @@
 | [0145-binary-tree-postorder-traversal](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0145-binary-tree-postorder-traversal) |
 | [0150-evaluate-reverse-polish-notation](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0150-evaluate-reverse-polish-notation) |
 | [0155-min-stack](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0155-min-stack) |
+| [0224-basic-calculator](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0224-basic-calculator) |
 ## Heap (Priority Queue)
 |  |
 | ------- |
