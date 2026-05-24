@@ -152,6 +152,7 @@
 | [0150-evaluate-reverse-polish-notation](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0150-evaluate-reverse-polish-notation) |
 | [0202-happy-number](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0202-happy-number) |
 | [0204-count-primes](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0204-count-primes) |
+| [0223-rectangle-area](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0223-rectangle-area) |
 | [3783-mirror-distance-of-an-integer](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3783-mirror-distance-of-an-integer) |
 ## Recursion
 |  |
@@ -556,4 +557,8 @@
 |  |
 | ------- |
 | [0215-kth-largest-element-in-an-array](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0215-kth-largest-element-in-an-array) |
+## Geometry
+|  |
+| ------- |
+| [0223-rectangle-area](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0223-rectangle-area) |
 <!---LeetCode Topics End-->
