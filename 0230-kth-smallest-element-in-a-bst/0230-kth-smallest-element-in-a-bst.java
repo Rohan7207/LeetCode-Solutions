@@ -17,12 +17,13 @@ class Solution {
     int i = 0;
     int ans = 0;
     public int kthSmallest(TreeNode root, int k) {
-        if(root == null || i >= k) return ans;
+        if(root == null) return ans;
 
         kthSmallest(root.left, k);
         i++;
 
-        if(i == k) ans = root.val;
+        if(i == k) 
+            ans = root.val;
 
         kthSmallest(root.right, k);
 
