@@ -1,3 +1,33 @@
+// Problem: kth Smallest Element in a BST
+// Link: https://leetcode.com/problems/kth-smallest-element-in-a-bst/
+// Difficulty: Medium
+
+// Approach:
+// Use inorder traversal because inorder
+// traversal of a BST visits nodes in
+// ascending sorted order.
+// Maintain a counter to track how many
+// nodes have been visited.
+// Traverse:
+//     Left → Root → Right
+// Before each recursive call,
+// check whether the kth element has
+// already been found.
+// When visiting a node:
+//     - Increment the counter.
+//     - If counter becomes k,
+//       store the current node value
+//       as the answer and stop recursion.
+// Use early termination to avoid
+// traversing unnecessary nodes after
+// finding the answer.
+
+// Time Complexity:
+//     O(k) average
+//     O(n) worst case
+// Space Complexity: O(h) recursion stack
+
+
 /**
  * Definition for a binary tree node.
  * public class TreeNode {
@@ -32,40 +62,3 @@ class Solution {
         return ans;
     }
 }
-
-// Time Complexity:
-//     O(k) average
-//     O(n) worst case
-//
-// Space Complexity: O(h) recursion stack
-
-// “I perform inorder traversal and terminate recursion as soon as the kth node is visited since BST inorder produces sorted order.”
-
-/*
-    Useful Interview Follow-up
-
-If interviewer asks:
-
-"Can we do better than O(n)?"
-
-Answer:
-
-For a static BST, inorder traversal is sufficient. If frequent kth-smallest queries are required, store subtree sizes at each node and use an Order Statistic Tree to answer queries in O(log n).
-*/
-
-/*
-     public ArrayList<Integer> inorder(TreeNode root,ArrayList<Integer> arr){
-    if(root==null) return arr;
-
-    inorder(root.left,arr);
-    arr.add(root.val);
-    inorder(root.right,arr);
-    return arr;
-    }
-
-    public int kthSmallest(TreeNode root, int k) {
-        ArrayList<Integer> res=inorder(root,new ArrayList<Integer>());   
-
-        return res.get(k-1);
-    }
-*/
