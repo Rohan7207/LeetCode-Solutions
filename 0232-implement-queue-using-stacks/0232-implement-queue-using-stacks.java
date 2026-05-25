@@ -1,3 +1,34 @@
+// Problem: Implement Queue Using Stacks
+// Link: https://leetcode.com/problems/implement-queue-using-stacks/
+// Difficulty: Easy
+
+// Approach:
+// Use two stacks to simulate FIFO behavior.
+// push(x):
+//     - Move all elements from s1 to s2.
+//     - Push the new element into s1.
+//     - Move all elements back from s2 to s1.
+// After rearrangement:
+//     - Oldest element remains at the top of s1.
+//     - Front of queue is always on top of s1.
+//
+// pop():
+//     - Remove and return top element of s1.
+//
+// peek():
+//     - Return top element of s1.
+//
+// empty():
+//     - Check whether s1 is empty.
+
+// Time Complexity:
+//     push  : O(n)
+//     pop   : O(1)
+//     peek  : O(1)
+//     empty : O(1)
+// Space Complexity: O(n)
+
+
 class MyQueue {
     Stack<Integer> s1, s2;
 
