@@ -1,3 +1,30 @@
+// Problem: kth Smallest Element in a BST
+// Link: https://leetcode.com/problems/kth-smallest-element-in-a-bst/
+// Difficulty: Medium
+
+// Approach:
+// Perform inorder traversal of the BST
+// because inorder visits nodes in sorted order.
+// Before processing a node,
+// check whether kth element has already
+// been found using: i >= k
+// If found, stop further recursion.
+// Traverse left subtree first.
+// After returning:
+//     - Increment visited node count.
+//     - If count becomes k,
+//       store current node value as answer.
+// Then traverse right subtree only if
+// answer has not been found yet.
+// Return the stored answer.
+
+// Time Complexity:
+//     O(k) average
+//     O(n) worst case
+//
+// Space Complexity: O(h) recursion stack
+
+
 /**
  * Definition for a binary tree node.
  * public class TreeNode {
@@ -30,20 +57,3 @@ class Solution {
         return ans;
     }
 }
-
-/*
-     public ArrayList<Integer> inorder(TreeNode root,ArrayList<Integer> arr){
-    if(root==null) return arr;
-
-    inorder(root.left,arr);
-    arr.add(root.val);
-    inorder(root.right,arr);
-    return arr;
-    }
-
-    public int kthSmallest(TreeNode root, int k) {
-        ArrayList<Integer> res=inorder(root,new ArrayList<Integer>());   
-
-        return res.get(k-1);
-    }
-*/
