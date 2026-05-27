@@ -4,22 +4,25 @@ class Solution {
         int[] firstUpper = new int[26];
 
         Arrays.fill(lastLower, -1);
-        Arrays.fill(firstUpper, Integer.MAX_VALUE);
+        Arrays.fill(firstUpper, -1);
 
         for (int i = 0; i < word.length(); i++) {
             char ch = word.charAt(i);
 
-            if(Character.isLowerCase(ch)) {
+            if(ch >= 'a' && ch <= 'z') {
                 lastLower[ch - 'a'] = i;
             } else {
-                firstUpper[ch - 'A'] = Math.min(firstUpper[ch - 'A'], i);
+                int idx = ch - 'A';
+                if(firstUpper[idx] == -1) {
+                    firstUpper[idx] = i;
+                }
             }
         }
 
         int count = 0;
 
         for(int i = 0; i < 26; i++) {
-            if(lastLower[i] != -1 && firstUpper[i] != Integer.MAX_VALUE && lastLower[i] < firstUpper[i]) {
+            if(lastLower[i] != -1 && firstUpper[i] != -1 && lastLower[i] < firstUpper[i]) {
                 count++;
             }
         }
