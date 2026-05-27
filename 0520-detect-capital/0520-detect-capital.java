@@ -1,3 +1,23 @@
+// Problem: Detect Capital
+// Link: https://leetcode.com/problems/detect-capital/
+// Difficulty: Easy
+
+// Approach:
+// Count the number of uppercase letters
+// present in the word.
+// The capitalization is valid if:
+//     - All letters are uppercase.
+//     - No letters are uppercase.
+//     - Exactly one letter is uppercase
+//       and it is the first character.
+// Check these three conditions and
+// return true if any of them holds.
+// Otherwise return false.
+
+// Time Complexity: O(n)
+// Space Complexity: O(1)
+
+
 class Solution {
     public boolean detectCapitalUse(String word) {
         int capitals = 0;
