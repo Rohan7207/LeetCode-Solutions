@@ -1,13 +1,25 @@
+// Problem: Missing Number
+// Link: https://leetcode.com/problems/missing-number/
+// Difficulty: Easy
+
+// Approach:
+// XOR all numbers from 0 to n.
+// XOR all elements present in the array.
+// Numbers appearing in both groups cancel out.
+// The remaining value is the missing number.
+
+// Time Complexity: O(n)
+// Space Complexity: O(1)
+
+
 class Solution {
     public int missingNumber(int[] nums) {
         int res = 0;
 
-        //Range
         for (int i = 0; i <= nums.length; i++) {
             res ^= i;
         }
 
-        //Values
         for (int i = 0; i < nums.length; i++) {
             res ^= nums[i];
         }
@@ -15,16 +27,3 @@ class Solution {
         return res;
     }
 }
-
-//Approach 2
-//We can use XOR operator with O(n) and O(1)
-
-/*
-     We can use hashset but it takes space of O(n)
-        int res = nums.length;
-        for(int i = 0; i < nums.length; i++){
-            res += i - nums[i];
-        }
-
-        return res;
-*/
