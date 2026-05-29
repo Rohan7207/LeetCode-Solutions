@@ -81,6 +81,7 @@
 | [2540-minimum-common-value](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2540-minimum-common-value) |
 | [2657-find-the-prefix-common-array-of-two-arrays](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2657-find-the-prefix-common-array-of-two-arrays) |
 | [2784-check-if-array-is-good](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2784-check-if-array-is-good) |
+| [3300-minimum-element-after-replacement-with-digit-sum](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3300-minimum-element-after-replacement-with-digit-sum) |
 ## Hash Table
 |  |
 | ------- |
@@ -164,6 +165,7 @@
 | [0223-rectangle-area](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0223-rectangle-area) |
 | [0224-basic-calculator](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0224-basic-calculator) |
 | [0268-missing-number](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0268-missing-number) |
+| [3300-minimum-element-after-replacement-with-digit-sum](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3300-minimum-element-after-replacement-with-digit-sum) |
 | [3783-mirror-distance-of-an-integer](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3783-mirror-distance-of-an-integer) |
 ## Recursion
 |  |
