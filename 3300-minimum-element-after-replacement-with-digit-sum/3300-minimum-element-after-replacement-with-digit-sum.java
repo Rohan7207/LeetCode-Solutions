@@ -1,3 +1,24 @@
+// Problem: Minimum Element After Replacement With Digit Sum
+// Link: https://leetcode.com/problems/minimum-element-after-replacement-with-digit-sum/?envType=daily-question&envId=2026-05-29
+// Difficulty: Easy
+
+// Approach:
+// Traverse each number in the array.
+// For every number:
+//     - Extract its digits using modulo (% 10).
+//     - Compute the sum of all digits.
+//     - Compare the digit sum with the
+//       current minimum digit sum.
+// Keep updating the minimum digit sum
+// encountered so far.
+// Return the minimum digit sum.
+
+// Time Complexity: O(n × d)
+// Space Complexity: O(1)
+//
+// d = number of digits in a number
+
+
 class Solution {
     public int minElement(int[] nums) {
         int min = Integer.MAX_VALUE;
@@ -16,29 +37,3 @@ class Solution {
         return min;
     }
 }
-
-/*
-    My written code :
-         int minSum = Integer.MAX_VALUE;
-        int sumOfDigit = 0;
-
-        for(int i = 0; i < nums.length; i++) {
-            sumOfDigit = sumOfDigits(nums[i]);
-
-            minSum = Math.min(minSum, sumOfDigit);
-        }   
-
-        return minSum;
-    }
-
-    private int sumOfDigits(int n) {
-        int sum = 0;
-
-        while(n != 0) {
-            sum += n % 10;
-            n /= 10;
-        }
-
-        return sum;
-    }
-*/
