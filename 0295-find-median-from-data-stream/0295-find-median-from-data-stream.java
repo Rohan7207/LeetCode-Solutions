@@ -1,3 +1,35 @@
+// Problem: Find Median From Data Stream
+// Link: https://leetcode.com/problems/find-median-from-data-stream/
+// Difficulty: Hard
+
+// Approach:
+// Use two heaps:
+//     - Max Heap (left) stores the smaller half
+//       of the numbers.
+//
+//     - Min Heap (right) stores the larger half
+//       of the numbers.
+// When inserting a number:
+//     - Place it into the appropriate heap
+//       based on comparison with left's top.
+//     - Rebalance heaps if their size
+//       difference exceeds 1.
+// This ensures:
+//     - All elements in left <= all elements in right.
+//     - Heap sizes differ by at most 1.
+// To find median:
+//     - If one heap has more elements,
+//       its top is the median.
+//     - If both heaps have equal size,
+//       median is the average of both tops.
+
+// Time Complexity:
+//     addNum()     : O(log n)
+//     findMedian() : O(1)
+//
+// Space Complexity: O(n)
+
+
 class MedianFinder {
     PriorityQueue<Integer> left;
     PriorityQueue<Integer> right;
@@ -37,28 +69,3 @@ class MedianFinder {
  * obj.addNum(num);
  * double param_2 = obj.findMedian();
  */
-
-/*
-   PriorityQueue<Integer> minHeap;
-   PriorityQueue<Integer> maxHeap;
-
-   public MedianFinder() {
-       minHeap = new PriorityQueue<>();
-       maxHeap = new PriorityQueue<>((a, b) -> b - a);
-   }
-
-   //adds num to data stream
-   public void addNum(int num) {
-       maxHeap.offer(num); //add to max heap
-
-       minHeap.offer(maxHeap.poll());
-
-       if (maxHeap.size() < minHeap.size()) {
-           maxHeap.offer(minHeap.poll());
-       }
-   }
-
-   public double findMedian() {
-       return maxHeap.size() > minHeap.size() ? maxHeap.peek() : (maxHeap.peek() + minHeap.peek()) * 0.5;
-   }
-*/
