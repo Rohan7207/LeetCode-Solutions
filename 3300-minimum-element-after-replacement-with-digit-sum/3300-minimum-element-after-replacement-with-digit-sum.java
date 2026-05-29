@@ -1,6 +1,25 @@
 class Solution {
     public int minElement(int[] nums) {
-        int minSum = Integer.MAX_VALUE;
+        int min = Integer.MAX_VALUE;
+
+        for (int num : nums) {
+            int sum = 0;
+
+            while (num != 0) {
+                sum += num % 10;
+                num /= 10;
+            }
+
+            min = Math.min(min, sum);
+        }
+
+        return min;
+    }
+}
+
+/*
+    My written code :
+         int minSum = Integer.MAX_VALUE;
         int sumOfDigit = 0;
 
         for(int i = 0; i < nums.length; i++) {
@@ -22,4 +41,4 @@ class Solution {
 
         return sum;
     }
-}
+*/
