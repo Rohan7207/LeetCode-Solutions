@@ -18,7 +18,7 @@ public class Codec {
     }
 
     public void traversal(TreeNode root, StringBuilder data) {
-        if(root == null) {
+        if (root == null) {
             data.append("n ");
             return;
         }
@@ -30,17 +30,20 @@ public class Codec {
 
     // Decodes your encoded data to tree.
     public TreeNode deserialize(String data) {
-        if(data == null || data.isEmpty() || data.equals("n")) return null;
+        if (data == null || data.isEmpty() || data.equals("n"))
+            return null;
 
         String[] arr = data.split(" ");
-        return build(arr, new int[] {0});
+        return build(arr, new int[] { 0 });
     }
 
     public TreeNode build(String[] arr, int[] idx) {
-        if(idx[0] >= arr.length) return null;
+        if (idx[0] >= arr.length)
+            return null;
         String val = arr[idx[0]++];
 
-        if(val.equals("n")) return null;
+        if (val.equals("n"))
+            return null;
         TreeNode root = new TreeNode(Integer.parseInt(val));
         root.left = build(arr, idx);
         root.right = build(arr, idx);
