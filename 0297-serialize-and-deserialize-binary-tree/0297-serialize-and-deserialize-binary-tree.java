@@ -1,3 +1,29 @@
+// Problem: Serialize and Deserialize Binary Tree
+// Link: https://leetcode.com/problems/serialize-and-deserialize-binary-tree/
+// Difficulty: Hard
+
+// Approach:
+// Use preorder traversal to serialize the tree.
+// Store node values in Root → Left → Right order.
+// Whenever a null node is found,
+// store a special marker like "n".
+//
+// During deserialization:
+//     - Split the string into tokens.
+//     - Use a shared index to process tokens one by one.
+//     - If current token is "n",
+//       return null.
+//     - Otherwise create a TreeNode.
+//     - Recursively build its left subtree.
+//     - Recursively build its right subtree.
+//
+// Null markers are important because they preserve
+// the exact tree structure.
+
+// Time Complexity: O(n)
+// Space Complexity: O(n)
+
+
 /**
  * Definition for a binary tree node.
  * public class TreeNode {
