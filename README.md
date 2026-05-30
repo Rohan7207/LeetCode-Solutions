@@ -74,6 +74,7 @@
 | [0289-game-of-life](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0289-game-of-life) |
 | [0300-longest-increasing-subsequence](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0300-longest-increasing-subsequence) |
 | [0322-coin-change](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0322-coin-change) |
+| [0349-intersection-of-two-arrays](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0349-intersection-of-two-arrays) |
 | [1306-jump-game-iii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1306-jump-game-iii) |
 | [1752-check-if-array-is-sorted-and-rotated](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1752-check-if-array-is-sorted-and-rotated) |
 | [1848-minimum-distance-to-the-target-element](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1848-minimum-distance-to-the-target-element) |
@@ -112,6 +113,7 @@
 | [0208-implement-trie-prefix-tree](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0208-implement-trie-prefix-tree) |
 | [0217-contains-duplicate](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0217-contains-duplicate) |
 | [0268-missing-number](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0268-missing-number) |
+| [0349-intersection-of-two-arrays](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0349-intersection-of-two-arrays) |
 | [1995-count-special-quadruplets](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1995-count-special-quadruplets) |
 | [2540-minimum-common-value](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2540-minimum-common-value) |
 | [2657-find-the-prefix-common-array-of-two-arrays](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2657-find-the-prefix-common-array-of-two-arrays) |
@@ -237,6 +239,7 @@
 | [0268-missing-number](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0268-missing-number) |
 | [0287-find-the-duplicate-number](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0287-find-the-duplicate-number) |
 | [0300-longest-increasing-subsequence](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0300-longest-increasing-subsequence) |
+| [0349-intersection-of-two-arrays](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0349-intersection-of-two-arrays) |
 | [2540-minimum-common-value](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2540-minimum-common-value) |
 ## Divide and Conquer
 |  |
@@ -278,6 +281,7 @@
 | [0202-happy-number](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0202-happy-number) |
 | [0287-find-the-duplicate-number](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0287-find-the-duplicate-number) |
 | [0295-find-median-from-data-stream](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0295-find-median-from-data-stream) |
+| [0349-intersection-of-two-arrays](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0349-intersection-of-two-arrays) |
 | [2540-minimum-common-value](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2540-minimum-common-value) |
 ## Dynamic Programming
 |  |
@@ -331,6 +335,7 @@
 | [0217-contains-duplicate](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0217-contains-duplicate) |
 | [0268-missing-number](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0268-missing-number) |
 | [0295-find-median-from-data-stream](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0295-find-median-from-data-stream) |
+| [0349-intersection-of-two-arrays](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0349-intersection-of-two-arrays) |
 | [2784-check-if-array-is-good](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2784-check-if-array-is-good) |
 ## Backtracking
 |  |
