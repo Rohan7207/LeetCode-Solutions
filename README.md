@@ -306,6 +306,7 @@
 | [0213-house-robber-ii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0213-house-robber-ii) |
 | [0300-longest-increasing-subsequence](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0300-longest-increasing-subsequence) |
 | [0322-coin-change](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0322-coin-change) |
+| [0338-counting-bits](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0338-counting-bits) |
 ## Trie
 |  |
 | ------- |
@@ -443,6 +444,7 @@
 | [0222-count-complete-tree-nodes](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0222-count-complete-tree-nodes) |
 | [0268-missing-number](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0268-missing-number) |
 | [0287-find-the-duplicate-number](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0287-find-the-duplicate-number) |
+| [0338-counting-bits](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0338-counting-bits) |
 | [2657-find-the-prefix-common-array-of-two-arrays](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2657-find-the-prefix-common-array-of-two-arrays) |
 ## Memoization
 |  |
