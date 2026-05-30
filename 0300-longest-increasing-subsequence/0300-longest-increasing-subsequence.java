@@ -1,6 +1,30 @@
+// Problem : Longest Increasing Subsequence
+// Link : https://leetcode.com/problems/longest-increasing-subsequence/
+// Difficulty : Medium
+
+// Approach:
+// Maintain a list 'sub' where:
+// sub[i] represents the smallest possible
+// tail of an increasing subsequence of
+// length i + 1.
+// For every number:
+//     - If it is greater than the last
+//       element of sub,
+//       extend the subsequence.
+//     - Otherwise find the first element
+//       greater than or equal to it using
+//       binary search and replace it.
+// Replacing does not change LIS length,
+// but creates a better opportunity for
+// future elements to form longer subsequences.
+// The size of sub is the length of LIS.
+
+// Time Complexity: O(n log n)
+// Space Complexity: O(n)
+
+
 class Solution {
     public int lengthOfLIS(int[] nums) {
-        //Solution with Patient Sort Algorithm with O(n*logn)
         ArrayList<Integer> sub = new ArrayList<>();
         sub.add(nums[0]);
 
@@ -34,21 +58,3 @@ class Solution {
         return left;
     }
 }
-
-/*
-    //Solution with O(n^2)
-        int[] lis = new int[nums.length];
-        Arrays.fill(lis, 1);
-        int max = 1;
-
-        for(int i = 1; i < nums.length; i++){
-            for(int j = 0; j < i; j++){
-                if(nums[i] > nums[j]){
-                    lis[i] = Math.max(lis[i], 1 + lis[j]); //Recurence relation
-                    max = Math.max(max, lis[i]);
-                }
-            }
-        }
-
-        return max;
-*/
