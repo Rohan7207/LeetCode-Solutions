@@ -34,15 +34,15 @@ class Solution {
 
         dp = new int[m][n];
 
-        for(int i = 0; i < m; i++) {
+        for (int i = 0; i < m; i++) {
             Arrays.fill(dp[i], -1);
         }
 
         int ans = 0;
 
-        for(int i = 0; i < m; i++) {
-            for(int j = 0; j < n; j++) {
-                if(dp[i][j] == -1) {
+        for (int i = 0; i < m; i++) {
+            for (int j = 0; j < n; j++) {
+                if (dp[i][j] == -1) {
                     ans = Math.max(ans, dfs(matrix, i, j));
                 }
             }
@@ -52,7 +52,7 @@ class Solution {
     }
 
     private int dfs(int[][] matrix, int i, int j) {
-        if(dp[i][j] != -1) {
+        if (dp[i][j] != -1) {
             return dp[i][j];
         }
 
@@ -66,19 +66,19 @@ class Solution {
         int up = 0;
         int down = 0;
 
-        if(i + 1 < m && matrix[i + 1][j] > num) {
+        if (i + 1 < m && matrix[i + 1][j] > num) {
             down = dfs(matrix, i + 1, j);
         }
 
-        if(i - 1 >= 0 && matrix[i - 1][j] > num) {
+        if (i - 1 >= 0 && matrix[i - 1][j] > num) {
             up = dfs(matrix, i - 1, j);
         }
 
-        if(j + 1 < n && matrix[i][j + 1] > num) {
+        if (j + 1 < n && matrix[i][j + 1] > num) {
             right = dfs(matrix, i, j + 1);
         }
 
-        if(j - 1 >= 0 && matrix[i][j - 1] > num) {
+        if (j - 1 >= 0 && matrix[i][j - 1] > num) {
             left = dfs(matrix, i, j - 1);
         }
 
