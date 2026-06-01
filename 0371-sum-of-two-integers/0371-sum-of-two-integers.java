@@ -1,3 +1,21 @@
+// Problem: Sum of Two Integers
+// Link: https://leetcode.com/problems/sum-of-two-integers/
+// Difficulty: Medium
+
+// Approach:
+// Use Bit Manipulation.
+// XOR (^)
+//     gives sum without carry.
+// AND (&)
+//     finds positions where carry occurs.
+// Shift carry left by 1
+//     because carry affects the next bit.
+// Repeat until carry becomes 0.
+
+// Time Complexity: O(32)
+// Space Complexity: O(1)
+
+
 class Solution {
     public int getSum(int a, int b) {
         while(b != 0){
@@ -11,17 +29,3 @@ class Solution {
         return a;
     }
 }
-
-/*
-    We use XOR and AND it,  with O(1) and O(1)
-    We do a XOR b and a & b << 1 till 0
-    
-    a=5 and b=3
-                1 0 1
-                0 1 1
-    a^b=        1 1 0
-    a&b<<1= 0 0 1  
-    //the last space is bcz we did left shift and we do until b!=0  and we return a 
-
-    return a + b;
-*/
