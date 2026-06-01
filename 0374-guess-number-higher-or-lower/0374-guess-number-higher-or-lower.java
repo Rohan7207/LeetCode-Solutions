@@ -1,3 +1,23 @@
+// Problem: Guess Number Higher or Lower
+// Link: https://leetcode.com/problems/guess-number-higher-or-lower/
+// Difficulty: Easy
+
+// Approach:
+// Use Binary Search on the range [1, n].
+// For every middle number:
+//     guess(mid)
+// returns:
+//     0  -> correct number found
+//    -1  -> picked number is smaller
+//           than mid, search left half
+//     1  -> picked number is larger
+//           than mid, search right half
+// Continue until the number is found.
+
+// Time Complexity: O(log n)
+// Space Complexity: O(1)
+
+
 /** 
  * Forward declaration of guess API.
  * @param  num   your guess
