@@ -1,3 +1,39 @@
+// Problem: Reconstruct Itinerary
+// Link: https://leetcode.com/problems/reconstruct-itinerary/
+// Difficulty: Hard
+
+// Approach:
+// Build a directed graph where:
+//
+//     departure airport -> destination airports
+//
+// Store destinations in a PriorityQueue
+// so that the lexicographically smallest
+// destination is always chosen first.
+//
+// Start DFS from "JFK".
+//
+// During DFS:
+//     - Continuously take the smallest
+//       destination from the min heap.
+//     - Recursively visit that airport.
+//     - Remove the ticket using poll().
+//
+// After all outgoing flights are used,
+// add the current airport to the front
+// of the answer list.
+//
+// This is Hierholzer's Algorithm used
+// to find an Eulerian Path.
+//
+// Since airports are added during
+// backtracking, the itinerary is built
+// in reverse order.
+
+// Time Complexity: O(E log E)
+// Space Complexity: O(E)
+
+
 class Solution {
     Map<String, PriorityQueue<String>> graph = new HashMap<>();
     LinkedList<String> res = new LinkedList<>();
@@ -27,44 +63,3 @@ class Solution {
         res.addFirst(airport);
     }
 }
-
-
-/*
-class Solution {
-    public List<String> findItinerary(List<List<String>> tickets) {
-        //We use graph and dfs traversal and start from jfk
-        //Use and hashmap and store in lexico order 
-        //Create a map to store list of destination for each departure
-
-        Map<String,List<String>> graph = new HashMap<>();
-        for(List<String> ticket : tickets){
-            String from = ticket.get(0);
-            String to = ticket.get(1);
-            graph.computeIfAbsent(from, k -> new ArrayList<>()).add(to);
-        }
-
-        //Sort the destinations for each departure airport in lexical order
-        for(List<String> destinations : graph.values()){
-            Collections.sort(destinations);
-        }
-
-        //Start from itinerary from "JFK"
-        LinkedList<String> res = new LinkedList<>();
-        dfs("JFK" , graph , res);
-
-        return res;
-    }
-
-    private void dfs(String airport, Map<String, List<String>> graph, LinkedList<String> res){
-        List<String> destinations = graph.get(airport);
-        while(destinations != null && !destinations.isEmpty()){
-            //Remove next destination to avoid revisiting same path
-            String next = destinations.remove(0);
-            dfs(next, graph, res);
-        }
-
-        //Add the airport to res at beginning to build res in reverse order
-        res.addFirst(airport);
-    }
-}
-*/
