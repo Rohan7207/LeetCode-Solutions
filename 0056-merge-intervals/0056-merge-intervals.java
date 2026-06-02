@@ -6,12 +6,14 @@
 // Sort the intervals based on starting values.
 // If starting values are equal, sort by ending values.
 // Use pointer l to track the last merged interval position.
+// 
 // Traverse the intervals starting from index 1:
 //     - If current interval does not overlap with
 //       the last merged interval:
 //           move l forward and store the current interval.
 //     - Otherwise, merge intervals by updating
 //       the ending value with the maximum end.
+// 
 // Return only the merged portion of the array
 // using Arrays.copyOfRange().
 
