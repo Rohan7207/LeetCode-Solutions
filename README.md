@@ -227,6 +227,7 @@
 | [0224-basic-calculator](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0224-basic-calculator) |
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0297-serialize-and-deserialize-binary-tree) |
 | [0332-reconstruct-itinerary](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0332-reconstruct-itinerary) |
+| [0392-is-subsequence](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0392-is-subsequence) |
 | [0520-detect-capital](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0520-detect-capital) |
 | [2833-furthest-point-from-origin](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2833-furthest-point-from-origin) |
 | [3120-count-the-number-of-special-characters-i](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3120-count-the-number-of-special-characters-i) |
@@ -300,6 +301,7 @@
 | [0295-find-median-from-data-stream](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0295-find-median-from-data-stream) |
 | [0349-intersection-of-two-arrays](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0349-intersection-of-two-arrays) |
 | [0350-intersection-of-two-arrays-ii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0350-intersection-of-two-arrays-ii) |
+| [0392-is-subsequence](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0392-is-subsequence) |
 | [2540-minimum-common-value](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2540-minimum-common-value) |
 | [3633-earliest-finish-time-for-land-and-water-rides-i](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3633-earliest-finish-time-for-land-and-water-rides-i) |
 ## Dynamic Programming
@@ -333,6 +335,7 @@
 | [0322-coin-change](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0322-coin-change) |
 | [0329-longest-increasing-path-in-a-matrix](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0329-longest-increasing-path-in-a-matrix) |
 | [0338-counting-bits](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0338-counting-bits) |
+| [0392-is-subsequence](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0392-is-subsequence) |
 ## Trie
 |  |
 | ------- |
