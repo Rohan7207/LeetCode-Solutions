@@ -19,7 +19,7 @@ class Solution {
 
         if (i == m)
             return true;
-        else
-            return false;
+
+        return false;
     }
 }
