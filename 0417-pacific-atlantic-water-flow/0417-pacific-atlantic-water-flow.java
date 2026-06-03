@@ -1,3 +1,32 @@
+// Problem: Pacific Atlantic Water Flow
+// Link: https://leetcode.com/problems/pacific-atlantic-water-flow/
+// Difficulty: Medium
+
+// Approach:
+// Water normally flows:
+//     Higher Height -> Lower Height
+// Instead of checking from every cell
+// towards the oceans, reverse the process.
+// Start DFS from Pacific borders:
+//     Top Row
+//     Left Column
+// Start DFS from Atlantic borders:
+//     Bottom Row
+//     Right Column
+// While doing DFS:
+//     Move only to cells having
+//     height >= current cell.
+// Why?
+// Because we are traversing in reverse.
+// Mark all cells reachable from Pacific in pacific[][].
+// Mark all cells reachable from Atlantic in atlantic[][].
+// Finally, any cell that is true in both
+// matrices can reach both oceans.
+
+// Time Complexity: O(m * n)
+// Space Complexity: O(m * n)
+
+
 class Solution {
     private int m, n;
     private int[][] dir = new int[][] { { 0, 1 }, { 0, -1 }, { 1, 0 }, { -1, 0 } };
@@ -53,4 +82,3 @@ class Solution {
         }
     }
 }
-
