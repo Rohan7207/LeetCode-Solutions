@@ -1,3 +1,23 @@
+// Problem: Sum of Left Leaves
+// Link: https://leetcode.com/problems/sum-of-left-leaves/
+// Difficulty: Easy
+
+// Approach:
+// Use recursion to traverse the binary tree.
+// For every node, check whether its left child
+// exists and is a leaf node.
+// A leaf node has:
+//     left == null
+//     right == null
+// If the left child is a leaf, add its value to sum.
+// Then recursively calculate the sum of
+// left leaves in both left and right subtrees.
+// Return the total sum.
+
+// Time Complexity: O(n)
+// Space Complexity: O(h)
+
+
 /**
  * Definition for a binary tree node.
  * public class TreeNode {
