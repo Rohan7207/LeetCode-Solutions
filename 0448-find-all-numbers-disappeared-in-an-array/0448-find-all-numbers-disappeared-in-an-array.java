@@ -1,3 +1,28 @@
+// Problem : Find All Numbers Disappeared in an Array
+// Link : https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/
+// Difficulty : Easy
+
+// Approach:
+// Since numbers are in the range [1, n],
+// every number can be mapped to an index.
+// For each number x:
+//     Visit index (x - 1)
+// and mark it as visited by making
+// nums[x - 1] negative.
+// Use Math.abs() because some values
+// may already have been marked negative.
+// After marking:
+//     Negative value at index i
+//     => number (i + 1) exists
+//     Positive value at index i
+//     => number (i + 1) is missing
+// Traverse the array again and collect
+// all indices whose values are positive.
+
+// Time Complexity: O(n)
+// Space Complexity: O(1)
+
+
 class Solution {
     public List<Integer> findDisappearedNumbers(int[] nums) {
         List<Integer> ans = new ArrayList<>();
@@ -16,23 +41,3 @@ class Solution {
         return ans;
     }
 }
-
-// class Solution {
-//     public List<Integer> findDisappearedNumbers(int[] nums) {
-//         List<Integer> res = new ArrayList<>();
-
-//         Set<Integer> s = new HashSet<>();
-
-//         for (int i = 0; i < nums.length; i++) {
-//             s.add(nums[i]);
-//         }
-
-//         for (int i = 1; i <= nums.length; i++) {
-//             if (!s.contains(i)) {
-//                 res.add(i);
-//             }
-//         }
-
-//         return res;
-//     }
-// }
