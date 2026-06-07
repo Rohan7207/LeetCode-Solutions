@@ -82,6 +82,7 @@
 | [0417-pacific-atlantic-water-flow](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0417-pacific-atlantic-water-flow) |
 | [0435-non-overlapping-intervals](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0435-non-overlapping-intervals) |
 | [0448-find-all-numbers-disappeared-in-an-array](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0448-find-all-numbers-disappeared-in-an-array) |
+| [0496-next-greater-element-i](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0496-next-greater-element-i) |
 | [1306-jump-game-iii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1306-jump-game-iii) |
 | [1752-check-if-array-is-sorted-and-rotated](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1752-check-if-array-is-sorted-and-rotated) |
 | [1848-minimum-distance-to-the-target-element](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1848-minimum-distance-to-the-target-element) |
@@ -129,6 +130,7 @@
 | [0350-intersection-of-two-arrays-ii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0350-intersection-of-two-arrays-ii) |
 | [0380-insert-delete-getrandom-o1](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0380-insert-delete-getrandom-o1) |
 | [0448-find-all-numbers-disappeared-in-an-array](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0448-find-all-numbers-disappeared-in-an-array) |
+| [0496-next-greater-element-i](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0496-next-greater-element-i) |
 | [1995-count-special-quadruplets](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1995-count-special-quadruplets) |
 | [2196-create-binary-tree-from-descriptions](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2196-create-binary-tree-from-descriptions) |
 | [2540-minimum-common-value](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2540-minimum-common-value) |
@@ -430,6 +432,7 @@
 | [0224-basic-calculator](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0224-basic-calculator) |
 | [0225-implement-stack-using-queues](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0225-implement-stack-using-queues) |
 | [0232-implement-queue-using-stacks](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0232-implement-queue-using-stacks) |
+| [0496-next-greater-element-i](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0496-next-greater-element-i) |
 ## Heap (Priority Queue)
 |  |
 | ------- |
@@ -473,6 +476,7 @@
 | ------- |
 | [0042-trapping-rain-water](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0042-trapping-rain-water) |
 | [0084-largest-rectangle-in-histogram](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0084-largest-rectangle-in-histogram) |
+| [0496-next-greater-element-i](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0496-next-greater-element-i) |
 ## Simulation
 |  |
 | ------- |
