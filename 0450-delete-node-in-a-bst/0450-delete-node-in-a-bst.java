@@ -1,3 +1,35 @@
+// Problem : Delete Node in a BST
+// Link : https://leetcode.com/problems/delete-node-in-a-bst/
+// Difficulty : Medium
+
+// Approach:
+// Delete a node from a Binary Search Tree.
+// Use BST property to search for the key:
+//     If key < root.val:
+//         go to left subtree
+//     If key > root.val:
+//         go to right subtree
+//     If key == root.val:
+//         node to delete is found
+// There are 3 deletion cases:
+// Case 1: Node has no child
+//     - Return null
+//     - This removes the node from the tree
+// Case 2: Node has one child
+//     - Return the existing child
+//     - Parent will directly connect to that child
+// Case 3: Node has two children
+//     - Find inorder successor
+//     - Inorder successor is the smallest node
+//       in the right subtree
+//     - Copy successor value into current node
+//     - Delete successor node from right subtree
+// Finally return root after updating links.
+
+// Time Complexity: O(h)
+// Space Complexity: O(h)
+
+
 /**
  * Definition for a binary tree node.
  * public class TreeNode {
