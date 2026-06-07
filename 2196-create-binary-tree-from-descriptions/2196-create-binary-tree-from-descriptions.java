@@ -1,3 +1,39 @@
+// Problem : Create Binary Tree From descriptions
+// Link : https://leetcode.com/problems/create-binary-tree-from-descriptions/?envType=daily-question&envId=2026-06-07
+// Difficulty : Medium
+
+// Approach:
+// Build the binary tree using parent-child descriptions.
+// Each description contains:
+//     - parent value
+//     - child value
+//     - isLeft value
+// Use a HashMap to store:
+//     value -> TreeNode
+// This is needed because the same node value
+// can appear multiple times, so we must reuse
+// the same TreeNode object.
+// Use a HashSet to store all child values.
+// First pass:
+//     - Create parent node if not already present
+//     - Create child node if not already present
+//     - Add child value to children set
+// Root finding:
+//     - Root is the only node that never appears as a child
+//     - So the node whose value is not in children set is root
+// Second pass:
+//     - Get parent node from map
+//     - Get child node from map
+//     - If isLeft == 1:
+//           attach child as left child
+//     - Else:
+//           attach child as right child
+// Finally return root.
+
+// Time Complexity: O(n)
+// Space Complexity: O(n)
+
+
 /**
  * Definition for a binary tree node.
  * public class TreeNode {
