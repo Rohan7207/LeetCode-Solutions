@@ -19,7 +19,7 @@ class Solution {
 
         Set<Integer> children = new HashSet<>();
 
-        for(int[] des : descriptions) {
+        for (int[] des : descriptions) {
             int parent = des[0];
             int child = des[1];
 
@@ -31,16 +31,16 @@ class Solution {
 
         TreeNode root = null;
 
-        for(Map.Entry<Integer, TreeNode> entry : map.entrySet()) {
+        for (Map.Entry<Integer, TreeNode> entry : map.entrySet()) {
             int value = entry.getKey();
 
-            if(!children.contains(value)) {
+            if (!children.contains(value)) {
                 root = entry.getValue();
                 break;
             }
         }
 
-        for(int[] des : descriptions) {
+        for (int[] des : descriptions) {
             int parent = des[0];
             int child = des[1];
             int isLeft = des[2];
@@ -48,7 +48,7 @@ class Solution {
             TreeNode p = map.get(parent);
             TreeNode c = map.get(child);
 
-            if(isLeft == 1) {
+            if (isLeft == 1) {
                 p.left = c;
             } else {
                 p.right = c;
