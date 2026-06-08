@@ -1,7 +1,6 @@
 class Solution {
     public boolean checkPerfectNumber(int num) {
-        if (num % 2 != 0)
-            return false;
+        if (num % 2 != 0) return false;
         int end = num / 2;
         int sum = end;
 
@@ -10,6 +9,6 @@ class Solution {
             if (sum > num) return false;
         }
 
-        return num == sum;
+        return sum == num;
     }
 }
