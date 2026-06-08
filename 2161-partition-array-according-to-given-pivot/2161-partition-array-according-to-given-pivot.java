@@ -1,3 +1,31 @@
+// Problem : Partition Array According to Given Pivot
+// Link : https://leetcode.com/problems/partition-array-according-to-given-pivot/?envType=daily-question&envId=2026-06-08
+// Difficulty : Medium
+
+// Approach:
+// Partition the array into three groups:
+//     1. Elements smaller than pivot
+//     2. Elements equal to pivot
+//     3. Elements greater than pivot
+// Since relative order must be preserved,
+// traverse the array in original order.
+// Create an answer array and maintain
+// an index pointer for insertion.
+// First pass:
+//     - Place all elements < pivot
+// Second pass:
+//     - Place all elements == pivot
+// Third pass:
+//     - Place all elements > pivot
+// Since elements are added in the order
+// they appear, the relative ordering
+// within each group remains unchanged.
+// Finally return the answer array.
+
+// Time Complexity: O(n)
+// Space Complexity: O(n)
+
+
 class Solution {
     public int[] pivotArray(int[] nums, int pivot) {
         int[] ans = new int[nums.length];
@@ -18,31 +46,3 @@ class Solution {
         return ans;
     }
 }
-
-/*
-    int[] ans = new int[nums.length];
-    int lessCount = 0;
-    int equalCount = 0;
-
-    for(int num : nums) {
-        if(num < pivot) lessCount++;
-        else if(num == pivot) equalCount++;
-    }
-
-    // Reserve the positions in array for less, equal and greater
-    int lessIndex = 0;
-    int equalIndex = lessCount;
-    int greaterIndex = lessCount + equalCount;
-
-    for(int num : nums) {
-        if(num < pivot) {
-            ans[lessIndex++] = num;
-        } else if(num == pivot) {
-            ans[equalIndex++] = num;
-        } else {
-            ans[greaterIndex++] = num;
-        }
-    }
-
-    return ans;
-*/
