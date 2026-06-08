@@ -2,28 +2,30 @@
 // Link: https://leetcode.com/problems/two-sum/
 // Difficulty: Easy
 
-// Approach: Use HashMap to store visited elements.
-// For each element, check if (target - current) exists.
+// Approach:
+// Find two numbers whose sum equals the target.
+// Use a HashMap to store:
+//     number -> index
+// Traverse the array once.
+// For every current number:
+//     - Compute required complement:
+//           target - current number
+//     - Check if complement already exists
+//       in the HashMap
+//     - If found:
+//           current number + complement = target
+//           return their indices
+//     - Otherwise:
+//           store current number and its index
+//           in the HashMap
+// This allows finding the pair in a single traversal.
 
 // Time Complexity: O(n)
-
 // Space Complexity: O(n)
+
 
 class Solution {
     public int[] twoSum(int[] nums, int target) {
-        // int[] arr=new int[2];
-        // for(int i=0;i<nums.length-1;i++){
-        //     for(int j=i+1;j<nums.length;j++){
-        //         if(nums[i]+nums[j]==target){
-        //             arr[0]=i;
-        //             arr[1]=j;
-        //             break; 
-        //         }
-        //     }
-        // }
-        // return arr;
-
-        //Key = value and value = index
         Map<Integer, Integer> pairIdx = new HashMap<>();
 
         for(int i = 0; i < nums.length; i++){
