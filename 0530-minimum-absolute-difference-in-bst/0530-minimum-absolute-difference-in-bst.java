@@ -1,3 +1,34 @@
+// Problem: Add Two Numbers
+// Link: https://leetcode.com/problems/two-sum/
+// Difficulty: Easy
+
+// Approach:
+// Inorder traversal of a BST produces
+// values in sorted order.
+// In a sorted sequence, the minimum difference
+// between any two values will always be found
+// between two consecutive elements.
+// Maintain:
+//     - prev -> previously visited node value
+//     - min  -> minimum difference found so far
+// Perform inorder traversal:
+//     1. Traverse left subtree
+//     2. Process current node
+//          - If prev exists:
+//                calculate difference:
+//                    root.val - prev
+//                update minimum difference
+//          - Update prev to current value
+//     3. Traverse right subtree
+// Since inorder traversal visits nodes in
+// ascending order, comparing only adjacent
+// values is sufficient.
+// Finally return the minimum difference.
+
+// Time Complexity: O(n)
+// Space Complexity: O(h)
+
+
 /**
  * Definition for a binary tree node.
  * public class TreeNode {
