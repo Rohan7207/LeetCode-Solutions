@@ -1,3 +1,31 @@
+// Problem: Diameter of Binary Tree
+// Link: https://leetcode.com/problems/diameter-of-binary-tree/
+// Difficulty: Easy
+
+// Approach:
+// Diameter of a binary tree is the length of the
+// longest path between any two nodes.
+// The longest path passing through a node is:
+//     left subtree height + right subtree height
+// Use postorder traversal (left, right, root)
+// to compute heights while simultaneously
+// calculating the diameter.
+// For every node:
+//     - Recursively find left subtree height
+//     - Recursively find right subtree height
+//     - Current diameter passing through node:
+//           left + right
+//     - Update global diameter if current path
+//       is larger than previous answer
+//     - Return height of current node:
+//           max(left, right) + 1
+// After traversing all nodes,
+// the global variable contains the maximum diameter.
+
+// Time Complexity: O(n)
+// Space Complexity: O(h)
+
+
 /**
  * Definition for a binary tree node.
  * public class TreeNode {
