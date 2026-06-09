@@ -1,5 +1,5 @@
-// Problem: Add Two Numbers
-// Link: https://leetcode.com/problems/two-sum/
+// Problem: Minimum Absolute Difference in BST
+// Link: https://leetcode.com/problems/minimum-absolute-difference-in-bst/
 // Difficulty: Easy
 
 // Approach:
