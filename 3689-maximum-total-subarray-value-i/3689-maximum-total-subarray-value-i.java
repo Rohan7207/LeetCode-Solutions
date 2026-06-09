@@ -2,15 +2,12 @@ class Solution {
     public long maxTotalValue(int[] nums, int k) {
         int max = Integer.MIN_VALUE;
         int min = Integer.MAX_VALUE;
-        long ans = 0;
 
         for(int num : nums) {
             max = Math.max(max, num);
             min = Math.min(min, num);
         }
 
-        ans = (long)k * (max - min);
-
-        return ans;
+        return (long) k * (max - min);
     }
 }
