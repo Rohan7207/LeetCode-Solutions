@@ -1,7 +1,5 @@
 class Solution {
     public int subarraySum(int[] nums, int k) {
-        //k=sub(j)+sub(i-1) if we find sumof j then we get sub(i-1)
-        //key=sum value=count 
         Map<Integer, Integer> map = new HashMap<>(); //sum and frequency
         map.put(0, 1); //empty subarray
         int ans = 0, sum = 0;
@@ -15,7 +13,10 @@ class Solution {
 
             map.put(sum, map.getOrDefault(sum, 0) + 1);
         }
-        
+
         return ans;
     }
 }
+
+//k=sub(j)+sub(i-1) if we find sumof j then we get sub(i-1)
+//key=sum value=count 
