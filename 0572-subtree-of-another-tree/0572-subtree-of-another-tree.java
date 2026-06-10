@@ -1,3 +1,37 @@
+// Problem: Subtree if Another Tree
+// Link: https://leetcode.com/problems/subtree-of-another-tree/
+// Difficulty: Easy
+
+// Approach:
+// Check whether subRoot exists as a subtree
+// inside the main tree root.
+// For every node in the main tree:
+//     - Treat that node as a possible starting point
+//       of the subtree.
+//     - Check if the tree starting from this node
+//       is identical to subRoot.
+// If identical:
+//     - Return true
+// Otherwise:
+//     - Recursively check in left subtree
+//     - Recursively check in right subtree
+// To check identical trees:
+//     - If both nodes are null:
+//           return true
+//     - If only one node is null:
+//           return false
+//     - If values are different:
+//           return false
+//     - If values are same:
+//           check left subtree
+//           check right subtree
+// If any node in root matches subRoot completely,
+// return true.
+
+// Time Complexity: O(n * m)
+// Space Complexity: O(h)
+
+
 /**
  * Definition for a binary tree node.
  * public class TreeNode {
