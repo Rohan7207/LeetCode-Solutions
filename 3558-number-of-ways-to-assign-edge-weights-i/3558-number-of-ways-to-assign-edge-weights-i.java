@@ -19,7 +19,6 @@ class Solution {
         }
 
         dfs(graph, 1, -1, 0);
-
         return power(2, maxDepth - 1);
     }
 
