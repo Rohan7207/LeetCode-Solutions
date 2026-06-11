@@ -1,3 +1,27 @@
+// Problem: Merge Two Binary Trees
+// Link: https://leetcode.com/problems/merge-two-binary-trees/
+// Difficulty: Easy
+
+// Approach:
+// Merge two binary trees.
+// If both nodes exist:
+//     - Create a new node
+//     - Its value will be:
+//           root1.val + root2.val
+//     - Recursively merge left subtrees
+//     - Recursively merge right subtrees
+// If only one node exists:
+//     - Return that node directly
+// If both nodes are null:
+//     - Return null
+// This builds a merged tree where overlapping
+// nodes are added together, and non-overlapping
+// nodes are kept as they are.
+
+// Time Complexity: O(n)
+// Space Complexity: O(h)
+
+
 /**
  * Definition for a binary tree node.
  * public class TreeNode {
