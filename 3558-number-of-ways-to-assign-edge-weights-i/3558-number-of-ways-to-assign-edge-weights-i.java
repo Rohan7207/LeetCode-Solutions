@@ -19,12 +19,13 @@ class Solution {
         }
 
         dfs(graph, 1, -1, 0);
+
         return power(2, maxDepth - 1);
     }
 
     private void dfs(List<List<Integer>> graph, int node, int parent, int depth) {
         maxDepth = Math.max(maxDepth, depth);
-
+        
         for (int child : graph.get(node)) {
             if (parent == child) continue;
 
