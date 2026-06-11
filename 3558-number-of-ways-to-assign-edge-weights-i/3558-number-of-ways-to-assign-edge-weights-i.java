@@ -1,3 +1,37 @@
+// Problem: Number of Ways to Assign Edge Weights I
+// Link: https://leetcode.com/problems/number-of-ways-to-assign-edge-weights-i/?envType=daily-question&envId=2026-06-11
+// Difficulty: Medium
+
+// Approach:
+// The tree is given as a 2D edges array,
+// so first convert it into an adjacency list.
+// Since the tree is rooted at node 1,
+// start DFS from node 1.
+// During DFS:
+//     - Track current depth
+//     - Update maximum depth found so far
+//     - Use parent to avoid going back
+//       to the previous node
+// After DFS:
+//     maxDepth = number of edges from node 1
+//                to the deepest node
+// Now we need to assign weights 1 or 2
+// to the edges on that deepest path
+// such that the total sum is odd.
+// If deepest path has d edges:
+//     Total assignments = 2^d
+// Exactly half of them have odd sum.
+// Therefore:
+//     Odd sum assignments = 2^(d - 1)
+// So answer:
+//     power(2, maxDepth - 1)
+// Use fast exponentiation because answer can be large
+// and modulo 1e9+7 is required.
+
+// Time Complexity: O(n + log(maxDepth))
+// Space Complexity: O(n)
+
+
 class Solution {
     int maxDepth = 0;
     int MOD = 1000000007;
