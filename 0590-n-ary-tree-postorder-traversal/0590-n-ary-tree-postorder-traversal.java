@@ -26,7 +26,8 @@ class Solution {
     }
 
     private void dfs(Node root) {
-        if (root == null) return;
+        if (root == null)
+            return;
 
         for (Node child : root.children) {
             dfs(child);
