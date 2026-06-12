@@ -584,6 +584,7 @@
 | [0589-n-ary-tree-preorder-traversal](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0589-n-ary-tree-preorder-traversal) |
 | [0590-n-ary-tree-postorder-traversal](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0590-n-ary-tree-postorder-traversal) |
 | [0617-merge-two-binary-trees](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0617-merge-two-binary-trees) |
+| [0637-average-of-levels-in-binary-tree](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0637-average-of-levels-in-binary-tree) |
 | [1306-jump-game-iii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1306-jump-game-iii) |
 | [3558-number-of-ways-to-assign-edge-weights-i](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3558-number-of-ways-to-assign-edge-weights-i) |
 ## Tree
@@ -628,6 +629,7 @@
 | [0589-n-ary-tree-preorder-traversal](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0589-n-ary-tree-preorder-traversal) |
 | [0590-n-ary-tree-postorder-traversal](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0590-n-ary-tree-postorder-traversal) |
 | [0617-merge-two-binary-trees](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0617-merge-two-binary-trees) |
+| [0637-average-of-levels-in-binary-tree](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0637-average-of-levels-in-binary-tree) |
 | [2196-create-binary-tree-from-descriptions](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2196-create-binary-tree-from-descriptions) |
 | [3558-number-of-ways-to-assign-edge-weights-i](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3558-number-of-ways-to-assign-edge-weights-i) |
 ## Binary Tree
@@ -668,6 +670,7 @@
 | [0543-diameter-of-binary-tree](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0543-diameter-of-binary-tree) |
 | [0572-subtree-of-another-tree](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0572-subtree-of-another-tree) |
 | [0617-merge-two-binary-trees](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0617-merge-two-binary-trees) |
+| [0637-average-of-levels-in-binary-tree](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0637-average-of-levels-in-binary-tree) |
 | [2196-create-binary-tree-from-descriptions](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2196-create-binary-tree-from-descriptions) |
 ## Binary Search Tree
 |  |
@@ -711,6 +714,7 @@
 | [0547-number-of-provinces](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0547-number-of-provinces) |
 | [0559-maximum-depth-of-n-ary-tree](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0559-maximum-depth-of-n-ary-tree) |
 | [0617-merge-two-binary-trees](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0617-merge-two-binary-trees) |
+| [0637-average-of-levels-in-binary-tree](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0637-average-of-levels-in-binary-tree) |
 | [1306-jump-game-iii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1306-jump-game-iii) |
 ## Union-Find
 |  |
