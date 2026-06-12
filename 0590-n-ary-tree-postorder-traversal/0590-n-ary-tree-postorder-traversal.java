@@ -18,18 +18,19 @@ class Node {
 */
 
 class Solution {
-    List<Integer> ans = new ArrayList<>();
-
     public List<Integer> postorder(Node root) {
-        dfs(root);
+        List<Integer> ans = new ArrayList<>();
+
+        dfs(root, ans);
         return ans;
     }
 
-    private void dfs(Node root) {
-        if (root == null) return;
+    private void dfs(Node root, List<Integer> ans) {
+        if (root == null)
+            return;
 
         for (Node child : root.children) {
-            dfs(child);
+            dfs(child, ans);
         }
 
         ans.add(root.val);
