@@ -1,3 +1,30 @@
+// Problem: Average of Levels in Binary Tree
+// Link: https://leetcode.com/problems/n-ary-tree-level-order-traversal/
+// Difficulty: Easy
+
+// Approach:
+// Find the average value of nodes at each level
+// of the binary tree.
+// Use Level Order Traversal (BFS) because
+// nodes must be processed level by level.
+// Start by inserting the root node into
+// the queue.
+// While queue is not empty:
+//     - Store queue size
+//       This represents the number of nodes
+//       in the current level.
+//     - Traverse all nodes of that level
+//     - Calculate the sum of node values
+//     - Push left and right children into queue
+// After processing the level:
+//     Average = sum / number of nodes
+//     Add the average to answer.
+// Repeat until all levels are processed.
+
+// Time Complexity: O(n)
+// Space Complexity: O(n)
+
+
 /**
  * Definition for a binary tree node.
  * public class TreeNode {
