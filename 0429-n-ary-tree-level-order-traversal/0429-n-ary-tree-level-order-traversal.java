@@ -24,7 +24,7 @@ class Solution {
         if (root == null) return ans;
 
         Queue<Node> q = new LinkedList<>();
-        q.offer(root);
+        q.add(root);
 
         while (!q.isEmpty()) {
             int size = q.size();
@@ -37,7 +37,7 @@ class Solution {
                 level.add(curr.val);
 
                 for (Node child : curr.children) {
-                    q.offer(child);
+                    q.add(child);
                 }
             }
 
