@@ -1,3 +1,45 @@
+// Problem: Design Circular Queue
+// Link: https://leetcode.com/problems/design-circular-queue/
+// Difficulty: Medium
+
+// Approach:
+// Implement a Circular Queue using an array.
+// Instead of shifting elements during deletion,
+// maintain:
+//     head -> index of front element
+//     size -> current number of elements
+// This allows all operations to be performed
+// in O(1) time.
+// For insertion:
+//     Rear position is:
+//         (head + size) % capacity
+//     Place the new element there
+//     and increase size.
+// For deletion:
+//     Move head to the next position:
+//         (head + 1) % capacity
+//     Decrease size.
+// For Front:
+//     Return element at head.
+// For Rear:
+//     Last element index is:
+//         (head + size - 1) % capacity
+//     Return that element.
+// To handle circular movement:
+//     Use modulo (%) so indices wrap around
+//     to the beginning of the array.
+
+// Time Complexity:
+//     enQueue  -> O(1)
+//     deQueue  -> O(1)
+//     Front    -> O(1)
+//     Rear     -> O(1)
+//     isEmpty  -> O(1)
+//     isFull   -> O(1)
+//
+// Space Complexity: O(k)
+
+
 class MyCircularQueue {
     int[] arr;
     int cap;
