@@ -36,7 +36,7 @@ class MyCircularQueue {
 
     public int Rear() {
         if (isEmpty()) return -1;
-        
+
         int idx = (head + size - 1) % cap;
         return arr[idx];
     }
