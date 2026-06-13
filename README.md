@@ -87,6 +87,7 @@
 | [0560-subarray-sum-equals-k](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0560-subarray-sum-equals-k) |
 | [0621-task-scheduler](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0621-task-scheduler) |
 | [0622-design-circular-queue](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0622-design-circular-queue) |
+| [0643-maximum-average-subarray-i](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0643-maximum-average-subarray-i) |
 | [1306-jump-game-iii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1306-jump-game-iii) |
 | [1752-check-if-array-is-sorted-and-rotated](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1752-check-if-array-is-sorted-and-rotated) |
 | [1848-minimum-distance-to-the-target-element](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1848-minimum-distance-to-the-target-element) |
@@ -265,6 +266,7 @@
 | ------- |
 | [0003-longest-substring-without-repeating-characters](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0003-longest-substring-without-repeating-characters) |
 | [0567-permutation-in-string](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0567-permutation-in-string) |
+| [0643-maximum-average-subarray-i](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0643-maximum-average-subarray-i) |
 ## Binary Search
 |  |
 | ------- |
