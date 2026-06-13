@@ -3,9 +3,9 @@ class Solution {
         StringBuilder ans = new StringBuilder();
         int rem = 0;
 
-        for(String word : words) {
+        for (String word : words) {
             int sum = 0;
-            for(int i = 0; i < word.length(); i++) {
+            for (int i = 0; i < word.length(); i++) {
                 char ch = word.charAt(i);
 
                 sum += weights[ch - 'a'];
