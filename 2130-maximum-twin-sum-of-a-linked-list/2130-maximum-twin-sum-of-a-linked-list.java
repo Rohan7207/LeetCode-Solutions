@@ -12,20 +12,62 @@ class Solution {
     public int pairSum(ListNode head) {
         ListNode slow = head;
         ListNode fast = head;
+
+        while (fast != null && fast.next != null) {
+            slow = slow.next;
+            fast = fast.next.next;
+        }
+
+        ListNode prev = null;
+        ListNode curr = slow;
+
+        while (curr != null) {
+            ListNode next = curr.next;
+            curr.next = prev;
+            prev = curr;
+            curr = next;
+        }
+
+        int max = 0;
+        int sum = 0;
+
+        ListNode p1 = head;
+        ListNode p2 = prev;
+
+        while (p2 != null) {
+            sum = p1.val + p2.val;
+
+            p1 = p1.next;
+            p2 = p2.next;
+
+            if (max < sum) {
+                max = sum;
+            }
+        }
+
+        return max;
+    }
+}
+
+/*
+    public int pairSum(ListNode head) {
+        ListNode slow = head;
+        ListNode fast = head;
         ListNode prev = null;
 
-        while(fast != null && fast.next != null) {
+        while (fast != null && fast.next != null) {
             prev = slow;
             slow = slow.next;
             fast = fast.next.next;
         }
 
-        if(prev != null) prev.next = null;
+        if (prev != null)
+            prev.next = null;
 
-        ListNode reverseHead = reverseList(slow);     
+        ListNode reverseHead = reverseList(slow);
 
         int max = 0;
-        while(head != null && reverseHead != null) {
+        while (head != null && reverseHead != null) {
             int sum = 0;
 
             sum = head.val + reverseHead.val;
@@ -34,7 +76,7 @@ class Solution {
 
             head = head.next;
             reverseHead = reverseHead.next;
-        }   
+        }
 
         return max;
     }
@@ -43,7 +85,7 @@ class Solution {
         ListNode prev = null;
         ListNode curr = head;
 
-        while(curr != null) {
+        while (curr != null) {
             ListNode next = curr.next;
             curr.next = prev;
             prev = curr;
@@ -52,4 +94,4 @@ class Solution {
 
         return prev;
     }
-}
+*/
