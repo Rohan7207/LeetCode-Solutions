@@ -609,6 +609,7 @@
 | [0617-merge-two-binary-trees](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0617-merge-two-binary-trees) |
 | [0637-average-of-levels-in-binary-tree](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0637-average-of-levels-in-binary-tree) |
 | [0671-second-minimum-node-in-a-binary-tree](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0671-second-minimum-node-in-a-binary-tree) |
+| [0684-redundant-connection](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0684-redundant-connection) |
 | [1306-jump-game-iii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1306-jump-game-iii) |
 | [3558-number-of-ways-to-assign-edge-weights-i](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3558-number-of-ways-to-assign-edge-weights-i) |
 ## Tree
@@ -741,6 +742,7 @@
 | [0559-maximum-depth-of-n-ary-tree](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0559-maximum-depth-of-n-ary-tree) |
 | [0617-merge-two-binary-trees](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0617-merge-two-binary-trees) |
 | [0637-average-of-levels-in-binary-tree](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0637-average-of-levels-in-binary-tree) |
+| [0684-redundant-connection](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0684-redundant-connection) |
 | [1306-jump-game-iii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1306-jump-game-iii) |
 ## Union-Find
 |  |
@@ -749,6 +751,7 @@
 | [0130-surrounded-regions](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0130-surrounded-regions) |
 | [0200-number-of-islands](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0200-number-of-islands) |
 | [0547-number-of-provinces](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0547-number-of-provinces) |
+| [0684-redundant-connection](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0684-redundant-connection) |
 ## Graph Theory
 |  |
 | ------- |
@@ -758,6 +761,7 @@
 | [0329-longest-increasing-path-in-a-matrix](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0329-longest-increasing-path-in-a-matrix) |
 | [0332-reconstruct-itinerary](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0332-reconstruct-itinerary) |
 | [0547-number-of-provinces](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0547-number-of-provinces) |
+| [0684-redundant-connection](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0684-redundant-connection) |
 ## Design
 |  |
 | ------- |
