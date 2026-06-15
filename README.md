@@ -659,6 +659,7 @@
 | [0617-merge-two-binary-trees](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0617-merge-two-binary-trees) |
 | [0637-average-of-levels-in-binary-tree](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0637-average-of-levels-in-binary-tree) |
 | [0671-second-minimum-node-in-a-binary-tree](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0671-second-minimum-node-in-a-binary-tree) |
+| [0700-search-in-a-binary-search-tree](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0700-search-in-a-binary-search-tree) |
 | [2196-create-binary-tree-from-descriptions](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2196-create-binary-tree-from-descriptions) |
 | [3558-number-of-ways-to-assign-edge-weights-i](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3558-number-of-ways-to-assign-edge-weights-i) |
 ## Binary Tree
@@ -701,6 +702,7 @@
 | [0617-merge-two-binary-trees](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0617-merge-two-binary-trees) |
 | [0637-average-of-levels-in-binary-tree](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0637-average-of-levels-in-binary-tree) |
 | [0671-second-minimum-node-in-a-binary-tree](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0671-second-minimum-node-in-a-binary-tree) |
+| [0700-search-in-a-binary-search-tree](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0700-search-in-a-binary-search-tree) |
 | [2196-create-binary-tree-from-descriptions](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2196-create-binary-tree-from-descriptions) |
 ## Binary Search Tree
 |  |
@@ -713,6 +715,7 @@
 | [0235-lowest-common-ancestor-of-a-binary-search-tree](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0235-lowest-common-ancestor-of-a-binary-search-tree) |
 | [0450-delete-node-in-a-bst](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0450-delete-node-in-a-bst) |
 | [0530-minimum-absolute-difference-in-bst](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0530-minimum-absolute-difference-in-bst) |
+| [0700-search-in-a-binary-search-tree](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0700-search-in-a-binary-search-tree) |
 ## Breadth-First Search
 |  |
 | ------- |
