@@ -5,7 +5,6 @@ class Solution {
             parent[node] = parent[parent[node]]; //Path compression for optimization
             node = parent[node]; //second line traverse until we get parent node
         }
-
         return node;
     }
 
@@ -36,7 +35,6 @@ class Solution {
             //Merge roots by making r1 the parent of r2
             parent[r2] = r1;
         }
-
         //If no cycle detected(which is not possible in this problem),return empty array
         return new int[0];
     }
