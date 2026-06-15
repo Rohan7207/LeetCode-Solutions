@@ -1,3 +1,34 @@
+// Problem: Max Area of Island
+// Link: https://leetcode.com/problems/max-area-of-island/
+// Difficulty: Medium
+
+// Approach:
+// We need to find the largest island area
+// in the grid.
+// An island is formed by connected 1's
+// (up, down, left, right).
+// Traverse every cell in the grid.
+// If a cell contains 1:
+//     - Start DFS from that cell
+//     - Calculate the entire island area
+//     - Update maximum area found
+// In DFS:
+//     - If cell is out of bounds
+//       or water (0):
+//           return 0
+//     - Mark current land cell as visited
+//       by changing it to 0
+//     - Count current cell:
+//           area = 1
+//     - Explore all 4 directions
+//     - Add their returned areas
+// Return total area of the current island.
+// Finally return the maximum island area.
+
+// Time Complexity: O(m * n)
+// Space Complexity: O(m * n) (recursion stack worst case)
+
+
 class Solution {
     public int maxAreaOfIsland(int[][] grid) {
         int m = grid.length;
@@ -21,14 +52,14 @@ class Solution {
             return 0;
         }
 
-        grid[i][j] = 0; //Mark cell as visited;
-        int area = 1; //Current cell
+        grid[i][j] = 0; 
+        int area = 1;
 
         //Explore all 4 directions
-        area += dfs(grid, i - 1, j); //up
-        area += dfs(grid, i + 1, j); //down
-        area += dfs(grid, i, j - 1); //left
-        area += dfs(grid, i, j + 1); //right
+        area += dfs(grid, i - 1, j);
+        area += dfs(grid, i + 1, j);
+        area += dfs(grid, i, j - 1); 
+        area += dfs(grid, i, j + 1); 
 
         return area;
     }
