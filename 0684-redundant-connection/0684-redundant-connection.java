@@ -1,13 +1,4 @@
 class Solution {
-    //Function to find root of node
-    public int find(int[] parent, int node) {
-        while (node != parent[node]) {
-            parent[node] = parent[parent[node]]; //Path compression for optimization
-            node = parent[node]; //second line traverse until we get parent node
-        }
-        return node;
-    }
-
     public int[] findRedundantConnection(int[][] edges) {
         //To detect the cycle in undirected graph best is to
         //use disjoint union set,there is two methods find() and merge()
@@ -35,7 +26,18 @@ class Solution {
             //Merge roots by making r1 the parent of r2
             parent[r2] = r1;
         }
+
         //If no cycle detected(which is not possible in this problem),return empty array
         return new int[0];
+    }
+
+    //Function to find root of node
+    private int find(int[] parent, int node) {
+        while (node != parent[node]) {
+            parent[node] = parent[parent[node]]; //Path compression for optimization
+            node = parent[node]; //second line traverse until we get parent node
+        }
+        
+        return node;
     }
 }
