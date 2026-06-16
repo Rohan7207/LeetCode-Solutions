@@ -19,7 +19,6 @@ class KthLargest {
             minHeap.poll(); //Removes smallest element
             minHeap.offer(val); //Adds element to heap
         }
-
         return minHeap.peek();
     }
 }
