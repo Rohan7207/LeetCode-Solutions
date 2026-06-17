@@ -187,6 +187,7 @@
 | [0622-design-circular-queue](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0622-design-circular-queue) |
 | [0705-design-hashset](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0705-design-hashset) |
 | [0706-design-hashmap](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0706-design-hashmap) |
+| [0707-design-linked-list](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0707-design-linked-list) |
 | [2095-delete-the-middle-node-of-a-linked-list](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2095-delete-the-middle-node-of-a-linked-list) |
 | [2130-maximum-twin-sum-of-a-linked-list](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2130-maximum-twin-sum-of-a-linked-list) |
 ## Math
@@ -805,6 +806,7 @@
 | [0703-kth-largest-element-in-a-stream](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0703-kth-largest-element-in-a-stream) |
 | [0705-design-hashset](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0705-design-hashset) |
 | [0706-design-hashmap](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0706-design-hashmap) |
+| [0707-design-linked-list](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0707-design-linked-list) |
 ## Doubly-Linked List
 |  |
 | ------- |
