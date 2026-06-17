@@ -21,10 +21,7 @@ class Solution {
 
             if(ch == '#') {
                 long oldLen = len / 2;
-                if(oldLen == 0) {
-                    len = 0;
-                    continue;
-                }
+                
                 k = k % oldLen;
                 len = oldLen;
             } else if(ch == '*') {
