@@ -1,3 +1,70 @@
+// Problem: Design Linked List
+// Link: https://leetcode.com/problems/design-linked-list/
+// Difficulty: Medium
+
+// Approach:
+// We need to design our own singly linked list.
+// Each node contains:
+//     value
+//     next pointer
+// We maintain:
+//     head -> first node of linked list
+//     size -> number of nodes in linked list
+// get(index):
+//     If index is invalid:
+//         return -1
+//     Otherwise:
+//         Start from head
+//         Move index times
+//         Return current node value
+// addAtHead(val):
+//     Create new node
+//     Point new node.next to current head
+//     Make head = new node
+//     Increase size
+// addAtTail(val):
+//     Create new node
+//     If list is empty:
+//         head = new node
+//     Else:
+//         Traverse till last node
+//         Connect last.next = new node
+//     Increase size
+// addAtIndex(index, val):
+//     If index > size:
+//         Do nothing
+//     If index <= 0:
+//         Add at head
+//     If index == size:
+//         Add at tail
+//     Otherwise:
+//         Traverse to node before index
+//         Insert new node between prev and prev.next
+//         Increase size
+// deleteAtIndex(index):
+//     If index is invalid:
+//         Do nothing
+//     If index == 0:
+//         Move head to head.next
+//     Otherwise:
+//         Traverse to node before index
+//         Skip the node at index
+//     Decrease size
+
+// Time Complexity:
+//
+//     get(index)          -> O(index)
+//     addAtHead(val)      -> O(1)
+//     addAtTail(val)      -> O(n)
+//     addAtIndex(index)   -> O(index)
+//     deleteAtIndex(index)-> O(index)
+//
+// Space Complexity:
+//
+//     O(1) for each operation
+//     O(n) overall for storing n nodes
+
+
 class MyLinkedList {
     ListNode head;
     int size;
