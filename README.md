@@ -503,6 +503,7 @@
 | [0332-reconstruct-itinerary](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0332-reconstruct-itinerary) |
 | [0621-task-scheduler](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0621-task-scheduler) |
 | [0703-kth-largest-element-in-a-stream](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0703-kth-largest-element-in-a-stream) |
+| [0743-network-delay-time](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0743-network-delay-time) |
 ## Merge Sort
 |  |
 | ------- |
@@ -632,6 +633,7 @@
 | [0671-second-minimum-node-in-a-binary-tree](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0671-second-minimum-node-in-a-binary-tree) |
 | [0684-redundant-connection](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0684-redundant-connection) |
 | [0695-max-area-of-island](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0695-max-area-of-island) |
+| [0743-network-delay-time](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0743-network-delay-time) |
 | [1306-jump-game-iii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1306-jump-game-iii) |
 | [3558-number-of-ways-to-assign-edge-weights-i](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3558-number-of-ways-to-assign-edge-weights-i) |
 ## Tree
@@ -775,6 +777,7 @@
 | [0637-average-of-levels-in-binary-tree](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0637-average-of-levels-in-binary-tree) |
 | [0684-redundant-connection](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0684-redundant-connection) |
 | [0695-max-area-of-island](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0695-max-area-of-island) |
+| [0743-network-delay-time](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0743-network-delay-time) |
 | [1306-jump-game-iii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1306-jump-game-iii) |
 ## Union-Find
 |  |
@@ -795,6 +798,7 @@
 | [0332-reconstruct-itinerary](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0332-reconstruct-itinerary) |
 | [0547-number-of-provinces](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0547-number-of-provinces) |
 | [0684-redundant-connection](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0684-redundant-connection) |
+| [0743-network-delay-time](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0743-network-delay-time) |
 ## Design
 |  |
 | ------- |
@@ -871,4 +875,8 @@
 | [0572-subtree-of-another-tree](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0572-subtree-of-another-tree) |
 | [0705-design-hashset](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0705-design-hashset) |
 | [0706-design-hashmap](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0706-design-hashmap) |
+## Shortest Path
+|  |
+| ------- |
+| [0743-network-delay-time](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0743-network-delay-time) |
 <!---LeetCode Topics End-->
