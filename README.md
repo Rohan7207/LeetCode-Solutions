@@ -97,6 +97,7 @@
 | [0739-daily-temperatures](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0739-daily-temperatures) |
 | [0744-find-smallest-letter-greater-than-target](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0744-find-smallest-letter-greater-than-target) |
 | [0746-min-cost-climbing-stairs](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0746-min-cost-climbing-stairs) |
+| [0747-largest-number-at-least-twice-of-others](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0747-largest-number-at-least-twice-of-others) |
 | [1004-max-consecutive-ones-iii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1004-max-consecutive-ones-iii) |
 | [1306-jump-game-iii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1306-jump-game-iii) |
 | [1752-check-if-array-is-sorted-and-rotated](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1752-check-if-array-is-sorted-and-rotated) |
@@ -429,6 +430,7 @@
 | [0350-intersection-of-two-arrays-ii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0350-intersection-of-two-arrays-ii) |
 | [0435-non-overlapping-intervals](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0435-non-overlapping-intervals) |
 | [0621-task-scheduler](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0621-task-scheduler) |
+| [0747-largest-number-at-least-twice-of-others](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0747-largest-number-at-least-twice-of-others) |
 | [2126-destroying-asteroids](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2126-destroying-asteroids) |
 | [2144-minimum-cost-of-buying-candies-with-discount](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2144-minimum-cost-of-buying-candies-with-discount) |
 | [2784-check-if-array-is-good](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2784-check-if-array-is-good) |
