@@ -3,15 +3,15 @@ class Solution {
         int max = nums[0];
         int maxIndex = 0;
 
-        for(int i = 1; i < nums.length; i++) {
-            if(max < nums[i]) {
+        for (int i = 1; i < nums.length; i++) {
+            if (max < nums[i]) {
                 max = nums[i];
                 maxIndex = i;
             }
         }
 
-        for(int i = 0; i < nums.length; i++) {
-            if(nums[i] != max && max < 2 * nums[i]) {
+        for (int i = 0; i < nums.length; i++) {
+            if (nums[i] != max && max < 2 * nums[i]) {
                 return -1;
             }
         }
