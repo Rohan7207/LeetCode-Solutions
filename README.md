@@ -94,6 +94,7 @@
 | [0704-binary-search](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0704-binary-search) |
 | [0705-design-hashset](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0705-design-hashset) |
 | [0706-design-hashmap](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0706-design-hashmap) |
+| [0724-find-pivot-index](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0724-find-pivot-index) |
 | [0739-daily-temperatures](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0739-daily-temperatures) |
 | [0744-find-smallest-letter-greater-than-target](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0744-find-smallest-letter-greater-than-target) |
 | [0746-min-cost-climbing-stairs](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0746-min-cost-climbing-stairs) |
@@ -874,6 +875,7 @@
 |  |
 | ------- |
 | [0560-subarray-sum-equals-k](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0560-subarray-sum-equals-k) |
+| [0724-find-pivot-index](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0724-find-pivot-index) |
 | [1004-max-consecutive-ones-iii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1004-max-consecutive-ones-iii) |
 | [1732-find-the-highest-altitude](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1732-find-the-highest-altitude) |
 | [2574-left-and-right-sum-differences](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2574-left-and-right-sum-differences) |
