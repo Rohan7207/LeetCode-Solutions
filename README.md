@@ -99,6 +99,7 @@
 | [0744-find-smallest-letter-greater-than-target](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0744-find-smallest-letter-greater-than-target) |
 | [0746-min-cost-climbing-stairs](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0746-min-cost-climbing-stairs) |
 | [0747-largest-number-at-least-twice-of-others](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0747-largest-number-at-least-twice-of-others) |
+| [0778-swim-in-rising-water](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0778-swim-in-rising-water) |
 | [1004-max-consecutive-ones-iii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1004-max-consecutive-ones-iii) |
 | [1306-jump-game-iii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1306-jump-game-iii) |
 | [1732-find-the-highest-altitude](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1732-find-the-highest-altitude) |
@@ -319,6 +320,7 @@
 | [0374-guess-number-higher-or-lower](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0374-guess-number-higher-or-lower) |
 | [0704-binary-search](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0704-binary-search) |
 | [0744-find-smallest-letter-greater-than-target](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0744-find-smallest-letter-greater-than-target) |
+| [0778-swim-in-rising-water](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0778-swim-in-rising-water) |
 | [1004-max-consecutive-ones-iii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1004-max-consecutive-ones-iii) |
 | [2540-minimum-common-value](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2540-minimum-common-value) |
 | [3633-earliest-finish-time-for-land-and-water-rides-i](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3633-earliest-finish-time-for-land-and-water-rides-i) |
@@ -516,6 +518,7 @@
 | [0621-task-scheduler](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0621-task-scheduler) |
 | [0703-kth-largest-element-in-a-stream](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0703-kth-largest-element-in-a-stream) |
 | [0743-network-delay-time](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0743-network-delay-time) |
+| [0778-swim-in-rising-water](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0778-swim-in-rising-water) |
 ## Merge Sort
 |  |
 | ------- |
@@ -550,6 +553,7 @@
 | [0329-longest-increasing-path-in-a-matrix](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0329-longest-increasing-path-in-a-matrix) |
 | [0417-pacific-atlantic-water-flow](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0417-pacific-atlantic-water-flow) |
 | [0695-max-area-of-island](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0695-max-area-of-island) |
+| [0778-swim-in-rising-water](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0778-swim-in-rising-water) |
 ## Monotonic Stack
 |  |
 | ------- |
@@ -646,6 +650,7 @@
 | [0684-redundant-connection](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0684-redundant-connection) |
 | [0695-max-area-of-island](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0695-max-area-of-island) |
 | [0743-network-delay-time](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0743-network-delay-time) |
+| [0778-swim-in-rising-water](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0778-swim-in-rising-water) |
 | [1306-jump-game-iii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1306-jump-game-iii) |
 | [3558-number-of-ways-to-assign-edge-weights-i](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3558-number-of-ways-to-assign-edge-weights-i) |
 ## Tree
@@ -790,6 +795,7 @@
 | [0684-redundant-connection](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0684-redundant-connection) |
 | [0695-max-area-of-island](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0695-max-area-of-island) |
 | [0743-network-delay-time](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0743-network-delay-time) |
+| [0778-swim-in-rising-water](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0778-swim-in-rising-water) |
 | [1306-jump-game-iii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1306-jump-game-iii) |
 ## Union-Find
 |  |
@@ -800,6 +806,7 @@
 | [0547-number-of-provinces](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0547-number-of-provinces) |
 | [0684-redundant-connection](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0684-redundant-connection) |
 | [0695-max-area-of-island](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0695-max-area-of-island) |
+| [0778-swim-in-rising-water](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0778-swim-in-rising-water) |
 ## Graph Theory
 |  |
 | ------- |
