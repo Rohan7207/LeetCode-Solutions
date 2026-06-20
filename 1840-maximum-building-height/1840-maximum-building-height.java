@@ -2,6 +2,11 @@ class Solution {
     public int maxBuilding(int n, int[][] restrictions) {
         int l = restrictions.length;
 
+         // Base case: if there are no restrictions, the building height can grow up to n - 1
+        if (l == 0) {
+            return n - 1;
+        }
+
         int[][] arr = new int[l + 1][2];
 
         // add building 1 restriction
