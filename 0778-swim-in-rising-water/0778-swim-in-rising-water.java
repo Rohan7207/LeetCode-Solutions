@@ -1,8 +1,59 @@
+// Problem: Siwiming in Rising Water
+// Link: https://leetcode.com/problems/swim-in-rising-water/
+// Difficulty: Hard
+
+// Approach:
+// We need to find the minimum time t
+// at which we can move from top-left cell
+// to bottom-right cell.
+// At time t:
+//     We can only enter cells where:
+//         grid[i][j] <= t
+// So for any fixed time t,
+// we can check whether reaching the destination is possible
+// using DFS.
+// This helper function is:
+//     canSwim(grid, t)
+// It returns true if we can reach bottom-right
+// using only cells whose value is <= t.
+// Now observe:
+//     If we can reach destination at time t,
+//     then we can also reach it at any time greater than t.
+// So the answer follows a monotonic pattern:
+//     false false false true true true
+// Therefore, use Binary Search on time.
+// Binary Search:
+//     left  = grid[0][0]
+//     right = n * n - 1
+// For each mid:
+//     If canSwim(mid) is true:
+//         mid is possible
+//         try smaller time
+//         right = mid
+//     Else:
+//         mid is too small
+//         need more time
+//         left = mid + 1
+// Finally, left will be the minimum time
+// required to reach the destination.
+// DFS:
+//     Start from (0, 0)
+//     Stop if:
+//         cell is outside grid
+//         cell is already visited
+//         grid[i][j] > t
+//     If destination is reached:
+//         return true
+//     Otherwise:
+//         mark current cell visited
+//         try all 4 directions
+
+// Time Complexity: O(n^2 log(n^2))
+// Space Complexity: O(n^2)
+
+
 class Solution {
     public int swimInWater(int[][] grid) {
-        //We use binary search from 0 <= t <= max in matrix
-        //We use dfs
-
         int n = grid.length;
         int left = grid[0][0];
         int right = n * n - 1;
