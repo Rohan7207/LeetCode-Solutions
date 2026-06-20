@@ -18,11 +18,12 @@ class Solution {
     Integer prev = null;
 
     public int minDiffInBST(TreeNode root) {
-        if(root == null) return min;
+        if (root == null)
+            return min;
 
         minDiffInBST(root.left);
 
-        if(prev != null) {
+        if (prev != null) {
             min = Math.min(min, root.val - prev);
         }
 
