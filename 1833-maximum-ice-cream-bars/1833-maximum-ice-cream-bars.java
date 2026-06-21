@@ -26,6 +26,8 @@ class Solution {
             bars += buy;
 
             coins -= buy * cost;
+
+            if(coins < cost) break;
         }
 
         return bars;
