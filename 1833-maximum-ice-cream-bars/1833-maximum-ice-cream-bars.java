@@ -16,7 +16,7 @@ class Solution {
 
         int bars = 0;
 
-        for (int cost = 0; cost <= maxCost; cost++) {
+        for (int cost = 1; cost <= maxCost; cost++) {
             if (freq[cost] == 0) continue;
 
             int canBuy = coins / cost;
