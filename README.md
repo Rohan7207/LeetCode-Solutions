@@ -420,6 +420,7 @@
 | [0509-fibonacci-number](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0509-fibonacci-number) |
 | [0678-valid-parenthesis-string](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0678-valid-parenthesis-string) |
 | [0746-min-cost-climbing-stairs](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0746-min-cost-climbing-stairs) |
+| [0787-cheapest-flights-within-k-stops](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0787-cheapest-flights-within-k-stops) |
 ## Trie
 |  |
 | ------- |
@@ -532,6 +533,7 @@
 | [0703-kth-largest-element-in-a-stream](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0703-kth-largest-element-in-a-stream) |
 | [0743-network-delay-time](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0743-network-delay-time) |
 | [0778-swim-in-rising-water](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0778-swim-in-rising-water) |
+| [0787-cheapest-flights-within-k-stops](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0787-cheapest-flights-within-k-stops) |
 ## Merge Sort
 |  |
 | ------- |
@@ -666,6 +668,7 @@
 | [0743-network-delay-time](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0743-network-delay-time) |
 | [0778-swim-in-rising-water](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0778-swim-in-rising-water) |
 | [0783-minimum-distance-between-bst-nodes](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0783-minimum-distance-between-bst-nodes) |
+| [0787-cheapest-flights-within-k-stops](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0787-cheapest-flights-within-k-stops) |
 | [1306-jump-game-iii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1306-jump-game-iii) |
 | [3558-number-of-ways-to-assign-edge-weights-i](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3558-number-of-ways-to-assign-edge-weights-i) |
 ## Tree
@@ -815,6 +818,7 @@
 | [0743-network-delay-time](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0743-network-delay-time) |
 | [0778-swim-in-rising-water](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0778-swim-in-rising-water) |
 | [0783-minimum-distance-between-bst-nodes](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0783-minimum-distance-between-bst-nodes) |
+| [0787-cheapest-flights-within-k-stops](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0787-cheapest-flights-within-k-stops) |
 | [1306-jump-game-iii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1306-jump-game-iii) |
 ## Union-Find
 |  |
@@ -837,6 +841,7 @@
 | [0547-number-of-provinces](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0547-number-of-provinces) |
 | [0684-redundant-connection](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0684-redundant-connection) |
 | [0743-network-delay-time](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0743-network-delay-time) |
+| [0787-cheapest-flights-within-k-stops](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0787-cheapest-flights-within-k-stops) |
 ## Design
 |  |
 | ------- |
@@ -919,6 +924,7 @@
 |  |
 | ------- |
 | [0743-network-delay-time](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0743-network-delay-time) |
+| [0787-cheapest-flights-within-k-stops](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0787-cheapest-flights-within-k-stops) |
 ## Counting Sort
 |  |
 | ------- |
