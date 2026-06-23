@@ -101,6 +101,7 @@
 | [0747-largest-number-at-least-twice-of-others](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0747-largest-number-at-least-twice-of-others) |
 | [0748-shortest-completing-word](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0748-shortest-completing-word) |
 | [0778-swim-in-rising-water](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0778-swim-in-rising-water) |
+| [0794-valid-tic-tac-toe-state](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0794-valid-tic-tac-toe-state) |
 | [1004-max-consecutive-ones-iii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1004-max-consecutive-ones-iii) |
 | [1306-jump-game-iii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1306-jump-game-iii) |
 | [1732-find-the-highest-altitude](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1732-find-the-highest-altitude) |
@@ -571,6 +572,7 @@
 | [0417-pacific-atlantic-water-flow](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0417-pacific-atlantic-water-flow) |
 | [0695-max-area-of-island](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0695-max-area-of-island) |
 | [0778-swim-in-rising-water](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0778-swim-in-rising-water) |
+| [0794-valid-tic-tac-toe-state](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0794-valid-tic-tac-toe-state) |
 ## Monotonic Stack
 |  |
 | ------- |
