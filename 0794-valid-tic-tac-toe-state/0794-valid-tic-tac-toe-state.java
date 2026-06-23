@@ -1,3 +1,38 @@
+// Problem: Valid Tic-Tac-Toe State
+// Link: https://leetcode.com/problems/valid-tic-tac-toe-state/
+// Difficulty: Medium
+
+// Approach:
+// We need to check whether the given Tic-Tac-Toe board can come from a valid game.
+// In Tic-Tac-Toe:
+//     X always plays first.
+//     Then O plays.
+//     Then X, then O, and so on.
+// So the count of X and O must follow:
+//     xCount == oCount
+//     OR
+//     xCount == oCount + 1
+// If this condition fails, the board is invalid.
+// After count validation, we check whether X has won or O has won.
+// A player wins if they have 3 same characters in:
+//     any row
+//     any column
+//     any diagonal
+// If both X and O win, the board is invalid.
+// Because the game stops immediately once one player wins.
+// If X wins:
+//     X must have played the last move.
+//     So xCount must be oCount + 1.
+// If O wins:
+//     O must have played the last move.
+//     So xCount must be equal to oCount.
+// If nobody wins:
+//     The board is valid as long as move counts are valid.
+
+// Time Complexity: O(1)
+// Space Complexity: O(1)
+
+
 class Solution {
     public boolean validTicTacToe(String[] board) {
         int xCount = 0;
