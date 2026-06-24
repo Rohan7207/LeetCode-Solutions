@@ -679,6 +679,7 @@
 | [0778-swim-in-rising-water](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0778-swim-in-rising-water) |
 | [0783-minimum-distance-between-bst-nodes](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0783-minimum-distance-between-bst-nodes) |
 | [0787-cheapest-flights-within-k-stops](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0787-cheapest-flights-within-k-stops) |
+| [0938-range-sum-of-bst](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0938-range-sum-of-bst) |
 | [1306-jump-game-iii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1306-jump-game-iii) |
 | [3558-number-of-ways-to-assign-edge-weights-i](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3558-number-of-ways-to-assign-edge-weights-i) |
 ## Tree
@@ -729,6 +730,7 @@
 | [0701-insert-into-a-binary-search-tree](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0701-insert-into-a-binary-search-tree) |
 | [0703-kth-largest-element-in-a-stream](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0703-kth-largest-element-in-a-stream) |
 | [0783-minimum-distance-between-bst-nodes](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0783-minimum-distance-between-bst-nodes) |
+| [0938-range-sum-of-bst](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0938-range-sum-of-bst) |
 | [2196-create-binary-tree-from-descriptions](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2196-create-binary-tree-from-descriptions) |
 | [3558-number-of-ways-to-assign-edge-weights-i](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3558-number-of-ways-to-assign-edge-weights-i) |
 ## Binary Tree
@@ -775,6 +777,7 @@
 | [0701-insert-into-a-binary-search-tree](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0701-insert-into-a-binary-search-tree) |
 | [0703-kth-largest-element-in-a-stream](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0703-kth-largest-element-in-a-stream) |
 | [0783-minimum-distance-between-bst-nodes](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0783-minimum-distance-between-bst-nodes) |
+| [0938-range-sum-of-bst](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0938-range-sum-of-bst) |
 | [2196-create-binary-tree-from-descriptions](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2196-create-binary-tree-from-descriptions) |
 ## Binary Search Tree
 |  |
@@ -791,6 +794,7 @@
 | [0701-insert-into-a-binary-search-tree](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0701-insert-into-a-binary-search-tree) |
 | [0703-kth-largest-element-in-a-stream](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0703-kth-largest-element-in-a-stream) |
 | [0783-minimum-distance-between-bst-nodes](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0783-minimum-distance-between-bst-nodes) |
+| [0938-range-sum-of-bst](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0938-range-sum-of-bst) |
 ## Breadth-First Search
 |  |
 | ------- |
