@@ -1,3 +1,87 @@
+// Problem: Number of ZigZag Arrays II
+// Link: https://leetcode.com/problems/number-of-zigzag-arrays-ii/?envType=daily-question&envId=2026-06-24
+// Difficulty: Hard
+
+// Approach:
+//
+// We need to count ZigZag arrays of length n using values from l to r.
+//
+// First, notice that actual values do not matter.
+// Only the number of possible values matters:
+//
+//     m = r - l + 1
+//
+// The ZigZag condition means:
+//     no increasing-increasing pattern
+//     no decreasing-decreasing pattern
+//
+// So directions must alternate:
+//
+//     UP, DOWN, UP, DOWN...
+//     or
+//     DOWN, UP, DOWN, UP...
+//
+// We use DP states:
+//
+//     up[i]   = number of valid arrays ending at value i
+//               where the last move was UP
+//
+//     down[i] = number of valid arrays ending at value i
+//               where the last move was DOWN
+//
+// For length 2:
+//
+//     up[i] = number of values smaller than i
+//           = i
+//
+//     down[i] = number of values greater than i
+//             = m - 1 - i
+//
+// For normal DP:
+//
+//     newUp[curr] = sum of down[prev] where prev < curr
+//     newDown[curr] = sum of up[prev] where prev > curr
+//
+// But in ZigZag Arrays II, n can be very large.
+// So we cannot build length 3, 4, 5 ... n one by one.
+//
+// Since the transition from one length to next length is always the same,
+// we convert this DP transition into a matrix.
+//
+// We combine up[] and down[] into one state vector:
+//
+//     state[0 ... m - 1]       = up[]
+//     state[m ... 2m - 1]      = down[]
+//
+// Then build a transition matrix T such that:
+//
+//     nextState = T * currentState
+//
+// For every curr:
+//
+//     oldDown[prev] contributes to newUp[curr]
+//     when prev < curr
+//
+//     oldUp[prev] contributes to newDown[curr]
+//     when prev > curr
+//
+// Since state for length 2 is already known,
+// state for length n is:
+//
+//     T^(n - 2) * stateLength2
+//
+// We calculate T^(n - 2) using matrix exponentiation.
+//
+// Finally, sum all values in finalState.
+// Because a valid ZigZag array can end with either UP or DOWN.
+
+// Time Complexity: O((2m)^3 * log n)
+// Space Complexity: O((2m)^2)
+//
+// where:
+//     m = r - l + 1
+
+
 class Solution {
     static final long MOD = 1_000_000_007L;
 
