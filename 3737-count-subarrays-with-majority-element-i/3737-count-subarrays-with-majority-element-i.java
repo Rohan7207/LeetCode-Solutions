@@ -1,3 +1,67 @@
+// Problem: Count Subarrays With Majority Element I
+// Link: https://leetcode.com/problems/count-subarrays-with-majority-element-i/?envType=daily-question&envId=2026-06-25
+// Difficulty: Medium
+
+// Approach:
+// We need to count subarrays where the target element appears more than
+// half of the subarray length.
+// Brute force checks every subarray, but that takes O(n²).
+// Observation:
+// Convert the problem into a prefix sum problem.
+// Treat:
+//      target element  -> +1
+//      other elements  -> -1
+// Now for any subarray:
+//      if sum > 0
+//      then target appears more than half times.
+// Example:
+// [target, 2, target]
+// becomes
+// [ +1, -1, +1 ]
+// Now we need to count subarrays having positive sum.
+// Using prefix sum:
+// Subarray sum = prefix[right] - prefix[left]
+// For the sum to be positive:
+//      prefix[right] > prefix[left]
+// So the problem becomes:
+// For every prefix sum, count how many previous prefix sums are smaller
+// than the current prefix sum.
+// To do this efficiently:
+// 1. Create prefix sum array.
+// 2. Prefix sums can be negative, so apply coordinate compression:
+//       - sort all prefix values
+//       - remove duplicates
+//       - assign each value a rank/index
+// 3. Use Fenwick Tree (Binary Indexed Tree):
+//       Fenwick stores frequency of previous prefix sums.
+//       query(rank - 1):
+//            gives number of previous prefix sums smaller than current
+//       add(rank):
+//            stores current prefix sum for future queries
+// 4. Traverse prefix sums from left to right:
+//       count smaller previous prefix sums
+//       add current prefix sum
+// The total count gives the number of valid subarrays.
+
+// Time Complexity: O(n log n)
+//
+//      Coordinate compression  -> O(n log n)
+//      Fenwick operations     -> O(n log n)
+//
+// Space Complexity: O(n)
+//
+// Key Observation:
+//
+// Majority condition:
+//      count(target) > length / 2
+//
+// becomes:
+//
+//      transformed subarray sum > 0
+//
+// which can be solved using prefix sums and Fenwick Tree.
+
+
 class Solution {
     public int countMajoritySubarrays(int[] nums, int target) {
         int n = nums.length;
