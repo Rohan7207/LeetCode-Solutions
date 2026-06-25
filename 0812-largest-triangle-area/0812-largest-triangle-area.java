@@ -16,9 +16,9 @@ class Solution {
                     int x3 = points[k][0];
                     int y3 = points[k][1];
 
-                    area = Math.abs(x1 * (y2 - y3) + x2 * (y3 - y1) + x3 * (y1 - y2));
+                    area = 0.5 * Math.abs(x1 * (y2 - y3) + x2 * (y3 - y1) + x3 * (y1 - y2));
 
-                    maxArea = Math.max(maxArea, area / 2);
+                    maxArea = Math.max(maxArea, area);
                 }
             }
         }
