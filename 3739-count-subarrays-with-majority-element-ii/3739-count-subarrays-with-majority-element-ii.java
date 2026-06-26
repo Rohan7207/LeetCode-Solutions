@@ -2,6 +2,37 @@ class Solution {
     public long countMajoritySubarrays(int[] nums, int target) {
         int n = nums.length;
 
+        // represents the occurrence count of prefix sums -n, -(n-1), ..., 0, 1, ..., n, with index offset by n.
+
+        int[] prefix = new int[2 * n + 1];
+        prefix[n] = 1;
+        int cnt = n;
+        long ans = 0;
+        long prefixSum = 0;
+
+        for (int i = 0; i < n; i++) {
+            if (nums[i] == target) {
+                prefixSum += prefix[cnt];
+                cnt++;
+                prefix[cnt]++;
+            } else {
+                cnt--;
+                prefixSum -= prefix[cnt];
+                prefix[cnt]++;
+            }
+
+            ans += prefixSum;
+        }
+
+        return ans;
+    }
+}
+
+/*
+
+    Another solution with Prefix Sum + Coordinate Compression + Fenwick Tree
+     int n = nums.length;
+
         // Step 1: Convert array into +1 and -1
         int[] prefix = new int[n + 1];
 
@@ -81,4 +112,4 @@ class Solution {
 
         return sum;
     }
-}
+*/
