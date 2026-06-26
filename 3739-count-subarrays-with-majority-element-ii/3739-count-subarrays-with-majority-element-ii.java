@@ -1,8 +1,50 @@
+// Problem: Count Subarrays With Majority  Element II
+// Link: https://leetcode.com/problems/count-subarrays-with-majority-element-ii/?envType=daily-question&envId=2026-06-26
+// Difficulty: Hard
+
+// Approach:
+// The goal is to count subarrays where the target element appears more than
+// half of the subarray length.
+// Brute force checks every subarray, which takes O(n²).
+// Since n can be large, we need an O(n) solution.
+// Convert the problem into a prefix sum problem:
+// Treat:
+//      target element  -> +1
+//      other elements  -> -1
+// Now if a subarray has target as majority:
+//      target count > non-target count
+// then the transformed subarray sum will be positive.
+// So we need to count subarrays with sum > 0.
+// Maintain a running prefix sum:
+//      prefixSum = target balance till current index
+// For a subarray:
+//      sum = prefix[right] - prefix[left]
+// It is valid when:
+//      prefix[right] > prefix[left]
+// Instead of storing all prefix sums, use a frequency array because the
+// prefix sum range is limited from -n to +n.
+// Since array indexes cannot be negative, shift every prefix sum by n:
+//      actual prefix value + n = array index
+// Steps:
+// 1. Create a frequency array to store occurrence count of prefix sums.
+// 2. Initialize prefix sum 0 as already seen once because an empty prefix exists.
+// 3. Traverse the array:
+//      - If current element is target:
+//              increase balance by 1
+//      - Otherwise:
+//              decrease balance by 1
+// 4. Before storing the current prefix sum:
+//      Count previous prefix sums that can form a valid majority subarray.
+// 5. Store the current prefix sum occurrence for future elements.
+// 6. Return the total count.
+
+// Time Complexity: O(n)
+// Space Complexity: O(n)
+
+
 class Solution {
     public long countMajoritySubarrays(int[] nums, int target) {
         int n = nums.length;
-
-        // represents the occurrence count of prefix sums -n, -(n-1), ..., 0, 1, ..., n, with index offset by n.
 
         int[] prefix = new int[2 * n + 1];
         prefix[n] = 1;
@@ -27,89 +69,3 @@ class Solution {
         return ans;
     }
 }
-
-/*
-
-    Another solution with Prefix Sum + Coordinate Compression + Fenwick Tree
-     int n = nums.length;
-
-        // Step 1: Convert array into +1 and -1
-        int[] prefix = new int[n + 1];
-
-        for (int i = 0; i < n; i++) {
-
-            if (nums[i] == target) {
-                prefix[i + 1] = prefix[i] + 1;
-            } else {
-                prefix[i + 1] = prefix[i] - 1;
-            }
-        }
-
-        // Step 2: Coordinate compression
-        int[] sorted = prefix.clone();
-
-        Arrays.sort(sorted);
-
-        List<Integer> unique = new ArrayList<>();
-
-        for (int x : sorted) {
-
-            if (unique.size() == 0 ||
-                unique.get(unique.size() - 1) != x) {
-
-                unique.add(x);
-            }
-        }
-
-        // value -> rank mapping
-        Map<Integer, Integer> map = new HashMap<>();
-
-        for (int i = 0; i < unique.size(); i++) {
-
-            map.put(unique.get(i), i + 1);
-        }
-
-        // Step 3: Fenwick Tree
-        int[] fenwick = new int[unique.size() + 1];
-        long ans = 0;
-
-        // Add empty prefix sum = 0
-        add(fenwick, map.get(0), 1);
-
-        // Step 4: Process prefix sums
-        for (int i = 1; i <= n; i++) {
-            int current = prefix[i];
-            int rank = map.get(current);
-
-            // count previous prefix sums smaller than current
-            ans += query(fenwick, rank - 1);
-
-            // store current prefix
-            add(fenwick, rank, 1);
-        }
-
-        return ans;
-    }
-
-    // Fenwick update
-    private void add(int[] fenwick, int index, int value) {
-        while (index < fenwick.length) {
-            fenwick[index] += value;
-
-            index += index & -index;
-        }
-    }
-
-    // Fenwick prefix sum query
-    private long query(int[] fenwick, int index) {
-        long sum = 0;
-
-        while (index > 0) {
-            sum += fenwick[index];
-
-            index -= index & -index;
-        }
-
-        return sum;
-    }
-*/
