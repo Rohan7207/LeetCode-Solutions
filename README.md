@@ -122,6 +122,7 @@
 | [2574-left-and-right-sum-differences](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2574-left-and-right-sum-differences) |
 | [2657-find-the-prefix-common-array-of-two-arrays](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2657-find-the-prefix-common-array-of-two-arrays) |
 | [2784-check-if-array-is-good](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2784-check-if-array-is-good) |
+| [3020-find-the-maximum-number-of-elements-in-subset](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3020-find-the-maximum-number-of-elements-in-subset) |
 | [3300-minimum-element-after-replacement-with-digit-sum](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3300-minimum-element-after-replacement-with-digit-sum) |
 | [3633-earliest-finish-time-for-land-and-water-rides-i](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3633-earliest-finish-time-for-land-and-water-rides-i) |
 | [3689-maximum-total-subarray-value-i](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3689-maximum-total-subarray-value-i) |
@@ -178,6 +179,7 @@
 | [2540-minimum-common-value](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2540-minimum-common-value) |
 | [2657-find-the-prefix-common-array-of-two-arrays](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2657-find-the-prefix-common-array-of-two-arrays) |
 | [2784-check-if-array-is-good](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2784-check-if-array-is-good) |
+| [3020-find-the-maximum-number-of-elements-in-subset](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3020-find-the-maximum-number-of-elements-in-subset) |
 | [3120-count-the-number-of-special-characters-i](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3120-count-the-number-of-special-characters-i) |
 | [3121-count-the-number-of-special-characters-ii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3121-count-the-number-of-special-characters-ii) |
 | [3737-count-subarrays-with-majority-element-i](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3737-count-subarrays-with-majority-element-i) |
@@ -499,6 +501,7 @@
 | ------- |
 | [0204-count-primes](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0204-count-primes) |
 | [1995-count-special-quadruplets](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1995-count-special-quadruplets) |
+| [3020-find-the-maximum-number-of-elements-in-subset](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3020-find-the-maximum-number-of-elements-in-subset) |
 ## Greedy
 |  |
 | ------- |
