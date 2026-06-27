@@ -91,6 +91,7 @@
 | [0643-maximum-average-subarray-i](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0643-maximum-average-subarray-i) |
 | [0674-longest-continuous-increasing-subsequence](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0674-longest-continuous-increasing-subsequence) |
 | [0695-max-area-of-island](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0695-max-area-of-island) |
+| [0697-degree-of-an-array](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0697-degree-of-an-array) |
 | [0704-binary-search](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0704-binary-search) |
 | [0705-design-hashset](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0705-design-hashset) |
 | [0706-design-hashmap](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0706-design-hashmap) |
@@ -166,6 +167,7 @@
 | [0560-subarray-sum-equals-k](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0560-subarray-sum-equals-k) |
 | [0567-permutation-in-string](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0567-permutation-in-string) |
 | [0621-task-scheduler](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0621-task-scheduler) |
+| [0697-degree-of-an-array](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0697-degree-of-an-array) |
 | [0705-design-hashset](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0705-design-hashset) |
 | [0706-design-hashmap](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0706-design-hashmap) |
 | [0748-shortest-completing-word](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0748-shortest-completing-word) |
