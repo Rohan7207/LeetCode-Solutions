@@ -448,6 +448,7 @@
 | [0678-valid-parenthesis-string](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0678-valid-parenthesis-string) |
 | [0746-min-cost-climbing-stairs](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0746-min-cost-climbing-stairs) |
 | [0787-cheapest-flights-within-k-stops](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0787-cheapest-flights-within-k-stops) |
+| [0818-race-car](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0818-race-car) |
 | [3699-number-of-zigzag-arrays-i](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3699-number-of-zigzag-arrays-i) |
 | [3700-number-of-zigzag-arrays-ii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3700-number-of-zigzag-arrays-ii) |
 ## Trie
