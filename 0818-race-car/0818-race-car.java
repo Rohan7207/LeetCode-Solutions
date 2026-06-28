@@ -1,3 +1,43 @@
+// Problem: Race Car
+// Link: https://leetcode.com/problems/race-car/
+// Difficulty: Hard
+
+// Approach:
+// Solve the problem using BFS because we need the minimum number
+// of operations to reach the target.
+// State representation:
+//     [position, speed, steps]
+// Position and speed together define the complete state of the car.
+// Start state:
+//     position = 0
+//     speed = 1
+//     steps = 0
+// Use Queue for BFS traversal.
+// For every state, there are two possible operations:
+// 1. Accelerate (A):
+//     newPosition = position + speed
+//     newSpeed = speed * 2
+//     Add this state if it is not visited.
+// 2. Reverse (R):
+//     Position remains same.
+//     If speed is positive:
+//          newSpeed = -1
+//     Else:
+//          newSpeed = 1
+//     Add this state if it is not visited.
+// Use HashSet:
+//     Store (position, speed)
+//     because the same state reached again will not give a better answer.
+// Add boundary limit:
+//     Only explore useful positions within target * 2
+//     to avoid infinite unnecessary states.
+// BFS guarantees the first time we reach target,
+// we get the minimum number of steps.
+
+// Time Complexity: O(target * log(target))
+// Space Complexity: O(target * log(target))
+
+
 class Solution {
     public int racecar(int target) {
         Queue<int[]> q = new LinkedList<>();
