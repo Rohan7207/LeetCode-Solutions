@@ -1,3 +1,37 @@
+// Problem: Shortest Distance to a Character
+// Link: https://leetcode.com/problems/shortest-distance-to-a-character/
+// Difficulty: Easy
+
+// Approach:
+// For every index, the shortest distance to character c can come from:
+//     1. Nearest c on the left side
+//     2. Nearest c on the right side
+// We solve this using two traversals.
+// Step 1: Left to right traversal
+// Maintain:
+//     prev = previous index where c appeared
+// For every index:
+//     If current character is c:
+//          update prev
+//     Distance from left side:
+//          i - prev
+//     Store it in ans array.
+// Step 2: Right to left traversal
+// Maintain:
+//     next = next index where c appeared
+// For every index:
+//     If current character is c:
+//          update next
+//     Distance from right side:
+//          next - i
+//     Update:
+//          ans[i] = minimum(left distance, right distance)
+// Finally return ans.
+
+// Time Complexity: O(n)
+// Space Complexity: O(1) (excluding output array)
+
+
 class Solution {
     public int[] shortestToChar(String s, char c) {
         int n = s.length();
