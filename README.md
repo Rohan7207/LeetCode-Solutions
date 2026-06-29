@@ -107,6 +107,7 @@
 | [0794-valid-tic-tac-toe-state](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0794-valid-tic-tac-toe-state) |
 | [0804-unique-morse-code-words](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0804-unique-morse-code-words) |
 | [0812-largest-triangle-area](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0812-largest-triangle-area) |
+| [0821-shortest-distance-to-a-character](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0821-shortest-distance-to-a-character) |
 | [0953-verifying-an-alien-dictionary](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0953-verifying-an-alien-dictionary) |
 | [1004-max-consecutive-ones-iii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1004-max-consecutive-ones-iii) |
 | [1306-jump-game-iii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1306-jump-game-iii) |
@@ -318,6 +319,7 @@
 | [0763-partition-labels](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0763-partition-labels) |
 | [0771-jewels-and-stones](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0771-jewels-and-stones) |
 | [0804-unique-morse-code-words](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0804-unique-morse-code-words) |
+| [0821-shortest-distance-to-a-character](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0821-shortest-distance-to-a-character) |
 | [0953-verifying-an-alien-dictionary](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0953-verifying-an-alien-dictionary) |
 | [1189-maximum-number-of-balloons](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1189-maximum-number-of-balloons) |
 | [1967-number-of-strings-that-appear-as-substrings-in-word](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1967-number-of-strings-that-appear-as-substrings-in-word) |
@@ -409,6 +411,7 @@
 | [0567-permutation-in-string](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0567-permutation-in-string) |
 | [0653-two-sum-iv-input-is-a-bst](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0653-two-sum-iv-input-is-a-bst) |
 | [0763-partition-labels](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0763-partition-labels) |
+| [0821-shortest-distance-to-a-character](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0821-shortest-distance-to-a-character) |
 | [0876-middle-of-the-linked-list](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0876-middle-of-the-linked-list) |
 | [2095-delete-the-middle-node-of-a-linked-list](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2095-delete-the-middle-node-of-a-linked-list) |
 | [2130-maximum-twin-sum-of-a-linked-list](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2130-maximum-twin-sum-of-a-linked-list) |
