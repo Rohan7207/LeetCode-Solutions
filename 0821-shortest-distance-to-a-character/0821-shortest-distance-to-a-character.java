@@ -6,22 +6,21 @@ class Solution {
         int prev = Integer.MIN_VALUE / 2;
 
         // left closest c
-        for(int i = 0; i < n; i++) {
+        for (int i = 0; i < n; i++) {
 
-            if(s.charAt(i) == c) {
+            if (s.charAt(i) == c) {
                 prev = i;
             }
 
             ans[i] = i - prev;
         }
 
-
         int next = Integer.MAX_VALUE / 2;
 
         // right closest c
-        for(int i = n - 1; i >= 0; i--) {
+        for (int i = n - 1; i >= 0; i--) {
 
-            if(s.charAt(i) == c) {
+            if (s.charAt(i) == c) {
                 next = i;
             }
 
