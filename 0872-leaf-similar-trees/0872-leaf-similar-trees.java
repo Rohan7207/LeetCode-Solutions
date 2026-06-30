@@ -1,3 +1,40 @@
+// Problem: Leaf Similar Trees
+// Link: https://leetcode.com/problems/leaf-similar-trees/
+// Difficulty: Easy
+
+// Approach:
+// Two binary trees are leaf-similar if their leaf nodes appear
+// in the same order and have the same values.
+// Use DFS traversal to extract the leaf sequence of both trees.
+// Step 1:
+// Create two lists:
+//     list1 -> stores leaves of root1
+//     list2 -> stores leaves of root2
+// Step 2:
+// Perform DFS on both trees.
+// During DFS:
+//     If node is null:
+//          return
+//     If node has no left and right child:
+//          It is a leaf node
+//          Store its value in the list
+//     Otherwise:
+//          Traverse left subtree
+//          Traverse right subtree
+// This maintains the left-to-right order of leaf nodes.
+// Step 3:
+// Compare both lists.
+// If both leaf sequences are equal,
+// trees are leaf-similar.
+
+// Time Complexity: O(n + m)
+//     n = nodes in first tree
+//     m = nodes in second tree
+//
+// Space Complexity: O(n + m)
+//     for storing leaf sequences
+
+
 /**
  * Definition for a binary tree node.
  * public class TreeNode {
