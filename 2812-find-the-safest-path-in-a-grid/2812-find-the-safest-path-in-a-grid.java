@@ -44,32 +44,30 @@ class Solution {
         PriorityQueue<int[]> pq = new PriorityQueue<>((a, b) -> b[2] - a[2]);
         boolean[][] vis = new boolean[n][n];
 
-        pq.offer(new int[] { 0, 0, safety[0][0] });
+        pq.offer(new int[] {0, 0, safety[0][0]});
+        vis[0][0] = true;
 
-        while (!pq.isEmpty()) {
+        while(!pq.isEmpty()) {
             int[] curr = pq.poll();
 
             int r = curr[0];
             int c = curr[1];
             int safe = curr[2];
 
-            if (vis[r][c])
-                continue;
-
-            vis[r][c] = true;
-
-            if (r == n - 1 && c == n - 1) {
+            if(r == n - 1 && c == n - 1) {
                 return safe;
             }
 
-            for (int[] dir : directions) {
+            for(int[] dir : directions) {
                 int nr = r + dir[0];
                 int nc = c + dir[1];
 
-                if (nr >= 0 && nr < n && nc >= 0 && nc < n && !vis[nr][nc]) {
+                if(nr >= 0 && nr < n && nc >= 0 && nc < n && !vis[nr][nc]) {
                     int newSafe = Math.min(safe, safety[nr][nc]);
 
-                    pq.offer(new int[] { nr, nc, newSafe });
+                    vis[nr][nc] = true;
+
+                    pq.offer(new int[] {nr, nc, newSafe});
                 }
             }
         }
