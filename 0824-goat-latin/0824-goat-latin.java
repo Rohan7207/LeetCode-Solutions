@@ -1,3 +1,38 @@
+// Problem: Goat Latin
+// Link: https://leetcode.com/problems/goat-latin/
+// Difficulty: Easy
+
+// Approach:
+// The goal is to convert every word of the sentence into Goat Latin format.
+// Rules:
+// 1. If a word starts with a vowel:
+//      - Keep the word as it is.
+// 2. If a word starts with a consonant:
+//      - Move the first character to the end of the word.
+// 3. Add "ma" after every word.
+// 4. Add 'a' characters based on the word position:
+//      - 1st word -> "a"
+//      - 2nd word -> "aa"
+//      - 3rd word -> "aaa"
+//      and so on.
+// Steps:
+// 1. Split the sentence into individual words using split(" ").
+// 2. Traverse every word one by one.
+// 3. For each word:
+//      - Check if first character is present in vowel string.
+//      - If vowel, append the word directly.
+//      - If consonant, remove first character and place it at the end.
+// 4. Append "ma" and the increasing suffix of 'a' characters.
+// 5. Store transformed words and finally join them with spaces.
+
+// Time Complexity: O(n)
+// Where n = total number of characters in the sentence.
+// We visit every character once.
+//
+// Space Complexity: O(n)
+// Extra space is used for storing words, result array and StringBuilders.
+
+
 class Solution {
     public String toGoatLatin(String sentence) {
         // Step 1: Split the sentence into an array of individual words
