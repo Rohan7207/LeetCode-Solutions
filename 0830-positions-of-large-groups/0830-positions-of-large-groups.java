@@ -2,7 +2,6 @@ class Solution {
     public List<List<Integer>> largeGroupPositions(String s) {
         List<List<Integer>> res = new ArrayList<>();
         int n = s.length();
-        
         int left = 0;
 
         for (int right = 1; right <= n; right++) {
