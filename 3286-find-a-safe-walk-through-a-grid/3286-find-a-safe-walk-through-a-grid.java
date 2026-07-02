@@ -5,15 +5,19 @@ class Solution {
         int m = grid.size();
         int n = grid.get(0).size();
 
-        int[][] bestHealth = new int[m][n];
-        Queue<int[]> q = new LinkedList<>();
         if (grid.get(0).get(0) == 1) {
             health--;
         }
 
-        if (health <= 0)
-            return false;
+        if (health <= 0) return false;
 
+        int[][] bestHealth = new int[m][n];
+
+        for (int[] row : bestHealth) {
+            Arrays.fill(row, -1);
+        }
+
+        Queue<int[]> q = new LinkedList<>();
         q.offer(new int[] { 0, 0, health });
         bestHealth[0][0] = health;
 
@@ -24,7 +28,7 @@ class Solution {
             int c = curr[1];
             int currHealth = curr[2];
 
-            if (r == m - 1 && c == n - 1 && currHealth > 0) {
+            if (r == m - 1 && c == n - 1) {
                 return true;
             }
 
