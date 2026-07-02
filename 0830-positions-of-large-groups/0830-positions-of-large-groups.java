@@ -3,6 +3,29 @@ class Solution {
         List<List<Integer>> res = new ArrayList<>();
         int n = s.length();
 
+        int left = 0;
+
+        for (int right = 1; right <= n; right++) {
+            // Check if we reached the end or the character changed
+            if (right == n || s.charAt(right) != s.charAt(left)) {
+                // If group size is 3 or more, add to result
+                if (right - left >= 3) {
+                    res.add(new ArrayList<>(Arrays.asList(left, right - 1)));
+                }
+
+                // Reset start to current index
+                left = right;
+            }
+        }
+
+        return res;
+    }
+}
+
+/*
+     List<List<Integer>> res = new ArrayList<>();
+        int n = s.length();
+
         for (int left = 0; left < n; left++) {
             int right = left + 1;
             while (right < n) {
@@ -24,5 +47,4 @@ class Solution {
         }
 
         return res;
-    }
-}
+*/
