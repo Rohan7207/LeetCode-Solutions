@@ -1,3 +1,49 @@
+// Problem: Position of Large Groups
+// Link: https://leetcode.com/problems/positions-of-large-groups/
+// Difficulty: Easy
+
+// Approach:
+// A large group consists of consecutive identical
+// characters having length >= 3.
+//
+// Step 1:
+// Maintain two pointers:
+//     left  -> starting index of the current group
+//     right -> scans the string
+// Initially:
+//     left = 0
+//
+// Step 2:
+// Move 'right' from index 1 to n.
+// The current group continues as long as:
+//     s[right] == s[left]
+//
+// Step 3:
+// A group ends when:
+//     - right reaches the end of the string, or
+//     - the current character differs from
+//       the group's starting character.
+//
+// Step 4:
+// Compute the group length:
+//     length = right - left
+// If:
+//     length >= 3
+// store:
+//     [left, right - 1]
+// because right points to the first character
+// outside the current group.
+//
+// Step 5:
+// Start a new group by updating:
+//     left = right
+// Continue until the entire string is processed.
+
+// Time Complexity: O(n)
+// Space Complexity: O(1)
+// (excluding the output list)
+
+
 class Solution {
     public List<List<Integer>> largeGroupPositions(String s) {
         List<List<Integer>> res = new ArrayList<>();
