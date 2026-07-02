@@ -1,3 +1,66 @@
+// Problem: Find the Safest Walk Through a Grid
+// Link: https://leetcode.com/problems/find-a-safe-walk-through-a-grid/?envType=daily-question&envId=2026-07-02
+// Difficulty: Medium
+
+// Approach:
+// The health decreases only when entering an unsafe cell (value = 1).
+// A state is represented by:
+//     {row, column, remainingHealth}
+// The same cell can be reached with different remaining health.
+// Example:
+//     Cell (2,3)
+//     Path A -> Health = 2
+//     Path B -> Health = 5
+// Path B is always better because it leaves us with
+// more health for future moves.
+// 
+// Step 1:
+// Handle the starting cell.
+// If the starting cell is unsafe,
+// decrease health by 1.
+// If health becomes 0 or less,
+// reaching the destination is impossible.
+//
+// Step 2:
+// Maintain a bestHealth matrix.
+// bestHealth[r][c] stores:
+//     Maximum remaining health with which
+//     we have reached cell (r,c).
+// Initialize every cell with -1.
+// Store the starting health:
+//     bestHealth[0][0] = health
+//
+// Step 3:
+// Perform BFS.
+// Queue stores:
+//     {row, column, remainingHealth}
+// Pop one state at a time.
+//
+// Step 4:
+// Explore all four neighbours.
+// Compute:
+//     newHealth = currentHealth - grid[nr][nc]
+// If:
+//     newHealth > 0
+// and
+//     newHealth > bestHealth[nr][nc]
+// then:
+//     - Update bestHealth.
+//     - Push the neighbour into the queue.
+// This ensures we only continue exploring
+// if we reach a cell with more remaining health
+// than before.
+//
+// Step 5:
+// If the destination is reached,
+// return true.
+// If BFS finishes without reaching it,
+// return false.
+
+// Time Complexity: O(m × n × health) (worst case)
+// Space Complexity: O(m × n)
+
+
 class Solution {
     int[][] directions = { { 1, 0 }, { -1, 0 }, { 0, 1 }, { 0, -1 } };
 
