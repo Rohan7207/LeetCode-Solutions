@@ -1,3 +1,91 @@
+// Problem: Network Recovery Pathways
+// Link: https://leetcode.com/problems/network-recovery-pathways/?envType=daily-question&envId=2026-07-03
+// Difficulty: Hard
+
+// Approach:
+// Observation:
+// The score of a path is defined as the minimum edge cost
+// present on that path (called the bottleneck).
+// We need to maximize this bottleneck while keeping the
+// total path cost <= k.
+//
+// Step 1: Build Graph Once
+// Convert the edge list into an adjacency list.
+// Since the graph never changes during binary search,
+// build it only once.
+// Also compute one Topological Ordering of the DAG
+// using Kahn's Algorithm.
+//
+// Step 2: Find Binary Search Range
+// Traverse every edge.
+// low  = minimum edge weight
+// high = maximum edge weight
+// The answer must lie within this range.
+//
+// Step 3: Binary Search on Answer
+// Suppose mid is our candidate bottleneck.
+// Question:
+// "Can there exist a path from 0 to n-1 whose minimum
+// edge cost is at least mid while total cost <= k?"
+// If YES:
+//      Try larger bottleneck.
+// If NO:
+//      Try smaller bottleneck.
+//
+// Step 4: check(mid)
+// Initialize:
+// dp[node] = minimum total cost required
+//            to reach this node.
+// dp[0] = 0
+// others = INF
+// Traverse nodes in Topological Order.
+// For every outgoing edge:
+//      u ----weight----> v
+// Condition 1:
+// Ignore edge if
+//      weight < mid
+// because this edge would reduce the bottleneck below mid.
+// Condition 2:
+// Ignore offline intermediate nodes.
+// Condition 3:
+// Relax:
+// dp[v] = min(dp[v], dp[u] + weight)
+//
+// Step 5:
+// After processing all nodes:
+// if dp[n-1] <= k
+//      candidate bottleneck is possible
+// else
+//      impossible.
+// Binary Search finally returns the largest feasible bottleneck.
+
+// Time Complexity:
+//
+// Graph Construction      : O(E)
+// Topological Sort        : O(V + E)
+//
+// Binary Search iterations: O(log W)
+// where
+// W = maximum edge weight.
+//
+// Each check():
+//      DP on DAG = O(V + E)
+//
+// Overall:
+//
+// O((V + E) * log W)
+//
+// Space Complexity:
+//
+// Graph        : O(V + E)
+// Topological  : O(V)
+// DP           : O(V)
+//
+// Overall:
+//
+// O(V + E)
+
+
 class Solution {
     static class Edge {
         int to;
