@@ -9,39 +9,16 @@ class Solution {
         }
     }
 
+    List<Integer> topoOrder = new ArrayList<>();
+    List<List<Edge>> adjList = new ArrayList<>();
+
     public int findMaxPathScore(int[][] edges, boolean[] online, long k) {
         // Maximum Bottleneck Path
         // - Budget Constraint
         // - DAG Dynamic Programming / Topological Order
 
-        int low = Integer.MAX_VALUE;
-        int high = Integer.MIN_VALUE;
-
-        for (int[] edge : edges) {
-            low = Math.min(low, edge[2]);
-            high = Math.max(high, edge[2]);
-        }
-
-        int ans = -1;
-
-        while (low <= high) {
-            int mid = low + (high - low) / 2;
-
-            if (isValidPathWay(edges, online, k, mid)) {
-                ans = mid;
-                low = mid + 1;
-            } else {
-                high = mid - 1;
-            }
-        }
-
-        return ans;
-    }
-
-    private boolean isValidPathWay(int[][] edges, boolean[] online, long k, int mid) {
         // Step 1: Build Adjacency List
         // Using an edge structure to keep track of both destination and weight
-        List<List<Edge>> adjList = new ArrayList<>();
         int n = online.length;
 
         for (int i = 0; i < n; i++) {
@@ -71,7 +48,6 @@ class Solution {
             }
         }
 
-        List<Integer> topoOrder = new ArrayList<>();
         while (!q.isEmpty()) {
             int u = q.poll();
             topoOrder.add(u);
@@ -84,8 +60,35 @@ class Solution {
             }
         }
 
+        int low = Integer.MAX_VALUE;
+        int high = Integer.MIN_VALUE;
+
+        for (int[] edge : edges) {
+            low = Math.min(low, edge[2]);
+            high = Math.max(high, edge[2]);
+        }
+
+        int ans = -1;
+
+        while (low <= high) {
+            int mid = low + (high - low) / 2;
+
+            if (isValidPathWay(edges, online, k, mid)) {
+                ans = mid;
+                low = mid + 1;
+            } else {
+                high = mid - 1;
+            }
+        }
+
+        return ans;
+    }
+
+    private boolean isValidPathWay(int[][] edges, boolean[] online, long k, int mid) {
+        int n = online.length;
+
         // Step 3: Initialize DP array
-        long INF = Long.MAX_VALUE; // Safe value to prevent integer overflow during relaxation
+        long INF = Long.MAX_VALUE;
         long[] dp = new long[n];
         Arrays.fill(dp, INF);
         dp[0] = 0;
