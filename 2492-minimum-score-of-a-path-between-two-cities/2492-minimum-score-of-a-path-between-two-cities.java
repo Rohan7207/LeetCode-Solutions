@@ -1,8 +1,9 @@
 class Solution {
-    List<List<int[]>> adj = new ArrayList<>();
     int ans = Integer.MAX_VALUE;
 
     public int minScore(int n, int[][] roads) {
+        List<List<int[]>> adj = new ArrayList<>();
+
         for (int i = 0; i <= n; i++) {
             adj.add(new ArrayList<>());
         }
@@ -18,12 +19,12 @@ class Solution {
 
         boolean[] vis = new boolean[n + 1];
 
-        dfs(1, vis);
+        dfs(adj, 1, vis);
 
         return ans;
     }
 
-    private void dfs(int node, boolean[] vis) {
+    private void dfs(List<List<int[]>> adj, int node, boolean[] vis) {
         vis[node] = true;
 
         for (int[] edge : adj.get(node)) {
@@ -33,7 +34,7 @@ class Solution {
             ans = Math.min(ans, wt);
 
             if (!vis[neigh]) {
-                dfs(neigh, vis);
+                dfs(adj, neigh, vis);
             }
         }
     }
