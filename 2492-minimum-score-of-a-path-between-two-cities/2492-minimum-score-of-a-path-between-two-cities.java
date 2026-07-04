@@ -1,6 +1,59 @@
+// Problem : Minimum Score of a Path Between Two Cities
+// Link : https://leetcode.com/problems/minimum-score-of-a-path-between-two-cities/?envType=daily-question&envId=2026-07-04
+// Difficulty : Medium
+
+// Approach:
+// The score of a path is the minimum edge weight
+// present on that path.
+// Unlike normal path problems, we are allowed to
+// revisit cities and roads multiple times.
+// This means if two cities belong to the same
+// connected component, we can freely move around
+// inside that component before finally reaching
+// city n.
+// Therefore, the answer is NOT the minimum edge
+// on one particular path.
+// Instead, it is simply the minimum edge weight
+// present in the connected component containing
+// city 1.
+//
+// Step 1:
+// Build the adjacency list for the undirected graph.
+// Store:
+//      {neighbor, edgeWeight}
+// for every road.
+//
+// Step 2:
+// Start DFS from city 1.
+// Visit every reachable city exactly once.
+//
+// Step 3:
+// For every traversed edge:
+//      ans = min(ans, edgeWeight)
+// This guarantees we record the smallest edge
+// inside the connected component.
+//
+// Step 4:
+// Continue DFS until every reachable node
+// has been visited.
+// Return the minimum edge weight found.
+
+// Time Complexity:
+// Building Graph : O(E)
+// DFS Traversal : O(V + E)
+// Overall:
+// O(V + E)
+//
+// Space Complexity:
+// Graph : O(V + E)
+// Visited Array : O(V)
+// DFS Stack : O(V)
+// Overall:
+// O(V + E)
+
+
 class Solution {
     int ans = Integer.MAX_VALUE;
-
     
     public int minScore(int n, int[][] roads) {
         List<List<int[]>> adj = new ArrayList<>();
