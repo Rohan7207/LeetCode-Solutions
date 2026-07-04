@@ -1,6 +1,7 @@
 class Solution {
     int ans = Integer.MAX_VALUE;
 
+    
     public int minScore(int n, int[][] roads) {
         List<List<int[]>> adj = new ArrayList<>();
 
