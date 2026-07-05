@@ -10,7 +10,7 @@ class Solution {
             }
         }
 
-        for(int i = 1; i < nums.length; i++) {
+        for (int i = 1; i < nums.length; i++) {
             if (nums[i] > nums[i - 1]) {
                 decreasing = false;
                 break;
