@@ -3,20 +3,20 @@ class Solution {
         boolean increasing = true;
         boolean decreasing = true;
 
-        for(int i = 1; i < nums.length; i++) {
-            if(nums[i] > nums[i - 1]) {
-                decreasing = false;
-            }
-
-            if(nums[i] < nums[i - 1]) {
+        for (int i = 1; i < nums.length; i++) {
+            if (nums[i] < nums[i - 1]) {
                 increasing = false;
+                break;
             }
         }
 
-        if(decreasing || increasing) {
-            return true;
+        for(int i = 1; i < nums.length; i++) {
+            if (nums[i] > nums[i - 1]) {
+                decreasing = false;
+                break;
+            }
         }
 
-        return false;
+        return decreasing || increasing;
     }
 }
