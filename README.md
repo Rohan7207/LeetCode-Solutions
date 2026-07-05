@@ -113,6 +113,7 @@
 | [0953-verifying-an-alien-dictionary](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0953-verifying-an-alien-dictionary) |
 | [0973-k-closest-points-to-origin](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0973-k-closest-points-to-origin) |
 | [1004-max-consecutive-ones-iii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1004-max-consecutive-ones-iii) |
+| [1301-number-of-paths-with-max-score](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1301-number-of-paths-with-max-score) |
 | [1306-jump-game-iii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1306-jump-game-iii) |
 | [1732-find-the-highest-altitude](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1732-find-the-highest-altitude) |
 | [1752-check-if-array-is-sorted-and-rotated](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1752-check-if-array-is-sorted-and-rotated) |
@@ -475,6 +476,7 @@
 | [0787-cheapest-flights-within-k-stops](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0787-cheapest-flights-within-k-stops) |
 | [0818-race-car](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0818-race-car) |
 | [0845-longest-mountain-in-array](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0845-longest-mountain-in-array) |
+| [1301-number-of-paths-with-max-score](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1301-number-of-paths-with-max-score) |
 | [3620-network-recovery-pathways](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3620-network-recovery-pathways) |
 | [3699-number-of-zigzag-arrays-i](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3699-number-of-zigzag-arrays-i) |
 | [3700-number-of-zigzag-arrays-ii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3700-number-of-zigzag-arrays-ii) |
@@ -643,6 +645,7 @@
 | [0695-max-area-of-island](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0695-max-area-of-island) |
 | [0778-swim-in-rising-water](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0778-swim-in-rising-water) |
 | [0794-valid-tic-tac-toe-state](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0794-valid-tic-tac-toe-state) |
+| [1301-number-of-paths-with-max-score](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1301-number-of-paths-with-max-score) |
 | [2812-find-the-safest-path-in-a-grid](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2812-find-the-safest-path-in-a-grid) |
 | [3286-find-a-safe-walk-through-a-grid](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3286-find-a-safe-walk-through-a-grid) |
 ## Monotonic Stack
