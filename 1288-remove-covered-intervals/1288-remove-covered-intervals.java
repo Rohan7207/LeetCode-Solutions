@@ -1,7 +1,7 @@
 class Solution {
     public int removeCoveredIntervals(int[][] intervals) {
         // 1. Sort: Ascending by start, Descending by end if starts are equal
-        Arrays.sort(intervals, (a, b) -> a[0] == b[0] ? Integer.compare(b[1], a[1]) : Integer.compare(a[0], b[0]));
+        Arrays.sort(intervals, (a, b) -> a[0] == b[0] ? b[1] - a[1] : a[0] - b[0]);
         int remainingCount = 0;
         int maxEnd = 0;
 
