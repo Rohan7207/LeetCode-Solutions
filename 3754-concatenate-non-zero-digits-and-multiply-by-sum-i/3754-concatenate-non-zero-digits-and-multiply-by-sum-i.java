@@ -1,7 +1,7 @@
 class Solution {
     public long sumAndMultiply(int n) {
-        long res = 0;
-        long sum = 0;
+        int res = 0;
+        int sum = 0;
         int placeValue = 1;
 
         while (n > 0) {
@@ -16,6 +16,6 @@ class Solution {
             n /= 10;
         }
 
-        return res * sum;
+        return (long) res * sum;
     }
 }
