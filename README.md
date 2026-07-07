@@ -112,6 +112,7 @@
 | [0821-shortest-distance-to-a-character](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0821-shortest-distance-to-a-character) |
 | [0845-longest-mountain-in-array](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0845-longest-mountain-in-array) |
 | [0846-hand-of-straights](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0846-hand-of-straights) |
+| [0853-car-fleet](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0853-car-fleet) |
 | [0896-monotonic-array](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0896-monotonic-array) |
 | [0953-verifying-an-alien-dictionary](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0953-verifying-an-alien-dictionary) |
 | [0973-k-closest-points-to-origin](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0973-k-closest-points-to-origin) |
@@ -519,6 +520,7 @@
 | [0645-set-mismatch](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0645-set-mismatch) |
 | [0747-largest-number-at-least-twice-of-others](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0747-largest-number-at-least-twice-of-others) |
 | [0846-hand-of-straights](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0846-hand-of-straights) |
+| [0853-car-fleet](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0853-car-fleet) |
 | [0973-k-closest-points-to-origin](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0973-k-closest-points-to-origin) |
 | [1288-remove-covered-intervals](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1288-remove-covered-intervals) |
 | [1833-maximum-ice-cream-bars](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1833-maximum-ice-cream-bars) |
@@ -599,6 +601,7 @@
 | [0678-valid-parenthesis-string](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0678-valid-parenthesis-string) |
 | [0739-daily-temperatures](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0739-daily-temperatures) |
 | [0844-backspace-string-compare](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0844-backspace-string-compare) |
+| [0853-car-fleet](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0853-car-fleet) |
 | [0897-increasing-order-search-tree](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0897-increasing-order-search-tree) |
 | [2130-maximum-twin-sum-of-a-linked-list](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2130-maximum-twin-sum-of-a-linked-list) |
 ## Heap (Priority Queue)
@@ -668,6 +671,7 @@
 | [0496-next-greater-element-i](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0496-next-greater-element-i) |
 | [0503-next-greater-element-ii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0503-next-greater-element-ii) |
 | [0739-daily-temperatures](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0739-daily-temperatures) |
+| [0853-car-fleet](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0853-car-fleet) |
 ## Simulation
 |  |
 | ------- |
