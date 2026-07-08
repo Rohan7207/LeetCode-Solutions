@@ -1,3 +1,51 @@
+// Problem: Concatenate Non-Zero Digits and Multiply by Sum II
+// Link: https://leetcode.com/problems/concatenate-non-zero-digits-and-multiply-by-sum-ii/?envType=daily-question&envId=2026-07-08
+// Difficulty: Medium
+
+// Approach:
+// Processing every query independently would require scanning
+// the entire substring, resulting in O(n × q), which leads to TLE.
+// Observe that zeros do not contribute to either:
+//     • the concatenated number
+//     • the digit sum
+// Therefore, preprocess only the non-zero digits.
+// Build three prefix arrays:
+// 1. nonZeroCount[i]
+//      Number of non-zero digits in s[0...i-1].
+//      It tells how many significant digits belong to any query.
+// 2. sumPrefix[i]
+//      Sum of all non-zero digits till index i-1.
+//      This allows obtaining the digit sum of any query
+//      in O(1).
+// 3. numPrefix[i]
+//      Stores the number formed by concatenating all
+//      non-zero digits till index i-1.
+//      It is built similarly to a rolling hash:
+//          newNumber = oldNumber × 10 + digit
+// Also precompute:
+//      powerOf10[i] = 10^i mod MOD
+// so that removing an unwanted prefix becomes O(1).
+// For every query:
+//      1. Find the number of non-zero digits.
+//      2. If there are no non-zero digits,
+//         answer is 0.
+//      3. Compute the digit sum using sumPrefix.
+//      4. Compute the concatenated number using:
+//         number =
+//         numPrefix[r+1]
+//         - numPrefix[l] × 10^(digitsInRange)
+//         (mod MOD)
+//      5. Return
+//         number × digitSum (mod MOD).
+
+// Time Complexity:
+//      Preprocessing : O(n)
+//      Each Query    : O(1)
+//      Total         : O(n + q)
+//
+// Space Complexity: O(n)
+
+
 class Solution {
     private int MOD = 1000000007;
     public int[] sumAndMultiply(String s, int[][] queries) {
