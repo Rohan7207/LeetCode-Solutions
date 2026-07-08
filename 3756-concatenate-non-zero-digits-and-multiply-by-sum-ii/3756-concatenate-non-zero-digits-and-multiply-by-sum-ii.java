@@ -55,6 +55,7 @@ class Solution {
 
             ans[i] = (int) ((currentNum * currentSum) % MOD);
         }
+        
         return ans;
     }
 }
