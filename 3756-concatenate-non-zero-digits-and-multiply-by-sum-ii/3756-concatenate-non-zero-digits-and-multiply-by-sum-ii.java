@@ -1,6 +1,5 @@
 class Solution {
     private int MOD = 1000000007;
-
     public int[] sumAndMultiply(String s, int[][] queries) {
         int len = s.length();
 
@@ -55,7 +54,7 @@ class Solution {
 
             ans[i] = (int) ((currentNum * currentSum) % MOD);
         }
-        
+
         return ans;
     }
 }
