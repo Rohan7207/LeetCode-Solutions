@@ -4,16 +4,19 @@ class Solution {
     public int[] sumAndMultiply(String s, int[][] queries) {
         int len = s.length();
 
+        // Precomputed arrays
         long[] numPrefix = new long[len + 1];
         long[] sumPrefix = new long[len + 1];
         int[] nonZeroCount = new int[len + 1];
 
+        // Precompute powers of 10 modulo MOD: powerOf10[k] = (10^k) % MOD
         long[] powerOf10 = new long[len + 1];
         powerOf10[0] = 1;
         for (int i = 1; i <= len; i++) {
             powerOf10[i] = (powerOf10[i - 1] * 10) % MOD;
         }
 
+        // Step 1: Preprocess the string
         for (int i = 0; i < len; i++) {
             char c = s.charAt(i);
             if (c != '0') {
@@ -31,10 +34,12 @@ class Solution {
         int qLen = queries.length;
         int[] ans = new int[qLen];
 
+        // Step 2: Answer each query 
         for (int i = 0; i < qLen; i++) {
             int l = queries[i][0];
             int r = queries[i][1];
 
+            // Get total non-zero digits in this range
             int digitInRange = nonZeroCount[r + 1] - nonZeroCount[l];
 
             if (digitInRange == 0) {
@@ -42,8 +47,10 @@ class Solution {
                 continue;
             }
 
+            // calculation of the digit sum in range
             long currentSum = sumPrefix[r + 1] - sumPrefix[l];
 
+            // calculation of the zero-free number in range
             long currentNum = (numPrefix[r + 1] - (numPrefix[l] * powerOf10[digitInRange]) % MOD + MOD) % MOD;
 
             ans[i] = (int) ((currentNum * currentSum) % MOD);
