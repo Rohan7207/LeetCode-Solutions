@@ -10,17 +10,17 @@ class Solution {
 
         long[] powerOf10 = new long[len + 1];
         powerOf10[0] = 1;
-        for(int i = 1; i <= len; i++) {
+        for (int i = 1; i <= len; i++) {
             powerOf10[i] = (powerOf10[i - 1] * 10) % MOD;
         }
 
-        for(int i = 0; i < len; i++) {
+        for (int i = 0; i < len; i++) {
             char c = s.charAt(i);
-            if(c != '0') {
+            if (c != '0') {
                 int digit = c - '0';
                 numPrefix[i + 1] = ((numPrefix[i] * 10) + digit) % MOD;
                 sumPrefix[i + 1] = sumPrefix[i] + digit;
-                nonZeroCount[i + 1] = nonZeroCount[i] + 1; 
+                nonZeroCount[i + 1] = nonZeroCount[i] + 1;
             } else {
                 numPrefix[i + 1] = numPrefix[i];
                 sumPrefix[i + 1] = sumPrefix[i];
@@ -31,13 +31,13 @@ class Solution {
         int qLen = queries.length;
         int[] ans = new int[qLen];
 
-        for(int i = 0; i < qLen; i++) {
+        for (int i = 0; i < qLen; i++) {
             int l = queries[i][0];
             int r = queries[i][1];
 
             int digitInRange = nonZeroCount[r + 1] - nonZeroCount[l];
 
-            if(digitInRange == 0) {
+            if (digitInRange == 0) {
                 ans[i] = 0;
                 continue;
             }
