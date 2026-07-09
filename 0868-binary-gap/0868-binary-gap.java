@@ -1,6 +1,33 @@
 class Solution {
     public int binaryGap(int n) {
-        StringBuilder sb = new StringBuilder();
+        int res = 0;
+        boolean found = false;
+        int a = 1;
+        int pos = -1;
+
+        for (int i = 0; i < 32; i++) {
+            if ((a & n) == a) { // If bit is 1 then execute
+                if (found) {
+                    int d = i - pos;
+                    if (d > res)
+                        res = d;
+                    pos = i;
+                } else {
+                    pos = i; // Found first set bit 
+                    found = true;
+                }
+            }
+
+            a = a << 1; // Left shift i.e if 0001 after this step 0010
+        }
+
+        return res;
+    }
+}
+
+/*
+    Another Solution:
+     StringBuilder sb = new StringBuilder();
 
         while (n > 0) {
             sb.append(n & 1);
@@ -26,8 +53,7 @@ class Solution {
         }
 
         return max;
-    }
-}
+*/
 
 /*
 Last bit  : n & 1
