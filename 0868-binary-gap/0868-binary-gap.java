@@ -1,3 +1,38 @@
+// Problem: Binary Gap
+// Link: https://leetcode.com/problems/binary-gap/
+// Difficulty: Easy
+
+// Approach:
+// We need to find the maximum distance between
+// consecutive set bits (1s) in the binary
+// representation of the number.
+// Instead of converting the number into a binary
+// string, scan each of the 32 bits directly using
+// a moving bitmask.
+// Initialize:
+//     mask = 1
+// which represents:
+//     000...0001
+// The mask checks one bit at a time.
+// For every bit position:
+//     If (mask & n) == mask,
+//     the current bit is set.
+//     • If this is the first set bit,
+//       simply store its position.
+//     • Otherwise,
+//       compute the distance between the current
+//       set bit and the previous set bit.
+//       Update the maximum distance if needed.
+//       Then update the previous position.
+// After checking the current bit,
+// left shift the mask by one position
+// to examine the next bit.
+// Continue until all 32 bits are processed.
+
+// Time Complexity: O(32) = O(1)
+// Space Complexity: O(1)
+
+
 class Solution {
     public int binaryGap(int n) {
         int res = 0;
@@ -6,65 +41,21 @@ class Solution {
         int pos = -1;
 
         for (int i = 0; i < 32; i++) {
-            if ((a & n) == a) { // If bit is 1 then execute
+            if ((a & n) == a) {
                 if (found) {
                     int d = i - pos;
                     if (d > res)
                         res = d;
                     pos = i;
                 } else {
-                    pos = i; // Found first set bit 
+                    pos = i;
                     found = true;
                 }
             }
 
-            a = a << 1; // Left shift i.e if 0001 after this step 0010
+            a = a << 1; 
         }
 
         return res;
     }
 }
-
-/*
-    Another Solution:
-     StringBuilder sb = new StringBuilder();
-
-        while (n > 0) {
-            sb.append(n & 1);
-            n >>= 1;
-        }
-
-        String binary = sb.reverse().toString();
-
-        int currPos = 0;
-        int dist = 0;
-        int max = Integer.MIN_VALUE;
-        for (int i = 0; i < binary.length(); i++) {
-            char bit = binary.charAt(i);
-
-            if (bit == '0') {
-                continue;
-            } else {
-                dist = i - currPos;
-                currPos = i;
-            }
-
-            max = Math.max(max, dist);
-        }
-
-        return max;
-*/
-
-/*
-Last bit  : n & 1
-
-Remove last bit : n >>= 1
-
-Set bit i     : n | (1 << i)
-
-Clear bit i   : n & ~(1 << i)
-
-Toggle bit i  : n ^ (1 << i)
-
-Check bit i   : (n & (1 << i)) != 0
-*/
