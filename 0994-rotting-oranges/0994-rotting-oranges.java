@@ -1,3 +1,41 @@
+// Problem: Rotting Oranges
+// Link: https://leetcode.com/problems/rotting-oranges/
+// Difficulty: Medium
+
+// Approach:
+// Every rotten orange spreads the infection to its
+// four adjacent fresh oranges in exactly one minute.
+// Since all rotten oranges spread simultaneously,
+// this is a Multi-Source BFS problem.
+// First, traverse the grid:
+//     • Count the total number of fresh oranges.
+//     • Add every initially rotten orange into
+//       the BFS queue.
+// If there are no fresh oranges,
+// return 0 immediately.
+// Perform BFS level by level.
+// Each level represents one minute.
+// For every rotten orange in the current level:
+//     • Visit its four neighboring cells.
+//     • If a neighboring cell contains a fresh orange:
+//           - Turn it rotten.
+//           - Decrease the fresh orange count.
+//           - Push it into the queue.
+// After processing one complete BFS level,
+// increment the minute count.
+// Continue until the queue becomes empty.
+// Finally:
+//     • If every fresh orange became rotten,
+//       return the total minutes.
+//     • Otherwise,
+//       some fresh oranges were unreachable,
+//       so return -1.
+// Since minutes is incremented even after the
+// last level, subtract one before returning.
+
+// Time Complexity: O(m × n)
+// Space Complexity: O(m × n)
+
 class Solution {
     public int orangesRotting(int[][] grid) {
         if (grid == null || grid.length == 0)
