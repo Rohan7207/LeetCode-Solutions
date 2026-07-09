@@ -1,3 +1,40 @@
+// Problem: Path Existence Queries in a Graph
+// Link: https://leetcode.com/problems/path-existence-queries-in-a-graph-i/?envType=daily-question&envId=2026-07-09
+// Difficulty: Medium
+
+// Approach:
+// Building the graph explicitly is unnecessary because the array
+// is already sorted.
+// Observe:
+//     If the difference between two adjacent numbers is
+//     greater than maxDiff, then no edge can cross that gap.
+// Therefore, that gap permanently splits the graph into
+// two different connected components.
+// Scan the array once and assign a component ID to every index.
+//     • Start with component 0.
+//     • For every adjacent pair:
+//           nums[i] - nums[i-1]
+//       If the difference is greater than maxDiff,
+//       start a new component.
+//       Otherwise,
+//       the current index belongs to the same component
+//       as the previous index.
+// After preprocessing:
+//     For every query (u, v):
+//         If component[u] == component[v],
+//         a path exists.
+//         Otherwise,
+//         they belong to different connected components,
+//         so no path exists.
+
+// Time Complexity:
+//     Preprocessing : O(n)
+//     Each Query    : O(1)
+//     Total         : O(n + q)
+//
+// Space Complexity: O(n)
+
+
 class Solution {
     public boolean[] pathExistenceQueries(int n, int[] nums, int maxDiff, int[][] queries) {
         boolean[] ans = new boolean[queries.length];
@@ -27,35 +64,3 @@ class Solution {
         return ans;
     }
 }
-
-/*
-    Since nums is sorted, do you really need to compare every pair of indices?
-
-Look at this:
-
-nums = [1,2,3,4,10,11,12,20]
-
-maxDiff = 2
-
-Adjacent differences:
-
-1 ✓
-1 ✓
-1 ✓
-6 ✗
-1 ✓
-1 ✓
-8 ✗
-
-Notice something?
-
-Every time you encounter
-
-nums[i] - nums[i-1] > maxDiff
-
-a new connected component starts.
-
-Otherwise,
-
-the current element belongs to the same component as the previous one.
-*/
