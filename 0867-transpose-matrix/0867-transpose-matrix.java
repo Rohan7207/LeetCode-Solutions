@@ -1,5 +1,5 @@
 // Problem: Transpose Matrix
-// Link: hhttps://leetcode.com/problems/transpose-matrix/
+// Link: https://leetcode.com/problems/transpose-matrix/
 // Difficulty: Easy
 
 // Approach:
