@@ -1,3 +1,32 @@
+// Problem: N-Repeated Elements in Size 2N Array
+// Link: https://leetcode.com/problems/n-repeated-element-in-size-2n-array/
+// Difficulty: Easy
+
+// Approach:
+// We are given an array of size 2N where exactly one element appears N times
+// and every other element appears only once.
+// Key Observation:
+// The repeated element must appear at least twice within a distance of 2.
+// Why?
+// - If every occurrence of the repeated element were separated by at least
+//   two other elements, there wouldn't be enough positions in an array of
+//   size 2N to place all N occurrences.
+// - Therefore, at least one pair of repeated elements must be either:
+//      1. Adjacent      -> A[i] == A[i + 1]
+//      2. One apart     -> A[i] == A[i + 2]
+// Algorithm:
+// 1. Traverse the array from index 0 to n-3.
+// 2. For each index, compare:
+//      - A[i] with A[i + 1]
+//      - A[i] with A[i + 2]
+// 3. If either comparison matches, return A[i] immediately.
+// 4. If no match is found during the loop, the only remaining possible
+//    arrangement is that the repeated element is the last element.
+//    Hence, return A[n - 1].
+
+// Time Complexity: O(n)
+// Space Complexity: O(1)
+
 class Solution {
     public int repeatedNTimes(int[] nums) {
         for (int i = 0; i < nums.length - 2; i++)
@@ -7,52 +36,4 @@ class Solution {
 
         return nums[nums.length - 1];
     }
-}
-
-/*
-    Why does this always work?
-
-Suppose the repeated element is X.
-
-Could every occurrence of X be at least 3 positions apart?
-
-No.
-
-For an array of length 2N with N copies of X, there simply isn't enough room to separate all copies by two different elements.
-
-By the pigeonhole principle, at least one pair of X values must be:
-
-adjacent (distance 1), or
-separated by exactly one element (distance 2).
-
-That's exactly what the code checks:
-
-A[i] == A[i + 1]
-
-or
-
-A[i] == A[i + 2]
-
-The only arrangement not caught by the loop is when the matching pair involves the last element, which is why returning A[A.length - 1] works.
-*/
-
-/*
-     int n = nums.length / 2;
-
-        Map<Integer, Integer> freqMap = new HashMap<>();
-
-        for (int i = 0; i < nums.length; i++) {
-            freqMap.put(nums[i], freqMap.getOrDefault(nums[i], 0) + 1);
-        }
-
-        for (Map.Entry<Integer, Integer> entry : freqMap.entrySet()) {
-            int key = entry.getKey();
-            int value = entry.getValue();
-
-            if (value == n) {
-                return key;
-            }
-        }
-
-        return 0;
-*/
+}  
