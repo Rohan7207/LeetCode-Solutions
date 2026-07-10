@@ -1,3 +1,64 @@
+// Problem: Path Existence Queries in a Graph II
+// Link: https://leetcode.com/problems/path-existence-queries-in-a-graph-ii/?envType=daily-question&envId=2026-07-10
+// Difficulty: Hard
+
+// Approach:
+// Since edges depend on node values (not their original indices),
+// first pair every value with its original index and sort them.
+//
+// Build a position[] array.
+//     position[originalIndex] = sorted position.
+// This helps convert every query into sorted positions.
+//
+// Scan the sorted array once to build connected components.
+//     • Start with component 0.
+//     • If the difference between two consecutive values is
+//       greater than maxDiff,
+//       start a new component.
+//     • Otherwise,
+//       both positions belong to the same component.
+// Nodes in different components can never have a path.
+//
+// Build next[] using Two Pointers.
+//     next[i] = farthest sorted position reachable from i
+//               in one edge.
+// The right pointer never moves backward,
+// so this preprocessing takes O(n).
+//
+// Build the Binary Lifting table.
+//     jump[i][0] = next[i]
+//     jump[i][k] = jump[jump[i][k-1]][k-1]
+//
+// Here,
+// jump[i][k] represents the position reached after
+// making 2^k greedy jumps from position i.
+//
+// For every query:
+//     • Convert both original indices into sorted positions.
+//     • Ensure left <= right.
+//     • If they belong to different components,
+//       return -1.
+//     • Otherwise,
+//       use Binary Lifting.
+//         - Start from the largest power of two.
+//         - If taking 2^k jumps still keeps us
+//           before the destination,
+//           take those jumps.
+//         - Add 2^k to the answer.
+//     • After the loop,
+//       one final jump reaches the destination.
+
+// Time Complexity:
+//     Sorting                 : O(n log n)
+//     Component Building      : O(n)
+//     next[] (Two Pointers)   : O(n)
+//     Binary Lifting Build    : O(n log n)
+//     Each Query              : O(log n)
+//     Total                   : O(n log n + q log n)
+//
+// Space Complexity: O(n log n)
+
+
 class Solution {
     private int LOG = 20;
 
@@ -42,8 +103,6 @@ class Solution {
             next[i] = j;
         }
 
-        // Binary Lifting we've built, For every sorted position i, we can now answer:
-        // "Where will I end up after 2^k greedy jumps?" in O(1).
         int[][] jump = new int[len][LOG];
 
         // Fill first column
@@ -101,30 +160,3 @@ class Solution {
         return answer + 1;
     }
 }
-
-/*
-    Most Important Observation
-
-After sorting, the graph can be visualized as connected chains separated by gaps larger than maxDiff.
-
-For this example:
-
-Sorted Values
-
-1      5 ---- 7 ---- 8 ---- 10
-│      │      │      │      │
-C0     C1     C1     C1     C1
-P0     P1     P2     P3     P4
-
-Where:
-
-C = Component ID
-P = Position in the sorted array
-
-Then each query becomes:
-
-Different components? → -1
-Same component? → |position[u] - position[v]|
-
-That's why the solution answers every query in O(1) after an O(n log n) preprocessing step.
-*/
