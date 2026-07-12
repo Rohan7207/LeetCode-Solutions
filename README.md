@@ -115,6 +115,7 @@
 | [0853-car-fleet](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0853-car-fleet) |
 | [0867-transpose-matrix](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0867-transpose-matrix) |
 | [0877-stone-game](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0877-stone-game) |
+| [0888-fair-candy-swap](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0888-fair-candy-swap) |
 | [0896-monotonic-array](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0896-monotonic-array) |
 | [0953-verifying-an-alien-dictionary](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0953-verifying-an-alien-dictionary) |
 | [0961-n-repeated-element-in-size-2n-array](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0961-n-repeated-element-in-size-2n-array) |
@@ -201,6 +202,7 @@
 | [0771-jewels-and-stones](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0771-jewels-and-stones) |
 | [0804-unique-morse-code-words](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0804-unique-morse-code-words) |
 | [0846-hand-of-straights](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0846-hand-of-straights) |
+| [0888-fair-candy-swap](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0888-fair-candy-swap) |
 | [0953-verifying-an-alien-dictionary](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0953-verifying-an-alien-dictionary) |
 | [0961-n-repeated-element-in-size-2n-array](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0961-n-repeated-element-in-size-2n-array) |
 | [1189-maximum-number-of-balloons](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1189-maximum-number-of-balloons) |
@@ -396,6 +398,7 @@
 | [0713-subarray-product-less-than-k](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0713-subarray-product-less-than-k) |
 | [0744-find-smallest-letter-greater-than-target](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0744-find-smallest-letter-greater-than-target) |
 | [0778-swim-in-rising-water](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0778-swim-in-rising-water) |
+| [0888-fair-candy-swap](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0888-fair-candy-swap) |
 | [1004-max-consecutive-ones-iii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1004-max-consecutive-ones-iii) |
 | [2540-minimum-common-value](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2540-minimum-common-value) |
 | [2812-find-the-safest-path-in-a-grid](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2812-find-the-safest-path-in-a-grid) |
@@ -539,6 +542,7 @@
 | [0747-largest-number-at-least-twice-of-others](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0747-largest-number-at-least-twice-of-others) |
 | [0846-hand-of-straights](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0846-hand-of-straights) |
 | [0853-car-fleet](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0853-car-fleet) |
+| [0888-fair-candy-swap](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0888-fair-candy-swap) |
 | [0973-k-closest-points-to-origin](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0973-k-closest-points-to-origin) |
 | [1288-remove-covered-intervals](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1288-remove-covered-intervals) |
 | [1331-rank-transform-of-an-array](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1331-rank-transform-of-an-array) |
