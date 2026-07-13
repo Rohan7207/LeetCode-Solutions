@@ -10,8 +10,8 @@ class Solution {
             // Generate all sequential numbers of this length
             for (int i = 0; i <= 9 - len; i++) {
                 String num = s.substring(i, i + len);
-
                 int value = Integer.parseInt(num);
+                
                 if (value >= low && value <= high) {
                     ans.add(value);
                 }
