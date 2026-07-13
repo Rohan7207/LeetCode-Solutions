@@ -276,6 +276,7 @@
 | [0224-basic-calculator](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0224-basic-calculator) |
 | [0268-missing-number](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0268-missing-number) |
 | [0342-power-of-four](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0342-power-of-four) |
+| [0357-count-numbers-with-unique-digits](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0357-count-numbers-with-unique-digits) |
 | [0367-valid-perfect-square](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0367-valid-perfect-square) |
 | [0371-sum-of-two-integers](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0371-sum-of-two-integers) |
 | [0380-insert-delete-getrandom-o1](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0380-insert-delete-getrandom-o1) |
@@ -496,6 +497,7 @@
 | [0322-coin-change](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0322-coin-change) |
 | [0329-longest-increasing-path-in-a-matrix](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0329-longest-increasing-path-in-a-matrix) |
 | [0338-counting-bits](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0338-counting-bits) |
+| [0357-count-numbers-with-unique-digits](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0357-count-numbers-with-unique-digits) |
 | [0392-is-subsequence](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0392-is-subsequence) |
 | [0435-non-overlapping-intervals](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0435-non-overlapping-intervals) |
 | [0509-fibonacci-number](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0509-fibonacci-number) |
@@ -573,6 +575,7 @@
 | [0113-path-sum-ii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0113-path-sum-ii) |
 | [0126-word-ladder-ii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0126-word-ladder-ii) |
 | [0131-palindrome-partitioning](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0131-palindrome-partitioning) |
+| [0357-count-numbers-with-unique-digits](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0357-count-numbers-with-unique-digits) |
 ## Enumeration
 |  |
 | ------- |
