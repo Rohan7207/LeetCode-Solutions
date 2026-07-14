@@ -117,6 +117,7 @@
 | [0877-stone-game](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0877-stone-game) |
 | [0888-fair-candy-swap](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0888-fair-candy-swap) |
 | [0896-monotonic-array](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0896-monotonic-array) |
+| [0904-fruit-into-baskets](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0904-fruit-into-baskets) |
 | [0912-sort-an-array](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0912-sort-an-array) |
 | [0953-verifying-an-alien-dictionary](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0953-verifying-an-alien-dictionary) |
 | [0961-n-repeated-element-in-size-2n-array](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0961-n-repeated-element-in-size-2n-array) |
@@ -205,6 +206,7 @@
 | [0804-unique-morse-code-words](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0804-unique-morse-code-words) |
 | [0846-hand-of-straights](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0846-hand-of-straights) |
 | [0888-fair-candy-swap](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0888-fair-candy-swap) |
+| [0904-fruit-into-baskets](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0904-fruit-into-baskets) |
 | [0953-verifying-an-alien-dictionary](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0953-verifying-an-alien-dictionary) |
 | [0961-n-repeated-element-in-size-2n-array](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0961-n-repeated-element-in-size-2n-array) |
 | [1189-maximum-number-of-balloons](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1189-maximum-number-of-balloons) |
@@ -375,6 +377,7 @@
 | [0567-permutation-in-string](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0567-permutation-in-string) |
 | [0643-maximum-average-subarray-i](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0643-maximum-average-subarray-i) |
 | [0713-subarray-product-less-than-k](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0713-subarray-product-less-than-k) |
+| [0904-fruit-into-baskets](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0904-fruit-into-baskets) |
 | [1004-max-consecutive-ones-iii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1004-max-consecutive-ones-iii) |
 | [1358-number-of-substrings-containing-all-three-characters](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1358-number-of-substrings-containing-all-three-characters) |
 ## Binary Search
