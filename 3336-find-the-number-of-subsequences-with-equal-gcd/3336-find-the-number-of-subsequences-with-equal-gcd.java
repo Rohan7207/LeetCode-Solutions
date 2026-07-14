@@ -1,3 +1,49 @@
+// Problem: Find the Number of Subsequence With Equal GCD
+// Link: https://leetcode.com/problems/find-the-number-of-subsequences-with-equal-gcd/?envType=daily-question&envId=2026-07-14
+// Difficulty: Hard
+
+// Approach:
+// We need to build two disjoint non-empty subsequences such that
+// both have the same GCD.
+// Observe that while processing the array, we never need to store
+// the actual subsequences.
+// The only information required for future decisions is their
+// current GCDs.
+// DP State:
+//     solve(index, gcd1, gcd2)
+// where:
+//     index -> current position in nums
+//     gcd1  -> current GCD of seq1 (0 means seq1 is empty)
+//     gcd2  -> current GCD of seq2 (0 means seq2 is empty)
+// At every index, there are exactly three choices:
+//     1. Skip the current element.
+//     2. Put it into seq1.
+//     3. Put it into seq2.
+// The GCD is updated using:
+//     gcd(newGcd, nums[index])
+// Since many different paths can reach the same
+// (index, gcd1, gcd2) state, memoization avoids
+// recomputing those states.
+// Base Case:
+//     When all elements have been processed:
+//         If gcd1 == gcd2
+//         and gcd1 != 0
+//         both subsequences are non-empty and have
+//         equal GCD, so return 1.
+//         Otherwise return 0.
+
+// Time Complexity:
+//     O(n × M²)
+//
+//     where
+//         n = nums.length
+//         M = maximum possible GCD (200)
+//
+// Space Complexity:
+//     O(n × M²)
+//     (Memoization table + recursion stack)
+
+
 class Solution {
     private final int MOD = 1_000_000_007;
     private Integer[][][] dp;
