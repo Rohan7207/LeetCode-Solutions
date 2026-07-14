@@ -4,14 +4,14 @@ class Solution {
         int ans = 0;
 
         int left = 0;
-        for(int right = 0; right < fruits.length; right++) {
+        for (int right = 0; right < fruits.length; right++) {
             freqMap.put(fruits[right], freqMap.getOrDefault(fruits[right], 0) + 1);
 
-            while(freqMap.size() > 2) {
+            while (freqMap.size() > 2) {
                 int currFreq = freqMap.get(fruits[left]);
                 currFreq--;
 
-                if(currFreq == 0) {
+                if (currFreq == 0) {
                     freqMap.remove(fruits[left]);
                 } else {
                     freqMap.put(fruits[left], currFreq);
