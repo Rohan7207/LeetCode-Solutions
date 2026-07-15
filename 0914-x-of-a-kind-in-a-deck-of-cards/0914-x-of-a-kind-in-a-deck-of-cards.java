@@ -3,12 +3,12 @@ class Solution {
         int n = deck.length;
         Map<Integer, Integer> freqMap = new HashMap<>();
 
-        for(int card : deck) {
+        for (int card : deck) {
             freqMap.put(card, freqMap.getOrDefault(card, 0) + 1);
         }
 
         int gcdValue = 0;
-        for(int freq : freqMap.values()) {
+        for (int freq : freqMap.values()) {
             gcdValue = gcd(gcdValue, freq);
         }
 
@@ -16,7 +16,7 @@ class Solution {
     }
 
     private int gcd(int a, int b) {
-        while(b > 0) {
+        while (b > 0) {
             int temp = a % b;
             a = b;
             b = temp;
