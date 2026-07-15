@@ -119,6 +119,7 @@
 | [0896-monotonic-array](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0896-monotonic-array) |
 | [0904-fruit-into-baskets](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0904-fruit-into-baskets) |
 | [0912-sort-an-array](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0912-sort-an-array) |
+| [0914-x-of-a-kind-in-a-deck-of-cards](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0914-x-of-a-kind-in-a-deck-of-cards) |
 | [0953-verifying-an-alien-dictionary](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0953-verifying-an-alien-dictionary) |
 | [0961-n-repeated-element-in-size-2n-array](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0961-n-repeated-element-in-size-2n-array) |
 | [0973-k-closest-points-to-origin](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0973-k-closest-points-to-origin) |
@@ -207,6 +208,7 @@
 | [0846-hand-of-straights](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0846-hand-of-straights) |
 | [0888-fair-candy-swap](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0888-fair-candy-swap) |
 | [0904-fruit-into-baskets](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0904-fruit-into-baskets) |
+| [0914-x-of-a-kind-in-a-deck-of-cards](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0914-x-of-a-kind-in-a-deck-of-cards) |
 | [0953-verifying-an-alien-dictionary](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0953-verifying-an-alien-dictionary) |
 | [0961-n-repeated-element-in-size-2n-array](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0961-n-repeated-element-in-size-2n-array) |
 | [1189-maximum-number-of-balloons](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1189-maximum-number-of-balloons) |
@@ -289,6 +291,7 @@
 | [0628-maximum-product-of-three-numbers](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0628-maximum-product-of-three-numbers) |
 | [0812-largest-triangle-area](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0812-largest-triangle-area) |
 | [0877-stone-game](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0877-stone-game) |
+| [0914-x-of-a-kind-in-a-deck-of-cards](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0914-x-of-a-kind-in-a-deck-of-cards) |
 | [0973-k-closest-points-to-origin](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0973-k-closest-points-to-origin) |
 | [1344-angle-between-hands-of-a-clock](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1344-angle-between-hands-of-a-clock) |
 | [1840-maximum-building-height](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1840-maximum-building-height) |
@@ -678,6 +681,7 @@
 | ------- |
 | [0169-majority-element](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0169-majority-element) |
 | [0621-task-scheduler](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0621-task-scheduler) |
+| [0914-x-of-a-kind-in-a-deck-of-cards](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0914-x-of-a-kind-in-a-deck-of-cards) |
 | [1189-maximum-number-of-balloons](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1189-maximum-number-of-balloons) |
 | [2833-furthest-point-from-origin](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2833-furthest-point-from-origin) |
 | [3737-count-subarrays-with-majority-element-i](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3737-count-subarrays-with-majority-element-i) |
@@ -1050,6 +1054,7 @@
 |  |
 | ------- |
 | [0204-count-primes](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0204-count-primes) |
+| [0914-x-of-a-kind-in-a-deck-of-cards](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0914-x-of-a-kind-in-a-deck-of-cards) |
 | [3336-find-the-number-of-subsequences-with-equal-gcd](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3336-find-the-number-of-subsequences-with-equal-gcd) |
 | [3658-gcd-of-odd-and-even-sums](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3658-gcd-of-odd-and-even-sums) |
 ## Topological Sort
