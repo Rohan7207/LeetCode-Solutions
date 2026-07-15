@@ -1,3 +1,30 @@
+// Problem: Sort Array By Parity
+// Link: https://leetcode.com/problems/sort-array-by-parity/
+// Difficulty: Easy
+
+// Approach:
+// Use the Two Pointers technique to partition the array
+// into even and odd numbers in-place.
+// Maintain two pointers:
+//     left  -> starts from the beginning.
+//     right -> starts from the end.
+// Move the left pointer forward while it points to an
+// even number because it is already in the correct position.
+// Move the right pointer backward while it points to an
+// odd number because it is already in the correct position.
+// After these movements:
+//     nums[left]  is an odd number (misplaced).
+//     nums[right] is an even number (misplaced).
+// Swap these two elements so they move to their
+// correct partitions.
+// Repeat this process until the two pointers meet.
+// Since each element is visited at most once,
+// the algorithm runs efficiently in linear time.
+
+// Time Complexity: O(n)
+// Space Complexity: O(1)
+
+
 class Solution {
     public int[] sortArrayByParity(int[] nums) {
         int left = 0;
@@ -25,18 +52,3 @@ class Solution {
         return nums;
     }
 }
-
-/*
-     while (l < r) {
-            if (nums[l] % 2 == 0) {
-                l++;
-            } else {
-                int temp = nums[l];
-                nums[l] = nums[r];
-                nums[r] = temp;
-                r--;
-            }
-        }
-
-        return nums;
-*/
