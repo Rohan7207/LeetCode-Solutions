@@ -16,12 +16,10 @@ class Solution {
     }
 
     private int gcd(int a, int b) {
-        while (b > 0) {
-            int temp = a % b;
-            a = b;
-            b = temp;
+        if(b == 0) {
+            return a;
         }
 
-        return a;
+        return gcd(b, a % b);
     }
 }
