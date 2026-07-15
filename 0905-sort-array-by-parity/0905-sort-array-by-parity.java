@@ -3,8 +3,7 @@ class Solution {
         int left = 0;
         int right = nums.length - 1;
 
-
-        while (left <= right) {
+        while (left < right) {
             while (left < right && nums[left] % 2 == 0) {
                 left++;
             }
@@ -13,12 +12,14 @@ class Solution {
                 right--;
             }
 
-            int temp = nums[left];
-            nums[left] = nums[right];
-            nums[right] = temp;
+            if (left < right) {
+                int temp = nums[left];
+                nums[left] = nums[right];
+                nums[right] = temp;
 
-            left++;
-            right--;
+                left++;
+                right--;
+            }
         }
 
         return nums;
