@@ -3,6 +3,7 @@ class Solution {
         int left = 0;
         int right = nums.length - 1;
 
+
         while (left <= right) {
             while (left < right && nums[left] % 2 == 0) {
                 left++;
