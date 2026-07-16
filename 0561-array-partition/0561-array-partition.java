@@ -4,12 +4,18 @@ class Solution {
         int n = nums.length;
         int sum = 0;
 
-        for(int i = 1; i < n; i += 2) {
-            if(i < n) {
-                sum += Math.min(nums[i], nums[i - 1]);
-            }
+        for(int i = 0; i < n; i += 2) {
+            sum += nums[i];
         }
 
         return sum;
     }
 }
+
+/*
+    for(int i = 1; i < n; i += 2) {
+            if(i < n) {
+                sum += Math.min(nums[i], nums[i - 1]);
+            }
+    }
+*/
