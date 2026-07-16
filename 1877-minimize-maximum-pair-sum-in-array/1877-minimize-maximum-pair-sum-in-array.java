@@ -10,7 +10,6 @@ class Solution {
             left++;
             right--;
         }
-
         return max;
     }
 }
