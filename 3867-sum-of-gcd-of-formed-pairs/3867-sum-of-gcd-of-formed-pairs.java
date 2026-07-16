@@ -22,7 +22,6 @@ class Solution {
             left++;
             right--;
         }
-
         return sum;
     }
 
