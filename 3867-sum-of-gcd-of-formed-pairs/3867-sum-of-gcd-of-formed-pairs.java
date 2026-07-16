@@ -4,8 +4,9 @@ class Solution {
         int[] prefixGcd = new int[n];
 
         int max = 0;
-        for(int i = 0; i < n; i++) {
-            if(nums[i] > max) max = nums[i];
+        for (int i = 0; i < n; i++) {
+            if (nums[i] > max)
+                max = nums[i];
 
             prefixGcd[i] = gcd(nums[i], max);
         }
@@ -16,7 +17,7 @@ class Solution {
         int right = n - 1;
         long sum = 0;
 
-        while(left < right) {
+        while (left < right) {
             sum += gcd(prefixGcd[left], prefixGcd[right]);
             left++;
             right--;
@@ -26,7 +27,7 @@ class Solution {
     }
 
     private int gcd(int a, int b) {
-        while(b > 0) {
+        while (b > 0) {
             int temp = b;
             b = a % b;
             a = temp;
