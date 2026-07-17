@@ -43,7 +43,6 @@ class Solution {
         int[] ans = new int[queries.length];
 
         for (int i = 0; i < queries.length; i++) {
-
             int left = 1;
             int right = max;
 
