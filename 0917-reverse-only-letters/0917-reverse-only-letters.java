@@ -5,14 +5,11 @@ class Solution {
         int right = s.length() - 1;
 
         while (left < right) {
-            while (left < right && !Character.isLetter(chars[left])) {
+            if (!Character.isLetter(chars[left])) {
                 left++;
-            }
-            while (left < right && !Character.isLetter(chars[right])) {
+            } else if (!Character.isLetter(chars[right])) {
                 right--;
-            }
-
-            if (left < right) {
+            } else {
                 char temp = chars[left];
                 chars[left] = chars[right];
                 chars[right] = temp;
@@ -25,3 +22,24 @@ class Solution {
         return new String(chars);
     }
 }
+
+/*
+    while (left < right) {
+        while (left < right && !Character.isLetter(chars[left])) {
+            left++;
+        }
+        
+        while (left < right && !Character.isLetter(chars[right])) {
+            right--;
+        }
+
+        if (left < right) {
+            char temp = chars[left];
+            chars[left] = chars[right];
+            chars[right] = temp;
+
+            left++;
+            right--;
+        }
+    }
+*/
