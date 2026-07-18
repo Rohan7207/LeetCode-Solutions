@@ -25,24 +25,26 @@ class CBTInserter {
         Queue<TreeNode> level = new LinkedList<>();
         level.offer(root);
 
-        while(!level.isEmpty()) {
+        while (!level.isEmpty()) {
             TreeNode curr = level.poll();
 
-            if(curr.left != null) level.offer(curr.left);
-            if(curr.right != null) level.offer(curr.right);
+            if (curr.left != null)
+                level.offer(curr.left);
+            if (curr.right != null)
+                level.offer(curr.right);
 
-            if(curr.left == null || curr.right == null) {
+            if (curr.left == null || curr.right == null) {
                 q.offer(curr);
             }
         }
     }
-    
+
     public int insert(int val) {
         TreeNode node = q.peek();
 
         TreeNode curr = new TreeNode(val);
 
-        if(node.left == null) {
+        if (node.left == null) {
             node.left = curr;
         } else {
             node.right = curr;
@@ -53,7 +55,7 @@ class CBTInserter {
 
         return node.val;
     }
-    
+
     public TreeNode get_root() {
         return root;
     }
