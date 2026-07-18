@@ -13,12 +13,16 @@ class Solution {
             }
         }
 
-        while(min > 0) {
-            int temp = min;
-            min = max % min;
-            max = temp;
+        return gcd(min, max);
+    }
+
+    private int gcd(int a, int b) {
+        while(b > 0) {
+            int temp = b;
+            b = a % b;
+            a = temp;
         }
 
-        return max;
+        return a;
     }
 }
