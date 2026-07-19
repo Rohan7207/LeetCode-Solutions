@@ -4,7 +4,7 @@ class Solution {
         int even = 0;
         int odd = 1;
 
-        for(int i = 0; i < n; i++) {
+        while(even < n && odd < n) {
             if(even < n && nums[even] % 2 == 0) {
                 even += 2;
             } else if(odd < n && nums[odd] % 2 != 0) {
