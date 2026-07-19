@@ -1,3 +1,43 @@
+// Problem: Smallest Subsequence of Distinct Characters
+// Link: https://leetcode.com/problems/smallest-subsequence-of-distinct-characters/?envType=daily-question&envId=2026-07-19
+// Difficulty: Medium
+
+// Approach:
+// The goal is to build the lexicographically smallest subsequence
+// containing every distinct character exactly once.
+// First, store the last occurrence index of every character.
+// This helps determine whether a character removed now can be
+// added again later.
+// Instead of using a Stack, use a StringBuilder as the stack.
+// Also maintain a boolean array 'seen' to know whether a
+// character is already present in the current subsequence.
+// 
+// Traverse the string character by character:
+// • If the current character is already included,
+//   skip it since every distinct character should appear only once.
+// • Otherwise, while:
+//      - the current subsequence is not empty,
+//      - the last character in the subsequence is lexicographically
+//        greater than the current character,
+//      - and the last character appears again later,
+//   remove the last character from the subsequence and mark it
+//   as not seen.
+// • Append the current character to the subsequence
+//   and mark it as seen.
+//
+// After processing all characters, the StringBuilder itself
+// represents the required smallest subsequence.
+
+// Time Complexity:
+// O(n)
+// (Each character is appended and removed at most once.)
+//
+// Space Complexity:
+// O(1)
+// (Auxiliary space is constant since only arrays of size 26 are used.
+// The output StringBuilder stores the answer.)
+
+
 class Solution {
     public String smallestSubsequence(String s) {
         int[] lastIndex = new int[26];
