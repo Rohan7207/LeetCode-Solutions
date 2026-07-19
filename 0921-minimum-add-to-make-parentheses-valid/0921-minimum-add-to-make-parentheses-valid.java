@@ -3,13 +3,13 @@ class Solution {
         int open = 0;
         int missingOpen = 0;
 
-        for(int i = 0; i < s.length(); i++) {
+        for (int i = 0; i < s.length(); i++) {
             char ch = s.charAt(i);
 
-            if(ch == '(') {
+            if (ch == '(') {
                 open++;
             } else {
-                if(open > 0) {
+                if (open > 0) {
                     open--;
                 } else {
                     missingOpen++;
