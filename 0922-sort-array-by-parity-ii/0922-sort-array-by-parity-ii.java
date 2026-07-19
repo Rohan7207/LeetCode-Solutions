@@ -5,18 +5,16 @@ class Solution {
         int odd = 1;
 
         while(even < n && odd < n) {
-            if(even < n && nums[even] % 2 == 0) {
+            if(nums[even] % 2 == 0) {
                 even += 2;
-            } else if(odd < n && nums[odd] % 2 != 0) {
+            } else if(nums[odd] % 2 != 0) {
                 odd += 2;
             } else {
-                if(even < n && odd < n) {
-                    int temp = nums[even];
-                    nums[even] = nums[odd];
-                    nums[odd] = temp;
-                    even += 2;
-                    odd += 2;
-                }
+                int temp = nums[even];
+                nums[even] = nums[odd];
+                nums[odd] = temp;
+                even += 2;
+                odd += 2;
             }
         }
 
