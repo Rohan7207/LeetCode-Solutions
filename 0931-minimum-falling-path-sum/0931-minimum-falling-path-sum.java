@@ -7,7 +7,7 @@ class Solution {
         int ans = Integer.MAX_VALUE;
 
         // Try every column in the first row as the starting point
-        for(int col = 0; col < n; col++) {
+        for (int col = 0; col < n; col++) {
             ans = Math.min(ans, helper(matrix, 0, col, dp));
         }
 
@@ -19,18 +19,18 @@ class Solution {
 
         // Base Case 1:
         // If column goes out of bounds, return a very large value.
-        if(col < 0 || col >= n) {
-            return (int)1e9;
+        if (col < 0 || col >= n) {
+            return (int) 1e9;
         }
 
         // Base Case 2:
         // If we reach the last row, return its value.
-        if(row == n - 1) {
+        if (row == n - 1) {
             return matrix[row][col];
         }
 
         // Memoization
-        if(dp[row][col] != null) {
+        if (dp[row][col] != null) {
             return dp[row][col];
         }
 
