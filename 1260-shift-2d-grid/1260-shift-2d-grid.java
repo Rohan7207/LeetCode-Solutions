@@ -1,3 +1,31 @@
+// Problem: Shift 2D Grid
+// Link: https://leetcode.com/problems/shift-2d-grid/?envType=daily-question&envId=2026-07-20
+// Difficulty: Easy
+
+// Approach:
+// Instead of performing k individual shifts, treat the 2D grid as a
+// single 1D circular array.
+// Let:
+// • total = m × n
+// Since shifting by 'total' positions brings every element back to its
+// original position, first reduce unnecessary rotations:
+//      k = k % total
+// Traverse every cell in the grid:
+// • Convert the current 2D position (i, j) into its equivalent
+//   1D index.
+// • Compute the new position after shifting:
+//      newIndex = (index + k) % total
+// • Convert the new 1D index back into its corresponding
+//   2D position (newRow, newCol).
+// • Place the current element into its new position in the
+//   answer grid.
+// After all elements are placed, convert the resulting 2D array
+// into a List<List<Integer>> and return it.
+
+// Time Complexity: O(m × n)
+// Space Complexity: O(m × n)
+
+
 class Solution {
     public List<List<Integer>> shiftGrid(int[][] grid, int k) {
         int m = grid.length;
