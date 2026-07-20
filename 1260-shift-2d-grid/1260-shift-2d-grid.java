@@ -13,8 +13,8 @@ class Solution {
         int[][] ans = new int[m][n];
 
         // Traverse every element
-        for(int i = 0; i < m; i++) {
-            for(int j = 0; j < n; j++) {
+        for (int i = 0; i < m; i++) {
+            for (int j = 0; j < n; j++) {
                 // Convert (i, j) to 1D index
                 int index = i * n + j;
 
@@ -33,9 +33,9 @@ class Solution {
         // Convert int[][] to List<List<Integer>>
         List<List<Integer>> list = new ArrayList<>();
 
-        for(int[] row : ans) {
+        for (int[] row : ans) {
             List<Integer> innerList = new ArrayList<>();
-            for(int val : row) {
+            for (int val : row) {
                 innerList.add(val);
             }
 
