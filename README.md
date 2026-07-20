@@ -134,6 +134,7 @@
 | [0973-k-closest-points-to-origin](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0973-k-closest-points-to-origin) |
 | [0994-rotting-oranges](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0994-rotting-oranges) |
 | [1004-max-consecutive-ones-iii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1004-max-consecutive-ones-iii) |
+| [1260-shift-2d-grid](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1260-shift-2d-grid) |
 | [1288-remove-covered-intervals](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1288-remove-covered-intervals) |
 | [1301-number-of-paths-with-max-score](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1301-number-of-paths-with-max-score) |
 | [1306-jump-game-iii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1306-jump-game-iii) |
@@ -763,6 +764,7 @@
 | [0794-valid-tic-tac-toe-state](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0794-valid-tic-tac-toe-state) |
 | [0867-transpose-matrix](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0867-transpose-matrix) |
 | [0994-rotting-oranges](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0994-rotting-oranges) |
+| [1260-shift-2d-grid](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1260-shift-2d-grid) |
 | [1301-number-of-paths-with-max-score](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1301-number-of-paths-with-max-score) |
 | [2812-find-the-safest-path-in-a-grid](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2812-find-the-safest-path-in-a-grid) |
 | [3286-find-a-safe-walk-through-a-grid](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3286-find-a-safe-walk-through-a-grid) |
@@ -786,6 +788,7 @@
 | [0289-game-of-life](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0289-game-of-life) |
 | [0844-backspace-string-compare](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0844-backspace-string-compare) |
 | [0867-transpose-matrix](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0867-transpose-matrix) |
+| [1260-shift-2d-grid](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1260-shift-2d-grid) |
 | [2161-partition-array-according-to-given-pivot](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2161-partition-array-according-to-given-pivot) |
 | [3612-process-string-with-special-operations-i](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3612-process-string-with-special-operations-i) |
 | [3614-process-string-with-special-operations-ii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3614-process-string-with-special-operations-ii) |
