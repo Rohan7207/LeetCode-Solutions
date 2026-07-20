@@ -4,7 +4,7 @@ class Solution {
     }
 
     private int countAtMost(int[] nums, int goal) {
-        if(goal < 0) {
+        if (goal < 0) {
             return 0;
         }
 
@@ -12,10 +12,10 @@ class Solution {
         int sum = 0;
         int count = 0;
 
-        for(int right = 0; right < nums.length; right++) {
+        for (int right = 0; right < nums.length; right++) {
             sum += nums[right];
 
-            while(sum > goal) {
+            while (sum > goal) {
                 sum -= nums[left];
                 left++;
             }
