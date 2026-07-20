@@ -1,3 +1,46 @@
+// Problem: Minimum Falling Path Sum
+// Link: https://leetcode.com/problems/minimum-falling-path-sum/
+// Difficulty: Medium
+
+// Approach:
+// Every cell in the first row can be the starting point of a falling path.
+// For each starting column, recursively compute the minimum falling path sum
+// from that cell to the last row, and return the minimum among all starting
+// columns.
+// Define:
+// helper(row, col)
+// It returns the minimum falling path sum starting from (row, col)
+// and ending at the last row.
+// From each cell, there are three possible moves:
+// • Down Left   -> (row + 1, col - 1)
+// • Down        -> (row + 1, col)
+// • Down Right  -> (row + 1, col + 1)
+// The recurrence is:
+// helper(row, col)
+// = matrix[row][col]
+// + min(
+//     helper(row+1, col-1),
+//     helper(row+1, col),
+//     helper(row+1, col+1)
+//   )
+// Base Cases:
+// • If the column goes out of bounds, return a very large value so
+//   that this path is never chosen.
+// • If the last row is reached, return the value of the current cell.
+// Memoization:
+// Store the answer for every (row, col) in the dp table.
+// If the same state is visited again, return the stored value instead
+// of recomputing it.
+// Finally, iterate through every column of the first row, call helper()
+// for each starting position, and return the minimum answer.
+
+// Time Complexity:
+// O(n²)
+//
+// Space Complexity:
+// O(n²) for memoization + O(n) recursion stack
+
+
 class Solution {
     public int minFallingPathSum(int[][] matrix) {
         int n = matrix.length;
