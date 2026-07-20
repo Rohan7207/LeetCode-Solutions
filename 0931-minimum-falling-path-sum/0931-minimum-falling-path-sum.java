@@ -4,10 +4,6 @@ class Solution {
 
         Integer[][] dp = new Integer[n][n];
 
-        // for(int i = 0; i < n; i++) {
-        //     Arrays.fill(dp[i], -1);
-        // }
-
         int ans = Integer.MAX_VALUE;
 
         // Try every column in the first row as the starting point
