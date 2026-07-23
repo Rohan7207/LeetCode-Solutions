@@ -7,32 +7,32 @@ class Solution {
         int count1 = 0, count2 = 0, i = 0;
         int max = 0, t = 0;
 
-        while(i < n) {
+        while (i < n) {
             char ch = arr[i];
 
-            if(ch == '0') {
+            if (ch == '0') {
                 count1++;
                 i++;
             } else {
-                while(i < n && ch == '1') {
+                while (i < n && ch == '1') {
                     i++;
                     t++;
-                    
-                    if(i != n) {
+
+                    if (i != n) {
                         ch = arr[i];
                     }
                 }
 
-                while(i < n && ch == '0') {
+                while (i < n && ch == '0') {
                     count2++;
                     i++;
 
-                    if(i != n) {
+                    if (i != n) {
                         ch = arr[i];
                     }
                 }
 
-                if(count1 != 0 && count2 != 0) {
+                if (count1 != 0 && count2 != 0) {
                     max = Math.max(max, count1 + count2);
                 }
 
