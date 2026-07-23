@@ -166,6 +166,7 @@
 | [3300-minimum-element-after-replacement-with-digit-sum](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3300-minimum-element-after-replacement-with-digit-sum) |
 | [3312-sorted-gcd-pair-queries](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3312-sorted-gcd-pair-queries) |
 | [3336-find-the-number-of-subsequences-with-equal-gcd](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3336-find-the-number-of-subsequences-with-equal-gcd) |
+| [3513-number-of-unique-xor-triplets-i](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3513-number-of-unique-xor-triplets-i) |
 | [3532-path-existence-queries-in-a-graph-i](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3532-path-existence-queries-in-a-graph-i) |
 | [3534-path-existence-queries-in-a-graph-ii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3534-path-existence-queries-in-a-graph-ii) |
 | [3620-network-recovery-pathways](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3620-network-recovery-pathways) |
@@ -320,6 +321,7 @@
 | [3300-minimum-element-after-replacement-with-digit-sum](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3300-minimum-element-after-replacement-with-digit-sum) |
 | [3312-sorted-gcd-pair-queries](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3312-sorted-gcd-pair-queries) |
 | [3336-find-the-number-of-subsequences-with-equal-gcd](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3336-find-the-number-of-subsequences-with-equal-gcd) |
+| [3513-number-of-unique-xor-triplets-i](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3513-number-of-unique-xor-triplets-i) |
 | [3558-number-of-ways-to-assign-edge-weights-i](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3558-number-of-ways-to-assign-edge-weights-i) |
 | [3658-gcd-of-odd-and-even-sums](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3658-gcd-of-odd-and-even-sums) |
 | [3700-number-of-zigzag-arrays-ii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3700-number-of-zigzag-arrays-ii) |
@@ -824,6 +826,7 @@
 | [0645-set-mismatch](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0645-set-mismatch) |
 | [0868-binary-gap](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0868-binary-gap) |
 | [2657-find-the-prefix-common-array-of-two-arrays](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2657-find-the-prefix-common-array-of-two-arrays) |
+| [3513-number-of-unique-xor-triplets-i](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3513-number-of-unique-xor-triplets-i) |
 | [3534-path-existence-queries-in-a-graph-ii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3534-path-existence-queries-in-a-graph-ii) |
 ## Memoization
 |  |
