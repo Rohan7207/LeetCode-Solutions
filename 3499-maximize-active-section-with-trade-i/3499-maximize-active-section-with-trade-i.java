@@ -1,3 +1,40 @@
+// Problem: Maximize Active Section With Trade I
+// Link: https://leetcode.com/problems/maximize-active-section-with-trade-i/?envType=daily-question&envId=2026-07-23
+// Difficulty: Medium
+
+// Approach:
+// Traverse the string block by block instead of character by character.
+// Maintain:
+// • count1 -> Length of the zero block immediately before the current one block.
+// • count2 -> Length of the zero block immediately after the current one block.
+// • t      -> Total number of active sections ('1's) already present.
+// • max    -> Maximum merged zero block that can be obtained after removing
+//             one valid block of '1's.
+// During traversal:
+// • If the current character is '0',
+//   simply extend the current left zero block.
+// • When a block of '1's is encountered,
+//   count all consecutive '1's and add them to the total active count (t).
+// • Next, count the consecutive '0's immediately following this block.
+//   These become the right zero block (count2).
+// • If both left and right zero blocks exist,
+//   removing the current '1' block merges them into one larger zero block.
+//   Its size is:
+//      count1 + count2
+//   Update the maximum merged zero block found so far.
+// • Before processing the next block,
+//   the current right zero block becomes the left zero block,
+//   so assign:
+//      count1 = count2
+//   and reset count2 to 0.
+// After scanning the entire string,
+// the answer is the original number of active sections plus the
+// largest merged zero block obtainable after one valid trade.
+
+// Time Complexity: O(n)
+// Space Complexity: O(1)
+
+
 class Solution {
     public int maxActiveSectionsAfterTrade(String s) {
         char[] arr = s.toCharArray();
@@ -44,52 +81,3 @@ class Solution {
         return t + max;
     }
 }
-
-/*
-    // Step 1: Add imaginary 1's at both ends
-        String t = "1" + s + "1";
-
-        // Step 2: Count initial active sections 
-        int active = 0;
-        for (char ch : s.toCharArray()) {
-            if (ch == '1') {
-                active++;
-            }
-        }
-
-        int ans = active;
-
-        // Step 3: Store and build consecutive blocks
-        List<Character> blocks = new ArrayList<>();
-        List<Integer> length = new ArrayList<>();
-
-        int i = 0;
-        while (i < t.length()) {
-            char ch = t.charAt(i);
-            int count = 0;
-
-            while (i < t.length() && t.charAt(i) == ch) {
-                i++;
-                count++;
-            }
-
-            blocks.add(ch);
-            length.add(count);
-        }
-
-        // Step 4: Traverse every blocks
-        for (i = 1; i < blocks.size() - 1; i++) {
-            if (blocks.get(i) == '1' &&
-                    blocks.get(i - 1) == '0' &&
-                    blocks.get(i + 1) == '0') {
-                int leftZero = length.get(i - 1);
-                int rightZero = length.get(i + 1);
-
-                int newActive = active + leftZero + rightZero;
-
-                ans = Math.max(ans, newActive);
-            }
-        }
-
-        return ans;
-*/
