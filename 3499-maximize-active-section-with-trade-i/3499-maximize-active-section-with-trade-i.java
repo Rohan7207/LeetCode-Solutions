@@ -7,7 +7,6 @@ class Solution {
         int count1 = 0, count2 = 0, i = 0;
         int max = 0, t = 0;
 
-
         while (i < n) {
             char ch = arr[i];
 
