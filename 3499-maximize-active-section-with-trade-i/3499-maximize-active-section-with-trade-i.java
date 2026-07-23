@@ -1,6 +1,52 @@
 class Solution {
     public int maxActiveSectionsAfterTrade(String s) {
-        // Step 1: Add imaginary 1's at both ends
+        char[] arr = s.toCharArray();
+        int n = arr.length;
+        // count1 → length of the left zero block, count2 → length of the right zero block.
+        // max -> Stores the largest merged zero block found so far, t -> Counts the total number of '1's already present.
+        int count1 = 0, count2 = 0, i = 0;
+        int max = 0, t = 0;
+
+        while(i < n) {
+            char ch = arr[i];
+
+            if(ch == '0') {
+                count1++;
+                i++;
+            } else {
+                while(i < n && ch == '1') {
+                    i++;
+                    t++;
+                    
+                    if(i != n) {
+                        ch = arr[i];
+                    }
+                }
+
+                while(i < n && ch == '0') {
+                    count2++;
+                    i++;
+
+                    if(i != n) {
+                        ch = arr[i];
+                    }
+                }
+
+                if(count1 != 0 && count2 != 0) {
+                    max = Math.max(max, count1 + count2);
+                }
+
+                count1 = count2;
+                count2 = 0;
+            }
+        }
+
+        return t + max;
+    }
+}
+
+/*
+    // Step 1: Add imaginary 1's at both ends
         String t = "1" + s + "1";
 
         // Step 2: Count initial active sections 
@@ -46,5 +92,4 @@ class Solution {
         }
 
         return ans;
-    }
-}
+*/
