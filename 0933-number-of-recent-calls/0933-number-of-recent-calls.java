@@ -1,5 +1,4 @@
 class RecentCounter {
-
     Queue<Integer> q;
 
     public RecentCounter() {
