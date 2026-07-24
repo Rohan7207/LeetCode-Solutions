@@ -1,5 +1,5 @@
 class RecentCounter {
-    
+
     Queue<Integer> q;
 
     public RecentCounter() {
@@ -12,7 +12,6 @@ class RecentCounter {
         while (q.peek() < t - 3000) {
             q.poll();
         }
-
         return q.size();
     }
 }
