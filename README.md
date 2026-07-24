@@ -1133,6 +1133,7 @@
 | [0706-design-hashmap](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0706-design-hashmap) |
 | [0707-design-linked-list](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0707-design-linked-list) |
 | [0919-complete-binary-tree-inserter](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0919-complete-binary-tree-inserter) |
+| [0933-number-of-recent-calls](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0933-number-of-recent-calls) |
 ## Doubly-Linked List
 |  |
 | ------- |
@@ -1174,11 +1175,13 @@
 | [0622-design-circular-queue](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0622-design-circular-queue) |
 | [0649-dota2-senate](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0649-dota2-senate) |
 | [0918-maximum-sum-circular-subarray](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0918-maximum-sum-circular-subarray) |
+| [0933-number-of-recent-calls](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0933-number-of-recent-calls) |
 ## Data Stream
 |  |
 | ------- |
 | [0295-find-median-from-data-stream](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0295-find-median-from-data-stream) |
 | [0703-kth-largest-element-in-a-stream](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0703-kth-largest-element-in-a-stream) |
+| [0933-number-of-recent-calls](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0933-number-of-recent-calls) |
 ## Interactive
 |  |
 | ------- |
