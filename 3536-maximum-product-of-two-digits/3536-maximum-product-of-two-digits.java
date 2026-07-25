@@ -4,13 +4,13 @@ class Solution {
         int second = 0;
 
         while (n > 0) {
-            int rem = n % 10;
+            int digit = n % 10;
 
-            if (rem > first) {
+            if (digit > first) {
                 second = first;
-                first = rem;
-            } else if (rem > second) {
-                second = rem;
+                first = digit;
+            } else if (digit > second) {
+                second = digit;
             }
 
             n /= 10;
