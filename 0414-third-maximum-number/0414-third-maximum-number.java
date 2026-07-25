@@ -4,25 +4,25 @@ class Solution {
         long second = Long.MIN_VALUE;
         long third = Long.MIN_VALUE;
 
-        for(int num : nums) {
+        for (int num : nums) {
             // This number is already used once, thus we skip it.
-            if(first == num || second == num || third == num) {
+            if (first == num || second == num || third == num) {
                 continue;
             }
 
-            if(first <= num) {
+            if (first <= num) {
                 third = second;
                 second = first;
                 first = num;
-            } else if(second <= num) {
+            } else if (second <= num) {
                 third = second;
                 second = num;
-            } else if(third <= num) {
+            } else if (third <= num) {
                 third = num;
             }
         }
 
-        if(third == Long.MIN_VALUE) {
+        if (third == Long.MIN_VALUE) {
             return (int) first;
         }
 
