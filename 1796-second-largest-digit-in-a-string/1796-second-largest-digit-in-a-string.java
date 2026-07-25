@@ -1,3 +1,25 @@
+// Problem: Second Largest Digit in a String
+// Link: https://leetcode.com/problems/second-largest-digit-in-a-string/
+// Difficulty: Easy
+
+// Approach:
+// Instead of tracking the two largest digits explicitly, iterate over the
+// possible digit characters from '9' down to '0'.
+// For each digit:
+// 1. Check whether it exists in the string using indexOf().
+// 2. If it exists, increment the count of distinct digits found.
+// 3. The first digit found is the largest digit.
+// 4. The second distinct digit found is the second largest digit,
+//    so return its numeric value.
+// If the loop finishes without finding two distinct digits,
+// return -1.
+// Since there are only 10 possible digits ('0' to '9'),
+// checking each digit is efficient.
+
+// Time Complexity: O(10 × n) = O(n)
+// Space Complexity: O(1)
+
+
 class Solution {
     public int secondHighest(String s) {
         int digitsFound = 0;
@@ -15,48 +37,3 @@ class Solution {
         return -1;
     }
 }
-
-/*
-      StringBuilder sb = new StringBuilder();
-
-        for(char ch : s.toCharArray()) {
-            if(Character.isDigit(ch)) {
-                sb.append(ch);
-            }
-        }
-
-        int first = Integer.MIN_VALUE;
-        int second = Integer.MIN_VALUE;
-
-        for(int i = 0; i < sb.length(); i++) {
-            int curr = sb.charAt(i) - '0';
-            if(first == curr || second == curr) {
-                continue;
-            }
-
-            if(first < curr) {
-                second = first;
-                first = curr;
-            } else if(second < curr) {
-                second = curr;
-            }
-        }
-
-        if(second == Integer.MIN_VALUE) return -1;
-
-        return second;
-*/
-/*
-     int first = -1, second = -1;
-        for(char c : s.toCharArray()){
-            if(c >= '0' && c <= '9'){
-                int n = c - '0';
-                if(n > first){
-                    second = first;
-                    first = n;
-                }
-                else if(n > second && n < first) second = n;
-            }
-        }
-        return second;
-*/
