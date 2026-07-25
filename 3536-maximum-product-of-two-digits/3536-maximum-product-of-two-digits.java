@@ -3,13 +3,13 @@ class Solution {
         int first = 0;
         int second = 0;
 
-        while(n > 0) {
+        while (n > 0) {
             int rem = n % 10;
-            
-            if(rem > first) {
+
+            if (rem > first) {
                 second = first;
                 first = rem;
-            } else if(rem > second) {
+            } else if (rem > second) {
                 second = rem;
             }
 
