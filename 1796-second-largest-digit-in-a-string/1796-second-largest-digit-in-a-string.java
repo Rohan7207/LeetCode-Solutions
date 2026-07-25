@@ -1,6 +1,22 @@
 class Solution {
     public int secondHighest(String s) {
-        StringBuilder sb = new StringBuilder();
+      int first = -1, second = -1;
+        for(char c : s.toCharArray()){
+            if(c >= '0' && c <= '9'){
+                int n = c - '0';
+                if(n > first){
+                    second = first;
+                    first = n;
+                }
+                else if(n > second && n < first) second = n;
+            }
+        }
+        return second;
+    }
+}
+
+/*
+      StringBuilder sb = new StringBuilder();
 
         for(char ch : s.toCharArray()) {
             if(Character.isDigit(ch)) {
@@ -28,5 +44,18 @@ class Solution {
         if(second == Integer.MIN_VALUE) return -1;
 
         return second;
-    }
-}
+*/
+/*
+     int first = -1, second = -1;
+        for(char c : s.toCharArray()){
+            if(c >= '0' && c <= '9'){
+                int n = c - '0';
+                if(n > first){
+                    second = first;
+                    first = n;
+                }
+                else if(n > second && n < first) second = n;
+            }
+        }
+        return second;
+*/
