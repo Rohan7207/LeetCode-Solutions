@@ -1,17 +1,18 @@
 class Solution {
     public int secondHighest(String s) {
-      int first = -1, second = -1;
-        for(char c : s.toCharArray()){
-            if(c >= '0' && c <= '9'){
-                int n = c - '0';
-                if(n > first){
-                    second = first;
-                    first = n;
+        int digitsFound = 0;
+
+        for(char c = '9'; c >= '0'; c--) {
+            if(s.indexOf(c) != -1) {
+                digitsFound++;
+
+                if(digitsFound == 2) {
+                    return c - '0';
                 }
-                else if(n > second && n < first) second = n;
-            }
+            } 
         }
-        return second;
+
+        return -1;
     }
 }
 
