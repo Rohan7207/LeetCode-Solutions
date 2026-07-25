@@ -1,3 +1,36 @@
+// Problem: Third Maximum Number
+// Link: https://leetcode.com/problems/third-maximum-number/
+// Difficulty: Easy
+
+// Approach:
+// Traverse the array once while maintaining the three largest distinct
+// numbers seen so far.
+// Maintain three variables:
+// - first  -> largest distinct number.
+// - second -> second largest distinct number.
+// - third  -> third largest distinct number.
+// Initialize all three with Long.MIN_VALUE so they are smaller than any
+// possible integer value.
+// For every number:
+// 1. If the number is already equal to first, second, or third,
+//    skip it because only distinct values are considered.
+// 2. If the number is greater than or equal to first,
+//    shift first to second, second to third,
+//    and update first with the current number.
+// 3. Otherwise, if the number is greater than or equal to second,
+//    shift second to third,
+//    and update second.
+// 4. Otherwise, if the number is greater than or equal to third,
+//    update third.
+// After processing all elements:
+// - If third was never updated, there are fewer than three distinct numbers,
+//   so return the largest number (first).
+// - Otherwise, return the third largest distinct number.
+
+// Time Complexity: O(n)
+// Space Complexity: O(1)
+
+
 class Solution {
     public int thirdMax(int[] nums) {
         long first = Long.MIN_VALUE;
@@ -29,52 +62,3 @@ class Solution {
         return (int) third;
     }
 }
-
-/*
-    Follow up question : After giving the previous approach, the interviewer might come up with a restriction, that our environment doesn't support long, big integers, etc.
-We used long integer variable because the minimum possible value in the input array was −2 
-31
- , and initially, we need to store a value lower than this and used it to check if thirdMax was updated or not.
-    class Solution {
-    public int thirdMax(int[] nums) {
-        Pair<Integer, Boolean> firstMax = new Pair<Integer, Boolean>(-1, false);
-        Pair<Integer, Boolean> secondMax = new Pair<Integer, Boolean>(-1, false);
-        Pair<Integer, Boolean> thirdMax = new Pair<Integer, Boolean>(-1, false);
-        
-        for (int num : nums) {
-            // If current number is already stored, skip it.
-            if ((firstMax.getValue() && firstMax.getKey() == num) || 
-                (secondMax.getValue() && secondMax.getKey() == num) || 
-                (thirdMax.getValue() && thirdMax.getKey() == num)) {
-                continue;
-            }
-            
-            // If we never stored any variable in firstMax
-            // or curr num is bigger than firstMax, then curr num is the biggest number.
-            if (!firstMax.getValue() || firstMax.getKey() <= num) {
-                thirdMax = secondMax;
-                secondMax = firstMax;
-                firstMax = new Pair<Integer, Boolean>(num, true);
-            }
-            // If we never stored any variable in secondMax
-            // or curr num is bigger than secondMax, then curr num is 2nd biggest number.
-            else if (!secondMax.getValue() || secondMax.getKey() <= num) {
-                thirdMax = secondMax;
-                secondMax = new Pair<Integer, Boolean>(num, true);
-            }
-            // If we never stored any variable in thirdMax
-            // or curr num is bigger than thirdMax, then curr num is 3rd biggest number.
-            else if (!thirdMax.getValue() || thirdMax.getKey() <= num) {
-                thirdMax = new Pair<Integer, Boolean>(num, true);
-            }
-        }
-        
-        // If third max was never updated, it means we don't have 3 distinct numbers.
-        if (!thirdMax.getValue()) {
-            return firstMax.getKey();
-        }
-        
-        return thirdMax.getKey();
-    }
-}
-*/
