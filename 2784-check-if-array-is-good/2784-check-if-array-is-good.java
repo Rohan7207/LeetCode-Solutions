@@ -1,3 +1,33 @@
+// Problem: Check if Array is Good
+// Link: https://leetcode.com/problems/check-if-array-is-good/
+// Difficulty: Easy
+
+// Approach:
+// A special array of size n + 1 must satisfy:
+// 1. The maximum value in the array is n.
+// 2. Every number from 1 to n - 1 appears exactly once.
+// 3. The number n appears exactly twice.
+//
+// Step 1:
+// Find the maximum element in the array and store it in n.
+// Step 2:
+// A valid special array must have exactly n + 1 elements.
+// If nums.length != n + 1, immediately return false.
+// Step 3:
+// Build a frequency array to count the occurrence of every number.
+// Step 4:
+// Verify that every number from 1 to n - 1 appears exactly once.
+// Step 5:
+// Finally, check whether the maximum value n appears exactly twice.
+// If all conditions are satisfied, return true; otherwise return false.
+
+// Time Complexity:
+// O(n)
+// Space Complexity:
+// O(1)
+// (Frequency array has fixed size.)
+
+
 class Solution {
     public boolean isGood(int[] nums) {
         int n = 0;
@@ -21,28 +51,3 @@ class Solution {
         return freq[n] == 2;
     }
 }
-
-// Time Complexity: O(n)
-// Space Complexity: O(n)
-
-// “I use a frequency array to count occurrences and verify whether numbers follow the required repetition pattern.”
-
-/*
-    Set<Integer> seen = new HashSet<>();
-        int n = nums.length - 1;
-        boolean flag = false;
-
-        for(int num : nums) {
-            if(num > n) return false;
-
-            if(seen.contains(num)) {
-                if(num < n || flag) return false;
-                flag = true;
-                continue;
-            }
-
-            seen.add(num);
-        }
-
-        return true;
-*/
