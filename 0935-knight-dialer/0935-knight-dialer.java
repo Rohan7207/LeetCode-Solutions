@@ -18,7 +18,6 @@ class Solution {
 
     public int knightDialer(int n) {
         Integer[][] dp = new Integer[10][n + 1];
-
         long ans = 0;
 
         // Try every digit as the starting digit
