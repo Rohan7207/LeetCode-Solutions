@@ -18,7 +18,6 @@ class Solution {
         for (int i = 1; i < n; i++) {
             if (freq[i] != 1) return false;
         }
-
         return freq[n] == 2;
     }
 }
