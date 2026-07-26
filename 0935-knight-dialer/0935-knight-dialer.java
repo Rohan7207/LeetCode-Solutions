@@ -4,16 +4,16 @@ class Solution {
 
     // Knight moves from each digit
     int[][] moves = {
-        {4, 6},  // 0
-        {6, 8},  // 1
-        {7, 9},  // 2
-        {4, 8},  // 3
-        {0, 3, 9}, // 4
-        {},        // 5
-        {0, 1, 7}, // 6
-        {2, 6},    // 7
-        {1, 3},    // 8
-        {2, 4}     // 9
+            { 4, 6 }, // 0
+            { 6, 8 }, // 1
+            { 7, 9 }, // 2
+            { 4, 8 }, // 3
+            { 0, 3, 9 }, // 4
+            {}, // 5
+            { 0, 1, 7 }, // 6
+            { 2, 6 }, // 7
+            { 1, 3 }, // 8
+            { 2, 4 } // 9
     };
 
     public int knightDialer(int n) {
@@ -22,7 +22,7 @@ class Solution {
         long ans = 0;
 
         // Try every digit as the starting digit
-        for(int digit = 0; digit <= 9; digit++) {
+        for (int digit = 0; digit <= 9; digit++) {
             ans = (ans + helper(digit, n, dp)) % MOD;
         }
 
@@ -31,19 +31,19 @@ class Solution {
 
     private int helper(int digit, int len, Integer[][] dp) {
         // Base Case
-        if(len == 1) {
+        if (len == 1) {
             return 1;
         }
 
         // Memoization
-        if(dp[digit][len] != null) {
+        if (dp[digit][len] != null) {
             return dp[digit][len];
         }
 
         long ways = 0;
 
         // Try every valid knight move
-        for(int move : moves[digit]) {
+        for (int move : moves[digit]) {
             ways = (ways + helper(move, len - 1, dp)) % MOD;
         }
 
