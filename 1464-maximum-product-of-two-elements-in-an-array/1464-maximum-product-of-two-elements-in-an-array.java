@@ -4,10 +4,10 @@ class Solution {
         int second = -1;
 
         for(int num : nums) {
-            if(num >= first) {
+            if(num > first) {
                 second = first;
                 first = num;
-            } else if(num >= second) {
+            } else if(num > second) {
                 second = num;
             }
         }
