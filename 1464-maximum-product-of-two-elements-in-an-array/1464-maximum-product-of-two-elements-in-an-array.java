@@ -3,15 +3,15 @@ class Solution {
         int first = -1;
         int second = -1;
 
-        for(int num : nums) {
-            if(num > first) {
+        for (int num : nums) {
+            if (num > first) {
                 second = first;
                 first = num;
-            } else if(num > second) {
+            } else if (num > second) {
                 second = num;
             }
         }
 
-        return (first - 1) * (second - 1); 
+        return (first - 1) * (second - 1);
     }
 }
