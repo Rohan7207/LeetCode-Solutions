@@ -115,6 +115,7 @@
 | [0821-shortest-distance-to-a-character](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0821-shortest-distance-to-a-character) |
 | [0845-longest-mountain-in-array](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0845-longest-mountain-in-array) |
 | [0846-hand-of-straights](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0846-hand-of-straights) |
+| [0852-peak-index-in-a-mountain-array](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0852-peak-index-in-a-mountain-array) |
 | [0853-car-fleet](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0853-car-fleet) |
 | [0867-transpose-matrix](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0867-transpose-matrix) |
 | [0877-stone-game](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0877-stone-game) |
@@ -453,6 +454,7 @@
 | [0713-subarray-product-less-than-k](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0713-subarray-product-less-than-k) |
 | [0744-find-smallest-letter-greater-than-target](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0744-find-smallest-letter-greater-than-target) |
 | [0778-swim-in-rising-water](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0778-swim-in-rising-water) |
+| [0852-peak-index-in-a-mountain-array](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0852-peak-index-in-a-mountain-array) |
 | [0888-fair-candy-swap](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0888-fair-candy-swap) |
 | [1004-max-consecutive-ones-iii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1004-max-consecutive-ones-iii) |
 | [2540-minimum-common-value](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2540-minimum-common-value) |
