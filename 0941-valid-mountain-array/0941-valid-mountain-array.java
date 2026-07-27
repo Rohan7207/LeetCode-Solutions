@@ -12,7 +12,7 @@ class Solution {
             i++;
         }
 
-        if(i == 1 || i == n) {
+        if (i == 1 || i == n) {
             return false;
         }
 
@@ -54,7 +54,6 @@ class Solution {
 
 // Time Complexity: O(n)
 // Space Complexity: O(1)
-
 
 // Traverse the array once by first climbing the increasing slope and then descending the decreasing slope.
 
