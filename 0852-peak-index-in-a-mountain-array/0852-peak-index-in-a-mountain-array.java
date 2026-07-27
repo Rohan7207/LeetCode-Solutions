@@ -9,10 +9,8 @@ class Solution {
             if (arr[mid - 1] < arr[mid] && arr[mid] > arr[mid + 1]) {
                 return mid;
             } else if (arr[mid - 1] < arr[mid]) {
-                //right
                 l = mid + 1;
             } else {
-                //left
                 h = mid - 1;
             }
         }
