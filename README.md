@@ -135,6 +135,7 @@
 | [0931-minimum-falling-path-sum](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0931-minimum-falling-path-sum) |
 | [0932-beautiful-array](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0932-beautiful-array) |
 | [0941-valid-mountain-array](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0941-valid-mountain-array) |
+| [0945-minimum-increment-to-make-array-unique](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0945-minimum-increment-to-make-array-unique) |
 | [0953-verifying-an-alien-dictionary](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0953-verifying-an-alien-dictionary) |
 | [0961-n-repeated-element-in-size-2n-array](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0961-n-repeated-element-in-size-2n-array) |
 | [0973-k-closest-points-to-origin](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0973-k-closest-points-to-origin) |
@@ -629,6 +630,7 @@
 | [0910-smallest-range-ii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0910-smallest-range-ii) |
 | [0912-sort-an-array](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0912-sort-an-array) |
 | [0922-sort-array-by-parity-ii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0922-sort-array-by-parity-ii) |
+| [0945-minimum-increment-to-make-array-unique](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0945-minimum-increment-to-make-array-unique) |
 | [0973-k-closest-points-to-origin](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0973-k-closest-points-to-origin) |
 | [1288-remove-covered-intervals](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1288-remove-covered-intervals) |
 | [1331-rank-transform-of-an-array](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1331-rank-transform-of-an-array) |
@@ -694,6 +696,7 @@
 | [0881-boats-to-save-people](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0881-boats-to-save-people) |
 | [0910-smallest-range-ii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0910-smallest-range-ii) |
 | [0921-minimum-add-to-make-parentheses-valid](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0921-minimum-add-to-make-parentheses-valid) |
+| [0945-minimum-increment-to-make-array-unique](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0945-minimum-increment-to-make-array-unique) |
 | [1081-smallest-subsequence-of-distinct-characters](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1081-smallest-subsequence-of-distinct-characters) |
 | [1833-maximum-ice-cream-bars](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1833-maximum-ice-cream-bars) |
 | [1846-maximum-element-after-decreasing-and-rearranging](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1846-maximum-element-after-decreasing-and-rearranging) |
@@ -771,6 +774,7 @@
 | [0169-majority-element](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0169-majority-element) |
 | [0621-task-scheduler](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0621-task-scheduler) |
 | [0914-x-of-a-kind-in-a-deck-of-cards](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0914-x-of-a-kind-in-a-deck-of-cards) |
+| [0945-minimum-increment-to-make-array-unique](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0945-minimum-increment-to-make-array-unique) |
 | [1189-maximum-number-of-balloons](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1189-maximum-number-of-balloons) |
 | [2833-furthest-point-from-origin](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2833-furthest-point-from-origin) |
 | [3312-sorted-gcd-pair-queries](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3312-sorted-gcd-pair-queries) |
