@@ -1,10 +1,10 @@
 class Solution {
     public int minIncrementForUnique(int[] nums) {
         Arrays.sort(nums);
-        int moves = 0;  // Counts the total increments required.
-        int numTracker = 0;  // Tracks the next unique number that should be set.
+        int moves = 0; // Counts the total increments required.
+        int numTracker = 0; // Tracks the next unique number that should be set.
 
-        for(int num : nums) {
+        for (int num : nums) {
             numTracker = Math.max(numTracker, num);
             moves += numTracker - num;
             numTracker += 1;
