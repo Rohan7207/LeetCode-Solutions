@@ -6,7 +6,7 @@ class Solution {
         // Frequency of characters in the left half.
         int[] bucket = new int[26];
 
-        for(int i = 0; i < partition; i++) {
+        for (int i = 0; i < partition; i++) {
             bucket[s.charAt(i) - 'a']++;
         }
 
@@ -16,9 +16,9 @@ class Solution {
         long startIndex = 1;
 
         // Build the left half one character at a time.
-        for(int pos = 0; pos < partition; pos++) {
-            for(int i = 0; i < 26; i++) {
-                if(bucket[i] == 0) {
+        for (int pos = 0; pos < partition; pos++) {
+            for (int i = 0; i < 26; i++) {
+                if (bucket[i] == 0) {
                     continue;
                 }
 
@@ -29,9 +29,8 @@ class Solution {
                 // if this character is fixed here.
                 long ways = permutations(partition - pos - 1, bucket, k);
 
-
                 // The k-th palindrome lies in this block.
-                if(startIndex + ways > k) {
+                if (startIndex + ways > k) {
                     left.append((char) (i + 'a'));
                     break;
                 }
@@ -43,17 +42,17 @@ class Solution {
         }
 
         // Not enough palindromes exist.
-        if(left.length() < partition) {
+        if (left.length() < partition) {
             return "";
         }
 
         // Append middle character for odd-length palindrome.
-        if(s.length() % 2 != 0) {
+        if (s.length() % 2 != 0) {
             left.append(s.charAt(partition));
         }
 
         // Append reverse of left half to complete palindrome.
-        for(int i = partition - 1; i >= 0; i--) {
+        for (int i = partition - 1; i >= 0; i--) {
             left.append(left.charAt(i));
         }
 
@@ -69,11 +68,11 @@ class Solution {
         // Use smaller value for efficient combination calculation.
         m = Math.min(m, n - m);
 
-        for(int i = 1; i <= m; i++) {
+        for (int i = 1; i <= m; i++) {
             res = (res * (n - i + 1)) / i;
 
             // Early stopping if combinations already exceed k.
-            if(res > k) {
+            if (res > k) {
                 return k + 1;
             }
         }
@@ -86,8 +85,8 @@ class Solution {
     private long permutations(int rem, int[] bucket, long k) {
         long ways = 1;
 
-        for(int i = 0; i < 26; i++) {
-            if(bucket[i] == 0) {
+        for (int i = 0; i < 26; i++) {
+            if (bucket[i] == 0) {
                 continue;
             }
 
@@ -95,7 +94,7 @@ class Solution {
             ways *= comb(rem, bucket[i], k);
 
             // No need to calculate further once ways exceed k.
-            if(ways > k) {
+            if (ways > k) {
                 break;
             }
 
