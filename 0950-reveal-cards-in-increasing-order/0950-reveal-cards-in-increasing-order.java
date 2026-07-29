@@ -5,8 +5,8 @@ class Solution {
 
         Deque<Integer> dq = new ArrayDeque<>();
 
-        for(int i = n - 1; i >= 0; i--) {
-            if(!dq.isEmpty()) {
+        for (int i = n - 1; i >= 0; i--) {
+            if (!dq.isEmpty()) {
                 dq.addFirst(dq.removeLast());
             }
 
@@ -16,7 +16,7 @@ class Solution {
         int[] ans = new int[n];
         int idx = 0;
 
-        for(int num : dq) {
+        for (int num : dq) {
             ans[idx] = num;
             idx++;
         }
