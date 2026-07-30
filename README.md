@@ -332,6 +332,7 @@
 | [1344-angle-between-hands-of-a-clock](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1344-angle-between-hands-of-a-clock) |
 | [1840-maximum-building-height](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1840-maximum-building-height) |
 | [1979-find-greatest-common-divisor-of-array](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1979-find-greatest-common-divisor-of-array) |
+| [3014-minimum-number-of-pushes-to-type-word-i](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3014-minimum-number-of-pushes-to-type-word-i) |
 | [3300-minimum-element-after-replacement-with-digit-sum](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3300-minimum-element-after-replacement-with-digit-sum) |
 | [3312-sorted-gcd-pair-queries](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3312-sorted-gcd-pair-queries) |
 | [3336-find-the-number-of-subsequences-with-equal-gcd](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3336-find-the-number-of-subsequences-with-equal-gcd) |
@@ -419,6 +420,7 @@
 | [1796-second-largest-digit-in-a-string](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1796-second-largest-digit-in-a-string) |
 | [1967-number-of-strings-that-appear-as-substrings-in-word](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1967-number-of-strings-that-appear-as-substrings-in-word) |
 | [2833-furthest-point-from-origin](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2833-furthest-point-from-origin) |
+| [3014-minimum-number-of-pushes-to-type-word-i](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3014-minimum-number-of-pushes-to-type-word-i) |
 | [3120-count-the-number-of-special-characters-i](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3120-count-the-number-of-special-characters-i) |
 | [3121-count-the-number-of-special-characters-ii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3121-count-the-number-of-special-characters-ii) |
 | [3499-maximize-active-section-with-trade-i](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3499-maximize-active-section-with-trade-i) |
@@ -715,6 +717,7 @@
 | [2078-two-furthest-houses-with-different-colors](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2078-two-furthest-houses-with-different-colors) |
 | [2126-destroying-asteroids](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2126-destroying-asteroids) |
 | [2144-minimum-cost-of-buying-candies-with-discount](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2144-minimum-cost-of-buying-candies-with-discount) |
+| [3014-minimum-number-of-pushes-to-type-word-i](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3014-minimum-number-of-pushes-to-type-word-i) |
 | [3534-path-existence-queries-in-a-graph-ii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3534-path-existence-queries-in-a-graph-ii) |
 | [3633-earliest-finish-time-for-land-and-water-rides-i](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3633-earliest-finish-time-for-land-and-water-rides-i) |
 | [3689-maximum-total-subarray-value-i](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3689-maximum-total-subarray-value-i) |
