@@ -1,3 +1,47 @@
+// Problem: Array of Doubled Pairs
+// Link: https://leetcode.com/problems/array-of-doubled-pairs/
+// Difficulty: Medium
+
+// Approach:
+// Every number x must be paired with exactly one unused value 2*x.
+//
+// The main challenge is handling negative numbers.
+// For example:
+//
+//      -2 -> -4
+//
+// If we process larger absolute values first (like -4 before -2),
+// we would incorrectly search for -8 and fail.
+//
+// Therefore, sort the numbers by their absolute value so that
+// smaller magnitudes are always processed before their doubles.
+//
+// Next, build a frequency map to keep track of how many unused
+// occurrences of each number remain.
+//
+// Traverse the sorted array:
+//
+// 1. If the current number has already been used (frequency becomes 0),
+//    skip it.
+//
+// 2. Otherwise, check whether an unused double (2*x) exists.
+//
+// 3. If no unused double exists, pairing is impossible, so return false.
+//
+// 4. Otherwise, consume one occurrence of x and one occurrence of 2*x
+//    by decrementing their frequencies.
+//
+// If every number is successfully paired, return true.
+
+// Time Complexity:
+// O(n log n)
+// (Sorting dominates; frequency map operations are O(1) on average.)
+//
+// Space Complexity:
+// O(n)
+// (Frequency map and Integer array.)
+
+
 class Solution {
     public boolean canReorderDoubled(int[] arr) {
         Map<Integer, Integer> freqMap = new HashMap<>();
