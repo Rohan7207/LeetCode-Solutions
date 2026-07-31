@@ -29,7 +29,7 @@ class Solution {
         Queue<Pair> q = new LinkedList<>();
         q.offer(new Pair(root, 0));
 
-        int max = 0;
+        long max = 0;
 
         while(!q.isEmpty()) {
             int size = q.size();
@@ -57,12 +57,10 @@ class Solution {
                     q.offer(new Pair(curr.node.right, 2 * index + 2)); 
                 }
 
-                long width = last - first + 1;
-
-                max = Math.max(max, (int) width);
+                max = Math.max(max, last - first + 1);
             }
         }
 
-        return max;
+        return (int) max;
     }
 }
