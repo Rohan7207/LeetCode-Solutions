@@ -1016,6 +1016,7 @@
 | [0919-complete-binary-tree-inserter](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0919-complete-binary-tree-inserter) |
 | [0938-range-sum-of-bst](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0938-range-sum-of-bst) |
 | [0951-flip-equivalent-binary-trees](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0951-flip-equivalent-binary-trees) |
+| [0958-check-completeness-of-a-binary-tree](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0958-check-completeness-of-a-binary-tree) |
 | [2196-create-binary-tree-from-descriptions](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2196-create-binary-tree-from-descriptions) |
 | [3558-number-of-ways-to-assign-edge-weights-i](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3558-number-of-ways-to-assign-edge-weights-i) |
 ## Binary Tree
@@ -1068,6 +1069,7 @@
 | [0919-complete-binary-tree-inserter](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0919-complete-binary-tree-inserter) |
 | [0938-range-sum-of-bst](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0938-range-sum-of-bst) |
 | [0951-flip-equivalent-binary-trees](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0951-flip-equivalent-binary-trees) |
+| [0958-check-completeness-of-a-binary-tree](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0958-check-completeness-of-a-binary-tree) |
 | [2196-create-binary-tree-from-descriptions](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2196-create-binary-tree-from-descriptions) |
 ## Binary Search Tree
 |  |
@@ -1129,6 +1131,7 @@
 | [0787-cheapest-flights-within-k-stops](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0787-cheapest-flights-within-k-stops) |
 | [0841-keys-and-rooms](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0841-keys-and-rooms) |
 | [0919-complete-binary-tree-inserter](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0919-complete-binary-tree-inserter) |
+| [0958-check-completeness-of-a-binary-tree](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0958-check-completeness-of-a-binary-tree) |
 | [0994-rotting-oranges](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0994-rotting-oranges) |
 | [1306-jump-game-iii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1306-jump-game-iii) |
 | [2492-minimum-score-of-a-path-between-two-cities](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2492-minimum-score-of-a-path-between-two-cities) |
