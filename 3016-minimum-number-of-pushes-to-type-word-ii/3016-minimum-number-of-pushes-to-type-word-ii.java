@@ -19,8 +19,8 @@ class Solution {
 
         // Calculate total no.of presses
         for (int i = 0; i < 26; i++) {
-            if (sortedFreq[i] == 0)
-                break;
+            if (sortedFreq[i] == 0) break;
+            
             totalPushes += ((i / 8) + 1) * sortedFreq[i];
         }
 
