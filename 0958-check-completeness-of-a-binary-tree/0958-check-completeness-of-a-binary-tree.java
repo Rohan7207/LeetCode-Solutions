@@ -20,13 +20,13 @@ class Solution {
 
         boolean seenNull = false;
 
-        while(!q.isEmpty()) {
+        while (!q.isEmpty()) {
             TreeNode curr = q.poll();
 
-            if(curr == null) {
+            if (curr == null) {
                 seenNull = true;
             } else {
-                if(seenNull) {
+                if (seenNull) {
                     return false;
                 }
 
