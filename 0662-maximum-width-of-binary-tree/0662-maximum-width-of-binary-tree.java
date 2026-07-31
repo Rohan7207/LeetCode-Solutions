@@ -1,3 +1,46 @@
+// Problem: Maximum Width of Binary Tree
+// Link: https://leetcode.com/problems/maximum-width-of-binary-tree/
+// Difficulty: Medium
+
+// Approach:
+// Perform a level-order traversal (BFS) while assigning every node
+// an index as if the tree were stored in a complete binary tree.
+//
+// Indexing:
+//
+// Root          -> 0
+// Left Child    -> 2 * index + 1
+// Right Child   -> 2 * index + 2
+//
+// The width of a level is:
+//
+//      lastIndex - firstIndex + 1
+//
+// Since indices grow exponentially for deep trees, normalize them
+// at every level by subtracting the first node's index.
+//
+// Algorithm:
+//
+// 1. Push (root, 0) into the queue.
+// 2. For every level:
+//      - Store the first node's index as minIndex.
+//      - Normalize every node's index by:
+//            index = curr.index - minIndex
+//      - Record the normalized index of:
+//            • first node (leftmost)
+//            • last node (rightmost)
+//      - Insert children with indices:
+//            left  -> 2 * index + 1
+//            right -> 2 * index + 2
+//      - Width of current level:
+//            last - first + 1
+//      - Update the maximum width.
+// 3. Return the maximum width.
+
+// Time Complexity: O(n)
+// Space Complexity: O(n)
+
+
 /**
  * Definition for a binary tree node.
  * public class TreeNode {
