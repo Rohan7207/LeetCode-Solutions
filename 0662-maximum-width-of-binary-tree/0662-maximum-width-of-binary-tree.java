@@ -56,9 +56,9 @@ class Solution {
                 if (curr.node.right != null) {
                     q.offer(new Pair(curr.node.right, 2 * index + 2));
                 }
-
-                max = Math.max(max, last - first + 1);
             }
+
+            max = Math.max(max, last - first + 1);
         }
 
         return (int) max;
