@@ -4,11 +4,11 @@ class Solution {
 
         n = (n - 1) % 14 + 1;
 
-        while(n > 0) {
+        while (n > 0) {
             int[] next = new int[8];
 
-            for(int i = 1; i < 7; i++) {
-                if(cells[i - 1] == cells[i + 1]) {
+            for (int i = 1; i < 7; i++) {
+                if (cells[i - 1] == cells[i + 1]) {
                     next[i] = 1;
                 } else {
                     next[i] = 0;
