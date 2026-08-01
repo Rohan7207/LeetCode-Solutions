@@ -1,6 +1,29 @@
 class Solution {
     public int maxWidthRamp(int[] nums) {
-        Stack<Integer> s = new Stack<>();
+        int n = nums.length;
+        int[] stack = new int[n];
+        int top = -1;
+
+        // Fill the stack array with indices in decreasing order of their values
+        for(int i = 0; i < n; i++) {
+            if(top == -1 || nums[i] < nums[stack[top]]) {
+                stack[++top] = i;
+            }
+        }
+
+        int ans = 0;
+        for(int j = n - 1; j >= 0; j--) {
+            while(top >= 0 && nums[stack[top]] <= nums[j]) {
+                ans = Math.max(ans, j - stack[top--]);
+            }
+        }
+
+        return ans;
+    }
+}
+
+/*
+     Stack<Integer> s = new Stack<>();
         int n = nums.length;
 
         // Fill the stack with indices in decreasing order of their values
@@ -21,5 +44,4 @@ class Solution {
         }
 
         return ans;
-    }
-}
+*/
