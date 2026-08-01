@@ -1,3 +1,58 @@
+// Problem: Regions Cut By Slashes
+// Link: https://leetcode.com/problems/regions-cut-by-slashes/
+// Difficulty: Medium
+
+// Approach:
+// A slash ('/' or '\') divides a 1×1 cell into multiple regions,
+// making it difficult to directly determine connectivity.
+//
+// To simplify the problem, expand every original cell into a 3×3 block.
+//
+// Why 3×3?
+// - It provides enough space to draw the slash as barriers.
+// - Cells not occupied by the slash remain open and represent free space.
+// - This converts the problem into a standard "count connected components"
+//   problem on a binary matrix.
+//
+// Expansion:
+//
+// Blank (' '):
+//      0 0 0
+//      0 0 0
+//      0 0 0
+//
+// Slash ('/'):
+//      0 0 1
+//      0 1 0
+//      1 0 0
+//
+// Backslash ('\'):
+//      1 0 0
+//      0 1 0
+//      0 0 1
+//
+// Here:
+//      1 = Barrier (cannot cross)
+//      0 = Empty space
+//
+// After expanding the entire grid:
+//
+// 1. Traverse every cell in the expanded grid.
+// 2. Whenever an unvisited empty cell (0) is found,
+//    it represents the start of a new region.
+// 3. Perform BFS (Flood Fill) to mark every reachable empty cell.
+// 4. Increment the region count.
+// 5. Continue until the entire expanded grid is processed.
+//
+// The total number of flood-fill operations equals the number of regions.
+
+// Time Complexity:
+// O((3N)²) = O(N²)
+//
+// Space Complexity:
+// O((3N)²) = O(N²)
+
+
 class Solution {
     // Directions for traversal: right, left, down, up
     private static int[][] dirs = { { 1, 0 }, { 0, 1 }, { -1, 0 }, { 0, -1 } };
