@@ -1,3 +1,48 @@
+// Problem : Stone Game
+// Link : https://leetcode.com/problems/stone-game/description/?envType=daily-question&envId=2026-08-02
+// Difficulty : Medium
+
+// Approach:
+// Let dp[left][right] represent the maximum score difference
+// (current player's score − opponent's score) that the current
+// player can achieve when playing optimally on the subarray
+// piles[left...right].
+//
+// Base Case:
+// If only one pile is available (left == right), the current
+// player takes it, so the score difference equals that pile.
+//
+// Transition:
+// From the current interval, the player has two choices:
+//
+// 1. Take the left pile.
+//    - Gain piles[left].
+//    - The opponent now becomes the current player on
+//      [left + 1 ... right], whose best score difference is
+//      dp[left + 1][right].
+//    - Therefore, the resulting score difference is:
+//          piles[left] - dp[left + 1][right]
+//
+// 2. Take the right pile.
+//    - Gain piles[right].
+//    - Opponent plays optimally on
+//      [left ... right - 1].
+//    - Resulting score difference is:
+//          piles[right] - dp[left][right - 1]
+//
+// Choose the option that gives the larger score difference.
+//
+// Since every state depends on smaller intervals,
+// fill the DP table by increasing interval length.
+//
+// Finally, dp[0][n - 1] represents the maximum score difference
+// for the entire array. If it is positive, the first player
+// finishes with a higher score and wins.
+
+// Time Complexity: O(n²)
+// Space Complexity: O(n²)
+
+
 class Solution {
     public boolean stoneGame(int[] piles) {
         // Maximum score difference the current player can achieve from piles[left...right].
