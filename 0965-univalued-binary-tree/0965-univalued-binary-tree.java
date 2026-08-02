@@ -1,3 +1,34 @@
+// Problem: Univalued Binary Tree
+// Link: https://leetcode.com/problems/univalued-binary-tree/
+// Difficulty: Easy
+
+// Approach:
+// The tree is considered univalued if every node has the same
+// value as the root.
+//
+// First, handle the empty tree. An empty tree is trivially
+// univalued.
+//
+// Store the root's value and recursively traverse the entire tree.
+//
+// For every node:
+// - If the node is null, return true since it does not violate
+//   the condition.
+// - If the node's value differs from the root's value,
+//   immediately return false.
+// - Otherwise, recursively check both the left and right subtrees.
+//
+// The tree is univalued only if both subtrees also satisfy
+// the condition.
+
+// Time Complexity:
+// O(n)
+//
+// Space Complexity:
+// O(h)
+// where h is the height of the tree (recursion stack).
+
+
 /**
  * Definition for a binary tree node.
  * public class TreeNode {
@@ -34,13 +65,3 @@ class Solution {
         return helper(root.left, val) && helper(root.right, val);
     }
 }
-
-/*
-     boolean leftCorrect = (root.left == null ||
-                (root.val == root.left.val && isUnivalTree(root.left)));
-
-        boolean rightCorrect = (root.right == null ||
-                (root.val == root.right.val && isUnivalTree(root.right)));
-
-        return leftCorrect && rightCorrect;
-*/
