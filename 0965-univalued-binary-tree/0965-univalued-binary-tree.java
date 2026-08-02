@@ -15,12 +15,32 @@
  */
 class Solution {
     public boolean isUnivalTree(TreeNode root) {
-        boolean leftCorrect = (root.left == null ||
+        if(root == null) {
+            return true;
+        }
+
+        return helper(root, root.val);
+    }
+
+    private boolean helper(TreeNode root, int val) {
+        if(root == null) {
+            return true;
+        }
+
+        if(root.val != val) {
+            return false;
+        }
+
+        return helper(root.left, val) && helper(root.right, val);
+    }
+}
+
+/*
+     boolean leftCorrect = (root.left == null ||
                 (root.val == root.left.val && isUnivalTree(root.left)));
 
         boolean rightCorrect = (root.right == null ||
                 (root.val == root.right.val && isUnivalTree(root.right)));
 
         return leftCorrect && rightCorrect;
-    }
-}
+*/
