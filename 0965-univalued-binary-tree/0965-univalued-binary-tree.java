@@ -15,11 +15,11 @@
  */
 class Solution {
     public boolean isUnivalTree(TreeNode root) {
-        boolean leftCorrect = (root.left == null || 
-            (root.val == root.left.val && isUnivalTree(root.left)));
+        boolean leftCorrect = (root.left == null ||
+                (root.val == root.left.val && isUnivalTree(root.left)));
 
-        boolean rightCorrect = (root.right == null || 
-            (root.val == root.right.val && isUnivalTree(root.right)));
+        boolean rightCorrect = (root.right == null ||
+                (root.val == root.right.val && isUnivalTree(root.right)));
 
         return leftCorrect && rightCorrect;
     }
