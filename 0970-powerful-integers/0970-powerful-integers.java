@@ -26,11 +26,6 @@ class Solution {
             powerX *= x;
         }
 
-        List<Integer> ans = new ArrayList<>();
-        for(int num : set) {
-            ans.add(num);
-        }
-
-        return ans;
+        return new ArrayList(set);
     }
 }
