@@ -696,6 +696,7 @@
 | [0131-palindrome-partitioning](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0131-palindrome-partitioning) |
 | [0357-count-numbers-with-unique-digits](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0357-count-numbers-with-unique-digits) |
 | [0949-largest-time-for-given-digits](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0949-largest-time-for-given-digits) |
+| [0967-numbers-with-same-consecutive-differences](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0967-numbers-with-same-consecutive-differences) |
 ## Enumeration
 |  |
 | ------- |
@@ -1153,6 +1154,7 @@
 | [0958-check-completeness-of-a-binary-tree](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0958-check-completeness-of-a-binary-tree) |
 | [0959-regions-cut-by-slashes](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0959-regions-cut-by-slashes) |
 | [0965-univalued-binary-tree](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0965-univalued-binary-tree) |
+| [0967-numbers-with-same-consecutive-differences](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0967-numbers-with-same-consecutive-differences) |
 | [0994-rotting-oranges](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0994-rotting-oranges) |
 | [1306-jump-game-iii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1306-jump-game-iii) |
 | [2492-minimum-score-of-a-path-between-two-cities](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2492-minimum-score-of-a-path-between-two-cities) |
