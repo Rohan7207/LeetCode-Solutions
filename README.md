@@ -248,6 +248,7 @@
 | [0957-prison-cells-after-n-days](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0957-prison-cells-after-n-days) |
 | [0959-regions-cut-by-slashes](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0959-regions-cut-by-slashes) |
 | [0961-n-repeated-element-in-size-2n-array](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0961-n-repeated-element-in-size-2n-array) |
+| [0970-powerful-integers](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0970-powerful-integers) |
 | [1189-maximum-number-of-balloons](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1189-maximum-number-of-balloons) |
 | [1331-rank-transform-of-an-array](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1331-rank-transform-of-an-array) |
 | [1358-number-of-substrings-containing-all-three-characters](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1358-number-of-substrings-containing-all-three-characters) |
@@ -338,6 +339,7 @@
 | [0914-x-of-a-kind-in-a-deck-of-cards](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0914-x-of-a-kind-in-a-deck-of-cards) |
 | [0932-beautiful-array](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0932-beautiful-array) |
 | [0957-prison-cells-after-n-days](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0957-prison-cells-after-n-days) |
+| [0970-powerful-integers](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0970-powerful-integers) |
 | [0973-k-closest-points-to-origin](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0973-k-closest-points-to-origin) |
 | [1071-greatest-common-divisor-of-strings](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1071-greatest-common-divisor-of-strings) |
 | [1344-angle-between-hands-of-a-clock](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1344-angle-between-hands-of-a-clock) |
@@ -703,6 +705,7 @@
 | [0204-count-primes](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0204-count-primes) |
 | [0845-longest-mountain-in-array](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0845-longest-mountain-in-array) |
 | [0949-largest-time-for-given-digits](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0949-largest-time-for-given-digits) |
+| [0970-powerful-integers](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0970-powerful-integers) |
 | [1291-sequential-digits](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1291-sequential-digits) |
 | [1995-count-special-quadruplets](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1995-count-special-quadruplets) |
 | [3020-find-the-maximum-number-of-elements-in-subset](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3020-find-the-maximum-number-of-elements-in-subset) |
