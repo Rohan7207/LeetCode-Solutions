@@ -52,7 +52,7 @@ class Solution {
         int prefixSum = 0;
         int ans = 0;
 
-        freqMap.put(prefixSum, 1);
+        freqMap.put(0, 1);
 
         for (int i = 0; i < nums.length; i++) {
             prefixSum += nums[i];
