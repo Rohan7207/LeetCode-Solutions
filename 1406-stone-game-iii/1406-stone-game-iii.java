@@ -1,7 +1,7 @@
 class Solution {
     public String stoneGameIII(int[] stoneValue) {
         int n = stoneValue.length;
-        int[] dp = new int[n + 3];  // Bcz we can choose 3 stones so when i is near the end, these indices should safely exist and represent a score difference of 0.
+        int[] dp = new int[n + 1];  // Bcz we can choose 3 stones so when i is near the end, these indices should safely exist and represent a score difference of 0.
 
         for(int i = n - 1; i >= 0; i--) {
             dp[i] = Integer.MIN_VALUE;
