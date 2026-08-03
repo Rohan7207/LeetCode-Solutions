@@ -34,6 +34,7 @@ class Solution {
             return;
         }
 
+        // Current node doesn't match preorder
         if (root.val != voyage[index]) {
             possible = false;
             return;
@@ -41,6 +42,7 @@ class Solution {
 
         index++;
 
+        // Need to flip if the next expected node is not the left child
         if (root.left != null && index < voyage.length && root.left.val != voyage[index]) {
             ans.add(root.val);
             dfs(root.right, voyage);
