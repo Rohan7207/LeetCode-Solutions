@@ -12,7 +12,7 @@ class Solution {
             int rem = prefixSum % k;
 
             if(rem < 0) {
-                rem = (rem + k) % k;
+                rem += k;
             }
 
             ans += freqMap.getOrDefault(rem, 0);
