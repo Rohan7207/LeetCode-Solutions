@@ -11,13 +11,11 @@ class Solution {
             int v2 = nums[right] * nums[right];
 
             if(v1 >= v2) {
-                ans[idx] = v1;
+                ans[idx--] = v1;
                 left++;
-                idx--;
             } else if(v2 >= v1) {
-                ans[idx] = v2;
+                ans[idx--] = v2;
                 right--;
-                idx--;
             }
         }
 
