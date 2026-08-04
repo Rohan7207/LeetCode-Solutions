@@ -8,12 +8,12 @@ class Solution {
             }
         }
 
-        int len = queries.length;
-        int[] ans = new int[len];
+        int[] ans = new int[queries.length];
+        int z = 0;
 
-        for(int i = 0; i < len; i++) {
-            int val = queries[i][0];
-            int idx = queries[i][1];
+        for(int[] query : queries) {
+            int val = query[0];
+            int idx = query[1];
 
             if(nums[idx] % 2 == 0) {
                 evenSum -= nums[idx];
@@ -25,7 +25,7 @@ class Solution {
                 evenSum += nums[idx];
             }
 
-            ans[i] = evenSum;
+            ans[z++] = evenSum;
         }
 
         return ans;
