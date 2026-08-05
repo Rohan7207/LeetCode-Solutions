@@ -24,16 +24,16 @@ class Solution {
     }
 
     private void dfs(TreeNode root) {
-        if(root == null) {
+        if (root == null) {
             return;
         }
 
         sb.append((char) (root.val + 'a'));
 
-        if(root.left == null && root.right == null) {
+        if (root.left == null && root.right == null) {
             String curr = sb.reverse().toString();
             // Java strings are compared lexicographically.
-            if(ans == null || curr.compareTo(ans) < 0) {
+            if (ans == null || curr.compareTo(ans) < 0) {
                 ans = curr;
             }
 
