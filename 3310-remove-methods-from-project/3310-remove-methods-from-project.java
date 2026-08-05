@@ -54,3 +54,23 @@ class Solution {
         return remainingNodes;
     }
 }
+
+/*
+    Approach: Searching
+Intuition
+The given invocations array defines a directed graph. Starting from node k, the node k itself and all nodes reachable from it are called suspicious methods. According to the problem statement, we need to determine whether there exists a normal method that calls a suspicious method. In graph terms, there must be no edge from a normal node to a suspicious node. Only when this condition is satisfied can all suspicious methods be removed.
+
+First, we identify all suspicious methods. Starting from node k, we perform either a depth-first search (DFS) or a breadth-first search (BFS) to traverse all reachable nodes without revisiting any node.
+
+Next, we need to determine whether any normal method can reach a suspicious method. There are two possible approaches:
+
+Maintain the in-degree of every node. During the traversal from node k, decrement the in-degree of each visited neighbor, which is equivalent to removing the traversed edge. After the traversal is complete, the remaining in-degree of each suspicious node represents the number of incoming edges from normal nodes. If any suspicious node has a non-zero in-degree, then there exists a normal method that calls a suspicious method.
+
+Traverse the invocations array again. If there is an edge from a normal node to a suspicious node, then a normal method can reach a suspicious method. A hash set (or any constant-time lookup structure) can be used to quickly determine whether a node is suspicious.
+
+Finally, there are two possible cases:
+
+If no normal method calls any suspicious method, return all remaining methods after removing the suspicious ones.
+
+Otherwise, no suspicious methods can be removed, so return all methods.
+*/
