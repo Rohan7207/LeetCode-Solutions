@@ -437,6 +437,7 @@
 | [0925-long-pressed-name](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0925-long-pressed-name) |
 | [0949-largest-time-for-given-digits](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0949-largest-time-for-given-digits) |
 | [0953-verifying-an-alien-dictionary](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0953-verifying-an-alien-dictionary) |
+| [0988-smallest-string-starting-from-leaf](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0988-smallest-string-starting-from-leaf) |
 | [1071-greatest-common-divisor-of-strings](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1071-greatest-common-divisor-of-strings) |
 | [1081-smallest-subsequence-of-distinct-characters](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1081-smallest-subsequence-of-distinct-characters) |
 | [1189-maximum-number-of-balloons](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1189-maximum-number-of-balloons) |
@@ -714,6 +715,7 @@
 | [0357-count-numbers-with-unique-digits](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0357-count-numbers-with-unique-digits) |
 | [0949-largest-time-for-given-digits](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0949-largest-time-for-given-digits) |
 | [0967-numbers-with-same-consecutive-differences](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0967-numbers-with-same-consecutive-differences) |
+| [0988-smallest-string-starting-from-leaf](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0988-smallest-string-starting-from-leaf) |
 ## Enumeration
 |  |
 | ------- |
@@ -994,6 +996,7 @@
 | [0959-regions-cut-by-slashes](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0959-regions-cut-by-slashes) |
 | [0965-univalued-binary-tree](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0965-univalued-binary-tree) |
 | [0971-flip-binary-tree-to-match-preorder-traversal](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0971-flip-binary-tree-to-match-preorder-traversal) |
+| [0988-smallest-string-starting-from-leaf](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0988-smallest-string-starting-from-leaf) |
 | [1306-jump-game-iii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1306-jump-game-iii) |
 | [2492-minimum-score-of-a-path-between-two-cities](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2492-minimum-score-of-a-path-between-two-cities) |
 | [2685-count-the-number-of-complete-components](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2685-count-the-number-of-complete-components) |
@@ -1057,6 +1060,7 @@
 | [0958-check-completeness-of-a-binary-tree](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0958-check-completeness-of-a-binary-tree) |
 | [0965-univalued-binary-tree](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0965-univalued-binary-tree) |
 | [0971-flip-binary-tree-to-match-preorder-traversal](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0971-flip-binary-tree-to-match-preorder-traversal) |
+| [0988-smallest-string-starting-from-leaf](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0988-smallest-string-starting-from-leaf) |
 | [2196-create-binary-tree-from-descriptions](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2196-create-binary-tree-from-descriptions) |
 | [3558-number-of-ways-to-assign-edge-weights-i](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3558-number-of-ways-to-assign-edge-weights-i) |
 ## Binary Tree
@@ -1113,6 +1117,7 @@
 | [0958-check-completeness-of-a-binary-tree](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0958-check-completeness-of-a-binary-tree) |
 | [0965-univalued-binary-tree](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0965-univalued-binary-tree) |
 | [0971-flip-binary-tree-to-match-preorder-traversal](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0971-flip-binary-tree-to-match-preorder-traversal) |
+| [0988-smallest-string-starting-from-leaf](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0988-smallest-string-starting-from-leaf) |
 | [2196-create-binary-tree-from-descriptions](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2196-create-binary-tree-from-descriptions) |
 ## Binary Search Tree
 |  |
