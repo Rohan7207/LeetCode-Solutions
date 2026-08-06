@@ -14,8 +14,7 @@ class Solution {
             product *= num % 10;
             num /= 10;
 
-            if (product == 0)
-                break;
+            if (product == 0) break;
         }
 
         return product % t == 0;
