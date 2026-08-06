@@ -154,6 +154,7 @@
 | [0989-add-to-array-form-of-integer](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0989-add-to-array-form-of-integer) |
 | [0994-rotting-oranges](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0994-rotting-oranges) |
 | [0997-find-the-town-judge](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0997-find-the-town-judge) |
+| [0999-available-captures-for-rook](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0999-available-captures-for-rook) |
 | [1004-max-consecutive-ones-iii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1004-max-consecutive-ones-iii) |
 | [1260-shift-2d-grid](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1260-shift-2d-grid) |
 | [1288-remove-covered-intervals](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1288-remove-covered-intervals) |
@@ -869,6 +870,7 @@
 | [0931-minimum-falling-path-sum](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0931-minimum-falling-path-sum) |
 | [0959-regions-cut-by-slashes](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0959-regions-cut-by-slashes) |
 | [0994-rotting-oranges](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0994-rotting-oranges) |
+| [0999-available-captures-for-rook](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0999-available-captures-for-rook) |
 | [1260-shift-2d-grid](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1260-shift-2d-grid) |
 | [1301-number-of-paths-with-max-score](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1301-number-of-paths-with-max-score) |
 | [2812-find-the-safest-path-in-a-grid](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2812-find-the-safest-path-in-a-grid) |
@@ -897,6 +899,7 @@
 | [0946-validate-stack-sequences](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0946-validate-stack-sequences) |
 | [0950-reveal-cards-in-increasing-order](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0950-reveal-cards-in-increasing-order) |
 | [0985-sum-of-even-numbers-after-queries](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0985-sum-of-even-numbers-after-queries) |
+| [0999-available-captures-for-rook](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0999-available-captures-for-rook) |
 | [1260-shift-2d-grid](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1260-shift-2d-grid) |
 | [2161-partition-array-according-to-given-pivot](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2161-partition-array-according-to-given-pivot) |
 | [3612-process-string-with-special-operations-i](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3612-process-string-with-special-operations-i) |
