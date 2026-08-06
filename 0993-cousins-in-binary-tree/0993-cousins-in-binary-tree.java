@@ -1,3 +1,48 @@
+// Problem: Cousins in Binary Tree
+// Link: https://leetcode.com/problems/cousins-in-binary-tree/
+// Difficulty: Easy
+
+// Approach:
+// Perform a level-order traversal (BFS) because cousins must
+// appear at the same depth.
+//
+// For each level:
+//
+// 1. Initialize two flags:
+//      foundX = false
+//      foundY = false
+//
+// 2. Traverse every node in the current level.
+//
+// 3. For each node:
+//    - If the current node's value is x or y, mark the
+//      corresponding flag.
+//
+//    - Check whether its left and right children are x and y.
+//      If both children are x and y, they share the same parent
+//      (siblings), so immediately return false.
+//
+//    - Push the left and right children (if they exist) into
+//      the queue for the next level.
+//
+// 4. After processing the entire level:
+//
+//    - If both x and y were found, they are at the same depth
+//      and were already verified not to be siblings, so return
+//      true.
+//
+//    - If only one of them was found, they are at different
+//      depths, so return false.
+//
+// Continue until all levels are processed.
+//
+// If neither condition is met during the traversal,
+// return false.
+
+// Time Complexity: O(n)
+// Space Complexity: O(n)
+
+
 /**
  * Definition for a binary tree node.
  * public class TreeNode {
