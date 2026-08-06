@@ -27,6 +27,15 @@ class Solution {
             for(int i = 0; i < size; i++) {
                 TreeNode curr = q.poll();
 
+                if(curr.val == x) {
+                        foundX = true;
+                    }
+
+                    if(curr.val == y) {
+                        foundY = true;
+                    }
+
+
                 // Check if Children are Siblings
                 if(curr.left != null && curr.right != null) {
                     if((curr.left.val == x && curr.right.val == y) || (curr.right.val == x && curr.left.val == y)) {
@@ -36,26 +45,10 @@ class Solution {
 
                 // Check Whether x or y Exists in This Level
                 if(curr.left != null) {
-                    if(curr.left.val == x) {
-                        foundX = true;
-                    }
-
-                    if(curr.left.val == y) {
-                        foundY = true;
-                    }
-
                     q.offer(curr.left);
                 }
 
                 if(curr.right != null) {
-                    if(curr.right.val == x) {
-                        foundX = true;
-                    }
-
-                    if(curr.right.val == y) {
-                        foundY = true;
-                    }
-
                     q.offer(curr.right);
                 }
             }
