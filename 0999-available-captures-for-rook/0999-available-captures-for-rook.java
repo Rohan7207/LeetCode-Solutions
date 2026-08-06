@@ -1,3 +1,44 @@
+// Problem: Available Captures for Rook
+// Link: https://leetcode.com/problems/available-captures-for-rook/
+// Difficulty: Easy
+
+// Approach:
+// First, locate the rook ('R') on the chessboard.
+//
+// From the rook's position, explore the four possible
+// directions independently:
+//
+// - Left
+// - Right
+// - Up
+// - Down
+//
+// During exploration in a direction:
+//
+// 1. If the position goes outside the board or encounters a
+//    bishop ('B'), stop exploring in that direction since the
+//    rook cannot move further.
+//
+// 2. If a pawn ('p') is encountered, increment the capture
+//    count and stop exploring in that direction because the
+//    rook captures the first pawn it reaches.
+//
+// 3. Otherwise, continue moving one step further in the same
+//    direction.
+//
+// Since each direction is explored independently, the total
+// number of captured pawns is the sum of captures from all
+// four directions.
+
+// Time Complexity:
+// O(8 + 8 + 8 + 8) = O(1)
+// (The board size is fixed at 8 × 8.)
+//
+// Space Complexity:
+// O(1)
+// (Ignoring the recursion stack, whose maximum depth is 8.)
+
+
 class Solution {
 
     private int sum = 0;
