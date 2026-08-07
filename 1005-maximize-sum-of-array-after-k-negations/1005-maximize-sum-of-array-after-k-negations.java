@@ -20,7 +20,6 @@ class Solution {
         if (k % 2 != 0) {
             sum -= 2 * min;
         }
-
         return sum;
     }
 }
