@@ -4,13 +4,14 @@ class Solution {
 
         // Step 1: Check if t can be formed using digits (2 to 9).
         // If any prime factor greater than 9 remains, answer is impossible.
-        for(int i = 2; i <= 9; i++) {
-            while(temp % i == 0) {
+        for (int i = 2; i <= 9; i++) {
+            while (temp % i == 0) {
                 temp /= i;
             }
         }
 
-        if(temp > 1) return "-1";
+        if (temp > 1)
+            return "-1";
 
         int n = num.length();
 
@@ -27,9 +28,9 @@ class Solution {
         char[] numChars = num.toCharArray();
 
         // Compute remaining factor needed after every prefix.
-        for(int i = 0; i < n; i++) {
+        for (int i = 0; i < n; i++) {
             // Digits cannot be zero in the final answer.
-            if(numChars[i] == '0') {
+            if (numChars[i] == '0') {
                 pos = i;
                 break;
             }
@@ -40,15 +41,15 @@ class Solution {
         }
 
         // Entire number already satisfies the condition.
-        if(rem[n] == 1) {
+        if (rem[n] == 1) {
             return num;
         }
 
         // Try modifying digits from right to left
         // so that the resulting number stays as small as possible.
-        for(int i = pos; i >= 0; i--) {
+        for (int i = pos; i >= 0; i--) {
             // Try increasing the current digit.
-            while(++numChars[i] <= '9') {
+            while (++numChars[i] <= '9') {
                 // Remaining factor needed after choosing this digit.
                 long tNow = rem[i] / gcd(rem[i], numChars[i] - '0');
 
@@ -56,8 +57,8 @@ class Solution {
                 // that divide the remaining factor.
                 int k = 9;
 
-                for(int j = n - 1; j > i; j--) {
-                    while(tNow % k != 0) {
+                for (int j = n - 1; j > i; j--) {
+                    while (tNow % k != 0) {
                         k--;
                     }
 
@@ -66,7 +67,7 @@ class Solution {
                 }
 
                 // Successfully satisfied all factors.
-                if(tNow == 1) {
+                if (tNow == 1) {
                     return new String(numChars);
                 }
             }
@@ -78,8 +79,8 @@ class Solution {
         long originalT = t;
 
         // Factorize t using digits 9 to 2.
-        for(int i = 9; i > 1; i--) {
-            while(originalT % i == 0) {
+        for (int i = 9; i > 1; i--) {
+            while (originalT % i == 0) {
                 ans.append((char) ('0' + i));
                 originalT /= i;
             }
