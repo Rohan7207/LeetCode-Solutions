@@ -1,3 +1,66 @@
+// Problem: Smallest Divisible Digit Product II
+// Link: https://leetcode.com/problems/smallest-divisible-digit-product-ii/?envType=daily-question&envId=2026-08-07
+// Difficulty: Hard
+
+// Approach:
+// We need to find the smallest number greater than or equal to
+// the given number such that the product of its digits is
+// divisible by t.
+//
+// Step 1: Check Feasibility
+// -------------------------
+// A digit can only contribute prime factors from 2 to 9.
+// Divide t by every number from 2 to 9.
+// If a factor greater than 9 still remains, it is impossible
+// to construct such a number, so return "-1".
+//
+// Step 2: Prefix Preprocessing
+// ----------------------------
+// Build an array rem[] where:
+//
+//      rem[i]
+//
+// represents the remaining factor of t that still needs to be
+// satisfied after processing the first i digits.
+//
+// Instead of factoring every digit, remove its contribution
+// using:
+//
+//      rem[i + 1] = rem[i] / gcd(rem[i], digit)
+//
+// This tells us how much work is left for the remaining suffix.
+//
+// Step 3: Greedily Modify the Number
+// ----------------------------------
+// To obtain the smallest possible answer:
+//
+// - Start from the rightmost digit.
+// - Increase the current digit by one.
+// - Compute the new remaining factor needed.
+// - Greedily rebuild the suffix using the largest digits
+//   (9 down to 2) that divide the remaining factor.
+// - If the remaining factor becomes 1, a valid answer is found.
+//
+// Processing digits from right to left ensures that the prefix
+// changes as little as possible, producing the smallest number.
+//
+// Step 4: Build a Longer Number
+// -----------------------------
+// If no number of the same length works,
+// construct the smallest valid number having one extra digit.
+//
+// - Factorize t using digits from 9 down to 2.
+// - Add leading '1's if necessary.
+// - Reverse the digits to obtain the smallest lexicographical
+//   number.
+
+// Time Complexity:
+// O(n²) in the worst case.
+//
+// Space Complexity:
+// O(n)
+
+
 class Solution {
     public String smallestNumber(String num, long t) {
         long temp = t;
