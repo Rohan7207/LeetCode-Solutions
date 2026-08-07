@@ -4,7 +4,7 @@ class Solution {
 
         for(int i = 0; i < nums.length; i++) {
             while(k > 0 && nums[i] < 0) {
-                nums[i] = -nums[i];
+                nums[i] *= -1;
                 k--;
             }
         }
@@ -14,13 +14,11 @@ class Solution {
 
         for(int num : nums) {
             sum += num;
-            if(num < min) {
-                min = num;
-            }
+            min = Math.min(min, Math.abs(num));
         }
 
         if(k % 2 != 0) {
-            sum -= 2 * Math.abs(min);
+            sum -= 2 * min;
         }
 
         return sum;
