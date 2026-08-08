@@ -9,10 +9,9 @@ class Solution {
         int j = m - 1;
 
         // last = {-1, 0, 4}
-        for(int i = n - 1; i >= 0; i--) {
-            if(j >= 0 && word1.charAt(i) == word2.charAt(j)) {
-                last[j] = i;
-                j--;
+        for (int i = n - 1; i >= 0; i--) {
+            if (j >= 0 && word1.charAt(i) == word2.charAt(j)) {
+                last[j--] = i;
             }
         }
 
@@ -21,16 +20,15 @@ class Solution {
         j = 0;
 
         // res = {1, 2,  }
-        for(int i = 0; i < n; i++) {
-            if(j == m) {
+        for (int i = 0; i < n; i++) {
+            if (j == m) {
                 break;
             }
 
-            if(word1.charAt(i) == word2.charAt(j) || (skip == 0 && (j == m - 1 || i < last[j + 1]))) {
+            if (word1.charAt(i) == word2.charAt(j) || (skip == 0 && (j == m - 1 || i < last[j + 1]))) {
                 skip += word1.charAt(i) != word2.charAt(j) ? 1 : 0;
 
-                res[j] = i;
-                j++;
+                res[j++] = i;
             }
         }
 
