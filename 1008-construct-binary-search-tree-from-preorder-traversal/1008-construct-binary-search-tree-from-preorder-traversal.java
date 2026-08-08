@@ -22,14 +22,14 @@ class Solution {
     }
 
     private TreeNode build(int[] preorder, int bound) {
-        if(index == preorder.length || preorder[index] > bound) {
+        if (index == preorder.length || preorder[index] > bound) {
             return null;
         }
 
         TreeNode root = new TreeNode(preorder[index++]);
 
-        root.left = build(preorder, root.val);   // new restriction
-        root.right = build(preorder, bound);     // keep parent's restriction
+        root.left = build(preorder, root.val); // new restriction
+        root.right = build(preorder, bound); // keep parent's restriction
 
         return root;
     }
