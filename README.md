@@ -158,6 +158,7 @@
 | [1002-find-common-characters](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1002-find-common-characters) |
 | [1004-max-consecutive-ones-iii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1004-max-consecutive-ones-iii) |
 | [1005-maximize-sum-of-array-after-k-negations](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1005-maximize-sum-of-array-after-k-negations) |
+| [1008-construct-binary-search-tree-from-preorder-traversal](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1008-construct-binary-search-tree-from-preorder-traversal) |
 | [1260-shift-2d-grid](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1260-shift-2d-grid) |
 | [1288-remove-covered-intervals](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1288-remove-covered-intervals) |
 | [1301-number-of-paths-with-max-score](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1301-number-of-paths-with-max-score) |
@@ -814,6 +815,7 @@
 | [0921-minimum-add-to-make-parentheses-valid](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0921-minimum-add-to-make-parentheses-valid) |
 | [0946-validate-stack-sequences](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0946-validate-stack-sequences) |
 | [0962-maximum-width-ramp](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0962-maximum-width-ramp) |
+| [1008-construct-binary-search-tree-from-preorder-traversal](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1008-construct-binary-search-tree-from-preorder-traversal) |
 | [1081-smallest-subsequence-of-distinct-characters](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1081-smallest-subsequence-of-distinct-characters) |
 | [2130-maximum-twin-sum-of-a-linked-list](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2130-maximum-twin-sum-of-a-linked-list) |
 ## Heap (Priority Queue)
@@ -900,6 +902,7 @@
 | [0853-car-fleet](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0853-car-fleet) |
 | [0907-sum-of-subarray-minimums](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0907-sum-of-subarray-minimums) |
 | [0962-maximum-width-ramp](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0962-maximum-width-ramp) |
+| [1008-construct-binary-search-tree-from-preorder-traversal](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1008-construct-binary-search-tree-from-preorder-traversal) |
 | [1081-smallest-subsequence-of-distinct-characters](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1081-smallest-subsequence-of-distinct-characters) |
 ## Simulation
 |  |
@@ -1086,6 +1089,7 @@
 | [0971-flip-binary-tree-to-match-preorder-traversal](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0971-flip-binary-tree-to-match-preorder-traversal) |
 | [0988-smallest-string-starting-from-leaf](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0988-smallest-string-starting-from-leaf) |
 | [0993-cousins-in-binary-tree](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0993-cousins-in-binary-tree) |
+| [1008-construct-binary-search-tree-from-preorder-traversal](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1008-construct-binary-search-tree-from-preorder-traversal) |
 | [2196-create-binary-tree-from-descriptions](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2196-create-binary-tree-from-descriptions) |
 | [3558-number-of-ways-to-assign-edge-weights-i](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3558-number-of-ways-to-assign-edge-weights-i) |
 ## Binary Tree
@@ -1144,6 +1148,7 @@
 | [0971-flip-binary-tree-to-match-preorder-traversal](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0971-flip-binary-tree-to-match-preorder-traversal) |
 | [0988-smallest-string-starting-from-leaf](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0988-smallest-string-starting-from-leaf) |
 | [0993-cousins-in-binary-tree](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0993-cousins-in-binary-tree) |
+| [1008-construct-binary-search-tree-from-preorder-traversal](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1008-construct-binary-search-tree-from-preorder-traversal) |
 | [2196-create-binary-tree-from-descriptions](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2196-create-binary-tree-from-descriptions) |
 ## Binary Search Tree
 |  |
@@ -1163,6 +1168,7 @@
 | [0783-minimum-distance-between-bst-nodes](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0783-minimum-distance-between-bst-nodes) |
 | [0897-increasing-order-search-tree](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0897-increasing-order-search-tree) |
 | [0938-range-sum-of-bst](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0938-range-sum-of-bst) |
+| [1008-construct-binary-search-tree-from-preorder-traversal](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1008-construct-binary-search-tree-from-preorder-traversal) |
 ## Breadth-First Search
 |  |
 | ------- |
