@@ -8,7 +8,6 @@ class Solution {
 
         int j = m - 1;
 
-        // last = {-1, 0, 4}
         for (int i = n - 1; i >= 0; i--) {
             if (j >= 0 && word1.charAt(i) == word2.charAt(j)) {
                 last[j--] = i;
@@ -19,12 +18,12 @@ class Solution {
         int skip = 0;
         j = 0;
 
-        // res = {1, 2,  }
         for (int i = 0; i < n; i++) {
             if (j == m) {
                 break;
             }
 
+            // Take the current index if either: The current characters match exactly. OR We haven't used our mismatch yet, and using this character as the mismatch still leaves enough room to match the rest of word2.
             if (word1.charAt(i) == word2.charAt(j) || (skip == 0 && (j == m - 1 || i < last[j + 1]))) {
                 skip += word1.charAt(i) != word2.charAt(j) ? 1 : 0;
 
