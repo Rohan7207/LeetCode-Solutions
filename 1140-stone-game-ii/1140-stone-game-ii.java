@@ -30,7 +30,6 @@ class Solution {
 
         // Memoize the difference of suffixSum[p] and res. This denotes the maximum stones that can be picked.
         memo[currIndex][maxTillNow] = suffixSum[currIndex] - res;
-
         return memo[currIndex][maxTillNow];
     }
 }
