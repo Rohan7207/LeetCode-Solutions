@@ -159,6 +159,7 @@
 | [1004-max-consecutive-ones-iii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1004-max-consecutive-ones-iii) |
 | [1005-maximize-sum-of-array-after-k-negations](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1005-maximize-sum-of-array-after-k-negations) |
 | [1008-construct-binary-search-tree-from-preorder-traversal](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1008-construct-binary-search-tree-from-preorder-traversal) |
+| [1140-stone-game-ii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1140-stone-game-ii) |
 | [1260-shift-2d-grid](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1260-shift-2d-grid) |
 | [1288-remove-covered-intervals](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1288-remove-covered-intervals) |
 | [1301-number-of-paths-with-max-score](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1301-number-of-paths-with-max-score) |
@@ -360,6 +361,7 @@
 | [0976-largest-perimeter-triangle](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0976-largest-perimeter-triangle) |
 | [0989-add-to-array-form-of-integer](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0989-add-to-array-form-of-integer) |
 | [1071-greatest-common-divisor-of-strings](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1071-greatest-common-divisor-of-strings) |
+| [1140-stone-game-ii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1140-stone-game-ii) |
 | [1344-angle-between-hands-of-a-clock](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1344-angle-between-hands-of-a-clock) |
 | [1406-stone-game-iii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1406-stone-game-iii) |
 | [1840-maximum-building-height](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1840-maximum-building-height) |
@@ -637,6 +639,7 @@
 | [0918-maximum-sum-circular-subarray](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0918-maximum-sum-circular-subarray) |
 | [0931-minimum-falling-path-sum](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0931-minimum-falling-path-sum) |
 | [0935-knight-dialer](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0935-knight-dialer) |
+| [1140-stone-game-ii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1140-stone-game-ii) |
 | [1301-number-of-paths-with-max-score](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1301-number-of-paths-with-max-score) |
 | [1406-stone-game-iii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1406-stone-game-iii) |
 | [3302-find-the-lexicographically-smallest-valid-sequence](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3302-find-the-lexicographically-smallest-valid-sequence) |
@@ -1352,6 +1355,7 @@
 | [0930-binary-subarrays-with-sum](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0930-binary-subarrays-with-sum) |
 | [0974-subarray-sums-divisible-by-k](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0974-subarray-sums-divisible-by-k) |
 | [1004-max-consecutive-ones-iii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1004-max-consecutive-ones-iii) |
+| [1140-stone-game-ii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1140-stone-game-ii) |
 | [1732-find-the-highest-altitude](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1732-find-the-highest-altitude) |
 | [2574-left-and-right-sum-differences](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2574-left-and-right-sum-differences) |
 | [3312-sorted-gcd-pair-queries](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3312-sorted-gcd-pair-queries) |
@@ -1390,6 +1394,7 @@
 | ------- |
 | [0486-predict-the-winner](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0486-predict-the-winner) |
 | [0877-stone-game](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0877-stone-game) |
+| [1140-stone-game-ii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1140-stone-game-ii) |
 | [1406-stone-game-iii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1406-stone-game-iii) |
 ## Bucket Sort
 |  |
@@ -1411,4 +1416,12 @@
 |  |
 | ------- |
 | [0976-largest-perimeter-triangle](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0976-largest-perimeter-triangle) |
+## Minimax
+|  |
+| ------- |
+| [1140-stone-game-ii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1140-stone-game-ii) |
+## Zero-Sum Game
+|  |
+| ------- |
+| [1140-stone-game-ii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1140-stone-game-ii) |
 <!---LeetCode Topics End-->
