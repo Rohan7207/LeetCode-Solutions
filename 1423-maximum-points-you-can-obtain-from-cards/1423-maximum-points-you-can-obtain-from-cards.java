@@ -6,20 +6,21 @@ class Solution {
         int minWindowSum = 0;
         int totalSum = 0;
 
-        for(int num : cardPoints) {
+        for (int num : cardPoints) {
             totalSum += num;
         }
 
-        if(k == n) return totalSum;
+        if (k == n)
+            return totalSum;
 
-        for(int i = 0; i < window; i++) {
+        for (int i = 0; i < window; i++) {
             windowSum += cardPoints[i];
         }
 
         minWindowSum = windowSum;
 
-        for(int i = window; i < n; i++) {
-            windowSum += cardPoints[i] - cardPoints[i - window]; 
+        for (int i = window; i < n; i++) {
+            windowSum += cardPoints[i] - cardPoints[i - window];
 
             minWindowSum = Math.min(minWindowSum, windowSum);
         }
