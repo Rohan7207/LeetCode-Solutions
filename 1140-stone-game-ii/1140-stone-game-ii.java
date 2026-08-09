@@ -1,10 +1,10 @@
 class Solution {
     public int stoneGameII(int[] piles) {
         // Store the suffix sum of all array elements.
-        int n =  piles.length;
+        int n = piles.length;
         int[] suffixSum = Arrays.copyOf(piles, n);
 
-        for(int i = suffixSum.length - 2; i >= 0; i--) {
+        for (int i = suffixSum.length - 2; i >= 0; i--) {
             suffixSum[i] += suffixSum[i + 1];
         }
 
@@ -13,18 +13,18 @@ class Solution {
 
     private int maxStones(int[] suffixSum, int maxTillNow, int currIndex, int[][] memo) {
         // If currIndex + 2*maxTillNow lies outside the array, pick all remaining stones.
-        if(currIndex + 2 * maxTillNow >= suffixSum.length) {
+        if (currIndex + 2 * maxTillNow >= suffixSum.length) {
             return suffixSum[currIndex];
         }
 
-        if(memo[currIndex][maxTillNow] > 0) {
+        if (memo[currIndex][maxTillNow] > 0) {
             return memo[currIndex][maxTillNow];
         }
 
         int res = Integer.MAX_VALUE;
 
         // Find the minimum value res for the next move possible for opponent.
-        for(int i = 1; i <= 2 * maxTillNow; i++) {
+        for (int i = 1; i <= 2 * maxTillNow; i++) {
             res = Math.min(res, maxStones(suffixSum, Math.max(i, maxTillNow), currIndex + i, memo));
         }
 
