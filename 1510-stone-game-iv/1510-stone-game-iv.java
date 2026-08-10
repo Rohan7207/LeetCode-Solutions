@@ -1,11 +1,11 @@
 class Solution {
     public boolean winnerSquareGame(int n) {
         boolean[] dp = new boolean[n + 1];
-        dp[0] = false;  // With 0 stones, the current player cannot make a move.
+        dp[0] = false; // With 0 stones, the current player cannot make a move.
 
-        for(int i = 1; i <= n; i++) {
-            for(int j = 1; j * j <= i; j++) {
-                if(!dp[i - j * j]) {
+        for (int i = 1; i <= n; i++) {
+            for (int j = 1; j * j <= i; j++) {
+                if (!dp[i - j * j]) {
                     dp[i] = true;
                     break;
                 }
