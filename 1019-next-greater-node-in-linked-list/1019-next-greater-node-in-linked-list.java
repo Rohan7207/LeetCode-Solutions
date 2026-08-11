@@ -11,7 +11,6 @@
 class Solution {
     public int[] nextLargerNodes(ListNode head) {
         List<Integer> values = new ArrayList<>();
-
         while (head != null) {
             values.add(head.val);
             head = head.next;
