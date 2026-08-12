@@ -11,7 +11,6 @@ class Solution {
                 freqMap.put(nums[left], freqMap.get(nums[left]) - 1);
                 left++;
             }
-
             ans = Math.max(ans, right - left + 1);
         }
 
