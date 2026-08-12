@@ -34,9 +34,9 @@ class Solution {
         }
 
         int ans = 0;
-        for(int i = 0; i < m; i++) {
-            for(int j = 0; j < n; j++) {
-                if(grid[i][j] == 1) {
+        for (int i = 0; i < m; i++) {
+            for (int j = 0; j < n; j++) {
+                if (grid[i][j] == 1) {
                     ans++;
                 }
             }
@@ -46,14 +46,14 @@ class Solution {
     }
 
     private void dfs(int[][] grid, int row, int col) {
-        if(row < 0 || row >= grid.length || col < 0 || col >= grid[0].length || grid[row][col] == 0) {
+        if (row < 0 || row >= grid.length || col < 0 || col >= grid[0].length || grid[row][col] == 0) {
             return;
         }
 
         grid[row][col] = 0;
-        dfs(grid, row + 1, col);
-        dfs(grid, row - 1, col);
-        dfs(grid, row, col + 1);
-        dfs(grid, row, col - 1);
+        dfs(grid, row + 1, col);  // Bottom
+        dfs(grid, row - 1, col);  // Top
+        dfs(grid, row, col + 1);  // Right
+        dfs(grid, row, col - 1);  // Left
     }
 }
