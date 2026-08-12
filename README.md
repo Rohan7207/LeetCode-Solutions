@@ -163,6 +163,7 @@
 | [1013-partition-array-into-three-parts-with-equal-sum](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1013-partition-array-into-three-parts-with-equal-sum) |
 | [1018-binary-prefix-divisible-by-5](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1018-binary-prefix-divisible-by-5) |
 | [1019-next-greater-node-in-linked-list](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1019-next-greater-node-in-linked-list) |
+| [1020-number-of-enclaves](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1020-number-of-enclaves) |
 | [1140-stone-game-ii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1140-stone-game-ii) |
 | [1260-shift-2d-grid](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1260-shift-2d-grid) |
 | [1288-remove-covered-intervals](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1288-remove-covered-intervals) |
@@ -909,6 +910,7 @@
 | [0959-regions-cut-by-slashes](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0959-regions-cut-by-slashes) |
 | [0994-rotting-oranges](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0994-rotting-oranges) |
 | [0999-available-captures-for-rook](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0999-available-captures-for-rook) |
+| [1020-number-of-enclaves](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1020-number-of-enclaves) |
 | [1260-shift-2d-grid](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1260-shift-2d-grid) |
 | [1301-number-of-paths-with-max-score](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1301-number-of-paths-with-max-score) |
 | [2812-find-the-safest-path-in-a-grid](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2812-find-the-safest-path-in-a-grid) |
@@ -1050,6 +1052,7 @@
 | [0971-flip-binary-tree-to-match-preorder-traversal](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0971-flip-binary-tree-to-match-preorder-traversal) |
 | [0988-smallest-string-starting-from-leaf](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0988-smallest-string-starting-from-leaf) |
 | [0993-cousins-in-binary-tree](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0993-cousins-in-binary-tree) |
+| [1020-number-of-enclaves](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1020-number-of-enclaves) |
 | [1306-jump-game-iii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1306-jump-game-iii) |
 | [2492-minimum-score-of-a-path-between-two-cities](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2492-minimum-score-of-a-path-between-two-cities) |
 | [2685-count-the-number-of-complete-components](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2685-count-the-number-of-complete-components) |
@@ -1244,6 +1247,7 @@
 | [0967-numbers-with-same-consecutive-differences](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0967-numbers-with-same-consecutive-differences) |
 | [0993-cousins-in-binary-tree](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0993-cousins-in-binary-tree) |
 | [0994-rotting-oranges](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0994-rotting-oranges) |
+| [1020-number-of-enclaves](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1020-number-of-enclaves) |
 | [1306-jump-game-iii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1306-jump-game-iii) |
 | [2492-minimum-score-of-a-path-between-two-cities](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2492-minimum-score-of-a-path-between-two-cities) |
 | [2685-count-the-number-of-complete-components](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2685-count-the-number-of-complete-components) |
@@ -1262,6 +1266,7 @@
 | [0778-swim-in-rising-water](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0778-swim-in-rising-water) |
 | [0785-is-graph-bipartite](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0785-is-graph-bipartite) |
 | [0959-regions-cut-by-slashes](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0959-regions-cut-by-slashes) |
+| [1020-number-of-enclaves](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1020-number-of-enclaves) |
 | [2492-minimum-score-of-a-path-between-two-cities](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2492-minimum-score-of-a-path-between-two-cities) |
 | [2685-count-the-number-of-complete-components](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2685-count-the-number-of-complete-components) |
 | [2812-find-the-safest-path-in-a-grid](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2812-find-the-safest-path-in-a-grid) |
