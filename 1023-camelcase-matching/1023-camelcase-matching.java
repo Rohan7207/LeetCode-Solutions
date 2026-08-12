@@ -3,19 +3,19 @@ class Solution {
         List<Boolean> ans = new ArrayList<>();
         int n = pattern.length();
 
-        for(String query : queries) {
+        for (String query : queries) {
             int i = 0;
             int j = 0;
             int m = query.length();
-            
-            while(i < m) {
-                if(j < n && query.charAt(i) == pattern.charAt(j)) {
+
+            while (i < m) {
+                if (j < n && query.charAt(i) == pattern.charAt(j)) {
                     i++;
                     j++;
-                } else if(Character.isLowerCase(query.charAt(i))) {
+                } else if (Character.isLowerCase(query.charAt(i))) {
                     i++;
                 } else {
-                    break;  // Reject unmatched uppercase letters
+                    break; // Reject unmatched uppercase letters
                 }
             }
 
