@@ -164,6 +164,7 @@
 | [1018-binary-prefix-divisible-by-5](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1018-binary-prefix-divisible-by-5) |
 | [1019-next-greater-node-in-linked-list](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1019-next-greater-node-in-linked-list) |
 | [1020-number-of-enclaves](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1020-number-of-enclaves) |
+| [1023-camelcase-matching](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1023-camelcase-matching) |
 | [1140-stone-game-ii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1140-stone-game-ii) |
 | [1260-shift-2d-grid](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1260-shift-2d-grid) |
 | [1288-remove-covered-intervals](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1288-remove-covered-intervals) |
@@ -465,6 +466,7 @@
 | [0953-verifying-an-alien-dictionary](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0953-verifying-an-alien-dictionary) |
 | [0988-smallest-string-starting-from-leaf](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0988-smallest-string-starting-from-leaf) |
 | [1002-find-common-characters](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1002-find-common-characters) |
+| [1023-camelcase-matching](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1023-camelcase-matching) |
 | [1071-greatest-common-divisor-of-strings](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1071-greatest-common-divisor-of-strings) |
 | [1081-smallest-subsequence-of-distinct-characters](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1081-smallest-subsequence-of-distinct-characters) |
 | [1189-maximum-number-of-balloons](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1189-maximum-number-of-balloons) |
@@ -599,6 +601,7 @@
 | [0925-long-pressed-name](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0925-long-pressed-name) |
 | [0962-maximum-width-ramp](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0962-maximum-width-ramp) |
 | [0977-squares-of-a-sorted-array](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0977-squares-of-a-sorted-array) |
+| [1023-camelcase-matching](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1023-camelcase-matching) |
 | [1877-minimize-maximum-pair-sum-in-array](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1877-minimize-maximum-pair-sum-in-array) |
 | [2095-delete-the-middle-node-of-a-linked-list](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2095-delete-the-middle-node-of-a-linked-list) |
 | [2130-maximum-twin-sum-of-a-linked-list](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2130-maximum-twin-sum-of-a-linked-list) |
@@ -671,6 +674,7 @@
 | [0139-word-break](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0139-word-break) |
 | [0208-implement-trie-prefix-tree](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0208-implement-trie-prefix-tree) |
 | [0211-design-add-and-search-words-data-structure](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0211-design-add-and-search-words-data-structure) |
+| [1023-camelcase-matching](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1023-camelcase-matching) |
 ## Sorting
 |  |
 | ------- |
@@ -871,6 +875,7 @@
 | ------- |
 | [0028-find-the-index-of-the-first-occurrence-in-a-string](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0028-find-the-index-of-the-first-occurrence-in-a-string) |
 | [0572-subtree-of-another-tree](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0572-subtree-of-another-tree) |
+| [1023-camelcase-matching](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1023-camelcase-matching) |
 ## Counting
 |  |
 | ------- |
