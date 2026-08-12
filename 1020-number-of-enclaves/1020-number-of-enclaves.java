@@ -1,3 +1,34 @@
+// Problem: Number of Enclaves
+// Link: https://leetcode.com/problems/number-of-enclaves/
+// Difficulty: Medium
+
+// Approach:
+// An enclave is a land cell (1) that cannot reach the boundary.
+//
+// Instead of finding every enclave individually, reverse the
+// thinking:
+//
+// 1. Any land cell connected to the boundary can never be an
+//    enclave because it can reach outside the grid.
+//
+// 2. Start DFS from every boundary land cell.
+//
+// 3. During DFS, mark every connected land cell as 0.
+//    This removes all land that can reach the boundary.
+//
+// 4. After processing the boundary, any remaining 1 represents
+//    an enclave.
+//
+// 5. Count all remaining 1s and return the count.
+//
+// The boundary is traversed using the four sides of the grid.
+// The `top`, `bottom`, `left`, and `right` variables make sure
+// each boundary cell is processed.
+
+// Time Complexity: O(m × n)
+// Space Complexity: O(m × n) in the worst case due to DFS recursion.
+
+
 class Solution {
     public int numEnclaves(int[][] grid) {
         int m = grid.length;
