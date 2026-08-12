@@ -31,7 +31,6 @@ class Solution {
 
         if(root.left == null && root.right == null) {
             ans += current;
-            return;
         }
 
         dfs(root.left, current);
