@@ -7,20 +7,20 @@ class Solution {
 
         // Top row
         for (int i = left; i <= right; i++) {
-            dfs(grid, top, i, m, n);
+            dfs(grid, top, i);
         }
         top++;
 
         // Right column
         for (int i = top; i <= bottom; i++) {
-            dfs(grid, i, right, m, n);
+            dfs(grid, i, right);
         }
         right--;
 
         // Bottom row (if rows remain)
         if (top <= bottom) {
             for (int i = right; i >= left; i--) {
-                dfs(grid, bottom, i, m, n);
+                dfs(grid, bottom, i);
             }
             bottom--;
         }
@@ -28,7 +28,7 @@ class Solution {
         // Left column (if columns remain)
         if (left <= right) {
             for (int i = bottom; i >= top; i--) {
-                dfs(grid, i, left, m, n);
+                dfs(grid, i, left);
             }
             left++;
         }
@@ -45,15 +45,15 @@ class Solution {
         return ans;
     }
 
-    private void dfs(int[][] grid, int row, int col, int m, int n) {
-        if(row < 0 || row >= m || col < 0 || col >= n || grid[row][col] == 0) {
+    private void dfs(int[][] grid, int row, int col) {
+        if(row < 0 || row >= grid.length || col < 0 || col >= grid[0].length || grid[row][col] == 0) {
             return;
         }
 
         grid[row][col] = 0;
-        dfs(grid, row + 1, col, m, n);
-        dfs(grid, row - 1, col, m, n);
-        dfs(grid, row, col + 1, m, n);
-        dfs(grid, row, col - 1, m, n);
+        dfs(grid, row + 1, col);
+        dfs(grid, row - 1, col);
+        dfs(grid, row, col + 1);
+        dfs(grid, row, col - 1);
     }
 }
