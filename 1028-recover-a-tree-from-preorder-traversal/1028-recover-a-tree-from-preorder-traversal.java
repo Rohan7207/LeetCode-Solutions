@@ -29,6 +29,7 @@ class Solution {
 
         // Count the number of dashes
         int dashCount = 0;
+        
         while ((index + dashCount) < traversal.length() && traversal.charAt(index + dashCount) == '-') {
             dashCount++;
         }
