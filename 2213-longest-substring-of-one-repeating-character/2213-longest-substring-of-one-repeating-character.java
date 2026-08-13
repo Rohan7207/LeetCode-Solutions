@@ -1,3 +1,60 @@
+// Problem: Longest Substring of One Repeating Character
+// Link: https://leetcode.com/problems/longest-substring-of-one-repeating-character/?envType=daily-question&envId=2026-08-13
+// Difficulty: Hard
+
+// Approach:
+// Use a Segment Tree because the string is updated at individual
+// positions and after every update we need the longest substring
+// containing only one repeating character.
+//
+// For every segment-tree node, store:
+//
+// 1. `pre`:
+//    Longest repeating-character prefix of the segment.
+//
+// 2. `suf`:
+//    Longest repeating-character suffix of the segment.
+//
+// 3. `maxLen`:
+//    Longest repeating-character substring anywhere in the segment.
+//
+// 4. `leftChar`:
+//    First character of the segment.
+//
+// 5. `rightChar`:
+//    Last character of the segment.
+//
+// To merge two child segments:
+//
+// - The best answer may be completely inside the left child.
+// - The best answer may be completely inside the right child.
+// - It may cross the boundary between the two children.
+//
+// If the boundary characters are equal, a crossing sequence can
+// be formed using:
+//
+//      left.suf + right.pre
+//
+// Therefore:
+//
+//      maxLen = max(left.maxLen, right.maxLen,
+//                   left.suf + right.pre)
+//
+// The `pre` and `suf` values are also extended when the entire
+// corresponding child consists of the same character.
+//
+// For an update, only one leaf changes. Recalculate all its
+// ancestors using `pushUp()`. The root represents the complete
+// string, so `maxLen[1]` gives the answer after each query.
+
+// Time Complexity:
+// Build: O(n)
+// Each update: O(log n)
+// All queries: O(k log n)
+//
+// Space Complexity: O(n)
+
+
 class Solution {
 
     // Original string as a character array
