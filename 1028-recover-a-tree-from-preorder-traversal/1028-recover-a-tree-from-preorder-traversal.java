@@ -23,25 +23,26 @@ class Solution {
 
     // Brute Force (Recursive with String Manipulation)
     private TreeNode dfs(String traversal, int depth) {
-        if(index > traversal.length()) {
+        if (index > traversal.length()) {
             return null;
         }
 
         // Count the number of dashes
         int dashCount = 0;
-        while((index + dashCount) < traversal.length() && traversal.charAt(index + dashCount) == '-') {
+        while ((index + dashCount) < traversal.length() && traversal.charAt(index + dashCount) == '-') {
             dashCount++;
         }
 
         // If the number of dashes doesn't match the current depth, return null
-        if(dashCount != depth) return null;
+        if (dashCount != depth)
+            return null;
 
         // Move index past the dashes
         index += dashCount;
 
         // Extract the node value
         int value = 0;
-        while(index < traversal.length() && Character.isDigit(traversal.charAt(index))) {
+        while (index < traversal.length() && Character.isDigit(traversal.charAt(index))) {
             value = value * 10 + (traversal.charAt(index++) - '0');
         }
 
