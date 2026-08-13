@@ -23,7 +23,7 @@ class Solution {
     }
 
     private void dfs(TreeNode root, int min, int max) {
-        if(root == null) {
+        if (root == null) {
             return;
         }
 
