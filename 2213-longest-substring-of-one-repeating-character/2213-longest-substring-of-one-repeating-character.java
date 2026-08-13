@@ -29,7 +29,7 @@ class Solution {
         int[] ans = new int[k];
 
         // Process every update
-        for(int i = 0; i < k; i++) {
+        for (int i = 0; i < k; i++) {
             // Update the character at the given index
             update(1, 0, n - 1, queryIndices[i], queryCharacters.charAt(i));
 
@@ -67,7 +67,7 @@ class Solution {
         // If the entire left segment has the same character
         // and the boundary characters are equal,
         // the prefix can continue into the right segment.
-        if(pre[left] == leftLen && rightChar[left] == leftChar[right]) {
+        if (pre[left] == leftLen && rightChar[left] == leftChar[right]) {
             pre[u] = pre[left] + pre[right];
         }
 
@@ -78,7 +78,7 @@ class Solution {
         // If the entire right segment has the same character
         // and the boundary characters are equal,
         // the suffix can continue into the left segment.
-        if(pre[right] == rightLen && rightChar[left] == leftChar[right]) {
+        if (pre[right] == rightLen && rightChar[left] == leftChar[right]) {
             suf[u] = suf[right] + suf[left];
         }
 
@@ -89,7 +89,7 @@ class Solution {
 
         // If boundary characters are equal,
         // a repeating substring can cross the boundary.
-        if(rightChar[left] == leftChar[right]) {
+        if (rightChar[left] == leftChar[right]) {
             maxLen[u] = Math.max(maxLen[u], suf[left] + pre[right]);
         }
     }
@@ -97,7 +97,7 @@ class Solution {
     // Build the segment tree
     private void build(int u, int l, int r) {
         // Leaf node represents one character
-        if(l == r) {
+        if (l == r) {
             pre[u] = 1;
             suf[u] = 1;
             maxLen[u] = 1;
@@ -123,7 +123,7 @@ class Solution {
     // Update the character at position pos
     private void update(int u, int l, int r, int pos, char ch) {
         // Reached the character that needs to be changed
-        if(l == r) {
+        if (l == r) {
             leftChar[u] = ch;
             rightChar[u] = ch;
             return;
@@ -132,7 +132,7 @@ class Solution {
         int mid = (l + r) >> 1;
 
         // Position lies in the left child
-        if(pos <= mid) {
+        if (pos <= mid) {
             update(u << 1, l, mid, pos, ch);
         }
 
