@@ -21,6 +21,7 @@ class Solution {
         return dfs(traversal, 0);
     }
 
+    // Brute Force (Recursive with String Manipulation)
     private TreeNode dfs(String traversal, int depth) {
         if(index > traversal.length()) {
             return null;
