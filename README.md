@@ -1063,6 +1063,7 @@
 | [0993-cousins-in-binary-tree](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0993-cousins-in-binary-tree) |
 | [1020-number-of-enclaves](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1020-number-of-enclaves) |
 | [1022-sum-of-root-to-leaf-binary-numbers](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1022-sum-of-root-to-leaf-binary-numbers) |
+| [1026-maximum-difference-between-node-and-ancestor](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1026-maximum-difference-between-node-and-ancestor) |
 | [1306-jump-game-iii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1306-jump-game-iii) |
 | [2492-minimum-score-of-a-path-between-two-cities](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2492-minimum-score-of-a-path-between-two-cities) |
 | [2685-count-the-number-of-complete-components](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2685-count-the-number-of-complete-components) |
@@ -1130,6 +1131,7 @@
 | [0993-cousins-in-binary-tree](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0993-cousins-in-binary-tree) |
 | [1008-construct-binary-search-tree-from-preorder-traversal](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1008-construct-binary-search-tree-from-preorder-traversal) |
 | [1022-sum-of-root-to-leaf-binary-numbers](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1022-sum-of-root-to-leaf-binary-numbers) |
+| [1026-maximum-difference-between-node-and-ancestor](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1026-maximum-difference-between-node-and-ancestor) |
 | [2196-create-binary-tree-from-descriptions](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2196-create-binary-tree-from-descriptions) |
 | [3558-number-of-ways-to-assign-edge-weights-i](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3558-number-of-ways-to-assign-edge-weights-i) |
 ## Binary Tree
@@ -1190,6 +1192,7 @@
 | [0993-cousins-in-binary-tree](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0993-cousins-in-binary-tree) |
 | [1008-construct-binary-search-tree-from-preorder-traversal](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1008-construct-binary-search-tree-from-preorder-traversal) |
 | [1022-sum-of-root-to-leaf-binary-numbers](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1022-sum-of-root-to-leaf-binary-numbers) |
+| [1026-maximum-difference-between-node-and-ancestor](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1026-maximum-difference-between-node-and-ancestor) |
 | [2196-create-binary-tree-from-descriptions](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2196-create-binary-tree-from-descriptions) |
 ## Binary Search Tree
 |  |
