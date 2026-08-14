@@ -166,6 +166,7 @@
 | [1020-number-of-enclaves](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1020-number-of-enclaves) |
 | [1023-camelcase-matching](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1023-camelcase-matching) |
 | [1029-two-city-scheduling](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1029-two-city-scheduling) |
+| [1051-height-checker](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1051-height-checker) |
 | [1140-stone-game-ii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1140-stone-game-ii) |
 | [1260-shift-2d-grid](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1260-shift-2d-grid) |
 | [1288-remove-covered-intervals](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1288-remove-covered-intervals) |
@@ -727,6 +728,7 @@
 | [0977-squares-of-a-sorted-array](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0977-squares-of-a-sorted-array) |
 | [1005-maximize-sum-of-array-after-k-negations](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1005-maximize-sum-of-array-after-k-negations) |
 | [1029-two-city-scheduling](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1029-two-city-scheduling) |
+| [1051-height-checker](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1051-height-checker) |
 | [1288-remove-covered-intervals](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1288-remove-covered-intervals) |
 | [1331-rank-transform-of-an-array](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1331-rank-transform-of-an-array) |
 | [1464-maximum-product-of-two-elements-in-an-array](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1464-maximum-product-of-two-elements-in-an-array) |
@@ -1437,6 +1439,7 @@
 | ------- |
 | [0561-array-partition](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0561-array-partition) |
 | [0912-sort-an-array](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0912-sort-an-array) |
+| [1051-height-checker](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1051-height-checker) |
 | [1833-maximum-ice-cream-bars](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1833-maximum-ice-cream-bars) |
 | [3517-smallest-palindromic-rearrangement-i](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3517-smallest-palindromic-rearrangement-i) |
 ## Segment Tree
@@ -1513,4 +1516,8 @@
 |  |
 | ------- |
 | [1029-two-city-scheduling](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1029-two-city-scheduling) |
+## Bubble Sort
+|  |
+| ------- |
+| [1051-height-checker](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1051-height-checker) |
 <!---LeetCode Topics End-->
