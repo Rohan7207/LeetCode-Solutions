@@ -290,6 +290,7 @@
 | [2996-smallest-missing-integer-greater-than-sequential-prefix-sum](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2996-smallest-missing-integer-greater-than-sequential-prefix-sum) |
 | [3016-minimum-number-of-pushes-to-type-word-ii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3016-minimum-number-of-pushes-to-type-word-ii) |
 | [3020-find-the-maximum-number-of-elements-in-subset](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3020-find-the-maximum-number-of-elements-in-subset) |
+| [3090-maximum-length-substring-with-two-occurrences](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3090-maximum-length-substring-with-two-occurrences) |
 | [3120-count-the-number-of-special-characters-i](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3120-count-the-number-of-special-characters-i) |
 | [3121-count-the-number-of-special-characters-ii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3121-count-the-number-of-special-characters-ii) |
 | [3312-sorted-gcd-pair-queries](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3312-sorted-gcd-pair-queries) |
@@ -481,6 +482,7 @@
 | [2833-furthest-point-from-origin](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2833-furthest-point-from-origin) |
 | [3014-minimum-number-of-pushes-to-type-word-i](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3014-minimum-number-of-pushes-to-type-word-i) |
 | [3016-minimum-number-of-pushes-to-type-word-ii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3016-minimum-number-of-pushes-to-type-word-ii) |
+| [3090-maximum-length-substring-with-two-occurrences](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3090-maximum-length-substring-with-two-occurrences) |
 | [3120-count-the-number-of-special-characters-i](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3120-count-the-number-of-special-characters-i) |
 | [3121-count-the-number-of-special-characters-ii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3121-count-the-number-of-special-characters-ii) |
 | [3302-find-the-lexicographically-smallest-valid-sequence](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3302-find-the-lexicographically-smallest-valid-sequence) |
@@ -506,6 +508,7 @@
 | [1358-number-of-substrings-containing-all-three-characters](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1358-number-of-substrings-containing-all-three-characters) |
 | [1423-maximum-points-you-can-obtain-from-cards](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1423-maximum-points-you-can-obtain-from-cards) |
 | [2958-length-of-longest-subarray-with-at-most-k-frequency](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2958-length-of-longest-subarray-with-at-most-k-frequency) |
+| [3090-maximum-length-substring-with-two-occurrences](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3090-maximum-length-substring-with-two-occurrences) |
 ## Binary Search
 |  |
 | ------- |
