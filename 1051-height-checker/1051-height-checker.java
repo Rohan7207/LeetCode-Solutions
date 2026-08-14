@@ -4,8 +4,8 @@ class Solution {
         Arrays.sort(heights);
         int count = 0;
 
-        for(int i = 0; i < temp.length; i++) {
-            if(temp[i] != heights[i]) {
+        for (int i = 0; i < temp.length; i++) {
+            if (temp[i] != heights[i]) {
                 count++;
             }
         }
