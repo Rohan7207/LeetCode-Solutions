@@ -10,6 +10,7 @@ class Solution {
                 str.append(c);
             }
         }
+        
         return str.toString();
     }
 }
