@@ -5,7 +5,7 @@ class Solution {
 
         //Add all elements to a heap
         for (int stone : stones) {
-            maxHeap.add(stone);
+            maxHeap.offer(stone);
         }
 
         //Remove two heavy stones from heap and smash them
@@ -13,9 +13,7 @@ class Solution {
             int y = maxHeap.poll(); //heavy stone
             int x = maxHeap.poll(); //second heavy stone
 
-            if (x != y) {
-                maxHeap.add(y - x);
-            }
+            maxHeap.offer(Math.abs(x - y));
         }
 
         //return the remaining element in heap or else 0
