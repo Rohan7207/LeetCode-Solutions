@@ -4,14 +4,14 @@ class Solution {
         int totalXOR = 0;
         boolean allZero = true;
 
-        for(int x : nums) {
+        for (int x : nums) {
             totalXOR ^= x;
-            if(x > 0) {
+            if (x > 0) {
                 allZero = false;
             }
         }
 
-        if(totalXOR > 0) {
+        if (totalXOR > 0) {
             return n;
         }
 
