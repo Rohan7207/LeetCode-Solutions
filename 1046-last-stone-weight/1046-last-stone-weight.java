@@ -17,6 +17,6 @@ class Solution {
         }
 
         //return the remaining element in heap or else 0
-        return maxHeap.peek();
+        return maxHeap.isEmpty() ? 0 : maxHeap.peek();
     }
 }
