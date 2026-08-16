@@ -169,6 +169,7 @@
 | [1046-last-stone-weight](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1046-last-stone-weight) |
 | [1051-height-checker](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1051-height-checker) |
 | [1089-duplicate-zeros](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1089-duplicate-zeros) |
+| [1091-shortest-path-in-binary-matrix](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1091-shortest-path-in-binary-matrix) |
 | [1140-stone-game-ii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1140-stone-game-ii) |
 | [1260-shift-2d-grid](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1260-shift-2d-grid) |
 | [1288-remove-covered-intervals](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1288-remove-covered-intervals) |
@@ -941,6 +942,7 @@
 | [0994-rotting-oranges](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0994-rotting-oranges) |
 | [0999-available-captures-for-rook](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0999-available-captures-for-rook) |
 | [1020-number-of-enclaves](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1020-number-of-enclaves) |
+| [1091-shortest-path-in-binary-matrix](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1091-shortest-path-in-binary-matrix) |
 | [1260-shift-2d-grid](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1260-shift-2d-grid) |
 | [1301-number-of-paths-with-max-score](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1301-number-of-paths-with-max-score) |
 | [2812-find-the-safest-path-in-a-grid](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2812-find-the-safest-path-in-a-grid) |
@@ -1291,6 +1293,7 @@
 | [0993-cousins-in-binary-tree](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0993-cousins-in-binary-tree) |
 | [0994-rotting-oranges](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0994-rotting-oranges) |
 | [1020-number-of-enclaves](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1020-number-of-enclaves) |
+| [1091-shortest-path-in-binary-matrix](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1091-shortest-path-in-binary-matrix) |
 | [1306-jump-game-iii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1306-jump-game-iii) |
 | [2492-minimum-score-of-a-path-between-two-cities](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2492-minimum-score-of-a-path-between-two-cities) |
 | [2685-count-the-number-of-complete-components](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2685-count-the-number-of-complete-components) |
