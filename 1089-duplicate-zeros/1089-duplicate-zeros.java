@@ -5,12 +5,13 @@ class Solution {
         int i = 0;
         int j = 0;
 
-        while(i < n && j < n) {
-            if(i < n - 1 && arr[j] == 0) {
+        while (i < n && j < n) {
+            if (i < n - 1 && arr[j] == 0) {
                 ans[i] = 0;
                 i++;
 
-                if(i == n) break;
+                if (i == n)
+                    break;
                 ans[i] = 0;
             } else {
                 ans[i] = arr[j];
