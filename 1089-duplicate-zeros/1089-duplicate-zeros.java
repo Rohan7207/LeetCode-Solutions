@@ -8,16 +8,18 @@ class Solution {
         while(i < n && j < n) {
             if(i < n - 1 && arr[j] == 0) {
                 ans[i] = 0;
-                ans[i + 1] = 0;
-                i += 2;
-                j++;
+                i++;
+
+                if(i == n) break;
+                ans[i] = 0;
             } else {
-                ans[i++] = arr[j++];
+                ans[i] = arr[j];
             }
+
+            i++;
+            j++;
         }
 
-        for(i = 0; i < n; i++) {
-            arr[i] = ans[i];
-        }
+        System.arraycopy(ans, 0, arr, 0, n);
     }
 }
