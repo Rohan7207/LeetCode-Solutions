@@ -168,6 +168,7 @@
 | [1029-two-city-scheduling](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1029-two-city-scheduling) |
 | [1046-last-stone-weight](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1046-last-stone-weight) |
 | [1051-height-checker](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1051-height-checker) |
+| [1089-duplicate-zeros](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1089-duplicate-zeros) |
 | [1140-stone-game-ii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1140-stone-game-ii) |
 | [1260-shift-2d-grid](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1260-shift-2d-grid) |
 | [1288-remove-covered-intervals](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1288-remove-covered-intervals) |
@@ -617,6 +618,7 @@
 | [0962-maximum-width-ramp](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0962-maximum-width-ramp) |
 | [0977-squares-of-a-sorted-array](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0977-squares-of-a-sorted-array) |
 | [1023-camelcase-matching](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1023-camelcase-matching) |
+| [1089-duplicate-zeros](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1089-duplicate-zeros) |
 | [1877-minimize-maximum-pair-sum-in-array](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1877-minimize-maximum-pair-sum-in-array) |
 | [2095-delete-the-middle-node-of-a-linked-list](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2095-delete-the-middle-node-of-a-linked-list) |
 | [2130-maximum-twin-sum-of-a-linked-list](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2130-maximum-twin-sum-of-a-linked-list) |
