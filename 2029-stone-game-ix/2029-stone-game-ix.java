@@ -1,3 +1,36 @@
+// Problem : Stone Game IX
+// Link : https://leetcode.com/problems/stone-game-ix/?envType=daily-question&envId=2026-08-16
+// Difficulty : Medium
+
+// Approach:
+// Only the remainder of each stone when divided by 3 matters,
+// because the player loses whenever the sum of removed stones
+// becomes divisible by 3.
+//
+// 1. Count how many stones have each remainder:
+//      count[0] → stone % 3 == 0
+//      count[1] → stone % 3 == 1
+//      count[2] → stone % 3 == 2
+//
+// 2. Remainder-0 stones do not change the current sum modulo 3.
+//    Their main effect is changing the turn order.
+//
+// 3. If count[0] is even:
+//    Alice wins when both remainder-1 and remainder-2 stones exist.
+//
+// 4. If count[0] is odd:
+//    The difference between the number of remainder-1 and remainder-2
+//    stones determines whether Alice can force Bob into the losing move.
+//    Alice wins when:
+//
+//        |count[1] - count[2]| > 2
+//
+// 5. Return the corresponding condition.
+
+// Time Complexity: O(n)
+// Space Complexity: O(1)
+
+
 class Solution {
     public boolean stoneGameIX(int[] stones) {
         int[] count = new int[3];
@@ -13,29 +46,3 @@ class Solution {
         return Math.abs(count[1] - count[2]) > 2;
     }
 }
-
-/*
-    The intuition to remember
-
-Don't memorize the formulas as magic.
-
-Think:
-
-0 → doesn't change the sum
-1 ↔ 2 → determine the game
-
-And:
-
-Even number of 0s
-
-Both remainder types need to exist:
-
-b > 0 && c > 0
-Odd number of 0s
-
-The balance between 1s and 2s matters:
-
-|b - c| > 2
-
-So the final formula comes from analyzing who is forced to make the first bad move, not from a normal greedy choice.
-*/
