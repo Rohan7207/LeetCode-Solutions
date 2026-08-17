@@ -1,3 +1,45 @@
+// Problem: Stone Game V
+// Link: https://leetcode.com/problems/stone-game-v/?envType=daily-question&envId=2026-08-17
+// Difficulty: Hard
+
+// Approach:
+// Use Dynamic Programming + Prefix Sum.
+//
+// The game works on a subarray [left, right]. Alice can split this
+// subarray at every possible position i into:
+//
+//     [left ... i] | [i+1 ... right]
+//
+// 1. Use prefixSum to calculate the sum of any subarray in O(1).
+//
+// 2. Let solve(left, right) represent the maximum score Alice can
+//    obtain from the subarray [left, right].
+//
+// 3. For every possible partition:
+//
+//    - If leftSum < rightSum:
+//      Alice can keep only the left part and gains leftSum.
+//
+//    - If leftSum > rightSum:
+//      Alice can keep only the right part and gains rightSum.
+//
+//    - If leftSum == rightSum:
+//      Alice can choose either side, so take the better option.
+//
+// 4. Add the selected side's sum to the best score obtainable from
+//    that remaining subarray.
+//
+// 5. Store the result in memo[left][right] so the same subproblem
+//    is not solved again.
+//
+// Base case:
+// When left == right, only one stone remains, so no more score can
+// be obtained.
+
+// Time Complexity: O(n³)
+// Space Complexity: O(n²)
+
+
 class Solution {
 
     int[][] memo;
@@ -49,43 +91,5 @@ class Solution {
         return maxScore;
     }
 }
-
-/*
-     int n = stoneValue.length;
-        dp = new int[n][n];
-
-        return dfs(stoneValue, 0, n - 1);
-    }
-
-    private int dfs(int[] stoneValue, int left, int right) {
-        if (left == right) {
-            return 0;
-        }
-
-        if (dp[left][right] != 0) {
-            return dp[left][right];
-        }
-
-        int sum = 0;
-        for (int i = left; i <= right; i++) {
-            sum += stoneValue[i];
-        }
-
-        int suml = 0;
-        for (int i = left; i < right; i++) {
-            suml += stoneValue[i];
-            int sumr = sum - suml;
-
-            if (suml < sumr) {
-                dp[left][right] = Math.max(dp[left][right], dfs(stoneValue, left, i) + suml);
-            } else if (suml > sumr) {
-                dp[left][right] = Math.max(dp[left][right], dfs(stoneValue, i + 1, right) + sumr);
-            } else {
-                dp[left][right] = Math.max(dp[left][right],
-                        Math.max(dfs(stoneValue, left, i), dfs(stoneValue, i + 1, right)) + suml);
-            }
-        }
-
-        return dp[left][right];
     }
 */
