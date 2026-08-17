@@ -10,35 +10,37 @@ class Solution {
         prefixSum = new int[n + 1];
 
         // Compute prefix sums for O(1) subarray sum queries
-        // 0, 6, 8, 11, 15, 20, 25
-        for(int i = 0; i < n; i++) {
+        for (int i = 0; i < n; i++) {
             prefixSum[i + 1] = prefixSum[i] + stoneValue[i];
         }
 
         return solve(0, n - 1);
-    }   
+    }
 
     private int solve(int left, int right) {
         // Base case: only one stone left, game ends (no further score)
-        if(left == right) {
+        if (left == right) {
             return 0;
         }
 
-        if(memo[left][right] != 0) {
+        // Return memoized result if already calculated
+        if (memo[left][right] != 0) {
             return memo[left][right];
         }
 
         int maxScore = 0;
 
-        for(int i = left; i < right; i++) {
+        // Try every partition point k
+        for (int i = left; i < right; i++) {
             int leftSum = prefixSum[i + 1] - prefixSum[left];
             int rightSum = prefixSum[right + 1] - prefixSum[i + 1];
 
-            if(leftSum < rightSum) {
+            if (leftSum < rightSum) {
                 maxScore = Math.max(maxScore, leftSum + solve(left, i));
-            } else if(leftSum > rightSum) {
+            } else if (leftSum > rightSum) {
                 maxScore = Math.max(maxScore, rightSum + solve(i + 1, right));
             } else {
+                // When sums are equal, Alice chooses the side that yields maximum total score
                 maxScore = Math.max(maxScore, leftSum + Math.max(solve(left, i), solve(i + 1, right)));
             }
         }
