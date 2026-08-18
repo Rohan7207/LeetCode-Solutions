@@ -3,13 +3,13 @@ class Solution {
         int n = arr.length;
         Map<Integer, Integer> freq = new HashMap<>();
 
-        for(int num : arr) {
+        for (int num : arr) {
             freq.put(num, freq.getOrDefault(num, 0) + 1);
         }
 
         Set<Integer> set = new HashSet<>();
-        for(int val : freq.values()) {
-            if(!set.add(val)) {
+        for (int val : freq.values()) {
+            if (!set.add(val)) {
                 return false;
             }
         }
