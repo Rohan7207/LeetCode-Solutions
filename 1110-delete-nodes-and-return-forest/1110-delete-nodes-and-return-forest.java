@@ -1,3 +1,36 @@
+// Problem: Delete Nodes And Return Forest
+// Link: https://leetcode.com/problems/delete-nodes-and-return-forest/
+// Difficulty: Medium
+
+// Approach:
+// Use postorder DFS so that the children of a node are processed
+// before deciding whether to delete the current node.
+//
+// 1. Store all values that need to be deleted in a HashSet for O(1)
+//    average-time lookup.
+//
+// 2. Recursively process the left and right subtrees first.
+//
+// 3. After both children are processed, check whether the current
+//    node needs to be deleted.
+//
+// 4. If the current node is deleted:
+//    - Its remaining left child becomes a new tree root, so add it
+//      to the forest.
+//    - Its remaining right child also becomes a new tree root.
+//    - Return null so the parent disconnects this deleted node.
+//
+// 5. If the node is not deleted, return it so it remains connected
+//    to its parent.
+//
+// 6. After DFS finishes, if the original root was not deleted,
+//    add it to the forest.
+
+// Time Complexity: O(n)
+// Space Complexity: O(n)
+//    HashSet + recursion stack + resulting forest.
+
+
 /**
  * Definition for a binary tree node.
  * public class TreeNode {
