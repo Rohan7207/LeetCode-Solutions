@@ -7,12 +7,9 @@ class Solution {
         }
 
         int ans = -1;
-        for(Map.Entry<Integer, Integer> entry : freq.entrySet()) {
-            int val = entry.getKey();
-            int occurence = entry.getValue();
-
-            if(val == occurence) {
-                ans = Math.max(ans, val);
+        for(int num : freq.keySet()) {
+            if(freq.get(num) == num) {
+                ans = Math.max(ans, num);
             }
         }
 
