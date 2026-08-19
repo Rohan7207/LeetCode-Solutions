@@ -2,12 +2,12 @@ class Solution {
     public int findLucky(int[] arr) {
         int[] count = new int[501];
 
-        for(int num : arr) {
+        for (int num : arr) {
             count[num]++;
         }
 
-        for(int i = count.length - 1; i > 0; i--) {
-            if(count[i] != 0 && count[i] == i) {
+        for (int i = count.length - 1; i > 0; i--) {
+            if (count[i] != 0 && count[i] == i) {
                 return i;
             }
         }
