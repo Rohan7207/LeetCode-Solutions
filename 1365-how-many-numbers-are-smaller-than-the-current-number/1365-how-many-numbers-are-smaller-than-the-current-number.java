@@ -12,6 +12,7 @@ class Solution {
         for(int i = 0; i < n; i++) {
             copy[i] = map.get(nums[i]);
         }
+        
         return copy;
     }
 }
