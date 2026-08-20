@@ -172,6 +172,7 @@
 | [1091-shortest-path-in-binary-matrix](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1091-shortest-path-in-binary-matrix) |
 | [1093-statistics-from-a-large-sample](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1093-statistics-from-a-large-sample) |
 | [1110-delete-nodes-and-return-forest](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1110-delete-nodes-and-return-forest) |
+| [1122-relative-sort-array](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1122-relative-sort-array) |
 | [1140-stone-game-ii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1140-stone-game-ii) |
 | [1207-unique-number-of-occurrences](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1207-unique-number-of-occurrences) |
 | [1260-shift-2d-grid](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1260-shift-2d-grid) |
@@ -293,6 +294,7 @@
 | [1002-find-common-characters](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1002-find-common-characters) |
 | [1010-pairs-of-songs-with-total-durations-divisible-by-60](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1010-pairs-of-songs-with-total-durations-divisible-by-60) |
 | [1110-delete-nodes-and-return-forest](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1110-delete-nodes-and-return-forest) |
+| [1122-relative-sort-array](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1122-relative-sort-array) |
 | [1189-maximum-number-of-balloons](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1189-maximum-number-of-balloons) |
 | [1207-unique-number-of-occurrences](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1207-unique-number-of-occurrences) |
 | [1331-rank-transform-of-an-array](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1331-rank-transform-of-an-array) |
@@ -757,6 +759,7 @@
 | [1005-maximize-sum-of-array-after-k-negations](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1005-maximize-sum-of-array-after-k-negations) |
 | [1029-two-city-scheduling](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1029-two-city-scheduling) |
 | [1051-height-checker](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1051-height-checker) |
+| [1122-relative-sort-array](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1122-relative-sort-array) |
 | [1288-remove-covered-intervals](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1288-remove-covered-intervals) |
 | [1331-rank-transform-of-an-array](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1331-rank-transform-of-an-array) |
 | [1365-how-many-numbers-are-smaller-than-the-current-number](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1365-how-many-numbers-are-smaller-than-the-current-number) |
@@ -1486,6 +1489,7 @@
 | [0561-array-partition](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0561-array-partition) |
 | [0912-sort-an-array](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0912-sort-an-array) |
 | [1051-height-checker](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1051-height-checker) |
+| [1122-relative-sort-array](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1122-relative-sort-array) |
 | [1365-how-many-numbers-are-smaller-than-the-current-number](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1365-how-many-numbers-are-smaller-than-the-current-number) |
 | [1833-maximum-ice-cream-bars](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1833-maximum-ice-cream-bars) |
 | [3517-smallest-palindromic-rearrangement-i](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3517-smallest-palindromic-rearrangement-i) |
@@ -1523,6 +1527,7 @@
 |  |
 | ------- |
 | [0976-largest-perimeter-triangle](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0976-largest-perimeter-triangle) |
+| [1122-relative-sort-array](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1122-relative-sort-array) |
 ## Polygons
 |  |
 | ------- |
@@ -1572,6 +1577,7 @@
 |  |
 | ------- |
 | [1051-height-checker](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1051-height-checker) |
+| [1122-relative-sort-array](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1122-relative-sort-array) |
 ## Probability and Statistics
 |  |
 | ------- |
