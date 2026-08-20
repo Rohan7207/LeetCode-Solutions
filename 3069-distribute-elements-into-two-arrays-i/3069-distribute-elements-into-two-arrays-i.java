@@ -10,8 +10,8 @@ class Solution {
         int last1 = 0;
         int last2 = 0;
 
-        for(int i = 2; i < n; i++) {
-            if(arr1[last1] > arr2[last2]) {
+        for (int i = 2; i < n; i++) {
+            if (arr1[last1] > arr2[last2]) {
                 last1++;
                 arr1[last1] = nums[i];
             } else {
@@ -22,11 +22,11 @@ class Solution {
 
         int[] res = new int[n];
 
-        for(int i = 0; i <= last1; i++) {
+        for (int i = 0; i <= last1; i++) {
             res[i] = arr1[i];
         }
 
-        for(int i = 0; i <= last2; i++) {
+        for (int i = 0; i <= last2; i++) {
             res[last1 + 1 + i] = arr2[i];
         }
 
