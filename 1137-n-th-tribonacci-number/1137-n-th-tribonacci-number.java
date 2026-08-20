@@ -3,7 +3,21 @@ class Solution {
         if(n == 0) return 0;
         if(n == 1 || n == 2) return 1;
 
-        int[] F = new int[38];
+        int a = 0, b = 1, c = 1;
+
+        for(int i = 3; i <= n; i++) {
+            int next = a + b + c;
+            a = b;
+            b = c; 
+            c = next;
+        }
+
+        return c;
+    }
+}
+
+/*
+    int[] F = new int[38];
         F[0] = 0;
         F[1] = 1;
         F[2] = 1;
@@ -13,5 +27,4 @@ class Solution {
         }
 
         return F[n];
-    }
-}
+*/
