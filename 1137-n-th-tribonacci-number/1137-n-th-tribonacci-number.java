@@ -1,3 +1,34 @@
+// Problem: N-th Tribonacci Number
+// Link: https://leetcode.com/problems/n-th-tribonacci-number/
+// Difficulty: Easy
+
+// Approach:
+// Use an iterative Dynamic Programming approach with only three variables.
+//
+// 1. Handle the base cases:
+//      T(0) = 0
+//      T(1) = 1
+//      T(2) = 1
+//
+// 2. Maintain three variables:
+//      a = T(i-3)
+//      b = T(i-2)
+//      c = T(i-1)
+//
+// 3. For every i from 3 to n:
+//      next = a + b + c
+//
+// 4. Shift the variables forward:
+//      a = b
+//      b = c
+//      c = next
+//
+// 5. After the loop, c contains T(n).
+
+// Time Complexity: O(n)
+// Space Complexity: O(1)
+
+
 class Solution {
     public int tribonacci(int n) {
         if (n == 0) return 0;
@@ -15,16 +46,3 @@ class Solution {
         return c;
     }
 }
-
-/*
-    int[] F = new int[38];
-        F[0] = 0;
-        F[1] = 1;
-        F[2] = 1;
-
-        for(int i = 3; i <= n; i++) {
-            F[i] = F[i - 3] + F[i - 2] + F[i - 1];
-        }
-
-        return F[n];
-*/
