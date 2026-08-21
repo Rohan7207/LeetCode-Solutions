@@ -1129,6 +1129,7 @@
 | [1028-recover-a-tree-from-preorder-traversal](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1028-recover-a-tree-from-preorder-traversal) |
 | [1080-insufficient-nodes-in-root-to-leaf-paths](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1080-insufficient-nodes-in-root-to-leaf-paths) |
 | [1110-delete-nodes-and-return-forest](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1110-delete-nodes-and-return-forest) |
+| [1161-maximum-level-sum-of-a-binary-tree](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1161-maximum-level-sum-of-a-binary-tree) |
 | [1306-jump-game-iii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1306-jump-game-iii) |
 | [2492-minimum-score-of-a-path-between-two-cities](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2492-minimum-score-of-a-path-between-two-cities) |
 | [2685-count-the-number-of-complete-components](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2685-count-the-number-of-complete-components) |
@@ -1200,6 +1201,7 @@
 | [1028-recover-a-tree-from-preorder-traversal](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1028-recover-a-tree-from-preorder-traversal) |
 | [1080-insufficient-nodes-in-root-to-leaf-paths](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1080-insufficient-nodes-in-root-to-leaf-paths) |
 | [1110-delete-nodes-and-return-forest](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1110-delete-nodes-and-return-forest) |
+| [1161-maximum-level-sum-of-a-binary-tree](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1161-maximum-level-sum-of-a-binary-tree) |
 | [2196-create-binary-tree-from-descriptions](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2196-create-binary-tree-from-descriptions) |
 | [3558-number-of-ways-to-assign-edge-weights-i](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3558-number-of-ways-to-assign-edge-weights-i) |
 ## Binary Tree
@@ -1264,6 +1266,7 @@
 | [1028-recover-a-tree-from-preorder-traversal](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1028-recover-a-tree-from-preorder-traversal) |
 | [1080-insufficient-nodes-in-root-to-leaf-paths](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1080-insufficient-nodes-in-root-to-leaf-paths) |
 | [1110-delete-nodes-and-return-forest](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1110-delete-nodes-and-return-forest) |
+| [1161-maximum-level-sum-of-a-binary-tree](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1161-maximum-level-sum-of-a-binary-tree) |
 | [2196-create-binary-tree-from-descriptions](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2196-create-binary-tree-from-descriptions) |
 ## Binary Search Tree
 |  |
@@ -1335,6 +1338,7 @@
 | [0994-rotting-oranges](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0994-rotting-oranges) |
 | [1020-number-of-enclaves](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1020-number-of-enclaves) |
 | [1091-shortest-path-in-binary-matrix](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1091-shortest-path-in-binary-matrix) |
+| [1161-maximum-level-sum-of-a-binary-tree](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1161-maximum-level-sum-of-a-binary-tree) |
 | [1306-jump-game-iii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1306-jump-game-iii) |
 | [2492-minimum-score-of-a-path-between-two-cities](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2492-minimum-score-of-a-path-between-two-cities) |
 | [2685-count-the-number-of-complete-components](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2685-count-the-number-of-complete-components) |
