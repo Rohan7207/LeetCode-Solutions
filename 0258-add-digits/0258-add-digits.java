@@ -1,7 +1,7 @@
 class Solution {
     public int addDigits(int num) {
         // Use digital root property: repeated digit summation of a positive integer is equivalent to 1 + (num - 1) % 9
-        if(num == 0) {
+        if (num == 0) {
             return 0;
         }
 
