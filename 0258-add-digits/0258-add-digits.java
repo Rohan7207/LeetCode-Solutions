@@ -1,6 +1,23 @@
 class Solution {
     public int addDigits(int num) {
-        while(num >= 10) {
+        if(num < 10) {
+            return num;
+        }
+
+        int sum = 0;
+
+        while(num > 0) {
+            sum += num % 10;
+            num /= 10;
+        }
+
+        return addDigits(sum);
+    }
+}
+
+/*
+    Iterative loop:
+      while(num >= 10) {
             int sum = 0;
 
             while(num > 0) {
@@ -12,5 +29,4 @@ class Solution {
         }
 
         return num;
-    }
-}
+*/
