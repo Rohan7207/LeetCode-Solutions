@@ -408,6 +408,7 @@
 | [1103-distribute-candies-to-people](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1103-distribute-candies-to-people) |
 | [1137-n-th-tribonacci-number](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1137-n-th-tribonacci-number) |
 | [1140-stone-game-ii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1140-stone-game-ii) |
+| [1281-subtract-the-product-and-sum-of-digits-of-an-integer](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1281-subtract-the-product-and-sum-of-digits-of-an-integer) |
 | [1344-angle-between-hands-of-a-clock](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1344-angle-between-hands-of-a-clock) |
 | [1406-stone-game-iii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1406-stone-game-iii) |
 | [1510-stone-game-iv](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1510-stone-game-iv) |
