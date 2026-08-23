@@ -417,6 +417,7 @@
 | [1281-subtract-the-product-and-sum-of-digits-of-an-integer](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1281-subtract-the-product-and-sum-of-digits-of-an-integer) |
 | [1295-find-numbers-with-even-number-of-digits](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1295-find-numbers-with-even-number-of-digits) |
 | [1344-angle-between-hands-of-a-clock](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1344-angle-between-hands-of-a-clock) |
+| [1360-number-of-days-between-two-dates](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1360-number-of-days-between-two-dates) |
 | [1406-stone-game-iii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1406-stone-game-iii) |
 | [1510-stone-game-iv](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1510-stone-game-iv) |
 | [1563-stone-game-v](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1563-stone-game-v) |
@@ -524,6 +525,7 @@
 | [1160-find-words-that-can-be-formed-by-characters](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1160-find-words-that-can-be-formed-by-characters) |
 | [1189-maximum-number-of-balloons](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1189-maximum-number-of-balloons) |
 | [1358-number-of-substrings-containing-all-three-characters](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1358-number-of-substrings-containing-all-three-characters) |
+| [1360-number-of-days-between-two-dates](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1360-number-of-days-between-two-dates) |
 | [1796-second-largest-digit-in-a-string](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1796-second-largest-digit-in-a-string) |
 | [1927-sum-game](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1927-sum-game) |
 | [1967-number-of-strings-that-appear-as-substrings-in-word](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1967-number-of-strings-that-appear-as-substrings-in-word) |
