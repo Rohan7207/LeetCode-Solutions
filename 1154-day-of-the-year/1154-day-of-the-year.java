@@ -5,17 +5,17 @@ class Solution {
         int d = Integer.parseInt(date.substring(8, 10));
 
         int[] days = {
-            31, 28, 31, 30, 31, 30,
-            31, 31, 30, 31, 30, 31
+                31, 28, 31, 30, 31, 30,
+                31, 31, 30, 31, 30, 31
         };
 
-        if((y % 400 == 0) || (y % 4 == 0 && y % 100 != 0)) {
+        if ((y % 400 == 0) || (y % 4 == 0 && y % 100 != 0)) {
             days[1] = 29;
         }
 
         int res = d;
 
-        for(int i = 1; i < m; i++) {
+        for (int i = 1; i < m; i++) {
             res += days[i - 1];
         }
 
