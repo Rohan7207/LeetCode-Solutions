@@ -27,7 +27,7 @@ class Solution {
         for (int i = 1; i < month; i++) {
             totalDays += monthDays[i - 1];
 
-            if(i == 2 && leap) {
+            if (i == 2 && leap) {
                 totalDays++;
             }
         }
