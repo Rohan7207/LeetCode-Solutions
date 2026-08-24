@@ -24,12 +24,14 @@ class Solution {
 
         // Mark as visited
         grid[row][col] = 0;
+        int best = 0;
 
-        int best = Math.max(helper(grid, row + 1, col), 
-            Math.max(helper(grid, row - 1, col),
-                Math.max(helper(grid, row, col + 1), helper(grid, row, col - 1))));
+        best = Math.max(best, helper(grid, row + 1, col)); // down
+        best = Math.max(best, helper(grid, row - 1, col)); // up
+        best = Math.max(best, helper(grid, row, col + 1)); //right
+        best = Math.max(best, helper(grid, row, col - 1)); //left
 
-        // Restore
+        // Restore / Backtrack
         grid[row][col] = gold;
 
         return gold + best;
