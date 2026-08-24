@@ -1,3 +1,48 @@
+// Problem: Path with Maximum Gold
+// Link: https://leetcode.com/problems/path-with-maximum-gold/
+// Difficulty: Medium
+
+// Approach:
+// Use DFS + Backtracking.
+//
+// 1. Start DFS from every non-zero cell because the path can
+//    start from any cell containing gold.
+//
+// 2. In `helper()`:
+//    - If the cell is outside the grid or contains 0,
+//      return 0.
+//
+// 3. Store the current cell's gold:
+//
+//      int gold = grid[row][col];
+//
+// 4. Mark the current cell as 0.
+//    This means the cell is visited and cannot be used again
+//    in the current path.
+//
+// 5. Try all 4 possible directions:
+//
+//      down
+//      up
+//      right
+//      left
+//
+//    These are alternative paths, so take only the maximum:
+//
+//      best = max(all four directions)
+//
+// 6. Restore the original gold value.
+//    This is the backtracking step and allows another DFS path
+//    to use this cell.
+//
+// 7. Return:
+//
+//      current gold + best path from this cell
+
+// Time Complexity: O(m * n * 4^(m*n)) in the worst case
+// Space Complexity: O(m*n) for the recursion stack
+
+
 class Solution {
     public int getMaximumGold(int[][] grid) {
         int m = grid.length;
