@@ -1,3 +1,35 @@
+// Problem: Minimum Absolute Difference
+// Link: https://leetcode.com/problems/minimum-absolute-difference/
+// Difficulty: Easy
+
+// Approach:
+// Use Sorting + Greedy/One-Pass comparison.
+//
+// 1. Sort the array in ascending order.
+//
+// 2. After sorting, the minimum absolute difference must occur
+//    between two adjacent elements.
+//
+// 3. Compare every adjacent pair:
+//
+//      arr[i + 1] - arr[i]
+//
+// 4. Maintain `minDiff`, the smallest difference found so far.
+//
+// 5. If the current difference is smaller than `minDiff`:
+//      - Update `minDiff`
+//      - Clear the previous answer pairs
+//      - Add the current pair
+//
+// 6. If the current difference equals `minDiff`:
+//      - Add the current pair as another valid answer.
+//
+// 7. Return all pairs.
+
+// Time Complexity: O(n log n)  → sorting dominates
+// Space Complexity: O(n)      → sorting/answer storage
+
+
 class Solution {
     public List<List<Integer>> minimumAbsDifference(int[] arr) {
         Arrays.sort(arr);
