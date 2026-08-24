@@ -4,9 +4,9 @@ class Solution {
         int n = grid[0].length;
 
         int ans = 0;
-        for(int i = 0; i < m; i++) {
-            for(int j = 0; j < n; j++) {
-                if(grid[i][j] != 0) {
+        for (int i = 0; i < m; i++) {
+            for (int j = 0; j < n; j++) {
+                if (grid[i][j] != 0) {
                     ans = Math.max(ans, helper(grid, i, j));
                 }
             }
@@ -16,7 +16,7 @@ class Solution {
     }
 
     private int helper(int[][] grid, int row, int col) {
-        if(row < 0 || row >= grid.length || col < 0 || col >= grid[0].length || grid[row][col] == 0) {
+        if (row < 0 || row >= grid.length || col < 0 || col >= grid[0].length || grid[row][col] == 0) {
             return 0;
         }
 
