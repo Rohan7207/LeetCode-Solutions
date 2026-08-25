@@ -422,6 +422,7 @@
 | [1154-day-of-the-year](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1154-day-of-the-year) |
 | [1185-day-of-the-week](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1185-day-of-the-week) |
 | [1217-minimum-cost-to-move-chips-to-the-same-position](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1217-minimum-cost-to-move-chips-to-the-same-position) |
+| [1227-airplane-seat-assignment-probability](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1227-airplane-seat-assignment-probability) |
 | [1281-subtract-the-product-and-sum-of-digits-of-an-integer](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1281-subtract-the-product-and-sum-of-digits-of-an-integer) |
 | [1295-find-numbers-with-even-number-of-digits](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1295-find-numbers-with-even-number-of-digits) |
 | [1344-angle-between-hands-of-a-clock](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1344-angle-between-hands-of-a-clock) |
@@ -731,6 +732,7 @@
 | [1137-n-th-tribonacci-number](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1137-n-th-tribonacci-number) |
 | [1140-stone-game-ii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1140-stone-game-ii) |
 | [1143-longest-common-subsequence](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1143-longest-common-subsequence) |
+| [1227-airplane-seat-assignment-probability](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1227-airplane-seat-assignment-probability) |
 | [1301-number-of-paths-with-max-score](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1301-number-of-paths-with-max-score) |
 | [1406-stone-game-iii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1406-stone-game-iii) |
 | [1510-stone-game-iv](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1510-stone-game-iv) |
@@ -1613,6 +1615,7 @@
 |  |
 | ------- |
 | [1025-divisor-game](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1025-divisor-game) |
+| [1227-airplane-seat-assignment-probability](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1227-airplane-seat-assignment-probability) |
 ## Impartial Game
 |  |
 | ------- |
@@ -1638,6 +1641,7 @@
 |  |
 | ------- |
 | [1093-statistics-from-a-large-sample](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1093-statistics-from-a-large-sample) |
+| [1227-airplane-seat-assignment-probability](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1227-airplane-seat-assignment-probability) |
 ## Longest Common Subsequence
 |  |
 | ------- |
