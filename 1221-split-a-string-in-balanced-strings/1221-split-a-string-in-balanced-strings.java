@@ -3,14 +3,14 @@ class Solution {
         int count = 0;
         int ans = 0;
 
-        for(int i = 0; i < s.length(); i++) {
-            if(s.charAt(i) == 'L') {
+        for (int i = 0; i < s.length(); i++) {
+            if (s.charAt(i) == 'L') {
                 count++;
             } else {
                 count--;
             }
 
-            if(count == 0) {
+            if (count == 0) {
                 ans++;
             }
         }
