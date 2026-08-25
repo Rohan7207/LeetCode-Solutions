@@ -1,3 +1,46 @@
+// Problem: Queens That Can Attack the King
+// Link: https://leetcode.com/problems/queens-that-can-attack-the-king/
+// Difficulty: Medium
+
+// Approach:
+// Use a boolean board + DFS in 8 directions.
+//
+// 1. Create an 8 x 8 boolean board because the chessboard is
+//    always fixed at 8 x 8.
+//
+// 2. Mark every queen's position as true:
+//
+//      board[row][col] = true
+//
+// 3. From the king, there are only 8 possible directions:
+//
+//      up, down, left, right,
+//      top-left, top-right,
+//      bottom-left, bottom-right
+//
+// 4. Start one DFS call for each direction.
+//
+// 5. In DFS, move exactly one step using:
+//
+//      row += dr
+//      col += dc
+//
+// 6. If the position is outside the board, stop.
+//
+// 7. If a queen is found:
+//      - Add its position to the answer.
+//      - Stop this direction.
+//
+//    We stop because this is the closest queen in that direction;
+//    another queen behind it is blocked.
+//
+// 8. If there is no queen, recursively continue in the same
+//    direction.
+
+// Time Complexity: O(8 * 8) = O(1)
+// Space Complexity: O(8 * 8) = O(1) for the board, plus O(8) recursion depth.
+
+
 class Solution {
     public List<List<Integer>> queensAttacktheKing(int[][] queens, int[] king) {
         List<List<Integer>> ans = new ArrayList<>();
