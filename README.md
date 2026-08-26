@@ -537,6 +537,7 @@
 | [1160-find-words-that-can-be-formed-by-characters](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1160-find-words-that-can-be-formed-by-characters) |
 | [1189-maximum-number-of-balloons](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1189-maximum-number-of-balloons) |
 | [1221-split-a-string-in-balanced-strings](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1221-split-a-string-in-balanced-strings) |
+| [1234-replace-the-substring-for-balanced-string](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1234-replace-the-substring-for-balanced-string) |
 | [1358-number-of-substrings-containing-all-three-characters](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1358-number-of-substrings-containing-all-three-characters) |
 | [1360-number-of-days-between-two-dates](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1360-number-of-days-between-two-dates) |
 | [1796-second-largest-digit-in-a-string](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1796-second-largest-digit-in-a-string) |
@@ -570,6 +571,7 @@
 | [0904-fruit-into-baskets](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0904-fruit-into-baskets) |
 | [0930-binary-subarrays-with-sum](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0930-binary-subarrays-with-sum) |
 | [1004-max-consecutive-ones-iii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1004-max-consecutive-ones-iii) |
+| [1234-replace-the-substring-for-balanced-string](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1234-replace-the-substring-for-balanced-string) |
 | [1358-number-of-substrings-containing-all-three-characters](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1358-number-of-substrings-containing-all-three-characters) |
 | [1423-maximum-points-you-can-obtain-from-cards](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1423-maximum-points-you-can-obtain-from-cards) |
 | [2904-shortest-and-lexicographically-smallest-beautiful-string](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2904-shortest-and-lexicographically-smallest-beautiful-string) |
