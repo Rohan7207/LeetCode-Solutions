@@ -1,3 +1,47 @@
+// Problem: Replace the Substring for Balanced String
+// Link: https://leetcode.com/problems/replace-the-substring-for-balanced-string/
+// Difficulty: Medium
+
+// Approach:
+// Use Sliding Window + Frequency Counting.
+//
+// 1. A balanced string of length n must have exactly n/4
+//    occurrences of Q, W, E and R.
+//
+// 2. Count the frequency of all characters in the string.
+//
+// 3. First check whether the string is already balanced.
+//    If every character count is <= n/4, return 0.
+//
+// 4. The sliding-window represents the substring that we
+//    will REPLACE.
+//
+// 5. Initially, count[] represents the whole string.
+//
+// 6. Move `right` and put s[right] inside the window.
+//    Therefore, decrease its frequency from count[]:
+//
+//        count[index(s.charAt(right))]--
+//
+//    Now count[] represents only the characters OUTSIDE
+//    the current window.
+//
+// 7. The outside is valid when every character occurs at
+//    most n/4 times.
+//
+// 8. While the outside is valid, shrink the window from
+//    the left because we want the minimum-length window.
+//
+// 9. For every valid window, update:
+//
+//        ans = min(ans, window length)
+//
+// 10. Return ans.
+
+// Time Complexity: O(n)
+// Space Complexity: O(1)
+
+
 class Solution {
     public int balancedString(String s) {
         int n = s.length();
