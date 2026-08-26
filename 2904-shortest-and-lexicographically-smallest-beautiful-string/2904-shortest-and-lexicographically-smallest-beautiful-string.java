@@ -6,7 +6,8 @@ class Solution {
             totalOne += s.charAt(i) - '0'; // If '1' returns 1 or '0' returns 0 according to ASCII
         }
 
-        if (totalOne < k) return "";
+        if (totalOne < k) 
+            return "";
 
         String ans = s;
         int left = 0;
