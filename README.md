@@ -183,6 +183,7 @@
 | [1222-queens-that-can-attack-the-king](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1222-queens-that-can-attack-the-king) |
 | [1232-check-if-it-is-a-straight-line](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1232-check-if-it-is-a-straight-line) |
 | [1252-cells-with-odd-values-in-a-matrix](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1252-cells-with-odd-values-in-a-matrix) |
+| [1254-number-of-closed-islands](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1254-number-of-closed-islands) |
 | [1260-shift-2d-grid](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1260-shift-2d-grid) |
 | [1288-remove-covered-intervals](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1288-remove-covered-intervals) |
 | [1295-find-numbers-with-even-number-of-digits](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1295-find-numbers-with-even-number-of-digits) |
@@ -1030,6 +1031,7 @@
 | [1091-shortest-path-in-binary-matrix](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1091-shortest-path-in-binary-matrix) |
 | [1219-path-with-maximum-gold](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1219-path-with-maximum-gold) |
 | [1222-queens-that-can-attack-the-king](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1222-queens-that-can-attack-the-king) |
+| [1254-number-of-closed-islands](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1254-number-of-closed-islands) |
 | [1260-shift-2d-grid](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1260-shift-2d-grid) |
 | [1301-number-of-paths-with-max-score](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1301-number-of-paths-with-max-score) |
 | [2812-find-the-safest-path-in-a-grid](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2812-find-the-safest-path-in-a-grid) |
@@ -1186,6 +1188,7 @@
 | [1080-insufficient-nodes-in-root-to-leaf-paths](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1080-insufficient-nodes-in-root-to-leaf-paths) |
 | [1110-delete-nodes-and-return-forest](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1110-delete-nodes-and-return-forest) |
 | [1161-maximum-level-sum-of-a-binary-tree](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1161-maximum-level-sum-of-a-binary-tree) |
+| [1254-number-of-closed-islands](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1254-number-of-closed-islands) |
 | [1306-jump-game-iii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1306-jump-game-iii) |
 | [2492-minimum-score-of-a-path-between-two-cities](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2492-minimum-score-of-a-path-between-two-cities) |
 | [2685-count-the-number-of-complete-components](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2685-count-the-number-of-complete-components) |
@@ -1395,6 +1398,7 @@
 | [1020-number-of-enclaves](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1020-number-of-enclaves) |
 | [1091-shortest-path-in-binary-matrix](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1091-shortest-path-in-binary-matrix) |
 | [1161-maximum-level-sum-of-a-binary-tree](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1161-maximum-level-sum-of-a-binary-tree) |
+| [1254-number-of-closed-islands](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1254-number-of-closed-islands) |
 | [1306-jump-game-iii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1306-jump-game-iii) |
 | [2492-minimum-score-of-a-path-between-two-cities](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2492-minimum-score-of-a-path-between-two-cities) |
 | [2685-count-the-number-of-complete-components](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2685-count-the-number-of-complete-components) |
@@ -1414,6 +1418,7 @@
 | [0785-is-graph-bipartite](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0785-is-graph-bipartite) |
 | [0959-regions-cut-by-slashes](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0959-regions-cut-by-slashes) |
 | [1020-number-of-enclaves](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1020-number-of-enclaves) |
+| [1254-number-of-closed-islands](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1254-number-of-closed-islands) |
 | [2492-minimum-score-of-a-path-between-two-cities](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2492-minimum-score-of-a-path-between-two-cities) |
 | [2685-count-the-number-of-complete-components](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2685-count-the-number-of-complete-components) |
 | [2812-find-the-safest-path-in-a-grid](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2812-find-the-safest-path-in-a-grid) |
