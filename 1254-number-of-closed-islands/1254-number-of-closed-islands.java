@@ -1,3 +1,40 @@
+// Problem: Number of Closed Islands
+// Link: https://leetcode.com/problems/number-of-closed-islands/
+// Difficulty: Medium
+
+// Approach:
+// Use DFS to explore each island and determine whether it is closed.
+//
+// 1. Traverse every cell in the grid.
+//
+// 2. When we find a land cell (0), start a DFS.
+//
+// 3. During DFS, mark every visited land cell as 1.
+//    This prevents visiting the same island again.
+//
+// 4. For every direction (up, down, left, right), continue DFS.
+//
+// 5. The important part:
+//    If DFS moves outside the grid, return false.
+//
+//       outside grid → island touches boundary → NOT closed
+//
+//    If DFS reaches water (1), return true because water
+//    does not make the island open.
+//
+// 6. Combine the results of all four directions.
+//
+//    If ANY direction returns false,
+//    the entire island is not closed.
+//
+// 7. If DFS returns true for the starting cell,
+//    the entire island is surrounded by water and does not
+//    touch the boundary, so increment count.
+
+// Time Complexity: O(m * n)
+// Space Complexity: O(m * n) in the worst case because of DFS recursion.
+
+
 class Solution {
     public int closedIsland(int[][] grid) {
         int m = grid.length;
