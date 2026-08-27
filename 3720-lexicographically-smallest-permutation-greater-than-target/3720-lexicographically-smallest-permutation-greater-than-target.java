@@ -1,22 +1,22 @@
 class Solution {
     public String lexGreaterPermutation(String s, String target) {
         int[] count = new int[26];
-        for(char c : s.toCharArray()) {
+        for (char c : s.toCharArray()) {
             count[c - 'a']++;
         }
 
         StringBuilder res = new StringBuilder();
         int n = target.length();
 
-        for(int i = 0; i < n; i++) {
+        for (int i = 0; i < n; i++) {
             int targetChar = target.charAt(i) - 'a';
 
             // Case 1: First try to place the same character as target[i] at the current position
-            if(count[targetChar] > 0) {
+            if (count[targetChar] > 0) {
                 count[targetChar]--;
 
                 // Check if the remaining characters can form a string greater than target[i+1:]
-                if(canFormGreaterString(count, target, i + 1)) {
+                if (canFormGreaterString(count, target, i + 1)) {
                     res.append(target.charAt(i));
                     continue;
                 }
@@ -26,8 +26,8 @@ class Solution {
             }
 
             // Case 2: Place a character greater than target[i] at the current position
-            for(int j = targetChar + 1; j < 26; j++) {
-                if(count[j] > 0) {
+            for (int j = targetChar + 1; j < 26; j++) {
+                if (count[j] > 0) {
                     count[j]--;
                     res.append((char) ('a' + j));
 
@@ -57,9 +57,9 @@ class Solution {
     private String getMaxString(int[] count) {
         StringBuilder ans = new StringBuilder();
 
-        for(int i = 25; i >= 0; i--) {
-            if(count[i] > 0) {
-                ans.append(String.valueOf((char) ('a' + i)). repeat(count[i]));
+        for (int i = 25; i >= 0; i--) {
+            if (count[i] > 0) {
+                ans.append(String.valueOf((char) ('a' + i)).repeat(count[i]));
             }
         }
 
@@ -70,9 +70,9 @@ class Solution {
     private String getMinString(int[] count) {
         StringBuilder ans = new StringBuilder();
 
-        for(int i = 0; i < 26; i++) {
-            if(count[i] > 0) {
-                ans.append(String.valueOf((char) ('a' + i)). repeat(count[i]));
+        for (int i = 0; i < 26; i++) {
+            if (count[i] > 0) {
+                ans.append(String.valueOf((char) ('a' + i)).repeat(count[i]));
             }
         }
 
