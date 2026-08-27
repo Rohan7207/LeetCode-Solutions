@@ -182,6 +182,7 @@
 | [1219-path-with-maximum-gold](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1219-path-with-maximum-gold) |
 | [1222-queens-that-can-attack-the-king](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1222-queens-that-can-attack-the-king) |
 | [1232-check-if-it-is-a-straight-line](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1232-check-if-it-is-a-straight-line) |
+| [1252-cells-with-odd-values-in-a-matrix](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1252-cells-with-odd-values-in-a-matrix) |
 | [1260-shift-2d-grid](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1260-shift-2d-grid) |
 | [1288-remove-covered-intervals](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1288-remove-covered-intervals) |
 | [1295-find-numbers-with-even-number-of-digits](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1295-find-numbers-with-even-number-of-digits) |
@@ -427,6 +428,7 @@
 | [1227-airplane-seat-assignment-probability](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1227-airplane-seat-assignment-probability) |
 | [1232-check-if-it-is-a-straight-line](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1232-check-if-it-is-a-straight-line) |
 | [1247-minimum-swaps-to-make-strings-equal](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1247-minimum-swaps-to-make-strings-equal) |
+| [1252-cells-with-odd-values-in-a-matrix](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1252-cells-with-odd-values-in-a-matrix) |
 | [1281-subtract-the-product-and-sum-of-digits-of-an-integer](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1281-subtract-the-product-and-sum-of-digits-of-an-integer) |
 | [1295-find-numbers-with-even-number-of-digits](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1295-find-numbers-with-even-number-of-digits) |
 | [1344-angle-between-hands-of-a-clock](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1344-angle-between-hands-of-a-clock) |
@@ -1062,6 +1064,7 @@
 | [0999-available-captures-for-rook](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0999-available-captures-for-rook) |
 | [1103-distribute-candies-to-people](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1103-distribute-candies-to-people) |
 | [1222-queens-that-can-attack-the-king](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1222-queens-that-can-attack-the-king) |
+| [1252-cells-with-odd-values-in-a-matrix](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1252-cells-with-odd-values-in-a-matrix) |
 | [1260-shift-2d-grid](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1260-shift-2d-grid) |
 | [2161-partition-array-according-to-given-pivot](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2161-partition-array-according-to-given-pivot) |
 | [3069-distribute-elements-into-two-arrays-i](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3069-distribute-elements-into-two-arrays-i) |
