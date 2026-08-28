@@ -1,3 +1,53 @@
+// Problem: Lexicographically Smallest Palindromic Permutation Greater Than Target
+// Link: https://leetcode.com/problems/lexicographically-smallest-palindromic-permutation-greater-than-target/?envType=daily-question&envId=2026-08-28
+// Difficulty: Hard
+
+// Approach:
+// Use Greedy + Counting + Backtracking.
+//
+// 1. Count the frequency of every character in `s`.
+//
+// 2. Check whether `s` can form a palindrome.
+//    At most one character can have an odd frequency.
+//    The odd-frequency character becomes the middle character.
+//
+// 3. Divide every character frequency by 2.
+//    We only need to construct the left half of the palindrome.
+//    The right half will be its reverse.
+//
+// 4. Build the left half greedily from left to right.
+//
+// 5. At every position:
+//      - First try to place the same character as target[i].
+//      - Temporarily decrease its count.
+//      - Use `check()` to determine whether the remaining
+//        characters can produce a palindrome greater than target.
+//
+// 6. If the choice cannot produce a greater palindrome,
+//    backtrack by restoring the character count.
+//
+// 7. Then try characters greater than target[i].
+//    Choose the smallest available character greater than target[i].
+//
+// 8. Once a greater character is chosen, the palindrome is already
+//    guaranteed to be greater than target.
+//    Fill all remaining characters in ascending order to get
+//    the smallest possible palindrome.
+//
+// 9. Construct the final palindrome:
+//
+//      left + oddChar + reverse(left)
+//
+// 10. If no valid choice can make a palindrome greater than target,
+//     return "".
+
+// Time Complexity: O(n²) in this implementation,
+// because `check()` repeatedly constructs and compares strings.
+//
+// Space Complexity: O(n)
+// for the constructed strings and StringBuilder.
+
+
 class Solution {
     public String lexPalindromicPermutation(String s, String target) {
         int n = s.length();
