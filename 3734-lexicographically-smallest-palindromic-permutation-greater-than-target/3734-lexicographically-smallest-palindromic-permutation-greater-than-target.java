@@ -2,18 +2,22 @@ class Solution {
     public String lexPalindromicPermutation(String s, String target) {
         int n = s.length();
 
+        // Special case: length of 1
         if(n == 1) {
             return s.compareTo(target) > 0 ? s : "";
         }
 
+        // Count the frequency of each character
         int[] count = new int[26];
         for(char c : s.toCharArray()) {
             count[c - 'a']++;
         }
 
+        // Check if it can form a palindrome and record the characters with odd occurrence
         String oddChar = "";
         for(int i = 0; i < 26; i++) {
             if(count[i] % 2 == 1) {
+                // More than one character appears an odd number of times, cannot form a palindrome
                 if(oddChar != "") {
                     return "";
                 }
@@ -21,14 +25,16 @@ class Solution {
                 oddChar = String.valueOf((char) ('a' + i));
             }
 
-            count[i] /= 2;
+            count[i] /= 2;  // It takes only half the characters to construct the left half
         }
 
         StringBuilder prefix = new StringBuilder();
 
+        // Construct the left part of each digit greedily
         for(int i = 0; i < n / 2; i++) {
             boolean found = false;
 
+            // Try to place the smallest character in lexicographical order
             for(int j = 0; j < 26; j++) {
                 if(count[j] == 0) {
                     continue;
@@ -36,18 +42,21 @@ class Solution {
 
                 count[j]--;
                 if(check(prefix.toString(), (char) ('a' + j), count, oddChar, target)) {
+                    // If the constructed palindrome is greater than target, choose the character
                     prefix.append((char) ('a' + j));
                     found = true;
                     break;
                 } else {
-                    count[j]++;
+                    count[j]++;  // Not meeting the conditions, reset the counter
                 }
             }
 
+            // Cannot construct a palindrome larger than target
             if(!found) {
                 return "";
             }
 
+            // prefix is already greater than target
             if(prefix.charAt(i) > target.charAt(i)) {
                 StringBuilder left = new StringBuilder(prefix);
 
@@ -63,11 +72,13 @@ class Solution {
             }
         }
 
+        // Construct the final palindrome string
         String ans = prefix.toString() + oddChar + new StringBuilder(prefix).reverse().toString();
 
         return ans;
     }
 
+    // Checks whether constructed palindrome is lexicographically greater then target or not
     private boolean check(String prefix, char c, int[] count, String oddChar, String target) {
         StringBuilder left = new StringBuilder(prefix);
         left.append(c);
