@@ -1,3 +1,43 @@
+// Problem: Find Winner on a Tic Tac Toe Game
+// Link: https://leetcode.com/problems/find-winner-on-a-tic-tac-toe-game/
+// Difficulty: Easy
+
+// Approach:
+// Use Simulation + Board Checking.
+//
+// 1. Create a 3 x 3 board.
+//
+// 2. Process every move in order.
+//    Since A always moves first:
+//
+//       even index → A → store 1
+//       odd index  → B → store 2
+//
+// 3. After all moves are placed, check the board for a winner.
+//
+// 4. Check all 3 rows.
+//    If all three cells are equal and non-zero,
+//    that player wins.
+//
+// 5. Check all 3 columns using the same logic.
+//
+// 6. Check the 2 diagonals:
+//
+//       [0][0] → [1][1] → [2][2]
+//       [0][2] → [1][1] → [2][0]
+//
+// 7. If a winning line contains:
+//       1 → return "A"
+//       2 → return "B"
+//
+// 8. If nobody wins:
+//       9 moves → "Draw"
+//       fewer than 9 moves → "Pending"
+
+// Time Complexity: O(n)
+// Space Complexity: O(1)
+
+
 class Solution {
     public String tictactoe(int[][] moves) {
         int[][] board = new int[3][3];
@@ -40,51 +80,3 @@ class Solution {
         return "Pending";
     }
 }
-
-/*
-     int count = 0;
-        int[] rows = new int[3];
-        int[] cols = new int[3];
-        int diagonal = 0;
-        int antiDiagonal = 0;
-        boolean playerA = true;
-        int res = 0;
-
-        for (int[] move : moves) {
-            int row = move[0];
-            int col = move[1];
-            int value = playerA ? 1 : -1;
-
-            rows[row] += value;
-            cols[col] += value;
-
-            if (row == col) {
-                diagonal += value;
-            }
-
-            if (row + col == 2) {
-                antiDiagonal += value;
-            }
-
-            if (Math.abs(rows[row]) == 3 ||
-                    Math.abs(cols[col]) == 3 ||
-                    Math.abs(diagonal) == 3 ||
-                    Math.abs(antiDiagonal) == 3) {
-                res = value;
-            }
-
-            playerA = !playerA;
-
-            count++;
-        }
-
-        if (res == 0) {
-            if (count == 9) {
-                return "Draw";
-            } else {
-                return "Pending";
-            }
-        }
-
-        return res == 1 ? "A" : "B";
-*/
