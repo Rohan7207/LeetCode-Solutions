@@ -5,13 +5,13 @@ class Solution {
         int val1 = tomatoSlices - 2 * cheeseSlices;
         int val2 = 4 * cheeseSlices - tomatoSlices;
 
-        if(val1 < 0 || val1 % 2 != 0 || val2 < 0 || val2 % 2 != 0) {
+        if (val1 < 0 || val1 % 2 != 0 || val2 < 0 || val2 % 2 != 0) {
             return ans;
         }
 
         ans.add(val1 / 2);
         ans.add(val2 / 2);
-        
+
         return ans;
     }
 }
