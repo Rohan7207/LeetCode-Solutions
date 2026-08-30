@@ -1,3 +1,40 @@
+// Problem: Lexicographically Largest String After Pair Transformations
+// Link: https://leetcode.com/problems/lexicographically-largest-string-after-pair-transformations/
+// Difficulty: Medium
+
+// Approach:
+// Use Greedy + Frequency Counting + Carry Propagation.
+//
+// 1. For each number x, start with x copies of 'a'.
+//
+// 2. Two identical characters can combine into the next character:
+//
+//      "aa" → "b"
+//      "bb" → "c"
+//      ...
+//      "yy" → "z"
+//
+// 3. Therefore, for every character from 'a' to 'y':
+//
+//      freq[i + 1] += freq[i] / 2
+//      freq[i]     = freq[i] % 2
+//
+//    This is exactly like carrying in binary addition.
+//
+// 4. Character 'z' has no next character, so its remaining
+//    copies stay as they are.
+//
+// 5. After all carries are processed, construct the answer
+//    from 'z' down to 'a'.
+//
+//    This guarantees the lexicographically largest arrangement.
+//
+// 6. Repeat the process independently for every nums[i].
+
+// Time Complexity: O(n + 26n) = O(n)
+// Space Complexity: O(26) = O(1) extra space per number
+
+
 class Solution {
     public String[] largestString(int[] nums) {
         String[] ans = new String[nums.length];
