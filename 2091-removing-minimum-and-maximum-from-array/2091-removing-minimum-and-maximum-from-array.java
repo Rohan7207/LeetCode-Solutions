@@ -6,13 +6,13 @@ class Solution {
         int maxIndex = 0;
         int minIndex = 0;
 
-        for(int i = 0; i < n; i++) {
-            if(nums[i] > max) {
+        for (int i = 0; i < n; i++) {
+            if (nums[i] > max) {
                 max = nums[i];
                 maxIndex = i;
             }
 
-            if(nums[i] < min) {
+            if (nums[i] < min) {
                 min = nums[i];
                 minIndex = i;
             }
