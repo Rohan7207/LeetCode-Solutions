@@ -182,6 +182,7 @@
 | [1219-path-with-maximum-gold](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1219-path-with-maximum-gold) |
 | [1222-queens-that-can-attack-the-king](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1222-queens-that-can-attack-the-king) |
 | [1232-check-if-it-is-a-straight-line](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1232-check-if-it-is-a-straight-line) |
+| [1248-count-number-of-nice-subarrays](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1248-count-number-of-nice-subarrays) |
 | [1252-cells-with-odd-values-in-a-matrix](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1252-cells-with-odd-values-in-a-matrix) |
 | [1254-number-of-closed-islands](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1254-number-of-closed-islands) |
 | [1260-shift-2d-grid](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1260-shift-2d-grid) |
@@ -315,6 +316,7 @@
 | [1171-remove-zero-sum-consecutive-nodes-from-linked-list](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1171-remove-zero-sum-consecutive-nodes-from-linked-list) |
 | [1189-maximum-number-of-balloons](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1189-maximum-number-of-balloons) |
 | [1207-unique-number-of-occurrences](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1207-unique-number-of-occurrences) |
+| [1248-count-number-of-nice-subarrays](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1248-count-number-of-nice-subarrays) |
 | [1275-find-winner-on-a-tic-tac-toe-game](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1275-find-winner-on-a-tic-tac-toe-game) |
 | [1331-rank-transform-of-an-array](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1331-rank-transform-of-an-array) |
 | [1358-number-of-substrings-containing-all-three-characters](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1358-number-of-substrings-containing-all-three-characters) |
@@ -434,6 +436,7 @@
 | [1227-airplane-seat-assignment-probability](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1227-airplane-seat-assignment-probability) |
 | [1232-check-if-it-is-a-straight-line](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1232-check-if-it-is-a-straight-line) |
 | [1247-minimum-swaps-to-make-strings-equal](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1247-minimum-swaps-to-make-strings-equal) |
+| [1248-count-number-of-nice-subarrays](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1248-count-number-of-nice-subarrays) |
 | [1252-cells-with-odd-values-in-a-matrix](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1252-cells-with-odd-values-in-a-matrix) |
 | [1276-number-of-burgers-with-no-waste-of-ingredients](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1276-number-of-burgers-with-no-waste-of-ingredients) |
 | [1281-subtract-the-product-and-sum-of-digits-of-an-integer](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1281-subtract-the-product-and-sum-of-digits-of-an-integer) |
@@ -586,6 +589,7 @@
 | [0930-binary-subarrays-with-sum](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0930-binary-subarrays-with-sum) |
 | [1004-max-consecutive-ones-iii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1004-max-consecutive-ones-iii) |
 | [1234-replace-the-substring-for-balanced-string](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1234-replace-the-substring-for-balanced-string) |
+| [1248-count-number-of-nice-subarrays](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1248-count-number-of-nice-subarrays) |
 | [1358-number-of-substrings-containing-all-three-characters](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1358-number-of-substrings-containing-all-three-characters) |
 | [1423-maximum-points-you-can-obtain-from-cards](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1423-maximum-points-you-can-obtain-from-cards) |
 | [2904-shortest-and-lexicographically-smallest-beautiful-string](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2904-shortest-and-lexicographically-smallest-beautiful-string) |
@@ -1555,6 +1559,7 @@
 | [0974-subarray-sums-divisible-by-k](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0974-subarray-sums-divisible-by-k) |
 | [1004-max-consecutive-ones-iii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1004-max-consecutive-ones-iii) |
 | [1140-stone-game-ii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1140-stone-game-ii) |
+| [1248-count-number-of-nice-subarrays](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1248-count-number-of-nice-subarrays) |
 | [1423-maximum-points-you-can-obtain-from-cards](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1423-maximum-points-you-can-obtain-from-cards) |
 | [1732-find-the-highest-altitude](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1732-find-the-highest-altitude) |
 | [1872-stone-game-viii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1872-stone-game-viii) |
