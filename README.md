@@ -378,6 +378,7 @@
 | [0876-middle-of-the-linked-list](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0876-middle-of-the-linked-list) |
 | [1019-next-greater-node-in-linked-list](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1019-next-greater-node-in-linked-list) |
 | [1171-remove-zero-sum-consecutive-nodes-from-linked-list](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1171-remove-zero-sum-consecutive-nodes-from-linked-list) |
+| [1290-convert-binary-number-in-a-linked-list-to-integer](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1290-convert-binary-number-in-a-linked-list-to-integer) |
 | [2058-find-the-minimum-and-maximum-number-of-nodes-between-critical-points](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2058-find-the-minimum-and-maximum-number-of-nodes-between-critical-points) |
 | [2095-delete-the-middle-node-of-a-linked-list](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2095-delete-the-middle-node-of-a-linked-list) |
 | [2130-maximum-twin-sum-of-a-linked-list](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2130-maximum-twin-sum-of-a-linked-list) |
@@ -441,6 +442,7 @@
 | [1252-cells-with-odd-values-in-a-matrix](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1252-cells-with-odd-values-in-a-matrix) |
 | [1276-number-of-burgers-with-no-waste-of-ingredients](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1276-number-of-burgers-with-no-waste-of-ingredients) |
 | [1281-subtract-the-product-and-sum-of-digits-of-an-integer](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1281-subtract-the-product-and-sum-of-digits-of-an-integer) |
+| [1290-convert-binary-number-in-a-linked-list-to-integer](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1290-convert-binary-number-in-a-linked-list-to-integer) |
 | [1295-find-numbers-with-even-number-of-digits](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1295-find-numbers-with-even-number-of-digits) |
 | [1344-angle-between-hands-of-a-clock](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1344-angle-between-hands-of-a-clock) |
 | [1360-number-of-days-between-two-dates](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1360-number-of-days-between-two-dates) |
