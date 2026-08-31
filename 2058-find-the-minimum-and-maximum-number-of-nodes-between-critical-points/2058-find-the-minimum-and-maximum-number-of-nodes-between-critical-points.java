@@ -1,3 +1,38 @@
+// Problem: Find the Minimum and Maximum Number of Nodes Between Critical Points
+// Link: https://leetcode.com/problems/find-the-minimum-and-maximum-number-of-nodes-between-critical-points/?envType=daily-question&envId=2026-08-31
+// Difficulty: Medium
+
+// Approach:
+// Use Linked List Traversal + Critical Point Tracking.
+//
+// 1. A critical point is a node that is either:
+//      - greater than both its neighbors (local maximum), or
+//      - smaller than both its neighbors (local minimum).
+//
+// 2. Traverse the linked list using three nodes:
+//      prev → curr → next
+//
+// 3. Maintain the position of every node using `pos`.
+//
+// 4. When a critical point is found:
+//      - For the first critical point, store its position in `first`.
+//      - For every next critical point, calculate the distance from
+//        the previous critical point using `pos - temp`.
+//      - Update `min` with the smallest distance.
+//      - Update `temp` to the current critical point.
+//
+// 5. The maximum distance is simply the distance between the first
+//    and last critical points:
+//
+//      max = last - first
+//
+// 6. If fewer than two critical points exist, `last` remains -1,
+//    so return {-1, -1}.
+
+// Time Complexity: O(n)
+// Space Complexity: O(1)
+
+
 /**
  * Definition for singly-linked list.
  * public class ListNode {
