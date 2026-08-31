@@ -13,7 +13,7 @@ class Solution {
         ListNode curr = head;
         int res = 0;
 
-        while(curr != null) {
+        while (curr != null) {
             res = (res << 1) | curr.val;
             curr = curr.next;
         }
@@ -21,3 +21,10 @@ class Solution {
         return res;
     }
 }
+
+/*
+    while(temp!=null){
+        ans = ans * 2 + temp.val;
+        temp = temp.next;
+    }
+*/
