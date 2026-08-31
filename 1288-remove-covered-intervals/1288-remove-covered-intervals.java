@@ -38,7 +38,6 @@ class Solution {
         int remainingCount = 0;
         int maxEnd = 0;
 
-        // [1, 4] [2, 8] [3, 6] 
         for (int[] interval : intervals) {
             if (interval[1] > maxEnd) {
                 remainingCount++;
