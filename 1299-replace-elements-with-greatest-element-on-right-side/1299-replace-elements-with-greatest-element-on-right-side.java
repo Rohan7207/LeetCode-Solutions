@@ -9,7 +9,6 @@ class Solution {
             ans[i] = max;
             max = Math.max(max, arr[i]);
         }
-
         return ans;
     }
 }
