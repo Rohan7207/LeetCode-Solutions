@@ -42,7 +42,7 @@ class Solution {
             curr = curr.next;
         }
 
-        if(min == Integer.MAX_VALUE || first == -1 || last == -1) {
+        if(last == -1) {
             return new int[] {-1, -1};
         }
 
