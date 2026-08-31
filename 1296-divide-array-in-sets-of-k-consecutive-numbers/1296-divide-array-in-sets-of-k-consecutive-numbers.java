@@ -17,6 +17,7 @@ class Solution {
                 continue;
             }
 
+            // num is the smallest currently unused number
             for (int j = 0; j < k; j++) {
                 int curr = num + j;
 
