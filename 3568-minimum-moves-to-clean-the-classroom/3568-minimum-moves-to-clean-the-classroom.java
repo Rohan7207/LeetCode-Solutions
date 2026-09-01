@@ -1,3 +1,61 @@
+// Problem: Minimum Moves to Clean the Classroom
+// Link: https://leetcode.com/problems/minimum-moves-to-clean-the-classroom/?envType=daily-question&envId=2026-09-01
+// Difficulty: Medium
+
+// Approach:
+// Use BFS + Bitmask + State Pruning.
+//
+// 1. Each BFS state represents:
+//      (row, col, collectedLitterMask, remainingEnergy, steps)
+//
+// 2. Assign every litter cell `L` a unique bit using:
+//      1 << cnt
+//
+//    The bitmask tells us which litter cells have already been collected.
+//
+// 3. `full = 1 << cnt` represents the total number of possible masks.
+//    Therefore, `full - 1` is the mask where all litter is collected.
+//
+// 4. Start BFS from `S` with:
+//      mask = 0
+//      energy = given energy
+//      steps = 0
+//
+// 5. From every cell, try all 4 directions.
+//
+// 6. Skip a move if:
+//      - it goes outside the classroom
+//      - it reaches a wall `X`
+//
+// 7. Every normal move consumes one unit of energy.
+//    Moving onto `R` completely restores the energy.
+//
+// 8. When moving onto a litter cell, update the mask:
+//
+//      nmask = curr.mask | litter[nx][ny]
+//
+//    This marks that litter as collected.
+//
+// 9. Use `bestEnergy[row][col][mask]` to store the maximum
+//    energy seen for the same position and collected-litter state.
+//
+//    If we reach the same `(row, col, mask)` with less or equal
+//    energy, that state is useless and can be skipped.
+//
+// 10. BFS explores states in increasing number of steps.
+//     Therefore, the first state with:
+//
+//          mask == full - 1
+//
+//     gives the minimum number of moves.
+//
+// 11. If BFS finishes without collecting all litter, return -1.
+
+// Time Complexity: O(m * n * 2^L)
+// Space Complexity: O(m * n * 2^L)
+// where L = number of litter cells.
+
+
 class Solution {
 
     static final int[] dx = { 0, 1, 0, -1 };
