@@ -1,3 +1,31 @@
+// Problem: Deepest Leaves Sum
+// Link: https://leetcode.com/problems/deepest-leaves-sum/
+// Difficulty: Medium
+
+// Approach:
+// Use DFS + Maximum Depth.
+//
+// 1. First find the maximum depth of the binary tree using DFS.
+//
+// 2. The deepest leaves are exactly the nodes whose depth equals
+//    the maximum depth.
+//
+// 3. Traverse the tree again using `helper()`.
+//
+// 4. Pass the remaining height while moving downward:
+//
+//      left/right → height - 1
+//
+// 5. When `height == 1`, the current node is at the deepest level,
+//    so add its value to `ans`.
+//
+// 6. Return the accumulated sum.
+
+// Time Complexity: O(n)
+// Space Complexity: O(h)
+// where h is the height of the tree.
+
+
 /**
  * Definition for a binary tree node.
  * public class TreeNode {
@@ -48,86 +76,3 @@ class Solution {
         return Math.max(h1, h2) + 1;
     }
 }
-
-/*
-    public int deepestLeavesSum(TreeNode root) {
-        Queue<TreeNode> q = new LinkedList<>();
-        q.offer(root);
-
-        int sum = 0;
-
-        while (!q.isEmpty()) {
-            int size = q.size();
-            sum = 0;
-
-            for (int i = 0; i < size; i++) {
-                TreeNode curr = q.poll();
-
-                sum += curr.val;
-
-                if (curr.left != null) {
-                    q.offer(curr.left);
-                }
-
-                if (curr.right != null) {
-                    q.offer(curr.right);
-                }
-            }
-        }
-
-        return sum;
-    }
-*/
-
-/*
-    public int deepestLeavesSum(TreeNode root) {
-        int depth = maxDepth(root);
-
-        Queue<TreeNode> q = new LinkedList<>();
-        q.offer(root);
-
-        int level = 1;
-        int sum = 0;
-
-        while (!q.isEmpty()) {
-            int size = q.size();
-
-            if (level == depth) {
-                for (int i = 0; i < size; i++) {
-                    TreeNode curr = q.poll();
-
-                    sum += curr.val;
-                }
-
-                return sum;
-            }
-
-            for (int i = 0; i < size; i++) {
-                TreeNode curr = q.poll();
-
-                if (curr.left != null) {
-                    q.offer(curr.left);
-                }
-
-                if (curr.right != null) {
-                    q.offer(curr.right);
-                }
-            }
-
-            level++;
-        }
-
-        return -1;
-    }
-
-    private int maxDepth(TreeNode root) {
-        if (root == null) {
-            return 0;
-        }
-
-        int h1 = maxDepth(root.left);
-        int h2 = maxDepth(root.right);
-
-        return Math.max(h1, h2) + 1;
-    }
-*/
