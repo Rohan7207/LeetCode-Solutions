@@ -25,11 +25,11 @@ class Solution {
     }
 
     private void helper(TreeNode root, int height) {
-        if(root == null) {
+        if (root == null) {
             return;
         }
 
-        if(height == 1) {
+        if (height == 1) {
             ans += root.val;
         }
 
