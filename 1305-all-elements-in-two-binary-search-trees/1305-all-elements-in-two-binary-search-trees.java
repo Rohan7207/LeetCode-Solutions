@@ -1,3 +1,40 @@
+// Problem: All Elements in Two Binary Search Trees
+// Link: https://leetcode.com/problems/all-elements-in-two-binary-search-trees/
+// Difficulty: Medium
+
+// Approach:
+// Use Inorder Traversal + Two Pointer Merge.
+//
+// 1. Perform inorder traversal on both BSTs.
+//
+// 2. Inorder traversal of a BST gives its elements in sorted order:
+//
+//      root1 → list1 (sorted)
+//      root2 → list2 (sorted)
+//
+// 3. Maintain two pointers:
+//      i → list1
+//      j → list2
+//
+// 4. Compare the current elements of both lists.
+//
+//      list1[i] <= list2[j]
+//          → add list1[i]
+//          → move i
+//
+//      otherwise
+//          → add list2[j]
+//          → move j
+//
+// 5. Once one list is exhausted, add all remaining elements
+//    from the other list.
+//
+// 6. Return the merged sorted list.
+
+// Time Complexity: O(n + m)
+// Space Complexity: O(n + m)
+
+
 /**
  * Definition for a binary tree node.
  * public class TreeNode {
