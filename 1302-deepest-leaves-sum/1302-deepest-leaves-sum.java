@@ -15,6 +15,36 @@
  */
 class Solution {
     public int deepestLeavesSum(TreeNode root) {
+        Queue<TreeNode> q = new LinkedList<>();
+        q.offer(root);
+
+        int sum = 0;
+
+        while (!q.isEmpty()) {
+            int size = q.size();
+            sum = 0;
+
+            for (int i = 0; i < size; i++) {
+                TreeNode curr = q.poll();
+
+                sum += curr.val;
+
+                if (curr.left != null) {
+                    q.offer(curr.left);
+                }
+
+                if (curr.right != null) {
+                    q.offer(curr.right);
+                }
+            }
+        }
+
+        return sum;
+    }
+}
+
+/*
+    public int deepestLeavesSum(TreeNode root) {
         int depth = maxDepth(root);
 
         Queue<TreeNode> q = new LinkedList<>();
@@ -64,4 +94,4 @@ class Solution {
 
         return Math.max(h1, h2) + 1;
     }
-}
+*/
