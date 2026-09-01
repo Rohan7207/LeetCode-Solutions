@@ -1,7 +1,7 @@
 class Solution {
 
-    static final int[] dx = {0, 1, 0, -1};
-    static final int[] dy = {1, 0, -1, 0};
+    static final int[] dx = { 0, 1, 0, -1 };
+    static final int[] dy = { 1, 0, -1, 0 };
 
     public int minMoves(String[] classroom, int energy) {
         int m = classroom.length;
@@ -9,14 +9,14 @@ class Solution {
         int[][] litter = new int[m][n];
         int sx = 0, sy = 0, cnt = 0;
 
-        for(int i = 0; i < m; i++) {
-            for(int j = 0; j < n; j++) {
+        for (int i = 0; i < m; i++) {
+            for (int j = 0; j < n; j++) {
                 char ch = classroom[i].charAt(j);
 
-                if(ch == 'S') {
+                if (ch == 'S') {
                     sx = i;
                     sy = j;
-                } else if(ch == 'L') {
+                } else if (ch == 'L') {
                     litter[i][j] = 1 << cnt;
                     cnt++;
                 }
@@ -26,8 +26,8 @@ class Solution {
         int full = 1 << cnt;
         int[][][] bestEnergy = new int[m][n][full];
 
-        for(int i = 0; i < m; i++) {
-            for(int j = 0; j < n; j++) {
+        for (int i = 0; i < m; i++) {
+            for (int j = 0; j < n; j++) {
                 Arrays.fill(bestEnergy[i][j], -1);
             }
         }
@@ -49,29 +49,29 @@ class Solution {
         Deque<Info> q = new ArrayDeque<>();
         q.addLast(new Info(sx, sy, 0, energy, 0));
 
-        while(!q.isEmpty()) {
+        while (!q.isEmpty()) {
             Info curr = q.removeFirst();
 
-            if(curr.mask == full - 1) {
+            if (curr.mask == full - 1) {
                 return curr.steps;
             }
 
-            if(curr.e == 0) {
+            if (curr.e == 0) {
                 continue;
             }
 
-            for(int d = 0; d < 4; d++) {
+            for (int d = 0; d < 4; d++) {
                 int nx = curr.x + dx[d];
                 int ny = curr.y + dy[d];
 
-                if(nx < 0 || nx >= m || ny < 0 || ny >= n || classroom[nx].charAt(ny) == 'X') {
+                if (nx < 0 || nx >= m || ny < 0 || ny >= n || classroom[nx].charAt(ny) == 'X') {
                     continue;
                 }
 
                 int ne = classroom[nx].charAt(ny) == 'R' ? energy : curr.e - 1;
                 int nmask = curr.mask | litter[nx][ny];
 
-                if(ne > bestEnergy[nx][ny][nmask]) {
+                if (ne > bestEnergy[nx][ny][nmask]) {
                     bestEnergy[nx][ny][nmask] = ne;
                     q.addLast(new Info(nx, ny, nmask, ne, curr.steps + 1));
                 }
@@ -84,7 +84,7 @@ class Solution {
 
 /*
     BFS guarantees the first time we reach a state with all litter collected, it uses the minimum number of moves.
-*/  
+*/
 
 /*
     This is essentially BFS + Bitmask + Energy-state pruning. The important part is understanding what one BFS state represents.
