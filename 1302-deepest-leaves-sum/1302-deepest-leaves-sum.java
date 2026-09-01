@@ -23,11 +23,11 @@ class Solution {
         int level = 1;
         int sum = 0;
 
-        while(!q.isEmpty()) {
+        while (!q.isEmpty()) {
             int size = q.size();
 
-            if(level == depth) {
-                for(int i = 0; i < size; i++) {
+            if (level == depth) {
+                for (int i = 0; i < size; i++) {
                     TreeNode curr = q.poll();
 
                     sum += curr.val;
@@ -36,14 +36,14 @@ class Solution {
                 return sum;
             }
 
-            for(int i = 0; i < size; i++) {
+            for (int i = 0; i < size; i++) {
                 TreeNode curr = q.poll();
 
-                if(curr.left != null) {
+                if (curr.left != null) {
                     q.offer(curr.left);
                 }
 
-                if(curr.right != null) {
+                if (curr.right != null) {
                     q.offer(curr.right);
                 }
             }
@@ -55,7 +55,7 @@ class Solution {
     }
 
     private int maxDepth(TreeNode root) {
-        if(root == null) {
+        if (root == null) {
             return 0;
         }
 
