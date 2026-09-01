@@ -24,8 +24,8 @@ class Solution {
         int i = 0, j = 0;
         List<Integer> ans = new ArrayList<>();
 
-        while(i < list1.size() && j < list2.size()) {
-            if(list1.get(i) <= list2.get(j)) {
+        while (i < list1.size() && j < list2.size()) {
+            if (list1.get(i) <= list2.get(j)) {
                 ans.add(list1.get(i));
                 i++;
             } else {
@@ -34,12 +34,12 @@ class Solution {
             }
         }
 
-        while(i < list1.size()) {
+        while (i < list1.size()) {
             ans.add(list1.get(i));
             i++;
         }
 
-        while(j < list2.size()) {
+        while (j < list2.size()) {
             ans.add(list2.get(j));
             j++;
         }
@@ -48,7 +48,7 @@ class Solution {
     }
 
     private void helper(TreeNode root, List<Integer> list) {
-        if(root == null) {
+        if (root == null) {
             return;
         }
 
