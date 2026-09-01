@@ -14,6 +14,42 @@
  * }
  */
 class Solution {
+
+    int ans = 0;
+
+    public int deepestLeavesSum(TreeNode root) {
+        int height = maxDepth(root);
+
+        helper(root, height);
+        return ans;
+    }
+
+    private void helper(TreeNode root, int height) {
+        if(root == null) {
+            return;
+        }
+
+        if(height == 1) {
+            ans += root.val;
+        }
+
+        helper(root.left, height - 1);
+        helper(root.right, height - 1);
+    }
+
+    private int maxDepth(TreeNode root) {
+        if (root == null) {
+            return 0;
+        }
+
+        int h1 = maxDepth(root.left);
+        int h2 = maxDepth(root.right);
+
+        return Math.max(h1, h2) + 1;
+    }
+}
+
+/*
     public int deepestLeavesSum(TreeNode root) {
         Queue<TreeNode> q = new LinkedList<>();
         q.offer(root);
@@ -41,7 +77,7 @@ class Solution {
 
         return sum;
     }
-}
+*/
 
 /*
     public int deepestLeavesSum(TreeNode root) {
