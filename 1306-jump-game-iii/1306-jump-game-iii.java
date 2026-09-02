@@ -1,18 +1,18 @@
 class Solution {
     public boolean canReach(int[] arr, int start) {
         int n = arr.length;
-
         boolean[] vis = new boolean[n];
         Queue<Integer> q = new ArrayDeque<>();
-
         q.offer(start);
 
-        while(!q.isEmpty()) {
+        while (!q.isEmpty()) {
             int i = q.poll();
 
-            if(i < 0 || i >= n || vis[i]) continue;
+            if (i < 0 || i >= n || vis[i])
+                continue;
 
-            if(arr[i] == 0) return true;
+            if (arr[i] == 0)
+                return true;
 
             vis[i] = true;
 
@@ -36,6 +36,7 @@ Each index behaves like a graph node:
 
 i → i + arr[i]
 i → i - arr[i]
+
 Need to avoid cycles:
 
 visited[i]
