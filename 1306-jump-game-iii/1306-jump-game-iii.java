@@ -1,3 +1,25 @@
+// Problem: Jump Game III
+// Link: https://leetcode.com/problems/jump-game-iii/
+// Difficulty: Medium
+
+ // Approach:
+ // Use BFS + Visited Array.
+ //
+ // 1. Treat each index as a node.
+ // 2. From index i, we can move to:
+ //      i + arr[i]
+ //      i - arr[i]
+ // 3. Start BFS from the given start index.
+ // 4. If an index is outside the array or already visited, skip it.
+ // 5. If arr[i] == 0, we have reached the target → return true.
+ // 6. Mark the current index visited to avoid processing it again.
+ // 7. Add both possible next indices to the queue.
+ // 8. If BFS finishes without finding 0, return false.
+ 
+ // Time Complexity: O(n)
+ // Space Complexity: O(n)
+
+
 class Solution {
     public boolean canReach(int[] arr, int start) {
         int n = arr.length;
@@ -23,38 +45,3 @@ class Solution {
         return false;
     }
 }
-
-/*
-We are given:arr, start
-At every index:jump left OR jump right
-Goal:reach any index having value 0
-This becomes:Graph Reachability
-Use: BFS / DFS + visited set
-
-Key Insight
-Each index behaves like a graph node:
-
-i → i + arr[i]
-i → i - arr[i]
-
-Need to avoid cycles:
-
-visited[i]
-Otherwise:
-
-infinite loop
-
-Start = 5
-
-Index 5 → value 1
-5 - 1 = 4
-5 + 1 = 6
-
-        5
-       / \
-      4   6
-     /
-    1
-     \
-      3 ⭐
-*/
