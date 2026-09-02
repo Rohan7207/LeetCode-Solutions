@@ -1,5 +1,11 @@
 class Solution {
     public boolean uniformArray(int[] nums1) {
+        return true;
+    }
+}
+
+/*
+    public boolean uniformArray(int[] nums1) {
         int oddCount = 0;
         int evenCount = 0;
 
@@ -13,4 +19,4 @@ class Solution {
 
         return oddCount > 0 || evenCount == nums1.length;
     }
-}
+*/
