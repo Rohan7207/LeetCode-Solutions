@@ -566,6 +566,7 @@
 | [1234-replace-the-substring-for-balanced-string](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1234-replace-the-substring-for-balanced-string) |
 | [1247-minimum-swaps-to-make-strings-equal](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1247-minimum-swaps-to-make-strings-equal) |
 | [1249-minimum-remove-to-make-valid-parentheses](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1249-minimum-remove-to-make-valid-parentheses) |
+| [1309-decrypt-string-from-alphabet-to-integer-mapping](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1309-decrypt-string-from-alphabet-to-integer-mapping) |
 | [1358-number-of-substrings-containing-all-three-characters](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1358-number-of-substrings-containing-all-three-characters) |
 | [1360-number-of-days-between-two-dates](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1360-number-of-days-between-two-dates) |
 | [1796-second-largest-digit-in-a-string](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1796-second-largest-digit-in-a-string) |
