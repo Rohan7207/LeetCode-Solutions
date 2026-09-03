@@ -3,17 +3,17 @@ class Solution {
         int size = 0;
         int n = nums.length;
 
-        for(int i = 0; i < n / 2; i++) {
+        for (int i = 0; i < n / 2; i++) {
             size += nums[2 * i];
         }
 
         int[] ans = new int[size];
         int idx = 0;
-        for(int i = 0; i < n / 2; i++) {
+        for (int i = 0; i < n / 2; i++) {
             int freq = nums[2 * i];
             int val = nums[2 * i + 1];
 
-            for(int j = 0; j < freq; j++) {
+            for (int j = 0; j < freq; j++) {
                 ans[idx++] = val;
             }
         }
