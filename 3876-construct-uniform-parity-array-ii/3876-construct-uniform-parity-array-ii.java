@@ -1,3 +1,33 @@
+// Problem: Construct Uniform Parity Array II
+// Link: https://leetcode.com/problems/construct-uniform-parity-array-ii/?envType=daily-question&envId=2026-09-03
+// Difficulty: Medium
+
+ // Approach:
+ // Use Minimum Element + Parity Observation.
+ //
+ // 1. Find the minimum element and check whether all elements are even.
+ //
+ // 2. If all elements are already even, choose every element unchanged.
+ //
+ // 3. If the minimum element is odd:
+ //      - Keep odd elements unchanged.
+ //      - For every even element, subtract the minimum odd element.
+ //      - even - odd = odd
+ //      - Since the minimum is the smallest element, every even element
+ //        is greater than it, so the subtraction is always >= 1.
+ //
+ // 4. If the minimum is even but an odd element exists:
+ //      - The smallest odd element cannot subtract a smaller odd element
+ //        to become even.
+ //      - Therefore, making everything even is impossible.
+ //
+ // 5. Hence, the array is possible if:
+ //      all elements are even OR minimum element is odd.
+ 
+ // Time Complexity: O(n)
+ // Space Complexity: O(1)
+
+
 class Solution {
     public boolean uniformArray(int[] nums1) {
         int min = Integer.MAX_VALUE;
@@ -11,32 +41,6 @@ class Solution {
             }
         }
 
-        //minimum is odd->always possible and if minimum is even -> all elements must be even 
         return allEven || min % 2 == 1;
     }
 }
-
-/*
-    public boolean uniformArray(int[] nums1) {
-        int minOdd = Integer.MAX_VALUE;
-
-        for(int num : nums1) {
-            if(num % 2 != 0) {
-                minOdd = Math.min(minOdd, num);
-            }
-        }
-
-        boolean possibleOdd = true;
-
-        //  Try making every even to odd
-        for(int num : nums1) {
-            if(num % 2 == 0 && num - minOdd < 1) {
-                possibleOdd = false;
-            }
-        }
-
-        boolean possibleEven = minOdd == Integer.MAX_VALUE ? true : false;
-
-        return possibleOdd || possibleEven;
-    }
-*/
