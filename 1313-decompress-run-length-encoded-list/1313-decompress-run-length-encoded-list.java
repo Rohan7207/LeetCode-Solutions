@@ -1,3 +1,31 @@
+// Problem: Decompress Run-Length Encoded List
+// Link: https://leetcode.com/problems/decompress-run-length-encoded-list/
+// Difficulty: Easy
+
+ // Approach:
+ // Use Two-Pass Traversal + Frequency Expansion.
+ //
+ // 1. The array is given in pairs:
+ //      [frequency, value, frequency, value, ...]
+ //
+ // 2. First pass:
+ //      - Visit every frequency.
+ //      - Calculate the total size needed for the result array.
+ //
+ // 3. Create the result array using that calculated size.
+ //
+ // 4. Second pass:
+ //      - Read each frequency-value pair.
+ //      - Add the value to the result exactly `freq` times.
+ //      - Maintain `idx` to track the next available position.
+ //
+ // 5. Return the decompressed array.
+ 
+ // Time Complexity: O(n + k)
+ // Space Complexity: O(k)
+ //      where k is the size of the decompressed array.
+
+
 class Solution {
     public int[] decompressRLElist(int[] nums) {
         int size = 0;
@@ -21,26 +49,3 @@ class Solution {
         return ans;
     }
 }
-
-/*
-    public int[] decompressRLElist(int[] nums) {
-        List<Integer> list = new ArrayList<>();
-
-        for(int i = 0; i < nums.length; i += 2) {
-            int freq = nums[i];
-            int val = nums[i + 1];
-
-            for(int j = 0; j < freq; j++) {
-                list.add(val);
-            }
-        }
-
-        int len = list.size();
-        int[] ans = new int[len];
-        for(int i = 0; i < len; i++) {
-            ans[i] = list.get(i);
-        }
-
-        return ans;
-    }
-*/
