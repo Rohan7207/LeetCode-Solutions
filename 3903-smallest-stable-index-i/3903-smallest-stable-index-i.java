@@ -4,15 +4,15 @@ class Solution {
         int[] prefixMin = new int[n];
         prefixMin[n - 1] = nums[n - 1];
 
-        for(int i = n - 2; i >= 0; i--) {
+        for (int i = n - 2; i >= 0; i--) {
             prefixMin[i] = Math.min(prefixMin[i + 1], nums[i]);
         }
 
         int max = 0;
-        for(int i = 0; i < n; i++) {
+        for (int i = 0; i < n; i++) {
             max = Math.max(max, nums[i]);
 
-            if(max - prefixMin[i] <= k) {
+            if (max - prefixMin[i] <= k) {
                 return i;
             }
         }
