@@ -1,19 +1,17 @@
 class Solution {
     public int[] getNoZeroIntegers(int n) {
-        for(int i = 1; i < n; i++) {
-            if(!(helper(i) && helper(n - i))) {
-                continue;
-            }
-
-            if((i + n - i == n)) {
-                return new int[] {i, n - i};
+        for(int a = 1; a < n; a++) {
+            int b = n - a;
+            
+            if(isNoZero(a) && isNoZero(b)) {
+                return new int[] {a, b};
             }
         }
 
-        return new int[] {-1, -1};
+        return new int[] {};
     }
 
-    private boolean helper(int num) {
+    private boolean isNoZero(int num) {
         while(num > 0) {
             if(num % 10 == 0) {
                 return false;
