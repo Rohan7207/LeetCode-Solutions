@@ -458,6 +458,7 @@
 | [1295-find-numbers-with-even-number-of-digits](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1295-find-numbers-with-even-number-of-digits) |
 | [1304-find-n-unique-integers-sum-up-to-zero](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1304-find-n-unique-integers-sum-up-to-zero) |
 | [1317-convert-integer-to-the-sum-of-two-no-zero-integers](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1317-convert-integer-to-the-sum-of-two-no-zero-integers) |
+| [1323-maximum-69-number](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1323-maximum-69-number) |
 | [1344-angle-between-hands-of-a-clock](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1344-angle-between-hands-of-a-clock) |
 | [1360-number-of-days-between-two-dates](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1360-number-of-days-between-two-dates) |
 | [1406-stone-game-iii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1406-stone-game-iii) |
@@ -938,6 +939,7 @@
 | [1247-minimum-swaps-to-make-strings-equal](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1247-minimum-swaps-to-make-strings-equal) |
 | [1262-greatest-sum-divisible-by-three](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1262-greatest-sum-divisible-by-three) |
 | [1296-divide-array-in-sets-of-k-consecutive-numbers](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1296-divide-array-in-sets-of-k-consecutive-numbers) |
+| [1323-maximum-69-number](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1323-maximum-69-number) |
 | [1386-cinema-seat-allocation](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1386-cinema-seat-allocation) |
 | [1833-maximum-ice-cream-bars](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1833-maximum-ice-cream-bars) |
 | [1846-maximum-element-after-decreasing-and-rearranging](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1846-maximum-element-after-decreasing-and-rearranging) |
