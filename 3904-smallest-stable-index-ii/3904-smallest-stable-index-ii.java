@@ -4,8 +4,8 @@ class Solution {
         int[] suffixMin = new int[n];
 
         int min = Integer.MAX_VALUE;
-        for(int i = n - 1; i >= 0; i--) {
-            if(nums[i] < min) {
+        for (int i = n - 1; i >= 0; i--) {
+            if (nums[i] < min) {
                 min = nums[i];
             }
 
@@ -13,12 +13,12 @@ class Solution {
         }
 
         int max = 0;
-        for(int i = 0; i < n; i++) {
-            if(nums[i] > max) {
+        for (int i = 0; i < n; i++) {
+            if (nums[i] > max) {
                 max = nums[i];
             }
 
-            if(max - suffixMin[i] <= k) {
+            if (max - suffixMin[i] <= k) {
                 return i;
             }
         }
