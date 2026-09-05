@@ -4,7 +4,7 @@ class Solution {
     int[] rank;
 
     public int makeConnected(int n, int[][] connections) {
-        if(connections.length < n - 1) {
+        if (connections.length < n - 1) {
             return -1;
         }
 
@@ -12,18 +12,18 @@ class Solution {
         rank = new int[n];
 
         // Initially, every node is its own parent
-        for(int i = 0; i < n; i++) {
+        for (int i = 0; i < n; i++) {
             parent[i] = i;
         }
 
         int components = n;
-        for(int[] connection : connections) {
+        for (int[] connection : connections) {
             int u = connection[0];
             int v = connection[1];
 
             // If they belong to different components,
             // connect those components.
-            if(union(u, v)) {
+            if (union(u, v)) {
                 components--;
             }
         }
@@ -32,7 +32,7 @@ class Solution {
     }
 
     private int find(int x) {
-        if(parent[x] == x) {
+        if (parent[x] == x) {
             return x;
         }
 
@@ -52,11 +52,9 @@ class Solution {
         // Union by rank
         if (rank[rootA] < rank[rootB]) {
             parent[rootA] = rootB;
-        }
-        else if (rank[rootA] > rank[rootB]) {
+        } else if (rank[rootA] > rank[rootB]) {
             parent[rootB] = rootA;
-        }
-        else {
+        } else {
             parent[rootB] = rootA;
             rank[rootA]++;
         }
