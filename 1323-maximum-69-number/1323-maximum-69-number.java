@@ -1,3 +1,26 @@
+// Problem: Maximum 69 Number
+// Link: https://leetcode.com/problems/maximum-69-number/
+// Difficulty: Easy
+
+// Approach:
+// Use Digit Extraction + Greedy.
+//
+// 1. Traverse the digits from left to right.
+//
+// 2. The number is made only of 6 and 9.
+//    To maximize it, changing the first 6 to 9 gives the
+//    largest possible increase.
+//
+// 3. Change only the first occurrence of 6 to 9.
+//
+// 4. Reconstruct the number from the modified digits.
+//
+// 5. If there is no 6, return the original number.
+
+// Time Complexity: O(log n)
+// Space Complexity: O(log n)
+
+
 class Solution {
     public int maximum69Number(int num) {
         int len = (num == 0) ? 1 : (int) Math.log10(Math.abs(num)) + 1;
@@ -32,25 +55,3 @@ class Solution {
         return res;
     }
 }
-
-/*
-     public int maximum69Number (int num) {
-        int ans=0;
-        String s=String.valueOf(num);
-     StringBuilder sb=new StringBuilder();
-     for(int i=0;i<s.length();i++){
-        char ch=s.charAt(i);
-        if(ch=='6' && ans<1){
-            sb.append('9');
-            ans++;
-        }
-        else{
-            sb.append(ch);
-        }
-     }
-     
-     String s1=sb.toString();
-     return Integer.valueOf(s1);
-
-    }
-*/
