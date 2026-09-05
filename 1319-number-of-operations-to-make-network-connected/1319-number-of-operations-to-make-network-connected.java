@@ -1,3 +1,35 @@
+// Problem: Number of Operations to Make Network Connected
+// Link: https://leetcode.com/problems/number-of-operations-to-make-network-connected/
+// Difficulty: Medium
+
+// Approach:
+// Use Disjoint Set Union (DSU) / Union-Find.
+//
+// 1. If the number of connections is less than n - 1,
+//    connecting all computers is impossible.
+//
+// 2. Initially, every computer is a separate component,
+//    so components = n.
+//
+// 3. Initialize parent[i] = i, meaning every node is its own parent.
+//
+// 4. For every connection [u, v], find the roots of u and v.
+//
+// 5. If the roots are different, merge their components using
+//    union by rank and decrease the component count by 1.
+//
+// 6. If the roots are the same, the computers are already connected,
+//    so that connection is an extra cable.
+//
+// 7. Finally, to connect `components` separate groups, we need
+//    components - 1 cables.
+//
+// 8. Path compression makes future find operations faster.
+
+// Time Complexity: O(n + m α(n))
+// Space Complexity: O(n)
+
+
 class Solution {
 
     int[] parent;
@@ -62,50 +94,3 @@ class Solution {
         return true;
     }
 }
-
-/*
-    public int makeConnected(int n, int[][] connections) {
-        int len = connections.length;
-
-        if (len < n - 1) {
-            return -1;
-        }
-
-        List<List<Integer>> adjList = new ArrayList<>();
-
-        for (int i = 0; i < n; i++) {
-            adjList.add(new ArrayList<>());
-        }
-
-        for (int[] connection : connections) {
-            int u = connection[0];
-            int v = connection[1];
-
-            adjList.get(u).add(v);
-            adjList.get(v).add(u);
-        }
-
-        boolean[] vis = new boolean[n];
-        int components = 0;
-        for (int i = 0; i < n; i++) {
-            if (!vis[i]) {
-                dfs(adjList, i, vis);
-                components++;
-            }
-        }
-
-        return components - 1;
-    }
-
-    private void dfs(List<List<Integer>> adjList, int node, boolean[] vis) {
-        if (vis[node]) {
-            return;
-        }
-
-        vis[node] = true;
-
-        for (int val : adjList.get(node)) {
-            dfs(adjList, val, vis);
-        }
-    }
-*/
