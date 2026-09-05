@@ -1,4 +1,71 @@
 class Solution {
+
+    int[] parent;
+    int[] rank;
+
+    public int makeConnected(int n, int[][] connections) {
+        if(connections.length < n - 1) {
+            return -1;
+        }
+
+        parent = new int[n];
+        rank = new int[n];
+
+        // Initially, every node is its own parent
+        for(int i = 0; i < n; i++) {
+            parent[i] = i;
+        }
+
+        int components = n;
+        for(int[] connection : connections) {
+            int u = connection[0];
+            int v = connection[1];
+
+            // If they belong to different components,
+            // connect those components.
+            if(union(u, v)) {
+                components--;
+            }
+        }
+
+        return components - 1;
+    }
+
+    private int find(int x) {
+        if(parent[x] == x) {
+            return x;
+        }
+
+        // Path compression
+        return parent[x] = find(parent[x]);
+    }
+
+    private boolean union(int a, int b) {
+        int rootA = find(a);
+        int rootB = find(b);
+
+        // Already connected
+        if (rootA == rootB) {
+            return false;
+        }
+
+        // Union by rank
+        if (rank[rootA] < rank[rootB]) {
+            parent[rootA] = rootB;
+        }
+        else if (rank[rootA] > rank[rootB]) {
+            parent[rootB] = rootA;
+        }
+        else {
+            parent[rootB] = rootA;
+            rank[rootA]++;
+        }
+
+        return true;
+    }
+}
+
+/*
     public int makeConnected(int n, int[][] connections) {
         int len = connections.length;
 
@@ -43,12 +110,4 @@ class Solution {
             dfs(adjList, val, vis);
         }
     }
-}
-
-// 1 - 4, 3,
-// 0 - 3, 1, 0
-// 3 - 7, 6
-// 2 - 7, 4
-// 5 - 6, 7
-// 6 - 7,
-// 4 - 7,
+*/
