@@ -15,7 +15,7 @@
  */
 class Solution {
     public TreeNode removeLeafNodes(TreeNode root, int target) {
-        if(root == null) {
+        if (root == null) {
             return null;
         }
 
@@ -23,7 +23,7 @@ class Solution {
         root.right = removeLeafNodes(root.right, target);
 
         // Delete current node if it is now a target leaf, postorder DFS
-        if(root.left == null && root.right == null && root.val == target) {
+        if (root.left == null && root.right == null && root.val == target) {
             return null;
         }
 
