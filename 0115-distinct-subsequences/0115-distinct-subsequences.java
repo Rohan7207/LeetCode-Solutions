@@ -3,6 +3,38 @@ class Solution {
         int m = s.length();
         int n = t.length();
 
+        int[] prev = new int[n + 1];
+
+        // Base cases:
+        prev[0] = 1;
+
+        for(int i = 1; i <= m; i++) {
+            int[] curr = new int[n + 1];
+            curr[0] = 1;
+
+            for(int j = 1; j <= n; j++) {
+                if(s.charAt(i - 1) == t.charAt(j - 1)) {
+                    // dp[m][n] = solve(s, t, dp, m - 1, n - 1) + solve(s, t, dp, m - 1, n);
+                    curr[j] = prev[j - 1] + prev[j];
+                } else {
+                    // dp[m][n] = solve(s, t, dp, m - 1, n);
+                    curr[j] = prev[j];
+                }
+            }
+
+            prev = curr;
+        }
+
+        return prev[n];
+    }
+}
+
+/*
+    Above is optimized code which not uses 2d array leading to O(m * n) and O(n) instead of O(m * n) and O(m * n)
+    public int numDistinct(String s, String t) {
+        int m = s.length();
+        int n = t.length();
+
         int[][] dp = new int[m + 1][n + 1];
 
         for(int[] row : dp) {
@@ -38,9 +70,44 @@ class Solution {
         // return solve(s, t, dp, m, n);
         return dp[m][n];
     }
-}
+*/
 
 /*
+    We can further optimize space of recursion or bottom by using two arrays instead of 2d array
+    How we thought this:
+        Since while calculating dp[i]-> curr row it only depends on dp[i - 1] -> prev row
+        i.e.   dp[i][j] = dp[i - 1][j - 1] + dp[i - 1][j]; and dp[i][j] = dp[i - 1][j];
+
+        so we can maintain two arrays curr = ith row and prev = i - 1 th row
+
+        i.e. 
+        Base cases:
+        prev[0] = 1;
+        curr[0] = 1;
+
+        for(int i = 1; i <= m; i++) {
+            for(int j = 1; j <= n; j++) {
+                if(s.charAt(i - 1) == t.charAt(j - 1)) {
+                    // dp[i][j] = dp[i - 1][j - 1] + dp[i - 1][j];
+
+                    curr[j] = prev[j - 1] + prev[j];
+                } else {
+                    // dp[i][j] = dp[i - 1][j];
+
+                    curr[j] = prev[j - 1];
+                }
+            }
+
+            prev = curr;  bcz now the for next row curr will become prev and next row is curr
+        }
+
+        // return dp[m][n];
+
+            return prev[n];
+*/
+
+/*
+    The overall Time and space of recursion and bottom up is O(m * n) and O(m * n)
     // First Recursion type:
     public int numDistinct(String s, String t) {
         int m = s.length();
