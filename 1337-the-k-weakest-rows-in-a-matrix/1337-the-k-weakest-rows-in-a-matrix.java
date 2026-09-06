@@ -1,3 +1,27 @@
+// Problem: The K Weakest Rows in a Matrix
+// Link: https://leetcode.com/problems/the-k-weakest-rows-in-a-matrix/
+// Difficulty: Easy
+
+// Approach:
+// Use Sorting + Store Row Index with Soldier Count.
+//
+// 1. Count the number of soldiers (1s) in every row.
+//
+// 2. Store both the soldier count and the original row index
+//    together as [count, index].
+//
+// 3. Sort the rows using two conditions:
+//      - Fewer soldiers → weaker row.
+//      - If soldier counts are equal, smaller row index → weaker row.
+//
+// 4. After sorting, take the indices of the first k rows.
+//
+// 5. Return these indices as the answer.
+
+// Time Complexity: O(m × n + m log m)
+// Space Complexity: O(m)
+
+
 class Solution {
     public int[] kWeakestRows(int[][] mat, int k) {
         int m = mat.length;
