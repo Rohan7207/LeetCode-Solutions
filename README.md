@@ -557,6 +557,7 @@
 | [0917-reverse-only-letters](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0917-reverse-only-letters) |
 | [0921-minimum-add-to-make-parentheses-valid](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0921-minimum-add-to-make-parentheses-valid) |
 | [0925-long-pressed-name](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0925-long-pressed-name) |
+| [0940-distinct-subsequences-ii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0940-distinct-subsequences-ii) |
 | [0949-largest-time-for-given-digits](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0949-largest-time-for-given-digits) |
 | [0953-verifying-an-alien-dictionary](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0953-verifying-an-alien-dictionary) |
 | [0988-smallest-string-starting-from-leaf](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0988-smallest-string-starting-from-leaf) |
@@ -782,6 +783,7 @@
 | [0918-maximum-sum-circular-subarray](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0918-maximum-sum-circular-subarray) |
 | [0931-minimum-falling-path-sum](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0931-minimum-falling-path-sum) |
 | [0935-knight-dialer](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0935-knight-dialer) |
+| [0940-distinct-subsequences-ii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0940-distinct-subsequences-ii) |
 | [1025-divisor-game](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1025-divisor-game) |
 | [1137-n-th-tribonacci-number](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1137-n-th-tribonacci-number) |
 | [1140-stone-game-ii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1140-stone-game-ii) |
