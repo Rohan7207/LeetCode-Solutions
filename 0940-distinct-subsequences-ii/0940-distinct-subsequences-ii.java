@@ -10,7 +10,7 @@ class Solution {
         prev = new int[n + 1];
         Arrays.fill(dp, -1);
 
-        for(int i = 1; i <= n; i++) {
+        for (int i = 1; i <= n; i++) {
             int idx = s.charAt(i - 1) - 'a';
 
             prev[i] = lastSeen[idx];
@@ -22,17 +22,17 @@ class Solution {
 
     private int solve(int n) {
         // Base Case
-        if(n == 0) {
-            return 1;  // Empty Subsequence
+        if (n == 0) {
+            return 1; // Empty Subsequence
         }
 
-        if(dp[n] != -1) {
+        if (dp[n] != -1) {
             return dp[n];
         }
 
         int total = (2 * solve(n - 1)) % MOD;
 
-        if(prev[n] != 0) {
+        if (prev[n] != 0) {
             int duplicates = solve(prev[n] - 1);
             total = (total - duplicates + MOD) % MOD;
         }
