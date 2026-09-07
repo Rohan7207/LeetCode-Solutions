@@ -1,6 +1,42 @@
 class Solution {
 
     int MOD = 1000000007;
+    int[] prev;  // prev[n] = last time where nth character was seen [1-based indexing for convience]
+    int[] dp = new int[2001];
+
+    public int distinctSubseqII(String s) {
+        int n = s.length();
+        int[] lastSeen = new int[26];
+        prev = new int[n + 1];
+        Arrays.fill(dp, -1);
+
+        for(int i = 1; i <= n; i++) {
+            int idx = s.charAt(i - 1) - 'a';
+
+            prev[i] = lastSeen[idx];
+            lastSeen[idx] = i;
+        }
+
+        dp[0] = 1;  // Base Case
+        for(int i = 1; i <= n; i++) {
+            int total = (2 * dp[i - 1]) % MOD;
+
+            if(prev[i] != 0) {
+                int duplicates = dp[prev[i] - 1];
+
+                total = (total - duplicates + MOD) % MOD;
+            }
+
+            dp[i] = total;
+        }
+
+        return (dp[n] - 1 + MOD) % MOD;
+    }
+}
+
+/*
+
+    int MOD = 1000000007;
     int[] prev; // prev[n] = last time where nth character was seen [1-based indexing for convience]
     int[] dp = new int[2001];
 
@@ -39,7 +75,28 @@ class Solution {
 
         return dp[n] = total;
     }
-}
+
+    O(n)
+    Bottom up of this code and we used n not index bcz with n or length we can easily convert to bottom up bcz we need only change n to i
+
+    int[] dp, int[] prev;
+    
+    dp[0] = 0; // Base case
+    for(int i = 1; i <= n; i++) {
+        // total = 2 * solve(n - 1)
+        total = (2 * dp[i - 1]) % M;
+
+        if(prev[i] != 0) {
+            duplicate = dp[prev[n] - 1];
+            total = (total - duplicate + M) % M;
+        }
+
+        dp[i] = total;
+    }
+
+    // return (solve(n) - 1 + M) % M;
+    return (dp[n] - 1 + M) % M;  
+*/
 
 
 /*
