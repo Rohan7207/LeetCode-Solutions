@@ -199,6 +199,7 @@
 | [1313-decompress-run-length-encoded-list](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1313-decompress-run-length-encoded-list) |
 | [1331-rank-transform-of-an-array](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1331-rank-transform-of-an-array) |
 | [1337-the-k-weakest-rows-in-a-matrix](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1337-the-k-weakest-rows-in-a-matrix) |
+| [1338-reduce-array-size-to-the-half](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1338-reduce-array-size-to-the-half) |
 | [1365-how-many-numbers-are-smaller-than-the-current-number](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1365-how-many-numbers-are-smaller-than-the-current-number) |
 | [1386-cinema-seat-allocation](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1386-cinema-seat-allocation) |
 | [1394-find-lucky-integer-in-an-array](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1394-find-lucky-integer-in-an-array) |
@@ -331,6 +332,7 @@
 | [1275-find-winner-on-a-tic-tac-toe-game](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1275-find-winner-on-a-tic-tac-toe-game) |
 | [1296-divide-array-in-sets-of-k-consecutive-numbers](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1296-divide-array-in-sets-of-k-consecutive-numbers) |
 | [1331-rank-transform-of-an-array](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1331-rank-transform-of-an-array) |
+| [1338-reduce-array-size-to-the-half](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1338-reduce-array-size-to-the-half) |
 | [1358-number-of-substrings-containing-all-three-characters](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1358-number-of-substrings-containing-all-three-characters) |
 | [1365-how-many-numbers-are-smaller-than-the-current-number](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1365-how-many-numbers-are-smaller-than-the-current-number) |
 | [1386-cinema-seat-allocation](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1386-cinema-seat-allocation) |
@@ -860,6 +862,7 @@
 | [1305-all-elements-in-two-binary-search-trees](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1305-all-elements-in-two-binary-search-trees) |
 | [1331-rank-transform-of-an-array](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1331-rank-transform-of-an-array) |
 | [1337-the-k-weakest-rows-in-a-matrix](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1337-the-k-weakest-rows-in-a-matrix) |
+| [1338-reduce-array-size-to-the-half](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1338-reduce-array-size-to-the-half) |
 | [1365-how-many-numbers-are-smaller-than-the-current-number](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1365-how-many-numbers-are-smaller-than-the-current-number) |
 | [1464-maximum-product-of-two-elements-in-an-array](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1464-maximum-product-of-two-elements-in-an-array) |
 | [1833-maximum-ice-cream-bars](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1833-maximum-ice-cream-bars) |
@@ -951,6 +954,7 @@
 | [1296-divide-array-in-sets-of-k-consecutive-numbers](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1296-divide-array-in-sets-of-k-consecutive-numbers) |
 | [1323-maximum-69-number](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1323-maximum-69-number) |
 | [1328-break-a-palindrome](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1328-break-a-palindrome) |
+| [1338-reduce-array-size-to-the-half](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1338-reduce-array-size-to-the-half) |
 | [1386-cinema-seat-allocation](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1386-cinema-seat-allocation) |
 | [1833-maximum-ice-cream-bars](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1833-maximum-ice-cream-bars) |
 | [1846-maximum-element-after-decreasing-and-rearranging](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1846-maximum-element-after-decreasing-and-rearranging) |
@@ -1022,6 +1026,7 @@
 | [0973-k-closest-points-to-origin](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0973-k-closest-points-to-origin) |
 | [1046-last-stone-weight](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1046-last-stone-weight) |
 | [1337-the-k-weakest-rows-in-a-matrix](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1337-the-k-weakest-rows-in-a-matrix) |
+| [1338-reduce-array-size-to-the-half](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1338-reduce-array-size-to-the-half) |
 | [1464-maximum-product-of-two-elements-in-an-array](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1464-maximum-product-of-two-elements-in-an-array) |
 | [2812-find-the-safest-path-in-a-grid](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2812-find-the-safest-path-in-a-grid) |
 | [3286-find-a-safe-walk-through-a-grid](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3286-find-a-safe-walk-through-a-grid) |
