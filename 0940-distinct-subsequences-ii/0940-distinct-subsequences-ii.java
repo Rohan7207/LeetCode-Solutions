@@ -1,7 +1,7 @@
 class Solution {
 
     int MOD = 1000000007;
-    int[] prev;  // prev[n] = last time where nth character was seen [1-based indexing for convience]
+    int[] prev; // prev[n] = last time where nth character was seen [1-based indexing for convience]
     int[] dp = new int[2001];
 
     public int distinctSubseqII(String s) {
@@ -10,18 +10,18 @@ class Solution {
         prev = new int[n + 1];
         Arrays.fill(dp, -1);
 
-        for(int i = 1; i <= n; i++) {
+        for (int i = 1; i <= n; i++) {
             int idx = s.charAt(i - 1) - 'a';
 
             prev[i] = lastSeen[idx];
             lastSeen[idx] = i;
         }
 
-        dp[0] = 1;  // Base Case
-        for(int i = 1; i <= n; i++) {
+        dp[0] = 1; // Base Case
+        for (int i = 1; i <= n; i++) {
             int total = (2 * dp[i - 1]) % MOD;
 
-            if(prev[i] != 0) {
+            if (prev[i] != 0) {
                 int duplicates = dp[prev[i] - 1];
 
                 total = (total - duplicates + MOD) % MOD;
@@ -97,7 +97,6 @@ class Solution {
     // return (solve(n) - 1 + M) % M;
     return (dp[n] - 1 + M) % M;  
 */
-
 
 /*
     Brute force:
