@@ -14,15 +14,15 @@
  * }
  */
 class Solution {
-    long sum = 0;
-    long product = 1;
+    long totalSum = 0;
+    long maxProduct = 0;
     int MOD = 1000000007;
 
     public int maxProduct(TreeNode root) {
         sumOfTree(root);
         dfs(root);
 
-        return (int) (product % MOD);
+        return (int) (maxProduct % MOD);
     }
 
     private long dfs(TreeNode root) {
@@ -34,7 +34,11 @@ class Solution {
         long right = dfs(root.right);
 
         long currSum = root.val + left + right;
-        product = Math.max(product, (sum - currSum) * currSum);
+        long product = (totalSum - currSum) * currSum;
+
+        if (product > maxProduct) {
+            maxProduct = product;
+        }
 
         return currSum;
     }
@@ -44,7 +48,7 @@ class Solution {
             return;
         }
 
-        sum += root.val;
+        totalSum += root.val;
         sumOfTree(root.left);
         sumOfTree(root.right);
     }
