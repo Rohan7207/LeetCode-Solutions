@@ -26,7 +26,7 @@ class Solution {
     }
 
     private long dfs(TreeNode root) {
-        if(root == null) {
+        if (root == null) {
             return 0;
         }
 
@@ -40,7 +40,7 @@ class Solution {
     }
 
     private void sumOfTree(TreeNode root) {
-        if(root == null) {
+        if (root == null) {
             return;
         }
 
