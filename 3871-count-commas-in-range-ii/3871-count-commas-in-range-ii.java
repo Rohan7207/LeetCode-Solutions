@@ -1,6 +1,21 @@
 class Solution {
     public long countCommas(long n) {
         long res = 0;
+        long start = 1000;
+
+        while(start <= n) {
+            res += (n - start + 1);
+
+            start *= 1000;
+        }
+
+        return res;
+    }
+}
+
+/*
+    public long countCommas(long n) {
+        long res = 0;
         long lower = 1000;
         long commas = 1;
 
@@ -20,11 +35,7 @@ class Solution {
 
         return res;
     }
-}
-
-// 1,000,000,000,000,000
-// 1,000,000,000
-// 1,000,000
+*/
 
 /*
     lower   upper       commas
@@ -42,5 +53,14 @@ class Solution {
 
         lower *= 1000;
         commas += 1;
+    }
+
+    Another approach:
+    Bcz the first commas appears from 3digits onwards and always there is one comma present till n so we will do n - start + 1; and we will update start with 10 ^ 3 to calculate two commas
+    long start = 1000;
+
+    while(start <= n) {
+        res += (n - start + 1);
+        start *= 1000;
     }
 */
