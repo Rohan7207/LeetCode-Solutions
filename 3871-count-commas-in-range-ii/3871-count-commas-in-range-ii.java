@@ -3,7 +3,7 @@ class Solution {
         long res = 0;
         long start = 1000;
 
-        while(start <= n) {
+        while (start <= n) {
             res += (n - start + 1);
 
             start *= 1000;
