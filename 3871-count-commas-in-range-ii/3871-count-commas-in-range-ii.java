@@ -1,6 +1,6 @@
 // Problem: Count Commas in Range II
 // Link: https://leetcode.com/problems/count-commas-in-range-ii/?envType=daily-question&envId=2026-09-09
-// Difficulty: Easy
+// Difficulty: Medium
 
 // Approach:
 // Use Mathematical Counting + Digit-Place Observation.
