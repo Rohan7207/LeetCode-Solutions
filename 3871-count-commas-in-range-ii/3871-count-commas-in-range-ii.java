@@ -1,3 +1,29 @@
+// Problem: Count Commas in Range II
+// Link: https://leetcode.com/problems/count-commas-in-range-ii/?envType=daily-question&envId=2026-09-09
+// Difficulty: Easy
+
+// Approach:
+// Use Mathematical Counting + Digit-Place Observation.
+//
+// 1. A comma appears starting from 1,000.
+// 2. For the thousands place, every number from 1,000 to n
+//    contributes one comma.
+// 3. Starting from 1,000,000, every number contributes another
+//    comma, so we add the count of numbers from 1,000,000 to n.
+// 4. Continue multiplying start by 1000 to handle:
+//      1,000       → 1 comma
+//      1,000,000   → 2 commas
+//      1,000,000,000 → 3 commas
+// 5. For each comma position, add:
+//
+//      n - start + 1
+//
+// 6. Stop when start > n.
+
+// Time Complexity: O(log₁₀ n)
+// Space Complexity: O(1)
+
+
 class Solution {
     public long countCommas(long n) {
         long res = 0;
@@ -12,55 +38,3 @@ class Solution {
         return res;
     }
 }
-
-/*
-    public long countCommas(long n) {
-        long res = 0;
-        long lower = 1000;
-        long commas = 1;
-
-        while (lower <= n) {
-            long upper = (lower * 1000 - 1);
-
-            if (upper > n) {
-                upper = n;
-            }
-
-            long countOfCommas = upper - lower + 1;
-            res += (countOfCommas * commas);
-
-            lower *= 1000;
-            commas += 1;
-        }
-
-        return res;
-    }
-*/
-
-/*
-    lower   upper       commas
-    10^3    10^6 - 1      1
-    10^6    10^9 - 1      2
-    10^9    10^12 - 1     3
-    10^12   10^15 - 1     4
-
-    while(lower <= n) {
-        upper = (lower * 1000 - 1)
-        if(upper > n) upper = n;
-
-        countOfCommas = upper- lower + 1
-        res += (countOfCommas * commas);
-
-        lower *= 1000;
-        commas += 1;
-    }
-
-    Another approach:
-    Bcz the first commas appears from 3digits onwards and always there is one comma present till n so we will do n - start + 1; and we will update start with 10 ^ 3 to calculate two commas
-    long start = 1000;
-
-    while(start <= n) {
-        res += (n - start + 1);
-        start *= 1000;
-    }
-*/
