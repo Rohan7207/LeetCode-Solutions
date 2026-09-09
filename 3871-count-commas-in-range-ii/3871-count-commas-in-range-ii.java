@@ -4,10 +4,10 @@ class Solution {
         long lower = 1000;
         long commas = 1;
 
-        while(lower <= n) {
+        while (lower <= n) {
             long upper = (lower * 1000 - 1);
 
-            if(upper > n) {
+            if (upper > n) {
                 upper = n;
             }
 
