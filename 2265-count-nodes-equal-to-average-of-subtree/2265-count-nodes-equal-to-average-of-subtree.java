@@ -15,6 +15,44 @@
  */
 class Solution {
 
+    class Info {
+        int sum;
+        int count;
+
+        Info(int sum, int count) {
+            this.sum = sum;
+            this.count = count;
+        }
+    }
+
+    int ans = 0;
+
+    public int averageOfSubtree(TreeNode root) {
+        dfs(root);
+
+        return ans;
+    }
+
+    private Info dfs(TreeNode root) {
+        if(root == null) {
+            return new Info(0, 0);
+        }
+
+        Info left = dfs(root.left);
+        Info right = dfs(root.right);
+
+        int sum = left.sum + right.sum + root.val;
+        int count = left.count + right.count + 1;
+
+        if((sum / count) == root.val) {
+            ans++;
+        }
+
+        return new Info(sum, count);
+    }
+}
+
+/*
     int ans = 0;
     Map<TreeNode, Integer> map = new HashMap<>();
 
@@ -56,4 +94,4 @@ class Solution {
 
         return count;
     }
-}
+*/
