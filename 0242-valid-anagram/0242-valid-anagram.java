@@ -14,10 +14,8 @@ class Solution {
             freq[c - 'a']--;
         }
 
-        for(int i = 0; i < s.length(); i++) {
-            int idx = s.charAt(i) - 'a';
-
-            if(freq[idx] != 0) {
+        for(int count : freq) {
+            if(count != 0) {
                 return false;
             }
         }
