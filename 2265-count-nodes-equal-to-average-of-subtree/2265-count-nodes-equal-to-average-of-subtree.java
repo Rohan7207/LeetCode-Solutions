@@ -34,7 +34,7 @@ class Solution {
     }
 
     private Info dfs(TreeNode root) {
-        if(root == null) {
+        if (root == null) {
             return new Info(0, 0);
         }
 
@@ -44,7 +44,7 @@ class Solution {
         int sum = left.sum + right.sum + root.val;
         int count = left.count + right.count + 1;
 
-        if((sum / count) == root.val) {
+        if ((sum / count) == root.val) {
             ans++;
         }
 
