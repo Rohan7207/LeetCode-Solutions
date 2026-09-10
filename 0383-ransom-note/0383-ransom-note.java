@@ -1,21 +1,18 @@
 class Solution {
     public boolean canConstruct(String ransomNote, String magazine) {
-        int[] freq1 = new int[26];
-        int[] freq2 = new int[26];
-
-        for(char ch : ransomNote.toCharArray()) {
-            freq1[ch - 'a']++;
-        }
+        int[] freq = new int[26];
 
         for(char ch : magazine.toCharArray()) {
-            freq2[ch - 'a']++;
+            freq[ch - 'a']++;
         }
 
         for(int i = 0; i < ransomNote.length(); i++) {
-            int idx = ransomNote.charAt(i) - 'a';
-            if(freq1[idx] > freq2[idx]) {
+            char ch = ransomNote.charAt(i);
+            if(freq[ch - 'a'] <= 0) {
                 return false;
             }
+
+            freq[ch - 'a']--;
         }
 
         return true;
