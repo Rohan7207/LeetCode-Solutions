@@ -291,6 +291,7 @@
 | [0202-happy-number](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0202-happy-number) |
 | [0208-implement-trie-prefix-tree](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0208-implement-trie-prefix-tree) |
 | [0217-contains-duplicate](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0217-contains-duplicate) |
+| [0242-valid-anagram](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0242-valid-anagram) |
 | [0268-missing-number](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0268-missing-number) |
 | [0349-intersection-of-two-arrays](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0349-intersection-of-two-arrays) |
 | [0350-intersection-of-two-arrays-ii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0350-intersection-of-two-arrays-ii) |
@@ -545,6 +546,7 @@
 | [0208-implement-trie-prefix-tree](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0208-implement-trie-prefix-tree) |
 | [0211-design-add-and-search-words-data-structure](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0211-design-add-and-search-words-data-structure) |
 | [0224-basic-calculator](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0224-basic-calculator) |
+| [0242-valid-anagram](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0242-valid-anagram) |
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0297-serialize-and-deserialize-binary-tree) |
 | [0332-reconstruct-itinerary](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0332-reconstruct-itinerary) |
 | [0392-is-subsequence](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0392-is-subsequence) |
@@ -835,6 +837,7 @@
 | [0169-majority-element](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0169-majority-element) |
 | [0215-kth-largest-element-in-an-array](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0215-kth-largest-element-in-an-array) |
 | [0217-contains-duplicate](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0217-contains-duplicate) |
+| [0242-valid-anagram](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0242-valid-anagram) |
 | [0268-missing-number](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0268-missing-number) |
 | [0295-find-median-from-data-stream](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0295-find-median-from-data-stream) |
 | [0332-reconstruct-itinerary](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0332-reconstruct-itinerary) |
