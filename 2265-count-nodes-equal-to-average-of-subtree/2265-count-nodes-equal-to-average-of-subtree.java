@@ -1,3 +1,35 @@
+// Problem: Count Nodes Equal to Average of Subtree
+// Link: https://leetcode.com/problems/count-nodes-equal-to-average-of-subtree/?envType=daily-question&envId=2026-09-10
+// Difficulty: Medium
+
+// Approach:
+// Use Postorder DFS + Custom Return Object.
+//
+// 1. For every node, recursively get information from its left and
+//    right subtrees.
+//
+// 2. Each DFS call returns an Info object containing:
+//      - sum   → sum of all values in the subtree
+//      - count → number of nodes in the subtree
+//
+// 3. Combine the left and right information with the current node:
+//
+//      sum   = left.sum + right.sum + root.val
+//      count = left.count + right.count + 1
+//
+// 4. Calculate the average of the current subtree. If it equals
+//    root.val, increment ans.
+//
+// 5. Return the current subtree's sum and count to its parent.
+//
+// 6. Since every node is processed once, this gives the answer
+//    in a single DFS.
+
+// Time Complexity: O(n)
+// Space Complexity: O(h)
+// where h is the height of the tree due to recursion.
+
+
 /**
  * Definition for a binary tree node.
  * public class TreeNode {
@@ -51,47 +83,3 @@ class Solution {
         return new Info(sum, count);
     }
 }
-
-/*
-    int ans = 0;
-    Map<TreeNode, Integer> map = new HashMap<>();
-
-    public int averageOfSubtree(TreeNode root) {
-        countNodes(root);
-        avgOfNodes(root);
-
-        return ans;
-    }
-
-    private int avgOfNodes(TreeNode root) {
-        if(root == null) {
-            return 0;
-        }
-
-        int leftSum = avgOfNodes(root.left);
-        int rightSum = avgOfNodes(root.right);
-
-        int currSum = leftSum + rightSum + root.val;
-        int currCount = map.get(root);
-
-        if((currSum / currCount) == root.val) {
-            ans++;
-        }
-
-        return currSum;
-    }
-
-    private int countNodes(TreeNode root) {
-        if(root == null) {
-            return 0;
-        }
-
-        int left = countNodes(root.left);
-        int right = countNodes(root.right);
-
-        int count = left + right + 1;
-        map.put(root, count);
-
-        return count;
-    }
-*/
