@@ -296,6 +296,7 @@
 | [0349-intersection-of-two-arrays](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0349-intersection-of-two-arrays) |
 | [0350-intersection-of-two-arrays-ii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0350-intersection-of-two-arrays-ii) |
 | [0380-insert-delete-getrandom-o1](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0380-insert-delete-getrandom-o1) |
+| [0383-ransom-note](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0383-ransom-note) |
 | [0448-find-all-numbers-disappeared-in-an-array](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0448-find-all-numbers-disappeared-in-an-array) |
 | [0496-next-greater-element-i](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0496-next-greater-element-i) |
 | [0560-subarray-sum-equals-k](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0560-subarray-sum-equals-k) |
@@ -549,6 +550,7 @@
 | [0242-valid-anagram](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0242-valid-anagram) |
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0297-serialize-and-deserialize-binary-tree) |
 | [0332-reconstruct-itinerary](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0332-reconstruct-itinerary) |
+| [0383-ransom-note](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0383-ransom-note) |
 | [0392-is-subsequence](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0392-is-subsequence) |
 | [0434-number-of-segments-in-a-string](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0434-number-of-segments-in-a-string) |
 | [0520-detect-capital](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0520-detect-capital) |
@@ -1064,6 +1066,7 @@
 |  |
 | ------- |
 | [0169-majority-element](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0169-majority-element) |
+| [0383-ransom-note](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0383-ransom-note) |
 | [0621-task-scheduler](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0621-task-scheduler) |
 | [0914-x-of-a-kind-in-a-deck-of-cards](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0914-x-of-a-kind-in-a-deck-of-cards) |
 | [0945-minimum-increment-to-make-array-unique](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0945-minimum-increment-to-make-array-unique) |
