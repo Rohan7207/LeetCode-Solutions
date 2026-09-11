@@ -1,3 +1,30 @@
+// Problem: Count Negative Numbers in a Sorted Matrix
+// Link: https://leetcode.com/problems/count-negative-numbers-in-a-sorted-matrix/
+// Difficulty: Easy
+
+// Approach:
+// Use binary search to find the first negative number in each sorted row.
+//
+// 1. Since every row is sorted in non-increasing order, all negative
+//    numbers form a suffix of the row.
+//
+// 2. For each row, use binary search to find the first index where
+//    the value becomes negative.
+//
+// 3. If the first negative index is idx, then every element from idx
+//    to the end is negative.
+//
+// 4. Therefore, the number of negative elements in that row is
+//    n - idx.
+//
+// 5. Initialize firstNegativeIndex to arr.length so that a row with
+//    no negative values contributes 0.
+
+// Time Complexity: O(m log n)
+// Space Complexity: O(1)
+// where m = number of rows and n = number of columns.
+    
+
 class Solution {
     public int countNegatives(int[][] grid) {
         int n = grid[0].length;
