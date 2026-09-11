@@ -18,7 +18,8 @@ class ProductOfNumbers {
     }
 
     public int getProduct(int k) {
-        if (k >= list.size()) return 0;
+        if (k >= list.size()) 
+            return 0;
 
         int n = list.size() - 1; // Bcz we added 1
         return list.get(n) / list.get(n - k);
