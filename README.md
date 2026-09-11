@@ -4,8 +4,8 @@
 <!---LeetCode Topics Start-->
 # LeetCode Topics
 ## Array
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0001-two-sum](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0001-two-sum) |
 | [0004-median-of-two-sorted-arrays](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0004-median-of-two-sorted-arrays) |
 | [0011-container-with-most-water](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0011-container-with-most-water) |
@@ -203,6 +203,7 @@
 | [1343-number-of-sub-arrays-of-size-k-and-average-greater-than-or-equal-to-threshold](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1343-number-of-sub-arrays-of-size-k-and-average-greater-than-or-equal-to-threshold) |
 | [1346-check-if-n-and-its-double-exist](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1346-check-if-n-and-its-double-exist) |
 | [1351-count-negative-numbers-in-a-sorted-matrix](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1351-count-negative-numbers-in-a-sorted-matrix) |
+| [1352-product-of-the-last-k-numbers](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1352-product-of-the-last-k-numbers/) | Medium |
 | [1365-how-many-numbers-are-smaller-than-the-current-number](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1365-how-many-numbers-are-smaller-than-the-current-number) |
 | [1386-cinema-seat-allocation](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1386-cinema-seat-allocation) |
 | [1394-find-lucky-integer-in-an-array](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1394-find-lucky-integer-in-an-array) |
@@ -266,8 +267,8 @@
 | [3903-smallest-stable-index-i](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3903-smallest-stable-index-i) |
 | [3904-smallest-stable-index-ii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3904-smallest-stable-index-ii) |
 ## Hash Table
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0001-two-sum](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0001-two-sum) |
 | [0003-longest-substring-without-repeating-characters](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0003-longest-substring-without-repeating-characters) |
 | [0012-integer-to-roman](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0012-integer-to-roman) |
@@ -372,8 +373,8 @@
 | [3737-count-subarrays-with-majority-element-i](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3737-count-subarrays-with-majority-element-i) |
 | [3739-count-subarrays-with-majority-element-ii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3739-count-subarrays-with-majority-element-ii) |
 ## Linked List
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0002-add-two-numbers](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0002-add-two-numbers) |
 | [0019-remove-nth-node-from-end-of-list](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0019-remove-nth-node-from-end-of-list) |
 | [0021-merge-two-sorted-lists](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0021-merge-two-sorted-lists) |
@@ -409,8 +410,8 @@
 | [2095-delete-the-middle-node-of-a-linked-list](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2095-delete-the-middle-node-of-a-linked-list) |
 | [2130-maximum-twin-sum-of-a-linked-list](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2130-maximum-twin-sum-of-a-linked-list) |
 ## Math
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0002-add-two-numbers](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0002-add-two-numbers) |
 | [0007-reverse-integer](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0007-reverse-integer) |
 | [0009-palindrome-number](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0009-palindrome-number) |
@@ -475,6 +476,7 @@
 | [1323-maximum-69-number](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1323-maximum-69-number) |
 | [1342-number-of-steps-to-reduce-a-number-to-zero](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1342-number-of-steps-to-reduce-a-number-to-zero) |
 | [1344-angle-between-hands-of-a-clock](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1344-angle-between-hands-of-a-clock) |
+| [1352-product-of-the-last-k-numbers](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1352-product-of-the-last-k-numbers/) | Medium |
 | [1360-number-of-days-between-two-dates](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1360-number-of-days-between-two-dates) |
 | [1406-stone-game-iii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1406-stone-game-iii) |
 | [1510-stone-game-iv](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1510-stone-game-iv) |
@@ -508,8 +510,8 @@
 | [3875-construct-uniform-parity-array-i](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3875-construct-uniform-parity-array-i) |
 | [3876-construct-uniform-parity-array-ii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3876-construct-uniform-parity-array-ii) |
 ## Recursion
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0002-add-two-numbers](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0002-add-two-numbers) |
 | [0010-regular-expression-matching](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0010-regular-expression-matching) |
 | [0021-merge-two-sorted-lists](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0021-merge-two-sorted-lists) |
@@ -525,8 +527,8 @@
 | [0509-fibonacci-number](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0509-fibonacci-number) |
 | [3483-unique-3-digit-even-numbers](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3483-unique-3-digit-even-numbers) |
 ## String
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0003-longest-substring-without-repeating-characters](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0003-longest-substring-without-repeating-characters) |
 | [0005-longest-palindromic-substring](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0005-longest-palindromic-substring) |
 | [0008-string-to-integer-atoi](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0008-string-to-integer-atoi) |
@@ -628,8 +630,8 @@
 | [3756-concatenate-non-zero-digits-and-multiply-by-sum-ii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3756-concatenate-non-zero-digits-and-multiply-by-sum-ii) |
 | [3838-weighted-word-mapping](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3838-weighted-word-mapping) |
 ## Sliding Window
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0003-longest-substring-without-repeating-characters](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0003-longest-substring-without-repeating-characters) |
 | [0438-find-all-anagrams-in-a-string](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0438-find-all-anagrams-in-a-string) |
 | [0567-permutation-in-string](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0567-permutation-in-string) |
@@ -647,8 +649,8 @@
 | [2958-length-of-longest-subarray-with-at-most-k-frequency](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2958-length-of-longest-subarray-with-at-most-k-frequency) |
 | [3090-maximum-length-substring-with-two-occurrences](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3090-maximum-length-substring-with-two-occurrences) |
 ## Binary Search
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0004-median-of-two-sorted-arrays](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0004-median-of-two-sorted-arrays) |
 | [0033-search-in-rotated-sorted-array](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0033-search-in-rotated-sorted-array) |
 | [0034-find-first-and-last-position-of-element-in-sorted-array](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0034-find-first-and-last-position-of-element-in-sorted-array) |
@@ -686,8 +688,8 @@
 | [3620-network-recovery-pathways](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3620-network-recovery-pathways) |
 | [3633-earliest-finish-time-for-land-and-water-rides-i](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3633-earliest-finish-time-for-land-and-water-rides-i) |
 ## Divide and Conquer
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0004-median-of-two-sorted-arrays](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0004-median-of-two-sorted-arrays) |
 | [0023-merge-k-sorted-lists](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0023-merge-k-sorted-lists) |
 | [0053-maximum-subarray](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0053-maximum-subarray) |
@@ -707,8 +709,8 @@
 | [3737-count-subarrays-with-majority-element-i](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3737-count-subarrays-with-majority-element-i) |
 | [3739-count-subarrays-with-majority-element-ii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3739-count-subarrays-with-majority-element-ii) |
 ## Two Pointers
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0005-longest-palindromic-substring](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0005-longest-palindromic-substring) |
 | [0011-container-with-most-water](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0011-container-with-most-water) |
 | [0015-3sum](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0015-3sum) |
@@ -764,8 +766,8 @@
 | [3734-lexicographically-smallest-palindromic-permutation-greater-than-target](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3734-lexicographically-smallest-palindromic-permutation-greater-than-target) |
 | [3867-sum-of-gcd-of-formed-pairs](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3867-sum-of-gcd-of-formed-pairs) |
 ## Dynamic Programming
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0005-longest-palindromic-substring](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0005-longest-palindromic-substring) |
 | [0010-regular-expression-matching](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0010-regular-expression-matching) |
 | [0022-generate-parentheses](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0022-generate-parentheses) |
@@ -829,16 +831,16 @@
 | [3699-number-of-zigzag-arrays-i](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3699-number-of-zigzag-arrays-i) |
 | [3700-number-of-zigzag-arrays-ii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3700-number-of-zigzag-arrays-ii) |
 ## Trie
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0014-longest-common-prefix](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0014-longest-common-prefix) |
 | [0139-word-break](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0139-word-break) |
 | [0208-implement-trie-prefix-tree](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0208-implement-trie-prefix-tree) |
 | [0211-design-add-and-search-words-data-structure](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0211-design-add-and-search-words-data-structure) |
 | [1023-camelcase-matching](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1023-camelcase-matching) |
 ## Sorting
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0015-3sum](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0015-3sum) |
 | [0018-4sum](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0018-4sum) |
 | [0047-permutations-ii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0047-permutations-ii) |
@@ -909,8 +911,8 @@
 | [3731-find-missing-elements](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3731-find-missing-elements) |
 | [3867-sum-of-gcd-of-formed-pairs](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3867-sum-of-gcd-of-formed-pairs) |
 ## Backtracking
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0017-letter-combinations-of-a-phone-number](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0017-letter-combinations-of-a-phone-number) |
 | [0022-generate-parentheses](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0022-generate-parentheses) |
 | [0037-sudoku-solver](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0037-sudoku-solver) |
@@ -934,8 +936,8 @@
 | [1219-path-with-maximum-gold](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1219-path-with-maximum-gold) |
 | [3348-smallest-divisible-digit-product-ii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3348-smallest-divisible-digit-product-ii) |
 ## Enumeration
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0204-count-primes](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0204-count-primes) |
 | [0845-longest-mountain-in-array](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0845-longest-mountain-in-array) |
 | [0949-largest-time-for-given-digits](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0949-largest-time-for-given-digits) |
@@ -950,8 +952,8 @@
 | [3720-lexicographically-smallest-permutation-greater-than-target](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3720-lexicographically-smallest-permutation-greater-than-target) |
 | [3734-lexicographically-smallest-palindromic-permutation-greater-than-target](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3734-lexicographically-smallest-palindromic-permutation-greater-than-target) |
 ## Greedy
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0011-container-with-most-water](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0011-container-with-most-water) |
 | [0045-jump-game-ii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0045-jump-game-ii) |
 | [0055-jump-game](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0055-jump-game) |
@@ -1002,8 +1004,8 @@
 | [3689-maximum-total-subarray-value-i](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3689-maximum-total-subarray-value-i) |
 | [3720-lexicographically-smallest-permutation-greater-than-target](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3720-lexicographically-smallest-permutation-greater-than-target) |
 ## Stack
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0020-valid-parentheses](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0020-valid-parentheses) |
 | [0032-longest-valid-parentheses](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0032-longest-valid-parentheses) |
 | [0042-trapping-rain-water](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0042-trapping-rain-water) |
@@ -1039,8 +1041,8 @@
 | [1249-minimum-remove-to-make-valid-parentheses](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1249-minimum-remove-to-make-valid-parentheses) |
 | [2130-maximum-twin-sum-of-a-linked-list](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2130-maximum-twin-sum-of-a-linked-list) |
 ## Heap (Priority Queue)
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0023-merge-k-sorted-lists](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0023-merge-k-sorted-lists) |
 | [0215-kth-largest-element-in-an-array](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0215-kth-largest-element-in-an-array) |
 | [0295-find-median-from-data-stream](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0295-find-median-from-data-stream) |
@@ -1060,22 +1062,22 @@
 | [3286-find-a-safe-walk-through-a-grid](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3286-find-a-safe-walk-through-a-grid) |
 | [3620-network-recovery-pathways](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3620-network-recovery-pathways) |
 ## Merge Sort
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0023-merge-k-sorted-lists](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0023-merge-k-sorted-lists) |
 | [0148-sort-list](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0148-sort-list) |
 | [0912-sort-an-array](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0912-sort-an-array) |
 | [3737-count-subarrays-with-majority-element-i](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3737-count-subarrays-with-majority-element-i) |
 | [3739-count-subarrays-with-majority-element-ii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3739-count-subarrays-with-majority-element-ii) |
 ## String Matching
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0028-find-the-index-of-the-first-occurrence-in-a-string](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0028-find-the-index-of-the-first-occurrence-in-a-string) |
 | [0572-subtree-of-another-tree](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0572-subtree-of-another-tree) |
 | [1023-camelcase-matching](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1023-camelcase-matching) |
 ## Counting
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0169-majority-element](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0169-majority-element) |
 | [0383-ransom-note](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0383-ransom-note) |
 | [0387-first-unique-character-in-a-string](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0387-first-unique-character-in-a-string) |
@@ -1096,8 +1098,8 @@
 | [3720-lexicographically-smallest-permutation-greater-than-target](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3720-lexicographically-smallest-permutation-greater-than-target) |
 | [3737-count-subarrays-with-majority-element-i](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3737-count-subarrays-with-majority-element-i) |
 ## Matrix
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0036-valid-sudoku](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0036-valid-sudoku) |
 | [0037-sudoku-solver](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0037-sudoku-solver) |
 | [0048-rotate-image](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0048-rotate-image) |
@@ -1134,8 +1136,8 @@
 | [3286-find-a-safe-walk-through-a-grid](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3286-find-a-safe-walk-through-a-grid) |
 | [3568-minimum-moves-to-clean-the-classroom](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3568-minimum-moves-to-clean-the-classroom) |
 ## Monotonic Stack
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0042-trapping-rain-water](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0042-trapping-rain-water) |
 | [0084-largest-rectangle-in-histogram](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0084-largest-rectangle-in-histogram) |
 | [0496-next-greater-element-i](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0496-next-greater-element-i) |
@@ -1148,8 +1150,8 @@
 | [1019-next-greater-node-in-linked-list](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1019-next-greater-node-in-linked-list) |
 | [1081-smallest-subsequence-of-distinct-characters](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1081-smallest-subsequence-of-distinct-characters) |
 ## Simulation
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0043-multiply-strings](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0043-multiply-strings) |
 | [0054-spiral-matrix](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0054-spiral-matrix) |
 | [0067-add-binary](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0067-add-binary) |
@@ -1173,14 +1175,14 @@
 | [3838-weighted-word-mapping](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3838-weighted-word-mapping) |
 | [3867-sum-of-gcd-of-formed-pairs](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3867-sum-of-gcd-of-formed-pairs) |
 ## Combinatorics
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0062-unique-paths](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0062-unique-paths) |
 | [3312-sorted-gcd-pair-queries](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3312-sorted-gcd-pair-queries) |
 | [3518-smallest-palindromic-rearrangement-ii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3518-smallest-palindromic-rearrangement-ii) |
 ## Bit Manipulation
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0067-add-binary](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0067-add-binary) |
 | [0078-subsets](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0078-subsets) |
 | [0090-subsets-ii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0090-subsets-ii) |
@@ -1210,16 +1212,16 @@
 | [3568-minimum-moves-to-clean-the-classroom](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3568-minimum-moves-to-clean-the-classroom) |
 | [3702-longest-subsequence-with-non-zero-bitwise-xor](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3702-longest-subsequence-with-non-zero-bitwise-xor) |
 ## Memoization
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0070-climbing-stairs](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0070-climbing-stairs) |
 | [0139-word-break](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0139-word-break) |
 | [0329-longest-increasing-path-in-a-matrix](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0329-longest-increasing-path-in-a-matrix) |
 | [0509-fibonacci-number](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0509-fibonacci-number) |
 | [1137-n-th-tribonacci-number](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1137-n-th-tribonacci-number) |
 ## Depth-First Search
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0079-word-search](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0079-word-search) |
 | [0094-binary-tree-inorder-traversal](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0094-binary-tree-inorder-traversal) |
 | [0098-validate-binary-search-tree](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0098-validate-binary-search-tree) |
@@ -1303,8 +1305,8 @@
 | [3310-remove-methods-from-project](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3310-remove-methods-from-project) |
 | [3558-number-of-ways-to-assign-edge-weights-i](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3558-number-of-ways-to-assign-edge-weights-i) |
 ## Tree
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0094-binary-tree-inorder-traversal](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0094-binary-tree-inorder-traversal) |
 | [0095-unique-binary-search-trees-ii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0095-unique-binary-search-trees-ii) |
 | [0096-unique-binary-search-trees](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0096-unique-binary-search-trees) |
@@ -1378,8 +1380,8 @@
 | [2265-count-nodes-equal-to-average-of-subtree](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2265-count-nodes-equal-to-average-of-subtree) |
 | [3558-number-of-ways-to-assign-edge-weights-i](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3558-number-of-ways-to-assign-edge-weights-i) |
 ## Binary Tree
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0094-binary-tree-inorder-traversal](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0094-binary-tree-inorder-traversal) |
 | [0095-unique-binary-search-trees-ii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0095-unique-binary-search-trees-ii) |
 | [0096-unique-binary-search-trees](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0096-unique-binary-search-trees) |
@@ -1448,8 +1450,8 @@
 | [2196-create-binary-tree-from-descriptions](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2196-create-binary-tree-from-descriptions) |
 | [2265-count-nodes-equal-to-average-of-subtree](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2265-count-nodes-equal-to-average-of-subtree) |
 ## Binary Search Tree
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0095-unique-binary-search-trees-ii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0095-unique-binary-search-trees-ii) |
 | [0096-unique-binary-search-trees](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0096-unique-binary-search-trees) |
 | [0098-validate-binary-search-tree](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0098-validate-binary-search-tree) |
@@ -1468,8 +1470,8 @@
 | [1008-construct-binary-search-tree-from-preorder-traversal](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1008-construct-binary-search-tree-from-preorder-traversal) |
 | [1305-all-elements-in-two-binary-search-trees](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1305-all-elements-in-two-binary-search-trees) |
 ## Breadth-First Search
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0100-same-tree](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0100-same-tree) |
 | [0101-symmetric-tree](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0101-symmetric-tree) |
 | [0102-binary-tree-level-order-traversal](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0102-binary-tree-level-order-traversal) |
@@ -1531,8 +1533,8 @@
 | [3310-remove-methods-from-project](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3310-remove-methods-from-project) |
 | [3568-minimum-moves-to-clean-the-classroom](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3568-minimum-moves-to-clean-the-classroom) |
 ## Union-Find
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0128-longest-consecutive-sequence](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0128-longest-consecutive-sequence) |
 | [0130-surrounded-regions](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0130-surrounded-regions) |
 | [0200-number-of-islands](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0200-number-of-islands) |
@@ -1551,8 +1553,8 @@
 | [2948-make-lexicographically-smallest-array-by-swapping-elements](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2948-make-lexicographically-smallest-array-by-swapping-elements) |
 | [3532-path-existence-queries-in-a-graph-i](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3532-path-existence-queries-in-a-graph-i) |
 ## Graph Theory
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0133-clone-graph](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0133-clone-graph) |
 | [0207-course-schedule](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0207-course-schedule) |
 | [0210-course-schedule-ii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0210-course-schedule-ii) |
@@ -1574,8 +1576,8 @@
 | [3534-path-existence-queries-in-a-graph-ii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3534-path-existence-queries-in-a-graph-ii) |
 | [3620-network-recovery-pathways](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3620-network-recovery-pathways) |
 ## Design
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0146-lru-cache](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0146-lru-cache) |
 | [0155-min-stack](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0155-min-stack) |
 | [0208-implement-trie-prefix-tree](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0208-implement-trie-prefix-tree) |
@@ -1592,14 +1594,15 @@
 | [0707-design-linked-list](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0707-design-linked-list) |
 | [0919-complete-binary-tree-inserter](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0919-complete-binary-tree-inserter) |
 | [0933-number-of-recent-calls](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0933-number-of-recent-calls) |
+| [1352-product-of-the-last-k-numbers](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1352-product-of-the-last-k-numbers/) | Medium |
 ## Doubly-Linked List
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0146-lru-cache](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0146-lru-cache) |
 | [0430-flatten-a-multilevel-doubly-linked-list](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0430-flatten-a-multilevel-doubly-linked-list) |
 ## Number Theory
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0204-count-primes](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0204-count-primes) |
 | [0258-add-digits](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0258-add-digits) |
 | [0914-x-of-a-kind-in-a-deck-of-cards](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0914-x-of-a-kind-in-a-deck-of-cards) |
@@ -1610,27 +1613,27 @@
 | [3658-gcd-of-odd-and-even-sums](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3658-gcd-of-odd-and-even-sums) |
 | [3867-sum-of-gcd-of-formed-pairs](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3867-sum-of-gcd-of-formed-pairs) |
 ## Topological Sort
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0207-course-schedule](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0207-course-schedule) |
 | [0210-course-schedule-ii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0210-course-schedule-ii) |
 | [0329-longest-increasing-path-in-a-matrix](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0329-longest-increasing-path-in-a-matrix) |
 | [3620-network-recovery-pathways](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3620-network-recovery-pathways) |
 ## Quickselect
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0215-kth-largest-element-in-an-array](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0215-kth-largest-element-in-an-array) |
 | [0973-k-closest-points-to-origin](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0973-k-closest-points-to-origin) |
 ## Geometry
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0223-rectangle-area](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0223-rectangle-area) |
 | [0812-largest-triangle-area](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0812-largest-triangle-area) |
 | [0973-k-closest-points-to-origin](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0973-k-closest-points-to-origin) |
 | [1232-check-if-it-is-a-straight-line](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1232-check-if-it-is-a-straight-line) |
 ## Queue
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0225-implement-stack-using-queues](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0225-implement-stack-using-queues) |
 | [0232-implement-queue-using-stacks](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0232-implement-queue-using-stacks) |
 | [0387-first-unique-character-in-a-string](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0387-first-unique-character-in-a-string) |
@@ -1640,26 +1643,27 @@
 | [0933-number-of-recent-calls](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0933-number-of-recent-calls) |
 | [0950-reveal-cards-in-increasing-order](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0950-reveal-cards-in-increasing-order) |
 ## Data Stream
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0295-find-median-from-data-stream](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0295-find-median-from-data-stream) |
 | [0703-kth-largest-element-in-a-stream](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0703-kth-largest-element-in-a-stream) |
 | [0933-number-of-recent-calls](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0933-number-of-recent-calls) |
+| [1352-product-of-the-last-k-numbers](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1352-product-of-the-last-k-numbers/) | Medium |
 ## Interactive
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0374-guess-number-higher-or-lower](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0374-guess-number-higher-or-lower) |
 ## Eulerian Circuit
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0332-reconstruct-itinerary](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0332-reconstruct-itinerary) |
 ## Randomized
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0380-insert-delete-getrandom-o1](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0380-insert-delete-getrandom-o1) |
 ## Prefix Sum
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0560-subarray-sum-equals-k](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0560-subarray-sum-equals-k) |
 | [0713-subarray-product-less-than-k](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0713-subarray-product-less-than-k) |
 | [0724-find-pivot-index](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0724-find-pivot-index) |
@@ -1669,6 +1673,7 @@
 | [1140-stone-game-ii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1140-stone-game-ii) |
 | [1248-count-number-of-nice-subarrays](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1248-count-number-of-nice-subarrays) |
 | [1310-xor-queries-of-a-subarray](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1310-xor-queries-of-a-subarray) |
+| [1352-product-of-the-last-k-numbers](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1352-product-of-the-last-k-numbers/) | Medium |
 | [1423-maximum-points-you-can-obtain-from-cards](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1423-maximum-points-you-can-obtain-from-cards) |
 | [1732-find-the-highest-altitude](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1732-find-the-highest-altitude) |
 | [1872-stone-game-viii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1872-stone-game-viii) |
@@ -1681,21 +1686,21 @@
 | [3903-smallest-stable-index-i](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3903-smallest-stable-index-i) |
 | [3904-smallest-stable-index-ii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3904-smallest-stable-index-ii) |
 ## Hash Function
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0572-subtree-of-another-tree](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0572-subtree-of-another-tree) |
 | [0705-design-hashset](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0705-design-hashset) |
 | [0706-design-hashmap](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0706-design-hashmap) |
 ## Shortest Path
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0743-network-delay-time](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0743-network-delay-time) |
 | [0787-cheapest-flights-within-k-stops](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0787-cheapest-flights-within-k-stops) |
 | [3286-find-a-safe-walk-through-a-grid](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3286-find-a-safe-walk-through-a-grid) |
 | [3620-network-recovery-pathways](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3620-network-recovery-pathways) |
 ## Counting Sort
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0561-array-partition](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0561-array-partition) |
 | [0912-sort-an-array](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0912-sort-an-array) |
 | [1051-height-checker](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1051-height-checker) |
@@ -1704,15 +1709,15 @@
 | [1833-maximum-ice-cream-bars](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1833-maximum-ice-cream-bars) |
 | [3517-smallest-palindromic-rearrangement-i](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3517-smallest-palindromic-rearrangement-i) |
 ## Segment Tree
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [2213-longest-substring-of-one-repeating-character](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2213-longest-substring-of-one-repeating-character) |
 | [3501-maximize-active-section-with-trade-ii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3501-maximize-active-section-with-trade-ii) |
 | [3737-count-subarrays-with-majority-element-i](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3737-count-subarrays-with-majority-element-i) |
 | [3739-count-subarrays-with-majority-element-ii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3739-count-subarrays-with-majority-element-ii) |
 ## Game Theory
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0486-predict-the-winner](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0486-predict-the-winner) |
 | [0877-stone-game](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0877-stone-game) |
 | [1025-divisor-game](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1025-divisor-game) |
@@ -1724,82 +1729,82 @@
 | [1927-sum-game](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1927-sum-game) |
 | [2029-stone-game-ix](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2029-stone-game-ix) |
 ## Bucket Sort
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0912-sort-an-array](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0912-sort-an-array) |
 ## Radix Sort
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0912-sort-an-array](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0912-sort-an-array) |
 ## Monotonic Queue
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0918-maximum-sum-circular-subarray](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0918-maximum-sum-circular-subarray) |
 ## Quicksort
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0976-largest-perimeter-triangle](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0976-largest-perimeter-triangle) |
 | [1122-relative-sort-array](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1122-relative-sort-array) |
 ## Polygons
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [0976-largest-perimeter-triangle](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0976-largest-perimeter-triangle) |
 ## Minimax
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [1140-stone-game-ii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1140-stone-game-ii) |
 | [1510-stone-game-iv](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1510-stone-game-iv) |
 | [1872-stone-game-viii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1872-stone-game-viii) |
 | [2029-stone-game-ix](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2029-stone-game-ix) |
 ## Zero-Sum Game
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [1140-stone-game-ii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1140-stone-game-ii) |
 | [1510-stone-game-iv](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1510-stone-game-iv) |
 | [1872-stone-game-viii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1872-stone-game-viii) |
 | [2029-stone-game-ix](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2029-stone-game-ix) |
 ## Nim Game
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [1510-stone-game-iv](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1510-stone-game-iv) |
 | [2029-stone-game-ix](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2029-stone-game-ix) |
 ## Sprague–Grundy Theorem
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [1510-stone-game-iv](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1510-stone-game-iv) |
 ## Brainteaser
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [1025-divisor-game](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1025-divisor-game) |
 | [1227-airplane-seat-assignment-probability](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1227-airplane-seat-assignment-probability) |
 ## Impartial Game
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [1025-divisor-game](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1025-divisor-game) |
 ## Ordered Set
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [2213-longest-substring-of-one-repeating-character](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2213-longest-substring-of-one-repeating-character) |
 ## Hungarian Algorithm
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [1029-two-city-scheduling](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1029-two-city-scheduling) |
 ## Successive Shortest Path Algorithm
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [1029-two-city-scheduling](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1029-two-city-scheduling) |
 ## Bubble Sort
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [1051-height-checker](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1051-height-checker) |
 | [1122-relative-sort-array](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1122-relative-sort-array) |
 ## Probability and Statistics
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [1093-statistics-from-a-large-sample](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1093-statistics-from-a-large-sample) |
 | [1227-airplane-seat-assignment-probability](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1227-airplane-seat-assignment-probability) |
 ## Longest Common Subsequence
-|  |
-| ------- |
+| Problem Name | Difficulty |
+| ------- | ------- |
 | [1143-longest-common-subsequence](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1143-longest-common-subsequence) |
 <!---LeetCode Topics End-->
