@@ -77,9 +77,8 @@ class Solution {
         Collections.sort(takeIndexes);
 
         Pair take = new Pair(
-            weight + next.score,
-            takeIndexes
-        );
+                weight + next.score,
+                takeIndexes);
 
         Pair result;
 
