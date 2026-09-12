@@ -33,7 +33,6 @@ class Solution {
 
         // Precompute next non-overlapping interval
         nextIdx = new int[n];
-
         for (int i = 0; i < n; i++) {
             nextIdx[i] = findNext(intervals, intervals.get(i).get(1));
         }
@@ -91,7 +90,6 @@ class Solution {
         }
 
         Pair result = dp[0][4];
-
         int[] ans = new int[result.indexes.size()];
 
         for (int i = 0; i < result.indexes.size(); i++) {
@@ -102,7 +100,6 @@ class Solution {
     }
 
     private int findNext(List<List<Integer>> intervals, int endPoint) {
-
         int low = 0;
         int high = n - 1;
         int res = n;
