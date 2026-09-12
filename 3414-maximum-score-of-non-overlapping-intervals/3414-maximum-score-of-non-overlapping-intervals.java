@@ -50,11 +50,11 @@ class Solution {
             dp[n][k] = new Pair(0, new ArrayList<>());
         }
 
-        for(int i = n - 1; i >= 0; i--) {
+        for (int i = n - 1; i >= 0; i--) {
             long weight = intervals.get(i).get(2);
             int originalIndex = intervals.get(i).get(3);
 
-            for(int k = 1; k <= 4; k++) {
+            for (int k = 1; k <= 4; k++) {
                 // Skip current interval
                 Pair skip = dp[i + 1][k];
 
@@ -100,7 +100,6 @@ class Solution {
 
         return ans;
     }
-
 
     private int findNext(List<List<Integer>> intervals, int endPoint) {
 
