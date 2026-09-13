@@ -114,6 +114,7 @@
 | [0804-unique-morse-code-words](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0804-unique-morse-code-words) |
 | [0812-largest-triangle-area](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0812-largest-triangle-area) |
 | [0821-shortest-distance-to-a-character](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0821-shortest-distance-to-a-character) |
+| [0835-image-overlap](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/0835-image-overlap/) | Medium |
 | [0845-longest-mountain-in-array](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0845-longest-mountain-in-array) |
 | [0846-hand-of-straights](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0846-hand-of-straights) |
 | [0852-peak-index-in-a-mountain-array](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0852-peak-index-in-a-mountain-array) |
@@ -1121,6 +1122,7 @@
 | [0695-max-area-of-island](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0695-max-area-of-island) |
 | [0778-swim-in-rising-water](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0778-swim-in-rising-water) |
 | [0794-valid-tic-tac-toe-state](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0794-valid-tic-tac-toe-state) |
+| [0835-image-overlap](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/0835-image-overlap/) | Medium |
 | [0867-transpose-matrix](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0867-transpose-matrix) |
 | [0931-minimum-falling-path-sum](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0931-minimum-falling-path-sum) |
 | [0959-regions-cut-by-slashes](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0959-regions-cut-by-slashes) |
