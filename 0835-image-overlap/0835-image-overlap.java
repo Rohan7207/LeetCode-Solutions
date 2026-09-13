@@ -1,3 +1,22 @@
+// Problem: Image Overlap
+// Link: https://leetcode.com/problems/image-overlap/?envType=daily-question&envId=2026-09-13
+// Difficulty: Medium
+
+// Approach:
+// Use coordinate translation + HashMap frequency counting.
+//
+// 1. Store the coordinates of all 1s in img1 and img2.
+// 2. For every pair of 1s, calculate the translation needed to align them:
+//      dr = r1 - r2
+//      dc = c1 - c2
+// 3. Use (dr, dc) as the key in a HashMap and count how many pairs produce
+//    the same translation.
+// 4. The translation with the highest frequency gives the maximum overlap.
+
+// Time Complexity: O(n^4) in the worst case
+// Space Complexity: O(n^2)
+
+
 class Solution {
     public int largestOverlap(int[][] img1, int[][] img2) {
         List<int[]> ones1 = new ArrayList<>();
@@ -37,9 +56,3 @@ class Solution {
         return ans;
     }
 }
-
-/*
-    (-1, -1) => 3   (-1, 0) => 1    (0, -1) => 2
-    (-1, -2) => 1   (-2, -1) => 1   (1, 0) => 1
-    (-2, -2) => 1   (0, 0) => 1     (1, -1) => 1
-*/
