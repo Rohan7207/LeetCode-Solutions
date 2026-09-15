@@ -61,4 +61,6 @@ class Solution {
 - If there is a node with more than one parent, then we will detect it with seen.
 - If the tree is disconnected, then seen will hold less than n nodes at the end.
 - If there is a cycle, then we will detect it with seen.
+
+    // For BFS use queue instead of stack
 */
