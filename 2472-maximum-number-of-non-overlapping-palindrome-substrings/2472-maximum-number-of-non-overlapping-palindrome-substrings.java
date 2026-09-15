@@ -1,15 +1,14 @@
 class Solution {
+
+    private boolean[][] pal;
+    private int[] dp;
+
     public int maxPalindromes(String s, int k) {
-        // Overall => O(n ^ 3) and space O(n ^ 2)
         int n = s.length();
-        int[][] dp = new int[n + 1][n + 1]; //There O(n ^ 2) states and we call isPalindrome each time so O(n^3)
+        dp = new int[n + 1];
 
-        if (k == 1) {
-            return n; // I want max palindrome
-        }
-
-        // Precompute Palindrome bcz O(n ^ 3) => O(n ^ 2) we get better T.C
-        boolean[][] pal = new boolean[n][n];
+        // Precompute Palindrome
+        pal = new boolean[n][n];
 
         for (int i = n - 1; i >= 0; i--) {
             for (int j = i; j < n; j++) {
@@ -20,29 +19,40 @@ class Solution {
             }
         }
 
-        // O(n ^ 2) and O(n ^ 2)
-        for (int i = n - 1; i >= 0; i--) {
-            for (int j = n - 1; j >= 0; j--) {
-                if (pal[i][j]) {
-                    // we need future ans so reverse loops
-                    int take = 1 + (j + k <= n ? dp[j + 1][j + k] : 0);
-                    int grow = dp[i][j + 1];
-                    int slide = dp[i + 1][j + 1];
+        return solve(s, k, n);
+    }
 
-                    dp[i][j] = Math.max(take, Math.max(grow, slide));
-                } else {
-                    int grow = dp[i][j + 1];
-                    int slide = dp[i + 1][j + 1];
+    private int solve(String s, int k, int len) {
+        if(len < k) {
+            return 0;
+        }
 
-                    dp[i][j] = Math.max(grow, slide);
-                }
+        if(dp[len] != 0) {
+            return dp[len];
+        }
+
+        int res = solve(s, k, len - 1);
+
+        int j = len - 1;
+        for(int i = 0; j - i + 1 >= k; i++) {
+            if(pal[i][j]) {
+                res = Math.max(res, 1 + solve(s, k, i));
             }
         }
 
-        // return solve(s, k, 0, k - 1);
-        return dp[0][k - 1];
+        return dp[len] = res;
     }
 }
+
+/*
+    Approaches:
+    1. Recursion + Memo => O(n ^ 3)
+    2. Bottom-up => O(n ^ 3)
+    3. Recursion + Memo + Precompute Palindrome => O(n ^ 2)
+    4. Bottom-up + Precompute Palindrome => O(n ^ 2)
+    5. solve(n) + Memo + Precompute Palindrome => O(n ^ 2), it is optimized bcz it uses only 1 state
+    4. Bottom-up of solve(n) + Precompute Palindrome => O(n ^ 2)
+*/
 
 /*
     Solution-1: Got TLE with O(n ^ 2) and O(n ^ 2) bcz of recursion
@@ -99,6 +109,53 @@ class Solution {
 */
 
 /*
+    Bottom - up + Precompute Palindrome => O(n ^ 2) and O( n ^ 2)
+     public int maxPalindromes(String s, int k) {
+        // Overall => O(n ^ 2) and space O(n ^ 2)
+        int n = s.length();
+        int[][] dp = new int[n + 1][n + 1]; //There O(n ^ 2) states and we call isPalindrome each time so O(n^3), we can change this to O(n ^ 2)  by precomputing palindromics information.
+
+        if (k == 1) {
+            return n; // I want max palindrome
+        }
+
+        // Precompute Palindrome bcz O(n ^ 3) => O(n ^ 2) we get better T.C
+        boolean[][] pal = new boolean[n][n];
+
+        for (int i = n - 1; i >= 0; i--) {
+            for (int j = i; j < n; j++) {
+                if (s.charAt(i) == s.charAt(j) &&
+                        (j - i < 2 || pal[i + 1][j - 1])) {
+                    pal[i][j] = true;
+                }
+            }
+        }
+
+        // O(n ^ 2) and O(n ^ 2)
+        for (int i = n - 1; i >= 0; i--) {
+            for (int j = n - 1; j >= 0; j--) {
+                if (pal[i][j]) {
+                    // we need future ans so reverse loops
+                    int take = 1 + (j + k <= n ? dp[j + 1][j + k] : 0);
+                    int grow = dp[i][j + 1];
+                    int slide = dp[i + 1][j + 1];
+
+                    dp[i][j] = Math.max(take, Math.max(grow, slide));
+                } else {
+                    int grow = dp[i][j + 1];
+                    int slide = dp[i + 1][j + 1];
+
+                    dp[i][j] = Math.max(grow, slide);
+                }
+            }
+        }
+
+        // return solve(s, k, 0, k - 1);
+        return dp[0][k - 1];
+    }
+*/
+
+/*
     Consider example:
         s = "aaaba"
 
@@ -145,4 +202,40 @@ class Solution {
         }
 
         Memoization: dp[n + 1][n + 1];
+*/
+
+/*
+    Another simple approach:
+
+        - In previous approach we always we needed two pointers i and j
+        - We could solve it by passing only length of string instead of solve(i, j)
+         we pass only solve(n) and in each call we reduce
+         In these case we can set j = n - 1 and can loop over string and try out every substring
+         and check whether i to j is >= k or not.
+
+        int solve(n) {
+            
+
+            // j - i + 1 >= k bcz len of substring must be greater than or equal to k
+            // We pass i as n bcz we j is set at end we will get last substring palindrome first, and since we don't need overlapping substring we must try out the left part which is i only
+            for ex = "abcaaabba" suppose j = 9 and i = 6 then between s[i..j] is palindrome so we pass left side to recursion which is 0 to i, its length is i only, 
+            - since it is loop so when we get abba valid palindrome we call recursive call for left part and we also are trying next possibilities of not taking i by incrementing i and whaterver is max we store it in res.
+            - And there is possibility that we could skip j also so we call res = solve(n - 1). And whaterver is max we store in res.
+
+            if(n < k) {
+                return 0;
+            }
+
+            int res = 0;
+            int j = n - 1;
+            for(int i = 0; j - i + 1 >= k; i++) {  
+                if(pal[i][j]) {
+                    res = max(res, 1 + solve(i));
+                }
+            }
+
+            return res;
+        }
+
+        Memoization: dp[i];  // There n states with O(n) and there is i-loop so we do it in O(n ^ 2)
 */
