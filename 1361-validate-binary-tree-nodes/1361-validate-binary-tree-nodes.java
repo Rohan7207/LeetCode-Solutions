@@ -1,3 +1,23 @@
+// Problem: Validate Binary Tree Nodes
+// Link: https://leetcode.com/problems/validate-binary-tree-nodes/
+// Difficulty: Medium
+
+// Approach:
+// Use root detection + DFS + visited set.
+//
+// 1. Find the root by collecting every node that appears as a child.
+// 2. The only node that never appears as a child must be the root.
+// 3. If no such node exists, return false because a valid tree needs one root.
+// 4. Start DFS from the root and mark every visited node.
+// 5. If a child is already visited, a cycle or multiple-parent connection exists,
+//    so return false.
+// 6. After DFS, check whether all n nodes were visited.
+//    If not, the graph is disconnected.
+
+// Time Complexity: O(n)
+// Space Complexity: O(n)
+
+
 class Solution {
     public boolean validateBinaryTreeNodes(int n, int[] leftChild, int[] rightChild) {
         int root = findRoot(n, leftChild, rightChild);
@@ -11,7 +31,6 @@ class Solution {
         st.push(root);
         seen.add(root);
 
-        // DFS
         while (!st.isEmpty()) {
             int node = st.pop();
             int[] children = new int[] { leftChild[node], rightChild[node] };
@@ -53,14 +72,3 @@ class Solution {
         return -1;
     }
 }
-
-/*
-    Process in validating a binary tree:
-
-- If a binary tree does not have a root, then findRoot will return -1.
-- If there is a node with more than one parent, then we will detect it with seen.
-- If the tree is disconnected, then seen will hold less than n nodes at the end.
-- If there is a cycle, then we will detect it with seen.
-
-    // For BFS use queue instead of stack
-*/
