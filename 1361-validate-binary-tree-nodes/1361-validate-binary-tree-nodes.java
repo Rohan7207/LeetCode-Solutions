@@ -2,7 +2,7 @@ class Solution {
     public boolean validateBinaryTreeNodes(int n, int[] leftChild, int[] rightChild) {
         int root = findRoot(n, leftChild, rightChild);
 
-        if(root == -1) {
+        if (root == -1) {
             return false;
         }
 
@@ -12,16 +12,16 @@ class Solution {
         seen.add(root);
 
         // DFS
-        while(!st.isEmpty()) {
+        while (!st.isEmpty()) {
             int node = st.pop();
-            int[] children = new int[] {leftChild[node], rightChild[node]};
+            int[] children = new int[] { leftChild[node], rightChild[node] };
 
-            for(int child : children) {
-                if(child == -1) {
+            for (int child : children) {
+                if (child == -1) {
                     continue;
                 }
 
-                if(seen.contains(child)) {
+                if (seen.contains(child)) {
                     return false;
                 }
 
@@ -36,16 +36,16 @@ class Solution {
     private int findRoot(int n, int[] left, int[] right) {
         Set<Integer> children = new HashSet<>();
 
-        for(int node : left) {
+        for (int node : left) {
             children.add(node);
         }
 
-        for(int node : right) {
+        for (int node : right) {
             children.add(node);
         }
 
-        for(int i = 0; i < n; i++) {
-            if(!children.contains(i)) {
+        for (int i = 0; i < n; i++) {
+            if (!children.contains(i)) {
                 return i;
             }
         }
