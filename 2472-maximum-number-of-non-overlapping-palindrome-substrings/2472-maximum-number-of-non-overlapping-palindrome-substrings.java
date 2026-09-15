@@ -21,11 +21,11 @@ class Solution {
         }
 
         // O(n ^ 2) and O(n ^ 2)
-        for(int i = n - 1; i >= 0; i--) {
-            for(int j = n - 1; j >= 0; j--) {
-                if(pal[i][j]) {
+        for (int i = n - 1; i >= 0; i--) {
+            for (int j = n - 1; j >= 0; j--) {
+                if (pal[i][j]) {
                     // we need future ans so reverse loops
-                    int take = 1 + (j + k <= n ? dp[j + 1][j + k] : 0);  
+                    int take = 1 + (j + k <= n ? dp[j + 1][j + k] : 0);
                     int grow = dp[i][j + 1];
                     int slide = dp[i + 1][j + 1];
 
