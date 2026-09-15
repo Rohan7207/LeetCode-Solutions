@@ -1,14 +1,11 @@
 class Solution {
-
-    private boolean[][] pal;
-    private int[] dp;
-
     public int maxPalindromes(String s, int k) {
+        // O(n ^ 2) and O(n)
         int n = s.length();
-        dp = new int[n + 1];
+        int[] dp = new int[n + 1];
 
         // Precompute Palindrome
-        pal = new boolean[n][n];
+        boolean[][] pal = new boolean[n][n];
 
         for (int i = n - 1; i >= 0; i--) {
             for (int j = i; j < n; j++) {
@@ -19,28 +16,26 @@ class Solution {
             }
         }
 
-        return solve(s, k, n);
-    }
-
-    private int solve(String s, int k, int len) {
-        if(len < k) {
-            return 0;
+        for(int len = 0; len < k; len++) {
+            dp[len] = 0;
         }
 
-        if(dp[len] != 0) {
-            return dp[len];
-        }
+        for(int len = k; len <= n; len++) {
+            // int res = solve(s, k, len - 1)
+            int res = dp[len - 1];
+            int j = len - 1;
 
-        int res = solve(s, k, len - 1);
-
-        int j = len - 1;
-        for(int i = 0; j - i + 1 >= k; i++) {
-            if(pal[i][j]) {
-                res = Math.max(res, 1 + solve(s, k, i));
+            for(int i = 0; j - i + 1 >= k; i++) {
+                if(pal[i][j]) {
+                    res = Math.max(res, 1 + dp[i]);
+                }
             }
+
+            dp[len] = res;
         }
 
-        return dp[len] = res;
+        // return solve(s, k, n);
+        return dp[n];
     }
 }
 
@@ -152,6 +147,52 @@ class Solution {
 
         // return solve(s, k, 0, k - 1);
         return dp[0][k - 1];
+    }
+*/
+
+/*
+    Improved code with O(n) states and O(n ^ 2) and O(n)
+    private boolean[][] pal;
+    private int[] dp;
+
+    public int maxPalindromes(String s, int k) {
+        int n = s.length();
+        dp = new int[n + 1];
+
+        // Precompute Palindrome
+        pal = new boolean[n][n];
+
+        for (int i = n - 1; i >= 0; i--) {
+            for (int j = i; j < n; j++) {
+                if (s.charAt(i) == s.charAt(j) &&
+                        (j - i < 2 || pal[i + 1][j - 1])) {
+                    pal[i][j] = true;
+                }
+            }
+        }
+
+        return solve(s, k, n);
+    }
+
+    private int solve(String s, int k, int len) {
+        if(len < k) {
+            return 0;
+        }
+
+        if(dp[len] != 0) {
+            return dp[len];
+        }
+
+        int res = solve(s, k, len - 1);
+
+        int j = len - 1;
+        for(int i = 0; j - i + 1 >= k; i++) {
+            if(pal[i][j]) {
+                res = Math.max(res, 1 + solve(s, k, i));
+            }
+        }
+
+        return dp[len] = res;
     }
 */
 
