@@ -1,24 +1,24 @@
 class Solution {
-    
+
     private int MOD = 1000000007;
 
     public int numberOfSets(int n, int k) {
-        long[][] dp = new long[1001][1001];  
+        long[][] dp = new long[1001][1001];
 
         // Base case: k == 0,  then dp[0][n] = 1, i >= n, dp value is  0
-        for(int i = 0; i < n; i++) {
+        for (int i = 0; i < n; i++) {
             dp[0][i] = 1;
         }
 
-        for(int K = 1; K <= k; K++) {   // We need previous values, and K = 1 bcz K = 0 is base case
+        for (int K = 1; K <= k; K++) { // We need previous values, and K = 1 bcz K = 0 is base case
             // Stores the suffix sum of prev k row from dp[k - 1][i + 1....n - 1]                
-            long[] prevRowSum = new long[n + 1];  
+            long[] prevRowSum = new long[n + 1];
 
-            for(int x = n - 1; x >= 0; x--) {
+            for (int x = n - 1; x >= 0; x--) {
                 prevRowSum[x] = (prevRowSum[x + 1] + dp[K - 1][x]) % MOD;
             }
 
-            for(int i = n - 1; i >= 0; i--) {   // We need future values to skip
+            for (int i = n - 1; i >= 0; i--) { // We need future values to skip
                 long take = prevRowSum[i + 1];
                 long skip = dp[K][i + 1];
 
