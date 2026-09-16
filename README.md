@@ -408,6 +408,7 @@
 | [1019-next-greater-node-in-linked-list](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1019-next-greater-node-in-linked-list) |
 | [1171-remove-zero-sum-consecutive-nodes-from-linked-list](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1171-remove-zero-sum-consecutive-nodes-from-linked-list) |
 | [1290-convert-binary-number-in-a-linked-list-to-integer](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1290-convert-binary-number-in-a-linked-list-to-integer) |
+| [1367-linked-list-in-binary-tree](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1367-linked-list-in-binary-tree/) | Medium |
 | [2058-find-the-minimum-and-maximum-number-of-nodes-between-critical-points](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2058-find-the-minimum-and-maximum-number-of-nodes-between-critical-points) |
 | [2095-delete-the-middle-node-of-a-linked-list](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2095-delete-the-middle-node-of-a-linked-list) |
 | [2130-maximum-twin-sum-of-a-linked-list](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2130-maximum-twin-sum-of-a-linked-list) |
@@ -1314,6 +1315,7 @@
 | [1325-delete-leaves-with-a-given-value](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1325-delete-leaves-with-a-given-value) |
 | [1339-maximum-product-of-splitted-binary-tree](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1339-maximum-product-of-splitted-binary-tree) |
 | [1361-validate-binary-tree-nodes](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1361-validate-binary-tree-nodes/) | Medium |
+| [1367-linked-list-in-binary-tree](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1367-linked-list-in-binary-tree/) | Medium |
 | [2265-count-nodes-equal-to-average-of-subtree](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2265-count-nodes-equal-to-average-of-subtree) |
 | [2492-minimum-score-of-a-path-between-two-cities](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2492-minimum-score-of-a-path-between-two-cities) |
 | [2685-count-the-number-of-complete-components](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2685-count-the-number-of-complete-components) |
@@ -1392,6 +1394,7 @@
 | [1325-delete-leaves-with-a-given-value](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1325-delete-leaves-with-a-given-value) |
 | [1339-maximum-product-of-splitted-binary-tree](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1339-maximum-product-of-splitted-binary-tree) |
 | [1361-validate-binary-tree-nodes](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1361-validate-binary-tree-nodes/) | Medium |
+| [1367-linked-list-in-binary-tree](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1367-linked-list-in-binary-tree/) | Medium |
 | [2196-create-binary-tree-from-descriptions](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2196-create-binary-tree-from-descriptions) |
 | [2265-count-nodes-equal-to-average-of-subtree](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2265-count-nodes-equal-to-average-of-subtree) |
 | [3558-number-of-ways-to-assign-edge-weights-i](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3558-number-of-ways-to-assign-edge-weights-i) |
@@ -1464,6 +1467,7 @@
 | [1325-delete-leaves-with-a-given-value](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1325-delete-leaves-with-a-given-value) |
 | [1339-maximum-product-of-splitted-binary-tree](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1339-maximum-product-of-splitted-binary-tree) |
 | [1361-validate-binary-tree-nodes](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1361-validate-binary-tree-nodes/) | Medium |
+| [1367-linked-list-in-binary-tree](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1367-linked-list-in-binary-tree/) | Medium |
 | [2196-create-binary-tree-from-descriptions](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2196-create-binary-tree-from-descriptions) |
 | [2265-count-nodes-equal-to-average-of-subtree](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2265-count-nodes-equal-to-average-of-subtree) |
 ## Binary Search Tree
