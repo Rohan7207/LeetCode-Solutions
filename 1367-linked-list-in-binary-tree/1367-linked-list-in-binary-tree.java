@@ -34,7 +34,7 @@ class Solution {
     }
 
     private void dfs(ListNode head, TreeNode root) {
-        if (root == null) {
+        if (root == null || ans) {
             return;
         }
 
