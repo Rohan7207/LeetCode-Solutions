@@ -26,7 +26,7 @@
 class Solution {
 
     private boolean ans;
-    
+
     public boolean isSubPath(ListNode head, TreeNode root) {
         dfs(head, root);
 
@@ -39,26 +39,26 @@ class Solution {
         }
 
         // For every valid start node search for downward path by calling recursive function
-        if ((head.val == root.val) && match(head, root)) {  
+        if ((head.val == root.val) && match(head, root)) {
             ans = true;
             return;
         }
 
         // Try exploring the children nodes
-        dfs(head, root.left);   
+        dfs(head, root.left);
         dfs(head, root.right);
     }
 
     private boolean match(ListNode curr, TreeNode node) {
-        if(curr == null) {
-            return true;   // Entire list is matched
+        if (curr == null) {
+            return true; // Entire list is matched
         }
 
-        if(node == null) {
-            return false;  // tree path ended before list match
+        if (node == null) {
+            return false; // tree path ended before list match
         }
 
-        if(curr.val != node.val) {
+        if (curr.val != node.val) {
             return false;
         }
 
