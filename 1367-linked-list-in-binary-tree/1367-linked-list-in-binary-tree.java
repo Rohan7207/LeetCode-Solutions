@@ -1,3 +1,26 @@
+// Problem: Linked List in Binary Tree
+// Link: https://leetcode.com/problems/linked-list-in-binary-tree/
+// Difficulty: Medium
+
+// Approach:
+// Use tree traversal + recursive path matching.
+//
+// 1. Traverse every tree node because the linked list can start at any
+//    tree node, not necessarily the root.
+// 2. If the current tree node matches the linked-list head, call `match()`
+//    to check whether the complete list exists downward from this node.
+// 3. In `match()`, if `curr == null`, the entire linked list is matched → true.
+// 4. If `node == null` before the list ends, the path is invalid → false.
+// 5. If the current values don't match, return false.
+// 6. If they match, move to `curr.next` and check either the left or right
+//    child of the tree.
+// 7. Store the result in `ans` and stop the tree traversal once a valid
+//    path is found using `root == null || ans`.
+
+// Time Complexity: O(n × m) worst case
+// Space Complexity: O(n + m)
+
+
 /**
  * Definition for singly-linked list.
  * public class ListNode {
