@@ -3,7 +3,7 @@ class Solution {
         int n = arr.length;
         int[] minLenTillIdx = new int[n];
 
-        for(int i = 0; i < n; i++) {
+        for (int i = 0; i < n; i++) {
             minLenTillIdx[i] = Integer.MAX_VALUE;
         }
 
@@ -11,18 +11,18 @@ class Solution {
         int currSum = 0;
         int bestMin = Integer.MAX_VALUE;
         int res = Integer.MAX_VALUE;
-        while(j < n) {
+        while (j < n) {
             currSum += arr[j];
 
-            while(i < j && currSum > target) {
+            while (i < j && currSum > target) {
                 currSum -= arr[i];
                 i++;
             }
 
-            if(currSum == target) {
+            if (currSum == target) {
                 int len = j - i + 1;
 
-                if(i > 0 && minLenTillIdx[i - 1] != Integer.MAX_VALUE) {
+                if (i > 0 && minLenTillIdx[i - 1] != Integer.MAX_VALUE) {
                     res = Math.min(res, len + minLenTillIdx[i - 1]);
                 }
 
