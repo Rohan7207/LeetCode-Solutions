@@ -1,3 +1,20 @@
+// Problem: Find Subarrays With Equal Sum
+// Link: https://leetcode.com/problems/find-subarrays-with-equal-sum/
+// Difficulty: Easy
+
+ // Approach:
+ // Use HashSet + Adjacent Pair Sum.
+ //
+ // 1. Traverse every adjacent pair in the array.
+ // 2. Calculate the sum of the current pair.
+ // 3. If the sum already exists in the HashSet, return true.
+ // 4. Otherwise, add the sum to the HashSet.
+ // 5. If no duplicate sum is found, return false.
+ 
+ // Time Complexity: O(n)
+ // Space Complexity: O(n)
+
+
 class Solution {
     public boolean findSubarrays(int[] nums) {
         int currSum = 0;
