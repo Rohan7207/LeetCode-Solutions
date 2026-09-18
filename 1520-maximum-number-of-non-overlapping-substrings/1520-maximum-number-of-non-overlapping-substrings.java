@@ -10,24 +10,24 @@ class Solution {
         Arrays.fill(start, -1);
         Arrays.fill(isValid, true);
 
-        for(int i = 0; i < n; i++) {
+        for (int i = 0; i < n; i++) {
             int idx = s.charAt(i) - 'a';
 
-            if(start[idx] == -1) {
+            if (start[idx] == -1) {
                 start[idx] = i;
             }
 
             end[idx] = i;
         }
 
-        for(int c = 0; c < 26; c++) {  // Checking all characters
-            if(start[c] == -1) {
+        for (int c = 0; c < 26; c++) { // Checking all characters
+            if (start[c] == -1) {
                 continue;
             }
 
             // Extend end and mark invalid if character was before then start
-            for(int i = start[c]; i <= end[c]; i++) {
-                if(start[s.charAt(i) - 'a'] < start[c]) {
+            for (int i = start[c]; i <= end[c]; i++) {
+                if (start[s.charAt(i) - 'a'] < start[c]) {
                     isValid[c] = false;
                     break;
                 }
@@ -37,14 +37,14 @@ class Solution {
         }
 
         int lastTakenStart = Integer.MAX_VALUE;
-        for(int i = n - 1; i >= 0; i--) {
+        for (int i = n - 1; i >= 0; i--) {
             int idx = s.charAt(i) - 'a';
 
-            if(!isValid[idx]) {
+            if (!isValid[idx]) {
                 continue;
             }
 
-            if(i == start[idx] && end[idx] < lastTakenStart) {
+            if (i == start[idx] && end[idx] < lastTakenStart) {
                 res.add(s.substring(i, end[idx] + 1));
 
                 lastTakenStart = i;
@@ -133,4 +133,4 @@ class Solution {
     }
 
     return res;  //Overall O(n);
-*/  
+*/
