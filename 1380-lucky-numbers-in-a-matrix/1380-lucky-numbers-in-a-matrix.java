@@ -7,11 +7,11 @@ class Solution {
         int[] minRowElements = new int[m];
         int[] maxColElements = new int[n];
 
-        for(int i = 0; i < m; i++) {
+        for (int i = 0; i < m; i++) {
             int min = matrix[i][0];
 
-            for(int j = 1; j < n; j++) {
-                if(matrix[i][j] < min) {
+            for (int j = 1; j < n; j++) {
+                if (matrix[i][j] < min) {
                     min = matrix[i][j];
                 }
             }
@@ -19,11 +19,11 @@ class Solution {
             minRowElements[i] = min;
         }
 
-        for(int j = 0; j < n; j++) {
+        for (int j = 0; j < n; j++) {
             int max = matrix[0][j];
 
-            for(int i = 1; i < m; i++) {
-                if(matrix[i][j] > max) {
+            for (int i = 1; i < m; i++) {
+                if (matrix[i][j] > max) {
                     max = matrix[i][j];
                 }
             }
@@ -31,9 +31,9 @@ class Solution {
             maxColElements[j] = max;
         }
 
-        for(int i = 0; i < m; i++) {
-            for(int j = 0; j < n; j++) {
-                if(minRowElements[i] == maxColElements[j]) {
+        for (int i = 0; i < m; i++) {
+            for (int j = 0; j < n; j++) {
+                if (minRowElements[i] == maxColElements[j]) {
                     ans.add(matrix[i][j]);
                 }
             }
