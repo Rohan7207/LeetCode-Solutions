@@ -1,3 +1,25 @@
+// Problem: Lucky Numbers in a Matrix
+// Link: https://leetcode.com/problems/lucky-numbers-in-a-matrix/
+// Difficulty: Easy
+
+// Approach:
+// Use Row Minimum + Column Maximum.
+//
+// 1. Find the minimum element of every row and store it in minRowElements.
+//
+// 2. Find the maximum element of every column and store it in
+//    maxColElements.
+//
+// 3. Traverse the matrix and check whether an element is both:
+//    - Minimum in its row.
+//    - Maximum in its column.
+//
+// 4. If both conditions hold, add the element to the answer.
+
+// Time Complexity: O(m * n)
+// Space Complexity: O(m + n)
+
+
 class Solution {
     public List<Integer> luckyNumbers(int[][] matrix) {
         List<Integer> ans = new ArrayList<>();
