@@ -3,17 +3,17 @@ class Solution {
         // Nearest Point
         int x0, y0;
 
-        if(x1 > xCenter) {
+        if (x1 > xCenter) {
             x0 = x1;
-        } else if(x2 < xCenter) {
+        } else if (x2 < xCenter) {
             x0 = x2;
         } else {
             x0 = xCenter;
         }
 
-        if(y1 > yCenter) {
+        if (y1 > yCenter) {
             y0 = y1;
-        } else if(y2 < yCenter) {
+        } else if (y2 < yCenter) {
             y0 = y2;
         } else {
             y0 = yCenter;
