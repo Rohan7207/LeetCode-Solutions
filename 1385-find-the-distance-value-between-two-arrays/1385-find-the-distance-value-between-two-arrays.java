@@ -1,6 +1,28 @@
 class Solution {
     public int findTheDistanceValue(int[] arr1, int[] arr2, int d) {
-        Arrays.sort(arr2);
+        int count = 0;
+
+        for(int i = 0; i < arr1.length; i++) {
+            boolean flag = true;
+            for(int j = 0; j < arr2.length; j++) {
+                if(Math.abs(arr1[i] - arr2[j]) <= d) {
+                    flag = false;
+                    break;
+                }
+            }
+
+            if(flag) {
+                count++;
+            }
+        }
+
+        return count;
+    }
+}
+
+
+/*
+    Arrays.sort(arr2);
         int count = 0;
 
         for (int i = 0; i < arr1.length; i++) {
@@ -40,27 +62,9 @@ class Solution {
 
         return arr[low];
     }
-}
-
+*/
 /*
     // Use Binary search bcz if nearest point of arr1 in arr2 is <= means it is invalid, if nearest point to arr1 fails means there is no chance to other element.
     // So apply binary search on arr2 to find nearst point to arr1 elements
     // Brute force => O(m * n) and O(1)
-        int count = 0;
-
-        for(int i = 0; i < arr1.length; i++) {
-            boolean flag = true;
-            for(int j = 0; j < arr2.length; j++) {
-                if(Math.abs(arr1[i] - arr2[j]) <= d) {
-                    flag = false;
-                    break;
-                }
-            }
-
-            if(flag) {
-                count++;
-            }
-        }
-
-        return count;
 */
