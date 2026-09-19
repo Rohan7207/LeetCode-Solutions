@@ -1,3 +1,22 @@
+// Problem: Find the Distance Value Between Two Arrays
+// Link: https://leetcode.com/problems/find-the-distance-value-between-two-arrays/
+// Difficulty: Easy
+
+// Approach:
+// Use Brute Force + Early Termination.
+//
+// 1. Traverse every element of arr1.
+// 2. For each element, compare it with every element of arr2.
+// 3. Use absolute difference to check whether the two elements are
+//    within distance d.
+// 4. If even one arr2 element is within distance d, mark the current
+//    arr1 element as invalid and stop checking further.
+// 5. If no such element is found, increment the count.
+
+// Time Complexity: O(n * m)
+// Space Complexity: O(1)
+
+
 class Solution {
     public int findTheDistanceValue(int[] arr1, int[] arr2, int d) {
         int count = 0;
@@ -19,51 +38,3 @@ class Solution {
         return count;
     }
 }
-
-/*
-    Arrays.sort(arr2);
-        int count = 0;
-
-        for (int i = 0; i < arr1.length; i++) {
-            int nearestElement = helper(arr2, arr1[i], 0, arr2.length - 1);
-
-            if (Math.abs(arr1[i] - nearestElement) > d) {
-                count++;
-            }
-        }
-
-        return count;
-    }
-
-    private int helper(int[] arr, int x, int low, int high) {
-        while (low <= high) {
-            int mid = low + (high - low) / 2;
-
-            if (arr[mid] < x) {
-                low = mid + 1;
-            } else {
-                high = mid - 1;
-            }
-        }
-
-        if (low == 0) {
-            return arr[low];
-        } else if (low == arr.length) {
-            return arr[low - 1];
-        }
-
-        int left = Math.abs(x - arr[low - 1]);
-        int right = Math.abs(x - arr[low]);
-
-        if (left < right) {
-            return arr[low - 1];
-        }
-
-        return arr[low];
-    }
-*/
-/*
-    // Use Binary search bcz if nearest point of arr1 in arr2 is <= means it is invalid, if nearest point to arr1 fails means there is no chance to other element.
-    // So apply binary search on arr2 to find nearst point to arr1 elements
-    // Brute force => O(m * n) and O(1)
-*/
