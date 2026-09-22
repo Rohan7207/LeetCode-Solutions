@@ -1,7 +1,7 @@
 class Solution {
 
     class Node {
-        int[] count = {0, 0, 0, 0, 0};
+        int[] count = { 0, 0, 0, 0, 0 };
         int prod = 0;
     }
 
@@ -15,8 +15,8 @@ class Solution {
             this.k = k;
             this.n = nums.length;
             // Allocate space for the array of Nodes
-            this.segTree = new Node[4 * this.n]; 
-        
+            this.segTree = new Node[4 * this.n];
+
             // Fill every index with a new, empty Node instance
             for (int i = 0; i < segTree.length; i++) {
                 segTree[i] = new Node();
@@ -27,7 +27,7 @@ class Solution {
 
         public void build(int i, int l, int r, int[] nums) {
             // Leaf Node
-            if(l == r) {
+            if (l == r) {
                 leafNode(i, nums[l]);
                 return;
             }
@@ -46,7 +46,7 @@ class Solution {
 
         public void leafNode(int i, int val) {
             // segTree[i]
-            for(int x = 0; x < k; x++) {
+            for (int x = 0; x < k; x++) {
                 segTree[i].count[x] = 0;
             }
 
@@ -60,11 +60,11 @@ class Solution {
 
             result.prod = (left.prod * right.prod) % k;
 
-            for(int x = 0; x < k; x++) {
+            for (int x = 0; x < k; x++) {
                 result.count[x] = left.count[x];
             }
 
-            for(int x = 0; x < k; x++) {
+            for (int x = 0; x < k; x++) {
                 int newRem = (left.prod * x) % k;
 
                 result.count[newRem] += right.count[x];
@@ -74,14 +74,14 @@ class Solution {
         }
 
         public void segTreeUpdate(int i, int l, int r, int idx, int val) {
-            if(l == r) {
+            if (l == r) {
                 leafNode(i, val);
                 return;
             }
 
             int mid = l + (r - l) / 2;
 
-            if(idx <= mid) {
+            if (idx <= mid) {
                 segTreeUpdate(2 * i + 1, l, mid, idx, val);
             } else {
                 segTreeUpdate(2 * i + 2, mid + 1, r, idx, val);
@@ -96,19 +96,19 @@ class Solution {
 
         public Node segTreeQuery(int start, int end, int i, int l, int r) {
             // start and end exactly covers l and r so return that node
-            if(l >= start && r <= end) {
+            if (l >= start && r <= end) {
                 return segTree[i];
             }
 
             int mid = l + (r - l) / 2;
 
             // Completely in left side
-            if(end <= mid) {
+            if (end <= mid) {
                 return segTreeQuery(start, end, 2 * i + 1, l, mid);
-            } 
+            }
 
             // Completely in right side
-            if(start > mid) {
+            if (start > mid) {
                 return segTreeQuery(start, end, 2 * i + 2, mid + 1, r);
             }
 
@@ -133,7 +133,7 @@ class Solution {
         SegmentTree segTree = new SegmentTree(nums, k);
         int[] res = new int[len];
 
-        for(int i = 0; i < len; i++) {
+        for (int i = 0; i < len; i++) {
             int idx = queries[i][0];
             int val = queries[i][1];
             int start = queries[i][2];
@@ -318,4 +318,4 @@ class Solution {
         2. segmentTree.update(idx, val)
         3. Node = segementTree.query(start, n - 1);
         4. res.add(Node.count[x])
-*/  
+*/
