@@ -1,3 +1,57 @@
+// Problem: Find X Value of Array II
+// Link: https://leetcode.com/problems/find-x-value-of-array-ii/?envType=daily-question&envId=2026-09-20
+// Difficulty: Hard
+
+// Approach:
+//
+// 1. Each segment tree Node represents a contiguous range of the array.
+//
+// 2. For every Node, we store:
+//    - `prod`  → product of the entire range modulo k.
+//    - `count[r]` → number of subarrays inside this range whose
+//      product % k == r.
+//
+// 3. For a single element `val`, the only subarray is `[val]`.
+//    So:
+//       prod = val % k
+//       count[val % k] = 1
+//
+// 4. When merging two ranges:
+//
+//       LEFT | RIGHT
+//
+//    First, the total product is:
+//
+//       (left.prod * right.prod) % k
+//
+// 5. Every subarray completely inside the LEFT range keeps its
+//    original remainder, so copy `left.count` directly.
+//
+// 6. Every subarray completely inside the RIGHT range gets extended
+//    conceptually by the product of the LEFT range when considering
+//    the combined segment.
+//
+//    Therefore, if a right subarray has remainder `x`:
+//
+//       newRem = (left.prod * x) % k
+//
+//    Add its frequency to `result.count[newRem]`.
+//
+// 7. Build the Segment Tree recursively.
+//
+// 8. For every query:
+//    - Update the value at `idx`.
+//    - Recalculate all affected nodes from bottom to top.
+//    - Query the range `[start, n - 1]`.
+//    - Return the frequency of remainder `x`.
+//
+// 9. Because every update/query touches O(log n) nodes and each
+//    merge processes all k remainders, each operation costs O(k log n).
+
+// Time Complexity: O(n × k + q × k × log n)
+// Space Complexity: O(n × k)
+
+
 class Solution {
 
     class Node {
@@ -149,173 +203,3 @@ class Solution {
         return res;
     }
 }
-
-/*
-    The change is in previous part I and II is only suffix removal is removed not prefix, and also we have given queries to perform,
-    - Update nums[indexi] to valuei. Only this step persists for the rest of the queries.
-        Ex: nums = {1, 2, 3, 4} and queries says to change 3 to 5 then nums = {1, 2, 5, 4} remains as nums to future array.
-    - Remove the prefix nums[0..(starti - 1)] (where nums[0..(-1)] will be used to represent the empty prefix). We should remove the prefix till start_i - 1 from each query operation and return array of size of queries length where result[i] is the answer for the ith query.
-
-    Ex: nums = {1, 2, 3, 4, 5} k = 3,
-    For query0 = (2(idx), 2(val), 0(start), 2(rem)) => nums = {1, 2, 2, 4, 5} with removing empty prefix since start is 0, now we should find every subarray from modifed nums such that product of subarray modulo k is remainder = 2. (where we should also remove suffix),
-     ->  nums = {1, 2, 2, 4, 5} remove suffix {2, 4, 5} then product is 1 * 2 = 2 % 3 = count++ (same as rem)
-     ->  nums = {1, 2, 2, 4, 5} remove suffix {} then product is 1 * 2 * 2 * 4 * 5 = 80 % 3 = count++ (same as rem)
-    Now for query0 there 2 subarray product modulo k  whose rem is 2.
-    Similarly we should for each query.
-
-    query[i] = {idx, val, start, x}, nums[idx] = val
-    if start = d then we should check for subarray from d whose modulo is x and we should also do suffix
-    nums = {a, b, c, d, e, f}
-        {d, e, f} % k = x  1
-        {d, e} % k = y
-        {d} % k = x 2
-    ans = 2
-
-    // In part-I the starting was vairable and we where asking for previous ans but in this the start is fixed and end whereas based on suffix choosing,
-    Part-I = count_i[x] = count of sub[...i] % k == x
-    Part-II = count_i(starting_point)[x] = count of sub[i...] % k == x
-        We could apply same solution here but we should find for each query which is O(q*(n * k)) since n and q are large it is not feasible and leads memory limit.
-
-    - Queries
-    - Point Update (nums[idx] = val)   -> This leads to approach of segment tree
-
-    Segment Tree:
-        - We need to store product of each subarray from left to right.
-        - We need to store count of subarray's product modulo k whose remainder is x from left l 
-            count_l[x(rem)] = ? x can be from 0 to k - 1 so count can be of size k count = new int[5];
-
-    Ex: {idx, val, start, x}
-    * Now we can call only segment.query(start, n - 1)
-    * Since we need to update nums we should also change in segement, segment.update(idx, val)  // logn
-
-    class Node {
-        int[] count;
-        int prod;
-    }
-
-    int[] segmentTree = new int[4 * n];
-
-    How segment tree looks like for ex : nums = {3, 3, 4, 4}, n = 4 k = 5
-    Leaf nodes : 
-                                   0...3 
-
-                                {3, 3, 4, 4}          
-                        /                          \
-                   0..1                              2..3
-
-                  {3, 3}                            {4, 4}
-               /          \                    /             \
-          0..0           1..1               2..2              3..3
-
-           {3}            {3}                {4}               {4}   
-
-
-    Leaf Node 2..2 {4}: L = 2 R = 2, where prod = 4 and count = {0, 0, 0, 0, 1}   
-    possible subarray = 4 only  4 % 5 = 4
-
-    Build Segment Tree: buildSegmentTree(0(root node start from 0), 0(l), n - 1(r for root), nums);
-        void buildSegmentTree(int i, int l, int r, int[] nums) {
-            // Check if leaf node
-            if(l == r) {
-                // single element, nums[i]. prod is nums[i] only and count is count[nums[i] % k]++
-                makeLeafNode(i, nums[l]);
-            }
-
-            int mid = l + (r - l) / 2;
-
-            // left child build
-            buildSegmentTree(2 * i + 1, l, mid, nums);  // 2 * i + 1 is root of nums
-
-            // right child build
-            buildSegmentTree(2 * i + 2, mid + 1, r, nums);
-
-            // build curr node with help of leftChild and rightChild, the task is to get combined info of left and right and build parent where prod can be built easily by leftProd * rightProd but building count from both child is important part
-            segmentTree[i] = mergeNodes(segmentTree[2 * i + 1], segmentTree[2 * i + 2]);
-
-            
-        } 
-
-        mergeNode: Go first down and understand then look this
-        Node res(root Node);
-        res.prod = (left.prod * right.prod) % k;
-            
-        for(int x = 0; x < k; x++) {
-            res.count[x] = left.count[x];  // Paste same left part
-        }     
-
-        for(int x = 0; x < k; x++) {
-            int newRem = (left.prod * x) % k;
-
-            res.count[newRem] += right.count[x];
-        }
-
-        return res;  
-
-
-    How to Merge left child and right child to fill parent node??
-        segmentTree[i] = mergeNodes(segmentTree[2 * i + 1], segmentTree[2 * i + 2]);       
-
-     Ex: nums = {3, 3, 2, 2} k = 5
-                        root[0..3]   =>   sub = {3}, {3, 3}, {3, 3, 2}, {3, 3, 2, 2}
-                        prod=(4*4)%5=1
-                        count={0, 0 + 1, 0, 1 + 1, 1}
-                    /                  \
-            Left[0..1]                 right[2..3]
-            prod=(3*3)%5=4             prod=(2*2)%5=4
-            count={0, 0, 0, 1, 1}      count={0, 0, 1, 0, 1} 
-        sub= {3} % k = 3               sub= {2} % k = 2
-             {3, 3} % k = 4                 {2, 2} % k = 4
-
-    - The starting point of left child is always starting point of root so there will be same subarrys as left child in root, so we can paste same left count values to count values to root count array
-
-        Node res(root Node);
-        res.prod = (left.prod * right.prod) % k;
-        
-        for(int x = 0; x < k; x++) {
-            res.count[x] = left.count[x];  // Paste same left part
-        }
-
-    sub = {3}, {3, 3}, {3, 3, 2}, {3, 3, 2, 2} of root
-
-    here {3, 3, 2} where {3, 3} comes from left and {2} from right similar for other 
-        {3 * 3 * 2} % k
-        (left.prod * 2) % k
-        ((left.prod % k) * (2 % k)) % k
-        newRem = (left.prod * r) % k
-                 (4 * 2) % 5 = 3
-                 /      \-  right= {2} % k = 2  
-(3 * 3 % 5 = 4 (left.prod))  for ex: {2, 1} % k = 2 for this also we will get same rem as 3 which 2times
-                               We can sya that how many times rem is 2 on right we get that many times 3 as rem. so we ask right side how many times rem is 2 and add it root. 
-
-    For {3, 3, 2, 2} % k
-        ((3 * 3) * (2 * 2)) % k
-        ((3 * 3) % k * (2 * 2) % K) % k
-        (left.prod * 4) % k = 1 and we ask right side that how many subarrays with rem 4.
-        
-        We did: (left.prod * 2) = 3    
-                (left.prod * 4) = 1
-        There could other remainder also, 0, 1, 2, 3, 4
-
-    mergeNode:
-        Node res(root Node);
-        res.prod = (left.prod * right.prod) % k;
-            
-        for(int x = 0; x < k; x++) {
-            res.count[x] = left.count[x];  // Paste same left part
-        }     
-
-        for(int x = 0; x < k; x++) {
-            int newRem = (left.prod * x) % k;
-
-            res.count[newRem] += right.count[x];
-        }
-
-        return res;
-
-    
-    Steps: 
-        1. We should query[i] = {idx, val, start, x}
-        2. segmentTree.update(idx, val)
-        3. Node = segementTree.query(start, n - 1);
-        4. res.add(Node.count[x])
-*/
