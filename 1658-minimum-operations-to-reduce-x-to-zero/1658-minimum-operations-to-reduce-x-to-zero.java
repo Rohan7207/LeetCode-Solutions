@@ -5,11 +5,11 @@ class Solution {
         int total = 0;
         int ans = Integer.MAX_VALUE;
 
-        for(int num : nums) {
+        for (int num : nums) {
             total += num;
         }
 
-        if(total < x) {
+        if (total < x) {
             return -1;
         }
 
@@ -17,17 +17,17 @@ class Solution {
         int currSum = 0;
         int count = 0;
         int target = total - x;
-        for(int right = 0; right < n; right++) {
+        for (int right = 0; right < n; right++) {
             currSum += nums[right];
             count++;
 
-            while(left < n && currSum > target) {
+            while (left < n && currSum > target) {
                 currSum -= nums[left];
                 left++;
                 count--;
             }
 
-            if(currSum == target) {
+            if (currSum == target) {
                 ans = Math.min(ans, n - count);
             }
         }
