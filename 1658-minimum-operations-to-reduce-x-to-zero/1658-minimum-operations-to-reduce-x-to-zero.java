@@ -9,14 +9,19 @@ class Solution {
             total += num;
         }
 
-        if (total < x) {
+       
+        int target = total - x;
+        if(target == 0) {
+            return n;
+        }
+
+        if(target < 0) {
             return -1;
         }
 
         int left = 0;
         int currSum = 0;
         int count = 0;
-        int target = total - x;
         for (int right = 0; right < n; right++) {
             currSum += nums[right];
             count++;
