@@ -9,13 +9,12 @@ class Solution {
             total += num;
         }
 
-       
         int target = total - x;
-        if(target == 0) {
+        if (target == 0) {
             return n;
         }
 
-        if(target < 0) {
+        if (target < 0) {
             return -1;
         }
 
