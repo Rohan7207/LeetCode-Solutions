@@ -35,7 +35,7 @@ class Solution {
             }
         }
 
-        if(maxLength == -1) {
+        if (maxLength == -1) {
             return -1;
         }
 
