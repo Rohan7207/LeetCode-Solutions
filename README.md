@@ -210,6 +210,7 @@
 | [1385-find-the-distance-value-between-two-arrays](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1385-find-the-distance-value-between-two-arrays/) | Easy |
 | [1386-cinema-seat-allocation](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1386-cinema-seat-allocation) |
 | [1389-create-target-array-in-the-given-order](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1389-create-target-array-in-the-given-order/) | Easy |
+| [1390-four-divisors](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1390-four-divisors/) | Medium |
 | [1394-find-lucky-integer-in-an-array](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1394-find-lucky-integer-in-an-array) |
 | [1406-stone-game-iii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1406-stone-game-iii) |
 | [1423-maximum-points-you-can-obtain-from-cards](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1423-maximum-points-you-can-obtain-from-cards) |
@@ -496,6 +497,7 @@
 | [1344-angle-between-hands-of-a-clock](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1344-angle-between-hands-of-a-clock) |
 | [1352-product-of-the-last-k-numbers](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1352-product-of-the-last-k-numbers/) | Medium |
 | [1360-number-of-days-between-two-dates](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1360-number-of-days-between-two-dates) |
+| [1390-four-divisors](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1390-four-divisors/) | Medium |
 | [1401-circle-and-rectangle-overlapping](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1401-circle-and-rectangle-overlapping/) | Medium |
 | [1406-stone-game-iii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1406-stone-game-iii) |
 | [1510-stone-game-iv](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1510-stone-game-iv) |
@@ -1877,4 +1879,12 @@
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [1143-longest-common-subsequence](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1143-longest-common-subsequence) |
+## Prime Factorization
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [1390-four-divisors](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1390-four-divisors/) | Medium |
+## Sieve Theory
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [1390-four-divisors](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1390-four-divisors/) | Medium |
 <!---LeetCode Topics End-->
