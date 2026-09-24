@@ -9,7 +9,7 @@ class Solution {
             int sqrt = (int) Math.sqrt(x);
 
             for (int j = 2; j <= sqrt; j++) {
-                if(j * j == x) {
+                if (j * j == x) {
                     count++;
                     sum += j;
                 }
