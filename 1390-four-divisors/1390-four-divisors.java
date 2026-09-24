@@ -5,7 +5,7 @@ class Solution {
         for (int i = 0; i < nums.length; i++) {
             int x = nums[i];
             int count = 0;
-            int sum = 1 + nums[i];
+            int sum = 1 + x;
             int sqrt = (int) Math.sqrt(x);
 
             for (int j = 2; j <= sqrt; j++) {
