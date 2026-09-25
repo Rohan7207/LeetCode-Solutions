@@ -212,6 +212,7 @@
 | [1389-create-target-array-in-the-given-order](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1389-create-target-array-in-the-given-order/) | Easy |
 | [1390-four-divisors](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1390-four-divisors/) | Medium |
 | [1394-find-lucky-integer-in-an-array](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1394-find-lucky-integer-in-an-array) |
+| [1395-count-number-of-teams](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1395-count-number-of-teams/) | Medium |
 | [1406-stone-game-iii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1406-stone-game-iii) |
 | [1423-maximum-points-you-can-obtain-from-cards](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1423-maximum-points-you-can-obtain-from-cards) |
 | [1464-maximum-product-of-two-elements-in-an-array](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1464-maximum-product-of-two-elements-in-an-array) |
@@ -860,6 +861,7 @@
 | [1227-airplane-seat-assignment-probability](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1227-airplane-seat-assignment-probability) |
 | [1262-greatest-sum-divisible-by-three](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1262-greatest-sum-divisible-by-three) |
 | [1301-number-of-paths-with-max-score](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1301-number-of-paths-with-max-score) |
+| [1395-count-number-of-teams](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1395-count-number-of-teams/) | Medium |
 | [1406-stone-game-iii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1406-stone-game-iii) |
 | [1477-find-two-non-overlapping-sub-arrays-each-with-target-sum](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1477-find-two-non-overlapping-sub-arrays-each-with-target-sum/) | Medium |
 | [1510-stone-game-iv](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1510-stone-game-iv) |
@@ -1788,6 +1790,7 @@
 ## Segment Tree
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [1395-count-number-of-teams](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1395-count-number-of-teams/) | Medium |
 | [2213-longest-substring-of-one-repeating-character](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2213-longest-substring-of-one-repeating-character) |
 | [3501-maximize-active-section-with-trade-ii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3501-maximize-active-section-with-trade-ii) |
 | [3525-find-x-value-of-array-ii](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/3525-find-x-value-of-array-ii/) | Hard |
@@ -1893,4 +1896,8 @@
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [1390-four-divisors](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1390-four-divisors/) | Medium |
+## Binary Indexed Tree
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [1395-count-number-of-teams](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1395-count-number-of-teams/) | Medium |
 <!---LeetCode Topics End-->
