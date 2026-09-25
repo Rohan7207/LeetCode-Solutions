@@ -4,11 +4,11 @@ class Solution {
         int[] freq = new int[37];
         int maxSize = -1;
 
-        for(int i = 1; i <= n; i++) {
+        for (int i = 1; i <= n; i++) {
             int temp = i;
             int sum = 0;
 
-            while(temp > 0) {
+            while (temp > 0) {
                 sum += temp % 10;
                 temp /= 10;
             }
@@ -18,8 +18,8 @@ class Solution {
         }
 
         int ans = 0;
-        for(int val : freq) {
-            if(val == maxSize) {
+        for (int val : freq) {
+            if (val == maxSize) {
                 ans++;
             }
         }
