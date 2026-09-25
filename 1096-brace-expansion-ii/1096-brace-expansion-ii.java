@@ -19,14 +19,14 @@ class Solution {
     private Set<String> getUnit() {
         Set<String> result = new HashSet<>();
 
-        if(s.charAt(idx) == '{') {
-            idx++;  // '{'
+        if (s.charAt(idx) == '{') {
+            idx++; // '{'
             result = performUnion();
- 
-            idx++;  // '}'
-        } else {  // Alphabet
+
+            idx++; // '}'
+        } else { // Alphabet
             result.add(String.valueOf(s.charAt(idx)));
-            idx++;  // letter
+            idx++; // letter
         }
 
         return result;
@@ -36,13 +36,13 @@ class Solution {
         Set<String> result = new HashSet<>();
         result.add("");
 
-        while(idx < n && (s.charAt(idx) == '{' || Character.isLetter(s.charAt(idx)))) {
+        while (idx < n && (s.charAt(idx) == '{' || Character.isLetter(s.charAt(idx)))) {
             Set<String> temp = getUnit();
 
             Set<String> concatRes = new HashSet<>();
 
-            for(String left : result) {
-                for(String right : temp) {
+            for (String left : result) {
+                for (String right : temp) {
                     concatRes.add(left + right);
                 }
             }
@@ -56,12 +56,12 @@ class Solution {
     private Set<String> performUnion() {
         Set<String> result = new HashSet<>();
 
-        while(true) {
+        while (true) {
             Set<String> temp = performConcat();
 
             result.addAll(temp);
 
-            if(idx < n && s.charAt(idx) == ',') {
+            if (idx < n && s.charAt(idx) == ',') {
                 idx++;
             } else {
                 break;
@@ -181,4 +181,4 @@ class Solution {
      - At }, performUnion calls concat to perform concatentaion which gives {ab, ac}
      - At next comma, it calls concat which gives {d} so on {e}, {fgi, fgj, fhi, fhj}
 
-*/      
+*/
