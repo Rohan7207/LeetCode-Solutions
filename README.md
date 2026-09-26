@@ -213,6 +213,7 @@
 | [1390-four-divisors](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1390-four-divisors/) | Medium |
 | [1394-find-lucky-integer-in-an-array](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1394-find-lucky-integer-in-an-array) |
 | [1395-count-number-of-teams](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1395-count-number-of-teams/) | Medium |
+| [1403-minimum-subsequence-in-non-increasing-order](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1403-minimum-subsequence-in-non-increasing-order/) | Easy |
 | [1406-stone-game-iii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1406-stone-game-iii) |
 | [1423-maximum-points-you-can-obtain-from-cards](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1423-maximum-points-you-can-obtain-from-cards) |
 | [1464-maximum-product-of-two-elements-in-an-array](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1464-maximum-product-of-two-elements-in-an-array) |
@@ -947,6 +948,7 @@
 | [1346-check-if-n-and-its-double-exist](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1346-check-if-n-and-its-double-exist) |
 | [1365-how-many-numbers-are-smaller-than-the-current-number](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1365-how-many-numbers-are-smaller-than-the-current-number) |
 | [1385-find-the-distance-value-between-two-arrays](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1385-find-the-distance-value-between-two-arrays/) | Easy |
+| [1403-minimum-subsequence-in-non-increasing-order](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1403-minimum-subsequence-in-non-increasing-order/) | Easy |
 | [1464-maximum-product-of-two-elements-in-an-array](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1464-maximum-product-of-two-elements-in-an-array) |
 | [1520-maximum-number-of-non-overlapping-substrings](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1520-maximum-number-of-non-overlapping-substrings/) | Hard |
 | [1833-maximum-ice-cream-bars](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1833-maximum-ice-cream-bars) |
@@ -1043,6 +1045,7 @@
 | [1328-break-a-palindrome](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1328-break-a-palindrome) |
 | [1338-reduce-array-size-to-the-half](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1338-reduce-array-size-to-the-half) |
 | [1386-cinema-seat-allocation](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1386-cinema-seat-allocation) |
+| [1403-minimum-subsequence-in-non-increasing-order](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1403-minimum-subsequence-in-non-increasing-order/) | Easy |
 | [1520-maximum-number-of-non-overlapping-substrings](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1520-maximum-number-of-non-overlapping-substrings/) | Hard |
 | [1833-maximum-ice-cream-bars](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1833-maximum-ice-cream-bars) |
 | [1846-maximum-element-after-decreasing-and-rearranging](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1846-maximum-element-after-decreasing-and-rearranging) |
