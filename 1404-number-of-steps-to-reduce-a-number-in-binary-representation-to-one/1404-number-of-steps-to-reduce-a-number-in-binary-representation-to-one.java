@@ -4,11 +4,11 @@ class Solution {
         int carry = 0;
 
         // Loop from right to left, stopping before the first character (index 0)
-        for(int i = s.length() - 1; i > 0; i--) {
+        for (int i = s.length() - 1; i > 0; i--) {
             // Calculate the net value of the current position
             int currBit = (s.charAt(i) - '0') + carry;
 
-            if(currBit == 1) {
+            if (currBit == 1) {
                 // Case 1: Odd number (1)
                 // Needs 2 steps: +1 to make it even, then /2 to shift it out.
                 count += 2;
