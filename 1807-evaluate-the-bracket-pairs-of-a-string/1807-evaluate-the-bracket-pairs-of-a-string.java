@@ -1,3 +1,35 @@
+// Problem: Evaluate the Bracket Pairs of a String
+// Link: https://leetcode.com/problems/evaluate-the-bracket-pairs-of-a-string/?envType=daily-question&envId=2026-09-26
+// Difficulty: Medium
+
+// Approach:
+//
+// 1. Store every key-value pair from knowledge in a HashMap.
+//      key → value
+//
+// 2. Traverse the string from left to right.
+//
+// 3. If the current character is normal text:
+//      → append it directly to the result.
+//
+// 4. If the current character is '(':
+//      → move forward until ')'.
+//      → the characters between them form the key.
+//
+// 5. Look up the key in the HashMap.
+//      - Present → append its value.
+//      - Missing → append "?"
+//
+// 6. Move i to the closing ')' so the bracket expression is not
+//    processed again.
+
+// Time Complexity: O(n + K)
+// Space Complexity: O(n + K)
+//
+// n = length of string
+// K = total size of knowledge
+
+
 class Solution {
     public String evaluate(String s, List<List<String>> knowledge) {
         Map<String, String> map = new HashMap<>();
