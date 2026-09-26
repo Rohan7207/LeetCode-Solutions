@@ -3,7 +3,7 @@ class Solution {
         List<Integer> ans = new ArrayList<>();
         int total = 0;
 
-        for(int num : nums) {
+        for (int num : nums) {
             total += num;
         }
 
@@ -12,10 +12,10 @@ class Solution {
 
         int currSum = 0;
 
-        for(int i = n - 1; i >= 0; i--) {
+        for (int i = n - 1; i >= 0; i--) {
             currSum += nums[i];
 
-            if(currSum > total - currSum) {
+            if (currSum > total - currSum) {
                 ans.add(nums[i]);
                 break;
             }
