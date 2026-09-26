@@ -1,3 +1,50 @@
+// Problem: Number of Steps to Reduce a Number in Binary Representation to One
+// Link: https://leetcode.com/problems/number-of-steps-to-reduce-a-number-in-binary-representation-to-one/
+// Difficulty: Medium
+
+// Approach:
+//
+// 1. We need to repeatedly perform:
+//      - if number is even → divide by 2
+//      - if number is odd  → add 1
+//
+// 2. Instead of converting the binary string to an integer, process
+//    bits from right to left.
+//
+// 3. Maintain a carry:
+//      carry = 0 → no effect from the right
+//      carry = 1 → previous "+1" affected the current bit
+//
+// 4. For each bit, calculate:
+//
+//      currBit = bit + carry
+//
+// 5. If currBit == 1:
+//      → current number is odd
+//      → need "+1" and then "/2"
+//      → 2 steps
+//      → carry becomes 1
+//
+// 6. If currBit == 0:
+//      → number is even
+//      → only "/2"
+//      → 1 step
+//      → carry = 0
+//
+// 7. If currBit == 2:
+//      → effectively 10 in binary
+//      → only "/2"
+//      → 1 step
+//      → carry remains 1
+//
+// 8. We stop at index 1 because the first bit is guaranteed to be 1.
+//    After processing all lower bits, the remaining carry determines
+//    whether one final step is needed.
+
+// Time Complexity: O(n)
+// Space Complexity: O(1)
+
+
 class Solution {
     public int numSteps(String s) {
         int count = 0;
@@ -27,34 +74,6 @@ class Solution {
         return carry + count;
     }
 }
-
-/*
-
-    // This would accepted if s was not to long since s may go upto 500 characters it will overflow
-    public int numSteps(String s) {
-        long num = 0;
-        
-        for(int i = 0; i < s.length(); i++) {
-            // Shift the existing num to the left by 1 bit (multiply by 2)
-            num = num * 2;
-
-            // Add the current bit (0 or 1)
-            if(s.charAt(i) == '1') {
-                num += 1;
-            }
-        }
-
-        int count = 0;
-        while(num > 1) {
-            if(num % 2 == 0) {
-                num /= 2;
-            } else {
-                num = num + 1;
-            }
-
-            count++;
-        }
-
         return count;
     }
 */
