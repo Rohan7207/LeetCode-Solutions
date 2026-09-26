@@ -14,13 +14,11 @@ class Solution {
 
         for (int i = n - 1; i >= 0; i--) {
             currSum += nums[i];
+            ans.add(nums[i]);
 
             if (currSum > total - currSum) {
-                ans.add(nums[i]);
                 break;
             }
-
-            ans.add(nums[i]);
         }
 
         return ans;
