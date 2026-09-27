@@ -1,16 +1,17 @@
 class Solution {
     public String reverseParentheses(String s) {
+        // O(n + n) doing 2-pass
         int n = s.length();
         Stack<Integer> openBracketIdx = new Stack<>();
-        int[] bracketIdx = new int[n];  // bracketIdx[0] = 2 and bracketIdx[2] = 0 means two way mapping
+        int[] bracketIdx = new int[n]; // bracketIdx[0] = 2 and bracketIdx[2] = 0 means two way mapping
 
-        for(int i = 0; i < n; i++) {
+        for (int i = 0; i < n; i++) {
             char ch = s.charAt(i);
 
             // We use stack bcz whenever we find closing stack stores it corrct opening bracket and we store it in closeBracketIdx
-            if(ch == '(') {
-                openBracketIdx.push(i);  
-            } else if(ch == ')') {
+            if (ch == '(') {
+                openBracketIdx.push(i);
+            } else if (ch == ')') {
                 int j = openBracketIdx.peek();
                 openBracketIdx.pop();
 
@@ -20,13 +21,13 @@ class Solution {
         }
 
         StringBuilder res = new StringBuilder();
-        int flag = 1;  // For changing direction
-        for(int i = 0; i < n; i += flag) {
+        int flag = 1; // For changing direction
+        for (int i = 0; i < n; i += flag) {
             char ch = s.charAt(i);
 
-            if(ch == '(' || ch == ')') {
+            if (ch == '(' || ch == ')') {
                 i = bracketIdx[i];
-                flag = -flag;  // Changing direction if RTL -> LTR or LTR -> RTL
+                flag = -flag; // Changing direction if RTL -> LTR or LTR -> RTL
             } else {
                 res.append(ch);
             }
