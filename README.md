@@ -629,6 +629,7 @@
 | [1154-day-of-the-year](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1154-day-of-the-year) |
 | [1160-find-words-that-can-be-formed-by-characters](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1160-find-words-that-can-be-formed-by-characters) |
 | [1189-maximum-number-of-balloons](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1189-maximum-number-of-balloons) |
+| [1190-reverse-substrings-between-each-pair-of-parentheses](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1190-reverse-substrings-between-each-pair-of-parentheses/) | Medium |
 | [1221-split-a-string-in-balanced-strings](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1221-split-a-string-in-balanced-strings) |
 | [1234-replace-the-substring-for-balanced-string](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1234-replace-the-substring-for-balanced-string) |
 | [1247-minimum-swaps-to-make-strings-equal](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1247-minimum-swaps-to-make-strings-equal) |
@@ -1102,6 +1103,7 @@
 | [1047-remove-all-adjacent-duplicates-in-string](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1047-remove-all-adjacent-duplicates-in-string) |
 | [1081-smallest-subsequence-of-distinct-characters](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1081-smallest-subsequence-of-distinct-characters) |
 | [1096-brace-expansion-ii](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1096-brace-expansion-ii/) | Hard |
+| [1190-reverse-substrings-between-each-pair-of-parentheses](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1190-reverse-substrings-between-each-pair-of-parentheses/) | Medium |
 | [1249-minimum-remove-to-make-valid-parentheses](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1249-minimum-remove-to-make-valid-parentheses) |
 | [2130-maximum-twin-sum-of-a-linked-list](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2130-maximum-twin-sum-of-a-linked-list) |
 ## Heap (Priority Queue)
@@ -1912,4 +1914,8 @@
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [1395-count-number-of-teams](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1395-count-number-of-teams/) | Medium |
+## Bracket Sequences
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [1190-reverse-substrings-between-each-pair-of-parentheses](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1190-reverse-substrings-between-each-pair-of-parentheses/) | Medium |
 <!---LeetCode Topics End-->
