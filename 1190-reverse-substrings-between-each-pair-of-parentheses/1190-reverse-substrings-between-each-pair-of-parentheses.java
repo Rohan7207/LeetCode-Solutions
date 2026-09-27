@@ -101,7 +101,7 @@ class Solution {
 */
 
 /*
-    Approach 2: 
+    Approach 2: Use change direction to print res in one pass with O(2n) bcz 2-pass for storing 2 way map and building res.
         - Here simple is that we need to print characters from end with macthing pair so we need to change directions based on parenthesis. We need to go its matching counter bracket
         Ex: "(a(bc)d)"
         index  char  counterIdx    direction    res
