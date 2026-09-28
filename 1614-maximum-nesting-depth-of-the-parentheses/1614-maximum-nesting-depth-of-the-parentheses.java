@@ -3,14 +3,14 @@ class Solution {
         int open = 0;
         int maxOpen = 0;
 
-        for(char ch : s.toCharArray()) {
-            if(ch == '(') {
+        for (char ch : s.toCharArray()) {
+            if (ch == '(') {
                 open++;
 
-                if(maxOpen < open) {
+                if (maxOpen < open) {
                     maxOpen = open;
                 }
-            } else if(ch == ')') {
+            } else if (ch == ')') {
                 open--;
             }
         }
