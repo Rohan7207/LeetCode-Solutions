@@ -5,15 +5,12 @@ class Solution {
         for (int i = 0; i < words.length; i++) {
             String word = words[i];
             for (int j = 0; j < words.length; j++) {
-                String pattern = words[j];
-                if (i == j || word.length() > pattern.length()) {
-                    continue;
-                }
-
-                if (pattern.contains(word)) {
+                if (i != j) {
+                if (words[j].contains(word)) {
                     res.add(word);
                     break;
                 }
+            }
             }
         }
 
