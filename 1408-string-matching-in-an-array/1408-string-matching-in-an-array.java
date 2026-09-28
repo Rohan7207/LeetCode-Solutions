@@ -6,11 +6,11 @@ class Solution {
             String word = words[i];
             for (int j = 0; j < words.length; j++) {
                 if (i != j) {
-                if (words[j].contains(word)) {
-                    res.add(word);
-                    break;
+                    if (words[j].contains(word)) {
+                        res.add(word);
+                        break;
+                    }
                 }
-            }
             }
         }
 
