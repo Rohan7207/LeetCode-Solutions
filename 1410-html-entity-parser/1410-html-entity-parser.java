@@ -1,3 +1,20 @@
+// Problem: HTML Entity Parser
+// Link: https://leetcode.com/problems/html-entity-parser/
+// Difficulty: Medium
+
+// Approach:
+// 1. Store all valid HTML entities and their decoded characters in a HashMap.
+// 2. Traverse the string from left to right.
+// 3. When '&' is found, scan forward until ';' to get the complete entity.
+// 4. Check whether this entity exists in the HashMap.
+// 5. If it exists, append its decoded value and jump i to the ';'.
+// 6. Otherwise, append the current character normally.
+// 7. Return the constructed StringBuilder.
+
+// Time Complexity: O(n) because the entity length is bounded by a small constant.
+// Space Complexity: O(n) for the output StringBuilder + HashMap.
+
+
 class Solution {
     public String entityParser(String text) {
         int n = text.length();
