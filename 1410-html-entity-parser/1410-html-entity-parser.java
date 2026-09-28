@@ -28,6 +28,7 @@ class Solution {
                     }
                 }
             }
+            
             ans.append(ch);
         }
 
