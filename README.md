@@ -510,6 +510,7 @@
 | [1399-count-largest-group](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1399-count-largest-group/) | Easy |
 | [1401-circle-and-rectangle-overlapping](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1401-circle-and-rectangle-overlapping/) | Medium |
 | [1406-stone-game-iii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1406-stone-game-iii) |
+| [1414-find-the-minimum-number-of-fibonacci-numbers-whose-sum-is-k](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1414-find-the-minimum-number-of-fibonacci-numbers-whose-sum-is-k/) | Medium |
 | [1510-stone-game-iv](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1510-stone-game-iv) |
 | [1563-stone-game-v](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1563-stone-game-v) |
 | [1621-number-of-sets-of-k-non-overlapping-line-segments](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1621-number-of-sets-of-k-non-overlapping-line-segments/) | Medium |
@@ -1055,6 +1056,7 @@
 | [1338-reduce-array-size-to-the-half](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1338-reduce-array-size-to-the-half) |
 | [1386-cinema-seat-allocation](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1386-cinema-seat-allocation) |
 | [1403-minimum-subsequence-in-non-increasing-order](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1403-minimum-subsequence-in-non-increasing-order/) | Easy |
+| [1414-find-the-minimum-number-of-fibonacci-numbers-whose-sum-is-k](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1414-find-the-minimum-number-of-fibonacci-numbers-whose-sum-is-k/) | Medium |
 | [1520-maximum-number-of-non-overlapping-substrings](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1520-maximum-number-of-non-overlapping-substrings/) | Hard |
 | [1833-maximum-ice-cream-bars](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1833-maximum-ice-cream-bars) |
 | [1846-maximum-element-after-decreasing-and-rearranging](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1846-maximum-element-after-decreasing-and-rearranging) |
