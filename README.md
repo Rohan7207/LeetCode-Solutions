@@ -241,6 +241,7 @@
 | [2161-partition-array-according-to-given-pivot](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2161-partition-array-according-to-given-pivot) |
 | [2196-create-binary-tree-from-descriptions](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2196-create-binary-tree-from-descriptions) |
 | [2213-longest-substring-of-one-repeating-character](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2213-longest-substring-of-one-repeating-character) |
+| [2267-check-if-there-is-a-valid-parentheses-string-path](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/2267-check-if-there-is-a-valid-parentheses-string-path/) | Hard |
 | [2395-find-subarrays-with-equal-sum](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/2395-find-subarrays-with-equal-sum/) | Easy |
 | [2540-minimum-common-value](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2540-minimum-common-value) |
 | [2574-left-and-right-sum-differences](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2574-left-and-right-sum-differences) |
@@ -881,6 +882,7 @@
 | [1563-stone-game-v](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1563-stone-game-v) |
 | [1621-number-of-sets-of-k-non-overlapping-line-segments](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1621-number-of-sets-of-k-non-overlapping-line-segments/) | Medium |
 | [1872-stone-game-viii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1872-stone-game-viii) |
+| [2267-check-if-there-is-a-valid-parentheses-string-path](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/2267-check-if-there-is-a-valid-parentheses-string-path/) | Hard |
 | [2472-maximum-number-of-non-overlapping-palindrome-substrings](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/2472-maximum-number-of-non-overlapping-palindrome-substrings/) | Hard |
 | [3302-find-the-lexicographically-smallest-valid-sequence](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3302-find-the-lexicographically-smallest-valid-sequence) |
 | [3336-find-the-number-of-subsequences-with-equal-gcd](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3336-find-the-number-of-subsequences-with-equal-gcd) |
@@ -1209,6 +1211,7 @@
 | [1337-the-k-weakest-rows-in-a-matrix](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1337-the-k-weakest-rows-in-a-matrix) |
 | [1351-count-negative-numbers-in-a-sorted-matrix](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1351-count-negative-numbers-in-a-sorted-matrix) |
 | [1380-lucky-numbers-in-a-matrix](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1380-lucky-numbers-in-a-matrix/) | Easy |
+| [2267-check-if-there-is-a-valid-parentheses-string-path](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/2267-check-if-there-is-a-valid-parentheses-string-path/) | Hard |
 | [2812-find-the-safest-path-in-a-grid](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2812-find-the-safest-path-in-a-grid) |
 | [3286-find-a-safe-walk-through-a-grid](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3286-find-a-safe-walk-through-a-grid) |
 | [3568-minimum-moves-to-clean-the-classroom](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3568-minimum-moves-to-clean-the-classroom) |
@@ -1926,4 +1929,5 @@
 | ------- | ------- |
 | [1190-reverse-substrings-between-each-pair-of-parentheses](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1190-reverse-substrings-between-each-pair-of-parentheses/) | Medium |
 | [1614-maximum-nesting-depth-of-the-parentheses](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1614-maximum-nesting-depth-of-the-parentheses/) | Easy |
+| [2267-check-if-there-is-a-valid-parentheses-string-path](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/2267-check-if-there-is-a-valid-parentheses-string-path/) | Hard |
 <!---LeetCode Topics End-->
