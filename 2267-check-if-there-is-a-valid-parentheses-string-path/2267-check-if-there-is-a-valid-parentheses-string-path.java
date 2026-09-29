@@ -1,14 +1,55 @@
+// Problem: Check if There Is a Valid Parentheses String Path
+// Link: https://leetcode.com/problems/check-if-there-is-a-valid-parentheses-string-path/?envType=daily-question&envId=2026-09-29
+// Difficulty: Hard
+
+// Approach:
+// 1. A valid path must contain an equal number of '(' and ')'.
+//    Therefore, the total number of cells (m + n - 1) must be even.
+//
+// 2. Start from (0, 0) with open = 0.
+//    `open` represents the number of unmatched '(' seen so far.
+//
+// 3. For every cell:
+//    - '(' → open++
+//    - ')' → open--
+//
+// 4. If open becomes negative, the path is invalid because we have
+//    encountered ')' without a matching '('.
+//
+// 5. From each cell, we can move only:
+//    - down
+//    - right
+//
+// 6. The same state can be reached through multiple paths.
+//    So memoize:
+//
+//       dp[row][col][open]
+//
+//    This means: whether a valid path exists from this cell with
+//    the current number of unmatched '('.
+//
+// 7. At the bottom-right cell, the path is valid only when open == 0.
+//
+// 8. Use Boolean instead of boolean so that:
+//    null  → state not calculated
+//    true  → valid
+//    false → invalid
+
+// Time Complexity: O(m * n * (m + n))
+// Space Complexity: O(m * n * (m + n))
+
+
 class Solution {
 
     int m, n;
-    Boolean[][][] dp; // Time = states O(m * n (m + n)) and  This is recursive with memo above is bottom-up
+    Boolean[][][] dp; 
 
     public boolean hasValidPath(char[][] grid) {
         m = grid.length;
         n = grid[0].length;
-        dp = new Boolean[m][n][m + n]; // open count max value is m + n - 1
+        dp = new Boolean[m][n][m + n]; 
 
-        if ((m + n - 1) % 2 == 1) { // bcz the total pairs must be even to be valid
+        if ((m + n - 1) % 2 == 1) {
             return false;
         }
 
@@ -55,56 +96,3 @@ class Solution {
         return dp[row][col][open] = false;
     }
 }
-
-/*
-    class Solution {
-    public boolean hasValidPath(char[][] grid) {
-        int m = grid.length;
-        int n = grid[0].length;
-        boolean[][][] dp = new boolean[m][n][m + n]; // open count max value is m + n - 1
-
-        if ((m + n - 1) % 2 == 1) { // bcz the total pairs must be even to be valid
-            return false;
-        }
-
-        if (grid[0][0] == ')' || grid[m - 1][n - 1] == '(') {
-            return false;
-        }
-
-        for (int i = m - 1; i >= 0; i--) { // bcz we need row + 1 values
-            for (int j = n - 1; j >= 0; j--) { // same col + 1
-                // i + j + 1 bcz at any cell we will traverse i rows i.e (i + 1) and j cols (j + 1) but since i is already covered we need -1 which gives (i + 1)(j + 1 - 1)  => i + j + 1 in worst case
-                for (int open = 0; open <= i + j + 1; open++) {
-                    if (i == m - 1 && j == n - 1) {
-                        dp[i][j][open] = (open == 0);
-                        continue;
-                    }
-
-                    dp[i][j][open] = false;
-
-                    // down
-                    //  we need open count value for this we know i and j values and we will ask down cell what is its value if '(' open++ or open--
-                    if (i + 1 < m) {
-                        int nextOpen = (grid[i + 1][j] == '(') ? open + 1 : open - 1;
-                        if (nextOpen >= 0 && dp[i + 1][j][nextOpen]) { // if next cell is valid mark current as true
-                            dp[i][j][open] = true;
-                        }
-                    }
-
-                    // right
-                    if (j + 1 < n) {
-                        int nextOpen = grid[i][j + 1] == '(' ? open + 1 : open - 1;
-                        if (nextOpen >= 0 && dp[i][j + 1][nextOpen]) { // if next cell is valid mark current as true
-                            dp[i][j][open] = true;
-                        }
-                    }
-                }
-            }
-        }
-
-        // return solve(grid, 0, 0, 0);
-        // 1 bcz we checked starting condition grid[0][0]=')' we returned false so then if it is not met then definetely open count would be 1
-        return dp[0][0][1]; // O(m * n (m + n))
-    }
-}
-*/
