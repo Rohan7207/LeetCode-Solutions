@@ -4,10 +4,10 @@ class Solution {
         int[] res = new int[n];
         int depth = 0;
 
-        for(int i = 0; i < n; i++) {
+        for (int i = 0; i < n; i++) {
             char ch = seq.charAt(i);
 
-            if(ch == '(') {
+            if (ch == '(') {
                 depth++;
                 res[i] = (depth % 2 == 0) ? 0 : 1;
             } else {
