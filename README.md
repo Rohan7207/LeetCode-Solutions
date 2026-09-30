@@ -650,6 +650,7 @@
 | [1404-number-of-steps-to-reduce-a-number-in-binary-representation-to-one](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1404-number-of-steps-to-reduce-a-number-in-binary-representation-to-one/) | Medium |
 | [1408-string-matching-in-an-array](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1408-string-matching-in-an-array/) | Easy |
 | [1410-html-entity-parser](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1410-html-entity-parser/) | Medium |
+| [1415-the-k-th-lexicographical-string-of-all-happy-strings-of-length-n](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1415-the-k-th-lexicographical-string-of-all-happy-strings-of-length-n/) | Medium |
 | [1520-maximum-number-of-non-overlapping-substrings](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1520-maximum-number-of-non-overlapping-substrings/) | Hard |
 | [1614-maximum-nesting-depth-of-the-parentheses](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1614-maximum-nesting-depth-of-the-parentheses/) | Easy |
 | [1796-second-largest-digit-in-a-string](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1796-second-largest-digit-in-a-string) |
@@ -1004,6 +1005,7 @@
 | [0988-smallest-string-starting-from-leaf](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0988-smallest-string-starting-from-leaf) |
 | [1096-brace-expansion-ii](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1096-brace-expansion-ii/) | Hard |
 | [1219-path-with-maximum-gold](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1219-path-with-maximum-gold) |
+| [1415-the-k-th-lexicographical-string-of-all-happy-strings-of-length-n](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1415-the-k-th-lexicographical-string-of-all-happy-strings-of-length-n/) | Medium |
 | [3348-smallest-divisible-digit-product-ii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3348-smallest-divisible-digit-product-ii) |
 ## Enumeration
 | Problem Name | Difficulty |
