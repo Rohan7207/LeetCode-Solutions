@@ -11,18 +11,18 @@ class Solution {
     }
 
     private void happyStrings(int n, StringBuilder curr) {
-        if(curr.length() == n) {
+        if (curr.length() == n) {
             list.add(curr.toString());
             return;
         }
 
-        for(int i = 0; i < 3; i++) {
+        for (int i = 0; i < 3; i++) {
             char ch = (char) (i + 'a');
 
-            if(curr.length() == 0 || curr.charAt(curr.length() - 1) != ch) {
+            if (curr.length() == 0 || curr.charAt(curr.length() - 1) != ch) {
                 curr.append(ch);
                 happyStrings(n, curr);
-                curr.deleteCharAt(curr.length() - 1);   // backtrack
+                curr.deleteCharAt(curr.length() - 1); // backtrack
             }
         }
     }
