@@ -218,6 +218,7 @@
 | [1408-string-matching-in-an-array](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1408-string-matching-in-an-array/) | Easy |
 | [1423-maximum-points-you-can-obtain-from-cards](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1423-maximum-points-you-can-obtain-from-cards) |
 | [1424-diagonal-traverse-ii](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1424-diagonal-traverse-ii/) | Medium |
+| [1431-kids-with-the-greatest-number-of-candies](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1431-kids-with-the-greatest-number-of-candies/) | Easy |
 | [1464-maximum-product-of-two-elements-in-an-array](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1464-maximum-product-of-two-elements-in-an-array) |
 | [1477-find-two-non-overlapping-sub-arrays-each-with-target-sum](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1477-find-two-non-overlapping-sub-arrays-each-with-target-sum/) | Medium |
 | [1563-stone-game-v](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1563-stone-game-v) |
