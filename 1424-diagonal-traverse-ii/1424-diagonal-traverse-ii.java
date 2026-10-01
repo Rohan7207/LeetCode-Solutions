@@ -1,28 +1,3 @@
-// Problem: Diagonal Traverse II
-// Link: https://leetcode.com/problems/diagonal-traverse-ii/
-// Difficulty: Medium
-
-// Approach:
-// 1. Each element at position (i, j) belongs to a diagonal identified by i + j.
-//    Example: (0,2), (1,1), (2,0) all belong to diagonal 2.
-//
-// 2. Use a HashMap<Integer, List<Integer>> to group elements having the same i + j.
-//
-// 3. Traverse the rows from top to bottom.
-//    Therefore, inside each diagonal, elements are stored in top-to-bottom order.
-//
-// 4. The required diagonal traversal needs each diagonal from bottom to top,
-//    so traverse every stored diagonal list backwards.
-//
-// 5. Process diagonals in increasing order of i + j: 0, 1, 2, ...
-//    This gives the required overall diagonal order.
-//
-// 6. Count total elements beforehand so the result array can be created directly.
-
-// Time Complexity: O(N), where N = total number of elements
-// Space Complexity: O(N)
-
-
 class Solution {
     public int[] findDiagonalOrder(List<List<Integer>> nums) {
         Map<Integer, List<Integer>> map = new HashMap<>();
@@ -61,7 +36,13 @@ class Solution {
                 }
             }
         }
-        
+
         return res;
     }
 }
+
+
+// Time Complexity: O(N), where N = total number of elements
+// Space Complexity: O(N)
+
+// 
