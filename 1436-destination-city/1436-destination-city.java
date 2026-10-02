@@ -1,5 +1,24 @@
 class Solution {
     public String destCity(List<List<String>> paths) {
+        Set<String> startingCities = new HashSet<>();
+
+        for(List<String> path : paths) {
+            startingCities.add(path.get(0));
+        }
+
+        for(List<String> path : paths) {
+            String des = path.get(1);
+            if(!startingCities.contains(des)) {
+                return des;
+            }
+        }
+
+        return "";
+    }
+}
+
+/*
+    public String destCity(List<List<String>> paths) {
         Map<String, Integer> map = new HashMap<>();
         Set<String> cities = new HashSet<>();
 
@@ -22,4 +41,4 @@ class Solution {
 
         return "";
     }
-}
+*/
