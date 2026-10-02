@@ -2,21 +2,21 @@ class Solution {
     public boolean kLengthApart(int[] nums, int k) {
         int n = nums.length;
 
-        if(n >= 100000){
+        if (n >= 100000) {
             return true;
         }
 
-        for(int i = 0; i < n - 1; i++) {
-            if(nums[i] == 0) {
+        for (int i = 0; i < n - 1; i++) {
+            if (nums[i] == 0) {
                 continue;
             }
 
-            for(int j = i + 1; j < n; j++) {
-                if(nums[j] == 0) {
+            for (int j = i + 1; j < n; j++) {
+                if (nums[j] == 0) {
                     continue;
                 }
 
-                if(nums[j] == 1 && j - i - 1 < k) {
+                if (nums[j] == 1 && j - i - 1 < k) {
                     return false;
                 }
             }
