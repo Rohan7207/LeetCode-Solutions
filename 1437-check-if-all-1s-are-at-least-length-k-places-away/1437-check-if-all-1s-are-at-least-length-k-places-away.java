@@ -16,7 +16,7 @@ class Solution {
                     continue;
                 }
 
-                if(nums[i] == 1 && nums[j] == 1 && j - i <= k) {
+                if(nums[j] == 1 && j - i - 1 < k) {
                     return false;
                 }
             }
