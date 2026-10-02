@@ -2,13 +2,14 @@ class Solution {
     public String destCity(List<List<String>> paths) {
         Set<String> startingCities = new HashSet<>();
 
-        for(List<String> path : paths) {
+        for (List<String> path : paths) {
             startingCities.add(path.get(0));
         }
 
-        for(List<String> path : paths) {
+        for (List<String> path : paths) {
             String des = path.get(1);
-            if(!startingCities.contains(des)) {
+
+            if (!startingCities.contains(des)) {
                 return des;
             }
         }
