@@ -1,5 +1,23 @@
 class Solution {
     public boolean kLengthApart(int[] nums, int k) {
+        int prevOne = -1;
+
+        for(int i = 0; i < nums.length; i++) {
+            if(nums[i] == 1) {
+                if(prevOne != -1 && i - prevOne - 1 < k) {
+                    return false;
+                }
+
+                prevOne = i;
+            }
+        }
+
+        return true;
+    }
+}
+
+/*
+    public boolean kLengthApart(int[] nums, int k) {
         int n = nums.length;
 
         if (n >= 100000) {
@@ -24,7 +42,7 @@ class Solution {
 
         return true;
     }
-}
+*/
 
 /*
     public boolean kLengthApart(int[] nums, int k) {
