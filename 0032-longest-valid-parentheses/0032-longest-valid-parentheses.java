@@ -28,18 +28,18 @@ class Solution {
         int open = 0, close = 0;
 
         // Left to Right
-        for(int i = 0; i < n; i++) {
+        for (int i = 0; i < n; i++) {
             char ch = s.charAt(i);
 
-            if(ch == '(') {
+            if (ch == '(') {
                 open++;
             } else {
                 close++;
-            } 
-            
-            if(open == close) {
+            }
+
+            if (open == close) {
                 res = Math.max(res, open + close);
-            } else if(close > open) {
+            } else if (close > open) {
                 open = close = 0;
             }
         }
@@ -47,18 +47,18 @@ class Solution {
         open = 0;
         close = 0;
         // Right to Left
-        for(int i = n - 1; i >= 0; i--) {
+        for (int i = n - 1; i >= 0; i--) {
             char ch = s.charAt(i);
 
-            if(ch == '(') {
+            if (ch == '(') {
                 open++;
             } else {
                 close++;
-            } 
-            
-            if(open == close) {
+            }
+
+            if (open == close) {
                 res = Math.max(res, open + close);
-            } else if(open > close) {
+            } else if (open > close) {
                 open = close = 0;
             }
         }
