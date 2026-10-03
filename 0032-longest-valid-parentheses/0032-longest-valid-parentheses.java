@@ -1,27 +1,4 @@
 class Solution {
-    // public int longestValidParentheses(String s) {
-    //     int maxlength = 0;
-    //     Stack<Integer> st = new Stack<>();
-    //     st.push(-1); //Initial value
-
-    //     for (int i = 0; i < s.length(); i++) {
-    //         if (s.charAt(i) == '(') {
-    //             st.push(i);
-    //         } else {
-    //             st.pop();
-
-    //             if (st.isEmpty()) {
-    //                 //Push the current index as base for next substring
-    //                 st.push(i);
-    //             } else {
-    //                 maxlength = Math.max(maxlength, i - st.peek());
-    //             }
-    //         }
-    //     }
-
-    //     return maxlength;
-    // }
-
     public int longestValidParentheses(String s) {
         int res = 0;
         int n = s.length();
@@ -67,11 +44,6 @@ class Solution {
     }
 }
 
-// Time Complexity: O(n)
-// Space Complexity: O(n)
-
-// Use a stack of indices to track unmatched ( and calculate each valid substring as currentIndex - stackTop.
-
 /*
     Another approach using open and close
     s = "())()"   L to R
@@ -90,6 +62,36 @@ class Solution {
     open > close, reset open = close = 0, bcz there will be not ) in backward to balance so rest and move
     open == close, take res = max(res, open + close)
 */
+
+/*
+    public int longestValidParentheses(String s) {
+        int maxlength = 0;
+        Stack<Integer> st = new Stack<>();
+        st.push(-1); //Initial value
+
+        for (int i = 0; i < s.length(); i++) {
+            if (s.charAt(i) == '(') {
+                st.push(i);
+            } else {
+                st.pop();
+
+                if (st.isEmpty()) {
+                    //Push the current index as base for next substring
+                    st.push(i);
+                } else {
+                    maxlength = Math.max(maxlength, i - st.peek());
+                }
+            }
+        }
+
+        return maxlength;
+    }
+*/
+
+// Time Complexity: O(n)
+// Space Complexity: O(n)
+
+// Use a stack of indices to track unmatched ( and calculate each valid substring as currentIndex - stackTop.
 
 /*
 🔑 Key Observation
