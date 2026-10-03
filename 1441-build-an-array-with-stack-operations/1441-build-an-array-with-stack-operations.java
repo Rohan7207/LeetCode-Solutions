@@ -5,16 +5,16 @@ class Solution {
         int take = 1;
         int idx = 0;
 
-        while(take <= n) {
+        while (take <= n) {
             ans.add("Push");
 
-            if(take != target[idx]) {
+            if (take != target[idx]) {
                 ans.add("Pop");
                 take++;
                 continue;
             }
 
-            if(idx == target.length - 1) {
+            if (idx == target.length - 1) {
                 return ans;
             }
 
