@@ -1,21 +1,3 @@
-// Problem: Longest Valid Parentheses
-// Link: https://leetcode.com/problems/longest-valid-parentheses/
-// Difficulty: Hard
-
-// Approach:
-// Use a stack to track indices of parentheses.
-// Push -1 initially to act as the base for valid substring calculation.
-// Traverse the string:
-//     - If the current character is '(', push its index onto the stack.
-//     - Otherwise, pop the top element from the stack.
-//         - If the stack becomes empty, push the current index as the new base.
-//         - Otherwise, calculate the length of the current valid substring
-//           using currentIndex - stack.peek() and update the maximum length.
-// Return the maximum valid parentheses length.
-
-// Time Complexity: O(n)
-// Space Complexity: O(n)
-
 class Solution {
     public int longestValidParentheses(String s) {
         int maxlength = 0;
@@ -40,3 +22,10 @@ class Solution {
         return maxlength;
     }
 }
+
+/*
+    “I use a stack of indices to track unmatched parentheses and compute valid substring lengths efficiently.”
+
+    Time Complexity: O(n)
+    Space Complexity: O(n)
+*/
