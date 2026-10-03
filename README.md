@@ -222,6 +222,7 @@
 | [1436-destination-city](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1436-destination-city/) | Easy |
 | [1437-check-if-all-1s-are-at-least-length-k-places-away](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1437-check-if-all-1s-are-at-least-length-k-places-away/) | Easy |
 | [1438-longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1438-longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit/) | Medium |
+| [1441-build-an-array-with-stack-operations](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1441-build-an-array-with-stack-operations/) | Medium |
 | [1464-maximum-product-of-two-elements-in-an-array](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1464-maximum-product-of-two-elements-in-an-array) |
 | [1477-find-two-non-overlapping-sub-arrays-each-with-target-sum](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1477-find-two-non-overlapping-sub-arrays-each-with-target-sum/) | Medium |
 | [1563-stone-game-v](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1563-stone-game-v) |
@@ -1128,6 +1129,7 @@
 | [1111-maximum-nesting-depth-of-two-valid-parentheses-strings](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1111-maximum-nesting-depth-of-two-valid-parentheses-strings/) | Medium |
 | [1190-reverse-substrings-between-each-pair-of-parentheses](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1190-reverse-substrings-between-each-pair-of-parentheses/) | Medium |
 | [1249-minimum-remove-to-make-valid-parentheses](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1249-minimum-remove-to-make-valid-parentheses) |
+| [1441-build-an-array-with-stack-operations](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1441-build-an-array-with-stack-operations/) | Medium |
 | [1614-maximum-nesting-depth-of-the-parentheses](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1614-maximum-nesting-depth-of-the-parentheses/) | Easy |
 | [2130-maximum-twin-sum-of-a-linked-list](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2130-maximum-twin-sum-of-a-linked-list) |
 ## Heap (Priority Queue)
@@ -1268,6 +1270,7 @@
 | [1275-find-winner-on-a-tic-tac-toe-game](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1275-find-winner-on-a-tic-tac-toe-game) |
 | [1389-create-target-array-in-the-given-order](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1389-create-target-array-in-the-given-order/) | Easy |
 | [1404-number-of-steps-to-reduce-a-number-in-binary-representation-to-one](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1404-number-of-steps-to-reduce-a-number-in-binary-representation-to-one/) | Medium |
+| [1441-build-an-array-with-stack-operations](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1441-build-an-array-with-stack-operations/) | Medium |
 | [2161-partition-array-according-to-given-pivot](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2161-partition-array-according-to-given-pivot) |
 | [3069-distribute-elements-into-two-arrays-i](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3069-distribute-elements-into-two-arrays-i) |
 | [3498-reverse-degree-of-a-string](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/3498-reverse-degree-of-a-string/) | Easy |
