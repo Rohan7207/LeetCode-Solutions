@@ -51,7 +51,6 @@ class Solution {
 // Time Complexity: O(n)
 // Space Complexity: O(1)
 
-
 // “I greedily maintain the minimum and maximum possible number of open parentheses after each character, treating * as the most flexible character.”
 
 /*
