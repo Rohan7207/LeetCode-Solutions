@@ -1,41 +1,3 @@
-// Problem: Score Of Parenthesis
-// Link: https://leetcode.com/problems/score-of-parentheses/
-// Difficulty: Medium
-
-// Approach:
-// Instead of computing the score for every balanced substring separately,
-// observe that every valid parentheses expression is ultimately built from
-// primitive pairs "()".
-// A primitive pair "()" contributes a base score of 1.
-// If this primitive pair is enclosed inside one pair of parentheses,
-// its contribution doubles.
-// Example:
-// ()         -> 1
-// (())       -> 2
-// ((()))     -> 4
-// Thus, every enclosing pair multiplies the contribution by 2.
-// Maintain:
-// - depth : current nesting depth.
-// - score : final answer.
-// Traverse the string:
-// 1. If the current character is '(',
-//    increase the nesting depth.
-// 2. If the current character is ')',
-//    first decrease the depth because one level has been closed.
-//    If the previous character was '(',
-//    then we have found a primitive pair "()".
-//    This primitive pair is enclosed by 'depth' remaining pairs,
-//    so its contribution is:
-//        2^depth
-//    Instead of using Math.pow(), compute it efficiently as:
-//        1 << depth
-//    Add this contribution to the final score.
-// Continue until the entire string is processed.
-
-// Time Complexity: O(n)
-// Space Complexity: O(1)
-
-
 class Solution {
     public int scoreOfParentheses(String s) {
         int score = 0;
@@ -55,3 +17,73 @@ class Solution {
         return score;
     }
 }
+
+// Time Complexity: O(n)
+// Space Complexity: O(1)
+
+// Treat every primitive "()" as contributing 2^(remaining depth) and sum all such contributions.
+
+/*
+    🔑 Key Observation
+
+Every balanced parentheses expression is composed of primitive "()" pairs. Each enclosing pair doubles the contribution of that primitive pair.
+
+✨ Magic Line / Important Line
+score += 1 << depth;
+
+This adds the contribution of the current primitive "()", where 1 << depth is equal to 2^depth.
+
+💡 How We Thought to Derive the Solution
+The base score comes only from "()".
+Wrapping an expression doubles its score.
+Therefore, instead of evaluating whole expressions, count the contribution of each primitive "()".
+The number of enclosing parentheses determines how many times its score is doubled.
+
+✅ Why It Works
+Every primitive "()" starts with a score of 1.
+If it is enclosed by depth pairs, its final contribution becomes 2^depth.
+Summing the contributions of all primitive pairs gives exactly the score defined by the problem rules.
+
+🧩 Pattern Recognition
+Parentheses Processing
+Depth Tracking
+Bit Manipulation
+Mathematical Observation
+
+⭐ Interview Importance
+
+⭐⭐⭐⭐☆
+
+A great interview problem that has both a stack-based solution and a more elegant O(1) space solution using nesting depth.
+
+📚 Similar Problems
+LeetCode 20 – Valid Parentheses
+LeetCode 32 – Longest Valid Parentheses
+LeetCode 394 – Decode String
+LeetCode 946 – Validate Stack Sequences
+LeetCode 1614 – Maximum Nesting Depth of the Parentheses
+*/
+
+/*
+    Stack<Integer> st = new Stack<>();
+        int score = 0;
+
+        for(int i = 0; i < s.length(); i++) {
+            char ch = s.charAt(i);
+            if(ch == '(') {
+                // Save current outer score and reset for the inner context
+                st.push(score);
+                score = 0;
+            } else {
+                // If it's a direct pair "()", add 1 point
+                if(s.charAt(i - 1) == '(') {
+                    score = st.pop() + 1;
+                } else {
+                    // If it's a closed outer structure "(A)", double inner score and add to outer score
+                    score = st.pop() + 2 * score;
+                }
+            }
+        }
+
+        return score;
+*/
