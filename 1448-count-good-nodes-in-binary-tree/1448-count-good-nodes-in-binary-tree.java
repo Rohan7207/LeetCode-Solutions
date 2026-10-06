@@ -1,3 +1,20 @@
+// Problem: Count Good Nodes in Binary Tree
+// Link: https://leetcode.com/problems/count-good-nodes-in-binary-tree/
+// Difficulty: Medium
+
+// Approach:
+// 1. Start DFS from root with root.val as the maximum seen so far.
+// 2. At each node, update max = max(max, root.val).
+// 3. Check each child against this updated path maximum.
+// 4. If child.val >= max, the child is a good node → count++.
+// 5. Recursively explore left and right using the updated max.
+// 6. Since `max` is passed as a parameter, each root-to-node path
+//    maintains its own maximum.
+
+// Time Complexity: O(n)
+// Space Complexity: O(h), where h is the tree height.
+
+
 /**
  * Definition for a binary tree node.
  * public class TreeNode {
@@ -42,26 +59,3 @@ class Solution {
         dfs(root.right, max);
     }
 }
-
-/*
-class Solution {
-    public int countGoodNodes(TreeNode root,int max){
-        if(root==null) return 0;
-
-        int count=0;
-        //Check if current is good node
-        if(root.val>=max){
-            count=1;   //node is good one
-            max=root.val;  //Update the max along the path
-        }
-
-        count+=countGoodNodes(root.left,max);
-        count+=countGoodNodes(root.right,max);
-
-        return count;
-    }
-    public int goodNodes(TreeNode root) {
-       return countGoodNodes(root,Integer.MIN_VALUE);
-    }
-}
-*/
