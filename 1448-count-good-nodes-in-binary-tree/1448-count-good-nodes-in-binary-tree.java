@@ -24,17 +24,17 @@ class Solution {
     }
 
     private void dfs(TreeNode root, int max) {
-        if(root == null) {
+        if (root == null) {
             return;
         }
 
         max = Math.max(max, root.val);
 
-        if(root.left != null && root.left.val >= max) {
+        if (root.left != null && root.left.val >= max) {
             count++;
-        } 
-        
-        if(root.right != null && root.right.val >= max) {
+        }
+
+        if (root.right != null && root.right.val >= max) {
             count++;
         }
 
@@ -42,3 +42,26 @@ class Solution {
         dfs(root.right, max);
     }
 }
+
+/*
+class Solution {
+    public int countGoodNodes(TreeNode root,int max){
+        if(root==null) return 0;
+
+        int count=0;
+        //Check if current is good node
+        if(root.val>=max){
+            count=1;   //node is good one
+            max=root.val;  //Update the max along the path
+        }
+
+        count+=countGoodNodes(root.left,max);
+        count+=countGoodNodes(root.right,max);
+
+        return count;
+    }
+    public int goodNodes(TreeNode root) {
+       return countGoodNodes(root,Integer.MIN_VALUE);
+    }
+}
+*/
