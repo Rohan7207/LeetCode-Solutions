@@ -1409,6 +1409,7 @@
 | [1361-validate-binary-tree-nodes](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1361-validate-binary-tree-nodes/) | Medium |
 | [1367-linked-list-in-binary-tree](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1367-linked-list-in-binary-tree/) | Medium |
 | [1379-find-a-corresponding-node-of-a-binary-tree-in-a-clone-of-that-tree](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1379-find-a-corresponding-node-of-a-binary-tree-in-a-clone-of-that-tree/) | Easy |
+| [1448-count-good-nodes-in-binary-tree](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1448-count-good-nodes-in-binary-tree/) | Medium |
 | [2265-count-nodes-equal-to-average-of-subtree](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2265-count-nodes-equal-to-average-of-subtree) |
 | [2492-minimum-score-of-a-path-between-two-cities](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2492-minimum-score-of-a-path-between-two-cities) |
 | [2685-count-the-number-of-complete-components](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2685-count-the-number-of-complete-components) |
@@ -1489,6 +1490,7 @@
 | [1361-validate-binary-tree-nodes](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1361-validate-binary-tree-nodes/) | Medium |
 | [1367-linked-list-in-binary-tree](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1367-linked-list-in-binary-tree/) | Medium |
 | [1379-find-a-corresponding-node-of-a-binary-tree-in-a-clone-of-that-tree](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1379-find-a-corresponding-node-of-a-binary-tree-in-a-clone-of-that-tree/) | Easy |
+| [1448-count-good-nodes-in-binary-tree](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1448-count-good-nodes-in-binary-tree/) | Medium |
 | [2196-create-binary-tree-from-descriptions](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2196-create-binary-tree-from-descriptions) |
 | [2265-count-nodes-equal-to-average-of-subtree](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2265-count-nodes-equal-to-average-of-subtree) |
 | [3558-number-of-ways-to-assign-edge-weights-i](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3558-number-of-ways-to-assign-edge-weights-i) |
@@ -1563,6 +1565,7 @@
 | [1361-validate-binary-tree-nodes](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1361-validate-binary-tree-nodes/) | Medium |
 | [1367-linked-list-in-binary-tree](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1367-linked-list-in-binary-tree/) | Medium |
 | [1379-find-a-corresponding-node-of-a-binary-tree-in-a-clone-of-that-tree](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1379-find-a-corresponding-node-of-a-binary-tree-in-a-clone-of-that-tree/) | Easy |
+| [1448-count-good-nodes-in-binary-tree](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1448-count-good-nodes-in-binary-tree/) | Medium |
 | [2196-create-binary-tree-from-descriptions](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2196-create-binary-tree-from-descriptions) |
 | [2265-count-nodes-equal-to-average-of-subtree](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2265-count-nodes-equal-to-average-of-subtree) |
 ## Binary Search Tree
@@ -1645,6 +1648,7 @@
 | [1319-number-of-operations-to-make-network-connected](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1319-number-of-operations-to-make-network-connected) |
 | [1361-validate-binary-tree-nodes](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1361-validate-binary-tree-nodes/) | Medium |
 | [1379-find-a-corresponding-node-of-a-binary-tree-in-a-clone-of-that-tree](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1379-find-a-corresponding-node-of-a-binary-tree-in-a-clone-of-that-tree/) | Easy |
+| [1448-count-good-nodes-in-binary-tree](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1448-count-good-nodes-in-binary-tree/) | Medium |
 | [2492-minimum-score-of-a-path-between-two-cities](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2492-minimum-score-of-a-path-between-two-cities) |
 | [2685-count-the-number-of-complete-components](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2685-count-the-number-of-complete-components) |
 | [2812-find-the-safest-path-in-a-grid](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2812-find-the-safest-path-in-a-grid) |
