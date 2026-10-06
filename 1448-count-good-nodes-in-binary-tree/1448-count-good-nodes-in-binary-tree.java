@@ -32,16 +32,13 @@ class Solution {
 
         if(root.left != null && root.left.val >= max) {
             count++;
-            dfs(root.left, max);
-        } else {
-            dfs(root.left, max);
-        }
-
+        } 
+        
         if(root.right != null && root.right.val >= max) {
             count++;
-            dfs(root.right, max);
-        } else {
-            dfs(root.right, max);
         }
+
+        dfs(root.left, max);
+        dfs(root.right, max);
     }
 }
