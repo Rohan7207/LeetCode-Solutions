@@ -1,39 +1,3 @@
-// Problem: Minimum Add to Make Parentheses Valid
-// Link: https://leetcode.com/problems/minimum-add-to-make-parentheses-valid/
-// Difficulty: Medium
-
-// Approach:
-// The goal is to find the minimum number of parentheses
-// that must be inserted to make the string valid.
-// Maintain two counters:
-// • open:
-//   Stores the number of unmatched opening parentheses '('.
-// • missingOpen:
-//   Stores the number of opening parentheses that need
-//   to be inserted for unmatched closing parentheses ')'.
-// Traverse the string once:
-// • If the current character is '(',
-//   increment open because it is waiting
-//   for a matching ')'.
-// • If the current character is ')':
-//      - If there is an unmatched '(' (open > 0),
-//        match it by decrementing open.
-//      - Otherwise, this ')' has no matching '(',
-//        so increment missingOpen.
-// After processing the entire string:
-// • Every remaining unmatched '(' requires one ')'
-//   to make the string valid.
-// • Every unmatched ')' counted in missingOpen
-//   requires one '('.
-// Therefore, the minimum insertions required are:
-//      unmatched '(' + unmatched ')'
-// i.e.
-//      open + missingOpen
-
-// Time Complexity: O(n)
-// Space Complexity: O(1)
-
-
 class Solution {
     public int minAddToMakeValid(String s) {
         int open = 0;
@@ -56,3 +20,61 @@ class Solution {
         return open + missingOpen;
     }
 }
+
+// Time Complexity: O(n)
+// Space Complexity: O(1)
+
+// Traverse the string once while counting unmatched opening parentheses and unmatched closing parentheses, then return their total.
+
+/*
+    🔑 Key Observation
+
+There are only two situations that require insertions:
+
+A ')' appears without any unmatched '('.
+Some '(' remain unmatched after the traversal.
+
+✨ Magic Line / Important Line
+return open + missingOpen;
+
+The answer is simply the sum of:
+
+remaining unmatched '('
+unmatched ')' that needed an opening parenthesis.
+💡 How We Thought to Derive the Solution
+
+Instead of actually inserting parentheses, simulate matching them.
+
+Every '(' waits for a future ')'.
+Every ')' either matches an existing '(' or requires inserting a new '('.
+
+After the traversal, any unmatched '(' each need one closing parenthesis.
+
+✅ Why It Works
+open always represents unmatched opening parentheses.
+missingOpen counts every closing parenthesis that could not be matched.
+Every unmatched parenthesis requires exactly one insertion.
+Thus, open + missingOpen gives the minimum insertions needed.
+🧩 Pattern Recognition
+Parentheses Matching
+Greedy
+Counter Simulation
+Stack Optimization (using counters instead of an actual stack)
+
+⭐ Interview Importance
+
+⭐⭐⭐⭐☆
+
+Tests understanding of:
+
+Parentheses balancing
+Greedy thinking
+Stack optimization
+Counter-based simulation
+
+📚 Similar Problems
+LeetCode 20 – Valid Parentheses
+LeetCode 1541 – Minimum Insertions to Balance a Parentheses String
+LeetCode 32 – Longest Valid Parentheses
+LeetCode 1249 – Minimum Remove to Make Valid Parentheses
+*/
