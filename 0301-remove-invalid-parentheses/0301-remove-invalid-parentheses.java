@@ -1,3 +1,28 @@
+// Problem: Remove Invalid Parentheses
+// Link: https://leetcode.com/problems/remove-invalid-parentheses/?envType=daily-question&envId=2026-10-07
+// Difficulty: Hard
+
+// Approach:
+// 1. The minimum removals means we want the longest valid string.
+// 2. For every '(' or ')', make two choices:
+//      - Keep it.
+//      - Remove it.
+// 3. `count` represents the current number of unmatched '('.
+// 4. For '(' → count++.
+// 5. For ')' → count--.
+// 6. If count < 0, the current prefix is invalid, so prune this branch.
+// 7. At the end:
+//      - count == 0 → valid string.
+//      - If its length is greater than maxLength, clear previous answers
+//        and make this the new maximum.
+//      - If its length equals maxLength, add it to the set.
+// 8. Non-parenthesis characters have only one choice: keep them.
+// 9. HashSet prevents duplicate answers.
+
+// Time Complexity: O(2^n * n)
+// Space Complexity: O(2^n * n)
+
+
 class Solution {
 
     Set<String> set;
@@ -19,19 +44,18 @@ class Solution {
     }
 
     private void backtrack(String s, int i, StringBuilder curr, int count) {
-        if (count < 0) { // Invalid parentheses
+        if (count < 0) {
             return;
         }
 
-        // Base case
-        if (i == n) { // At last level of tree
-            if (count == 0) { // If curr string is vps
-                if (curr.length() > maxLength) { // If it produces better string than previous strings
+        if (i == n) {
+            if (count == 0) {
+                if (curr.length() > maxLength) { 
                     maxLength = curr.length();
                     set.clear();
                 }
 
-                if (curr.length() == maxLength) { // If equal length then add to set
+                if (curr.length() == maxLength) { 
                     set.add(curr.toString());
                 }
             }
@@ -52,45 +76,3 @@ class Solution {
         backtrack(s, i + 1, curr, count);
     }
 }
-
-/*
-    s = "(a)())()"
-    - We will need to explre every possiblities by checking whether take or not take which gives 2^n and we will know that this solution will be accepted by given constraint i.e. there will be atmost 20 parentheses which is 2 ^ 20 => 10^6
-    Which gives approach to backtracking
-    Suppose after adding every valid parentheses in set we should check max length string bcz which as max length it consists minimal removal of invalid position brackets
-    Ex: set = {"()", "(())", "()()", "((()))"} here minimal removal is max length string which is our required answer according to question. and add all such answers.
-
-    - We could do this process on going by tracking maxlength of curr string and in future string as better max length ans we clear set and add that string if it is same we will append it to set so that in main we can directly return set.
-
-    int max = 0;
-    void solve(i, curr, count, s, maxLength) {  => O(2 ^ n) and O(m * n)
-        if(count < 0) return;  // early proning
-
-        if(i == n) {
-            if(count == 0) {
-                if(curr.length() > maxLength) {
-                    maxLength = curr.length();
-                    set.clear();
-                }
-
-                if(curr.length() == maxLength) {
-                    set.add(curr);
-                }
-            }
-
-            return;
-        }
-
-        if(s.charAt(i) != '(' && s.charAt(i) != ')') {
-            curr.append(s.charAt(i));
-            solve(i + 1, curr, count, s, maxLength);
-            curr.deleteCharAt(curr.length() - 1);
-            return;
-        }
-
-        curr.append(s.charAt(i));
-        solve(i + 1, curr, count += (s.charAt(i) == '(' ? 1 : -1), s, maxLength);
-        curr.deleteCharAt(curr.length() - 1);
-        solve(i + 1, curr, count, s, maxLength);
-    }
-*/
