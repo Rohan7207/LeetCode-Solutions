@@ -10,7 +10,7 @@ class Solution {
                 count++;
             }
 
-            while(right - left + 1 > k) {
+            if(right - left + 1 > k) {
                 char leftChar = s.charAt(left);
                 if(leftChar == 'a' || leftChar == 'e' || leftChar == 'i' || leftChar == 'o' || leftChar == 'u') {
                     count--;
