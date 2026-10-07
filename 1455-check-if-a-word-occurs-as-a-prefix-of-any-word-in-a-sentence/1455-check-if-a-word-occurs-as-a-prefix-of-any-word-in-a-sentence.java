@@ -1,3 +1,18 @@
+// Problem: Check If a Word Occurs As a Prefix of Any Word in a Sentence
+// Link: https://leetcode.com/problems/check-if-a-word-occurs-as-a-prefix-of-any-word-in-a-sentence/
+// Difficulty: Easy
+
+// Approach:
+// 1. Split the sentence into individual words.
+// 2. Traverse the words from left to right.
+// 3. Check whether the current word starts with searchWord.
+// 4. If it does, return its 1-based position.
+// 5. If no word matches, return -1.
+
+// Time Complexity: O(n * m)
+// Space Complexity: O(n)
+
+
 class Solution {
     public int isPrefixOfWord(String sentence, String searchWord) {
         String[] words = sentence.split(" ");
@@ -11,30 +26,3 @@ class Solution {
         return -1;
     }
 }
-
-/*
-    public int isPrefixOfWord(String sentence, String searchWord) {
-        String[] words = sentence.split(" ");
-
-        for(int i = 0; i < words.length; i++) {
-            String word = words[i];
-
-            if(searchWord.length() > word.length()) {
-                continue;
-            }
-
-            int idx = 0;
-            for(int j = 0; j < searchWord.length(); j++) {
-                if(searchWord.charAt(j) == word.charAt(j)) {
-                    idx++;
-                }
-            }
-
-            if(idx == searchWord.length()) {
-                return i + 1;
-            }
-        }
-
-        return -1;
-    }
-*/
