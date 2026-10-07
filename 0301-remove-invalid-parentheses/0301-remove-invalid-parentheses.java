@@ -11,7 +11,7 @@ class Solution {
         backtrack(s, 0, new StringBuilder(), 0);
 
         List<String> res = new ArrayList<>();
-        for(String validString : set) {
+        for (String validString : set) {
             res.add(validString);
         }
 
@@ -19,19 +19,19 @@ class Solution {
     }
 
     private void backtrack(String s, int i, StringBuilder curr, int count) {
-        if(count < 0) {  // Invalid parentheses
+        if (count < 0) { // Invalid parentheses
             return;
         }
 
         // Base case
-        if(i == n) {  // At last level of tree
-            if(count == 0) {  // If curr string is vps
-                if(curr.length() > maxLength) {   // If it produces better string than previous strings
+        if (i == n) { // At last level of tree
+            if (count == 0) { // If curr string is vps
+                if (curr.length() > maxLength) { // If it produces better string than previous strings
                     maxLength = curr.length();
                     set.clear();
                 }
 
-                if(curr.length() == maxLength) {   // If equal length then add to set
+                if (curr.length() == maxLength) { // If equal length then add to set
                     set.add(curr.toString());
                 }
             }
@@ -39,7 +39,7 @@ class Solution {
             return;
         }
 
-        if(s.charAt(i) != '(' && s.charAt(i) != ')') {
+        if (s.charAt(i) != '(' && s.charAt(i) != ')') {
             curr.append(s.charAt(i));
             backtrack(s, i + 1, curr, count);
             curr.deleteCharAt(curr.length() - 1);
