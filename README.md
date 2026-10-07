@@ -601,6 +601,7 @@
 | [0224-basic-calculator](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0224-basic-calculator) |
 | [0242-valid-anagram](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0242-valid-anagram) |
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0297-serialize-and-deserialize-binary-tree) |
+| [0301-remove-invalid-parentheses](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/0301-remove-invalid-parentheses/) | Hard |
 | [0332-reconstruct-itinerary](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0332-reconstruct-itinerary) |
 | [0383-ransom-note](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0383-ransom-note) |
 | [0387-first-unique-character-in-a-string](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0387-first-unique-character-in-a-string) |
@@ -1012,6 +1013,7 @@
 | [0113-path-sum-ii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0113-path-sum-ii) |
 | [0126-word-ladder-ii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0126-word-ladder-ii) |
 | [0131-palindrome-partitioning](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0131-palindrome-partitioning) |
+| [0301-remove-invalid-parentheses](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/0301-remove-invalid-parentheses/) | Hard |
 | [0357-count-numbers-with-unique-digits](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0357-count-numbers-with-unique-digits) |
 | [0949-largest-time-for-given-digits](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0949-largest-time-for-given-digits) |
 | [0967-numbers-with-same-consecutive-differences](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0967-numbers-with-same-consecutive-differences) |
@@ -1611,6 +1613,7 @@
 | [0210-course-schedule-ii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0210-course-schedule-ii) |
 | [0226-invert-binary-tree](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0226-invert-binary-tree) |
 | [0297-serialize-and-deserialize-binary-tree](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0297-serialize-and-deserialize-binary-tree) |
+| [0301-remove-invalid-parentheses](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/0301-remove-invalid-parentheses/) | Hard |
 | [0322-coin-change](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0322-coin-change) |
 | [0329-longest-increasing-path-in-a-matrix](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0329-longest-increasing-path-in-a-matrix) |
 | [0404-sum-of-left-leaves](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0404-sum-of-left-leaves) |
