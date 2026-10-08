@@ -10,7 +10,6 @@ class Solution {
                 count++;
             }
         }
-
         return count == Math.pow(2, k);
     }
 }
