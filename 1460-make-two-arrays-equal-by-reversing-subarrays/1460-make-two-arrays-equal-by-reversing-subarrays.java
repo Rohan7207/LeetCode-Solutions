@@ -2,15 +2,15 @@ class Solution {
     public boolean canBeEqual(int[] target, int[] arr) {
         int[] count = new int[1001];
 
-        for(int num : target) {
+        for (int num : target) {
             count[num]++;
         }
 
-        for(int num : arr) {
-            if(count[num] == 0) {
+        for (int num : arr) {
+            if (count[num] == 0) {
                 return false;
-            } 
-            
+            }
+
             count[num]--;
         }
 
