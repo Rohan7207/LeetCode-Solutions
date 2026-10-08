@@ -379,6 +379,7 @@
 | [1410-html-entity-parser](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1410-html-entity-parser/) | Medium |
 | [1436-destination-city](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1436-destination-city/) | Easy |
 | [1460-make-two-arrays-equal-by-reversing-subarrays](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1460-make-two-arrays-equal-by-reversing-subarrays/) | Easy |
+| [1461-check-if-a-string-contains-all-binary-codes-of-size-k](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1461-check-if-a-string-contains-all-binary-codes-of-size-k/) | Medium |
 | [1477-find-two-non-overlapping-sub-arrays-each-with-target-sum](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1477-find-two-non-overlapping-sub-arrays-each-with-target-sum/) | Medium |
 | [1520-maximum-number-of-non-overlapping-substrings](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1520-maximum-number-of-non-overlapping-substrings/) | Hard |
 | [1658-minimum-operations-to-reduce-x-to-zero](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1658-minimum-operations-to-reduce-x-to-zero/) | Medium |
@@ -668,6 +669,7 @@
 | [1446-consecutive-characters](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1446-consecutive-characters/) | Easy |
 | [1455-check-if-a-word-occurs-as-a-prefix-of-any-word-in-a-sentence](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1455-check-if-a-word-occurs-as-a-prefix-of-any-word-in-a-sentence/) | Easy |
 | [1456-maximum-number-of-vowels-in-a-substring-of-given-length](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1456-maximum-number-of-vowels-in-a-substring-of-given-length/) | Medium |
+| [1461-check-if-a-string-contains-all-binary-codes-of-size-k](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1461-check-if-a-string-contains-all-binary-codes-of-size-k/) | Medium |
 | [1520-maximum-number-of-non-overlapping-substrings](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1520-maximum-number-of-non-overlapping-substrings/) | Hard |
 | [1614-maximum-nesting-depth-of-the-parentheses](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1614-maximum-nesting-depth-of-the-parentheses/) | Easy |
 | [1796-second-largest-digit-in-a-string](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1796-second-largest-digit-in-a-string) |
@@ -1325,6 +1327,7 @@
 | [1342-number-of-steps-to-reduce-a-number-to-zero](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1342-number-of-steps-to-reduce-a-number-to-zero) |
 | [1386-cinema-seat-allocation](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1386-cinema-seat-allocation) |
 | [1404-number-of-steps-to-reduce-a-number-in-binary-representation-to-one](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1404-number-of-steps-to-reduce-a-number-in-binary-representation-to-one/) | Medium |
+| [1461-check-if-a-string-contains-all-binary-codes-of-size-k](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1461-check-if-a-string-contains-all-binary-codes-of-size-k/) | Medium |
 | [2657-find-the-prefix-common-array-of-two-arrays](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2657-find-the-prefix-common-array-of-two-arrays) |
 | [3513-number-of-unique-xor-triplets-i](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3513-number-of-unique-xor-triplets-i) |
 | [3514-number-of-unique-xor-triplets-ii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3514-number-of-unique-xor-triplets-ii) |
@@ -1835,6 +1838,7 @@
 | [0572-subtree-of-another-tree](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0572-subtree-of-another-tree) |
 | [0705-design-hashset](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0705-design-hashset) |
 | [0706-design-hashmap](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0706-design-hashmap) |
+| [1461-check-if-a-string-contains-all-binary-codes-of-size-k](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1461-check-if-a-string-contains-all-binary-codes-of-size-k/) | Medium |
 ## Shortest Path
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -1981,4 +1985,12 @@
 | [1190-reverse-substrings-between-each-pair-of-parentheses](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1190-reverse-substrings-between-each-pair-of-parentheses/) | Medium |
 | [1614-maximum-nesting-depth-of-the-parentheses](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1614-maximum-nesting-depth-of-the-parentheses/) | Easy |
 | [2267-check-if-there-is-a-valid-parentheses-string-path](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/2267-check-if-there-is-a-valid-parentheses-string-path/) | Hard |
+## Rolling Hash
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [1461-check-if-a-string-contains-all-binary-codes-of-size-k](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1461-check-if-a-string-contains-all-binary-codes-of-size-k/) | Medium |
+## Directed Acyclic Graph
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [1461-check-if-a-string-contains-all-binary-codes-of-size-k](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1461-check-if-a-string-contains-all-binary-codes-of-size-k/) | Medium |
 <!---LeetCode Topics End-->
