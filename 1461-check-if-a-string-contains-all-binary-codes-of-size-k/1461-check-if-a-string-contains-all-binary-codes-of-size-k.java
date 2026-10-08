@@ -3,14 +3,14 @@ class Solution {
         int count = 0;
         Set<String> set = new HashSet<>();
 
-        for(int i = 0; i <= s.length() - k; i++) {
+        for (int i = 0; i <= s.length() - k; i++) {
             String str = s.substring(i, i + k);
 
-            if(set.add(str)) {
+            if (set.add(str)) {
                 count++;
             }
         }
-       
+
         return count == Math.pow(2, k);
     }
 }
