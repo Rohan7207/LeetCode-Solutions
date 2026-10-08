@@ -1,6 +1,32 @@
 class Solution {
     public String removeOuterParentheses(String s) {
         StringBuilder sb = new StringBuilder();
+        int count = 0;
+
+        for (int i = 0; i < s.length(); i++) {
+            char ch = s.charAt(i);
+
+            if(ch == '(') {
+                count++;
+                if(count > 1) {
+                    sb.append('(');
+                }
+            } else {
+                if(count > 1) {
+                    sb.append(')');
+                }
+
+                count--;
+            }
+        }
+
+        return sb.toString();
+    }
+}
+
+/*
+    public String removeOuterParentheses(String s) {
+        StringBuilder sb = new StringBuilder();
         int start = -1, end = -1;
 
         int count = 0;
@@ -27,4 +53,4 @@ class Solution {
 
         return sb.toString();
     }
-}
+*/
