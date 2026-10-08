@@ -19,6 +19,7 @@ class Solution {
                 count--;
             }
         }
+        
         return sb.toString();
     }
 }
