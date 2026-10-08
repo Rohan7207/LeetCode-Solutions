@@ -1,17 +1,14 @@
 class Solution {
     public boolean hasAllCodes(String s, int k) {
-        int count = 0;
         Set<String> set = new HashSet<>();
 
         for (int i = 0; i <= s.length() - k; i++) {
             String str = s.substring(i, i + k);
 
-            if (set.add(str)) {
-                count++;
-            }
+            set.add(str);
         }
-        
-        return count == Math.pow(2, k);
+
+        return set.size() == (1 << k);
     }
 }
 
