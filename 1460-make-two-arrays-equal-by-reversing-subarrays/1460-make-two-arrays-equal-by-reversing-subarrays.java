@@ -1,5 +1,25 @@
 class Solution {
     public boolean canBeEqual(int[] target, int[] arr) {
+        int[] count = new int[1001];
+
+        for(int num : target) {
+            count[num]++;
+        }
+
+        for(int num : arr) {
+            if(count[num] == 0) {
+                return false;
+            } 
+            
+            count[num]--;
+        }
+
+        return true;
+    }
+}
+
+/*
+    public boolean canBeEqual(int[] target, int[] arr) {
         Map<Integer, Integer> map = new HashMap<>();
 
         for(int num : target) {
@@ -20,4 +40,4 @@ class Solution {
 
         return true;
     }
-}
+*/
