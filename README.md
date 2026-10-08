@@ -224,6 +224,7 @@
 | [1438-longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1438-longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit/) | Medium |
 | [1441-build-an-array-with-stack-operations](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1441-build-an-array-with-stack-operations/) | Medium |
 | [1450-number-of-students-doing-homework-at-a-given-time](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1450-number-of-students-doing-homework-at-a-given-time/) | Easy |
+| [1460-make-two-arrays-equal-by-reversing-subarrays](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1460-make-two-arrays-equal-by-reversing-subarrays/) | Easy |
 | [1464-maximum-product-of-two-elements-in-an-array](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1464-maximum-product-of-two-elements-in-an-array) |
 | [1477-find-two-non-overlapping-sub-arrays-each-with-target-sum](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1477-find-two-non-overlapping-sub-arrays-each-with-target-sum/) | Medium |
 | [1563-stone-game-v](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1563-stone-game-v) |
@@ -377,6 +378,7 @@
 | [1399-count-largest-group](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1399-count-largest-group/) | Easy |
 | [1410-html-entity-parser](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1410-html-entity-parser/) | Medium |
 | [1436-destination-city](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1436-destination-city/) | Easy |
+| [1460-make-two-arrays-equal-by-reversing-subarrays](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1460-make-two-arrays-equal-by-reversing-subarrays/) | Easy |
 | [1477-find-two-non-overlapping-sub-arrays-each-with-target-sum](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1477-find-two-non-overlapping-sub-arrays-each-with-target-sum/) | Medium |
 | [1520-maximum-number-of-non-overlapping-substrings](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1520-maximum-number-of-non-overlapping-substrings/) | Hard |
 | [1658-minimum-operations-to-reduce-x-to-zero](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1658-minimum-operations-to-reduce-x-to-zero/) | Medium |
@@ -980,6 +982,7 @@
 | [1385-find-the-distance-value-between-two-arrays](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1385-find-the-distance-value-between-two-arrays/) | Easy |
 | [1403-minimum-subsequence-in-non-increasing-order](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1403-minimum-subsequence-in-non-increasing-order/) | Easy |
 | [1424-diagonal-traverse-ii](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1424-diagonal-traverse-ii/) | Medium |
+| [1460-make-two-arrays-equal-by-reversing-subarrays](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1460-make-two-arrays-equal-by-reversing-subarrays/) | Easy |
 | [1464-maximum-product-of-two-elements-in-an-array](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1464-maximum-product-of-two-elements-in-an-array) |
 | [1520-maximum-number-of-non-overlapping-substrings](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1520-maximum-number-of-non-overlapping-substrings/) | Hard |
 | [1833-maximum-ice-cream-bars](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1833-maximum-ice-cream-bars) |
