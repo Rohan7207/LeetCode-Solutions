@@ -6,14 +6,14 @@ class Solution {
         for (int i = 0; i < s.length(); i++) {
             char ch = s.charAt(i);
 
-            if(ch == '(') {
+            if (ch == '(') {
                 count++;
-                if(count > 1) {
-                    sb.append('(');
+                if (count > 1) {
+                    sb.append(ch);
                 }
             } else {
-                if(count > 1) {
-                    sb.append(')');
+                if (count > 1) {
+                    sb.append(ch);
                 }
 
                 count--;
