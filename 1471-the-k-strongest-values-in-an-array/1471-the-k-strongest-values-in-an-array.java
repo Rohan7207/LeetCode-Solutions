@@ -16,12 +16,26 @@ class Solution {
                 ans[idx++] = arr[right--];
             } else {
                 ans[idx++] = arr[left++];
-            } 
+            }
         }
 
         return ans;
     }
 }
+
+/*
+    if(dist1 > dist2) {
+        ans[idx++] = arr[left++];
+    } else if(dist1 < dist2) {
+        ans[idx++] = arr[right--];
+    } else {
+        if(arr[left] > arr[right]) {
+            ans[idx++] = arr[left++];
+        } else {
+            ans[idx++] = arr[right--];
+        }
+    }
+*/
 
 /*
      public int[] getStrongest(int[] arr, int k) {
