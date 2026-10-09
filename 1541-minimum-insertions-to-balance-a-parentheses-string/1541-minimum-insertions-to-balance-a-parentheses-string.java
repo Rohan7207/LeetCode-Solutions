@@ -25,11 +25,7 @@ class Solution {
             }
         }
 
-        if (count != 0) {
-            return res + count * 2;
-        }
-
-        return res;
+        return res + count * 2;
     }
 }
 
