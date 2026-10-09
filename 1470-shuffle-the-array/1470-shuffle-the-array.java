@@ -5,7 +5,7 @@ class Solution {
         int i = 0, j = n;
         int idx = 0;
 
-        while(i < n && j < len) {
+        while (i < n && j < len) {
             ans[idx++] = nums[i++];
             ans[idx++] = nums[j++];
         }
