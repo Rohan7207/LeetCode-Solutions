@@ -1,3 +1,21 @@
+// Problem: The k Strongest Values in an Array
+// Link: https://leetcode.com/problems/the-k-strongest-values-in-an-array/
+// Difficulty: Medium
+
+// Approach:
+// 1. Sort the array so the smallest value is at left and largest at right.
+// 2. Find the median m = arr[(n - 1) / 2].
+// 3. Initialize two pointers: left = 0 and right = n - 1.
+// 4. Compare the absolute distances of arr[left] and arr[right] from m.
+// 5. If dist1 <= dist2, choose arr[right] because the larger value wins ties.
+// 6. Otherwise, choose arr[left].
+// 7. Move the pointer corresponding to the chosen value.
+// 8. Repeat until k strongest values are collected.
+
+// Time Complexity: O(n log n + k)
+// Space Complexity: O(k) for the answer array, excluding sorting overhead.
+
+
 class Solution {
     public int[] getStrongest(int[] arr, int k) {
         Arrays.sort(arr);
@@ -22,52 +40,3 @@ class Solution {
         return ans;
     }
 }
-
-/*
-    if(dist1 > dist2) {
-        ans[idx++] = arr[left++];
-    } else if(dist1 < dist2) {
-        ans[idx++] = arr[right--];
-    } else {
-        if(arr[left] > arr[right]) {
-            ans[idx++] = arr[left++];
-        } else {
-            ans[idx++] = arr[right--];
-        }
-    }
-*/
-
-/*
-     public int[] getStrongest(int[] arr, int k) {
-        Arrays.sort(arr);
-        int n = arr.length;
-        int m = arr[(n - 1) / 2];
-
-        PriorityQueue<Integer> pq = new PriorityQueue<>((a, b) -> {
-            int distA = Math.abs(a - m);
-            int distB = Math.abs(b - m);
-
-            if (distA != distB) {
-                return Integer.compare(distA, distB);
-            }
-
-            return Integer.compare(a, b);
-        });
-
-        for(int i = 0; i < n; i++) {
-            pq.offer(arr[i]);
-
-            if(pq.size() > k) {
-                pq.poll();
-            }
-        }
-
-        int[] ans = new int[k];
-        int idx = 0;
-        while(!pq.isEmpty()) {
-            ans[idx++] = pq.poll();
-        }
-
-        return ans;
-    }
-*/
