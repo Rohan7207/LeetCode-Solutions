@@ -1,3 +1,24 @@
+// Problem: Minimum Insertions to Balance a Parenthses String
+// Link: https://leetcode.com/problems/minimum-insertions-to-balance-a-parentheses-string/?envType=daily-question&envId=2026-10-09
+// Difficulty: Medium
+
+// Approach:
+// 1. `count` tracks unmatched '(' characters.
+// 2. `res` tracks the number of insertions required.
+// 3. For '(' → increment count.
+// 4. For ')' →
+//      - If count > 0, match an opening parenthesis and decrement count.
+//      - Otherwise, insert '(' and increment res.
+// 5. Check whether the current ')' has a consecutive ')' after it.
+//      - If yes, consume both.
+//      - Otherwise, insert the missing ')' and increment res.
+// 6. After traversal, every unmatched '(' requires two ')'.
+// 7. Return res + count * 2.
+
+// Time Complexity: O(n)
+// Space Complexity: O(1)
+
+
 class Solution {
     public int minInsertions(String s) {
         int res = 0;
@@ -10,16 +31,16 @@ class Solution {
                 count++;
                 i++;
             } else {
-                if (count > 0) { // We have '('
+                if (count > 0) { 
                     count--;
-                } else { // We should add '(' to res
+                } else {
                     res++;
                 }
 
                 if (i + 1 < n && s.charAt(i + 1) == ')') {
-                    i += 2; // Skip balanced pair
+                    i += 2; 
                 } else {
-                    res++; // Adding ')'
+                    res++; 
                     i++;
                 }
             }
@@ -28,71 +49,3 @@ class Solution {
         return res + count * 2;
     }
 }
-
-/*
-    public int minInsertions(String s) {
-        int count = 0;
-        int missingOpen = 0;
-
-        for(char ch : s.toCharArray()) {
-            if(ch == '(') {
-                if(count % 2 == 1) {
-                    count--;
-                }
-                
-                count += 2;
-            } else {
-                count--;
-
-                if(count < 0) {
-                    missingOpen++;
-                    count = 1;
-                }
-            }
-        }
-
-        return count + missingOpen;
-    }
-*/
-
-/*
-    s = ")))))))"
-
-    - We only need to increase 1 when '(' not 2 and when we encounter ')' and if  next char is ')' then we just skip it else we insert one character
-    if(s[i + 1] == ')' && count > 0) {
-        i += 2;
-    } else {
-        res += 1;
-        i++;
-    }
-
-    - The third case where there is no opening bracket
-    if(count > 0) {  // We had '('
-        count--;
-    } else {        // We have to add '('
-        res += 1;
-    }
-
-    if(s[i + 1] == ')') {
-        i += 2;
-    } else {
-        res += 1;
-        i++;
-    }
-
-    s = "))())("
-
-    count = 1
-    res = 1
-
-    - In the last if count is not 0 then it tells that we need insert no.of count * 2 close parentheses
-    so we return
-    return count * 2 + res;
-
-    1. '('   => count++, i++
-    2. ')'   => count > 0, count--
-                                /  i + 2
-                if i + 1 == ')'  
-                                \ res++, i++
-    3. count != 0 then return count * 2 + res or return res;
-*/
