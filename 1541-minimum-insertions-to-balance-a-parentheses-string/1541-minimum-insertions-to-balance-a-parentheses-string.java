@@ -5,27 +5,27 @@ class Solution {
         int n = s.length();
         int i = 0;
 
-        while(i < n) {
-            if(s.charAt(i) == '(') {
+        while (i < n) {
+            if (s.charAt(i) == '(') {
                 count++;
                 i++;
             } else {
-                if(count > 0) {    // We have '('
+                if (count > 0) { // We have '('
                     count--;
-                } else {         // We should add '(' to res
+                } else { // We should add '(' to res
                     res++;
                 }
 
-                if(i + 1 < n && s.charAt(i + 1) == ')') {
-                    i += 2;      // Skip balanced pair
+                if (i + 1 < n && s.charAt(i + 1) == ')') {
+                    i += 2; // Skip balanced pair
                 } else {
-                    res++;       // Adding ')'
+                    res++; // Adding ')'
                     i++;
                 }
             }
         }
 
-        if(count != 0) {
+        if (count != 0) {
             return res + count * 2;
         }
 
@@ -99,4 +99,4 @@ class Solution {
                 if i + 1 == ')'  
                                 \ res++, i++
     3. count != 0 then return count * 2 + res or return res;
-*/                      
+*/
