@@ -12,17 +12,11 @@ class Solution {
             int dist1 = Math.abs(arr[left] - m);
             int dist2 = Math.abs(arr[right] - m);
 
-            if (dist1 > dist2) {
-                ans[idx++] = arr[left++];
-            } else if (dist1 < dist2) {
+            if (dist1 <= dist2) {
                 ans[idx++] = arr[right--];
             } else {
-                if (arr[left] > arr[right]) {
-                    ans[idx++] = arr[left++];
-                } else {
-                    ans[idx++] = arr[right--];
-                }
-            }
+                ans[idx++] = arr[left++];
+            } 
         }
 
         return ans;
