@@ -230,6 +230,7 @@
 | [1471-the-k-strongest-values-in-an-array](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1471-the-k-strongest-values-in-an-array/) | Medium |
 | [1475-final-prices-with-a-special-discount-in-a-shop](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1475-final-prices-with-a-special-discount-in-a-shop/) | Easy |
 | [1477-find-two-non-overlapping-sub-arrays-each-with-target-sum](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1477-find-two-non-overlapping-sub-arrays-each-with-target-sum/) | Medium |
+| [1480-running-sum-of-1d-array](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1480-running-sum-of-1d-array/) | Easy |
 | [1563-stone-game-v](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1563-stone-game-v) |
 | [1658-minimum-operations-to-reduce-x-to-zero](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1658-minimum-operations-to-reduce-x-to-zero/) | Medium |
 | [1732-find-the-highest-altitude](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1732-find-the-highest-altitude) |
@@ -1835,6 +1836,7 @@
 | [1310-xor-queries-of-a-subarray](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1310-xor-queries-of-a-subarray) |
 | [1352-product-of-the-last-k-numbers](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1352-product-of-the-last-k-numbers/) | Medium |
 | [1423-maximum-points-you-can-obtain-from-cards](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1423-maximum-points-you-can-obtain-from-cards) |
+| [1480-running-sum-of-1d-array](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1480-running-sum-of-1d-array/) | Easy |
 | [1621-number-of-sets-of-k-non-overlapping-line-segments](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1621-number-of-sets-of-k-non-overlapping-line-segments/) | Medium |
 | [1658-minimum-operations-to-reduce-x-to-zero](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1658-minimum-operations-to-reduce-x-to-zero/) | Medium |
 | [1732-find-the-highest-altitude](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1732-find-the-highest-altitude) |
