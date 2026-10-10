@@ -5,43 +5,43 @@ class Solution {
         long sumDiff = 0;
         int k = k1 + k2;
 
-        for(int i = 0; i < nums1.length; i++) {
+        for (int i = 0; i < nums1.length; i++) {
             int diff = Math.abs(nums1[i] - nums2[i]);
             sumDiff += diff;
 
             maxDiff = Math.max(maxDiff, diff);
         }
 
-        if(sumDiff <= k) {
+        if (sumDiff <= k) {
             return 0;
         }
 
         int[] freq = new int[maxDiff + 1];
-        
-        for(int i = 0; i < nums1.length; i++) {
+
+        for (int i = 0; i < nums1.length; i++) {
             int diff = Math.abs(nums1[i] - nums2[i]);
 
             freq[diff]++;
         }
 
-        for(int i = maxDiff; i >= 0 && k > 0; i--) {
-            if(freq[i] == 0) {
+        for (int i = maxDiff; i > 0 && k > 0; i--) {
+            if (freq[i] == 0) {
                 continue;
             }
 
-            if(i != 0 && k >= freq[i]) {
+            if (k >= freq[i]) {
                 k -= freq[i];
                 freq[i - 1] += freq[i];
                 freq[i] = 0;
-            } else if (i != 0){
+            } else {
                 freq[i - 1] += k;
                 freq[i] -= k;
                 k = 0;
             }
         }
 
-        for(int diff = 0; diff < freq.length; diff++) {
-            if(freq[diff] > 0) {
+        for (int diff = 0; diff < freq.length; diff++) {
+            if (freq[diff] > 0) {
                 ans += (long) diff * diff * freq[diff];
             }
         }
