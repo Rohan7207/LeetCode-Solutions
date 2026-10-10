@@ -1,3 +1,27 @@
+// Problem: Minimum Sum of Squared Difference
+// Link: https://leetcode.com/problems/minimum-sum-of-squared-difference/?envType=daily-question&envId=2026-10-10
+// Difficulty: Medium
+
+// Approach:
+// 1. Calculate the absolute difference between each pair of elements.
+// 2. Find the maximum difference and the sum of all differences.
+// 3. If the total difference <= k1 + k2, all differences can become zero; return 0.
+// 4. Create a frequency array where freq[d] represents the number of differences equal to d.
+// 5. Start from the maximum difference and process differences in descending order.
+// 6. If k >= freq[i], reduce every difference at level i by 1:
+//    - Move all freq[i] elements to freq[i - 1].
+//    - Subtract freq[i] from k and clear freq[i].
+// 7. Otherwise, reduce only k elements by 1:
+//    - Move k elements from freq[i] to freq[i - 1].
+//    - Stop because all operations are used.
+// 8. Calculate the sum of squared differences using the frequency array.
+
+// Time Complexity: O(n + D)
+// Space Complexity: O(D)
+//
+// n = nums1.length, D = maximum absolute difference.
+
+
 class Solution {
     public long minSumSquareDiff(int[] nums1, int[] nums2, int k1, int k2) {
         long ans = 0;
@@ -49,41 +73,3 @@ class Solution {
         return ans;
     }
 }
-
-/*
-    int k = k1 + k2;
-        PriorityQueue<Integer> maxHeap = new PriorityQueue<>(Comparator.reverseOrder());
-
-        int n = nums1.length;
-        for(int i = 0; i < n; i++) {
-            int diff = Math.abs(nums1[i] - nums2[i]);
-
-            maxHeap.add(diff);
-        }
-
-        while(k > 0 && !maxHeap.isEmpty()) {
-            int newValue = maxHeap.poll() - 1;
-
-            if(newValue > 0) {
-                maxHeap.add(newValue);
-            }
-
-            k--;
-        }
-
-        while(!maxHeap.isEmpty()) {
-            int val = maxHeap.poll();
-            ans += val * val;
-        }
-
-        return ans;
-*/
-
-/*
-    nums1 = [1,4,10,12], nums2 = [5,8,6,9], k1 = 1, k2 = 1
-    Here we need (2 - 5)2 + (4 - 8)2 + (10 - 7)2 + (12 - 9)2 = 43.
-    Where we are allowed to +1 or -1 atmost k1 in nums1 and k2 in nums2.
-    - But these doesn't matter that we should k1 in nums1 only if we take k1 + k2 as k then we can perform k opeations on both array bcz for ex there is 10 and 6 if we decrease from 10 it 9 and diff is 3 and also if we increase 6 to 7 then also diff is 3, so it doesn't matter in which we doing operation we should change whose differenc is high. So we need store the difference of nums1[i] - nums2[i] and whose difference is high we will perform operation. 
-    For above diff = [4, 4, 4, 3]
-    Now k = 2, we will need to perform operation on maximum diff so first thing will come to sort but if reduce 4 to 3 by 1 operation then we should again sort to get next highest so instead of that maintain maxheap and store diff values and perform k operations on max diffs and in end remove from maxheap and return ans.
-*/
