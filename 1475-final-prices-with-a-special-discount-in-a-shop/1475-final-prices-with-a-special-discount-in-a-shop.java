@@ -4,8 +4,8 @@ class Solution {
         int[] st = new int[n];
         int top = -1;
 
-        for(int i = 0; i < n; i++) {
-            while(top >= 0 && prices[st[top]] >= prices[i]) {
+        for (int i = 0; i < n; i++) {
+            while (top >= 0 && prices[st[top]] >= prices[i]) {
                 prices[st[top--]] -= prices[i];
             }
 
