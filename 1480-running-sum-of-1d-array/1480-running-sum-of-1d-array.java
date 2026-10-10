@@ -4,7 +4,7 @@ class Solution {
         int[] prefixSum = new int[n];
         prefixSum[0] = nums[0];
 
-        for(int i = 1; i < nums.length; i++) {
+        for (int i = 1; i < nums.length; i++) {
             prefixSum[i] = prefixSum[i - 1] + nums[i];
         }
 
