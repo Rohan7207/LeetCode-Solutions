@@ -25,6 +25,10 @@ class Solution {
         }
 
         for(int i = maxDiff; i >= 0 && k > 0; i--) {
+            if(freq[i] == 0) {
+                continue;
+            }
+
             if(i != 0 && k >= freq[i]) {
                 k -= freq[i];
                 freq[i - 1] += freq[i];
