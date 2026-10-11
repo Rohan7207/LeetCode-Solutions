@@ -10,14 +10,14 @@ class Solution {
 
         // bucket[i] stores how many unique integers have a frequency of exactly 'i'
         int[] bucket = new int[n + 1];
-        for(int count : freqMap.values()) {
+        for (int count : freqMap.values()) {
             bucket[count]++;
         }
 
         int uniqueElements = freqMap.size();
 
         for (int freq = 1; freq <= n; freq++) {
-            if(bucket[freq] > 0) {
+            if (bucket[freq] > 0) {
                 // Calculate how many elements of this frequency we can completely remove
                 int elementToRemove = Math.min(bucket[freq], k / freq);
 
@@ -25,7 +25,7 @@ class Solution {
                 uniqueElements -= elementToRemove;
 
                 // If k is exhausted or not enough to clear even 1 element of this frequency
-                if(k < freq) {
+                if (k < freq) {
                     break;
                 }
             }
@@ -34,7 +34,6 @@ class Solution {
         return uniqueElements;
     }
 }
-
 
 /*
     Using hashmap + sorting   (O(Nlog N))  and O(N)
