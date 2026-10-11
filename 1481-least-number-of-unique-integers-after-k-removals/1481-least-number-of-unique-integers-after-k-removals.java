@@ -1,3 +1,25 @@
+// Problem: Least Number of Unique Integers after K Removals
+// Link: https://leetcode.com/problems/least-number-of-unique-integers-after-k-removals/
+// Difficulty: Medium
+
+// Approach:
+// 1. Count the frequency of every integer using a HashMap.
+// 2. Create a bucket array where bucket[f] stores the number of distinct integers
+//    appearing exactly f times.
+// 3. Initialize uniqueElements with the number of distinct integers.
+// 4. Traverse frequencies from 1 to n, because removing less frequent integers
+//    first costs fewer deletions.
+// 5. For each frequency f, calculate how many complete integers can be removed:
+//    elementToRemove = min(bucket[f], k / f).
+// 6. Decrease k by elementToRemove * f and decrease uniqueElements accordingly.
+// 7. If k < f, stop because there are not enough deletions to remove another
+//    integer with that frequency.
+// 8. Return uniqueElements.
+
+// Time Complexity: O(n)
+// Space Complexity: O(n)
+
+
 class Solution {
     public int findLeastNumOfUniqueInts(int[] arr, int k) {
         int n = arr.length;
@@ -34,35 +56,3 @@ class Solution {
         return uniqueElements;
     }
 }
-
-/*
-    Using hashmap + sorting   (O(Nlog N))  and O(N)
-    public int findLeastNumOfUniqueInts(int[] arr, int k) {
-        int n = arr.length;
-        Map<Integer, Integer> freqMap = new HashMap<>();
-
-        // Count the frequency of each number
-        for (int num : arr) {
-            freqMap.put(num, freqMap.getOrDefault(num, 0) + 1);
-        }
-
-        // Put all the frequencies into a list and sort them in ascending order
-        List<Integer> frequencies = new ArrayList<>(freqMap.values());
-        Collections.sort(frequencies);
-
-        // Greedily remove the least frequent elements
-        int uniqueElements = freqMap.size();
-
-        for (int count : frequencies) {
-            if (k >= count) {
-                k -= count; // Deduct the counts from k
-                uniqueElements--; // One unique integer is completely removed
-            } else {
-                // If we don't have enough k to eliminate this integer, we stop.
-                break;
-            }
-        }
-
-        return uniqueElements;
-    }
-*/
