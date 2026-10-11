@@ -4,7 +4,7 @@ class Solution {
         Map<Integer, Integer> freqMap = new HashMap<>();
 
         // Count the frequency of each number
-        for(int num : arr) {
+        for (int num : arr) {
             freqMap.put(num, freqMap.getOrDefault(num, 0) + 1);
         }
 
@@ -15,10 +15,10 @@ class Solution {
         // Greedily remove the least frequent elements
         int uniqueElements = freqMap.size();
 
-        for(int count : frequencies) {
-            if(k >= count) {
-                k -= count;     // Deduct the counts from k
-                uniqueElements--;     // One unique integer is completely removed
+        for (int count : frequencies) {
+            if (k >= count) {
+                k -= count; // Deduct the counts from k
+                uniqueElements--; // One unique integer is completely removed
             } else {
                 // If we don't have enough k to eliminate this integer, we stop.
                 break;
