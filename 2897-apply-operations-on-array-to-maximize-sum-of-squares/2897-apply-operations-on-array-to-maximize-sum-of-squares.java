@@ -6,22 +6,22 @@ class Solution {
         int[] count = new int[32];
         int res = 0;
 
-        for(int num : nums) {
-            for(int bit = 0; bit < 32; bit++) {
-                if((num & (1 << bit)) != 0) {      // If 1 is present at this bit position then increase
+        for (int num : nums) {
+            for (int bit = 0; bit < 32; bit++) {
+                if ((num & (1 << bit)) != 0) { // If 1 is present at this bit position then increase
                     count[bit]++;
                 }
             }
         }
 
-        while(k > 0) {
+        while (k > 0) {
             int curr = 0;
 
-            for(int bit = 0; bit < 32; bit++) {
-                if(count[bit] > 0) {
+            for (int bit = 0; bit < 32; bit++) {
+                if (count[bit] > 0) {
                     count[bit]--;
 
-                    curr = (curr | (1 << bit));   // Assigns 1 bit value to curr position and left shift
+                    curr = (curr | (1 << bit)); // Assigns 1 bit value to curr position and left shift
                 }
             }
 
