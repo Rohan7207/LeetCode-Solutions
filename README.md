@@ -232,6 +232,7 @@
 | [1477-find-two-non-overlapping-sub-arrays-each-with-target-sum](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1477-find-two-non-overlapping-sub-arrays-each-with-target-sum/) | Medium |
 | [1480-running-sum-of-1d-array](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1480-running-sum-of-1d-array/) | Easy |
 | [1481-least-number-of-unique-integers-after-k-removals](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1481-least-number-of-unique-integers-after-k-removals/) | Medium |
+| [1487-making-file-names-unique](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1487-making-file-names-unique/) | Medium |
 | [1563-stone-game-v](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1563-stone-game-v) |
 | [1658-minimum-operations-to-reduce-x-to-zero](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1658-minimum-operations-to-reduce-x-to-zero/) | Medium |
 | [1732-find-the-highest-altitude](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1732-find-the-highest-altitude) |
@@ -390,6 +391,7 @@
 | [1461-check-if-a-string-contains-all-binary-codes-of-size-k](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1461-check-if-a-string-contains-all-binary-codes-of-size-k/) | Medium |
 | [1477-find-two-non-overlapping-sub-arrays-each-with-target-sum](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1477-find-two-non-overlapping-sub-arrays-each-with-target-sum/) | Medium |
 | [1481-least-number-of-unique-integers-after-k-removals](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1481-least-number-of-unique-integers-after-k-removals/) | Medium |
+| [1487-making-file-names-unique](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1487-making-file-names-unique/) | Medium |
 | [1520-maximum-number-of-non-overlapping-substrings](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1520-maximum-number-of-non-overlapping-substrings/) | Hard |
 | [1658-minimum-operations-to-reduce-x-to-zero](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1658-minimum-operations-to-reduce-x-to-zero/) | Medium |
 | [1796-second-largest-digit-in-a-string](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1796-second-largest-digit-in-a-string) |
@@ -681,6 +683,7 @@
 | [1455-check-if-a-word-occurs-as-a-prefix-of-any-word-in-a-sentence](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1455-check-if-a-word-occurs-as-a-prefix-of-any-word-in-a-sentence/) | Easy |
 | [1456-maximum-number-of-vowels-in-a-substring-of-given-length](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1456-maximum-number-of-vowels-in-a-substring-of-given-length/) | Medium |
 | [1461-check-if-a-string-contains-all-binary-codes-of-size-k](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1461-check-if-a-string-contains-all-binary-codes-of-size-k/) | Medium |
+| [1487-making-file-names-unique](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1487-making-file-names-unique/) | Medium |
 | [1520-maximum-number-of-non-overlapping-substrings](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1520-maximum-number-of-non-overlapping-substrings/) | Hard |
 | [1541-minimum-insertions-to-balance-a-parentheses-string](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1541-minimum-insertions-to-balance-a-parentheses-string/) | Medium |
 | [1614-maximum-nesting-depth-of-the-parentheses](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1614-maximum-nesting-depth-of-the-parentheses/) | Easy |
