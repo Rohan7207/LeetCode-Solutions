@@ -28,7 +28,6 @@ class Solution {
             res = (int) ((res + (long) curr * curr) % MOD);
             k--;
         }
-
         return res;
     }
 }
