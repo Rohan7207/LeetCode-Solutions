@@ -4,9 +4,7 @@ class Solution {
         int n = nums.length;
 
         for (int i = 0; i < n; i++) {
-            if (nums[i] < 0) {
-                nums[i] = -(nums[i]);
-            }
+            nums[i] *= nums[i];
         }
 
         Arrays.sort(nums);
@@ -15,11 +13,11 @@ class Solution {
 
         while (left <= right) {
             if (left == right) {
-                ans += (nums[left] * nums[left]);
+                ans += nums[left];
                 break;
             }
 
-            ans += (nums[right] * nums[right]) - (nums[left] * nums[left]);
+            ans += nums[right] - nums[left];
             left++;
             right--;
         }
