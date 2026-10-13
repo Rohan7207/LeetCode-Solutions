@@ -21,10 +21,10 @@ class Solution {
             left++;
             right--;
         }
-
         return ans;
     }
 }
+
 
 /*
     public long maxAlternatingSum(int[] nums) {
