@@ -1,6 +1,6 @@
 class Solution {
     public String maxSumOfSquares(int num, int sum) {
-        if(sum > num * 9) {
+        if (sum > num * 9) {
             return "";
         }
 
@@ -10,12 +10,12 @@ class Solution {
 
         sb.repeat('9', nines);
 
-        if(rem > 0) {
+        if (rem > 0) {
             sb.append((char) (rem + '0'));
         }
 
         int remLength = num - sb.length();
-        if(remLength > 0) {
+        if (remLength > 0) {
             sb.repeat('0', remLength);
         }
 
