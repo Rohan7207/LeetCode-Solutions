@@ -1,3 +1,21 @@
+// Problem: Maximize Sum of Squares of Digits
+// Link: https://leetcode.com/problems/maximize-sum-of-squares-of-digits/?envType=daily-question&envId=2026-10-14
+// Difficulty: Medium
+
+// Approach:
+// 1. Check if the required sum exceeds the maximum possible sum, num * 9.
+//    If it does, return an empty string because no valid number exists.
+// 2. Calculate how many 9s can fit into the required sum using sum / 9.
+// 3. Calculate the remaining sum using sum % 9.
+// 4. Append all the 9s first to maximize the sum of squared digits.
+// 5. If the remainder is greater than 0, append it as the next digit.
+// 6. Fill the remaining positions with zeros to make the string length equal to num.
+// 7. Return the constructed string.
+
+// Time Complexity: O(num)
+// Space Complexity: O(num)
+
+
 class Solution {
     public String maxSumOfSquares(int num, int sum) {
         if (sum > num * 9) {
@@ -22,23 +40,3 @@ class Solution {
         return sb.toString();
     }
 }
-
-/*
-    num = 2  sum = 17
-    9, 8  = 145
-    8, 9  = 145
-
-    num = 3 sum = 22
-    9 8 5
-    8 9 5 
-    9 9 3 = this gives best possible ans bcz 9 gives always highest square
-
-    num = 5 sum = 21
-    nines = 21 / 9 = 2, fill 2times 9 at leftmost  9 9 
-    rem = 21 % 9 = 3, fill 3 at next and fill 0, 9 9 3 0 0
-
-    Story points:
-    1. nines = sum / 9 
-    2. rem = sum % 9
-    3. append 0 at end
-*/
