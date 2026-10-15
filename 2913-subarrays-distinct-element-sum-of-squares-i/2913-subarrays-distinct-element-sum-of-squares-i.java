@@ -14,6 +14,7 @@ class Solution {
 
                 sum += count * count;
             }
+            
             set.clear();
         }
 
