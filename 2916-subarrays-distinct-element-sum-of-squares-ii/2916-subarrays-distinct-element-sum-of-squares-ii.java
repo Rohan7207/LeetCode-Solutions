@@ -20,7 +20,7 @@ class Solution {
 
         int res = 0;
 
-        for(int i = 0; i < n; i++) {
+        for (int i = 0; i < n; i++) {
             int start = lastSeenIdx[nums[i]] + 1;
             int end = i;
 
@@ -35,10 +35,10 @@ class Solution {
     }
 
     private void updateRange(int start, int end, int i, int l, int r, int val) {
-        if(lazyTree[i] != 0) {
+        if (lazyTree[i] != 0) {
             lazyAddition(i, l, r, lazyTree[i]);
 
-            if(l != r) {
+            if (l != r) {
                 lazyTree[2 * i + 1] += lazyTree[i];
                 lazyTree[2 * i + 2] += lazyTree[i];
             }
@@ -47,15 +47,15 @@ class Solution {
         }
 
         // Out of Range
-        if(l > end || r < start || l > r) {
+        if (l > end || r < start || l > r) {
             return;
         }
 
         // Completely withing range
-        if(l >= start && r <= end) {
+        if (l >= start && r <= end) {
             lazyAddition(i, l, r, val);
 
-            if(l != r) {
+            if (l != r) {
                 lazyTree[2 * i + 1] += val;
                 lazyTree[2 * i + 2] += val;
             }
@@ -78,8 +78,8 @@ class Solution {
         int len = (r - l + 1);
 
         sqSumSegTree[i] = (sqSumSegTree[i]
-        + 2L * val * sumSegTree[i]
-        + (long) len * val * val) % MOD;
+                + 2L * val * sumSegTree[i]
+                + (long) len * val * val) % MOD;
         sumSegTree[i] = (sumSegTree[i] + (long) len * val) % MOD;
     }
 }
@@ -288,4 +288,4 @@ Where 0 represents the sum of squares of distinct count at each root node which 
             sqSumSegTree[i] += 2*val*(sumSegTree[i]) + len*(val*val);
             sumSegTree[i] += (len*val);
         }
-*/  
+*/
