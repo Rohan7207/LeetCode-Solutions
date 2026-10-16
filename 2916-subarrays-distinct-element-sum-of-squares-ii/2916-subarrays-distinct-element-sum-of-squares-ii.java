@@ -30,6 +30,7 @@ class Solution {
 
             lastSeenIdx[nums[i]] = i;
         }
+        
         return res;
     }
 
