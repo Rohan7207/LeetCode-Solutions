@@ -4,16 +4,16 @@ class Solution {
         Map<Integer, Integer> valToIdx = new HashMap<>();
 
         Integer[] sortedNums = new Integer[n];
-        for(int i = 0; i < n; i++) {
+        for (int i = 0; i < n; i++) {
             sortedNums[i] = nums[i];
             valToIdx.put(nums[i], i);
         }
 
-        Arrays.sort(sortedNums, (num1, num2) -> {   // nlogn * N (log(maxNum))
-            int num1DigitSum = getDigitSum(num1);  // log10(num)
+        Arrays.sort(sortedNums, (num1, num2) -> { // nlogn * N (log(maxNum))
+            int num1DigitSum = getDigitSum(num1); // log10(num)
             int num2DigitSum = getDigitSum(num2);
 
-            if(num1DigitSum != num2DigitSum) {
+            if (num1DigitSum != num2DigitSum) {
                 return Integer.compare(num1DigitSum, num2DigitSum);
             }
 
@@ -21,12 +21,12 @@ class Solution {
         });
 
         int swapCount = 0;
-        for(int i = 0; i < n; i++) {
+        for (int i = 0; i < n; i++) {
             int expectedVal = sortedNums[i];
             int currVal = nums[i];
 
             // No swap required
-            if(expectedVal == currVal) {
+            if (expectedVal == currVal) {
                 continue;
             }
 
@@ -47,7 +47,7 @@ class Solution {
     private int getDigitSum(int num) {
         int sum = 0;
 
-        while(num > 0) {
+        while (num > 0) {
             sum += num % 10;
             num /= 10;
         }
