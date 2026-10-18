@@ -53,6 +53,7 @@ class Solution {
         // ((n - 1) C (leftArray.size()))
         long z = pascalTable[n - 1][leftArray.size()];
 
+
         return (((x * y) % MOD) * z) % MOD;
     }
 }
