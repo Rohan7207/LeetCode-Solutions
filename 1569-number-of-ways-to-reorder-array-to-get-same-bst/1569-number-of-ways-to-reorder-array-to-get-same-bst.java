@@ -8,15 +8,15 @@ class Solution {
         List<Integer> numsList = new ArrayList<>();
         pascalTable = new long[n + 1][n + 1];
 
-        for(int num : nums) {
+        for (int num : nums) {
             numsList.add(num);
         }
 
-        for(int i = 0; i <= n; i++) {
+        for (int i = 0; i <= n; i++) {
             pascalTable[i][0] = 1;
             pascalTable[i][i] = 1;
 
-            for(int j = 1; j < i; j++) {
+            for (int j = 1; j < i; j++) {
                 pascalTable[i][j] = (pascalTable[i - 1][j] + pascalTable[i - 1][j - 1]) % MOD;
             }
         }
@@ -29,7 +29,7 @@ class Solution {
     private long solve(List<Integer> nums) {
         int n = nums.size();
 
-        if(n < 3) {
+        if (n < 3) {
             return 1;
         }
 
@@ -38,9 +38,9 @@ class Solution {
 
         int root = nums.get(0);
 
-        for(int i = 1; i < n; i++) {
+        for (int i = 1; i < n; i++) {
             int val = nums.get(i);
-            if(val < root) {
+            if (val < root) {
                 leftArray.add(val);
             } else {
                 rightArray.add(val);
@@ -177,4 +177,4 @@ class Solution {
 
     Edge Case:
     n == 1 && n == 2, return 1;  and our function will return 1 - 1 = 0
-*/                                          
+*/
