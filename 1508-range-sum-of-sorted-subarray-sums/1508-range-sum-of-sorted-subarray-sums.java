@@ -6,9 +6,9 @@ class Solution {
         int[] subArray = new int[n * (n + 1) / 2];
 
         int idx = 0;
-        for(int i = 0; i < n; i++) {
+        for (int i = 0; i < n; i++) {
             int sum = 0;
-            for(int j = i; j < n; j++) {
+            for (int j = i; j < n; j++) {
                 sum += nums[j];
                 subArray[idx++] = sum;
             }
@@ -17,7 +17,7 @@ class Solution {
         Arrays.sort(subArray);
 
         int ans = 0;
-        for(int i = left - 1; i < right; i++) {
+        for (int i = left - 1; i < right; i++) {
             ans = (ans + subArray[i]) % MOD;
         }
 
