@@ -1,5 +1,6 @@
 class Solution {
     public int kthFactor(int n, int k) {
+        // Find smaller factors in ascending order
         for (int i = 1; i * i <= n; i++) {
             if (n % i == 0) {
                 k--;
@@ -10,11 +11,12 @@ class Solution {
             }
         }
 
-        for(int i = (int) Math.sqrt(n); i >= 1; i--) {
-            if(n % i == 0 && i != n / i) {
+        // Find the paired factors in ascending order, Here, i moves backward, so its paired factor n / i moves forward in ascending order
+        for (int i = (int) Math.sqrt(n); i >= 1; i--) {
+            if (n % i == 0 && i != n / i) {
                 k--;
 
-                if(k == 0) {
+                if (k == 0) {
                     return n / i;
                 }
             }
