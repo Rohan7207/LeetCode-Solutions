@@ -5,14 +5,14 @@ class Solution {
         int targetCount = 0;
 
         for (int num : nums) {
-            if(num < target) {
+            if (num < target) {
                 lessThanTargetCount++;
             } else if (num == target) {
                 targetCount++;
             }
         }
 
-        for(int i = 0; i < targetCount; i++) {
+        for (int i = 0; i < targetCount; i++) {
             ans.add(lessThanTargetCount + i);
         }
 
