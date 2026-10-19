@@ -16,7 +16,6 @@ class Solution {
             return n;
         }
 
-        
         return -1;
     }
 }
