@@ -16,7 +16,6 @@ class Solution {
             ans.add(lessThanTargetCount + i);
         }
 
-
         return ans;
     }
 }
