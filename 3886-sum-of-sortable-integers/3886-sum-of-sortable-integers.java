@@ -1,3 +1,39 @@
+// Problem: Sum of Sortable Integers
+// Link: https://leetcode.com/problems/sum-of-sortable-integers/?envType=daily-question&envId=2026-10-20
+// Difficulty: Hard
+
+// Approach:
+// 1. Copy nums into sortedArray and sort it in O(n log n) time.
+//    We compare each original block with its corresponding sorted block.
+//
+// 2. Iterate through every possible block size k from 1 to n.
+//    Only consider k values that divide n, because the array must
+//    be partitioned into equal-sized blocks.
+//
+// 3. For each valid k, divide nums and sortedArray into blocks of size k.
+//    Extract corresponding blocks into curr and target.
+//
+// 4. Check whether curr can be transformed into target using a cyclic
+//    rotation. A rotation moves elements from the beginning to the end
+//    while preserving their relative order.
+//
+// 5. To check a rotation efficiently, construct text = target + target.
+//    Every cyclic rotation of target appears as a length-k substring
+//    within this doubled array.
+//
+// 6. Use KMP (Knuth-Morris-Pratt) to search for curr inside text.
+//    KMP uses an LPS array to avoid rechecking matched elements.
+//
+// 7. If every corresponding block passes the rotation check, k is valid.
+//    Add k to sum.
+//
+// 8. Return sum, the sum of all valid block sizes.
+
+// Time Complexity: O(n log n + n * d(n)), where d(n) is the number
+//                  of divisors of n.
+// Space Complexity: O(n).
+
+
 class Solution {
     public int sortableIntegers(int[] nums) {
         int n = nums.length;
@@ -115,71 +151,3 @@ class Solution {
         return false;
     }
 }
-
-/*
-    The questions asks to find sum of all possible sortable integers k where k is called sortable if k divides n means k are values of divisors of n and then we should partition given array into subarray of length k and we should independentlu rotate k length subarray of array to for sorted array if it is possible then add it to sum
-
-    nums = {7, 6, 5, 9, 3, 8}
-    k = 1, k = 2, k = 3, k = 6
-
-    For k = 1,
-      7   6   5   9  3  8   since how much rotate a single integer it gives same subarray and if array was already sorted then we would add k = 1 to sum
-    
-    For k = 2,
-     7  6    5  9     3  8   , we can't get sorted array and we should rotate only subarray part
-
-    For ex:  {3, 1, 2}  
-     k = 2,  => {3, 1, 2}  -> {2, 3, 1}  -> {1, 2, 3} (sorted add k to sum)
-
-    Ex:   nums = {6, 5, 8, 7}   n = 4,  k = 1, 2, 4
-    Brute force would be like store all possible subarray with all possible rotation and again we should check one subarray rotation with another whether it gives sorted array or not that would be super brute force and it definetly leads to TLE
-
-        nums = {6, 5, 8, 7}   n = 4,  k = 1, 2, 4
-
-        For k = 2, the goal is after rotation we should got sorted array right lets see how sorted array looks,
-        sorted = {5, 6, 7, 8}, now lets check first block i.e. 6, 5 since we should only rotate 6 and 5 only so other elements will not come in picture and now we should check that whether those particular k size elements is present in sorted array or not, like
-
-        curr =  {6, 5}  -> After n rotations ->   target block is = {5, 6}  => We should get it efficently
-
-    - How do I check that rotation of [6, 5] can become [5, 6]
-    * This is standard problem to check rotation become target by using a property
-
-            [6, 5]                  [5, 6]
-    Property: To check first append the target array back to it like [5, 6, 5, 6] and then check whether current k subarray is present as subarray in appended target array [5, 6, 5, 6], which is present in pos 1, 2 which gurantees us that after n rotations [6, 5] will become [5, 6]
-
-    Why it works? 
-    - It works bcz by appending same array back to it it generates all possible rotations of its elements like for [5, 6] => [5, 6, 5, 6], first there where only two rotations 5, 6 and 6, 5 and in appended 5, 6  6, 5  5, 6  though we get same but for bigger it would give all possible rotations. 
-    - To check whether curr k subarray after rotation become target subarrauy then we simply check whether curr is present as subarray in appended subarray.
-    - Though by looking it we can say that checking curr as subarray of target would be time taking and lead to O(n ^ 2), but target would be larger and k would be smaller so we can effiecintly check wheteher is subarray or not by using KMP.
-
-    Story Point:
-    1. Sorted array of nums
-    2. for(int k = 1; k <= n; k++) {
-            if(n % k != 0) continue;
-
-            // Check k is sortable or not, start += k to skip curr block
-            validK = true;
-            for(start = 0; start < n; start += k) {
-                // curr block start...k - 1
-                curr = int[k] from nums
-                target = int[k] from sorted 
-
-                if(!isRotationPossible(curr, target)) {
-                    validK = false;   // mark as false bcz k does'nt form valid sortable when one block fails
-                    break;  // bcz if one block doesn't form target block then terminate there itself there is no point in checking other blocks
-                }
-            }
-
-            if(validK) {
-                sum += k;
-            }
-       }
-
-       return sum;
-
-
-    bool isRotationPossible(curr, target) {
-        return KMP(curr, target + target);
-        // where in KMP curr would be pattern and target + target would be the target for KMP 
-    }
-*/
