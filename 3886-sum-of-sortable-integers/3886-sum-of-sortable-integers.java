@@ -3,16 +3,16 @@ class Solution {
         int n = nums.length;
 
         int[] sortedArray = new int[n];
-        for(int i = 0; i < n; i++) {
+        for (int i = 0; i < n; i++) {
             sortedArray[i] = nums[i];
         }
 
-        Arrays.sort(sortedArray);   // O(nlogn)
+        Arrays.sort(sortedArray); // O(nlogn)
         int sum = 0;
 
         // No.of divisors of n, let be m then this loop would run m times and inner loop runs n / k times bcz we skip k size blocks, overall O(n / k * k) => O(n), therefore overall O(m * n)
-        for(int k = 1; k <= n; k++) {  
-            if(n % k != 0) {
+        for (int k = 1; k <= n; k++) {
+            if (n % k != 0) {
                 continue;
             }
 
@@ -20,61 +20,60 @@ class Solution {
             // O(n) and it is working on k so KMP would take O(k) then overall O(n / k * k) => O(n)
             // Check all k block sizes
             boolean validK = true;
-            for(int start = 0; start < n; start += k) {
+            for (int start = 0; start < n; start += k) {
                 int[] curr = new int[k];
                 int[] target = new int[k];
 
-                for(int j = start; j < start + k; j++) {
+                for (int j = start; j < start + k; j++) {
                     curr[j - start] = nums[j];
                     target[j - start] = sortedArray[j];
                 }
 
-                if(!isRotationPossible(curr, target)) {
+                if (!isRotationPossible(curr, target)) {
                     validK = false;
                     break;
                 }
             }
 
-            if(validK) {
+            if (validK) {
                 sum += k;
             }
         }
 
-        return sum;   // O(nlogn + m * n) and O(n + k)
+        return sum; // O(nlogn + m * n) and O(n + k)
     }
 
     private boolean isRotationPossible(int[] curr, int[] target) {
         int len = target.length;
         int[] text = new int[2 * len];
 
-        for(int i = 0; i < len; i++) {
+        for (int i = 0; i < len; i++) {
             text[i] = target[i];
         }
 
-        for(int i = len; i < text.length; i++) {
+        for (int i = len; i < text.length; i++) {
             text[i] = target[i - len];
         }
 
-        return KMPSearch(curr, text);   // O(k)
+        return KMPSearch(curr, text); // O(k)
     }
-
 
     // Function to compute LPS(Longest Proper Prefix which is also Suffix) array
     private void computeLPS(int[] pattern, int[] lps) {
         int m = pattern.length;
-        int len = 0;   // Length of previous longest prefix nad suffix
+        int len = 0; // Length of previous longest prefix nad suffix
 
-        lps[0] = 0;   // Bcz there is no proper suffix and prefix of patten[0..0]
-        
+        lps[0] = 0; // Bcz there is no proper suffix and prefix of patten[0..0]
+
         int i = 1;
-        while(i < m) {
-            if(pattern[i] == pattern[len]) {
+        while (i < m) {
+            if (pattern[i] == pattern[len]) {
                 len++;
                 lps[i] = len;
                 i++;
             } else {
-                if(len != 0) {
-                    len = lps[len - 1];  // You can also write, len = len - 1;
+                if (len != 0) {
+                    len = lps[len - 1]; // You can also write, len = len - 1;
                 } else {
                     lps[i] = 0;
                     i++;
@@ -92,20 +91,20 @@ class Solution {
         int[] lps = new int[m];
         computeLPS(pattern, lps);
 
-        int i = 0;  // Index for text
-        int j = 0;  // Index for pattern
+        int i = 0; // Index for text
+        int j = 0; // Index for pattern
 
-        while(i < n) {
-            if(pattern[j] == text[i]) {
+        while (i < n) {
+            if (pattern[j] == text[i]) {
                 i++;
                 j++;
             }
 
-            if(j == m) {
+            if (j == m) {
                 // Patten found at index i - j + 1 (If you have to return 1 based on index that's why added + 1)
-                return true;   // Found a match
-            } else if(i < n && pattern[j] != text[i]) {
-                if(j != 0) {
+                return true; // Found a match
+            } else if (i < n && pattern[j] != text[i]) {
+                if (j != 0) {
                     j = lps[j - 1];
                 } else {
                     i++;
