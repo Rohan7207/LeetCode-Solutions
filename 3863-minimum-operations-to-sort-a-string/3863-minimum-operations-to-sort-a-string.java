@@ -4,51 +4,51 @@ class Solution {
 
         // Check whether string is already sorted, if yes return 0 
         boolean isSorted = true;
-        for(int i = 0; i < n - 1; i++) {
-            if(s.charAt(i) > s.charAt(i + 1)) {
+        for (int i = 0; i < n - 1; i++) {
+            if (s.charAt(i) > s.charAt(i + 1)) {
                 isSorted = false;
                 break;
             }
         }
 
-        if(isSorted) {
+        if (isSorted) {
             return 0;
         }
 
         // "ba", "gf" bcz we cannot sort it, bcz we cannot choose "gf" as substring and it is not possible to sort by choosing only 'g'.
-        if(n == 2) {
+        if (n == 2) {
             return -1;
         }
 
         char minChar = s.charAt(0);
         char maxChar = s.charAt(0);
-        for(char ch : s.toCharArray()) {
-            if(ch < minChar) {
+        for (char ch : s.toCharArray()) {
+            if (ch < minChar) {
                 minChar = ch;
-            } else if(ch > maxChar) {
+            } else if (ch > maxChar) {
                 maxChar = ch;
             }
         }
 
-        if(s.charAt(0) == minChar || s.charAt(n - 1) == maxChar) {
+        if (s.charAt(0) == minChar || s.charAt(n - 1) == maxChar) {
             return 1;
         }
 
         char minMid = s.charAt(1);
         char maxMid = s.charAt(1);
-        for(int i = 2; i < n - 1; i++) {
+        for (int i = 2; i < n - 1; i++) {
             char ch = s.charAt(i);
 
-            if(ch < minMid) {
+            if (ch < minMid) {
                 minMid = ch;
-            } else if(ch > maxMid) {
+            } else if (ch > maxMid) {
                 maxMid = ch;
             }
-        }  
+        }
 
-        if(s.charAt(0) > maxMid && minMid > s.charAt(n - 1)) {
+        if (s.charAt(0) > maxMid && minMid > s.charAt(n - 1)) {
             return 3;
-        } 
+        }
 
         return 2;
     }
