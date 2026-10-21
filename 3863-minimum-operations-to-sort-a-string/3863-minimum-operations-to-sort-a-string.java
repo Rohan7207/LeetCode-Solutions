@@ -22,7 +22,9 @@ class Solution {
 
         char minChar = s.charAt(0);
         char maxChar = s.charAt(0);
-        for (char ch : s.toCharArray()) {
+        for (int i = 0; i < n; i++) {
+            char ch = s.charAt(i);
+
             if (ch < minChar) {
                 minChar = ch;
             } else if (ch > maxChar) {
