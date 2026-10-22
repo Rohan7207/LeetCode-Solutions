@@ -33,7 +33,6 @@ class Solution {
 
             return Math.min(leftRot, rightRot);
         }
-
         return -1; // Bad order
     }
 }
