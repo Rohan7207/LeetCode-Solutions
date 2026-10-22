@@ -4,30 +4,35 @@
 
 // Approach:
 //
-// 1. Traverse the array and check whether consecutive elements
-//    follow circular ascending or circular descending order.
+// 1. Traverse the array and count adjacent pairs that follow
+//    circular ascending and circular descending order.
 //
-// 2. `ascCount` counts adjacent pairs satisfying:
+// 2. `ascCount` counts pairs satisfying:
 //       nums[i] == (nums[i - 1] + 1) % n
 //
-// 3. `dscCount` counts adjacent pairs satisfying:
+// 3. `dscCount` counts pairs satisfying:
 //       nums[i - 1] == (nums[i] + 1) % n
 //
-// 4. If all adjacent pairs are ascending and nums[0] == 0,
-//    the array is already sorted, so return 0.
+// 4. If every adjacent pair is ascending and nums[0] == 0,
+//    the array is already sorted. Return 0.
 //
-// 5. If all adjacent pairs are ascending but the array starts
-//    somewhere other than 0, calculate the rotations needed
-//    to reach the sorted order in either direction and return
-//    the smaller cost.
+// 5. If every adjacent pair is ascending but the array starts
+//    at a different position, calculate the cost of sorting it
+//    using left rotations or right rotations.
 //
-// 6. If all adjacent pairs are descending, the array needs
-//    one reversal. Calculate the rotation costs around that
-//    reversal and return the smaller total.
+//    A right rotation is simulated using:
+//       Reverse + Left Rotation + Reverse
 //
-// 7. If neither condition holds, the array does not follow
-//    a consistent circular ascending or descending order,
-//    so return -1.
+//    Therefore, its cost is:
+//       1 + required left rotations + 1
+//
+// 6. If every adjacent pair is descending, one reversal is
+//    mandatory. Calculate the total cost for each possible
+//    direction, including the reversal operation, and return
+//    the minimum.
+//
+// 7. If neither ascending nor descending circular order holds,
+//    return -1.
 
 // Time Complexity: O(n)
 // Space Complexity: O(1)
