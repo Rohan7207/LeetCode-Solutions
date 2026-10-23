@@ -1,10 +1,10 @@
 class Solution {
     public int sortPermutation(int[] nums) {
         int n = nums.length;
-        int k = -1;   // We have take k whose all values are set "111111", -1 contains such bits
+        int k = -1; // We have take k whose all values are set "111111", -1 contains such bits
 
-        for(int i = 0; i < n; i++) {
-            if(nums[i] != i) {
+        for (int i = 0; i < n; i++) {
+            if (nums[i] != i) {
                 k = (k & nums[i]);
             }
         }
