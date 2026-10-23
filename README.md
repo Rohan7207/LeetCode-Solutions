@@ -557,6 +557,7 @@
 | [1492-the-kth-factor-of-n](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1492-the-kth-factor-of-n/) | Medium |
 | [1510-stone-game-iv](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1510-stone-game-iv) |
 | [1512-number-of-good-pairs](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1512-number-of-good-pairs/) | Easy |
+| [1518-water-bottles](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1518-water-bottles/) | Easy |
 | [1563-stone-game-v](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1563-stone-game-v) |
 | [1569-number-of-ways-to-reorder-array-to-get-same-bst](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1569-number-of-ways-to-reorder-array-to-get-same-bst/) | Hard |
 | [1621-number-of-sets-of-k-non-overlapping-line-segments](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1621-number-of-sets-of-k-non-overlapping-line-segments/) | Medium |
@@ -1361,6 +1362,7 @@
 | [1389-create-target-array-in-the-given-order](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1389-create-target-array-in-the-given-order/) | Easy |
 | [1404-number-of-steps-to-reduce-a-number-in-binary-representation-to-one](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1404-number-of-steps-to-reduce-a-number-in-binary-representation-to-one/) | Medium |
 | [1441-build-an-array-with-stack-operations](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1441-build-an-array-with-stack-operations/) | Medium |
+| [1518-water-bottles](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1518-water-bottles/) | Easy |
 | [2161-partition-array-according-to-given-pivot](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2161-partition-array-according-to-given-pivot) |
 | [3069-distribute-elements-into-two-arrays-i](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3069-distribute-elements-into-two-arrays-i) |
 | [3498-reverse-degree-of-a-string](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/3498-reverse-degree-of-a-string/) | Easy |
