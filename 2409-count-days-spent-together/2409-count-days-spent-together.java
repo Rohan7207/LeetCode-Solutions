@@ -1,12 +1,12 @@
 class Solution {
     public int countDaysTogether(String arriveAlice, String leaveAlice, String arriveBob, String leaveBob) {
         // We need to find a day of each date in year
-        int[] months = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
+        int[] months = { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
 
         // To find day of particular month store in prefix sum, prefix[8 - 1] + date;
         int[] prefixDays = new int[13];
         prefixDays[1] = 31;
-        for(int i = 2; i < 13; i++) {
+        for (int i = 2; i < 13; i++) {
             prefixDays[i] = prefixDays[i - 1] + months[i - 1];
         }
 
