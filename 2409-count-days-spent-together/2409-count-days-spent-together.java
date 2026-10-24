@@ -1,9 +1,51 @@
+// Problem: Count Days Spent Together
+// Link: https://leetcode.com/problems/count-days-spent-together/?envType=daily-question&envId=2026-10-24
+// Difficulty: Easy
+
+// Approach:
+//
+// 1. Convert every date from "MM-DD" format into a day number
+//    representing its position in a non-leap year.
+//
+// 2. Create a prefixDays array where prefixDays[m] stores the
+//    total number of days before month m + 1, based on the
+//    indexing convention used in the implementation.
+//
+// 3. For each date, extract the month and day using substring()
+//    and parse them into integers.
+//
+// 4. Calculate the day number using:
+//
+//       prefixDays[month - 1] + day
+//
+//    This gives a comparable integer for every date.
+//
+// 5. Find the beginning of the overlapping interval using the
+//    later arrival date:
+//
+//       overlapStart = max(arriveAliceDays, arriveBobDays)
+//
+// 6. Find the end of the overlapping interval using the earlier
+//    departure date:
+//
+//       overlapEnd = min(leaveAliceDays, leaveBobDays)
+//
+// 7. Since both arrival and departure dates are inclusive,
+//    calculate:
+//
+//       overlapDays = overlapEnd - overlapStart + 1
+//
+// 8. If overlapDays is negative, there is no overlap, so return
+//    0. Otherwise, return overlapDays.
+
+// Time Complexity: O(1)
+// Space Complexity: O(1)
+
+
 class Solution {
     public int countDaysTogether(String arriveAlice, String leaveAlice, String arriveBob, String leaveBob) {
-        // We need to find a day of each date in year
         int[] months = { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
 
-        // To find day of particular month store in prefix sum, prefix[8 - 1] + date;
         int[] prefixDays = new int[13];
         prefixDays[1] = 31;
         for (int i = 2; i < 13; i++) {
@@ -27,20 +69,3 @@ class Solution {
         return prefixDays[month - 1] + days;
     }
 }
-
-/*
-    Alice = "08-15"  and "08-18"
-    Bob = "08-16" and "08-19"
-
-    - If we represent date in days in particular day then we can find no.of days when they were together, to find no.of days we can keep prefix sum of months and calculate for current,
-    as  prefix[month - 1] + date
-
-    08-15  = 227th day    and 08-18  = 230th day
-    08-16  = 228th day  and   08-19  = 231th day
-
-    - To find when they were together like,
-    start day = max(alicestart, bobstart)  = 228th 
-    end day = min(aliceleave, bobleave) = 230
-
-    days = (230 - 228) + 1 = 3days
-*/
