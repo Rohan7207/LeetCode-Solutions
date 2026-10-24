@@ -238,6 +238,7 @@
 | [1502-can-make-arithmetic-progression-from-sequence](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1502-can-make-arithmetic-progression-from-sequence/) | Easy |
 | [1508-range-sum-of-sorted-subarray-sums](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1508-range-sum-of-sorted-subarray-sums/) | Medium |
 | [1512-number-of-good-pairs](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1512-number-of-good-pairs/) | Easy |
+| [1528-shuffle-string](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1528-shuffle-string/) | Easy |
 | [1563-stone-game-v](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1563-stone-game-v) |
 | [1569-number-of-ways-to-reorder-array-to-get-same-bst](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1569-number-of-ways-to-reorder-array-to-get-same-bst/) | Hard |
 | [1658-minimum-operations-to-reduce-x-to-zero](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1658-minimum-operations-to-reduce-x-to-zero/) | Medium |
@@ -713,6 +714,7 @@
 | [1487-making-file-names-unique](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1487-making-file-names-unique/) | Medium |
 | [1496-path-crossing](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1496-path-crossing/) | Easy |
 | [1520-maximum-number-of-non-overlapping-substrings](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1520-maximum-number-of-non-overlapping-substrings/) | Hard |
+| [1528-shuffle-string](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1528-shuffle-string/) | Easy |
 | [1541-minimum-insertions-to-balance-a-parentheses-string](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1541-minimum-insertions-to-balance-a-parentheses-string/) | Medium |
 | [1614-maximum-nesting-depth-of-the-parentheses](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1614-maximum-nesting-depth-of-the-parentheses/) | Easy |
 | [1796-second-largest-digit-in-a-string](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1796-second-largest-digit-in-a-string) |
