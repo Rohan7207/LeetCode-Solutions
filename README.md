@@ -239,6 +239,7 @@
 | [1508-range-sum-of-sorted-subarray-sums](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1508-range-sum-of-sorted-subarray-sums/) | Medium |
 | [1512-number-of-good-pairs](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1512-number-of-good-pairs/) | Easy |
 | [1528-shuffle-string](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1528-shuffle-string/) | Easy |
+| [1535-find-the-winner-of-an-array-game](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1535-find-the-winner-of-an-array-game/) | Medium |
 | [1563-stone-game-v](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1563-stone-game-v) |
 | [1569-number-of-ways-to-reorder-array-to-get-same-bst](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1569-number-of-ways-to-reorder-array-to-get-same-bst/) | Hard |
 | [1658-minimum-operations-to-reduce-x-to-zero](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1658-minimum-operations-to-reduce-x-to-zero/) | Medium |
@@ -1368,6 +1369,7 @@
 | [1404-number-of-steps-to-reduce-a-number-in-binary-representation-to-one](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1404-number-of-steps-to-reduce-a-number-in-binary-representation-to-one/) | Medium |
 | [1441-build-an-array-with-stack-operations](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1441-build-an-array-with-stack-operations/) | Medium |
 | [1518-water-bottles](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1518-water-bottles/) | Easy |
+| [1535-find-the-winner-of-an-array-game](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1535-find-the-winner-of-an-array-game/) | Medium |
 | [2161-partition-array-according-to-given-pivot](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2161-partition-array-according-to-given-pivot) |
 | [3069-distribute-elements-into-two-arrays-i](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3069-distribute-elements-into-two-arrays-i) |
 | [3498-reverse-degree-of-a-string](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/3498-reverse-degree-of-a-string/) | Easy |
