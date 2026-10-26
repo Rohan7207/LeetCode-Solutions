@@ -4,8 +4,8 @@ class Solution {
         int idx = 0;
         int counter = 1;
 
-        while(k > 0) {
-            if(idx < n && arr[idx] == counter) {
+        while (k > 0) {
+            if (idx < n && arr[idx] == counter) {
                 idx++;
             } else {
                 k--;
