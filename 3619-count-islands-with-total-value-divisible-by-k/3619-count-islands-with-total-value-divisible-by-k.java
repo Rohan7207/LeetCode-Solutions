@@ -26,7 +26,7 @@ class Solution {
     }
 
     private void dfs(int[][] grid, int r, int c) {
-        if(r < 0 || r >= m || c < 0 || c >= n || grid[r][c] == 0) {
+        if (r < 0 || r >= m || c < 0 || c >= n || grid[r][c] == 0) {
             return;
         }
 
