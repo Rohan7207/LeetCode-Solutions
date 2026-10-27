@@ -6,14 +6,14 @@ class Solution {
     }
 
     private String solve(int n, StringBuilder sb) {
-        if(n == 1) {
+        if (n == 1) {
             return sb.toString();
         }
 
         StringBuilder newSb = new StringBuilder(sb);
         newSb.append("1");
 
-        for(int i = sb.length() - 1; i >= 0; i--) {
+        for (int i = sb.length() - 1; i >= 0; i--) {
             char ch = sb.charAt(i);
 
             char invertChar = ch == '0' ? '1' : '0';
