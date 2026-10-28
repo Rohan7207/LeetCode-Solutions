@@ -12,11 +12,11 @@ class Solution {
         }
 
         // Base case initialization
-        dp[0][0].set(grid[0][0]); 
+        dp[0][0].set(grid[0][0]);
 
-        for(int i = 0; i < m; i++) {   // O(m)
-            for(int j = 0; j < n; j++) {  // O(n)
-                if(i == 0 && j == 0) {
+        for (int i = 0; i < m; i++) { // O(m)
+            for (int j = 0; j < n; j++) { // O(n)
+                if (i == 0 && j == 0) {
                     continue;
                 }
 
@@ -35,7 +35,7 @@ class Solution {
 
                 // Initialize a new empty BitSet to hold the final state of dp[i][j]
                 BitSet nextState = new BitSet(1024);
-                
+
                 // Optimized loop: only iterates over active bits instead of all 1024
                 for (int xorVal = combined.nextSetBit(0); xorVal >= 0; xorVal = combined.nextSetBit(xorVal + 1)) {
                     int newXorVal = xorVal ^ grid[i][j];
@@ -48,15 +48,50 @@ class Solution {
         }
 
         // Find the smallest valid XOR value in the destination cell
-        for(int xorVal = 0; xorVal < 1024; xorVal++) { // O(1)
-            if(dp[m - 1][n - 1].get(xorVal)) {
+        for (int xorVal = 0; xorVal < 1024; xorVal++) { // O(1)
+            if (dp[m - 1][n - 1].get(xorVal)) {
                 return xorVal;
             }
         }
 
-        return -1;  // O(m * n) and O(m * n)
+        return -1; // O(m * n) and O(m * n)
     }
 }
+
+/*
+    // Simple approach with boolean array
+    class Solution {
+    public int minCost(int[][] grid) {
+        int m=grid.length;
+        int n=grid[0].length;
+        boolean[][][] dp=new boolean[m][n][1024];
+        dp[0][0][grid[0][0]]=true;
+        for(int i=0;i<m;i++){
+            for(int j=0;j<n;j++){
+                if(i==0&&j==0){
+                    continue;
+                }if(i>0){
+                    for(int x=0;x<1024;x++){
+                        if(dp[i-1][j][x]){
+                            dp[i][j][x^grid[i][j]]=true;
+                        }
+                    }
+                }if(j>0){
+                    for(int x=0;x<1024;x++){
+                        if(dp[i][j-1][x]){
+                            dp[i][j][x^grid[i][j]]=true;
+                        }
+                    }
+                }
+            }
+        }for(int x=0;x<1024;x++){
+            if(dp[m-1][n-1][x]){
+                return x;
+            }
+        }return -1;
+    }
+}
+*/
 
 /* 
     1 2 
