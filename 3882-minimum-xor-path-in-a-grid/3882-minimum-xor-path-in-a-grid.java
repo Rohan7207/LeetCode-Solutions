@@ -35,13 +35,11 @@ class Solution {
 
                 // Initialize a new empty BitSet to hold the final state of dp[i][j]
                 BitSet nextState = new BitSet(1024);
-                for(int xorVal = 0; xorVal < 1024; xorVal++) {  // O(1)
-                    if(combined.get(xorVal)) {
-                        int newXorVal = xorVal ^ grid[i][j];
-
-                        // Set the new XOR value bit to true (1) in our next state
-                        nextState.set(newXorVal);
-                    }
+                
+                // Optimized loop: only iterates over active bits instead of all 1024
+                for (int xorVal = combined.nextSetBit(0); xorVal >= 0; xorVal = combined.nextSetBit(xorVal + 1)) {
+                    int newXorVal = xorVal ^ grid[i][j];
+                    nextState.set(newXorVal);
                 }
 
                 // Save the transitioned state into the DP table
