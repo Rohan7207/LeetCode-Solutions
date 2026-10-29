@@ -169,8 +169,7 @@ class Solution {
         buildSegmentTree(2 * i + 2, mid + 1, r, eulerTour);
 
         // Combine the two children using XOR
-        segmentTree[i] =
-                segmentTree[2 * i + 1]
+        segmentTree[i] = segmentTree[2 * i + 1]
                 ^ segmentTree[2 * i + 2];
     }
 
@@ -192,8 +191,7 @@ class Solution {
         }
 
         // Recalculate the current node after updating its child
-        segmentTree[i] =
-                segmentTree[2 * i + 1]
+        segmentTree[i] = segmentTree[2 * i + 1]
                 ^ segmentTree[2 * i + 2];
     }
 
@@ -230,8 +228,7 @@ class Solution {
                 int middle = ancestorTable[node][j - 1];
 
                 if (middle != -1) {
-                    ancestorTable[node][j] =
-                            ancestorTable[middle][j - 1];
+                    ancestorTable[node][j] = ancestorTable[middle][j - 1];
                 }
             }
         }
@@ -271,7 +268,6 @@ class Solution {
         return ancestorTable[u][0];
     }
 }
-
 
 /*
     We are given undirected tree of nodes represented by edges array and its values are given according to string values. We have been given queries, update s[u] = c,  another is to say whether we can form palindromic string from u node to v node.
