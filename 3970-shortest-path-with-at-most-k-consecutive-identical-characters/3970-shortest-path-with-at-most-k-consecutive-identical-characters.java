@@ -3,61 +3,61 @@ class Solution {
         List<List<int[]>> adjList = new ArrayList<>();
 
         // Initialize adjList with n nodes of list to store des, weight
-        for(int i = 0; i < n; i++) {
+        for (int i = 0; i < n; i++) {
             adjList.add(new ArrayList<>());
         }
 
-        for(int[] edge : edges) {
+        for (int[] edge : edges) {
             int u = edge[0];
             int v = edge[1];
             int wt = edge[2];
 
-            adjList.get(u).add(new int[] {v, wt});
+            adjList.get(u).add(new int[] { v, wt });
         }
 
         int[][] res = new int[n][k + 1];
-        for(int[] row : res) {
+        for (int[] row : res) {
             Arrays.fill(row, Integer.MAX_VALUE);
         }
 
-        // Use the classic arrow syntax (Shorter, highly reliable)
-PriorityQueue<int[]> pq = new PriorityQueue<>((a, b) -> Integer.compare(a[0], b[0]));
+        // Min-Heap sorting by distance (index 0)
+        PriorityQueue<int[]> pq = new PriorityQueue<>((a, b) -> Integer.compare(a[0], b[0]));
 
         // Initialize starting node source -> source of count = 1, cost is 0
-        res[0][1] = 0; 
+        res[0][1] = 0;
 
         // {cost, node, count}
-        pq.add(new int[] {0, 0, 1});
+        pq.add(new int[] { 0, 0, 1 });
 
-        while(!pq.isEmpty()) {
+        while (!pq.isEmpty()) {
             int[] current = pq.poll();
             int dist = current[0];
             int node = current[1];
             int count = current[2];
 
-            if(dist > res[node][count]) {
+            if (dist > res[node][count]) {
                 continue;
             }
 
-            if(node == n - 1) {
+            if (node == n - 1) {
                 return dist;
             }
 
-            for(int[] info : adjList.get(node)) {
+            for (int[] info : adjList.get(node)) {
                 int adjNode = info[0];
                 int wt = info[1];
 
                 int newCount = (labels.charAt(adjNode) == labels.charAt(node) ? count + 1 : 1);
 
                 // Continue or stop exploring path if count > k
-                if(newCount > k) {
+                if (newCount > k) {
                     continue;
                 }
 
                 int newDist = dist + wt;
-                if(newDist < res[adjNode][newCount]) {
+                if (newDist < res[adjNode][newCount]) {
                     res[adjNode][newCount] = newDist;
-                    pq.add(new int[] {newDist, adjNode, newCount});
+                    pq.add(new int[] { newDist, adjNode, newCount });
                 }
             }
         }
