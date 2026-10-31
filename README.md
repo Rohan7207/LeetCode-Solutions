@@ -303,6 +303,7 @@
 | [3620-network-recovery-pathways](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3620-network-recovery-pathways) |
 | [3633-earliest-finish-time-for-land-and-water-rides-i](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3633-earliest-finish-time-for-land-and-water-rides-i) |
 | [3644-maximum-k-to-sort-a-permutation](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/3644-maximum-k-to-sort-a-permutation/) | Medium |
+| [3665-twisted-mirror-path-count](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/3665-twisted-mirror-path-count/) | Medium |
 | [3689-maximum-total-subarray-value-i](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3689-maximum-total-subarray-value-i) |
 | [3702-longest-subsequence-with-non-zero-bitwise-xor](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3702-longest-subsequence-with-non-zero-bitwise-xor) |
 | [3718-smallest-missing-multiple-of-k](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3718-smallest-missing-multiple-of-k) |
@@ -983,6 +984,7 @@
 | [3524-find-x-value-of-array-i](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/3524-find-x-value-of-array-i/) | Medium |
 | [3534-path-existence-queries-in-a-graph-ii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3534-path-existence-queries-in-a-graph-ii) |
 | [3620-network-recovery-pathways](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3620-network-recovery-pathways) |
+| [3665-twisted-mirror-path-count](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/3665-twisted-mirror-path-count/) | Medium |
 | [3699-number-of-zigzag-arrays-i](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3699-number-of-zigzag-arrays-i) |
 | [3700-number-of-zigzag-arrays-ii](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3700-number-of-zigzag-arrays-ii) |
 | [3882-minimum-xor-path-in-a-grid](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/3882-minimum-xor-path-in-a-grid/) | Medium |
@@ -1346,6 +1348,7 @@
 | [3286-find-a-safe-walk-through-a-grid](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3286-find-a-safe-walk-through-a-grid) |
 | [3568-minimum-moves-to-clean-the-classroom](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3568-minimum-moves-to-clean-the-classroom) |
 | [3619-count-islands-with-total-value-divisible-by-k](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/3619-count-islands-with-total-value-divisible-by-k/) | Medium |
+| [3665-twisted-mirror-path-count](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/3665-twisted-mirror-path-count/) | Medium |
 | [3882-minimum-xor-path-in-a-grid](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/3882-minimum-xor-path-in-a-grid/) | Medium |
 ## Monotonic Stack
 | Problem Name | Difficulty |
