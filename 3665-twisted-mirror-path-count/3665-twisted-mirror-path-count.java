@@ -16,37 +16,37 @@ class Solution {
         dp[0][0][left] = 1;
 
         // Prefill 0th row: one way to reach each cell, until first mirror
-        for(int col = 1; col < n; col++) {
+        for (int col = 1; col < n; col++) {
             dp[0][col][left] = 1;
 
-            if(grid[0][col] == 1) {
-                break;   // Deflected down, cells beyond stay 0
+            if (grid[0][col] == 1) {
+                break; // Deflected down, cells beyond stay 0
             }
         }
 
         // Prefill 0th col: one way to reach each cell, until first mirror
-        for(int row = 1; row < m; row++) {
+        for (int row = 1; row < m; row++) {
             dp[row][0][up] = 1;
 
-            if(grid[row][0] == 1) {
-                break;   // Deflected right, cells beyond stay 0
+            if (grid[row][0] == 1) {
+                break; // Deflected right, cells beyond stay 0
             }
         }
 
         // Fill the rest
-        for(int row = 1; row < m; row++) {
-            for(int col = 1; col < n; col++) {
+        for (int row = 1; row < m; row++) {
+            for (int col = 1; col < n; col++) {
                 // Entering from the left neighbour (row, col - 1)
-                if(grid[row][col - 1] == 1) {
-                    dp[row][col][left] = dp[row][col - 1][up];  // mirror: only UP-entrants turns right
+                if (grid[row][col - 1] == 1) {
+                    dp[row][col][left] = dp[row][col - 1][up]; // mirror: only UP-entrants turns right
                 } else {
                     dp[row][col][left] = (dp[row][col - 1][up] + dp[row][col - 1][left]) % MOD;
                 }
 
                 // Entering from the up neighbour (row - 1, col)
-                if(grid[row - 1][col] == 1) {
+                if (grid[row - 1][col] == 1) {
                     // mirror: only Left-entrants turns down
-                    dp[row][col][up] = dp[row - 1][col][left];  
+                    dp[row][col][up] = dp[row - 1][col][left];
                 } else {
                     dp[row][col][up] = (dp[row - 1][col][up] + dp[row - 1][col][left]) % MOD;
                 }
