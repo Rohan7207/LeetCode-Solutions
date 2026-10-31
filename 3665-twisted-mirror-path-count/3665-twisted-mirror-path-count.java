@@ -2,16 +2,16 @@ class Solution {
 
     private int m, n;
     private int MOD = 1000000007;
-    private int left = 0;   // Arrived at current cell from left cell(it means it was moving right)
-    private int up = 1;   // Arrived at current cell from up cell(it means it was moving down)
+    private int left = 0; // Arrived at current cell from left cell(it means it was moving right)
+    private int up = 1; // Arrived at current cell from up cell(it means it was moving down)
 
     public int uniquePaths(int[][] grid) {
         m = grid.length;
         n = grid[0].length;
 
         int[][][] memo = new int[m][n][2];
-        for(int i = 0; i < m; i++) {
-            for(int j = 0; j < n; j++) {
+        for (int i = 0; i < m; i++) {
+            for (int j = 0; j < n; j++) {
                 Arrays.fill(memo[i][j], -1);
             }
         }
@@ -21,21 +21,21 @@ class Solution {
 
     // Memoization = [i][j][2] => 2 bcz it can only two values left or up and initially -1
     private int solve(int[][] grid, int i, int j, int cameFrom, int[][][] memo) {
-        if(i >= m || j >= n) {
+        if (i >= m || j >= n) {
             return 0;
         }
 
-        if(i == m - 1 && j == n - 1) {
-            return 1;   // Found 1 way to reach last cell
+        if (i == m - 1 && j == n - 1) {
+            return 1; // Found 1 way to reach last cell
         }
 
-        if(memo[i][j][cameFrom] != -1) {
+        if (memo[i][j][cameFrom] != -1) {
             return memo[i][j][cameFrom];
         }
 
         // Mirror cell
-        if(grid[i][j] == 1) {
-            if(cameFrom == left) {
+        if (grid[i][j] == 1) {
+            if (cameFrom == left) {
                 return memo[i][j][cameFrom] = solve(grid, i + 1, j, up, memo);
             } else {
                 return memo[i][j][cameFrom] = solve(grid, i, j + 1, left, memo);
@@ -43,7 +43,7 @@ class Solution {
         }
 
         // Normal cell
-        int totalWays = 0; 
+        int totalWays = 0;
         totalWays = (totalWays + solve(grid, i + 1, j, up, memo)) % MOD;
         totalWays = (totalWays + solve(grid, i, j + 1, left, memo)) % MOD;
 
