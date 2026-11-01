@@ -1,15 +1,15 @@
 class Solution {
     public String makeGood(String s) {
         StringBuilder sb = new StringBuilder();
-        
+
         sb.append(s.charAt(0));
-        for(int i = 1; i < s.length(); i++) {
+        for (int i = 1; i < s.length(); i++) {
             char ch = s.charAt(i);
 
-            if(!sb.isEmpty()) {
+            if (!sb.isEmpty()) {
                 char lastChar = sb.charAt(sb.length() - 1);
 
-                if(Character.toLowerCase(ch) == Character.toLowerCase(lastChar) && ch != lastChar) {
+                if (Character.toLowerCase(ch) == Character.toLowerCase(lastChar) && ch != lastChar) {
                     sb.deleteCharAt(sb.length() - 1);
                 } else {
                     sb.append(ch);
