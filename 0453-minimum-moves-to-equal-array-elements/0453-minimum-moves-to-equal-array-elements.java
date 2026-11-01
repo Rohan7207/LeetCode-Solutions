@@ -2,6 +2,21 @@ class Solution {
     public int minMoves(int[] nums) {
         int n = nums.length;
         int min = Integer.MAX_VALUE;
+        int sum = 0;
+
+        for(int num : nums) {
+            sum += num;
+            min = Math.min(min, num);
+        }
+
+        return sum - (n * min);
+    }
+}
+
+/*
+    public int minMoves(int[] nums) {
+        int n = nums.length;
+        int min = Integer.MAX_VALUE;
 
         for(int num : nums) {
             min = Math.min(min, num);
@@ -14,7 +29,7 @@ class Solution {
 
         return moves;
     }
-}
+*/
 
 /*
     The brute force would be try exactly has mentioned in problem, like try to make max element by taking n - 1 elements and in each step greedily skip the max element once
@@ -54,4 +69,18 @@ class Solution {
 
     - So the approach is find, min in array
     - Iterate, and find no.of operations to convert current element to min element by nums[i] - min and add it in count  which we can solve in O(n) time
+
+        int moves = 0;
+        for(int i = 0; i < n; i++) {
+            moves += nums[i] - min;
+        }
+
+    - We can further optimize above for loop:
+        - In each iteration we are asking what is no.of steps to convert to min
+        (nums[0] - min) + (nums[1] - min) + (nums[2] - min) + (nums[n - 1] - min)
+
+        - Instead of this we can,
+        (nums[0] + nums[1]..+ nums[n - 1]) - n * min;  
+        sum - n * min; 
+        // which can be solved in O(1) time but sum and min calculation takes O(n) time
 */
