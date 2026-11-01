@@ -1,3 +1,31 @@
+// Problem: Make The String Great
+// Link: https://leetcode.com/problems/make-the-string-great/
+// Difficulty: Easy
+
+// Approach:
+// 1. Use a StringBuilder as a stack to construct the final good string.
+//    - The last character in the StringBuilder represents the stack top.
+//
+// 2. Traverse the input string character by character.
+//
+// 3. For each character:
+//    - If the StringBuilder is empty, append the character.
+//    - Otherwise, compare the current character with the last character.
+//
+// 4. Check whether they are the same alphabet letter but have
+//    opposite cases.
+//    - Convert both characters to lowercase and compare.
+//    - Ensure the original characters are different.
+//
+// 5. If they form a bad pair, remove the last character.
+//    Otherwise, append the current character.
+//
+// 6. Return the StringBuilder as the final good string.
+
+// Time Complexity: O(n)
+// Space Complexity: O(n)
+
+
 class Solution {
     public String makeGood(String s) {
         StringBuilder sb = new StringBuilder();
@@ -22,36 +50,3 @@ class Solution {
         return sb.toString();
     }
 }
-
-/*
-    class Solution {
-    public String makeGood(String s) {
-        Stack<Integer> st = new Stack<>();
-
-        for (int i = 0; i < s.length(); i++) {
-            char currCh = s.charAt(i);
-
-            if (!st.isEmpty()) {
-                char ch = s.charAt(st.peek());
-
-                // If they match (same letter, different case), destroy the pair
-                if ((Character.toLowerCase(ch) == Character.toLowerCase(currCh)) && ch != currCh) {
-                    st.pop();
-                } else {
-                    st.push(i);
-                }
-            } else {
-                st.push(i);
-            }
-        }
-
-        StringBuilder sb = new StringBuilder();
-        while (!st.isEmpty()) {
-            sb.append(s.charAt(st.peek()));
-            st.pop();
-        }
-
-        return sb.reverse().toString();
-    }
-}
-*/
