@@ -9,6 +9,7 @@ class Solution {
             min = Math.min(min, num);
         }
 
+
         return sum - (n * min);
     }
 }
