@@ -1,3 +1,27 @@
+// Problem: Minimum Moves To Equal Array Elements
+// Link: https://leetcode.com/problems/minimum-moves-to-equal-array-elements/?envType=daily-question&envId=2026-11-01
+// Difficulty: Medium
+
+// Approach:
+// 1. Traverse the array once to calculate:
+//    - sum = sum of all elements.
+//    - min = minimum element in the array.
+//
+// 2. Understand the operation:
+//    - Incrementing n - 1 elements by 1 is equivalent to
+//      decrementing the remaining one element by 1.
+//
+// 3. To make all elements equal with minimum moves,
+//    reduce every element to the minimum value.
+//
+// 4. Each element needs (num - min) decrements.
+//
+// 5. Total moves = sum of all elements - (n * min).
+
+// Time Complexity: O(n)
+// Space Complexity: O(1)
+
+
 class Solution {
     public int minMoves(int[] nums) {
         int n = nums.length;
@@ -12,75 +36,3 @@ class Solution {
         return sum - (n * min);
     }
 }
-
-/*
-    public int minMoves(int[] nums) {
-        int n = nums.length;
-        int min = Integer.MAX_VALUE;
-
-        for(int num : nums) {
-            min = Math.min(min, num);
-        }
-
-        int moves = 0;
-        for(int i = 0; i < n; i++) {
-            moves += nums[i] - min;
-        }
-
-        return moves;
-    }
-*/
-
-/*
-    The brute force would be try exactly has mentioned in problem, like try to make max element by taking n - 1 elements and in each step greedily skip the max element once
-
-    Ex: {1, 2, 3} max = 3
-        {2, 3, 3} max = 3
-        {3, 3, 4} max = 4
-        {4, 4, 4} max = 4
-
-        Brute Force: 
-        int oper = 0
-        while(!allElementsEqual(nums)) {  // O(n)
-            1. Find max element idx.       // O(n)
-            2. skip max and increment n - 1
-            3. oper++
-        }
-
-        This will give O(n ^ 2), so it would give TLE bcz 10 ^ 5 is given
-
-    Optimizing the Brute force:
-        {1, 2, 3} ->  {2, 3, 3}  -> {3, 3, 4}  -> {4, 4, 4}
-        diff=3-1=2    diff=3-2=1
-
-     - We only need count of moves to make array equal so it doesn't that whether we increase element or decrease the element
-
-     ** Instead on increment n - 1 elements in each move which needs to focus on n - 1 elements we can equivalently do decrement of max elements and go on decreasing the gap of max and min to 0
-
-     {1, 2, 3}  ->  {1, 2, 2}  ->  {1, 1, 2}  ->  {1, 1, 1}
-     gap = 2        gap = 1         gap = 1         gap = 0
-
-     - Notice that max is changed to min in last step.
-
-     {1, 2, 3}    =>   2 - 1  = 1 move
-                  =>   3 - 1  = 2 moves
-
-      {1, 2, 3}  -> {1, 2, 2}  -> {1, 2, 1} = 2 moves and => {1, 2, 1} -> {1, 1, 1} = 1 move total = 3
-
-    - So the approach is find, min in array
-    - Iterate, and find no.of operations to convert current element to min element by nums[i] - min and add it in count  which we can solve in O(n) time
-
-        int moves = 0;
-        for(int i = 0; i < n; i++) {
-            moves += nums[i] - min;
-        }
-
-    - We can further optimize above for loop:
-        - In each iteration we are asking what is no.of steps to convert to min
-        (nums[0] - min) + (nums[1] - min) + (nums[2] - min) + (nums[n - 1] - min)
-
-        - Instead of this we can,
-        (nums[0] + nums[1]..+ nums[n - 1]) - n * min;  
-        sum - n * min; 
-        // which can be solved in O(1) time but sum and min calculation takes O(n) time
-*/
