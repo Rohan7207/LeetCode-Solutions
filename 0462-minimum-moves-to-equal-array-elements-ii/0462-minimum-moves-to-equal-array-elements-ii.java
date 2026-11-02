@@ -9,7 +9,6 @@ class Solution {
         for (int num : nums) {
             moves += Math.abs(num - mid);
         }
-
         return moves;
     }
 }
