@@ -85,6 +85,7 @@
 | [0448-find-all-numbers-disappeared-in-an-array](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0448-find-all-numbers-disappeared-in-an-array) |
 | [0453-minimum-moves-to-equal-array-elements](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/0453-minimum-moves-to-equal-array-elements/) | Medium |
 | [0455-assign-cookies](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0455-assign-cookies) |
+| [0462-minimum-moves-to-equal-array-elements-ii](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/0462-minimum-moves-to-equal-array-elements-ii/) | Medium |
 | [0485-max-consecutive-ones](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0485-max-consecutive-ones) |
 | [0486-predict-the-winner](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0486-predict-the-winner) |
 | [0496-next-greater-element-i](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0496-next-greater-element-i) |
@@ -516,6 +517,7 @@
 | [0371-sum-of-two-integers](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0371-sum-of-two-integers) |
 | [0380-insert-delete-getrandom-o1](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0380-insert-delete-getrandom-o1) |
 | [0453-minimum-moves-to-equal-array-elements](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/0453-minimum-moves-to-equal-array-elements/) | Medium |
+| [0462-minimum-moves-to-equal-array-elements-ii](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/0462-minimum-moves-to-equal-array-elements-ii/) | Medium |
 | [0486-predict-the-winner](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0486-predict-the-winner) |
 | [0507-perfect-number](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0507-perfect-number) |
 | [0509-fibonacci-number](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0509-fibonacci-number) |
@@ -1020,6 +1022,7 @@
 | [0414-third-maximum-number](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0414-third-maximum-number) |
 | [0435-non-overlapping-intervals](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0435-non-overlapping-intervals) |
 | [0455-assign-cookies](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0455-assign-cookies) |
+| [0462-minimum-moves-to-equal-array-elements-ii](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/0462-minimum-moves-to-equal-array-elements-ii/) | Medium |
 | [0561-array-partition](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0561-array-partition) |
 | [0621-task-scheduler](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0621-task-scheduler) |
 | [0628-maximum-product-of-three-numbers](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0628-maximum-product-of-three-numbers) |
