@@ -243,6 +243,7 @@
 | [1528-shuffle-string](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1528-shuffle-string/) | Easy |
 | [1535-find-the-winner-of-an-array-game](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1535-find-the-winner-of-an-array-game/) | Medium |
 | [1539-kth-missing-positive-number](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1539-kth-missing-positive-number/) | Easy |
+| [1546-maximum-number-of-non-overlapping-subarrays-with-sum-equals-target](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1546-maximum-number-of-non-overlapping-subarrays-with-sum-equals-target/) | Medium |
 | [1550-three-consecutive-odds](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1550-three-consecutive-odds/) | Easy |
 | [1563-stone-game-v](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1563-stone-game-v) |
 | [1569-number-of-ways-to-reorder-array-to-get-same-bst](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1569-number-of-ways-to-reorder-array-to-get-same-bst/) | Hard |
@@ -420,6 +421,7 @@
 | [1496-path-crossing](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1496-path-crossing/) | Easy |
 | [1512-number-of-good-pairs](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1512-number-of-good-pairs/) | Easy |
 | [1520-maximum-number-of-non-overlapping-substrings](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1520-maximum-number-of-non-overlapping-substrings/) | Hard |
+| [1546-maximum-number-of-non-overlapping-subarrays-with-sum-equals-target](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1546-maximum-number-of-non-overlapping-subarrays-with-sum-equals-target/) | Medium |
 | [1658-minimum-operations-to-reduce-x-to-zero](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1658-minimum-operations-to-reduce-x-to-zero/) | Medium |
 | [1796-second-largest-digit-in-a-string](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1796-second-largest-digit-in-a-string) |
 | [1807-evaluate-the-bracket-pairs-of-a-string](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1807-evaluate-the-bracket-pairs-of-a-string/) | Medium |
@@ -1179,6 +1181,7 @@
 | [1481-least-number-of-unique-integers-after-k-removals](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1481-least-number-of-unique-integers-after-k-removals/) | Medium |
 | [1520-maximum-number-of-non-overlapping-substrings](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1520-maximum-number-of-non-overlapping-substrings/) | Hard |
 | [1541-minimum-insertions-to-balance-a-parentheses-string](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1541-minimum-insertions-to-balance-a-parentheses-string/) | Medium |
+| [1546-maximum-number-of-non-overlapping-subarrays-with-sum-equals-target](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1546-maximum-number-of-non-overlapping-subarrays-with-sum-equals-target/) | Medium |
 | [1833-maximum-ice-cream-bars](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1833-maximum-ice-cream-bars) |
 | [1846-maximum-element-after-decreasing-and-rearranging](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1846-maximum-element-after-decreasing-and-rearranging) |
 | [1877-minimize-maximum-pair-sum-in-array](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1877-minimize-maximum-pair-sum-in-array) |
@@ -1951,6 +1954,7 @@
 | [1423-maximum-points-you-can-obtain-from-cards](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1423-maximum-points-you-can-obtain-from-cards) |
 | [1480-running-sum-of-1d-array](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1480-running-sum-of-1d-array/) | Easy |
 | [1508-range-sum-of-sorted-subarray-sums](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1508-range-sum-of-sorted-subarray-sums/) | Medium |
+| [1546-maximum-number-of-non-overlapping-subarrays-with-sum-equals-target](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1546-maximum-number-of-non-overlapping-subarrays-with-sum-equals-target/) | Medium |
 | [1621-number-of-sets-of-k-non-overlapping-line-segments](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1621-number-of-sets-of-k-non-overlapping-line-segments/) | Medium |
 | [1658-minimum-operations-to-reduce-x-to-zero](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1658-minimum-operations-to-reduce-x-to-zero/) | Medium |
 | [1732-find-the-highest-altitude](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1732-find-the-highest-altitude) |
