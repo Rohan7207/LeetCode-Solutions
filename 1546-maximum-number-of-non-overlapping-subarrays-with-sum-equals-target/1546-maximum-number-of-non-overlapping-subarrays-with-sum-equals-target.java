@@ -6,10 +6,10 @@ class Solution {
         int prefixSum = 0;
         int count = 0;
 
-        for(int num : nums) {
+        for (int num : nums) {
             prefixSum += num;
 
-            if(set.contains(prefixSum - target)) {
+            if (set.contains(prefixSum - target)) {
                 count++;
 
                 set.clear();
