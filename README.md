@@ -243,6 +243,7 @@
 | [1528-shuffle-string](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1528-shuffle-string/) | Easy |
 | [1535-find-the-winner-of-an-array-game](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1535-find-the-winner-of-an-array-game/) | Medium |
 | [1539-kth-missing-positive-number](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1539-kth-missing-positive-number/) | Easy |
+| [1550-three-consecutive-odds](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1550-three-consecutive-odds/) | Easy |
 | [1563-stone-game-v](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1563-stone-game-v) |
 | [1569-number-of-ways-to-reorder-array-to-get-same-bst](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1569-number-of-ways-to-reorder-array-to-get-same-bst/) | Hard |
 | [1658-minimum-operations-to-reduce-x-to-zero](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1658-minimum-operations-to-reduce-x-to-zero/) | Medium |
