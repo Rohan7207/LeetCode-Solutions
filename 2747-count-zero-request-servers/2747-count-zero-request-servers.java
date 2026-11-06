@@ -10,7 +10,7 @@ class Solution {
 
         // Create a 2D array pairing each element with its index {{value, index}, ...}
         int[][] paired = new int[len][2];
-        for(int i = 0; i < len; i++) {
+        for (int i = 0; i < len; i++) {
             paired[i][0] = queries[i];
             paired[i][1] = i;
         }
@@ -21,7 +21,7 @@ class Solution {
         Map<Integer, Integer> map = new HashMap<>();
         int i = 0, j = 0;
 
-        for(int[] pair : paired) {
+        for (int[] pair : paired) {
             int time = pair[0];
             int idx = pair[1];
 
@@ -29,16 +29,16 @@ class Solution {
             int end = time;
 
             // Expansion
-            while(j < m && logs[j][1] <= end) {
+            while (j < m && logs[j][1] <= end) {
                 map.put(logs[j][0], map.getOrDefault(logs[j][0], 0) + 1);
                 j++;
             }
 
             // Shrinking
-            while(i < m && logs[i][1] < start) {
+            while (i < m && logs[i][1] < start) {
                 map.put(logs[i][0], map.get(logs[i][0]) - 1);
 
-                if(map.get(logs[i][0]) == 0) {
+                if (map.get(logs[i][0]) == 0) {
                     map.remove(logs[i][0]);
                 }
 
