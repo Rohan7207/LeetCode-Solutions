@@ -2,14 +2,14 @@ class Solution {
     public int[] countServers(int n, int[][] logs, int x, int[] queries) {
         int m = logs.length;
 
-        // Sort ascending based on the 2nd term (index 1)
+        // Sort ascending based on the 2nd term (index 1)  O(mlogm)
         Arrays.sort(logs, Comparator.comparingInt(a -> a[1]));
 
         int len = queries.length;
         int[] res = new int[len];
 
-        // Create a 2D array pairing each element with its index {{value, index}, ...}
-        int[][] paired = new int[len][2];
+        // Create a 2D array pairing each element with its index {{value, index}, ...} 
+        int[][] paired = new int[len][2];  // O(qlogq) and space = O(q)
         for (int i = 0; i < len; i++) {
             paired[i][0] = queries[i];
             paired[i][1] = i;
@@ -18,9 +18,10 @@ class Solution {
         // Sort by the 1st term (the value at index 0)
         Arrays.sort(paired, Comparator.comparingInt(a -> a[0]));
 
-        Map<Integer, Integer> map = new HashMap<>();
+        Map<Integer, Integer> map = new HashMap<>();  // Space : O(n)
         int i = 0, j = 0;
 
+        // We are touching each log only two times: one by i and another by j, so O(2 * m) => O(m)
         for (int[] pair : paired) {
             int time = pair[0];
             int idx = pair[1];
@@ -49,7 +50,7 @@ class Solution {
             res[idx] = n - map.size();
         }
 
-        return res;
+        return res;  // (sorting)
     }
 }
 
