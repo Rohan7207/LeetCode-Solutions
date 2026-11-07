@@ -23,48 +23,48 @@ class Solution {
 
         int[] res = new int[m];
 
-        int time = 0;
+        // int time = 0;
 
-        for(int j = 0; j < m; j++) {
-            // Advance time to at least task arrival j
-            time = Math.max(time, j);
+        // for(int j = 0; j < m; j++) {
+        //     // Advance time to at least task arrival j
+        //     time = Math.max(time, j);
 
-            // If no servers are free, jump time forward to the earliest finishing server
-            if(free.isEmpty()) {
-                time = busy.peek()[0];
-            }
-
-            // Move ALL servers that finish at or before 'time' into 'free'
-            while(!busy.isEmpty() && busy.peek()[0] <= time) {
-                int[] curr = busy.poll();
-
-                free.add(new int[] {curr[1], curr[2]});
-            }
-
-            // Assign the best available free server
-            int[] curr = free.poll();
-            res[j] = curr[1];
-            busy.add(new int[] {time + tasks[j], curr[0], curr[1]});
-        }
-
-        // for (int i = 0; i < m; i++) {
-        //     while (!busy.isEmpty() && busy.peek()[0] <= i) {
-        //         int[] curr = busy.poll();
-        //         free.add(new int[] { curr[1], curr[2] });
+        //     // If no servers are free, jump time forward to the earliest finishing server
+        //     if(free.isEmpty()) {
+        //         time = busy.peek()[0];
         //     }
 
-        //     if (free.isEmpty()) {
+        //     // Move ALL servers that finish at or before 'time' into 'free'
+        //     while(!busy.isEmpty() && busy.peek()[0] <= time) {
         //         int[] curr = busy.poll();
-        //         res[i] = curr[2];
 
-        //         busy.add(new int[] { curr[0] + tasks[i], curr[1], curr[2] });
-        //     } else {
-        //         int[] curr = free.poll();
-        //         res[i] = curr[1];
-
-        //         busy.add(new int[] { i + tasks[i], curr[0], curr[1] });
+        //         free.add(new int[] {curr[1], curr[2]});
         //     }
+
+        //     // Assign the best available free server
+        //     int[] curr = free.poll();
+        //     res[j] = curr[1];
+        //     busy.add(new int[] {time + tasks[j], curr[0], curr[1]});
         // }
+
+        for (int i = 0; i < m; i++) {
+            while (!busy.isEmpty() && busy.peek()[0] <= i) {
+                int[] curr = busy.poll();
+                free.add(new int[] { curr[1], curr[2] });
+            }
+
+            if (free.isEmpty()) {
+                int[] curr = busy.poll();
+                res[i] = curr[2];
+
+                busy.add(new int[] { curr[0] + tasks[i], curr[1], curr[2] });
+            } else {
+                int[] curr = free.poll();
+                res[i] = curr[1];
+
+                busy.add(new int[] { i + tasks[i], curr[0], curr[1] });
+            }
+        }
 
         return res;
     }
