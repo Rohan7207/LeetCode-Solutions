@@ -3,19 +3,22 @@ class Solution {
         int n = servers.length;
         int m = tasks.length;
 
-        PriorityQueue<int[]> free = new PriorityQueue<>((a, b) ->  {
-            if(a[0] != b[0]) return Integer.compare(a[0], b[0]);  // 1st = wt
-            return Integer.compare(a[1], b[1]);  // 2nd = idx
+        PriorityQueue<int[]> free = new PriorityQueue<>((a, b) -> {
+            if (a[0] != b[0])
+                return Integer.compare(a[0], b[0]); // 1st = wt
+            return Integer.compare(a[1], b[1]); // 2nd = idx
         });
 
         PriorityQueue<int[]> busy = new PriorityQueue<>((a, b) -> {
-            if(a[0] != b[0]) return Integer.compare(a[0], b[0]);  // 1st = finishTime
-            if(a[1] != b[1]) return Integer.compare(a[1], b[1]);  // 2nd = wt
-            return Integer.compare(a[2], b[2]);  // 3rd = idx
+            if (a[0] != b[0])
+                return Integer.compare(a[0], b[0]); // 1st = finishTime
+            if (a[1] != b[1])
+                return Integer.compare(a[1], b[1]); // 2nd = wt
+            return Integer.compare(a[2], b[2]); // 3rd = idx
         });
 
-        for(int i = 0; i < n; i++) {
-            free.add(new int[] {servers[i], i});
+        for (int i = 0; i < n; i++) {
+            free.add(new int[] { servers[i], i });
         }
 
         int[] res = new int[m];
@@ -43,22 +46,22 @@ class Solution {
         //     busy.add(new int[] {time + tasks[j], curr[0], curr[1]});
         // }
 
-        for(int i = 0; i < m; i++) {
-            while(!busy.isEmpty() && busy.peek()[0] <= i) {
+        for (int i = 0; i < m; i++) {
+            while (!busy.isEmpty() && busy.peek()[0] <= i) {
                 int[] curr = busy.poll();
-                free.add(new int[] {curr[1], curr[2]});
+                free.add(new int[] { curr[1], curr[2] });
             }
 
-            if(free.isEmpty()) {
+            if (free.isEmpty()) {
                 int[] curr = busy.poll();
                 res[i] = curr[2];
 
-                busy.add(new int[] {curr[0] + tasks[i], curr[1], curr[2]});
+                busy.add(new int[] { curr[0] + tasks[i], curr[1], curr[2] });
             } else {
                 int[] curr = free.poll();
                 res[i] = curr[1];
 
-                busy.add(new int[] {i + tasks[i], curr[0], curr[1]});
+                busy.add(new int[] { i + tasks[i], curr[0], curr[1] });
             }
         }
 
