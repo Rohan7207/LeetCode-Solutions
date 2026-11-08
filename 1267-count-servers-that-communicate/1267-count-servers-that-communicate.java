@@ -1,3 +1,30 @@
+// Problem: Count Servers that Communicate
+// Link: https://leetcode.com/problems/count-servers-that-communicate/?envType=daily-question&envId=2026-11-08
+// Difficulty: Medium
+
+// Approach:
+// 1. Create two arrays:
+//      rowCount[i] -> number of servers in row i.
+//      colCount[j] -> number of servers in column j.
+//
+// 2. Traverse the entire grid.
+//      If grid[i][j] == 1:
+//          Increment rowCount[i].
+//          Increment colCount[j].
+//
+// 3. Traverse the grid again.
+//      For every cell containing a server:
+//          Check whether rowCount[i] > 1 OR colCount[j] > 1.
+//
+// 4. If either condition is true, the server can communicate.
+//      Increment count.
+//
+// 5. Return count.
+
+// Time Complexity: O(m * n)
+// Space Complexity: O(m + n)
+
+
 class Solution {
     public int countServers(int[][] grid) {
         int m = grid.length;
@@ -18,7 +45,6 @@ class Solution {
         int count = 0;
         for (int i = 0; i < m; i++) {
             for (int j = 0; j < n; j++) {
-                // Server is not isolated if it can communicate with either a server in its row OR a server in its column.
                 if (grid[i][j] == 1 && (rowCount[i] > 1 || colCount[j] > 1)) {
                     count++;
                 }
@@ -28,56 +54,3 @@ class Solution {
         return count;
     }
 }
-
-/*
-    class Solution {
-    public int countServers(int[][] grid) {
-        int m = grid.length;
-        int n = grid[0].length;
-
-        boolean[] rows = new boolean[m];
-        boolean[] cols = new boolean[n];
-
-        for (int i = 0; i < m; i++) {
-            int count = 0;
-            for (int j = 0; j < n; j++) {
-                if (grid[i][j] == 1) {
-                    count++;
-                }
-
-                if (count > 1) {
-                    rows[i] = true;
-                    break;
-                }
-            }
-        }
-
-        for (int j = 0; j < n; j++) {
-            int count = 0;
-            for (int i = 0; i < m; i++) {
-                if (grid[i][j] == 1) {
-                    count++;
-                }
-
-                if (count > 1) {
-                    cols[j] = true;
-                    break;
-                }
-            }
-        }
-
-        int count = 0;
-        for (int i = 0; i < m; i++) {
-            for (int j = 0; j < n; j++) {
-                if (!rows[i] && !cols[j]) {
-                    continue;
-                } else if (grid[i][j] == 1) {
-                    count++;
-                }
-            }
-        }
-
-        return count;
-    }
-}
-*/
