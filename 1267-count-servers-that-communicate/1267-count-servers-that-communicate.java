@@ -19,10 +19,8 @@ class Solution {
         for (int i = 0; i < m; i++) {
             for (int j = 0; j < n; j++) {
                 // Server is not isolated if it can communicate with either a server in its row OR a server in its column.
-                if (grid[i][j] == 1) {
-                    if (rowCount[i] > 1 || colCount[j] > 1) {
-                        count++;
-                    }
+                if (grid[i][j] == 1 && (rowCount[i] > 1 || colCount[j] > 1)) {
+                    count++;
                 }
             }
         }
