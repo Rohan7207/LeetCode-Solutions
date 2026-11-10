@@ -3,7 +3,7 @@ class Solution {
         int[] dp = new int[n + 1];
 
         // We need j = i + 1,
-        for(int i = n - 1; i >= 0; i--) {
+        for (int i = n - 1; i >= 0; i--) {
             int cost = Integer.MAX_VALUE;
 
             int j = i + 1;
