@@ -11,28 +11,28 @@ class Solution {
 
     private int solve(int i, int n, int[] costs) {
         // Base case:
-        if(i == n) {
+        if (i == n) {
             return 0;
         }
 
-        if(memo[i] != -1) {
+        if (memo[i] != -1) {
             return memo[i];
         }
 
         int cost = Integer.MAX_VALUE;
 
         int j = i + 1;
-        if(j <= n) {  // Jump of i + 1
+        if (j <= n) { // Jump of i + 1
             cost = Math.min(cost, costs[j - 1] + (j - i) * (j - i) + solve(j, n, costs));
         }
 
         j = i + 2;
-        if(j <= n) {  // Jump of i + 2
+        if (j <= n) { // Jump of i + 2
             cost = Math.min(cost, costs[j - 1] + (j - i) * (j - i) + solve(j, n, costs));
         }
 
         j = i + 3;
-        if(j <= n) {  // Jump of i + 3
+        if (j <= n) { // Jump of i + 3
             cost = Math.min(cost, costs[j - 1] + (j - i) * (j - i) + solve(j, n, costs));
         }
 
