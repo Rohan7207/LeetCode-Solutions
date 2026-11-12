@@ -4,17 +4,17 @@ class Solution {
         int start = rounds[0];
         int end = rounds[m - 1];
         List<Integer> res = new ArrayList<>();
-       
-        if(start <= end) {
-            for(int i = start; i <= end; i++) {
+
+        if (start <= end) {
+            for (int i = start; i <= end; i++) {
                 res.add(i);
             }
         } else {
-            for(int i = 1; i <= end; i++) {
+            for (int i = 1; i <= end; i++) {
                 res.add(i);
             }
 
-            for(int i = start; i <= n; i++) {
+            for (int i = start; i <= n; i++) {
                 res.add(i);
             }
         }
