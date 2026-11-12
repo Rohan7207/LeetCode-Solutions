@@ -5,15 +5,15 @@ class Solution {
         diff[start] += 1;
         diff[start + 1] -= 1;
 
-        for(int i = 0; i < rounds.length - 1; i++) {
+        for (int i = 0; i < rounds.length - 1; i++) {
             int u = rounds[i];
             int v = rounds[i + 1];
 
-            if(u < v) {
+            if (u < v) {
                 // Normal forward range: (u, v] -> [u + 1, v]
                 diff[u + 1] += 1;
                 diff[v + 1] -= 1;
-            } else if(u > v) {
+            } else if (u > v) {
                 // Circular wrap: (u, n] and [1, v]
                 diff[u + 1] += 1;
                 diff[1] += 1;
@@ -25,7 +25,7 @@ class Solution {
         int[] count = new int[n];
         int currCount = 0;
         int maxVisSector = 0;
-        for(int i = 1; i <= n; i++) {
+        for (int i = 1; i <= n; i++) {
             currCount += diff[i];
             count[i - 1] = currCount;
 
@@ -33,8 +33,8 @@ class Solution {
         }
 
         List<Integer> res = new ArrayList<>();
-        for(int i = 0; i < n; i++) {
-            if(count[i] == maxVisSector) {
+        for (int i = 0; i < n; i++) {
+            if (count[i] == maxVisSector) {
                 res.add(i + 1);
             }
         }
