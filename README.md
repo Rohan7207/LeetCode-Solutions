@@ -246,6 +246,7 @@
 | [1539-kth-missing-positive-number](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1539-kth-missing-positive-number/) | Easy |
 | [1546-maximum-number-of-non-overlapping-subarrays-with-sum-equals-target](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1546-maximum-number-of-non-overlapping-subarrays-with-sum-equals-target/) | Medium |
 | [1550-three-consecutive-odds](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1550-three-consecutive-odds/) | Easy |
+| [1560-most-visited-sector-in-a-circular-track](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1560-most-visited-sector-in-a-circular-track/) | Easy |
 | [1563-stone-game-v](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1563-stone-game-v) |
 | [1569-number-of-ways-to-reorder-array-to-get-same-bst](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1569-number-of-ways-to-reorder-array-to-get-same-bst/) | Hard |
 | [1606-find-servers-that-handled-most-number-of-requests](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1606-find-servers-that-handled-most-number-of-requests/) | Hard |
@@ -1424,6 +1425,7 @@
 | [1518-water-bottles](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1518-water-bottles/) | Easy |
 | [1535-find-the-winner-of-an-array-game](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1535-find-the-winner-of-an-array-game/) | Medium |
 | [1545-find-kth-bit-in-nth-binary-string](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1545-find-kth-bit-in-nth-binary-string/) | Medium |
+| [1560-most-visited-sector-in-a-circular-track](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1560-most-visited-sector-in-a-circular-track/) | Easy |
 | [1606-find-servers-that-handled-most-number-of-requests](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1606-find-servers-that-handled-most-number-of-requests/) | Hard |
 | [2161-partition-array-according-to-given-pivot](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2161-partition-array-according-to-given-pivot) |
 | [3069-distribute-elements-into-two-arrays-i](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3069-distribute-elements-into-two-arrays-i) |
