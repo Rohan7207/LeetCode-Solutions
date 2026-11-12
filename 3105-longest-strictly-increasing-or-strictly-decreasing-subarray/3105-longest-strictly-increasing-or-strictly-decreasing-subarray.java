@@ -3,13 +3,13 @@ class Solution {
         int increase = 1, decrease = 1;
         int maxIncrease = 1, maxDecrease = 1;
 
-        for(int i = 1; i < nums.length; i++) {
-            if(nums[i - 1] < nums[i]) {
+        for (int i = 1; i < nums.length; i++) {
+            if (nums[i - 1] < nums[i]) {
                 increase++;
                 decrease = 1;
 
                 maxIncrease = Math.max(maxIncrease, increase);
-            } else if(nums[i - 1] > nums[i]) {
+            } else if (nums[i - 1] > nums[i]) {
                 decrease++;
                 increase = 1;
 
