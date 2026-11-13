@@ -9,7 +9,7 @@ class Solution {
 
         // Record the set of elements covered by this index
         List<List<Integer>> cnt = new ArrayList<>();
-        for(int i = 0; i < n; i++) {
+        for (int i = 0; i < n; i++) {
             cnt.add(new ArrayList<>());
         }
 
@@ -21,30 +21,30 @@ class Solution {
         Deque<Integer> st = new ArrayDeque<>();
 
         int left = 0;
-        for(int right = 0; right < n; right++) {
+        for (int right = 0; right < n; right++) {
             // Maintain the Monotonic Stack
-            while(!st.isEmpty() && nums[right] >= nums[st.peek()]) {
+            while (!st.isEmpty() && nums[right] >= nums[st.peek()]) {
                 pos[st.peek()] = right;
                 st.pop();
             }
 
             // The stack top is the nearest greater element to the left of nums[right]
-            if(!st.isEmpty()) {
+            if (!st.isEmpty()) {
                 cnt.get(st.peek()).add(right);
             }
 
             st.push(right);
 
             // The priority queue front is the window maximum
-            pq.offer(new int[] {nums[right], right});
+            pq.offer(new int[] { nums[right], right });
 
             // Adding nums[right] increases the operation count
             operations += Math.max(0, pq.peek()[0] - nums[right]);
 
             // The minimum operation count exceeds k; shrink the window
-            while(operations > k) {
+            while (operations > k) {
                 // Removing nums[left] from the window decreases the operation count
-                for(int i : cnt.get(left)) {
+                for (int i : cnt.get(left)) {
                     // Subtract the contribution
                     operations -= (long) (nums[left] - nums[i]) * (Math.min(pos[i], right + 1) - i);
                 }
@@ -53,7 +53,7 @@ class Solution {
             }
 
             // Remove elements with indices less than left from the priority queue
-            while(!pq.isEmpty() && pq.peek()[1] < left) {
+            while (!pq.isEmpty() && pq.peek()[1] < left) {
                 pq.poll();
             }
 
