@@ -60,7 +60,6 @@ class Solution {
             // There are right - left + 1 valid contiguous subarrays ending at right
             ans += right - left + 1;
         }
-
         return ans;
     }
 }
