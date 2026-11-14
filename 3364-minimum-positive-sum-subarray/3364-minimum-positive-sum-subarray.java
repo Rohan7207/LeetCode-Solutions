@@ -6,23 +6,22 @@ class Solution {
 
         int[] prefixSum = new int[n + 1];
         prefixSum[0] = nums.get(0);
-
-        for(int i = 1; i < n; i++) {  // O(n)
+        for (int i = 1; i < n; i++) { // O(n)
             prefixSum[i] = prefixSum[i - 1] + nums.get(i);
         }
 
-        for(int i = 0; i < n; i++) {  // O(n)
-            for(int len = l; len <= r && i + len - 1 < n; len++) {  // O(r - l + 1)
-                int j = i + len - 1;  // valid start of j 
-                sum = prefixSum[j] - (i == 0 ? 0 : prefixSum[i - 1]);  // this gives sum of i to j
+        for (int i = 0; i < n; i++) { // O(n)
+            for (int len = l; len <= r && i + len - 1 < n; len++) { // O(r - l + 1)
+                int j = i + len - 1; // valid start of j 
+                sum = prefixSum[j] - (i == 0 ? 0 : prefixSum[i - 1]); // this gives sum of i to j
 
-                if(sum > 0) {
+                if (sum > 0) {
                     ans = Math.min(ans, sum);
                 }
             }
         }
 
-        return ans == Integer.MAX_VALUE ? -1 : ans; 
+        return ans == Integer.MAX_VALUE ? -1 : ans;
     }
 }
 
