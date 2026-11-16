@@ -757,6 +757,7 @@
 | [1927-sum-game](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1927-sum-game) |
 | [1967-number-of-strings-that-appear-as-substrings-in-word](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1967-number-of-strings-that-appear-as-substrings-in-word) |
 | [2213-longest-substring-of-one-repeating-character](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2213-longest-substring-of-one-repeating-character) |
+| [2243-calculate-digit-sum-of-a-string](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/2243-calculate-digit-sum-of-a-string/) | Easy |
 | [2409-count-days-spent-together](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/2409-count-days-spent-together/) | Easy |
 | [2472-maximum-number-of-non-overlapping-palindrome-substrings](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/2472-maximum-number-of-non-overlapping-palindrome-substrings/) | Hard |
 | [2833-furthest-point-from-origin](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2833-furthest-point-from-origin) |
@@ -1437,6 +1438,7 @@
 | [1560-most-visited-sector-in-a-circular-track](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1560-most-visited-sector-in-a-circular-track/) | Easy |
 | [1606-find-servers-that-handled-most-number-of-requests](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1606-find-servers-that-handled-most-number-of-requests/) | Hard |
 | [2161-partition-array-according-to-given-pivot](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2161-partition-array-according-to-given-pivot) |
+| [2243-calculate-digit-sum-of-a-string](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/2243-calculate-digit-sum-of-a-string/) | Easy |
 | [3069-distribute-elements-into-two-arrays-i](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3069-distribute-elements-into-two-arrays-i) |
 | [3498-reverse-degree-of-a-string](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/3498-reverse-degree-of-a-string/) | Easy |
 | [3612-process-string-with-special-operations-i](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3612-process-string-with-special-operations-i) |
