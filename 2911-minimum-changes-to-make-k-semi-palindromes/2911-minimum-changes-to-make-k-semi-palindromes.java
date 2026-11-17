@@ -15,7 +15,7 @@ class Solution {
         }
         dp[n][0] = 0;
 
-        for(int st = n; st >= 0; st--) {
+        for(int st = n - 2; st >= 0; st--) {
             for(int pieces = 1; pieces <= k; pieces++) {
                 // Can't partition in k substrings
                 if(st + 2 * pieces > n) {
