@@ -10,12 +10,12 @@ class Solution {
         str = s;
 
         costMemo = new int[n + 1][n + 1];
-        for(int[] row : costMemo) {
+        for (int[] row : costMemo) {
             Arrays.fill(row, -1);
         }
 
         memo = new int[n + 1][k + 1];
-        for(int[] row : memo) {
+        for (int[] row : memo) {
             Arrays.fill(row, -1);
         }
 
@@ -23,8 +23,8 @@ class Solution {
     }
 
     private int solve(int start, int k) {
-        if(k == 0) {
-            if(start == n) {
+        if (k == 0) {
+            if (start == n) {
                 return 0;
             }
 
@@ -32,21 +32,21 @@ class Solution {
         }
 
         // Early return
-        if(start + 2 * k > n) {
+        if (start + 2 * k > n) {
             return Integer.MAX_VALUE;
         }
 
-        if(memo[start][k] != -1) {
+        if (memo[start][k] != -1) {
             return memo[start][k];
         }
 
         int res = Integer.MAX_VALUE;
-        for(int end = start + 1; end < n; end++) {
+        for (int end = start + 1; end < n; end++) {
             // start...end -> 1 substring
             int remainingCost = solve(end + 1, k - 1);
 
-            if(remainingCost == Integer.MAX_VALUE) {
-                continue;  // Invalid partition
+            if (remainingCost == Integer.MAX_VALUE) {
+                continue; // Invalid partition
             }
 
             res = Math.min(res, getCost(start, end) + remainingCost);
@@ -58,25 +58,25 @@ class Solution {
     private int getCost(int i, int j) {
         int len = j - i + 1;
 
-        if(costMemo[i][j] != -1) {
+        if (costMemo[i][j] != -1) {
             return costMemo[i][j];
         }
 
         int minCost = Integer.MAX_VALUE;
 
-        for(int d = 1; d < len; d++) {
+        for (int d = 1; d < len; d++) {
             // Not a divisor
-            if(len % d != 0) {
+            if (len % d != 0) {
                 continue;
             }
 
             int cost = 0;
-            for(int g = 0; g < d; g++) {
+            for (int g = 0; g < d; g++) {
                 int l = i + g;
                 int r = l + (len / d - 1) * d;
 
-                while(l < r) {
-                    if(str.charAt(l) != str.charAt(r)) {
+                while (l < r) {
+                    if (str.charAt(l) != str.charAt(r)) {
                         cost++;
                     }
 
@@ -278,4 +278,4 @@ class Solution {
             return minCost;
         }
 
-*/ 
+*/
