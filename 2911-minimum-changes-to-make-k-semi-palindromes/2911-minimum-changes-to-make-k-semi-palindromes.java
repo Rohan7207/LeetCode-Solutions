@@ -1,4 +1,81 @@
 class Solution {
+    public int minimumChanges(String s, int k) {
+        int n = s.length();
+
+        int[][] dpCost = new int[n][n];
+        for (int i = 0; i < n; i++) {
+            for(int j = i + 1; j < n; j++) {
+                dpCost[i][j] = getCost(s, i, j);
+            }
+        }
+
+        int[][] dp = new int[n + 1][k + 1];
+        for (int[] row : dp) {
+            Arrays.fill(row, Integer.MAX_VALUE);
+        }
+        dp[n][0] = 0;
+
+        for(int st = n; st >= 0; st--) {
+            for(int pieces = 1; pieces <= k; pieces++) {
+                // Can't partition in k substrings
+                if(st + 2 * pieces > n) {
+                    continue;
+                }
+
+                int res = Integer.MAX_VALUE;
+                for(int end = st + 1; end < n; end++) {
+                    int remainingCost = dp[end + 1][pieces - 1];
+
+                    if(remainingCost == Integer.MAX_VALUE) {
+                        continue;
+                    }
+
+                    res = Math.min(res, dpCost[st][end] + remainingCost);
+                }
+
+                dp[st][pieces] = res;
+            }
+        }
+
+        return dp[0][k];
+    }
+
+    private int getCost(String s, int i, int j) {
+        int len = j - i + 1;
+
+        int minCost = Integer.MAX_VALUE;
+
+        for (int d = 1; d < len; d++) {
+            // Not a divisor
+            if (len % d != 0) {
+                continue;
+            }
+
+            int cost = 0;
+            for (int g = 0; g < d; g++) {
+                int l = i + g;
+                int r = l + (len / d - 1) * d;
+
+                while (l < r) {
+                    if (s.charAt(l) != s.charAt(r)) {
+                        cost++;
+                    }
+
+                    l += d;
+                    r -= d;
+                }
+            }
+
+            minCost = Math.min(minCost, cost);
+        }
+
+        return minCost;
+    }
+}
+
+/* 
+    Recusion and Memoization
+    class Solution {
 
     private int n;
     private String str;
@@ -91,6 +168,7 @@ class Solution {
         return costMemo[i][j] = minCost;
     }
 }
+*/
 
 /*
     In this problem, we have divide s into k substrings such that letter changes needed to make each substring semi-palindrome must be minimized. And return min no.of letters changes required.
@@ -276,6 +354,43 @@ class Solution {
             }
 
             return minCost;
+        }
+
+
+    Bottom - Up:
+        For solve:
+            dp[n + 1][k + 1];
+
+            // Base case:
+            dp[n][0] = 0;
+
+            for(int st = n; st >= 0; st--) {
+                for(int pieces = 1; pieces < k; pieces++) {
+                    if(st + 2 * pieces > n) {  // Base case
+                        continue;
+                    }
+
+                    int res = max;
+                    for(int end = st + 1; end < n; end++) {
+                        // int remCost = solve(end + 1, k - 1)
+                        int remainCost = dp[end + 1][pieces - 1];  // since we need end + 1 future values, start loop from end and pieces is normal bcz we need pieces - 1.
+
+                        // minCost = min(minCost, getCost(start, end) + remainingCost);
+                        res = min(res, dpCost[st, end] + remainCost);
+                    }
+
+                    dp[st][pieces] = res;
+                }
+            }
+
+            // return solve(0, k);
+            return dp[0][k];
+
+    For getCost(int i, int j): Need to fill before dp of solve
+        for(int i = 0; i < n; i++) {
+            for(int j = i + 1; j < n; j++) {
+                dpCost[i][j] = getCost(i, j);  // where getCost is same as before
+            }
         }
 
 */
