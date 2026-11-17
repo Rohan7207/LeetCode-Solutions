@@ -1,81 +1,4 @@
 class Solution {
-    public int minimumChanges(String s, int k) {
-        int n = s.length();
-
-        int[][] dpCost = new int[n][n];
-        for (int i = 0; i < n; i++) {
-            for(int j = i + 1; j < n; j++) {
-                dpCost[i][j] = getCost(s, i, j);
-            }
-        }
-
-        int[][] dp = new int[n + 1][k + 1];
-        for (int[] row : dp) {
-            Arrays.fill(row, Integer.MAX_VALUE);
-        }
-        dp[n][0] = 0;
-
-        for(int st = n - 2; st >= 0; st--) {
-            for(int pieces = 1; pieces <= k; pieces++) {
-                // Can't partition in k substrings
-                if(st + 2 * pieces > n) {
-                    continue;
-                }
-
-                int res = Integer.MAX_VALUE;
-                for(int end = st + 1; end < n; end++) {
-                    int remainingCost = dp[end + 1][pieces - 1];
-
-                    if(remainingCost == Integer.MAX_VALUE) {
-                        continue;
-                    }
-
-                    res = Math.min(res, dpCost[st][end] + remainingCost);
-                }
-
-                dp[st][pieces] = res;
-            }
-        }
-
-        return dp[0][k];
-    }
-
-    private int getCost(String s, int i, int j) {
-        int len = j - i + 1;
-
-        int minCost = Integer.MAX_VALUE;
-
-        for (int d = 1; d < len; d++) {
-            // Not a divisor
-            if (len % d != 0) {
-                continue;
-            }
-
-            int cost = 0;
-            for (int g = 0; g < d; g++) {
-                int l = i + g;
-                int r = l + (len / d - 1) * d;
-
-                while (l < r) {
-                    if (s.charAt(l) != s.charAt(r)) {
-                        cost++;
-                    }
-
-                    l += d;
-                    r -= d;
-                }
-            }
-
-            minCost = Math.min(minCost, cost);
-        }
-
-        return minCost;
-    }
-}
-
-/* 
-    Recusion and Memoization
-    class Solution {
 
     private int n;
     private String str;
@@ -166,6 +89,83 @@ class Solution {
         }
 
         return costMemo[i][j] = minCost;
+    }
+}
+
+/* 
+    Bottom-up with 53.33%
+    class Solution {
+    public int minimumChanges(String s, int k) {
+        int n = s.length();
+
+        int[][] dpCost = new int[n][n];
+        for (int i = 0; i < n; i++) {
+            for(int j = i + 1; j < n; j++) {
+                dpCost[i][j] = getCost(s, i, j);
+            }
+        }
+
+        int[][] dp = new int[n + 1][k + 1];
+        for (int[] row : dp) {
+            Arrays.fill(row, Integer.MAX_VALUE);
+        }
+        dp[n][0] = 0;
+
+        for(int st = n; st >= 0; st--) {
+            for(int pieces = 1; pieces <= k; pieces++) {
+                // Can't partition in k substrings
+                if(st + 2 * pieces > n) {
+                    continue;
+                }
+
+                int res = Integer.MAX_VALUE;
+                for(int end = st + 1; end < n; end++) {
+                    int remainingCost = dp[end + 1][pieces - 1];
+
+                    if(remainingCost == Integer.MAX_VALUE) {
+                        continue;
+                    }
+
+                    res = Math.min(res, dpCost[st][end] + remainingCost);
+                }
+
+                dp[st][pieces] = res;
+            }
+        }
+
+        return dp[0][k];
+    }
+
+    private int getCost(String s, int i, int j) {
+        int len = j - i + 1;
+
+        int minCost = Integer.MAX_VALUE;
+
+        for (int d = 1; d < len; d++) {
+            // Not a divisor
+            if (len % d != 0) {
+                continue;
+            }
+
+            int cost = 0;
+            for (int g = 0; g < d; g++) {
+                int l = i + g;
+                int r = l + (len / d - 1) * d;
+
+                while (l < r) {
+                    if (s.charAt(l) != s.charAt(r)) {
+                        cost++;
+                    }
+
+                    l += d;
+                    r -= d;
+                }
+            }
+
+            minCost = Math.min(minCost, cost);
+        }
+
+        return minCost;
     }
 }
 */
