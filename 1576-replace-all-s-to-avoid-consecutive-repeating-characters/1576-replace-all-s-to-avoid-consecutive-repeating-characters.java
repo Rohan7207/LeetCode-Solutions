@@ -13,7 +13,6 @@ class Solution {
                 }
             }
         }
-
         return new String(str);
     }
 }
