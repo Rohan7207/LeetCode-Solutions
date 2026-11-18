@@ -1,3 +1,24 @@
+// Problem: Replace All ?'s to Avoid Consecutive Repeating Characters
+// Link: https://leetcode.com/problems/replace-all-s-to-avoid-consecutive-repeating-characters/
+// Difficulty: Easy
+
+// Approach:
+// 1. Convert the string into a character array for easy modification.
+//
+// 2. Traverse the array from left to right.
+//
+// 3. Whenever we encounter '?', try characters 'a', 'b', and 'c'.
+//
+// 4. Choose the first character that differs from both neighbors.
+//
+// 5. Replace '?' with that character.
+//
+// 6. Return the modified character array as a string.
+
+// Time Complexity: O(n)
+// Space Complexity: O(n)
+
+
 class Solution {
     public String modifyString(String s) {
         char[] str = s.toCharArray();
@@ -16,49 +37,3 @@ class Solution {
         return new String(str);
     }
 }
-
-/*
-    public String modifyString(String s) {
-        int n = s.length();
-
-        if (n == 1 && s.charAt(0) == '?') {
-            return "a";
-        }
-
-        char[] str = s.toCharArray();
-
-        for (int i = 0; i < n; i++) {
-            char currCh = str[i];
-
-            if (i == 0 && currCh == '?') {
-                char ch = 'a';
-
-                if (ch == str[i + 1]) {
-                    ch++;
-                }
-
-                str[i] = ch;
-            } else if (i == n - 1 && currCh == '?') {
-                char ch = 'a';
-
-                if (ch == str[i - 1]) {
-                    ch++;
-                }
-
-                str[i] = ch;
-            } else if (currCh == '?') {
-                char ch = 'a';
-
-                while (ch == str[i - 1] || ch == str[i + 1]) {
-                    ch++;
-                }
-
-                str[i] = ch;
-            } else {
-                str[i] = currCh;
-            }
-        }
-
-        return new String(str);
-    }
-*/
