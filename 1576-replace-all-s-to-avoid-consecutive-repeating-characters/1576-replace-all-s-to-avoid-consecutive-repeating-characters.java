@@ -1,5 +1,25 @@
 class Solution {
     public String modifyString(String s) {
+        char[] str = s.toCharArray();
+        int n = str.length;
+
+        for (int i = 0; i < n; i++) {
+            if (str[i] == '?') {
+                for (char c = 'a'; c <= 'c'; c++) {
+                    if ((i == 0 || str[i - 1] != c) && (i == n - 1 || str[i + 1] != c)) {
+                        str[i] = c;
+                        break;
+                    }
+                }
+            }
+        }
+
+        return new String(str);
+    }
+}
+
+/*
+    public String modifyString(String s) {
         int n = s.length();
 
         if (n == 1 && s.charAt(0) == '?') {
@@ -42,4 +62,4 @@ class Solution {
 
         return new String(str);
     }
-}
+*/
