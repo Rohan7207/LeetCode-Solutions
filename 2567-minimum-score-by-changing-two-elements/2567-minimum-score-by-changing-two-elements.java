@@ -3,7 +3,7 @@ class Solution {
         int n = nums.length;
 
         //Because we can make any two elements equal to the third element and hence the array will have all elements equal and so the diffrence will be 0 for all pairs
-        if(n == 3) {
+        if (n == 3) {
             return 0;
         }
 
