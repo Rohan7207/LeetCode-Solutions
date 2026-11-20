@@ -6,8 +6,8 @@ class Solution {
         int[][] dp = new int[n + 1][2];
 
         int res = 1;
-        for (int i = n - 1; i >= 0; i--) {
-            for (int inc = 0; inc < 2; inc++) {
+        for (int i = n - 1; i >= 0; i--) { // O(n) = total => O(n * logn)
+            for (int inc = 0; inc < 2; inc++) { // O(1)
                 int currVal = nums[i] + inc;
                 int len = 1;
 
@@ -31,7 +31,7 @@ class Solution {
         return res;
     }
 
-    private int findMethod(int[] nums, int start, int target) {
+    private int findMethod(int[] nums, int start, int target) { // O(logn)
         int end = nums.length - 1;
         int ans = -1;
 
