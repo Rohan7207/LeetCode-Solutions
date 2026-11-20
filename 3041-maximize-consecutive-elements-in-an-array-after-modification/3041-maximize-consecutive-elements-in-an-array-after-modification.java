@@ -6,20 +6,20 @@ class Solution {
         int[][] dp = new int[n + 1][2];
 
         int res = 1;
-        for(int i = n - 1; i >= 0; i--) {
-            for(int inc = 0; inc < 2; inc++) {
+        for (int i = n - 1; i >= 0; i--) {
+            for (int inc = 0; inc < 2; inc++) {
                 int currVal = nums[i] + inc;
                 int len = 1;
 
                 // Option 1: Find currVal + 1 directly
                 int j = findMethod(nums, i + 1, currVal + 1);
-                if(j != -1) {
+                if (j != -1) {
                     len = Math.max(len, 1 + dp[j][0]);
                 }
 
                 // Option 2: Find currVal and then inc +1
                 j = findMethod(nums, i + 1, currVal);
-                if(j != -1) {
+                if (j != -1) {
                     len = Math.max(len, 1 + dp[j][1]);
                 }
 
@@ -31,18 +31,17 @@ class Solution {
         return res;
     }
 
-
     private int findMethod(int[] nums, int start, int target) {
         int end = nums.length - 1;
         int ans = -1;
 
-        while(start <= end) {
+        while (start <= end) {
             int mid = start + (end - start) / 2;
 
-            if(nums[mid] == target) {
-                ans = mid;     // Store found index
-                end = mid - 1;   // Keep looking left for the first occurrence
-            } else if(nums[mid] < target) {
+            if (nums[mid] == target) {
+                ans = mid; // Store found index
+                end = mid - 1; // Keep looking left for the first occurrence
+            } else if (nums[mid] < target) {
                 start = mid + 1;
             } else {
                 end = mid - 1;
