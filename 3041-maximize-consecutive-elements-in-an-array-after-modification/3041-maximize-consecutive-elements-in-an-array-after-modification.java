@@ -1,4 +1,61 @@
 class Solution {
+    public int maxSelectedElements(int[] nums) {
+        int n = nums.length;
+        Arrays.sort(nums);
+
+        int[][] dp = new int[n + 1][2];
+
+        int res = 1;
+        for(int i = n - 1; i >= 0; i--) {
+            for(int inc = 0; inc < 2; inc++) {
+                int currVal = nums[i] + inc;
+                int len = 1;
+
+                // Option 1: Find currVal + 1 directly
+                int j = findMethod(nums, i + 1, currVal + 1);
+                if(j != -1) {
+                    len = Math.max(len, 1 + dp[j][0]);
+                }
+
+                // Option 2: Find currVal and then inc +1
+                j = findMethod(nums, i + 1, currVal);
+                if(j != -1) {
+                    len = Math.max(len, 1 + dp[j][1]);
+                }
+
+                dp[i][inc] = len;
+                res = Math.max(res, dp[i][inc]);
+            }
+        }
+
+        return res;
+    }
+
+
+    private int findMethod(int[] nums, int start, int target) {
+        int end = nums.length - 1;
+        int ans = -1;
+
+        while(start <= end) {
+            int mid = start + (end - start) / 2;
+
+            if(nums[mid] == target) {
+                ans = mid;     // Store found index
+                end = mid - 1;   // Keep looking left for the first occurrence
+            } else if(nums[mid] < target) {
+                start = mid + 1;
+            } else {
+                end = mid - 1;
+            }
+        }
+
+        return ans;
+    }
+}
+
+/*
+    Recursion with Memoization: 6.06% 
+    class Solution {
 
     private int n;
     private int[][] dp;
@@ -64,7 +121,8 @@ class Solution {
 
         return ans;
     }
-}
+    }
+*/
 
 /*
     nums = {2, 1, 5, 1, 1, 6, 5, 7}
@@ -180,4 +238,34 @@ class Solution {
 
             return len;  // To memoize it, only two parameters will change j and inc where inc is only 2  vals 0/1  so we take dp[n + 1][2]
         }   
+
+    Now lets convert above recursion into bottom-up approach:
+
+        dp[n + 1][2] = need to fill this
+        int res = 1; 
+        for(int i = n - 1; i >= 0; i--) {
+            for(int inc = 0; inc < 2; inc++) {
+                int currVal = nums[i] + inc;
+                int len = 1;  // took currVal
+
+                // Option 1: find currVal + 1 directly
+                int j = findMethod(i + 1, currVal + 1, nums);  // We need ans of future ans so rev-loop
+                if(j != -1) {
+                    // len = max(len, 1(taken currVal) + solve(j, 0, nums));
+                    len = max(len, 1 + dp[j][0]);
+                }
+
+                // Option 2: find currVal and then inc +1;
+                int j = findMethod(i + 1, currVal, nums);
+                if(j != -1) {
+                    // len = max(len, 1(taken currVal) + solve(j, 1, nums));
+                    len = max(len, 1 + dp[j][1]);
+                }
+
+                dp[i][c] = len;
+                res = max(res, dp[i][inc]);  // We can do this by doing one more for loop like recursion
+            }
+        }
+
+        return res;
 */
