@@ -52,6 +52,7 @@ class Solution {
             }
 
             parent[currNode] = newParent;
+            
             res[newParent] += res[currNode];
         }
     }
