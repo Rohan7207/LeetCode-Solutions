@@ -3,8 +3,8 @@ class Solution {
         int res = 0;
         int n = colors.length();
 
-        for(int i = 1; i < n; i++) {
-            if(colors.charAt(i) == colors.charAt(i - 1)) {
+        for (int i = 1; i < n; i++) {
+            if (colors.charAt(i) == colors.charAt(i - 1)) {
                 res += Math.min(neededTime[i], neededTime[i - 1]);
 
                 neededTime[i] = Math.max(neededTime[i], neededTime[i - 1]);
