@@ -8,12 +8,12 @@ class Solution {
         int n = parent.length;
         adjList = new ArrayList<>();
 
-        for(int i = 0; i < n; i++) {
+        for (int i = 0; i < n; i++) {
             adjList.add(new ArrayList<>());
         }
 
         // parent[i] = node, node is parent of ith node
-        for(int i = 1; i < n; i++) {
+        for (int i = 1; i < n; i++) {
             int u = parent[i];
             int v = i;
 
@@ -35,20 +35,19 @@ class Solution {
         int c = s.charAt(currNode) - 'a';
         int nearestAncestor = last[c];
 
-        last[c] = currNode;  // For child of currNode is currNode is nearestAncestor for childs
-        for(int child : adjList.get(currNode)) {
+        last[c] = currNode; // For child of currNode is currNode is nearestAncestor for childs
+        for (int child : adjList.get(currNode)) {
             dfs(child, s, parent);
         }
 
         // Back to currNode update currNode ancestor as its correct ancestor which nearestAncestor
         last[c] = nearestAncestor;
 
-
         // If currNode is root, it has no ancestor
-        if(currNode != 0) {
-            int newParent = parent[currNode];  // oldParent
+        if (currNode != 0) {
+            int newParent = parent[currNode]; // oldParent
 
-            if(nearestAncestor != -1) {
+            if (nearestAncestor != -1) {
                 newParent = nearestAncestor;
             }
 
