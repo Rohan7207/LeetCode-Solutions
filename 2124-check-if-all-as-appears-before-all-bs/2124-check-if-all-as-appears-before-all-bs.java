@@ -13,7 +13,6 @@ class Solution {
             }
         }
 
-
         return lastAPos < firstBPos;
     }
 }
