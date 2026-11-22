@@ -4,11 +4,11 @@ class Solution {
         int lastAPos = -1;
         int firstBPos = n;
 
-        for(int i = 0; i < n; i++) {
+        for (int i = 0; i < n; i++) {
             char ch = s.charAt(i);
-            if(ch == 'a') {
+            if (ch == 'a') {
                 lastAPos = i;
-            } else if(ch == 'b' && firstBPos == n) {
+            } else if (ch == 'b' && firstBPos == n) {
                 firstBPos = i;
             }
         }
