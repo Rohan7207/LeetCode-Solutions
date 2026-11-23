@@ -4,19 +4,19 @@ class Solution {
         int[] prefix = new int[n + 1];
         prefix[0] = 0;
 
-        for(int i = 0; i < n; i++) {
+        for (int i = 0; i < n; i++) {
             prefix[i + 1] = prefix[i] + arr[i];
         }
 
         int sum = prefix[n];
 
-        for(int i = 0; i < n; i++) {    
+        for (int i = 0; i < n; i++) {
             int j = i;
 
             int odd = 2;
-            while(true) {
+            while (true) {
                 int k = j - odd;
-                if(k >= 0) {
+                if (k >= 0) {
                     sum += (prefix[j + 1] - prefix[k]);
                     odd += 2;
                 } else {
