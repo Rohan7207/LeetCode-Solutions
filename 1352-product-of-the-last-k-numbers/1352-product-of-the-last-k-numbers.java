@@ -1,37 +1,3 @@
-// Problem: Product of the Last K Numbers
-// Link: https://leetcode.com/problems/product-of-the-last-k-numbers/
-// Difficulty: Medium
-
-// Approach:
-// Use Prefix Product + Reset at Zero.
-//
-// 1. Maintain a list where each element stores the cumulative product
-//    of all numbers added since the most recent zero.
-//
-// 2. Start the list with 1 as a dummy prefix product.
-//
-// 3. When adding a non-zero number, multiply it with the previous
-//    prefix product and store the result.
-//
-// 4. When 0 is added, clear the list and restart with 1.
-//    This is important because any product containing 0 is 0.
-//
-// 5. For getProduct(k), divide the total product by the prefix
-//    product before those k elements:
-//
-//      product of last k = prefix[n] / prefix[n-k]
-//
-// 6. If k is larger than or equal to the number of stored elements,
-//    there are not enough non-zero numbers after the latest zero,
-//    so return 0.
-
-// Time Complexity:
-// add()      → O(1)
-// getProduct() → O(1)
-//
-// Space Complexity: O(n)
-
-
 class ProductOfNumbers {
 
     private List<Integer> list;
@@ -52,7 +18,7 @@ class ProductOfNumbers {
     }
 
     public int getProduct(int k) {
-        if (k >= list.size()) 
+        if (k >= list.size())
             return 0;
 
         int n = list.size() - 1; // Bcz we added 1
@@ -66,3 +32,84 @@ class ProductOfNumbers {
  * obj.add(num);
  * int param_2 = obj.getProduct(k);
  */
+
+// Time Complexity:
+// add()      → O(1)
+// getProduct() → O(1)
+//
+// Space Complexity: O(n)
+
+// Maintain cumulative products so every k-element product can be obtained using one division instead of multiplying k elements.
+
+/*
+    .
+
+🔑 Key Observation
+
+For:
+
+[3, 2, 5, 4]
+
+prefix products:
+
+[1, 3, 6, 30, 120]
+
+For the last 2 numbers:
+
+120 / 6 = 20
+
+which is:
+
+5 × 4 = 20
+
+✨ Magic Line
+return list.get(n) / list.get(n - k);
+
+💡 Why Reset on Zero?
+
+Suppose:
+
+3, 2, 0, 5, 4
+
+Any product containing the 0 is automatically 0.
+
+So after encountering zero, we throw away the old prefix products and start fresh:
+
+[1, 5, 20]
+
+This also prevents division by a prefix product that belongs to a segment before the zero.
+
+🧩 Pattern Recognition
+
+Repeated range product queries → Prefix Product
+
+Zero present → Reset the prefix structure at zero.
+
+One note: for the actual LeetCode constraints, use long internally if your implementation risks intermediate multiplication overflow; the problem's required return type remains int.
+*/
+
+/*
+   class ProductOfNumbers {
+
+   private List<Integer> list;
+
+   public ProductOfNumbers() {
+       list = new ArrayList<>();
+   }
+   
+   public void add(int num) {
+       list.add(num);
+   }
+   
+   public int getProduct(int k) {
+       int product = 1;
+       int len = list.size();
+
+       for(int i = len - k; i < len; i++) {
+           product *= list.get(i);
+       }
+
+       return product;
+   }
+}
+*/
