@@ -10,6 +10,7 @@ class Solution {
             sum += arr[i] * oddCount;
         }
 
+
         return sum;
     }
 }
