@@ -253,6 +253,7 @@
 | [1572-matrix-diagonal-sum](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1572-matrix-diagonal-sum/) | Easy |
 | [1578-minimum-time-to-make-rope-colorful](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1578-minimum-time-to-make-rope-colorful/) | Medium |
 | [1582-special-positions-in-a-binary-matrix](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1582-special-positions-in-a-binary-matrix/) | Easy |
+| [1584-min-cost-to-connect-all-points](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1584-min-cost-to-connect-all-points/) | Medium |
 | [1606-find-servers-that-handled-most-number-of-requests](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1606-find-servers-that-handled-most-number-of-requests/) | Hard |
 | [1658-minimum-operations-to-reduce-x-to-zero](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1658-minimum-operations-to-reduce-x-to-zero/) | Medium |
 | [1732-find-the-highest-altitude](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1732-find-the-highest-altitude) |
@@ -1882,6 +1883,7 @@
 | [1319-number-of-operations-to-make-network-connected](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1319-number-of-operations-to-make-network-connected) |
 | [1361-validate-binary-tree-nodes](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1361-validate-binary-tree-nodes/) | Medium |
 | [1569-number-of-ways-to-reorder-array-to-get-same-bst](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1569-number-of-ways-to-reorder-array-to-get-same-bst/) | Hard |
+| [1584-min-cost-to-connect-all-points](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1584-min-cost-to-connect-all-points/) | Medium |
 | [2492-minimum-score-of-a-path-between-two-cities](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2492-minimum-score-of-a-path-between-two-cities) |
 | [2685-count-the-number-of-complete-components](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2685-count-the-number-of-complete-components) |
 | [2812-find-the-safest-path-in-a-grid](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2812-find-the-safest-path-in-a-grid) |
@@ -1905,6 +1907,7 @@
 | [0997-find-the-town-judge](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/0997-find-the-town-judge) |
 | [1319-number-of-operations-to-make-network-connected](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/1319-number-of-operations-to-make-network-connected) |
 | [1361-validate-binary-tree-nodes](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1361-validate-binary-tree-nodes/) | Medium |
+| [1584-min-cost-to-connect-all-points](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1584-min-cost-to-connect-all-points/) | Medium |
 | [2492-minimum-score-of-a-path-between-two-cities](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2492-minimum-score-of-a-path-between-two-cities) |
 | [2685-count-the-number-of-complete-components](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/2685-count-the-number-of-complete-components) |
 | [3286-find-a-safe-walk-through-a-grid](https://github.com/Rohan7207/LeetCode-Solutions/tree/master/3286-find-a-safe-walk-through-a-grid) |
@@ -2212,4 +2215,20 @@
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [1569-number-of-ways-to-reorder-array-to-get-same-bst](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1569-number-of-ways-to-reorder-array-to-get-same-bst/) | Hard |
+## Minimum Spanning Tree
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [1584-min-cost-to-connect-all-points](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1584-min-cost-to-connect-all-points/) | Medium |
+## Prim's Algorithm
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [1584-min-cost-to-connect-all-points](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1584-min-cost-to-connect-all-points/) | Medium |
+## Kruskal's Algorithm
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [1584-min-cost-to-connect-all-points](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1584-min-cost-to-connect-all-points/) | Medium |
+## Borůvka's Algorithm
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [1584-min-cost-to-connect-all-points](https://github.com/Rohan7207/LeetCode-Solutions/tree/main/1584-min-cost-to-connect-all-points/) | Medium |
 <!---LeetCode Topics End-->
