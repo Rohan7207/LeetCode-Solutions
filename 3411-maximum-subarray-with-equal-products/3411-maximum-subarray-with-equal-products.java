@@ -1,3 +1,26 @@
+// Problem: Maximum Subarray With Equal Products
+// Link: https://leetcode.com/problems/maximum-subarray-with-equal-products/?envType=daily-question&envId=2026-11-24
+// Difficulty: Easy
+
+// Approach:
+// 1. Generate every possible subarray using two nested loops.
+// 2. For each starting index i, initialize:
+//      product = 1
+//      gcd = 0
+//      lcm = 1
+// 3. Extend the subarray by moving j from i to n-1.
+// 4. Update product incrementally by multiplying nums[j].
+// 5. Update GCD using gcd(previousGcd, nums[j]).
+// 6. Update LCM using:
+//      lcm = (lcm / gcd(lcm, nums[j])) * nums[j]
+// 7. If product == gcd * lcm, update the maximum length.
+// 8. Return the maximum length.
+
+// Time Complexity: O(n² * log M)
+// Space Complexity: O(1)
+// M = maximum element in nums
+
+
 class Solution {
     public int maxLength(int[] nums) {
         int n = nums.length;
@@ -34,76 +57,3 @@ class Solution {
         return a;
     }
 }
-
-/*
-class Solution {
-    public int maxLength(int[] nums) {
-        int n = nums.length;
-        int[] seen = new int[11];
-
-        Arrays.fill(seen, -1);
-
-        int left = 0;
-        int maxLen = 1;
-
-        for (int right = 0; right < n; right++) {
-            int num = nums[right];
-
-            // Find distinct prime factors
-            for (int p = 2; p * p <= num; p++) {
-                if (num % p == 0) {
-
-                    // Move left past the previous occurrence
-                    left = Math.max(left, seen[p] + 1);
-
-                    // Remove repeated occurrences of p
-                    while (num % p == 0) {
-                        num /= p;
-                    }
-                }
-            }
-
-            // Remaining number is also a prime factor
-            if (num > 1) {
-                left = Math.max(left, seen[num] + 1);
-            }
-
-            // Update last-seen indices
-            num = nums[right];
-
-            for (int p = 2; p * p <= num; p++) {
-                if (num % p == 0) {
-                    seen[p] = right;
-
-                    while (num % p == 0) {
-                        num /= p;
-                    }
-                }
-            }
-
-            if (num > 1) {
-                seen[num] = right;
-            }
-
-            maxLen = Math.max(maxLen, right - left + 1);
-        }
-
-        return maxLen;
-    }
-}
-*/
-
-/*
-    gcd(a,b,c)=gcd(gcd(a,b),c)
-
-    *** gcd = findGcd(gcd, nums[j]);
-
-    Exactly the same idea:
-
-        lcm(a,b,c)=lcm(lcm(a,b),c)
-
-        For two numbers:
-        lcm(a,b)= (a / gcd(a,b)) * b
-
-       *** lcm = (lcm / findGCD(lcm, nums[j])) * nums[j];
-*/
