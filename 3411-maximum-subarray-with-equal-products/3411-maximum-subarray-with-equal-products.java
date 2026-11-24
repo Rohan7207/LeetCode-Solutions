@@ -3,19 +3,19 @@ class Solution {
         int n = nums.length;
         int res = 0;
 
-        for(int i = 0; i < n; i++) {
+        for (int i = 0; i < n; i++) {
             long prod = 1;
             long gcd = 0;
             long lcm = 1;
 
-            for(int j = i; j < n; j++) {
+            for (int j = i; j < n; j++) {
                 prod *= nums[j];
 
                 gcd = findGcd((int) gcd, nums[j]);
 
                 lcm = (lcm / findGcd((int) lcm, nums[j])) * nums[j];
 
-                if(prod == lcm * gcd) {
+                if (prod == lcm * gcd) {
                     res = Math.max(res, j - i + 1);
                 }
             }
@@ -25,7 +25,7 @@ class Solution {
     }
 
     private long findGcd(int a, int b) {
-        while(b > 0) {
+        while (b > 0) {
             int temp = a % b;
             a = b;
             b = temp;
@@ -38,7 +38,7 @@ class Solution {
 /*
     gcd(a,b,c)=gcd(gcd(a,b),c)
 
-    gcd = findGcd(gcd, nums[j]);
+    *** gcd = findGcd(gcd, nums[j]);
 
     Exactly the same idea:
 
@@ -47,5 +47,5 @@ class Solution {
         For two numbers:
         lcm(a,b)= (a / gcd(a,b)) * b
 
-        lcm = (lcm / findGCD(lcm, nums[j])) * nums[j];
+       *** lcm = (lcm / findGCD(lcm, nums[j])) * nums[j];
 */
