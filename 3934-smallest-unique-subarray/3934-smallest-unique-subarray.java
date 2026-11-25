@@ -7,7 +7,7 @@ class Solution {
         n = nums.length;
         int max = -1;
 
-        for(int num : nums) {
+        for (int num : nums) {
             max = Math.max(max, num);
         }
 
@@ -16,32 +16,32 @@ class Solution {
 
         int left = 1, right = n - 1;
 
-        while(left <= right) {  // O(n)
+        while (left <= right) { // O(n)
             int mid = left + (right - left) / 2;
 
-            if(check(nums, mid, base)) {
+            if (check(nums, mid, base)) {
                 res = mid;
-                right = mid - 1;  // Try minimum if possible
+                right = mid - 1; // Try minimum if possible
             } else {
                 left = mid + 1;
             }
         }
 
-        return res;  // O(nlogn)
+        return res; // O(nlogn)
     }
 
     private boolean check(int[] nums, int size, int base) {
         Map<Long, Integer> map = new HashMap<>();
         long hash = 0;
 
-        long p = findPow(base, size - 1);  // O(log(size))
+        long p = findPow(base, size - 1); // O(log(size))
 
         int i = 0, j = 0;
-        while(j < n) {  // O(n)
+        while (j < n) { // O(n)
             hash = (hash * base + nums[j]) % MOD;
 
             // Still subarray is not of size length
-            if(j - i + 1 < size) {
+            if (j - i + 1 < size) {
                 j++;
             } else {
                 map.put(hash, map.getOrDefault(hash, 0) + 1);
@@ -55,8 +55,8 @@ class Solution {
         }
 
         // If count of any subarray is 1 in map then it is unique subarray of that size
-        for(Integer count : map.values()) {
-            if(count == 1) {
+        for (Integer count : map.values()) {
+            if (count == 1) {
                 return true;
             }
         }
@@ -66,6 +66,7 @@ class Solution {
 
     // Binary Exponentiation
     private long findPow(long a, long exp) {
+        // Recursive
         // if(base == 0) {
         //     return 1;
         // }
