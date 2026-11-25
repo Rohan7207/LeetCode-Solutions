@@ -65,16 +65,29 @@ class Solution {
     }
 
     // Binary Exponentiation
-    private long findPow(long a, long base) {
-        if(base == 0) {
-            return 1;
-        }
+    private long findPow(long a, long exp) {
+        // if(base == 0) {
+        //     return 1;
+        // }
 
-        long half = findPow(a, base / 2);
-        long result = (half * half) % MOD;
+        // long half = findPow(a, base / 2);
+        // long result = (half * half) % MOD;
 
-        if(base % 2 == 1) {
-            result = (result * a) % MOD;
+        // if(base % 2 == 1) {
+        //     result = (result * a) % MOD;
+        // }
+
+        // return result;
+
+        long result = 1;
+
+        while (exp > 0) {
+            if (exp % 2 == 1) {
+                result = (result * a) % MOD;
+            }
+
+            a = (a * a) % MOD;
+            exp /= 2;
         }
 
         return result;
