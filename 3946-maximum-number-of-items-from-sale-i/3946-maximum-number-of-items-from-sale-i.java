@@ -1,4 +1,60 @@
 class Solution {
+    public int maximumSaleItems(int[][] items, int budget) {
+        int n = items.length;
+
+        int[][] dp = new int[n + 1][budget + 1];
+
+        for (int[] row : dp) {
+            Arrays.fill(row, -1);
+        }
+
+        int[] copies = new int[n]; // copies[i] = count of copies if I buy ith item
+
+        int minPrice = 1501;
+        for (int i = 0; i < n; i++) { // O(n ^ 2)
+            minPrice = Math.min(minPrice, items[i][1]);
+
+            int copy = 0;
+            for (int j = 0; j < n; j++) {
+                if (i == j) {
+                    continue;
+                }
+
+                if (items[j][0] % items[i][0] == 0) {
+                    copy++;
+                }
+            }
+
+            copies[i] = copy;
+        }
+
+        // Base case n == 0:
+        for (int b = 0; b <= budget; b++) {
+            dp[0][b] = b / minPrice;
+        }
+
+        for (int i = 1; i <= n; i++) {
+            for (int b = 0; b <= budget; b++) {
+                int price = items[i - 1][1];
+                int take = 0;
+
+                if (price <= b) {
+                    take = 1 + copies[i - 1] + dp[i - 1][b - price];
+                }
+
+                int skip = dp[i - 1][b];
+
+                dp[i][b] = Math.max(take, skip);
+            }
+        }
+
+        return dp[n][budget];
+    }
+}
+
+/*
+    Recursion with memoization:
+    class Solution {
 
     private int cheapestPrice = 1501;
     private int[][] dp;
@@ -14,7 +70,7 @@ class Solution {
             Arrays.fill(row, -1);
         }
 
-        for(int i = 0; i < n; i++) {
+        for(int i = 0; i < n; i++) {   // O(n ^ 2)
             cheapestPrice = Math.min(cheapestPrice, items[i][1]);
 
             int copy = 0;
@@ -31,7 +87,7 @@ class Solution {
             copies[i] = copy;
         }
 
-        return solve(n, budget, items);
+        return solve(n, budget, items);  // O(n * budget)
     }
 
     private int solve(int n, int budget, int[][] items) {
@@ -56,6 +112,7 @@ class Solution {
         return dp[n][budget] = Math.max(take, skip);
     }
 }
+*/
 
 /*
     1. factorj % factori == 0
@@ -159,5 +216,30 @@ class Solution {
             return max(take, skip);  // also write memoization, here only n and budget is changing so take 2D DP.
         }
 
+    Bottom-up:
+        d[n + 1][budget + 1];
 
+        // For recursion base case n = 0;
+        for(b = 0; b <= budget; b++) {
+            dp[0][b] = b / minPrice;
+        }
+
+        for(int i = 1; i <= n; i++) {
+            for(int b = 0; b <= budget; b++) {
+                int price = items[i - 1][1];
+                int take = 0;
+
+                if(price <= b) {
+                    take = 1 + copies[i - 1] + dp[i - 1][b - price];
+                }
+
+                int skip = dp[i - 1][b];
+
+                t[i][b] = max(take, skip);
+            }
+        }
+
+        return dp[n][budget];  
+
+    Note: We did'nt used reverse loop thing bcz we have used with using n 2nd method, so we just need to replace n with i in bottom up.
 */
