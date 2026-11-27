@@ -3,7 +3,6 @@ class Solution {
         int n = items.length;
 
         int[][] dp = new int[n + 1][budget + 1];
-
         for (int[] row : dp) {
             Arrays.fill(row, -1);
         }
@@ -11,7 +10,7 @@ class Solution {
         int[] copies = new int[n]; // copies[i] = count of copies if I buy ith item
 
         int minPrice = 1501;
-        for (int i = 0; i < n; i++) { // O(n ^ 2)
+        for (int i = 0; i < n; i++) {
             minPrice = Math.min(minPrice, items[i][1]);
 
             int copy = 0;
