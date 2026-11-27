@@ -1,6 +1,6 @@
 class Solution {
 
-    private int cheapestPrice = Integer.MAX_VALUE;
+    private int cheapestPrice = 1501;
     private int[][] dp;
     private int[] copies;
 
