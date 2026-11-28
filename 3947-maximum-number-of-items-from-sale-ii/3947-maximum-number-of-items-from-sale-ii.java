@@ -15,7 +15,8 @@ class Solution {
         int[] gain = new int[n + 1];
 
         for (int f = 1; f <= n; f++) {
-            if (freq[f] == 0) continue;
+            if (freq[f] == 0)
+                continue;
 
             int count = 0;
 
@@ -31,9 +32,7 @@ class Solution {
         // Step 3: Sort items by increasing price
         int[][] sorted = items.clone();
 
-        Arrays.sort(sorted, (a, b) ->
-            Integer.compare(a[1], b[1])
-        );
+        Arrays.sort(sorted, (a, b) -> Integer.compare(a[1], b[1]));
 
         long ans = 0;
 
@@ -51,9 +50,8 @@ class Solution {
 
             // Maximum boosted purchases possible
             int take = (int) Math.min(
-                (long) available,
-                budget / price
-            );
+                    (long) available,
+                    budget / price);
 
             // Each boosted purchase gives 2 copies
             ans += 2L * take;
