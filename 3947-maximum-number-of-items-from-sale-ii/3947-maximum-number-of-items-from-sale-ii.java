@@ -1,3 +1,48 @@
+// Problem: Maximum Number of Items From Sale II
+// Link: https://leetcode.com/problems/maximum-number-of-items-from-sale-ii/?envType=daily-question&envId=2026-11-28
+// Difficulty: Medium
+
+// Approach:
+//
+// 1. Count the frequency of every factor using freq[].
+//    Multiple items can have the same factor.
+//
+// 2. For every factor f, count how many items have factors
+//    divisible by f.
+//
+//    gain[f] = count - 1
+//
+//    Subtract 1 because the purchased item itself cannot
+//    be received as a free item.
+//
+// 3. Find minPrice, the cheapest item price.
+//
+// 4. Sort all items in ascending order of price.
+//
+// 5. A purchase of item i can provide:
+//       - 2 copies if it is a boosted purchase.
+//       - 1 copy if it is a normal purchase.
+//
+//    A boosted purchase costs price[i] and gives 2 copies.
+//    A normal purchase costs minPrice and gives 1 copy.
+//
+// 6. A boosted purchase is worth considering only when:
+//
+//       price[i] <= 2 * minPrice
+//
+//    Otherwise, spending the same money on the cheapest item
+//    gives at least as many copies.
+//
+// 7. Process items in ascending price order.
+//    For each item, purchase as many boosted copies as possible,
+//    limited by gain[factor] and the remaining budget.
+//
+// 8. Spend the remaining budget on the cheapest item.
+
+// Time Complexity: O(n log n)
+// Space Complexity: O(n)
+
+
 class Solution {
     public int maximumSaleItems(int[][] items, int budget) {
         int n = items.length;
@@ -66,241 +111,3 @@ class Solution {
         return (int) ans;
     }
 }
-
-/*
-    Recursion with Memoization
-    class Solution {
-
-    private int n;
-    private int[] copies;
-    private int[][] dp;
-
-    public int maximumSaleItems(int[][] items, int budget) {
-        n = items.length;
-        dp = new int[n + 1][budget + 1];
-
-        for(int[] row : dp) {
-            Arrays.fill(row, -1);
-        }
-
-        copies = new int[n];
-
-        for(int i = 0; i < n; i++) {
-            int count = 0;
-
-            for(int j = 0; j < n; j++) {
-                if(i == j) {
-                    continue;
-                }
-
-                if(items[j][0] % items[i][0] == 0) {
-                    count++;
-                }
-            }
-
-            copies[i] = count;
-        }
-
-        return solve(0, budget, items);
-    }
-
-    private int solve(int i, int budget, int[][] items) {
-        if(i == n || budget == 0) {
-            return 0;
-        }
-
-        if(dp[i][budget] != -1) {
-            return dp[i][budget];
-        }
-
-        int skip = solve(i + 1, budget, items);
-
-        int take = 0;
-        int price = items[i][1];
-
-        for(int x = 1; x * price <= budget; x++) {
-            int cost = x * price;
-            int freeCopies = Math.min(x, copies[i]);
-
-            int totalCopies = x + freeCopies;
-
-            take = Math.max(take, totalCopies + solve(i + 1, budget - cost, items));
-        }
-
-        return dp[i][budget] = Math.max(take, skip);
-    }
-}
-*/
-
-/*
-    Bottom-Up approach of above recusrion but since there are n * (budget + 1) states, and budget value can be to high upto 10^9, so instead of 2D dp array above is space-optimized bottom-up DP with two 1D arrays.
-
-    dp[b] = maximum copies obtainable using the already processed items
-        with budget b.
-    class Solution {
-        public int maximumSaleItems(int[][] items, int budget) {
-            int n = items.length;
-            int[][] dp = new int[n + 1][budget + 1];
-
-            int[] copies = new int[n];
-
-            for (int i = 0; i < n; i++) {
-                int count = 0;
-
-                for (int j = 0; j < n; j++) {
-                    if (i == j) {
-                        continue;
-                    }
-
-                    if (items[j][0] % items[i][0] == 0) {
-                        count++;
-                    }
-                }
-
-                copies[i] = count;
-            }
-
-            // Base case:
-            dp[n][0] = 0;
-
-            for (int i = n - 1; i >= 0; i--) {
-                for (int b = 0; b <= budget; b++) {
-                    int skip = dp[i + 1][b];
-                    int take = 0;
-                    int price = items[i][1];
-
-                    for (int x = 1; x * price <= b; x++) {
-                        int cost = x * price;
-                        int freeCopies = Math.min(x, copies[i]);
-
-                        int totalCopies = x + freeCopies;
-
-                        take = Math.max(take, totalCopies + dp[i + 1][b - cost]);
-                    }
-
-                    dp[i][b] = Math.max(take, skip);
-                }
-            }
-
-            // return solve(0, budget, items);
-            return dp[0][budget];
-        }
-    }
-*/
-
-/*  
-    // Even when 2d dp was converted to 1d Dp still got MLE, then understood that it was not dp based problem, it is greedy + sorting problem
-    class Solution {
-        public int maximumSaleItems(int[][] items, int budget) {
-            int n = items.length;
-            int[] copies = new int[n];
-
-            for (int i = 0; i < n; i++) {
-                int count = 0;
-
-                for (int j = 0; j < n; j++) {
-                    if (i == j) {
-                        continue;
-                    }
-
-                    if (items[j][0] % items[i][0] == 0) {
-                        count++;
-                    }
-                }
-
-                copies[i] = count;
-            }
-
-            int[] prev = new int[budget + 1];
-            int[] curr = new int[budget + 1];
-
-            for (int i = n - 1; i >= 0; i--) {
-
-                for (int b = 0; b <= budget; b++) {
-
-                    // int skip = dp[i + 1][b];
-                    int best = prev[b]; // skip
-
-                    int price = items[i][1];
-
-                    for (int x = 1; x * price <= b; x++) {
-                        int cost = x * price;
-                        int freeCopies = Math.min(x, copies[i]);
-
-                        // take = Math.max(take, totalCopies + dp[i + 1][b - cost]);
-                        int take = x + freeCopies + prev[b - cost];
-
-                        best = Math.max(best, take);
-                    }
-
-                    // dp[i][b] = Math.max(take, skip);
-                    curr[b] = best;
-                }
-
-                int[] temp = prev;
-                prev = curr;
-                curr = temp;
-            }
-
-            // return dp[0][budget];
-            return prev[budget];
-        }
-        }
-
-*/
-
-/*
-        1. First, understand the choices
-    For every item type i, we have two possibilities:
-    - Skip this item type entirely.
-    - Purchase x copies, where x >= 1 and the total cost stays within budget.
-    Suppose item A has:
-    - Price = 3
-    - Three eligible free items: B, C, D.
-    Copies purchased	Purchased copies	Free copies	Total
-    0	0	0	0
-    1	1	1	2
-    2	2	2	4
-    3	3	3	6
-    4	4	3	7
-    5	5	3	8
-
-    Notice that after purchasing three copies, additional purchases give no more free items.
-
-    So the contribution from purchasing x copies of item i is:
-    \[
-    x+\min(x,c_i)
-    \]
-
-    where \(c_i\) is the number of eligible item types.
-*/
-
-/*
-    General checklist to convert 2D DP into 1D DP
-    Whenever you have a working 2D bottom-up solution, follow these steps:
-    1. Identify the state dimensions.
-    
-    Example: dp[i][j] where i is index and j is capacity.
-    2. Inspect the recurrence.
-    
-    Check whether the current state depends on:
-    - Previous row only?
-    - Current row?
-    - Previous column?
-    - Multiple earlier rows?
-    3. Determine the minimum storage needed.
-    - Previous row only → two arrays.
-    - Previous row with safe in-place updates → one array.
-    - Multiple previous rows → keep the required number of rows.
-    4. Replace the 2D references.
-    
-    For two arrays:
-    - dp[i][j] → curr[j]
-    - dp[i-1][j] → prev[j]
-    5. Determine iteration direction.
-    
-    If using one array, check whether forward or backward iteration preserves the old values required by the recurrence.
-    6. Check initialization and final answer.
-    
-    Make sure your initial row and return statement still represent the same states.
-*/
